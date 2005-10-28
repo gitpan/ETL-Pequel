@@ -1,0 +1,102 @@
+Revision history
+
+* Version 2.4-1 -- 30 October 2005
+
+- New root namespace: ETL::Pequel. 
+- Initial Perl module program access interface via ETL::Pequel.pm. 
+	-- Please view example/aggregates_1.pl for sample usage.
+- New section types: 'display message on input/output', 'display message on input/output abort'.
+	-- display a message to stderr if record matches condition(s), with optional processing abort.
+- Support fixed length and packed input/output format via Perl pack/unpack formats 
+	-- new options: 'unpack_input', 'input_pack_fmt', 'pack_output', 'output_pack_fmt'. 
+- New 'copy input record', 'divert input record' section types replace 'copy/divert record'.
+	-- distributed data processing.
+- New 'copy output record', 'divert output record' section types.
+- New macros: &pack(), &unpack().
+- New macro: &input_record_count().
+- Added gzcat_cmd, gzcat_args, cat_cmd, cat_args options.
+- Added sort_cmd, sort_args, cpp_cmd, cpp_args options.
+- New option 'input_record_limit' -- use to specify number of records to process from input.
+- Additional example scripts demonstrate new copy/divert input/output record sections.
+- Additional example scripts demonstrate new pack_output/unpack_input feature.
+- Additional example scripts demonstrate new macros.
+- Additional example scripts demonstrate new message section types.
+
+* Version 2.3-4 -- 6 October 2005
+
+- New 'copy record' section. Copy input record to second pequel script if condition met.
+- New 'divert record' section. Divert input record to second pequel script if condition met.
+- Additional example scripts demonstrate new copy/divert record sections.
+
+* Version 2.3-3 -- 4 October 2005
+
+- New section type 'sort output' -- sort the output from script.
+- Now can use 'sort by' in chained pequel script.
+
+* Version 2.3-2 -- 30 September 2005
+
+- New option 'prefix' -- use to set directory path prefix for any file/script names specified in input_file,
+	'load table', 'load table pequel', etc.
+- Added Pequel script chaining via input_file -- receive input data from output of other Pequel script.
+- Added 'load table pequel' section -- load a table via external Pequel script (see examples).
+- Fixed code generation when using 'use_inline' with input_file specified.
+- Fixed code generated for external tables with single data column.
+- Added example scripts: pequel_tables.pql, sales_ttl_by_loc.pql.
+- Removed Pequel::Base and 'root' references -- replaced by Pequel::Param.
+- Extensive code cleanup and bug fixes.
+
+* Version 2.2-9 -- 14 September 2005
+
+- Added Vim syntax file.
+- New tests.
+- Additional example scripts.
+- Revamped the table compiler -- now handles nested table and complex statements.
+- Revamped the macro compiler -- now handles nested macros and complex statements.
+- PEQUEL_TABLE_PATH env for runtime external tables path location.
+- Must escape literal quote char as argument in Option with '\'. So: input_delimiter_extra(\"[)
+- Allow quoted (single or double) Option argument.
+- Fixed problem when group-by field references input derived field.
+- Fixed code generation for arr_avg macro.
+- All array macros now will parse any param as an array field.
+- Fixed arr_size macro.
+- Updated User Guide -- added BUGS list.
+- Fixed various problems with examples scripts. Cleaned up examples dir.
+
+
+* Version 2.2-8 -- 1 September 2005
+
+- Updated User Guide.
+- Updated User Guide -- added 'Inline Options' Chapter.
+- Updated User Guide -- added Apache CLF example script.
+- Added Apache Log (Common Log Format (CLF)) file parsing (quoted fields, square bracketed timestamp field).
+- Added new option: input_delimiter_extra -- use for setting extra field delimiters, such as quotes and
+	square brackets; eg: for Apache Log (Common Log Format (CLF)) file parsing specify input_delimiter_extra("[).
+- Removed default settings for Inline => CCFLAGS and Inline => OPTIMIZE.
+- Added new option: inline_ccflags -- use for setting CCFLAGS for Inline::C.
+- Added new option: inline_optimize -- use for setting OPTIMIZE for Inline::C.
+- Added new option: inline_cc -- use for settind CC for Inline::C.
+- Fixed Inline Config=>NAME -- substitute '/' in path name by '::'.
+- Added examples/apachelog.pql.
+
+
+* Version 2.2-7 -- 25 August 2005
+
+- Fixed User Guide incorrect reference to 'pql2' -- should be 'pequel'!
+- Added examples directory containing sample pequel scripts together with their generated code.
+- Script/Script.pm:Bugfix with 'no cpp' misspelling. Was causing 'make test' to fail on systems without cpp.
+- Engine/Engine.pm:Added vim syntax perl setting in generated script.
+- Updated README -- added Installation Troubleshooting and Example Installation sections.
+- Engine/Engine.pm:Removed 'use warnings' because eval in execute (might) complain.
+- supress code BEGIN/END comments unless --debug option specified.
+- Fixed pequeldoc generated code display (when --detail used) truncation.
+
+
+* Version 2.2-6 -- 2 July 2005
+
+- Added GPL Copyright Notice
+
+
+* Version 2.1.1 -- 3 February 2004
+
+- New code implementation (object oriented)
+

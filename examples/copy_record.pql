@@ -1,0 +1,66 @@
+// vim: syntax=pequel ts=4 sw=4
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//  Script      : copy_record.pql
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+options
+	input_file(chain_pequel_pt1.pql) // The sub-pequel (pt1) script's output is piped to this (pt2) script's input
+    optimize                // (default) optimize generated code.
+    doc_title("Copy Record Example Script")
+    doc_email("sample@youraddress.com")
+    doc_version(2.3)
+
+description section
+
+init table // Local table:
+//  Table-Name  	Key			Value
+	LOC_DESCRIPT	NSW 		'New South Wales'	
+	LOC_DESCRIPT	WA 			'Western Australia'
+	LOC_DESCRIPT	SA 			'South Australia'
+	LOC_DESCRIPT	NT 			'Northern Territory'
+	LOC_DESCRIPT	QLD 		'Queensland'
+	LOC_DESCRIPT	VIC 		'Victoria'
+
+input section
+    LOCATION
+	PRODUCT_CODE
+    SALES_TOTAL
+    LOCATION_DESC => %LOC_DESCRIPT(LOCATION)
+	DESCRIPTION => 'State Total'
+
+filter
+	LOCATION eq 'WA' \
+	|| LOCATION eq 'SA' \
+	|| LOCATION eq 'NSW' \
+	|| LOCATION eq 'VIC' \
+	|| LOCATION eq 'NT'
+
+copy input record (pequel:copy_record_WA.pql)
+	LOCATION eq 'WA'
+
+copy input record (pequel:copy_record_SA.pql)
+	LOCATION eq 'SA'
+
+copy input record (pequel:copy_record_NSW.pql)
+	LOCATION eq 'NSW'
+
+copy input record (pequel:copy_record_VIC.pql)
+	LOCATION eq 'VIC'
+
+copy input record (pequel:copy_record_NT.pql)
+	LOCATION eq 'NT'
+
+sort by
+    LOCATION
+
+group by
+    LOCATION
+
+output section
+    string LOCATION 		LOCATION_DESC
+    string DESCRIPTION		DESCRIPTION
+    decimal SALES_TOTAL	 	sum SALES_TOTAL
+	
+sort output
+	LOCATION
+	SALES_TOTAL numeric desc

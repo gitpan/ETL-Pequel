@@ -1,0 +1,55 @@
+// vim: syntax=pequel ts=4 sw=4
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//  Script       : local_table.pql
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+options
+    header                  // (default) write header record to output.
+    optimize                // (default) optimize generated code.
+    doc_title("Local Table Example Script")
+    doc_email("sample@youraddress.com")
+    doc_version(2.2)
+
+description section
+	Demonstrates use of local tables. LOC_DESCRIPT is a local table. Each line in the
+	'init table' section contains an entry in this table. Each entry constist of
+	table name, key value, field list values. 
+
+	The '%' character is used to denote a table name. The parameter contains the key 
+	value to look up.
+
+init table // Local table:
+//  Table-Name  	Key-Value    Field->1
+	LOC_DESCRIPT	NSW 		'New South Wales'	
+	LOC_DESCRIPT	WA 			'Western Australia'
+	LOC_DESCRIPT	SYD 		'Sydney'
+	LOC_DESCRIPT	MEL 		'Melbourne'
+	LOC_DESCRIPT	SA 			'South Australia'
+	LOC_DESCRIPT	NT 			'Northern Territory'
+	LOC_DESCRIPT	QLD 		'Queensland'
+	LOC_DESCRIPT	VIC 		'Victoria'
+	LOC_DESCRIPT	PER 		'Perth'
+	LOC_DESCRIPT	ALIC 		'Alice Springs'
+
+input section
+    PRODUCT_CODE,
+    COST_PRICE,
+    DESCRIPTION,
+    SALES_CODE,
+	SALES_PRICE,
+	SALES_QTY,
+	SALES_DATE,
+	LOCATION,
+	LDESCRIPT => %LOC_DESCRIPT(LOCATION) // Look up LOCATION in the table LOC_DESCRIPT
+
+sort by
+	LOCATION
+
+group by
+	LOCATION
+
+output section
+	string LOCATION 			LOCATION
+	string DESCRIPTION			LDESCRIPT
+	numeric NUM_PRODUCTS		distinct PRODUCT_CODE 
+	numeric AVG_COST_PRICE		avg COST_PRICE

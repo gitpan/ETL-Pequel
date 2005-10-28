@@ -1,0 +1,30 @@
+// vim: syntax=pequel ts=4 sw=4
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//  Script      : copy_record_NSW.pql
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+options
+    optimize                // (default) optimize generated code.
+    doc_title("Copy Record Example Script")
+    doc_email("sample@youraddress.com")
+    doc_version(2.3)
+
+description section
+
+input section
+    LOCATION
+	PRODUCT_CODE
+    SALES_TOTAL
+	LOCATION_NAME => 'New South Wales'
+
+sort by
+	PRODUCT_CODE
+
+group by
+	PRODUCT_CODE
+
+output section
+	string LOCATION_NAME	LOCATION_NAME
+	string PRODUCT_CODE		PRODUCT_CODE
+    decimal SALES_TOTAL	 	sum SALES_TOTAL
+	

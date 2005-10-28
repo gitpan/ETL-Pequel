@@ -1,0 +1,45 @@
+// vim: syntax=pequel ts=4 sw=4
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//  Script       : unpack_input.pql
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+options
+	input_file(sample_fixed.dat)
+    header                  // (default) write header record to output.
+    optimize                // (default) optimize generated code.
+	hash
+	nulls
+    doc_title("Unpack Input Example Script")
+    doc_email("sample@youraddress.com")
+    doc_version(2.3)
+	discard_header
+	unpack_input
+	input_pack_fmt([A3/Z*]) // Perl pack/unpack formats; use brackets to repeat format for each field.
+
+description section
+	Demonstrates unpacking packed or fixed input data stream records. Use the 'unpack_input' and 'input_pack_fmt' 
+	options together to specify packed/fixed record input data stream. The formats specified in 'input_pack_fmt'
+	are the same as for the Perl pack/unpack functions. The format may be enclosed in square brackets to 
+	indicate that this is a repeat format -- that is, the format will be used for each field -- so in this
+	example the '[A3/Z*]' will exapand to 'A3/Z*A3/Z*A3/Z*A3/Z*A3/Z*A3/Z*A3/Z*A3/Z*' to reflect the 7 field
+	input record format. Please refer to the Perl perlpacktut manual for format definitions. 
+
+	The 'unpack_input' option may not be used when the 'sort by' section is used unless that 'hash' option
+	is also specified.
+
+input section
+	LOCATION
+    PRODUCT_CODE
+	SALES_QTY
+
+sort by
+	LOCATION
+
+group by
+	LOCATION
+
+output section
+	string LOCATION				LOCATION
+	numeric PRODUCT_COUNT		distinct PRODUCT_CODE
+	decimal MIN_SALES_QTY		min SALES_QTY
+	decimal MAX_SALES_QTY		max SALES_QTY

@@ -1,0 +1,29 @@
+// vim: syntax=pequel ts=4 sw=4
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//  Script      : diverted_record_med.pql
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+options
+    optimize                // (default) optimize generated code.
+    doc_title("Diverted Record Example Script")
+    doc_email("sample@youraddress.com")
+    doc_version(2.3)
+	hash
+
+description section
+
+input section
+    LOCATION
+	PRODUCT_CODE
+    SALES_TOTAL
+	CATEGORY => 'MEDIUM'
+
+group by
+    LOCATION
+	PRODUCT_CODE
+
+output section
+	string CATEGORY			CATEGORY
+    string LOCATION 		LOCATION
+	string PRODUCT_CODE		PRODUCT_CODE
+    decimal SALES_TOTAL	 	SALES_TOTAL

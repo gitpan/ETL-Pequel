@@ -1,0 +1,50 @@
+// vim: syntax=pequel ts=4 sw=4
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//  Script       : array_fields.pql
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+options
+    header                // (default) write header record to output.
+    optimize              // (default) optimize generated code.
+	nulls
+    doc_title("Array Fields Example Script")
+    doc_email("sample@youraddress.com")
+    doc_version(2.2)
+
+description section
+	Demonstrates the use of array-fields. An array-field is denoted by the preceding 
+	'@' character.  The 'salesman_list' field in this example is an 'array field' 
+	delimited by the default array field delimiter ','. Array type macros (&arr_...) 
+	will expect all arguments to be array-fields.  Array macros can also be called as 
+	a method following the array-field.
+
+input section
+    product_code,
+    cost_price,
+    description,
+    sales_code,
+	sales_price,
+	sales_qty,
+	sales_date,
+	location,
+	salesman_list,
+	num_salesmen		=> &arr_size(@salesman_list)
+	salesmen_sorted		=> &arr_sort(salesman_list) // implicit array -- all array macros expect array param vars
+	salesmen_sorted_2	=> @salesman_list->sort
+	salesmen_uniq		=> &arr_values_uniq(@salesman_list)
+	salesmen_uniq_2		=> @salesman_list->values_uniq
+	salesmen_reverse	=> &arr_reverse(&arr_sort(@salesman_list)) 
+
+sort by
+	product_code
+
+output section
+	string location				location
+	string product_code 		product_code
+	string salesman_list		salesman_list
+	numeric num_salesmen		num_salesmen
+	string salesmen_sorted		salesmen_sorted
+	string salesmen_sorted_2	salesmen_sorted_2
+	string salesmen_uniq		salesmen_uniq
+	string salesmen_uniq_2		salesmen_uniq_2
+	string salesmen_reverse		salesmen_reverse

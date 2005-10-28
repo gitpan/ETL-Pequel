@@ -1,0 +1,47 @@
+// vim: syntax=pequel ts=4 sw=4
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//  Script       : pequel_tables.pql
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+options
+    header                  // (default) write header record to output.
+    optimize                // (default) optimize generated code.
+    doc_title("Pequel Tables Example Script")
+    doc_email("sample@youraddress.com")
+    doc_version(2.3)
+
+description section
+	This script demonstrates the use of pequel tables. This scipt contains a
+	'load table pequel' section. The tables specified in this section will have
+	their data loaded by executing the pequel script specified.
+	The field names for the table columns are as per the script output format.
+	The output format for a script can be displayed with the '-list output_format'
+	option on the command line. It is important that any Pequel script used in the 
+	'load table pequel' to load a table must have an input_file option specification.
+
+load table pequel
+	// Data for this table is loaded by executing the Pequel script 'sales_ttl_by_loc.pql'.
+	// Pequel tables are loaded dynamically (at runtime).
+	// LOCATION is the key field.
+	TSALESBYLOC sales_ttl_by_loc.pql LOCATION
+	TSALESBYPROD sales_ttl_by_prod.pql PRODUCT_CODE
+
+input section
+    PRODUCT_CODE,
+    COST_PRICE,
+    DESCRIPTION,
+    SALES_CODE,
+	SALES_PRICE,
+	SALES_QTY,
+	SALES_DATE,
+	LOCATION,
+	SALESBYLOC => %TSALESBYLOC(LOCATION)->SALES_TOTAL,
+	SALESBYPROD => %TSALESBYPROD(PRODUCT_CODE)->SALES_TOTAL,
+	COMMENT => %TSALESBYLOC(LOCATION)->TOP_PRODUCT eq PRODUCT_CODE ? '**Best Seller' : ''
+
+output section
+    string PRODUCT_CODE				PRODUCT_CODE,
+	decimal PRODUCT_SALES_TOTAL 	SALESBYPROD,
+	string LOCATION					LOCATION,
+	decimal LOCATION_SALES_TOTAL 	SALESBYLOC,
+	string COMMENT					COMMENT,

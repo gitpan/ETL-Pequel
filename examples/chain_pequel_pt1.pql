@@ -1,0 +1,41 @@
+// vim: syntax=pequel ts=4 sw=4
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//  Script      : chain_pequel_pt1.pql
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+options
+	input_file(sample.data)	// Need to specify this script is used as a pequel-table loader.
+    optimize                // (default) optimize generated code.
+	hash
+    doc_title("Pequel Chaining Part-1 Example Script")
+    doc_email("sample@youraddress.com")
+    doc_version(2.3)
+
+description section
+	This example demonstrates Pequel script 'chaining'. By specifying a pequel script name for
+	the 'input_file' option, the input data stream will result by executing the specified script.
+
+input section
+    PRODUCT_CODE,
+    COST_PRICE,
+    DESCRIPTION,
+    SALES_CODE,
+    SALES_PRICE,
+    SALES_QTY,
+    SALES_DATE,
+    LOCATION,
+    SALES_TOTAL => SALES_QTY * SALES_PRICE
+
+//sort by	// don't need when using 'hash'
+    //LOCATION
+	//PRODUCT_CODE
+
+group by
+    LOCATION
+	PRODUCT_CODE
+
+output section
+    string LOCATION 		LOCATION
+	string PRODUCT_CODE		PRODUCT_CODE
+    decimal SALES_TOTAL	 	sum SALES_TOTAL
+	

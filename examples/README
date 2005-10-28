@@ -1,0 +1,26 @@
+
+* To execute a example from the installation directory:
+
+> pequel examples/aggregates_1.pql --prefix ./examples < examples/sample.data > examples/sample1.out
+
+Pequel Script:examples/aggregates_1.pql................
+[examples/sample1.pql Thu Aug 25 13:37:09 2005] Init
+[examples/sample1.pql Thu Aug 25 13:37:09 2005] Start
+[examples/sample1.pql Thu Aug 25 13:37:10 2005] 5221 records.
+[examples/sample1.pql Thu Aug 25 13:37:10 2005] Code statistics: -1 wallclock secs (-0.47 usr +  0.00 sys = -0.47 CPU)
+
+
+* To create the generated Perl code program:
+
+> pequel examples/aggregates_1.pql --prefix ./examples --dump_code
+
+Pequel Script:examples/aggregates_1.pql.................
+->examples/aggregates_1.pql.2.code
+
+
+* To create the pequeldoc document (pdf):
+
+> pequel examples/aggregates_1.pql --prefix ./examples --pequeldoc pdf --detail
+
+Pequel Script:examples/aggregates_1.pql...............pod2pdf...
+->examples/aggregates_1.pql.pdf

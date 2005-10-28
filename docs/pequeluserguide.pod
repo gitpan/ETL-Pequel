@@ -1,0 +1,4571 @@
+=pod
+
+=head1 NAME
+
+PEQUEL - Pequel ETL Query Language User Guide
+
+=cut --------------------------------------------------------------------------
+
+=head1 OVERVIEW -- WHAT IS PEQUEL?
+
+
+F<Pequel> is a comprehensive ETL (Extract-Transform-Load) data processing system for raw (ASCII) data file processing. It features a simple, user-friendly event driven scripting interface that transparently generates, builds and executes highly efficient data-processing programs. By using the F<Pequel> scripting language, the user can create and maintain complex ETL data transformation processes quickly, easily, and accurately.  
+
+
+The F<Pequel> scripting language is aimed at non-programmer users and is simple to learn and use. It is event driven -- the user need only fill in the details for each event as required. It can also be used to effectively simplify what would otherwise be a complex SQL statement.
+
+
+The F<Pequel> scripting language allows embeded Perl expressions, thus giving access to regular expressions, built-in functions, and all Perl operators. 
+
+
+F<Pequel> is installed as a Perl module. 
+
+
+F<Pequel> generates highly efficient Perl and C code. The emphasis in the generated code is performance -- to process maximum records in minimum time. The generated code can be dumped into a program file, modified and executed independently of Pequel.
+
+
+The F<Pequel> scipt is self-documenting via F<pequeldoc>. F<Pequel> will automatically generate the Pequel Script Programmer's Reference Manual in pdf format. This manual contains detailed and summarised information about the script, and includes cross-reference information. It will also contain an optional listing of the generated program.
+
+
+The following guide describes the use of the F<Pequel> scripting language in detail.
+
+
+Pequel can be used to process data in a number of different ways, including the following:
+
+
+=item F<Selecting records (filtering)>
+
+Use Perl expressions to select records. The full power of Perl regular expressions and Perl built-in functions is also available.
+
+
+=item F<Grouping and Statistics>
+
+Records with similar characteristics can be grouped together.  Calculate statistics, such as max, min, mean, sum, and count, on grouped record sets. Grouping can also be done on unsorted input data using the C<hash> option.
+
+
+=item F<Calculations>
+
+Perform calculations on input fields to generate new (derived) fields, using Perl expressions. Calculations can be performed on both numeric fields (mathematical) and string fields (such as concatenation, substr, etc).
+
+
+=item F<Cleaning Data>
+
+Use Pequel with perl regular expressions to reject I<bad> records. Rejected records will be saved in a I<reject> file.
+
+
+=item F<Analysing Data Quality>
+
+Data can be analysed for quality, and a summary analysis report generated which will reflect the overall quality of the data.
+
+
+=page
+
+=item F<Statistics>
+
+Generate summary statistical information.
+
+
+=item F<Converting Data>
+
+Perform any kind of data conversion. These include, converting from one data type to another, reformatting, case change, splitting a field into two or more fields, combining two or more fields into one field, converting date fields from one date format to another, padding, etc.
+
+
+=item F<Tables and Cross References>
+
+Load and use tables to lookup / cross-reference values by key.
+
+
+=item F<Database Connectivity>
+
+Direct access to database (Oracle, Sqlite, etc) tables. I<New in v2>. Pequel will generate low level database API code. Currently supported databases are Oracle (via OCI), and Sqlite.
+
+
+=item F<Merge and n-Way Join>
+
+Similarly sorted data source files can be merged. Similar to join, but no limit to number of source files that can be joined (merged) simultaneously. I<New in v2>.
+
+
+=item F<Extract Data from Database Table(s)>
+
+I<TBD version 2.5>
+
+Data can be extracted directly from database tables, and from a mix of database types (Oracle, Sqlite, Mysql, Sybase, etc), into tables and into the input-section.
+
+
+=item F<Load Data into Database Table(s)>
+
+I<TBD version 2.5>
+
+The output data can be directly batch-loaded into a database table. 
+
+
+=item F<Input Binary Data Files>
+
+I<TBD version 3.0>
+
+Access to binary data files via the input-section and tables.
+
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head1 USAGE
+
+
+=item F<pequel scriptfile.pql  E<lt>  I<file_in>  E<gt>  I<file_out>>
+
+Execute F<pequel> with I<scriptfile.pql> script to process I<file_in> data file, resulting in I<file_out>.
+
+
+=item F<pequel -c scriptfile.pql>
+
+Check the syntax of the pequel script I<scriptfile.pql>.
+
+
+=item F<pequel -viewcode scriptfile.pql>
+
+Generate and display the code for the pequel script I<scriptfile.pql>.
+
+
+=item F<pequel -dumpcode scriptfile.pql>
+
+Generate the pequel code for the script I<scriptfile.pql> and save generated code in the file I<scriptname.pql.2.code>.
+
+
+=item F<pequel -v>
+
+Display version informatio for F<Pequel>.
+
+
+=item F<pequel -usage>
+
+Display Pequel usage command summary.
+
+
+=item F<pequel -pequeldoc pdf -detail scriptfile.pql>
+
+Generate the Script Reference document in pdf format for the Pequel script I<scriptfile.pql>. The document will include a section showing the generated code (F<-detail>).
+
+
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head1 TUTORIAL
+
+=head2 Create Pequel Script
+
+Use your prefered text editor to create a pequel script I<scriptname.pql>. Syntax highlighting is available for F<vim> with the F<pequel.vim> syntax file (in I<vim/sytnax>).
+
+All that is required is to fill in, at least, the F<output section>, or specify F<transfer> option. The F<transfer> option will have the effect of copying all input field values to the output. This is effectively a I<straight through> process -- the resulting output is identical to the input.
+
+=over 4
+
+=begin
+
+ options
+     transfer
+ 
+ input section
+     PRODUCT,
+     COST_PRICE,
+     DESCRIPTION,
+     SALES_CODE,
+     SALES_PRICE,
+     QUANTITY,
+     SALES_DATE,
+     LOCATION
+ 
+ output section
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 Check The Pequel Script
+
+Do a syntax check on the script by using the Pequel C<-c> option. This should return the words C<I<scriptname.pql> Syntax OK>. 
+
+=over 4
+
+C<pequel -c scriptname.pql>
+
+C<scriptname.pql Syntax OK> 
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 Run The Pequel Script
+
+If syntax check is ok, run the script -- the I<sample.data> data file in the I<examples> directory can be used:
+
+=over 4
+
+C<pequel scriptname.pql> E<lt> I<inputdata> E<gt> I<outputdata>
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 Select A Subset Of Records
+
+We next do something I<usefull> to transform the input data. Create a filter to output a subset of records, consisting of records which have C<LOCATION> starting with C<10>. The filter example uses a Perl regular expression to match the C<LOCATION> field content with the Perl regular expression C<=~ /^10/>. This is specified in the F<filter> section. Check and run the updated script as instructed above:
+
+=over 4
+
+=begin
+
+ options
+     transfer
+ 
+ input section
+     PRODUCT,
+     COST_PRICE,
+     DESCRIPTION,
+     SALES_CODE,
+     SALES_PRICE,
+     QUANTITY,
+     SALES_DATE,
+     LOCATION
+ 
+ filter
+     LOCATION =~ /^10/
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 Create New Derived Fields
+
+Create additional, derived fields based on the other input fields. In our example, two new fields are added C<COST_VALUE> and C<SALES_VALUE>. Derived fields must be specified in the input section I<after> the last input field. The derived field name is followed by the C<=E<gt>> operator, and a calculation expression. Derived fields will also be output when the F<transfer> options is specified.
+
+=over 4
+
+=begin
+
+ options
+     transfer
+ 
+ input section
+     PRODUCT,
+     COST_PRICE,
+     DESCRIPTION,
+     SALES_CODE,
+     SALES_PRICE,
+     QUANTITY,
+     SALES_DATE,
+     LOCATION,
+     COST_VALUE => COST_PRICE * QUANTITY,
+     SALES_VALUE => SALES_PRICE * QUANTITY
+ 
+ filter
+     LOCATION =~ /^10/
+ 
+ output section
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 Select Which Fields To Output
+
+In the above examples, the output record has the same (field) format as the input record, plus the additional derived fields. In the following example we select which fields to output, and their order, on the output record. To do this we need to remove the F<transfer> option, and create the F<output section>. The output fields C<PRODUCT>, C<LOCATION>, C<DESCRIPTION>, C<QUANTITY>, C<COST_VALUE>, and C<SALES_VALUE> are specified to create a new output format. In this example, all the output field names have the same name as the input fields.
+
+=over 4
+
+=begin
+
+ options
+ 
+ input section
+     PRODUCT,
+     COST_PRICE,
+     DESCRIPTION,
+     SALES_CODE,
+     SALES_PRICE,
+     QUANTITY,
+     SALES_DATE,
+     LOCATION,
+     COST_VALUE => COST_PRICE * QUANTITY,
+     SALES_VALUE => SALES_PRICE * QUANTITY
+ 
+ filter
+     LOCATION =~ /^10/
+ 
+ output section
+     string PRODUCT      PRODUCT,
+     string LOCATION     LOCATION,
+     string DESCRIPTION  DESCRIPTION,
+     numeric QUANTITY    QUANTITY,
+     decimal COST_VALUE  COST_VALUE,
+     decimal SALES_VALUE SALES_VALUE
+     
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 Group Records For Analysis
+
+Records with similar characteristics can be grouped together, and aggregations can then be performed on the grouped records' data. The following example groups the records by C<LOCATION>, and I<sums> the C<COST_VALUE> and C<SALES_VALUE> fields within each group. Grouping is activated by creating a F<group by> section. Input data must also be sorted on the grouping field(s). If the data is not pre-sorted then this needs to be done in the script by creating a F<sort by> section. Alternatively, by specifying the F<hash> option, the input data need not be sorted.
+
+=over 4
+
+=begin
+
+ options
+ 
+ input section
+     PRODUCT,
+     COST_PRICE,
+     DESCRIPTION,
+     SALES_CODE,
+     SALES_PRICE,
+     QUANTITY,
+     SALES_DATE,
+     LOCATION,
+     COST_VALUE => COST_PRICE * QUANTITY,
+     SALES_VALUE => SALES_PRICE * QUANTITY
+ 
+ filter
+     LOCATION =~ /^10/
+ 
+ sort by
+     LOCATION
+
+ group by
+     LOCATION
+
+ output section
+     string LOCATION     LOCATION,
+     string PRODUCT      PRODUCT,
+     string DESCRIPTION  DESCRIPTION,
+     numeric QUANTITY    QUANTITY,
+     decimal COST_VALUE  sum COST_VALUE,
+     decimal SALES_VALUE sum SALES_VALUE
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 Select A Subset Of Grouped Records
+
+A subset of groups can be select by creating a F<having> section. The F<having> section is similar to the F<filter> section, but instead is applied to the aggregated group of records. In this example we will output only records for locations which have a total C<SALES_VALUE> of C<1000> or more. Note that C<SALES_VALUE> in the F<having> section refers to the output field (C<sum SALES_VALUE>) and not the input field with same name (C<SALES_PRICE * QUANTITY>). The F<having> section gives preference to output fields when interpreting field names.
+
+=over 4
+
+=begin
+
+ options
+ 
+ input section
+     PRODUCT,
+     COST_PRICE,
+     DESCRIPTION,
+     SALES_CODE,
+     SALES_PRICE,
+     QUANTITY,
+     SALES_DATE,
+     LOCATION,
+     COST_VALUE => COST_PRICE * QUANTITY,
+     SALES_VALUE => SALES_PRICE * QUANTITY
+ 
+ filter
+     LOCATION =~ /^10/
+ 
+ sort by
+     LOCATION
+
+ group by
+     LOCATION
+
+ output section
+     string LOCATION     LOCATION,
+     string PRODUCT      PRODUCT,
+     string DESCRIPTION  DESCRIPTION,
+     numeric QUANTITY    QUANTITY,
+     decimal COST_VALUE  sum COST_VALUE,
+     decimal SALES_VALUE sum SALES_VALUE
+
+ having
+     SALES_VALUE >= 1000
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 Aggregation Based On Conditions
+
+Output fields can be aggregated conditionally. That is, the aggregation will only occur for records, within the group, that evaluate the condition to I<true>. This is done by adding a C<where> clause to the aggregate function. In this example we create three new output fields C<SALES_VALUE_RETAIL>, C<SALES_VALUE_WSALE> and C<SALES_VALUE_OTHER>. These fields will contain the sales value for records within the group which have sales code equal to 'R', 'W', and other codes, respectively.
+
+=over 4
+
+=begin
+
+ options
+ 
+ input section
+     PRODUCT,
+     COST_PRICE,
+     DESCRIPTION,
+     SALES_CODE,
+     SALES_PRICE,
+     QUANTITY,
+     SALES_DATE,
+     LOCATION,
+     COST_VALUE => COST_PRICE * QUANTITY,
+     SALES_VALUE => SALES_PRICE * QUANTITY
+ 
+ filter
+     LOCATION =~ /^10/
+ 
+ sort by
+     LOCATION
+
+ group by
+     LOCATION
+
+ output section
+     string LOCATION            LOCATION,
+     string PRODUCT             PRODUCT,
+     string DESCRIPTION         DESCRIPTION,
+     numeric QUANTITY           QUANTITY,
+     decimal COST_VALUE         sum COST_VALUE,
+     decimal SALES_VALUE        sum SALES_VALUE,
+     decimal SALES_VALUE_RETAIL sum SALES_VALUE where SALES_CODE eq 'R',
+     decimal SALES_VALUE_WSALE  sum SALES_VALUE where SALES_CODE eq 'W',
+     decimal SALES_VALUE_OTHER  sum SALES_VALUE where SALES_CODE ne 'R' and SALES_CODE ne 'W'
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 Derived Fields Based On Output Fields
+
+An output derived field, the calculation of which is based on I<output> fields, can be created by declaring an output field with the C<=> I<calulation expression>. 
+
+=over 4
+
+=begin
+
+ options
+ 
+ input section
+     PRODUCT,
+     COST_PRICE,
+     DESCRIPTION,
+     SALES_CODE,
+     SALES_PRICE,
+     QUANTITY,
+     SALES_DATE,
+     LOCATION,
+     COST_VALUE => COST_PRICE * QUANTITY,
+     SALES_VALUE => SALES_PRICE * QUANTITY
+ 
+ filter
+     LOCATION =~ /^10/
+ 
+ sort by
+     LOCATION
+
+ group by
+     LOCATION
+
+ output section
+     string LOCATION            LOCATION,
+     string PRODUCT             PRODUCT,
+     string DESCRIPTION         DESCRIPTION,
+     numeric QUANTITY           QUANTITY,
+     numeric TOTAL_QUANTITY     sum QUANTITY,
+     decimal COST_VALUE         sum COST_VALUE,
+     decimal SALES_VALUE        sum SALES_VALUE,
+     decimal SALES_VALUE_RETAIL sum SALES_VALUE where SALES_CODE eq 'R',
+     decimal SALES_VALUE_WSALE  sum SALES_VALUE where SALES_CODE eq 'W',
+     decimal SALES_VALUE_OTHER  sum SALES_VALUE where SALES_CODE ne 'R' and SALES_CODE ne 'W',
+     decimal AVG_SALES_VALUE    = SALES_VALUE / TOTAL_QUANTITY
+
+=end
+
+=back
+
+B<Note>
+
+In order to protect against a divide by zero exception, the C<AVG_SALES_VALUE> field would actually be better declared as follows. This form uses a Perl I<alternation> C<?:> operator. If C<TOTAL_QUANTITY> is zero, it will set C<AVG_SALES_VALUE> to zero, otherwise it will set C<AVG_SALES_VALUE> to C<SALES_VALUE / TOTAL_QUANTITY>. Thus, the division will only be performed on non-zero C<TOTAL_QUANTITY>.
+
+=begin
+
+     decimal AVG_SALES_VALUE    = TOTAL_QUANTITY == 0 ? 0.0 : SALES_VALUE / TOTAL_QUANTITY
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 Create Intermediate (Transparent) Output Fields
+
+In the previous example, supposing that the C<TOTAL_QUANTITY> field was not required in the output, it could be made I<transparent> by declaring it with an I<underdash> (C<_>) prefix. Transparent output fields are usefull for creating intermediate fields required for calculations.
+
+=begin
+
+     numeric _TOTAL_QUANTITY    sum QUANTITY,
+     decimal AVG_SALES_VALUE    = SALES_VALUE / _TOTAL_QUANTITY
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 Cleaning Data
+
+Data can be cleaned in a variety of ways, and invalid records placed in a I<reject> file. The following example determines the validity of a record by a) the length of certain fields, and b) the content of field C<QUANTITY>. The C<PRODUCT> and C<LOCATION> fields must be at least C<8> and C<2> characters long, respectively; the C<QUANTITY> field must contain only numeric digits, decimal point and minus sign. The rejected records will be placed in the reject file called I<scriptname>.reject
+
+=over 4
+
+=begin
+
+ options
+     transfer
+ 
+ input section
+     PRODUCT,
+     COST_PRICE,
+     DESCRIPTION,
+     SALES_CODE,
+     SALES_PRICE,
+     QUANTITY,
+     SALES_DATE,
+     LOCATION
+ 
+ reject
+     length(PRODUCT) < 8 || length(LOCATION) < 2,
+     QUANTITY !~ /^[0-9\.\-]+$/
+ 
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 Converting Data
+
+Any sort of data conversion can be performed. These include, converting from one data type to another, reformatting, case change, splitting a field into two or more fields, combining two or more fields into one field, converting date fields from one date format to another, padding, etc. The following script demonstrates these data conversions.
+
+=over 4
+
+=begin
+
+ options
+ 
+ input section
+     PRODUCT,
+     COST_PRICE,
+     DESCRIPTION,
+     SALES_CODE,
+     SALES_PRICE,
+     QUANTITY,
+     SALES_DATE,
+     LOCATION
+ 
+ output section
+     string PRODUCT_U     = &uc(PRODUCT), // Convert case to upper
+     string DESCRIPTION_U = &uc(DESCRIPTION), // Convert case to upper
+     string PCODE_1       = &substr(PRODUCT,0,2), // Split field
+     string PCODE_2       = &substr(PRODUCT,2,4), //  ""
+     string ANALYSIS_1    = SALES_CODE . sprintf("%08d", COST_PRICE), // Combine fields
+     string S_QUANTITY    = sprintf("%08d", QUANTITY) // Reformat/Convert field
+     string NEW_PRODUCT   = PCODE_2 . PCODE_1 . &substr(PRODUCT,6) // Reformat
+     decimal SALES_PRICE  SALES_PRICE // no change
+     decimal SALES_CODE   SALES_CODE  // no change
+     string LOCATION      LOCATION // no change
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 Using Date Fields
+
+TBC
+
+=head2 Counting Records
+
+TBC
+
+=head2 Extracting I<n> Distinct Values For A Field
+
+TBC
+
+=head2 Tabulating Data
+
+TBC
+
+=head2 Statistical Analysis
+
+TBC
+
+=head2 Declaring And Using Tables For Value Lookup
+
+TBC
+
+=head2 Using External Tables
+
+TBC
+
+=head2 Using Date Fields
+
+TBC
+
+=head2 Create A Summary Report
+
+TBC
+
+=head2 Using Array Fields
+
+TBC
+
+=head2 Database Tables: oracle
+
+TBC
+
+=head2 Database Tables: sqlite
+
+TBC
+
+=head2 Merg Database Tables
+
+TBC
+
+
+=cut --------------------------------------------------------------------------
+
+=head2 View The Generated Perl Code
+
+To view the generated Perl code use the Pequel C<-viewcode> option:
+
+=over 4
+
+C<pequel -viewcode scriptname.pql | more>
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 Dump The Generated Perl Code
+
+To dump the generated Perl code use the Pequel C<-dumpcode> option. This will save the generated Perl program in the file with the name I<script_name>F<.2.code>. So, if your script is called I<myscript.pql> the resulting generated Perl program will be saved in the the file I<myscript.pql.2.code>, in the same path:
+
+=over 4
+
+C<pequel -dumpcode scriptname.pql>
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 Produce The Script Specification Document
+
+Use the Pequel C<-pequeldoc pdf> option to produce a presentation script specification for the Pequel script. The generated pdf document will be saved in a file with the same name as the script but with the file extension changed from I<pql> to I<pdf>.
+
+=over 4
+
+C<pequel scriptname.pql -pequeldoc pdf>
+
+=back
+
+Use the C<-detail> option to include the generated code in the document.
+
+=over 4
+
+C<pequel scriptname.pql -pequeldoc pdf -detail>
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 Display Summary Information For Script
+
+This options will display the parsed details from the script in a summarised format.
+
+=over 4
+
+C<pequel scriptname.pql -list>
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head1 COMMAND LINE OPTIONS
+
+=item F<--prefix, --prefix_path>
+
+Prefix for filenames directory path
+
+
+=item F<--verbose, --ver>
+
+Display progress counter
+
+
+=item F<--noverbose, --silent, --quite>
+
+Do not progress counter
+
+
+=item F<--input_file, --is, --if, --i>
+
+Input data filename
+
+
+=item F<--usage>
+
+Display command usage description
+
+
+=item F<--output_file, --os, --of, --o>
+
+Output data filename
+
+
+=item F<--script_name, --script, --s, --pql>
+
+Script filename
+
+
+=item F<--header>
+
+Write header record to output.
+
+
+=item F<--pequeldoc, --doc>
+
+Generate pod / pdf pequel script Reference Guide.
+
+
+=item F<--viewcode, --vc>
+
+Display the generated Perl code for pequel script
+
+
+=item F<--dumpcode, --dc, --diag>
+
+Dump the generated Perl code for pequel script
+
+
+=item F<--syntax_check, --c, --check>
+
+Check the pequel script for syntax errors
+
+
+=item F<--version, --v>
+
+Display Pequel Version information
+
+
+=item F<--table_info, --ti>
+
+Display Table information for all tables declared in the pequel script
+
+
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head1 PEQUEL LANGUAGE REFERENCE
+
+A Pequel script is divided into sections. Each section is delimited by a section name, which appears on a line on its own, followed by a list of statements/items. Each I<item> line must be terminated by a newline comma (or both). In order to split an I<item> line into mutiple lines (for better readability) use the line continuation character C<\>. 
+
+
+Pequel is I<event> driven. Each section within an Pequel script describes an event. For example, the F<input section> is activated whenever an input record is read; the F<output section> is activated whenever an aggregation is performed. 
+
+
+The sections must appear in the order described below. A minimal script must contain F<input section> and F<output section>, or, F<input section> and F<transfer> option. All other sections are optional, and need only appear in the Pequel script if they contain statements. 
+
+
+The main sections are F<input section> and F<output section>. The F<input section> defines the format, in fields, of the input data stream. It can also define new calculated (derived) fields. The F<output section> defines the format of the output data stream. The F<output section> is required in order to perform aggregation. The F<output section> will consist of input fields, aggregations based on grouping the input records, and new calculated fields.
+
+
+Input sorting can be specified with the F<sort by> section. Break processing (grouping) can be specified with the F<group by> section. Input filtering is specified with the F<filter> section. Groups of records can be filtered with the F<having> section.
+
+
+A powerfull feature of Pequel is its built-in tables feature. Tables, consisting of key and value pairs. Tables are used to perform merge and joins on multiple input datasources. They can also be used to access external data for cross referencing, and value lookups. 
+
+
+Pequel also handles a number of date field formats. The F<&date()> macro provides access to date fields. 
+
+
+=head2 Comments
+
+Any text following and including the C<#> symbol is considered as comment text. C style comments (C<//> and C</* ... */>) are also supported if your system provides the F<cpp> preprocessor.
+
+
+=head2 Pre Processor
+
+If your system provides the F<cpp> preprocessor, your Pequel script may include any C/C++ style macros and defines.
+
+
+=head2 OPTIONS SECTION
+
+This section is used to declare various options described in detail below. Options define the overall character of the data transformation.
+
+
+=item I<Format>
+
+B<options>
+    <option> [ B<(><arg>B<)> ] [, ...]
+
+
+=item I<Example>
+
+=begin
+
+ options
+     input_delimiter(\s+), # one or more space(s) delimit input fields.
+     verbose(100000), # print progress on every 100000'th input record.
+     optimize,
+     varnames,
+     default_date_type(DD/MM/YY),
+     nonulls,
+     diag
+
+=end
+
+
+=item F<verbose> 
+
+Set the verbose option to display progress information to STDERR during the transform run. Requires one parameter. This will instruct Pequel to display a counter message on specified number of records read from input.
+
+
+=item F<input_delimiter>
+
+Specify the character that is used to delimit columns in the input data stream. This is usually the pipe C<|> character, but can be any character including the space character. For multiple spaces use C<\s+>, and for multiple tabs use C<\t+>. This input delimiter will default to the pipe character if I<input_delimiter> is not specified.
+
+
+=item F<output_delimiter>
+
+Specify the character that will delimit columns in the output. The output delimiter will default to the input delimiter if not specified. Refer to I<input_delimiter> above for more information regarding types of delimiters.
+
+
+=item F<discard_header> 
+
+If the input data stream contains an initial header record then this option must be specified in order to discard this record from the processing.
+
+
+=item F<input_file> 
+
+Specify the file name as a parameter. If specified, the input data will be read from this file; otherwise it will be read from STDIN.
+
+
+=item F<output_file> 
+
+Specify the file name as a parameter. If specified, the output will be written to this file (the file will be overwritten!); otherwise it will be sent to STDOUT.
+
+
+=item F<transfer>
+
+Copy the input record to output. The input record is copied as is, including calculated fields, to the output record. Fields specified in the F<output section> are placed after the input fields. The C<transfer> option is not available when F<group by> us in use.
+
+
+=item F<hash> 
+
+Use hash processing mode. Hash mode is only available when break processing is activated with 'group by'. In hash mode input data need not be sorted. Because this mode of processing is memory intensive, it should only be used when generating a small number of groups. The optional 'numeric' modifier can be specified to sort the output numerically; if not specified, a string sort is done. 
+
+
+=item F<header>
+
+If specified then an initial header record will by written to output. This header record contains the output field names. By default a header record will be output if neither header nor noheader is specified.
+
+
+=item F<noheader>
+
+Specify this option to suppress writing of header record.
+
+
+=item F<addpipe>
+
+Specify this option to add an extra delimiter character after the last field. This is the default action if neither addpipe nor noaddpipe is specified.
+
+
+=item F<noaddpipe>
+
+Specify this option to suppress adding an extra delimiter character after the last field.
+
+
+=item F<optimize>
+
+If specified the generated Perl code will be optimized to run more efficiently. This optimisation is done by grouping similar C<where> conditions into C<if-else> blocks. Thus if a number of where clauses contain the same condition, these statements will be grouped under one if condition. The I<optimize> option should only be used by users with some knowledge of Perl.
+
+
+=item F<nooptimize>
+
+Specify this option to prevent code from being optimised. This is the default setting.
+
+
+=item F<nulls> 
+
+If specified, numeric and decimal values with a zero/null value will be output as null character. This is the default setting.
+
+
+=item F<nonulls>
+
+If specified, numeric and decimal values with a zero/null value will be output as C<0>. 
+
+
+=item F<varnames> 
+
+Use for debugging the generated code. This setting will display the field name, instead of just the field number, in the generated Perl code. This is the default setting.
+
+
+=item F<novarnames> 
+
+This will cause the generated code to contain field numbers only instead of field names.
+
+
+=item F<noexecute> 
+
+Use for debugging. With this option, the generated code is displayed to STDOUT instead of being executed.
+
+
+=item F<reject_file> 
+
+Use this option to specify a file name to contain the rejected records. These are records that are rejected by the filter specified in the reject section. If no reject file option is specified then the default reject file name is the script file name with C<.reject> appended.
+
+
+=item F<dumpcode> 
+
+Set this option to save the generated code in scriptname.2.code files. The scriptname.2.code file contains the generated perl code. This latter contains the actual Perl program that will process the input data stream. This generated Perl program can be executed independatly of Pequel.
+
+
+=item F<default_date_type>
+
+Specify a default date type. Currently supported date types are: C<YYYYMMDD>, C<YYMMDD>, C<DDMMYY>, C<DDMMMYY>, C<DDMMYYYY>, C<DD/MM/YY>, C<DD/MM/YYYY>, and US date formats: C<MMDDYY>, C<MMDDYYYY>, C<MM/DD/YY>, C<MM/DD/YYYY>. The C<DDMMMYY> format refers to dates such as C<21JAN02>.
+
+
+=item F<default_list_delimiter>
+
+Specify the default list delimiter for I<array fields> created by C<values_all> and C<values_uniq> aggregates. Any delimiter specified as a parameter to the aggregate function will override this.
+
+
+=item F<rmctrlm> I<v3>
+
+If the input file is in DOS format, specify 'rmctrlm' option to remove the Ctrl-M at end of line.
+
+
+=item F<input_record_limit> I<v3>
+
+Specify number of records to process from input file. Processing will stop after the number of records as specified have been read.
+
+
+=item F<suppress_output> I<v3>
+
+Use this option when F<summary section> is used to prevent output of raw results.
+
+
+=item F<pequeldoc>
+
+Generate PDF for Programmer's Reference Manual for the Pequel script. The next three options are also required.
+
+
+=item F<doc_title>
+
+Specify the title that will appear on the pequeldoc generated manual.
+
+
+=item F<doc_email>
+
+Specify the user's email that will appear on the pequeldoc generated manual.
+
+
+=item F<doc_version>
+
+Specify the Pequel script version number that will appear on the pequeldoc generated manual.
+
+
+=cut --------------------------------------------------------------------------
+
+=head2 INLINE OPTIONS
+
+The following options require that the Inline::C Perl module and a C compiler system is installed on your system. 
+
+
+=item F<use_inline> 
+
+The F<use_inline> option will instruct Pequel to generate (and compile/link) F<C> code -- replacing the input file identifier inside the main F<while> loop by a F<readsplit()> function call. The F<readsplit> function is implemented in F<C>.
+
+
+=item F<input_delimiter_extra>
+
+Specify one or more extra field delimiter characters. These may be one of any quote character, F<'>, F<">, F<`>, and optionally, one of and bracket character, F<{>, F<[>, F<(>. For example, this option can be used to parse input Apache log files in CLF format:
+
+=begin
+
+ options
+     input_delimiter_extra("[)  // Apache CLF log quoted fields and bracketed timestamp
+
+  
+  
+
+=end
+
+
+=item F<inline_clean_after_build>
+
+Tells Inline to clean up the current build area if the build was successful. Sometimes you want to DISABLE this for debugging. Default is 1. 
+
+
+=item F<inline_clean_build_area>
+
+Tells Inline to clean up the old build areas within the entire Inline DIRECTORY. Default is 0. 
+
+
+=item F<inline_print_info>
+
+Tells Inline to print various information about the source code. Default is 0.
+
+
+=item F<inline_build_noisy>
+
+Tells ILSMs that they should dump build messages to the terminal rather than be silent about all the build details.
+
+
+=item F<inline_build_timers>
+
+Tells ILSMs to print timing information about how long each build phase took. Usually requires Time::HiRes
+
+=item F<inline_force_build>
+
+Makes Inline build (compile) the source code every time the program is run. The default is 0. 
+
+
+=item F<inline_directory>
+
+The DIRECTORY config option is the directory that Inline uses to both build and install an extension.
+
+Normally Inline will search in a bunch of known places for a directory called '.Inline/'. Failing that, it will create a directory called '_Inline/'
+
+If you want to specify your own directory, use this configuration option.
+
+Note that you must create the DIRECTORY directory yourself. Inline will not do it for you.
+
+
+=item F<inline_CC>
+
+Specify which compiler to use.
+
+
+=item F<inline_OPTIMIZE>
+
+This controls the MakeMaker OPTIMIZE setting. By setting this value to '-g', you can turn on debugging support for your Inline extensions. This will allow you to be able to set breakpoints in your C code using a debugger like gdb.
+
+
+=item F<inline_CCFLAGS>
+
+Specify extra compiler flags.
+
+
+=item F<inline_LIBS>
+
+Specifies external libraries that should be linked into your code.
+
+
+=item F<inline_INC>
+
+Specifies an include path to use. Corresponds to the MakeMaker parameter.
+
+
+=item F<inline_LDDLFLAGS>
+
+Specify which linker flags to use.
+
+NOTE: These flags will completely override the existing flags, instead of just adding to them. So if you need to use those too, you must respecify them here.
+
+
+=item F<inline_MAKE>
+
+Specify the name of the 'make' utility to use.
+
+
+=cut --------------------------------------------------------------------------
+
+=head2 USE PACKAGE SECTION
+
+Use this section to specify Perl packages to use. This section is optional.
+
+
+=item I<Format>
+
+B<use package>
+    <Perl package name> [, ...]
+
+
+=item I<Examples>
+
+=begin
+
+ use package
+     Benchmark,
+     EasyDate
+ 
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 INIT TABLE SECTION
+
+Use F<init table> to initialise tables in the Pequel script. This will consist of a list of table name followed by key value (or value list) pairs. The key must not contain any spaces. In order to avoid clutter in the script, use load table as described above. To look up a table key/value use the F<%>I<table name>F<(>I<key>F<)> syntax. Table column values are accessed by using the F<%>I<table name>F<(>I<key>F<)->=E<gt>I<n> syntax, when n refers to a column number starting from '1'. The column specification is not required for single value tables. All entries within a table should have the same number of values, empty values can be declared with a null quoted value (''). This section is optional.
+
+
+=item I<Format>
+
+B<init table>
+    <table> <key> <value> [, <value>...]
+
+
+=item I<Example>
+
+=begin
+
+ init table
+ // Table-Name Key-Value Field->1             Field-2  Field-3
+    LOCINFO    NSW       'New South Wales'    '2061'   '02'
+    LOCINFO    WA        'Western Australia'  '5008'   '07'
+    LOCINFO    SA        'South Australia'    '8078'   '08'
+
+ input section
+    LOCATION,
+    LDESCRIPT => %LOCINFO(LOCATION)->1 . " in postcode " . %LOCINFO(LOCATION)->2
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 LOAD TABLE SECTION
+
+Use this section to declare tables that are to be initialised from an external data file. If the table is in C<.tbl> format (key|value) then only the table name (without the C<.tbl>) need be specified. The filename can consist of the full path name. Compressed files (ending in .gz, .z, .Z, .zip) will be handled properly. If key column is not specified then this is set to 1 by default; if the value column is not specified then this is set to 2 by default. Column numbers are 1 base. To look up a table key/value use the F<%>I<table name>F<(>I<key>F<)> syntax. If the table name is prefixed with the C<_> character, this table will be loaded at runtime instead of compile time. Thus the table contents will not appear in the generated code. This is useful if the table contains more than a few hundred entries, as it will not clutter up the generated code. 
+
+
+=item F<persistant> option
+
+The F<persistant> option will make the table disk-based instead of memory-based. Use this option for tables that are too big to fit in available memory. The disk-based table snapshot file will have the name C<_TABLE_name.dat>, where C<name> is the table name. When the C<persistant> option is used, the table is generated only once, the first time it is used. Thereafter it will be loaded from the snaphot file. This is alot quicker and therefore usefull for large tables. In order to re-generate the table, the snapshot file must be manually deleted. In order to use the C<persistant> option the Perl DB_File module must be available. The effect of C<persistant> is to C<tie> the table's associative array with a DBM database (Berkeley DB). Note that using C<persistant> tables will downgrade the overall performance of the script.
+
+
+=item I<Format>
+
+B<load table> [ B<persistant> ]
+    <table> [ <filename> [ <key_col> [ <val_col> ] ] ] [, ...]
+
+
+=item I<Examples>
+
+=begin
+
+ load table
+     POSTCODES
+     MONTH_NAMES /data/tables/month_names.tbl
+     POCODES pocodes.gz 1 2
+     ZIPSAMPLE zipsample.txt 3 21
+
+=end
+
+
+=cut --------------------------------------------------------------------------
+
+=head2 INIT _PERIOD SECTION
+
+Use this section to initialise the special internal F<_PERIOD> table. The F<_PERIOD> table is accessed by using the F<&period()> macro. This will map all dates within the start and end date specified to the period value (string or numeric). Please note the space after C<init> and before C<_PERIOD>. This section is optional. See also F<&period()> macro below.
+
+
+=item I<Format>
+
+B<init _PERIOD> [ B<persistant> ]
+    <period value> <start date> <end date> <date fmt> [, ...]
+
+
+=item I<Examples>
+
+=begin
+ 
+ init _PERIOD
+     Q1 01JAN01 31MAR01 DDMMMYY,
+     Q2 01APR01 30JUN01 DDMMMYY,
+     Q3 01JUL01 30SEP01 DDMMMYY,
+     Q4 01OCT01 31DEC01 DDMMMYY
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 INIT _MONTH SECTION
+
+Use this section to initialise the special internal F<_MONTH> table. The F<_MONTH> table is accessed by using the F<%month()> macro. This will map all dates within the start and end date specified to the month value (numeric or string). Please note the space after C<init> and before C<_MONTH>. This section is optional. See also F<%month()> macro below.
+
+
+=item I<Format>
+
+B<init _MONTH> [ B<persistant> ]
+    <month value> <start date> <end date> <date fmt> [, ...]
+
+
+=item I<Examples>
+
+=begin
+
+ init _MONTH
+     JAN 01/01/2002 01/31/2002 MM/DD/YYYY,
+     FEB 02/01/2002 02/28/2002 MM/DD/YYYY,
+     MAR 03/01/2002 03/30/2002 MM/DD/YYYY
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 INPUT SECTION
+
+This section defines the format of the input data stream. Any calculated fields must be placed after the last input field. The calculation expression must begin with =E<gt> and consists of (almost) any valid Perl statement, and can include input field names. All macros are also available to calculation expressions. The input section must appear before all the sections described below. Each input field name must be unique.
+
+
+=item I<Format>
+
+B<input section>
+    <input field name> [ =E<gt> <calculation expression> ] [, ...]
+
+
+=item I<Example>
+
+=begin
+
+ input section
+     ACL,
+     AAL,
+     ZIP,
+     CALLDATE,
+     CALLS,
+     DURATION,
+     REVENUE,
+     DISCOUNT,
+     KINSHIP_KEY,
+     INV => REVENUE + DISCOUNT,
+     MONTH_CALLDATE => &month(CALLDATE),
+     GROUP => MONTH_CALLDATE <= 6 ? 1 : 2,
+     POSTCODE => %POSTCODES(AAL),
+     IN_SAMPLE => exists %ZIPSAMPLE(ZIP),
+     IN_SAMPLE_2 => exists %ZIPSAMPLE(ZIP) ? 'yes': 'no'
+ 
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 FIELD PREPROCESS SECTION
+
+Use this section to perform addition formatting/processing on input fields. These statements will be performed right after the input record is read and before calculating the input derived fields.
+
+
+=cut --------------------------------------------------------------------------
+
+=head2 FIELD POSTPROCESS SECTION
+
+Use this section to perform addition formatting/processing on output fields.  These statements will be performed after the aggregations and just prior to the output of the aggregated record.
+
+
+=cut --------------------------------------------------------------------------
+
+=head2 SORT BY SECTION
+
+Use this section to sort the input data by field(s).  One or more sort fields can be specified. This section must appear after the F<input section> and before the F<group by> and F<output sections>. The F<numeric> option is used to specify a I<numeric> sort, and the F<desc> option is used to specify a I<descending> sort order. The standard Unix I<sort> command is used to perform the sort. The F<numeric> option is translated to the -n Unix I<sort> option; the F<desc> option is translated to the -r Unix I<sort> option. If the input data is pre sorted then the F<sort by> section is not required (even if break processing is activated with a F<group by> section declaration). The F<sort by> section is not required when the F<hash> option is specified.
+
+
+=item I<Format>
+
+B<sort by>
+    <field name> [ B<numeric> ] [ B<desc> ]  [, ...]
+
+
+=item I<Examples>
+
+=begin
+
+ sort by
+     ACL,
+     AAL numeric desc
+	
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 REJECT SECTION
+
+Specify one or more filter expressions. Filter expression can consist of any valid Perl statement, and must evaluate to Boolean true or false (0 is false, anything else is true). It can contain input field names and macros. Each input record is evaluated against the filter(s). Records that evaluate to true on any one filter will be rejected and written to the reject file. The reject file is named scriptname.reject unless specified in the F<reject_file> option. 
+
+
+=item I<Format>
+
+B<reject>
+    <filter expression> [, ...]
+
+
+=item I<Examples>
+
+=begin
+
+ reject
+     !exists %ZIPSAMPLE(ZIP)
+     INV < 200
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 FILTER SECTION
+
+Specify one or more filter expressions. Filter expression can consist of any valid Perl statement, and must evaluate to Boolean true or false. It can contain input field names and macros. Each input record is evaluated against the filter(s). Only records that evaluate to true on all filter statements will be processed; that is, records that evaluate to false on any one filter statement will be discarded. 
+
+
+=item I<Format>
+
+B<filter>
+    <filter expression> [, ...]
+
+
+=item I<Examples>
+
+=begin
+
+ filter
+     exists %ZIPSAMPLE(ZIP)
+     ACL =~ /^356/
+     ZIP eq '52101' or ZIP eq '52102'
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 GROUP BY SECTION
+
+Use this section to activate break processing. Break processing is required to be able to use the aggregates in the output section. One or more fields can be specified - the input data must be sorted on the group by fields, unless the F<hash> option is used. A break will occur when any of the group field values changes. The F<group by> section must appear after the F<sort by> section and before the F<output section>. The F<numeric> option will cause leading zeros to be stripped from the input field. Group by on I<calculated> input fields is usefull when the F<hash> option is in use because the input does not need to be pre-sorted. 
+
+
+=item I<Format>
+
+B<group by>
+    <input field name> [ B<numeric> | B<decimal> | B<string> ] [, ...]
+
+
+=item I<Examples>
+
+=begin
+
+ group by
+     AAL,
+     ACL numeric
+	
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 DEDUP ON SECTION
+
+=cut --------------------------------------------------------------------------
+
+=head2 OUTPUT SECTION
+
+This is where the output data stream format is specified. At least one output field must be defined here (unless the F<transfer> option is specified). Each output field definition must end with a comma or new line (or both). Each field definition must begin with a type (C<numeric>, C<decimal>, C<string>, C<date>). The output field name can be the same as an input field name, unless the output field is a calculated field. Each output field name must be unique. This name will appear in the header record (if the F<header> option is set). The aggregate expression must consist of at least the input field name.
+
+
+The aggregates C<sum>, C<min>, C<max>, C<avg>, C<first>, C<last>, C<distinct>, C<values_all>, and C<values_uniq> must be followed by an input field name. The aggregates C<count> and C<flag> must be followed by the C<*> character. The aggregate C<serial> must be followed by a number (indicating the serial number start). 
+
+
+A prefix of C<_> in the output field name causes that field to be I<transparent>; these fields will not be output, their use is mainly for intermediate calculations. <input field name> can be any field declared in the input section, including calculated fields. This section is required unless the F<transfer> option is specified.
+
+
+=item I<Format>
+
+B<output section>
+    <type> <output field name> <output expression> [, ...]
+
+=over 4
+
+<type>
+
+B<numeric>, B<decimal>, B<string>, B<date> [ B<(><datefmt>B<)> ] 
+
+
+<output field name>
+
+Each output field name must be unique. Output field name can be the same as the input field name, unless the output field is a calculated field. A C<_> prefix denotes a I<transparent> field. Transparent fields will not be output, they are used for intermediate caclulations.
+
+
+<datefmt>
+
+B<YYYYMMDD>, B<YYMMDD>, B<DDMMYY>, B<DDMMMYY>, B<DDMMYYYY>, B<DD/MM/YY>, B<DD/MM/YYYY>, B<MMDDYY>, B<MMDDYYYY>, B<MM/DD/YY>, B<MM/DD/YYYY>
+
+
+<output expression>
+
+=over 4
+
+
+<input field name>
+
+|
+
+<aggregate> <input field name> [ B<where> <condition expression> ] 
+
+|
+
+B<serial> <start num> [ B<where> <condition expression> ] 
+
+|
+
+B<count *> [ B<where> <condition expression> ] 
+
+|
+
+B<flag *> [ B<where> <condition expression> ] 
+
+|
+
+B<=> <calculation expression> [ B<where> <condition expression> ] 
+
+=back
+
+
+<aggregate>
+
+B<sum> | B<maximum> | B<max> | B<minimum> | B<min> | B<avg> | B<mean> | B<first> | B<last> | B<distinct> 
+
+| B<sum_distinct> | B<avg_distinct> | B<count_distinct>
+
+| B<median> | B<variance> | B<stddev> | B<range> | B<mode>
+
+| B<values_all> [ B<(><delim>B<)> ] | B<values_uniq> [ B<(><delim>B<)> ] 
+
+
+
+<input field name>
+
+Any field specified in the input section.
+
+
+<calculation expression>
+
+Any valid Perl expression, including input and output field names, and Pequel macros. This expression can consist of numeric calculations, using arithmetic operators (C<+>, C<*>, C<->, etc) and functions (C<abs>, C<int>, C<rand>, C<sqrt>, etc.), string calculations, using string operators (eg. C<.> for concatenation) and functions (C<uc>, C<lc>, C<substr>, C<length>, etc.).
+
+
+<condition expresion>
+
+Any valid Perl expression, including input and output field names, and Pequel macros, that evaluates to true (non-zero) or false (zero).
+
+=back
+
+=over 4
+
+=head2 Aggregates
+
+=item F<sum> E<lt>I<input field>E<gt>
+
+Accumulate the total for all values in the group. Output type must be F<numeric>, F<decimal> or F<date>.
+
+
+=item F<sum_distinct> E<lt>I<input field>E<gt>
+
+Accumulate the total for I<distinct> values only in the group. Output type must be F<numeric>, F<decimal> or F<date>.
+
+
+=item F<maximum | max> E<lt>I<input field>E<gt>
+
+Output the maximum value in the group. Output type must be F<numeric>, F<decimal> or F<date>.
+
+
+=item F<minimum | min > E<lt>I<input field>E<gt>
+
+Output the minimum value in the group. Output type must be F<numeric>, F<decimal> or F<date>.
+
+
+=item F<avg | mean> E<lt>I<input field>E<gt>
+
+Output the average value in the group. Output type must be F<numeric>, F<decimal> or F<date>.
+
+
+=item F<avg_distinct> E<lt>I<input field>E<gt>
+
+Output the average value for I<distinct> values only in the group. Output type must be F<numeric>, F<decimal> or F<date>.
+
+
+=item F<first> E<lt>I<input field>E<gt>
+
+Output the first value in the group.
+
+
+=item F<last> E<lt>I<input field>E<gt>
+
+Output the last value in the group.
+
+
+=item F<count_distinct | distinct> E<lt>I<input field>E<gt>
+
+Output the count of unique values in the group. Output type must be F<numeric>.
+
+
+=item F<median> E<lt>I<input field>E<gt>
+
+The median is the middle of a distribution: half the scores are above the median and half are below the median. When there is an odd number of values, the median is simply the middle number. When there is an even number of values, the median is the mean of the two middle numbers. Output type must be F<numeric>.
+
+
+=item F<variance> E<lt>I<input field>E<gt>
+
+Variance is calculated as follows: (I<sum_squares> / I<count>) - (I<mean> ** 2), where I<sum_squares> is each value in the distribution squared (** 2); I<count> is the number of values in the distribution; I<mean> is discussed above. Output type must be F<numeric>.
+
+
+=item F<stddev> E<lt>I<input field>E<gt>
+
+Stddev is calculated as the square-root of I<variance>. Output type must be F<numeric>.
+
+
+=item F<range> E<lt>I<input field>E<gt>
+
+The range is the maximum value minus the minimum value in a distribution. Output type must be F<numeric>.
+
+
+=item F<mode> E<lt>I<input field>E<gt>
+
+The mode is the most frequently occuring score in a distribution and is used as a measure of central tendency. A distribution may have more than one mode, in which case a space delimited list is returned. Any output type is valid.
+
+
+=item F<values_all> E<lt>I<input field>E<gt>
+
+Output the list of all values in the group. The specified delimiter delimits the list. If not specified then the F<default_list_delimiter> specified in options is used.
+
+
+=item F<values_uniq> E<lt>I<input field>E<gt>
+
+Output the list of unique values in the group. The specified delimiter delimits the list. If not specified then the F<default_list_delimiter> specified in options is used.
+
+
+=item F<serial> E<lt>I<n>E<gt>
+
+Output the next serial number starting from I<n>. The serial number will be incremented by one for each successive output record. Output type must be F<numeric>.
+
+
+=item F<count *>
+
+Output the count of records in the group. Output type must be F<numeric>.
+
+
+=item F<flag *>
+
+Output I<1> or I<0> depending on the result of the where condition clause. If no where clause is specified then the output value is set to I<1>. The output will be set to I<1> if the where condition evaluates to true at least once for all records within the group. Output type must be F<numeric>.
+
+
+=item F<corr> E<lt>I<input field>E<gt>
+
+I<New in v2.5>. Returns the coefficient of correlation of a set of number pairs.                        
+
+
+=item F<covar_pop> E<lt>I<input field>E<gt>
+
+I<New in v2.5>. Returns the population covariance of a set of number pairs. 
+
+
+=item F<covar_samp> E<lt>I<input field>E<gt>
+
+I<New in v2.5>. Returns the sample covariance of a set of number pairs.
+
+
+=item F<cume_dist> E<lt>I<input field>E<gt>
+
+I<New in v2.5>. Calculates the cumulative distribution of a value in a group of values.             
+
+
+=item F<dense_rank> E<lt>I<input field>E<gt>
+
+I<New in v2.5>. Computes the rank of a row in an ordered group of rows.
+
+
+=item F<rank> E<lt>I<input field>E<gt>
+
+I<New in v2.5>. Calculates the rank of a value in a group of values. 
+
+
+=item F<=> E<lt>calculation expressionE<gt>
+
+Calculation expression follows. Use this to create output fields that are based on some calculation expression. The calculation expression can consist of any valid Perl statement, and can contain input field names, output field names and macros.
+
+
+=item I<Examples>
+
+=begin
+
+ output section
+     numeric AAL            AAL
+     string  _HELLO         = 'HELLO'
+     string  _WORLD         = 'WORLD'
+     string  HELLO_WORLD    = _HELLO . ' ' . _WORLD
+     decimal _REVENUE       sum REVENUE
+     decimal _DISCOUNT      sum DISCOUNT
+     decimal INVOICE        = _REVENUE + _DISCOUNT
+	
+=end
+
+	
+=cut --------------------------------------------------------------------------
+
+=head2 HAVING SECTION
+
+The F<having> section is applied after the grouping performed by F<group by>, for filtering groups based on the aggregate values. Break processing must be activated using the F<group by> section. The F<having> section must appear after the F<output section>. Specify one or more filter expressions. Filter expression can consist of any valid Perl statement, and must evaluate to Boolean true or false. It can contain input field names, output field names and macros. Only groups that evaluate to true on all filter statements will be output; that is, groups that evaluate to false on any one filter statement will be discarded. Each filter statement must end with a comma and/or new line.
+
+
+=item I<Format>
+
+B<having>
+    <filter expression> [, ...]
+
+
+=item I<Examples>
+
+=begin
+
+ having
+     SAMPLE == 1
+     MONTH_1_COUNT > 2 and MONTH_2_COUNT > 2
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 SUMMARY SECTION
+
+This section contains any perl code and will be executed once after all input records have been processed. Input, output field names, and macros can be used here. This section is mostly relevant when F<group by> is omitted, so that a C<group all> is in effect. The F<suppress_output> option should also be used. If the script contains a F<group by> section and more than one group of records is produced, only the last group's values will appear in the summary section.
+
+
+=item I<Format>
+
+B<summary section>
+    < Perl code >
+
+
+=item I<Examples>
+
+=begin
+
+ summary section
+     print "*** Summary Report ***";
+     print "Total number of Products:   ", sprintf("%12d", COUNT_PRODUCTS);
+     print "Total number of Locations:  ", sprintf("%12d", COUNT_LOCATIONS);
+     print "*** End of report ***";
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head1 GENERATED PROGRAM OUTLINE
+
+
+=item * Open Input Stream
+
+=item * Load/Connect Tables
+
+=item * Read Next Input Record
+
+=item * Output Aggregated Record If Grouping Key Changes
+
+=item * Calculate Derived Input Fields
+
+=item * Perform Aggregations
+
+=item * I<Process Outline:>
+
+=begin
+    open input stream
+
+    load tables
+
+    while (read_input_record)
+
+        split input record into fields
+
+        pre-process input fields
+
+        if (grouping_key not equals previous_grouping_key) then
+
+            post-process output fields
+
+            print aggregated record
+           
+            initialize aggregate record buffer
+
+            set previous_grouping_key
+
+         end if
+
+         calculate derived input fields
+ 
+         perform aggregations
+
+    end while
+
+    post-process output fields
+
+    print (last) aggregated record
+
+    close input stream
+
+    close output stream
+
+=end
+
+
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head1 ARRAY FIELDS
+
+TBC
+
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head1 DATABASE CONNECTIVITY
+
+TBC
+
+
+=head2 Connecting To Oracle Databases
+
+TBC
+
+
+=head2 Connecting To Sqlite Databases
+
+TBC
+
+
+=head2 Connecting To Mysql Databases
+
+TBC
+
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head1 MACROS
+
+Macros are in the format F<&>E<lt>macro_nameE<gt>F<(>E<lt>arg_listE<gt>F<)>.
+
+=head2 F<&lookup>
+
+Tables that were built using the F<init table> and F<load table> sections are accessed with the F<&lookup()> macro. This macro requires the key as a parameter and will return the matching value. Use the Perl I<exists()> function to check for just the existence of a key in table, disregarding the value.
+
+
+=item I<Format>
+
+
+B<&lookup>B<(><table>, <key>B<)>
+
+
+B<&lookup>B<(><table>, <key>B<)->E<gt><field>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     GROUP => MONTH_CALLDATE <= 6 ? 1 : 2,
+     POSTCODE => &lookup(POSTCODES, AAL),
+     IN_SAMPLE => exists &lookup(ZIPSAMPLE, ZIP),
+     IN_SAMPLE_2 => exists &lookup(ZIPSAMPLE, ZIP) ? 'yes': 'no'
+     STREET => &lookup(POSTCODES, AAL)->STREET_NAME
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&date>
+
+Use the F<&date()> macro to indicate field value is a date. This is required when using date fields in arithmetic calculations and expressions. The F<&date()> macro actually converts a date value into C<YYYYMMDD> format. The second, optional, argument contains the date format specification. If the format specification is omitted then the F<default_datetype> option specification is used. The format specification describes the positions and lengths of the day (C<D>), month (C<M>), and year (C<Y>) parts, and any optional delimiters. Day and month data must be two digit zero front padded. The C<MMM> month format indicates abbreviated three character month name (C<JAN>, C<FEB>, C<MAR>, etc). The delimiter can be any special character such as C</>, C<->, C<:>, etc. Pequel built-in date types include: C<DD/MM/YYYY>, C<DD/MM/YY>, C<DDMMYY>, C<DDMMYYYY>, C<DDMMMYY>, C<YYYYMMDD>, C<YYMMDD>, C<MM/DD/YYYY>, C<MM/DD/YY>, C<MMDDYYYY>, C<MMDDYY>. 
+
+
+=item I<Format>
+
+B<&date(><date> [B<, ><datefmt>]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ filter
+     &date(SALES_DATE) >= &date(01/01/2002),
+     &date(SALES_DATE) <= 20023101  
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&d> F<&m> F<&y>
+
+
+Returns the day, month and year portion for I<date> field, respectively. The F<&m> macro will return the abbreviated month name (C<JAN>, C<FEB>, etc) if the date format contains C<MMM>, otherwise the numeric month number is returned.
+
+
+=item I<Format>
+
+B<&d(><date> [B<, ><datefmt>]B<)>
+
+B<&m(><date> [B<, ><datefmt>]B<)>
+
+B<&y(><date> [B<, ><datefmt>]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     DAY_TODAY  =>  &d(&today())
+     MOMTH_TODAY  =>  &m(&today())
+     YEAR_TODAY  =>  &y(&today())
+
+
+=end
+
+=back
+
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&today>
+
+
+Returns the current date.
+
+
+=item I<Format>
+
+B<&today(>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     TODAY  =>  &today()
+
+
+=end
+
+=back
+
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&months_since>
+
+
+Returns the number of months between the current date and the date specified in the argument. An optional second argument containing the date format specification may be specified.
+
+
+=item I<Format>
+
+B<&months_since(><field> [B<, ><date_format>]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     MONTHS_IN_USE  =>  &months_since(PURCHASE_DATE)
+
+
+=end
+
+=back
+
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&add_months>
+
+
+I<New in v2.5>. The F<add_months> macro returns the first argument date I<field> plus I<n> months. The argument I<n> can be any integer. If I<field> is the last day of the month or if the resulting month has fewer days than the day component of I<field>, then the result is the last day of the resulting month. Otherwise, the result has the same day component as I<field>.  
+
+
+=item I<Format>
+
+B<&add_months(><field> <n>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     NEXT_MONTH  =>  &add_months(PURCHASE_DATE, 1)
+
+
+=end
+
+=back
+
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&months_between>
+
+
+I<New in v2.5>. The F<months_between> macro returns the absolute number of months between the two dates I<field-1> and I<field-2>.
+
+
+=item I<Format>
+
+B<&months_between(><field-1>, <field-2><n>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     MONTHS_PURCHASE  =>  &months_between(EARLIEST_PURCHASE_DATE, LATEST_PURCHASE_DATE)
+
+
+=end
+
+=back
+
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&last_day>
+
+
+The F<last_day> macro returns the last I<day> number for the month in the date I<field>.
+
+
+=item I<Format>
+
+B<&last_day(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     LAST_DAY  =>  &last_day(PURCHASE_DATE)
+
+
+=end
+
+=back
+
+
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&date_last_day>
+
+
+The F<date_last_day> macro returns the I<date> for the last day for the month in the date I<field>.
+
+
+=item I<Format>
+
+B<&date_last_day(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     LAST_DAY_DATE  =>  &date_last_day(PURCHASE_DATE)
+
+
+=end
+
+=back
+
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&date_next_day>
+
+
+The F<date_next_day> macro returns the I<date> for the next day for the month in the date I<field>. If the date I<field> is the last day in the month the the returned date will be the first day for the following month.
+
+
+=item I<Format>
+
+B<&date_next_day(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     NEXT_DAY_DATE  =>  &next_day(PURCHASE_DATE)
+
+
+=end
+
+=back
+
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&day_number>
+
+
+The F<day_number> macro returns the day number within the year for the I<date>.
+
+
+=item I<Format>
+
+B<&day_number(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     DAY_NUMBER  =>  &day_number(PURCHASE_DATE)
+
+
+=end
+
+=back
+
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&month>
+
+Initialise the F<&month> table using the F<init _MONTH> section. Then use the F<&month()> macro to return the month number for a date.
+
+
+=item I<Format>
+
+B<&month(><date> [B<, ><datefmt>]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     MONTH_CALLDATE => &month(CALLDATE)
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&period>
+
+Initialise the F<&period> table using the F<init _PERIOD> section. Then use the F<&period> macro to return the month number for a date.
+
+
+=item I<Format>
+
+B<&period(><date> [B<, ><datefmt>]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     PERIOD_CALLDATE => &period(CALLDATE)
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&select>
+
+Similar to a I<switch> statement. Parameters consist of a list of expression-value pairs, followed by one default value. Each expression is evaluated in turn and the first to evaluate to true will return its associated valued, otherwise the default value is returned. 
+
+
+=item I<Format>
+
+B<&select(><expr>, <value> [ [, <expr>, <value> ] [ ,...] ], <default value>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     HOUSEHOLD_TYPE => &select(KINSHIP==5, 1, KINSHIP==6, 2, 0)
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&map>
+
+
+The F<map> macro will process (lookup) each element within the array field I<field>, looking up each element in I<table> and setting that element to the looked up value. Returns an array of results. Non-existing key values will be mapped to null.
+
+
+=item I<Format>
+
+B<&map(><table>, <field> [, ...] B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     LEISURE_INTEREST => &map(LI_RECODE, LEISURE_INTEREST_IN)
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&to_array>
+
+
+I<New in v2>. The F<to_array> macro will convert a field value into an array list by splitting the field value on the list-delimiter.
+
+
+=item I<Format>
+
+B<&to_array(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ output section
+     string LEISURE_INTEREST      values_uniq &to_array(LEISURE_INTEREST_IN)
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_size>
+
+
+I<New in v2>. The F<arr_size> macro will return the total number of elements in the array I<field>, or combined arrays if more than one array I<field> is specified.
+
+
+=item I<Format>
+
+B<&arr_size(><field> [B<, ><field>, ...]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ output section
+     numeric COUNT_PHONES      &arr_size(PHONE_LIST_1, PHONE_LIST_2)
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_sort>
+
+
+I<New in v2>. The F<arr_sort> macro will sort the elements within the array field I<field>.
+
+
+=item I<Format>
+
+B<&arr_sort(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+
+ input section
+     LEISURE_INTEREST => &arr_sort(&map(LI_RECODE, LEISURE_INTEREST_IN))
+
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_reverse>
+
+
+I<New in v2>. The F<arr_reverse> macro will return the elements in array I<field> in reverse order.
+
+
+=item I<Format>
+
+B<&arr_reverse(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     LEISURE_INTEREST => &arr_reverse(&map(LI_RECODE, LEISURE_INTEREST_IN))
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_first>
+
+Returns the first element in an array field.
+
+
+=item I<Format>
+
+B<&arr_first(><field> [B<, ><field>, ...]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     FIRST_MONTH => &arr_first(&to_array(MONTH_LIST))
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_last>
+
+Returns the last element in an array field.
+
+
+=item I<Format>
+
+B<&arr_last(><field> [B<, ><field>, ...]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     LAST_MONTH => &arr_last(&to_array(MONTH_LIST))
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_min>
+
+Returns the element with the minimum (numeric) value in an array field.
+
+
+=item I<Format>
+
+B<&arr_min(><field> [B<, ><field>, ...]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     EARLIEST_MONTH => &arr_min(&to_array(MONTH_LIST))
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_max>
+
+Returns the element with the maximum (numeric) value in an array field.
+
+
+=item I<Format>
+
+B<&arr_max(><field> [B<, ><field>, ...]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     LATEST_MONTH => &arr_max(&to_array(MONTH_LIST))
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_avg>
+
+Returns the average value for all elements in an array field.
+
+
+=item I<Format>
+
+B<&arr_avg(><field> [B<, ><field>, ...]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     AVG_PRICE => &arr_avg(&to_array(PRICE_LIST))
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_sum>
+
+Returns the total value for all elements in an array field.
+
+
+=item I<Format>
+
+B<&arr_sum(><field> [B<, ><field>, ...]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     SUM_PRICE => &arr_sum(PRICE_1, PRICE_2, PRICE_3)
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_median>
+
+I<New in v2.5>.
+
+
+=item I<Format>
+
+B<&arr_median(><field> [B<, ><field>, ...]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_variance>
+
+I<New in v2.5>.
+
+
+=item I<Format>
+
+B<&arr_variance(><field> [B<, ><field>, ...]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_stddev>
+
+I<New in v2.5>.
+
+
+=item I<Format>
+
+B<&arr_stddev(><field> [B<, ><field>, ...]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_range>
+
+I<New in v2.5>.
+
+
+=item I<Format>
+
+B<&arr_range(><field> [B<, ><field>, ...]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+
+=end
+
+=cut --------------------------------------------------------------------------
+=head2 F<&arr_mode>
+
+I<New in v2.5>.
+
+
+=item I<Format>
+
+B<&arr_mode(><field> [B<, ><field>, ...]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_values_uniq>
+
+Returns the unique values for elements in the array field(s) argument.
+
+
+=item I<Format>
+
+B<&arr_values_uniq(><field> [B<, ><field>, ...]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     UNIQ_LEISURE_INTEREST => &arr_values_uniq(LEISURE_INTEREST_1, LEISURE_INTEREST_2)
+
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_shift>
+
+
+I<New in v2>. The F<arr_shift> macro takes the first element of the array and returns it, removing the first element and shortening the array I<field> by one element, moving everything down one place.
+
+
+=item I<Format>
+
+B<&arr_shift(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     FIRST_LEISURE_INTEREST => &arr_shift(LEISURE_INTEREST)
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_push>
+
+
+I<New in v2>. The F<arr_push> macro adds I<value> or values to the end of an array I<field> and increases the length of the array by the number of elements added, then return the new array.
+
+
+=item I<Format>
+
+B<&arr_push(><field>, <value> [,...]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     LEISURE_INTEREST => &arr_push(ANOTHER_INTEREST)
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_pop>
+
+
+I<New in v2>. The F<arr_pop> macro returns the last element of an array, deleting this last element from I<field>, thus shortening the array I<field> by one element.
+
+
+=item I<Format>
+
+B<&arr_pop(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     LAST_LEISURE_INTEREST => &arr_pop(LEISURE_INTEREST)
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_lookup>
+
+
+The F<arr_lookup> macro returns C<1> (true) if the 1st parameter value exists in the array 2nd parameter, else returns C<0> (false).
+
+
+=item I<Format>
+
+B<&arr_lookup(><value, array-field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     LAST_LEISURE_INTEREST => &arr_lookup(14, &to_array(SOURCE_LIST))
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&extract_init>
+
+
+The F<extract_init> macro returns the 1st character of each word in the contents of the parameter. I<field> can be any valid expression. An example of usage for this macro is to extract the initials from a full name field.
+
+
+=item I<Format>
+
+B<&extract_init(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     NAME_INITIALS => &extract_init(FORENAME . ' ' . MIDDLE_NAMES)
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&remove_numeric>
+
+
+This macro will remove all numeric characters from the field specified in argument.
+
+
+=item I<Format>
+
+B<&remove_numeric(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     CLEAN_NAME  =>  &remove_numeric(NAME)
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&remove_special>
+
+
+This macro will remove all special characters from the field specified in argument. Special characters consist of B<!@#$%^*(){}[]:;\?/+>E<lt>E<gt>.
+
+
+=item I<Format>
+
+B<&remove_special(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     CLEAN_NAME  =>  &remove_special(NAME)
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&remove_spaces>
+
+
+This macro will remove all space characters from the field specified in argument.
+
+
+=item I<Format>
+
+B<&remove_spaces(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     CLEAN_NAME  =>  &remove_spaces(NAME)
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&match>, F<&match_all>
+
+
+These macros are identical and will return true (1) if the I<field> content matches any of the I<match list> items, else returns false (0).
+
+
+=item I<Format>
+
+B<&match(><field>, <match list>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     EAST_COAST => &match(STATE, QLD, NSW, VIC) ? 'yes' : 'no';
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&remove_non_numeric>, F<&extract_numeric>, F<&to_number>
+
+
+These macros are identical and will remove all non-numeric characters from the field specified in argument.
+
+
+=item I<Format>
+
+B<&extract_numeric(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     CLEAN_SERIAL  =>  &extract_numeric(SERIAL)
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&length>
+
+
+I<New in v2>. The F<length> macro will return the length in characters of a field (string) value.
+
+
+=item I<Format>
+
+B<&length(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     NAME_FIELD_LENGTH => &length(NAME)
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&substr>
+
+I<New in v2>. The F<substr> macro extracts a substring of length I<len> out of I<field> and returns it. If I<offset> is negative, counts from the end of the string. 
+
+
+=item I<Format>
+
+B<&substr(><field>, <offset>, <len>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     LINK_TYPE => &substr(LINK, 0, 3)
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&index>
+
+I<New in v2>. The F<index> macro returns the position of I<substr> in I<field> at or after I<offset>. If the substring is not found, returns B<-1>.
+
+
+=item I<Format>
+
+B<&index(><field>, <substr>, <offset>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     HAS
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&rindex>
+
+
+I<New in v2>. The F<rindex> macro returns the postion of the last I<substr> in I<field> at or before I<offset>.
+
+
+=item I<Format>
+
+B<&rindex(><field>, <substr>, <offset>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&lc>
+
+
+I<New in v2>. The F<lc> macro returns the lower case version of I<field>.
+
+
+=item I<Format>
+
+B<&lc(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+	 FIRST_NAME,
+     MIDDLE_NAME,
+     LAST_NAME,
+     NAME_FORMATTED =>  &uc_first(&lc(FIRST_NAME)) \
+                        . ' ' .  &uc_first(&lc(MIDDLE_NAME)) \
+                        . ' ' .  &uc_first(&lc(LAST_NAME))
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&lc_first>
+
+
+I<New in v2>. The F<lc_first> macro returns I<field> with the first character lower case.
+
+
+=item I<Format>
+
+B<&lc_first(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&uc>
+
+
+I<New in v2>. The F<uc> macro returns the upper case version of I<field>.
+
+
+=item I<Format>
+
+B<&uc(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+	 FIRST_NAME,
+     MIDDLE_NAME,
+     LAST_NAME,
+     NAME_FORMATTED =>  &uc(FIRST_NAME) \
+                        . ' ' .  &uc(MIDDLE_NAME) \
+                        . ' ' .  &uc(LAST_NAME)
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&uc_first>
+
+
+I<New in v2>. The F<uc_first> macro returns I<field> with the first character upper case.
+
+
+=item I<Format>
+
+B<&uc_first(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+	 FIRST_NAME,
+     MIDDLE_NAME,
+     LAST_NAME,
+     NAME_FORMATTED =>  &uc_first(&lc(FIRST_NAME)) \
+                        . ' ' .  &uc_first(&lc(MIDDLE_NAME)) \
+                        . ' ' .  &uc_first(&lc(LAST_NAME))
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&clip_str>
+
+
+I<New in v2>. The F<clip_str> macro returns I<field> with all I<leading> and I<trailing> spaces removed.
+
+
+=item I<Format>
+
+B<&clip_str(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+	 FIRST_NAME,
+     MIDDLE_NAME,
+     LAST_NAME,
+     NAME_FORMATTED =>  &uc_first(&lc(&clip_str(FIRST_NAME))) \
+                        . ' ' .  &uc_first(&lc(MIDDLE_NAME)) \
+                        . ' ' .  &uc_first(&lc(LAST_NAME))
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&left_clip_str>
+
+
+I<New in v2>. The F<left_clip_str> macro returns I<field> with all I<leading> spaces removed.
+
+
+=item I<Format>
+
+B<&left_clip_str(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+	 FIRST_NAME,
+     MIDDLE_NAME,
+     LAST_NAME,
+     NAME_FORMATTED =>  &uc_first(&lc(&left_clip_str(FIRST_NAME))) \
+                        . ' ' .  &uc_first(&lc(MIDDLE_NAME)) \
+                        . ' ' .  &uc_first(&lc(LAST_NAME))
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&right_clip_str>
+
+
+I<New in v2>. The F<right_clip_str> macro returns I<field> with all I<trailing> spaces removed.
+
+
+=item I<Format>
+
+B<&right_clip_str(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+	 FIRST_NAME,
+     MIDDLE_NAME,
+     LAST_NAME,
+     NAME_FORMATTED =>  &uc_first(&lc(&right_clip_str(FIRST_NAME))) \
+                        . ' ' .  &uc_first(&lc(MIDDLE_NAME)) \
+                        . ' ' .  &uc_first(&lc(LAST_NAME))
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&left_pad_str>
+
+
+I<New in v2>. The F<left_pad_str> macro returns I<field> padded with the specified pad character on the left, and up to I<len> maximum length. 
+
+
+=item I<Format>
+
+B<&left_pad_str(><field>, <pad-char>, <len>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+	 FMT_AMOUNT  => &left_pad_str(AMOUNT, '*', 16)
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&right_pad_str>
+
+
+I<New in v2>. The F<right_pad> macro returns I<field> padded with the specified pad character on the right, and up to I<len> maximum length. 
+
+
+=item I<Format>
+
+B<&right_pad_str(><field>, <pad-char>, <len>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+	 FMT_NAME  => &right_pad_str(NAME, ' ', 32)
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&trim>
+
+
+I<New in v2>. The F<trim> macro returns I<field> with the specified leading and trailing I<trim-char> character(s) removed. If I<trim-char> is not specified, then the default value is space character. 
+
+
+=item I<Format>
+
+B<&trim(><field> [B<, ><trim-char(s)> ]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+	 SERIAL  => &trim(RAW_SERIAL, 0)
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&trim_leading>
+
+
+I<New in v2>. The F<trim_leading> macro returns I<field> with the specified leading I<trim-char> character(s) removed. If I<trim-char> is not specified, then the default value is space character. 
+
+
+=item I<Format>
+
+B<&trim_leading(><field> [B<, ><trim-char(s)> ]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+	 SERIAL  => &trim_leading(RAW_SERIAL, 0)
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&trim_trailing>
+
+
+I<New in v2>. The F<trim_trailing> macro returns I<field> with the specified trailing I<trim-char> character(s) removed. If I<trim-char> is not specified, then the default value is space character. 
+
+
+=item I<Format>
+
+B<&trim_trailing(><field> [B<, ><trim-char(s)> ]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+	 SERIAL  => &trim_trailing(RAW_SERIAL, 0)
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&translate>
+
+
+I<New in v2>.  The F<translate> macro returns the first argument I<field> with all occurrences of each character in I<from_list> replaced by its corresponding character in I<to_list>. Characters in I<field> that are not in I<from_list> are not replaced. The argument I<from_list> can contain more characters than I<to_list>. In this case, the extra characters at the end of I<from_list> have no corresponding characters in I<to_list>. If these extra characters appear in I<field>, then they are replaced by the last character in I<to_list>, unless the modifier value of I<d> is specified -- in this case they are removed.
+
+
+=item I<Format>
+
+B<&translate(><field>, <from-list>, <to-list> [B<, ><modifier> ]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     NO_NUM_NAME  =>  &translate(NAME, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ', '0123456789')
+        # remove number characters from NAME
+
+     ENC_LICENCE  =>  &translate(LICENCE, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ', \
+                                          '9999999999XXXXXXXXXXXXXXXXXXXXXXXXXX')
+        # encode a field value
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&soundex>
+
+
+I<New in v2.5>. The F<soundex> macro returns a character string containing the phonetic representation of I<field>. This function lets you compare words that are spelled differently, but sound alike in English.
+
+
+The phonetic representation is defined in The Art of Computer Programming, Volume 3: Sorting and Searching, by Donald E. Knuth, as follows:
+
+
+=begin
+
+    Retain the first letter of the string and remove all other occurrences of the following 
+    letters: a, e, h, i, o, u, w, y. 
+    Assign numbers to the remaining letters (after the first) as follows: 
+    b, f, p, v = 1
+    c, g, j, k, q, s, x, z = 2
+    d, t = 3
+    l = 4
+    m, n = 5
+    r = 6
+
+    If two or more letters with the same number were adjacent in the original 
+    name (before step 1), or adjacent except for any intervening h and w, then 
+    omit all but the first. 
+    Return the first four bytes padded with 0. 
+
+
+
+=end
+
+
+
+=item I<Format>
+
+B<&soundex(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ filter
+     LAST_NAME eq &soundex(SMYTHE)
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&initcap>
+
+
+I<New in v2>. The F<initcap> macro will return the string expression I<exp> with all the words capitalized in their first letter (with the rest of the word in lowercase).
+
+
+=item I<Format>
+
+B<&initcap(><exp>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     ADDRESS => &initcap(join(' ', ADDRESS_LINE_1, ADDRESS_LINE_2, CITY, STATE, ZIP, COUNTRY))
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&banding>
+
+
+The F<banding> macro will return the band number (starting from C<1>) for I<field>, depending on the value of I<field> in relation to the I<band-divisor>. The I<band-divisor> must be a non zero numeric value. The returned band number is calculated as I<int( ( field - 1 ) / band-divisor ) + 1>.
+
+
+=item I<Format>
+
+B<&banding(><field>, <band-divisor>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     LAST_SALE_PRICE_BAND => &banding(%propertyvalue(CONCATENATED_LINK)->SALE_PRICE, 50000)
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&env>
+
+
+I<New in v2>. The F<env> macro will return the content of the environment variable I<env_name>.
+
+
+=item I<Format>
+
+B<&env(><env_name>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     USER_ID => &env(USER)
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&option>
+
+
+I<New in v2>. The F<option> macro will return the value for the Pequel option I<pql_option_name>.
+
+
+=item I<Format>
+
+B<&option(><pql_option_name>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+ input section
+     SCRIPT_VERSION => &option(doc_version)
+
+
+=end
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&sqrt> F<&rand> F<&log> F<&sin> F<&exp> F<&cos> F<&abs> F<&atan2> F<&ord> F<&chr> F<&int>
+
+
+I<New in v2>. Arithmetic functions.
+
+
+The F<sqrt> macro returns the  square root of I<expr>.
+
+
+The F<rand> function returns a random number between 0 and the value of the positive expression I<expr> you pass; if you don't pass an expression, F<rand> uses 1.
+
+
+The F<log> macro returns the natural logarithm of an expression.
+
+
+The F<sin> macro returns the sine of an expression I<expr>.
+
+
+The F<exp> macro returns I<e> to the power of I<expr>.
+
+
+The F<cos> macro returns the cosine of a value in radians (two pi radians comprise a full circle).
+
+
+The F<abs> macro returns the absolute value of I<expr>.
+
+
+The F<atan2> macro returns the arctangent of B<Y/X> (the value returned is between -pi and pi).
+
+
+The F<ord> macro returns the ASCII value of the first character (only) of an expression I<expr>.
+
+
+The F<chr> macro returns the character corresponding to the ASCII number you pass it in I<expr>.
+
+
+The F<int> macro returns the integer (numeric) value of I<expr>.
+
+
+=item I<Format>
+
+B<&<macro>(><expr>B<)>
+
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&sign>
+
+The F<sign> macro returns -1 if the argument field value is less than zero. If field value is zero , then the macro returns 0. If field value is greater than zero, then F<sign> returns 1.
+
+
+=item I<Format>
+
+B<&sign(><field>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+
+=end
+
+
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&trunc>
+
+The F<trunc> macro returns the argument field value truncated to I<dec> decimal places. If I<dec> is omitted, then I<field> is truncated to 0 places. I<dec> can be negative to truncate (make zero) I<dec> digits left of the decimal point.
+
+
+=item I<Format>
+
+B<&trunc(><field>, <dec>B<)>
+
+
+=item I<Examples>
+
+=begin
+
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_set_and>
+
+I<New in v2.5>.
+
+
+=item I<Format>
+
+B<&arr_set_and(><field> [B<, ><field>, ...]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_set_xor>
+
+I<New in v2.5>.
+
+
+=item I<Format>
+
+B<&arr_set_and(><field> [B<, ><field>, ...]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=head2 F<&arr_set_or>
+
+I<New in v2.5>.
+
+
+=item I<Format>
+
+B<&arr_set_or(><field> [B<, ><field>, ...]B<)>
+
+
+=item I<Examples>
+
+=begin
+
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head1 EXAMPLE PEQUEL SCRIPTS
+
+
+=head2 Aggregates Example Script
+
+Demonstrates aggregation and use of various aggregate function. For each PRODUCT_CODE group of records, determine: the minimum COST_PRICE, the maximum COST_PRICE, the average SALES_PRICE and SALES_QTY; accumulate the sum of SALES_TOTAL; calculate I<range> for COST_PRICE. The input field SALES_TOTAL is a I<derived input field>.
+
+
+=begin
+
+ options
+    header // (default) write header record to output.
+    optimize // (default) optimize generated code.
+    nulls
+
+ input section
+    PRODUCT_CODE,
+    COST_PRICE,
+    DESCRIPTION,
+    SALES_CODE,
+    SALES_PRICE,
+    SALES_QTY,
+    SALES_DATE,
+    LOCATION,
+    SALES_TOTAL => SALES_QTY * SALES_PRICE
+
+ sort by
+    PRODUCT_CODE
+    LOCATION
+
+ group by
+    PRODUCT_CODE
+
+ output section
+    string LOCATION           LOCATION
+    string PRODUCT_CODE       PRODUCT_CODE
+    decimal MIN_COST_PRICE    min COST_PRICE
+    decimal MAX_COST_PRICE    max COST_PRICE
+    decimal AVG_SALES_PRICE   mean SALES_PRICE
+    numeric _AVG_SALES_QTY    mean SALES_QTY
+    decimal SALES_TOTAL       sum SALES_TOTAL
+    decimal SALES_TOTAL_2     sum SALES_TOTAL
+    decimal RANGE_COST        range COST_PRICE
+    numeric MODE_SALES_CODE   mode SALES_CODE
+    numeric AVGS              = _AVG_SALES_QTY * 2
+
+=end
+
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head2 Apache CLF Log Input Example Script
+
+Demonstrates reading Apache CLF Log file -- split record on space delimiter, parse qouted fields and square bracketed fields. This is done by 1) specifying a space delimiter for the 'input_delimiter' and 2) specifying a double qoute (must be escaped) characted and a open square bracket character for the 'input_delimiter_extra' option. This option specifies other characters that may delimit fields.  Pequel will match open bracket character specfication with their respective closing bracket.
+
+Requires Inline::C and a C compiler to be installed because the 'input_delimiter_extra' option will instruct Pequel to generate C code.
+
+=begin
+
+ options
+    header // (default) write header record to output.
+    optimize // (default) optimize generated code.
+    nulls
+    transfer // Copy input to output
+    input_delimiter( ) // Input delimiter is space.
+    input_delimiter_extra(\"[) // For Apache Common Log Format (CLF).
+    inline_CC(CC) // C compiler.
+    inline_clean_after_build(0) // Pass-through Inline options:
+    inline_clean_build_area(0)
+    inline_print_info(1)
+    inline_build_noisy(1)
+    inline_build_timers(0)
+    inline_force_build(1)
+    inline_directory()
+    inline_optimize("-xO5 -xinline=%auto") // Solaris 64 bit
+    inline_ccflags("-xchip=ultra3 -DSS_64BIT_SERVER -DBIT64 -DMACHINE64")
+
+ input section
+    IP_ADDRESS,
+    TIMESTAMP,
+    REQUEST,
+    F4,
+    F5,
+    F6
+
+ output section
+
+=end
+
+
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head2 Array Fields Example Script
+
+Demonstrates the use of array-fields. An array-field is denoted by the preceding '@' character.  The 'salesman_list' field in this example is an 'array field' delimited by the default array field delimiter ','. Array type macros (&arr_...) will expect all arguments to be array-fields.  Array macros can also be called as a method following the array-field.
+
+
+=begin
+
+ options
+    header // (default) write header record to output.
+    optimize // (default) optimize generated code.
+    nulls
+
+ input section
+    product_code,
+    cost_price,
+    description,
+    sales_code,
+    sales_price,
+    sales_qty,
+    sales_date,
+    location,
+    salesman_list,
+    num_salesmen       => &arr_size(@salesman_list)
+    salesmen_sorted    => &arr_sort(salesman_list) // implicit array -- all array macros expect array param vars
+    salesmen_sorted_2  => @salesman_list->sort
+    salesmen_uniq      => &arr_values_uniq(@salesman_list)
+    salesmen_uniq_2    => @salesman_list->values_uniq
+    salesmen_reverse   => &arr_reverse(&arr_sort(@salesman_list)) 
+
+  sort by
+    product_code
+
+  output section
+    string location             location
+    string product_code         product_code
+    string salesman_list        salesman_list
+    numeric num_salesmen        num_salesmen
+    string salesmen_sorted      salesmen_sorted
+    string salesmen_sorted_2    salesmen_sorted_2
+    string salesmen_uniq        salesmen_uniq
+    string salesmen_uniq_2      salesmen_uniq_2
+    string salesmen_reverse     salesmen_reverse
+
+=end
+
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head2 Pequel Script Chaining Example Scripts
+
+This example demonstrates Pequel script 'chaining'. By specifying a pequel script name for the 'input_file' option, the input data stream will result by executing the specified script.  Both scripts are executed simultaneously -- with the input_file script as the child and this script as the parent. Beware of circular chaining! It is up to the user to ensure that this does not occur.  Currently, 'sort by' is not supported in the parent script.
+
+
+=item I<chain_pequel_pt1.pql>
+
+=begin
+
+ options
+    input_file(sample.data)	// Need to specify this script is used as a pequel-table loader.
+    optimize // (default) optimize generated code.
+
+ input section
+    PRODUCT_CODE,
+    COST_PRICE,
+    DESCRIPTION,
+    SALES_CODE,
+    SALES_PRICE,
+    SALES_QTY,
+    SALES_DATE,
+    LOCATION,
+    SALES_TOTAL => SALES_QTY * SALES_PRICE
+
+ sort by
+    LOCATION
+    PRODUCT_CODE
+
+ group by
+    LOCATION
+    PRODUCT_CODE
+
+ output section
+    string LOCATION         LOCATION
+    string PRODUCT_CODE     PRODUCT_CODE
+    decimal SALES_TOTAL     sum SALES_TOTAL
+
+=end
+
+
+=item I<chain_pequel_pt2.pql>
+
+=begin
+ options
+    input_file(chain_pequel_pt1.pql) // Need to specify this script is used as a pequel-table loader.
+    header // (default) write header record to output.
+    hash
+    optimize // (default) optimize generated code.
+
+
+ input section
+    LOCATION
+    PRODUCT_CODE
+    SALES_TOTAL
+
+ group by
+    LOCATION
+
+ output section
+    string LOCATION             LOCATION
+    numeric COUNT_PRODUCT_CODE  distinct PRODUCT_CODE
+    decimal SALES_TOTAL         sum SALES_TOTAL
+
+=end
+
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head2 Conditional Aggregation Example Script
+
+Demonstrates the use of conditional aggregations. A conditional aggregate is done with the 'where' clause. This example analyses the COST_PRICE in various ways for the two states: NSW and VIC.
+
+
+=begin
+
+ options
+    header // (default) write header record to output.
+    optimize // (default) optimize generated code.
+
+ input section
+    PRODUCT_CODE,
+    COST_PRICE,
+    DESCRIPTION,
+    SALES_CODE,
+    SALES_PRICE,
+    SALES_QTY,
+    SALES_DATE,
+    LOCATION
+
+ sort by
+    PRODUCT_CODE
+
+ group by
+    PRODUCT_CODE
+
+ output section
+    string PRODUCT_CODE             PRODUCT_CODE
+    numeric AVG_COST_PRICE          avg COST_PRICE
+    numeric MIN_COST_PRICE          min COST_PRICE
+    numeric MAX_COST_PRICE          max COST_PRICE
+    numeric SUM_COST_PRICE          sum COST_PRICE
+    
+    numeric AVG_COST_PRICE_NSW      avg COST_PRICE where LOCATION eq 'NSW'
+    numeric MIN_COST_PRICE_NSW      min COST_PRICE where LOCATION eq 'NSW'
+    numeric MAX_COST_PRICE_NSW      max COST_PRICE where LOCATION eq 'NSW'
+    numeric SUM_COST_PRICE_NSW      sum COST_PRICE where LOCATION eq 'NSW'
+    
+    numeric AVG_COST_PRICE_VIC      avg COST_PRICE where LOCATION eq 'VIC'
+    numeric MIN_COST_PRICE_VIC      min COST_PRICE where LOCATION eq 'VIC'
+    numeric MAX_COST_PRICE_VIC      max COST_PRICE where LOCATION eq 'VIC'
+    numeric SUM_COST_PRICE_VIC      sum COST_PRICE where LOCATION eq 'VIC'
+    
+    numeric RANGE_COST_PRICE        = MAX_COST_PRICE - MIN_COST_PRICE
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head2 External Tables Example Script
+
+Demonstrates the use of external tables.  The default method for loading an external table is to embed the table contents in the generated code. SAMPLE1 is a example of an embedded table. External tables may also be loaded dynamically (at runtime) -- the '_' table name prefix instructs Pequel to load the table dynamically. SAMPLE2 is an axample of a dynamic table.  The optional environment variable 'PEQUEL_TABLE_PATH' may be set to the path for the location of the table data-source-files. This path will be used to locate the data-source-files unless the data source filename is an absolute path name.
+
+
+=begin
+
+ options
+    header // (default) write header record to output.
+    optimize // (default) optimize generated code.
+
+ load table
+    // External embedded table -- key is field-1 (PRODUCT_CODE). 'STRING' is the key-field
+    // type. 'sample.data' is the data-source-file to load the table from. Table has two 
+    // columns: DESCRIPTION (field #3 in source file), and LOCATION (#8 in source file). 
+    // The default for loading an external table is to embedd the table contents in the generated code.
+    SAMPLE1 sample.data 1 STRING DESCRIPTION=3 LOCATION=8
+
+ load table
+    // External dynamic table. The '_' prefix instructs Pequel
+    // to load the table dynamically.
+    _SAMPLE2 sample.data 1 STRING DESCRIPTION=3 LOCATION=8
+
+ input section
+    PRODUCT_CODE,
+    COST_PRICE,
+    DESCRIPTION,
+    SALES_CODE,
+    SALES_PRICE,
+    SALES_QTY,
+    SALES_DATE,
+    LOCATION,
+    S1_DESCRIPTION => %SAMPLE1(PRODUCT_CODE)->DESCRIPTION
+    S1_LOCATION => %SAMPLE1(PRODUCT_CODE)->LOCATION
+    S2_DESCRIPTION => %SAMPLE2(PRODUCT_CODE)->DESCRIPTION
+    S2_LOCATION => %SAMPLE2(PRODUCT_CODE)->LOCATION
+
+ sort by 
+    PRODUCT_CODE
+
+ group by
+    PRODUCT_CODE
+
+ output section
+    string PRODUCT_CODE         PRODUCT_CODE,
+    numeric RECORD_COUNT        count *
+    numeric SALES_QTY_SAMPLE1   sum SALES_QTY where exists %SAMPLE1(PRODUCT_CODE) 
+    numeric SALES_QTY_SAMPLE2   sum SALES_QTY where exists %SAMPLE2(PRODUCT_CODE) 
+    string S1_DESCRIPTION       S1_DESCRIPTION
+    string S1_LOCATION          S1_LOCATION
+    string S2_DESCRIPTION       S2_DESCRIPTION
+    string S2_LOCATION          S2_LOCATION
+
+=end
+
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head2 Filter Regex Example Script
+
+Demonstrates use of filter and Perl regular expressions. The reqular expression can contain Pequel field names, macros and table names.  This example also demonstrates the use of a simple 'local' table (LOC_DESCRIPT).
+
+
+=begin
+
+ options
+    header // (default) write header record to output.
+    optimize // (default) optimize generated code.
+
+ init table
+ // Table-Name      Key-Value   Field->1                Field-2     Field-3
+    LOC_DESCRIPT    NSW         'New South Wales'       '2061'      '02'
+    LOC_DESCRIPT    WA          'Western Australia'     '5008'      '07'
+    LOC_DESCRIPT    SA          'South Australia'       '8078'      '08'
+
+ filter
+ // Filter out all records except where LOCATION is 'NSW' or 'WA' or 'SA'
+    LOCATION =~ /^NSW$|^WA$|^SA$/
+
+ input section
+    PRODUCT_CODE,
+    COST_PRICE,
+    DESCRIPTION,
+    SALES_CODE,
+    SALES_PRICE,
+    SALES_QTY,
+    SALES_DATE,
+    LOCATION,
+    LDESCRIPT => %LOC_DESCRIPT(LOCATION)->1 . " in postcode " . %LOC_DESCRIPT(LOCATION)->2
+
+ sort by
+    SALES_CODE
+
+ group by
+    SALES_CODE
+
+ output section
+    string SALES_CODE               SALES_CODE
+    string LOC_DESCRIPT             LDESCRIPT
+    numeric NUM_PRODUCTS            distinct PRODUCT_CODE 
+    string _PRODUCT_CODE            PRODUCT_CODE
+    string PROD_NUM                 = _PRODUCT_CODE . "-" . NUM_PRODUCTS
+    string LOC_NSW                  = %LOC_DESCRIPT(NSW)->1
+    numeric AVG_COST_PRICE_NSW      avg COST_PRICE where LOCATION eq 'NSW'
+    string LOC_WA                   = %LOC_DESCRIPT(WA)->1
+    numeric AVG_COST_PRICE_WA       avg COST_PRICE where LOCATION eq 'WA'
+    string LOC_SA                   = %LOC_DESCRIPT(SA)->1
+    numeric AVG_COST_PRICE_SA       avg COST_PRICE where LOCATION eq 'SA'
+
+=end
+
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head2 Group By Derived Example Scripts
+
+This example demonstrates the use of a derived (calculated) field as the grouping field. In this example it is assumed that the input data contains mixed case values for LOCATION.  The 'hash' option is important here because grouping is based on exact values -- that is, LOCATION's 'NSW' and 'Nsw' are not equal, but converting both to upper case make them equal. With the 'hash' option, the input data need not be sorted because the output is generated in memory using Perl's associative arrays.  For this reason the 'hash' option should only be used when the total number of groups is small, depending on the amount of available memory. 
+
+
+=item I<Example Script 1>
+
+
+=begin
+
+ options
+    header // (default) write header record to output.
+    optimize // (default) optimize generated code.
+    hash // Required because group-by field is derived.
+
+ input section
+    PRODUCT_CODE,
+    COST_PRICE,
+    DESCRIPTION,
+    SALES_CODE,
+    SALES_PRICE,
+    SALES_QTY,
+    SALES_DATE,
+    LOCATION,
+    SALES_TOTAL => SALES_QTY * SALES_PRICE,
+    FIXED_LOC_CODE => &uc(LOCATION)
+
+ group by
+    FIXED_LOC_CODE
+
+ output section
+    string FIXED_LOC_CODE FIXED_LOC_CODE
+    decimal SALES_TOTAL sum SALES_TOTAL
+    
+=end
+
+=item I<Example Script 2>
+
+=begin
+
+ options
+    header // (default) write header record to output.
+    optimize // (default) optimize generated code.
+    hash // Required because group-by field is derived.
+
+ init table // multi-column local table
+ // Table-Name  Key-Value    Field->1         Field->2
+    TCITY       'SYD'        'Sydney'         'NSW'
+    TCITY       'MEL'        'Melbourne'      'VIC'
+    TCITY       'PER'        'Perth'          'WA'
+    TCITY       'ALIC'       'Alice Springs'  'NT'
+
+ init table // single-column local table
+ // Table-Name  Key-Value    Field->1
+    TSTATE      'WA'         "Western Australia" 
+    TSTATE      'NSW'        "New South Wales" 
+    TSTATE      'SA'         'South Australia' 
+    TSTATE      'QLD'        'Queensland'  
+    TSTATE      'NT'         'Northern Territory' 
+    TSTATE      'VIC'        'Victoria' 
+
+ input section
+    PRODUCT_CODE,
+    COST_PRICE,
+    DESCRIPTION,
+    SALES_CODE,
+    SALES_PRICE,
+    SALES_QTY,
+    SALES_DATE,
+    LOCATION,
+    SALES_TOTAL     => SALES_QTY * SALES_PRICE,
+    FIXED_LOC_CODE  => %TCITY(LOCATION)->2 || LOCATION,	// lookup TCITY, return field-2
+    STATE_NAME      => %TSTATE(FIXED_LOC_CODE) // lookup TSTATE, return field-1
+
+ group by
+    FIXED_LOC_CODE
+
+ output section
+    string  FIXED_LOC_CODE    FIXED_LOC_CODE
+    string  STATE_NAME        STATE_NAME
+    decimal SALES_TOTAL       sum SALES_TOTAL
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head2 Hash Option Example Script
+
+This example demonstrates the use of the 'hash' option. With the 'hash' option input data sorting is not required -- the data will be aggregated in memory.  For this reason the 'hash' option should only be used when the total number of groups is small, depending on the amount of available memory. 
+
+
+=begin
+
+ options
+    header // (default) write header record to output.
+    optimize // (default) optimize generated code.
+    hash
+
+ input section
+    PRODUCT_CODE,
+    COST_PRICE,
+    DESCRIPTION,
+    SALES_CODE,
+    SALES_PRICE,
+    SALES_QTY,
+    SALES_DATE,
+    LOCATION
+
+ group by
+    LOCATION
+
+ output section
+    string LOCATION                 LOCATION
+    numeric MIN_COST_PRICE          min COST_PRICE
+    numeric MAX_COST_PRICE          max COST_PRICE
+    numeric _DISTINCT_SALES_CODE    distinct SALES_CODE
+    string SALES_CODE_1             first SALES_CODE where _DISTINCT_SALES_CODE == 1
+    string SALES_CODE_2             first SALES_CODE where _DISTINCT_SALES_CODE == 2
+    string SALES_CODE_3             first SALES_CODE where _DISTINCT_SALES_CODE == 3
+    string SALES_CODE_4             first SALES_CODE where _DISTINCT_SALES_CODE == 4
+    string SALES_CODE_5             first SALES_CODE where _DISTINCT_SALES_CODE == 5
+
+=end
+
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head2 Local Table Example Script
+
+Demonstrates use of local tables. LOC_DESCRIPT is a local table. Each line in the 'init table' section contains an entry in this table. Each entry constist of table name, key value, field list values. 
+
+The '%' character is used to denote a table name. The parameter contains the key value to look up.
+
+
+
+=begin
+
+ options
+    header // (default) write header record to output.
+    optimize // (default) optimize generated code.
+
+ init table // Local table:
+ // Table-Name      Key-Value   Field->1
+    LOC_DESCRIPT    NSW         'New South Wales'	
+    LOC_DESCRIPT    WA          'Western Australia'
+    LOC_DESCRIPT    SYD         'Sydney'
+    LOC_DESCRIPT    MEL         'Melbourne'
+    LOC_DESCRIPT    SA          'South Australia'
+    LOC_DESCRIPT    NT          'Northern Territory'
+    LOC_DESCRIPT    QLD         'Queensland'
+    LOC_DESCRIPT    VIC         'Victoria'
+    LOC_DESCRIPT    PER         'Perth'
+    LOC_DESCRIPT    ALIC        'Alice Springs'
+
+ input section
+    PRODUCT_CODE,
+    COST_PRICE,
+    DESCRIPTION,
+    SALES_CODE,
+    SALES_PRICE,
+    SALES_QTY,
+    SALES_DATE,
+    LOCATION,
+    LDESCRIPT => %LOC_DESCRIPT(LOCATION) // Look up LOCATION in the table LOC_DESCRIPT
+
+ sort by
+    LOCATION
+
+ group by
+    LOCATION
+
+ output section
+    string LOCATION 			LOCATION
+    string DESCRIPTION			LDESCRIPT
+    numeric NUM_PRODUCTS		distinct PRODUCT_CODE 
+    numeric AVG_COST_PRICE		avg COST_PRICE
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head2 Pequel Tables Example Script
+
+This script demonstrates the use of pequel tables. This scipt contains a 'load table pequel' section. The tables specified in this section will have their data loaded by executing the pequel script specified.  The field names for the table columns are as per the load table script output format.  The output format for a script can be displayed with the '-list output_format' option on the command line. It is important that any Pequel script used in the 'load table pequal' to load a table must have an input_file option specification.
+
+
+=item I<pequel_tables.pql>
+
+=begin
+
+ options
+    header // (default) write header record to output.
+    optimize // (default) optimize generated code.
+
+ load table pequel
+    // Data for this table is loaded by executing the Pequel script 'sales_ttl_by_loc.pql'.
+    // Pequel tables are loaded dynamically (at runtime).
+    // LOCATION is the key field.
+    TSALESBYLOC sales_ttl_by_loc.pql LOCATION
+    TSALESBYPROD sales_ttl_by_prod.pql PRODUCT_CODE
+
+ input section
+    PRODUCT_CODE,
+    COST_PRICE,
+    DESCRIPTION,
+    SALES_CODE,
+    SALES_PRICE,
+    SALES_QTY,
+    SALES_DATE,
+    LOCATION,
+    SALESBYLOC => %TSALESBYLOC(LOCATION)->SALES_TOTAL,
+    SALESBYPROD => %TSALESBYPROD(PRODUCT_CODE)->SALES_TOTAL,
+    COMMENT => %TSALESBYLOC(LOCATION)->TOP_PRODUCT eq PRODUCT_CODE ? '**Best Seller' : ''
+
+ output section
+    string PRODUCT_CODE             PRODUCT_CODE,
+    decimal PRODUCT_SALES_TOTAL     SALESBYPROD,
+    string LOCATION                 LOCATION,
+    decimal LOCATION_SALES_TOTAL    SALESBYLOC,
+    string COMMENT                  COMMENT,
+
+=end
+
+=item I<sales_ttl_by_loc.pql>
+
+=begin
+
+ input
+    input_file(sample.data) // Need to specify this script is used as a pequel-table loader.
+    header // (default) write header record to output.
+    optimize // (default) optimize generated code.
+    hash // Required because group-by field is derived.
+
+ load table pequel
+    TTOPPRODBYLOC top_prod_by_loc.pql LOCATION
+
+ input section
+    PRODUCT_CODE,
+    COST_PRICE,
+    DESCRIPTION,
+    SALES_CODE,
+    SALES_PRICE,
+    SALES_QTY,
+    SALES_DATE,
+    LOCATION,
+    SALES_TOTAL => SALES_QTY * SALES_PRICE,
+    TOP_PRODUCT => %TTOPPRODBYLOC(LOCATION)->PRODUCT_CODE
+
+ group by
+    LOCATION
+
+ output section
+    string LOCATION         LOCATION
+    decimal SALES_TOTAL     sum SALES_TOTAL
+    string TOP_PRODUCT      TOP_PRODUCT
+
+=end
+
+=item I<top_prod_by_loc.pql>
+
+=begin
+
+ options
+    input_file(sample.data)	// Need to specify this script is used as a pequel-table loader.
+    header // (default) write header record to output.
+    optimize // (default) optimize generated code.
+    hash // Required because group-by field is derived.
+
+ input section
+    PRODUCT_CODE,
+    COST_PRICE,
+    DESCRIPTION,
+    SALES_CODE,
+    SALES_PRICE,
+    SALES_QTY,
+    SALES_DATE,
+    LOCATION,
+    SALES_TOTAL => SALES_QTY * SALES_PRICE
+
+ group by
+    LOCATION
+
+ output section
+    string LOCATION        LOCATION
+    decimal _MAXSALES      max SALES_TOTAL
+    string PRODUCT_CODE    first PRODUCT_CODE where sprintf("%.2f", SALES_TOTAL) \
+                                                 eq sprintf("%.2f", _MAXSALES)
+
+=end
+
+=item I<sales_ttl_by_prod.pql>
+
+=begin
+
+ options
+    input_file(sample.data) // Need to specify this script is used as a pequel-table loader.
+    header // (default) write header record to output.
+    optimize // (default) optimize generated code.
+
+ input section
+    PRODUCT_CODE,
+    COST_PRICE,
+    DESCRIPTION,
+    SALES_CODE,
+    SALES_PRICE,
+    SALES_QTY,
+    SALES_DATE,
+    LOCATION,
+    SALES_TOTAL => SALES_QTY * SALES_PRICE
+
+ group by
+    PRODUCT_CODE,
+
+ output section
+    string PRODUCT_CODE     PRODUCT_CODE
+    decimal SALES_TOTAL     sum SALES_TOTAL
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head2 Oracle Tables Example Script
+
+Demonstrates the use of external Oracle tables. WARNING: this feature is alpha and would (probably) require some hand coding adjustments to the generated code.
+
+Requires Inline::C and DBI to be installed. 
+	
+The 'load table oracle' section will load the ASCII data contained in the file specified by the second parameter ('sample.data' inexample SAMPLE1 below) into an oracle table. The generated inline C code will access this table via Oracle OCI. The Oracle table will be re-created with the same name as specified by the first parameter('SAMPLE1' in this example).  The data will be loaded via Oracle sqlldr. The 4th parameter KeyLoc specifies the location of the key field in sample.data (field numbers starting from 1). The next parameter KeyType specifies the Oracle type and size to use when creating the table. The Columns list specifies field and field-number (in the SourceData file) pairs. The 'merge' option can be used when the table is sorted by the same key as specified in the 'sort by' section. This will result in a substantial performance gain when looking up values in the table.
+
+
+=begin
+
+ options
+    header // (default) write header record to output.
+    optimize // (default) optimize generated code.
+    inline_CC(CC) // C compiler.
+    inline_clean_after_build(0) // Pass-through Inline options:
+    inline_clean_build_area(0)
+    inline_print_info(1)
+    inline_build_noisy(1)
+    inline_build_timers(0)
+    inline_force_build(1)
+    inline_directory()
+    inline_optimize("-xO5 -xinline=%auto")	// Solaris 64 bit
+    inline_ccflags("-xchip=ultra3 -DSS_64BIT_SERVER -DBIT64 -DMACHINE64")
+
+ load table oracle
+ // Declare SAMPLE1 table -- all parameters must appear on one line or use line continuation char '\'
+ // TableName   SourceData  ConnectString              KeyLoc KeyType      Columns
+    SAMPLE1     sample.data 'user/passwd@OSCADEV2'     1      STRING(12)   DESCRIPTION=3 \
+                                                                           LOCATION=8
+
+ load table oracle merge
+ // TableName   SourceData  ConnectString               KeyLoc  KeyType     Columns
+    SAMPLE2     sample.data 'gprsdev/gprsdev@OSCADEV2'  1       STRING(12)  DESCRIPTION=3 LOCATION=8
+
+ input section
+    PRODUCT_CODE,
+    COST_PRICE,
+    DESCRIPTION,
+    SALES_CODE,
+    SALES_PRICE,
+    SALES_QTY,
+    SALES_DATE,
+    LOCATION,
+    S1_DESCRIPTION => %SAMPLE1(PRODUCT_CODE)->DESCRIPTION
+    S1_LOCATION => %SAMPLE1(PRODUCT_CODE)->LOCATION
+    S2_DESCRIPTION => %SAMPLE2(PRODUCT_CODE)->DESCRIPTION
+    S2_LOCATION => %SAMPLE2(PRODUCT_CODE)->LOCATION
+
+ sort by 
+    PRODUCT_CODE
+
+ group by
+    PRODUCT_CODE
+
+ output section
+    string PRODUCT_CODE         PRODUCT_CODE,
+    numeric RECORD_COUNT        count *
+    numeric SALES_QTY_SAMPLE1   sum SALES_QTY where exists %SAMPLE1(PRODUCT_CODE) 
+    string S1_DESCRIPTION       S1_DESCRIPTION
+    string S1_LOCATION          S1_LOCATION
+    numeric SALES_QTY_SAMPLE2   sum SALES_QTY where exists %SAMPLE2(PRODUCT_CODE) 
+    string S2_DESCRIPTION       S2_DESCRIPTION
+    string S2_LOCATION          S2_LOCATION
+
+=end
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head1 INSTALLATION INSTRUCTIONS
+
+F<Pequel> is installed as a Perl module.
+
+=begin
+
+  perl Makefile.PL
+  make
+  make test
+  make install
+
+=end
+
+to specify different perl library path:
+
+=begin
+
+  perl Makefile.PL PREFIX=/product/perldev/Perl/Modules
+
+=end
+
+
+=head2 Installation Troubleshooting
+
+When installing into non-default directory, i.e., if you used the F<PREFIX>, then you need to (probably) set the F<PERL_INSTALL_ROOT> environment variable before 'make install'
+
+=begin
+
+  export PERL_INSTALL_ROOT=/product/perldev/Perl/Modules
+
+=end
+
+set this to whatever you specified for F<PREFIX> above.  
+
+You will also need to set the F<PERL5LIB> and F<PATH> environment variables before executing I<pequel>. To set F<PERL5LIB> note the Installing messages displayed during the I<make install>, and set this to the path up to and excluding I<pequel>. For F<PATH> add the directory containing the Pequel executable to the PATH variable -- note the installation messages for I<.../bin/pequel> -- add this path to the F<PATH> environment variable.
+
+
+
+=head2 Example Installation
+
+=begin
+
+  > perl Makefile.PL PREFIX=/usr/local/Perl
+  Checking if your kit is complete...
+  Looks good
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Param
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Code
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Collection
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Docgen
+  Checking if your kit is complete...
+  Looks good
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Engine::Inline
+  Writing Makefile for Pequel::Engine
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Error
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Field
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Lister
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Main
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Parse
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Pod2Pdf
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Script
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Table
+  Checking if your kit is complete...
+  Looks good
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Type::Aggregate
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Type::Date
+  Checking if your kit is complete...
+  Looks good
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Type::Db::Oracle
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Type::Db::Sqlite
+  Writing Makefile for Pequel::Type::Db
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Type::Macro
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Type::Option
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Type::Section
+  Checking if your kit is complete...
+  Looks good
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Type::Table::Oracle
+  Checking if your kit is complete...
+  Looks good
+  Writing Makefile for Pequel::Type::Table::Sqlite
+  Writing Makefile for Pequel::Type::Table
+  Writing Makefile for Pequel::Type
+  Writing Makefile for Pequel
+  
+  > make
+  cp Param.pm ../lib/Pequel/Param.pm
+  cp Code.pm ../lib/Pequel/Code.pm
+  cp Collection.pm ../lib/Pequel/Collection.pm
+  cp Docgen.pm ../lib/Pequel/Docgen.pm
+  cp Engine.pm ../lib/Pequel/Engine.pm
+  cp Inline.pm ../../lib/Pequel/Engine/Inline.pm
+  cp Error.pm ../lib/Pequel/Error.pm
+  cp Field.pm ../lib/Pequel/Field.pm
+  cp Lister.pm ../lib/Pequel/Lister.pm
+  cp Main.pm ../lib/Pequel/Main.pm
+  cp Parse.pm ../lib/Pequel/Parse.pm
+  cp Pod2Pdf.pm ../lib/Pequel/Pod2Pdf.pm
+  Manifying ../blib/man3/Pequel::Pod2Pdf.3
+  cp Script.pm ../lib/Pequel/Script.pm
+  cp Table.pm ../lib/Pequel/Table.pm
+  cp Type.pm ../lib/Pequel/Type.pm
+  cp Aggregate.pm ../../lib/Pequel/Type/Aggregate.pm
+  cp Date.pm ../../lib/Pequel/Type/Date.pm
+  cp Db.pm ../../lib/Pequel/Type/Db.pm
+  cp Oracle.pm ../../../lib/Pequel/Type/Db/Oracle.pm
+  cp Sqlite.pm ../../../lib/Pequel/Type/Db/Sqlite.pm
+  cp Macro.pm ../../lib/Pequel/Type/Macro.pm
+  cp Option.pm ../../lib/Pequel/Type/Option.pm
+  cp Section.pm ../../lib/Pequel/Type/Section.pm
+  cp Table.pm ../../lib/Pequel/Type/Table.pm
+  cp Oracle.pm ../../../lib/Pequel/Type/Table/Oracle.pm
+  cp Sqlite.pm ../../../lib/Pequel/Type/Table/Sqlite.pm
+
+  > export PERL_INSTALL_ROOT=/usr/local/Perl
+  > make test
+  t/01_aggregates_1........ok
+  t/02_array_fields........ok
+  t/03_conditional_aggr....ok
+  t/04_filter_regex........ok
+  t/05_group_by_derived....ok
+  t/06_group_by_derived_2..ok
+  t/07_hash_option.........ok
+  t/08_local_table.........ok
+  t/09_macro_select........ok
+  t/10_output_calc_fields..ok
+  t/11_statistics_aggr.....ok
+  t/12_statistics_aggr_2...ok
+  t/13_transfer_option.....ok
+  t/14_simple_tables.......ok
+  t/15_external_tables.....ok
+  t/16_sales_ttl_by_loc....ok
+  t/17_pequel_tables.......ok
+  t/18_chain_pequel........ok
+  All tests successful.
+  Files=18, Tests=18, 71 wallclock secs (64.37 cusr +  6.79 csys = 71.16 CPU)
+
+  > make install
+  Installing /usr/local/Perl/usr/local/Perl/man/man3/Pequel::Pod2Pdf.3
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Param.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Code.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Collection.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Docgen.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Engine.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Error.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Field.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Lister.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Main.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Parse.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Pod2Pdf.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Script.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Table.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Type.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Type/Aggregate.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Type/Date.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Type/Db.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Type/Macro.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Type/Option.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Type/Section.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Type/Table.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Type/Table/Oracle.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Type/Table/Sqlite.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Type/Db/Oracle.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Type/Db/Sqlite.pm
+  Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Engine/Inline.pm
+  Installing /usr/local/Perl/usr/local/Perl/bin/pequel
+  Installing /usr/local/Perl/usr/local/Perl/bin/pequelpod2pdf
+  Writing /usr/perl5/site_perl/5.6.1/sun4-solaris-64int/auto/Pequel/.packlist
+  Appending installation info to /usr/local/Perl/lib/sun4-solaris-64int/perllocal.pod
+
+  > export PERL5LIB=/usr/local/Perl/usr/perl5/site_perl
+  > export PATH=$PATH:/usr/local/Perl/usr/local/Perl/bin
+  > pequel -v
+  pequel Version 2.2-5, Build: Thu Jun 17 10:57:29 EST 2005
+
+=end
+
+=head2 Using Inline
+
+Certain options (such as I<use_inline>, I<input_delimiter_extra>) will cause F<Pequel> to generate embedded C code. The resulting program will then require the Inline::C module and a C compiler system to be available. Once you have Inline::C installed you can verify its availability to Pequel by running a compile-check on the I<apachelog.pql> script
+
+=begin
+
+  pequel -c examples/apachelog.pql
+
+=end
+
+
+=cut --------------------------------------------------------------------------
+
+=page
+
+=head1 BUGS
+
+=item *
+
+The Inline Oracle and Sqlite Tables functionality as of version 2.2-8 requires further extensive testing.
+
+
+=item *
+
+Array fields and macros not handling single element arrays.
+
+
+=item *
+
+&period and &month not implemented.
+
+
+=item *
+
+F<summary section> is not implemented.
+
+
+=item *
+
+When using a I<derived input field> in F<group by>, the derived field is not calculated early enough.
+
+
+=item *
+
+If you specify F<group by> you must also specify F<sort by> (unless your input is already sorted in the required order).
+
+
+
+=cut --------------------------------------------------------------------------
+
+=head1 AUTHOR
+
+Mario Gaffiero <gaffie@users.sourceforge.net>
+
+=cut --------------------------------------------------------------------------
+
+=head1 COPYRIGHT
+
+Copyright E<copy>1999-2005, Mario Gaffiero. All Rights Reserved.
+
+"Pequel" TM Copyright E<copy>1999-2005, Mario Gaffiero. All Rights Reserved.
+
+This program and all its component contents is copyrighted free software by Mario Gaffiero and is released under the GNU General Public License (GPL), Version 2, a copy of which may be found at http://www.opensource.org/licenses/gpl-license.html
+
+This file is part of Pequel (TM).
+
+Pequel is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+Pequel is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with Pequel; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+=cut

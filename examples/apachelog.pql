@@ -1,0 +1,49 @@
+// vim: syntax=pequel ts=4 sw=4
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//  Script       : apachelog.pql
+//	Requires	 : Inline::C must be installed before you can 'use_inline'.
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+options
+    header                  	// (default) write header record to output.
+    optimize                	// (default) optimize generated code.
+	nulls
+	transfer
+    doc_title("Apache CLF Log Input Example Script")
+    doc_email("sample@youraddress.com")
+    doc_version(2.2)
+	input_file(apachelog.data)
+	input_delimiter( )			// Input delimiter is space.
+	input_delimiter_extra(\"[)	// For Apache Common Log Format (CLF).
+	inline_CC(CC)				// C compiler.
+//	inline_clean_after_build(0) // Pass-through Inline options:
+//	inline_clean_build_area(0)
+//	inline_print_info(1)
+//	inline_build_noisy(1)
+//	inline_build_timers(0)
+//	inline_force_build(1)
+//	inline_directory()
+	inline_optimize("-xO5 -xinline=%auto")	// Solaris 64 bit
+	inline_ccflags("-xchip=ultra3 -DSS_64BIT_SERVER -DBIT64 -DMACHINE64")
+
+description section
+	Demonstrates reading Apache CLF Log file -- split record on space delimiter, 
+	parse qouted fields and square bracketed fields. This is done by 1) specifying 
+	a space delimiter for the 'input_delimiter' and 2) specifying a double qoute 
+	(must be escaped) characted and a open square bracket character for the
+	'input_delimiter_extra' option. This option specifies other characters that 
+	may delimit fields.  Pequel will match open bracket character specfication with 
+	their respective closing bracket.
+
+	Requires Inline::C and a C compiler to be installed because the 
+	'input_delimiter_extra' option will instruct Pequel to generate C code.
+
+input section
+    IP_ADDRESS,
+    TIMESTAMP,
+    REQUEST,
+    F4,
+	F5,
+	F6
+
+output section

@@ -1,0 +1,37 @@
+// vim: syntax=pequel ts=4 sw=4
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//  Script       : macro_pack.pql
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+options
+    header                // (default) write header record to output.
+    optimize              // (default) optimize generated code.
+	nulls
+    doc_title("Macro Pack and Unpack Example Script")
+    doc_email("sample@youraddress.com")
+    doc_version(2.3)
+
+description section
+	Demonstrates the use of &pack and &unpack macros. These macros require a format 
+	first argument. Please refer to the perlpacktut document (on Perl.Org) for a full
+	description of formats. The &unpack() macro will produce an array field.
+
+input section
+    product_code,
+    cost_price,
+    description,
+    sales_code,
+	sales_price,
+	sales_qty,
+	sales_date,
+	location,
+	salesman_list,
+	p_salesman_list => &pack('A3/Z*' x &arr_size(salesman_list), &to_array(salesman_list))
+	up_salesman_list => &unpack('A3/Z*' x &arr_size(salesman_list), p_salesman_list)
+
+output section
+	string location				location
+	string product_code 		product_code
+	string salesman_list		salesman_list
+	string p_salesman_list		p_salesman_list
+	string up_salesman_list		up_salesman_list

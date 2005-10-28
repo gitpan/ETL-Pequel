@@ -1,0 +1,47 @@
+// vim: syntax=pequel ts=4 sw=4
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//  Script      : chain_pequel_pt2.pql
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+options
+	input_file(chain_pequel_pt1.pql) // The sub-pequel (pt1) script's output is piped to this (pt2) script's input
+    header                  // (default) write header record to output.
+	#hash
+    optimize                // (default) optimize generated code.
+    doc_title("Pequel Chaining Part-2 Example Script")
+    doc_email("sample@youraddress.com")
+    doc_version(2.3)
+
+description section
+	This example demonstrates Pequel script 'chaining'. By specifying a pequel script name for
+	the 'input_file' option, the input data stream will result by piping the output from executing 
+	the script specified in the 'input_file' option.
+	Both scripts are executed simultaneously -- with the input_file script as the child and this
+	script as the parent. Beware of circular chaining! It is up to the user to ensure that this 
+	does not occur.
+	The input-section should match the output field format of the input_file script. Additional 
+	derived input fields may be appended. 
+	The field names specified in the sort-by section must exist in the output for the input_file
+	script. 
+	The sort-by section in the main script overrides the sort-output section in the sub script.
+	Any 'output_file' option specification in the sub script is not allowed.
+
+input section
+    LOCATION
+	PRODUCT_CODE
+    SALES_TOTAL
+
+sort by
+    LOCATION
+
+group by
+    LOCATION
+
+output section
+    string LOCATION 			LOCATION
+	numeric COUNT_PRODUCT_CODE	distinct PRODUCT_CODE
+    decimal SALES_TOTAL	 		sum SALES_TOTAL
+
+sort output
+    SALES_TOTAL numeric
+

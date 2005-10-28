@@ -1,0 +1,42 @@
+// vim: syntax=pequel ts=4 sw=4
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//  Script       : hash_option.pql
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+options
+    header                  // (default) write header record to output.
+    optimize                // (default) optimize generated code.
+	hash
+    doc_title("Hash Option Example Script")
+    doc_email('sample@youraddress.com')
+    doc_version(2.2)
+
+description section
+	This example demonstrates the use of the 'hash' option. With the 'hash' option
+	input data sorting is not required -- the data will be aggregated in memory.
+	For this reason the 'hash' option should only be used when the total number of 
+	groups is small, depending on the amount of available memory. 
+
+input section
+    PRODUCT_CODE,
+    COST_PRICE,
+    DESCRIPTION,
+    SALES_CODE,
+	SALES_PRICE,
+	SALES_QTY,
+	SALES_DATE,
+	LOCATION
+
+group by
+	LOCATION
+
+output section
+	string LOCATION 				LOCATION
+	numeric MIN_COST_PRICE			min COST_PRICE
+	numeric MAX_COST_PRICE			max COST_PRICE
+	numeric _DISTINCT_SALES_CODE	distinct SALES_CODE
+	string SALES_CODE_1				first SALES_CODE where _DISTINCT_SALES_CODE == 1
+	string SALES_CODE_2				first SALES_CODE where _DISTINCT_SALES_CODE == 2
+	string SALES_CODE_3				first SALES_CODE where _DISTINCT_SALES_CODE == 3
+	string SALES_CODE_4				first SALES_CODE where _DISTINCT_SALES_CODE == 4
+	string SALES_CODE_5				first SALES_CODE where _DISTINCT_SALES_CODE == 5

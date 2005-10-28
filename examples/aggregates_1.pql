@@ -1,0 +1,49 @@
+// vim: syntax=pequel ts=4 sw=4
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//  Script       : aggregates_1.pql
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+options
+    header                  // (default) write header record to output.
+    optimize                // (default) optimize generated code.
+	hash
+	nulls
+    doc_title("Aggregates Example Script")
+    doc_email("sample@youraddress.com")
+    doc_version(2.2)
+
+description section
+	Demonstrates aggregation and use of various aggregate function.
+
+input section
+    PRODUCT_CODE,
+    COST_PRICE,
+    DESCRIPTION,
+    SALES_CODE,
+	SALES_PRICE,
+	SALES_QTY,
+	SALES_DATE,
+	LOCATION,
+	SALES_TOTAL => SALES_QTY * SALES_PRICE
+
+sort by
+	PRODUCT_CODE
+	LOCATION
+
+group by
+	PRODUCT_CODE
+	LOCATION
+
+output section
+	string LOCATION				LOCATION
+	string PRODUCT_CODE 		PRODUCT_CODE
+	decimal MIN_COST_PRICE		min COST_PRICE
+	decimal MAX_COST_PRICE		max COST_PRICE
+	decimal AVG_SALES_PRICE		mean SALES_PRICE
+	numeric _AVG_SALES_QTY		mean SALES_QTY
+	decimal SALES_TOTAL			sum SALES_TOTAL
+	decimal SALES_TOTAL_2		sum SALES_TOTAL
+	decimal RANGE_COST			range COST_PRICE
+	numeric MODE_SALES_CODE		mode SALES_CODE
+	numeric AVGS				= _AVG_SALES_QTY * 2
+

@@ -1,0 +1,29 @@
+// vim: syntax=pequel ts=4 sw=4
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//  Script      : copy_output_combiner.pql
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+options
+    optimize                // (default) optimize generated code.
+    doc_title("Copy Output Record Example Script")
+    doc_email("sample@youraddress.com")
+    doc_version(2.3)
+
+description section
+
+input section
+    LOCATION_NAME
+	PRODUCT_CODE
+    SALES_TOTAL
+	DESCRIPTION => 'State Total'
+
+sort by
+    LOCATION_NAME
+
+group by
+    LOCATION_NAME
+
+output section
+	string LOCATION_NAME	LOCATION_NAME
+	string DESCRIPTION		DESCRIPTION
+    decimal SALES_TOTAL	 	sum SALES_TOTAL

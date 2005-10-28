@@ -1,0 +1,6855 @@
+%PDF-1.2
+%‚„œ”
+1 0 obj
+[/CalRGB
+<<
+/WhitePoint [0.9505 1 1.089]
+/Gamma [1.8 1.8 1.8]
+/Matrix [0.4497 0.2446 0.02518 0.3613 0.672 0.1412 0.1845 0.08334 0.9227]
+>>
+]
+endobj
+2 0 obj
+<<
+/CreationDate (D:20051013154633+0100)
+/Producer (Pequel)
+/Title (Copy Output Record Example Script)
+>>
+endobj
+5 0 obj
+<<
+/Type /Encoding
+/Differences [ 0 /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam
+/quotedbl /numbersign /dollar /percent /ampersand
+/quoteright /parenleft /parenright /asterisk /plus /comma
+/hyphen /period /slash /zero /one /two /three /four /five
+/six /seven /eight /nine /colon /semicolon /less /equal
+/greater /question /at /A /B /C /D /E /F /G /H /I /J /K /L
+/M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft
+/backslash /bracketright /asciicircum /underscore
+/quoteleft /a /b /c /d /e /f /g /h /i /j /k /l /m /n /o /p
+/q /r /s /t /u /v /w /x /y /z /braceleft /bar /braceright
+/asciitilde /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /emdash
+/dotlessi /grave /acute /circumflex /tilde /macron /breve
+/dotaccent /dieresis /.notdef /ring /cedilla /.notdef
+/hungarumlaut /ogonek /caron /space /exclamdown /cent
+/sterling /currency /yen /brokenbar /section /dieresis
+/copyright /ordfeminine /guillemotleft /logicalnot /hyphen
+/registered /macron /degree /plusminus /twosuperior
+/threesuperior /acute /mu /paragraph /periodcentered
+/cedilla /onesuperior /ordmasculine /guillemotright
+/onequarter /onehalf /threequarters /questiondown /Agrave
+/Aacute /Acircumflex /Atilde /Adieresis /Aring /AE
+/Ccedilla /Egrave /Eacute /Ecircumflex /Edieresis /Igrave
+/Iacute /Icircumflex /Idieresis /Eth /Ntilde /Ograve
+/Oacute /Ocircumflex /Otilde /Odieresis /multiply /Oslash
+/Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn
+/germandbls /agrave /aacute /acircumflex /atilde /adieresis
+/aring /ae /ccedilla /egrave /eacute /ecircumflex
+/edieresis /igrave /iacute /icircumflex /idieresis /eth
+/ntilde /ograve /oacute /ocircumflex /otilde /odieresis
+/divide /oslash /ugrave /uacute /ucircumflex /udieresis
+/yacute /thorn /ydieresis ]
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F00
+/Encoding 5 0 R
+/BaseFont /Times-Roman
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F01
+/Encoding 5 0 R
+/BaseFont /Times-Bold
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F02
+/Encoding 5 0 R
+/BaseFont /Times-Italic
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F03
+/Encoding 5 0 R
+/BaseFont /Times-BoldItalic
+>>
+endobj
+10 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F10
+/Encoding 5 0 R
+/BaseFont /Courier
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F11
+/Encoding 5 0 R
+/BaseFont /Courier-Bold
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F12
+/Encoding 5 0 R
+/BaseFont /Courier-Oblique
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F13
+/Encoding 5 0 R
+/BaseFont /Courier-BoldOblique
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F20
+/Encoding 5 0 R
+/BaseFont /Helvetica
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F21
+/Encoding 5 0 R
+/BaseFont /Helvetica-Bold
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F22
+/Encoding 5 0 R
+/BaseFont /Helvetica-Oblique
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F23
+/Encoding 5 0 R
+/BaseFont /Helvetica-BoldOblique
+>>
+endobj
+0 g
+18 0 obj
+<<
+/Length 19 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(examples/copy_output.pql) Tj
+1 0 0 1 370.19 797 Tm
+(Copy Output Record Example Script) Tj
+/F21 12 Tf
+1 0 0 1 52.0 750.0 Tm
+0.0000 Tw
+(SCRIPT NAME ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 735.6 Tm
+0.0000 Tw
+(examples/copy_output.pql ) Tj
+/F21 12 Tf
+1 0 0 1 52.0 705.6 Tm
+0.0000 Tw
+(DESCRIPTION ) Tj
+/F21 12 Tf
+1 0 0 1 52.0 669.6 Tm
+0.0000 Tw
+(1. PROCESS DETAILS ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 655.2 Tm
+0.1871 Tw
+(Input records are read from chain_pequel_pt1.pql. The input record contains ) Tj
+/F23 10 Tf
+0.1871 Tw
+(3) Tj
+/F20 10 Tf
+0.1871 Tw
+( fields. Fields are delimited) Tj
+1 0 0 1 76.0 643.2 Tm
+0.0000 Tw
+(by the `) Tj
+/F10 10 Tf
+0.0000 Tw
+(|) Tj
+/F20 10 Tf
+0.0000 Tw
+(' character. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 619.2 Tm
+0.1981 Tw
+(Output records are written to standard output. The output record contains ) Tj
+/F23 10 Tf
+0.1981 Tw
+(3) Tj
+/F20 10 Tf
+0.1981 Tw
+( fields. Fields are delimited by) Tj
+1 0 0 1 76.0 607.2 Tm
+0.0000 Tw
+(the `) Tj
+/F10 10 Tf
+0.0000 Tw
+(|) Tj
+/F20 10 Tf
+0.0000 Tw
+(' character. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 583.2 Tm
+0.0000 Tw
+(Input stream is ) Tj
+/F21 10 Tf
+0.0000 Tw
+(sorted) Tj
+/F20 10 Tf
+0.0000 Tw
+( by the input field ) Tj
+/F23 10 Tf
+0.0000 Tw
+(LOCATION) Tj
+/F20 10 Tf
+0.0000 Tw
+( \() Tj
+/F22 10 Tf
+0.0000 Tw
+(string) Tj
+/F20 10 Tf
+0.0000 Tw
+(\). ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 559.2 Tm
+0.7450 Tw
+(Input records are eliminated \() Tj
+/F21 10 Tf
+0.7450 Tw
+(filtered) Tj
+/F20 10 Tf
+0.7450 Tw
+(\) unless ) Tj
+/F23 10 Tf
+0.7450 Tw
+(LOCATION eq `WA' || LOCATION eq `SA' || LOCATION) Tj
+1 0 0 1 76.0 547.2 Tm
+0.0000 Tw
+(eq `NSW' || LOCATION eq `VIC' || LOCATION eq `NT') Tj
+/F20 10 Tf
+0.0000 Tw
+(. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 523.2 Tm
+0.0000 Tw
+(Input records are ) Tj
+/F21 10 Tf
+0.0000 Tw
+(grouped) Tj
+/F20 10 Tf
+0.0000 Tw
+( by the input field ) Tj
+/F23 10 Tf
+0.0000 Tw
+(LOCATION) Tj
+/F20 10 Tf
+0.0000 Tw
+( \() Tj
+/F22 10 Tf
+0.0000 Tw
+(string) Tj
+/F20 10 Tf
+0.0000 Tw
+(\). ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 499.2 Tm
+0.0000 Tw
+(Output aggregated records are eliminated unless ) Tj
+/F21 10 Tf
+0.0000 Tw
+(having) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F23 10 Tf
+0.0000 Tw
+(SALES_TOTAL ) Tj
+/F20 10 Tf
+0.0000 Tw
+( 0) Tj
+/F20 10 Tf
+0.0000 Tw
+(. ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 457.2 Tm
+0.0000 Tw
+(1.1 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(LOCATION) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 445.2 Tm
+0.0000 Tw
+(Output Field ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 418.8 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(Description) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 406.8 Tm
+0.0000 Tw
+(Set to input field ) Tj
+/F23 10 Tf
+0.0000 Tw
+(LOCATION_DESC) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 380.4 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(Derived Input Field Evaluation) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 364.2 Tm
+0.0000 Tw
+(    => %LOC_DESCRIPT\(LOCATION\) ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 343.2 Tm
+0.0000 Tw
+(1.2 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(DESCRIPTION) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 331.2 Tm
+0.0000 Tw
+(Output Field ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 304.8 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(Description) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 292.8 Tm
+0.0000 Tw
+(Set to input field ) Tj
+/F23 10 Tf
+0.0000 Tw
+(DESCRIPTION) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 266.4 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(Derived Input Field Evaluation) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 250.2 Tm
+0.0000 Tw
+(    => 'State Total' ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 229.2 Tm
+0.0000 Tw
+(1.3 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(SALES_TOTAL) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 217.2 Tm
+0.0000 Tw
+(Output Field ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 190.8 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(Description) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 178.8 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(Sum) Tj
+/F20 10 Tf
+0.0000 Tw
+( aggregation on input field ) Tj
+/F23 10 Tf
+0.0000 Tw
+(SALES_TOTAL) Tj
+/F20 10 Tf
+0.0000 Tw
+(. ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(13 October 2005 15:46) Tj
+1 0 0 1 537.44 37 Tm
+(1) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+19 0 obj
+4113
+endobj
+20 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F10 10 0 R
+/F20 14 0 R
+/F21 15 0 R
+/F22 16 0 R
+/F23 17 0 R
+>>
+>>
+endobj
+21 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 20 0 R
+/Contents 18 0 R
+>>
+endobj
+22 0 obj
+<<
+/Length 23 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Copy Output Record Example Script) Tj
+1 0 0 1 416.86 797 Tm
+(examples/copy_output.pql) Tj
+/F21 12 Tf
+1 0 0 1 52.0 750.0 Tm
+0.0000 Tw
+(2. CONFIGURATION SETTINGS ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 714.0 Tm
+0.0000 Tw
+(2.1 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(pequeldoc) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 702.0 Tm
+0.0000 Tw
+(generate pod / pdf pequel script Reference Guide.: pdf ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 672.0 Tm
+0.0000 Tw
+(2.2 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(detail) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 660.0 Tm
+0.0000 Tw
+(Include Pequel Generated Program chapter in Pequeldoc: 1 ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 630.0 Tm
+0.0000 Tw
+(2.3 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(prefix) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 618.0 Tm
+0.0000 Tw
+(directory pathname prefix.: examples ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 588.0 Tm
+0.0000 Tw
+(2.4 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(script_name) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 576.0 Tm
+0.0000 Tw
+(script filename: examples/copy_output.pql ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 546.0 Tm
+0.0000 Tw
+(2.5 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(input_file) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 534.0 Tm
+0.0000 Tw
+(input data filename: chain_pequel_pt1.pql ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 504.0 Tm
+0.0000 Tw
+(2.6 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(optimize) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 492.0 Tm
+0.0000 Tw
+(optimize generated code.: 1 ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 462.0 Tm
+0.0000 Tw
+(2.7 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(doc_title) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 450.0 Tm
+0.0000 Tw
+(document title.: Copy Output Record Example Script ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 420.0 Tm
+0.0000 Tw
+(2.8 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(doc_email) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 408.0 Tm
+0.0000 Tw
+(document email entry.: sample@youraddress.com ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 378.0 Tm
+0.0000 Tw
+(2.9 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(doc_version) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 366.0 Tm
+0.0000 Tw
+(document version for pequel script.: 2.3 ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(2) Tj
+1 0 0 1 437.39 37 Tm
+(13 October 2005 15:46) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+23 0 obj
+2248
+endobj
+24 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F20 14 0 R
+/F21 15 0 R
+/F23 17 0 R
+>>
+>>
+endobj
+25 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 24 0 R
+/Contents 22 0 R
+>>
+endobj
+26 0 obj
+<<
+/Length 27 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(examples/copy_output.pql) Tj
+1 0 0 1 370.19 797 Tm
+(Copy Output Record Example Script) Tj
+/F21 12 Tf
+1 0 0 1 52.0 750.0 Tm
+0.0000 Tw
+(3. TABLES ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 714.0 Tm
+0.0000 Tw
+(3.1 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(LOC_DESCRIPT) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 702.0 Tm
+0.0000 Tw
+(Table Type: ) Tj
+/F23 10 Tf
+0.0000 Tw
+(local) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 687.6 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(Data) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 675.6 Tm
+0.0000 Tw
+(NSW \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( New South Wales ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 663.6 Tm
+0.0000 Tw
+(WA \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Western Australia ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 651.6 Tm
+0.0000 Tw
+(SA \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( South Australia ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 639.6 Tm
+0.0000 Tw
+(NT \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Northern Territory ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 627.6 Tm
+0.0000 Tw
+(QLD \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Queensland ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 615.6 Tm
+0.0000 Tw
+(VIC \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Victoria ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(13 October 2005 15:46) Tj
+1 0 0 1 537.44 37 Tm
+(3) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+27 0 obj
+1286
+endobj
+28 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F20 14 0 R
+/F21 15 0 R
+/F23 17 0 R
+>>
+>>
+endobj
+29 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 28 0 R
+/Contents 26 0 R
+>>
+endobj
+30 0 obj
+<<
+/Length 31 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Copy Output Record Example Script) Tj
+1 0 0 1 416.86 797 Tm
+(examples/copy_output.pql) Tj
+/F21 12 Tf
+1 0 0 1 52.0 750.0 Tm
+0.0000 Tw
+(4. TABLE INFORMATION SUMMARY ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 714.0 Tm
+0.0000 Tw
+(4.1 Table List Sorted By Table Name ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 702.0 Tm
+0.0000 Tw
+(LOC_DESCRIPT \217 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(1) Tj
+/F20 10 Tf
+0.0000 Tw
+( \() Tj
+/F22 10 Tf
+0.0000 Tw
+(local) Tj
+/F20 10 Tf
+0.0000 Tw
+(\) ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(4) Tj
+1 0 0 1 437.39 37 Tm
+(13 October 2005 15:46) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+31 0 obj
+632
+endobj
+32 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F20 14 0 R
+/F21 15 0 R
+/F22 16 0 R
+/F23 17 0 R
+>>
+>>
+endobj
+33 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 32 0 R
+/Contents 30 0 R
+>>
+endobj
+34 0 obj
+<<
+/Length 35 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(examples/copy_output.pql) Tj
+1 0 0 1 370.19 797 Tm
+(Copy Output Record Example Script) Tj
+/F21 12 Tf
+1 0 0 1 52.0 750.0 Tm
+0.0000 Tw
+(5. EXAMPLES/COPY_OUTPUT.PQL ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 714.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(options) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 697.8 Tm
+0.0000 Tw
+(    pequeldoc\(pdf\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 689.4 Tm
+0.0000 Tw
+(    detail\(1\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 681.0 Tm
+0.0000 Tw
+(    prefix\(examples\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 672.6 Tm
+0.0000 Tw
+(    script_name\(examples/copy_output.pql\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 664.2 Tm
+0.0000 Tw
+(    input_file\(chain_pequel_pt1.pql\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 655.8 Tm
+0.0000 Tw
+(    optimize\(1\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 647.4 Tm
+0.0000 Tw
+(    doc_title\(Copy Output Record Example Script\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 639.0 Tm
+0.0000 Tw
+(    doc_email\(sample@youraddress.com\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 630.6 Tm
+0.0000 Tw
+(    doc_version\(2.3\) ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 609.6 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(init table) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 593.4 Tm
+0.0000 Tw
+(    LOC_DESCRIPT NSW New South Wales ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 585.0 Tm
+0.0000 Tw
+(    LOC_DESCRIPT WA Western Australia ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 576.6 Tm
+0.0000 Tw
+(    LOC_DESCRIPT SA South Australia ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 568.2 Tm
+0.0000 Tw
+(    LOC_DESCRIPT NT Northern Territory ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 559.8 Tm
+0.0000 Tw
+(    LOC_DESCRIPT QLD Queensland ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 551.4 Tm
+0.0000 Tw
+(    LOC_DESCRIPT VIC Victoria ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 530.4 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(input section) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 514.2 Tm
+0.0000 Tw
+(    LOCATION ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 505.8 Tm
+0.0000 Tw
+(    PRODUCT_CODE ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 497.4 Tm
+0.0000 Tw
+(    SALES_TOTAL ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 489.0 Tm
+0.0000 Tw
+(    LOCATION_DESC => %LOC_DESCRIPT\(LOCATION\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 472.2 Tm
+0.0000 Tw
+(    DESCRIPTION => 'State Total' ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 451.2 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(divert record\(pequel:copy_output_WA.pql\)) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 435.0 Tm
+0.0000 Tw
+(    LOCATION eq 'WA' ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 414.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(divert record\(pequel:copy_output_SA.pql\)) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 397.8 Tm
+0.0000 Tw
+(    LOCATION eq 'SA' ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 376.8 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(divert record\(pequel:copy_output_NSW.pql\)) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 360.6 Tm
+0.0000 Tw
+(    LOCATION eq 'NSW' ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 339.6 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(divert record\(pequel:copy_output_VIC.pql\)) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 323.4 Tm
+0.0000 Tw
+(    LOCATION eq 'VIC' ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 302.4 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(divert record\(pequel:copy_output_NT.pql\)) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 286.2 Tm
+0.0000 Tw
+(    LOCATION eq 'NT' ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 265.2 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(filter) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 249.0 Tm
+0.0000 Tw
+(    LOCATION eq 'WA' || LOCATION eq 'SA' || LOCATION eq 'NSW' || LOCATION eq 'VIC' || LOCATION eq 'NT' ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 228.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(sort by) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 211.8 Tm
+0.0000 Tw
+(    LOCATION string  ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 190.8 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(group by) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 174.6 Tm
+0.0000 Tw
+(    LOCATION string ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 153.6 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(output section) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 137.4 Tm
+0.0000 Tw
+(    string    LOCATION    LOCATION_DESC ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 129.0 Tm
+0.0000 Tw
+(    string    DESCRIPTION DESCRIPTION ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 120.6 Tm
+0.0000 Tw
+(    decimal   SALES_TOTAL sum SALES_TOTAL ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 99.6 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(having) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 83.4 Tm
+0.0000 Tw
+(    SALES_TOTAL > 0 ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(13 October 2005 15:46) Tj
+1 0 0 1 537.44 37 Tm
+(5) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+35 0 obj
+4532
+endobj
+36 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F10 10 0 R
+/F21 15 0 R
+/F23 17 0 R
+>>
+>>
+endobj
+37 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 36 0 R
+/Contents 34 0 R
+>>
+endobj
+38 0 obj
+<<
+/Length 39 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Copy Output Record Example Script) Tj
+1 0 0 1 416.86 797 Tm
+(examples/copy_output.pql) Tj
+/F21 10 Tf
+1 0 0 1 52.0 780.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(sort output) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 763.8 Tm
+0.0000 Tw
+(    LOCATION string  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 755.4 Tm
+0.0000 Tw
+(    SALES_TOTAL numeric des ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(6) Tj
+1 0 0 1 437.39 37 Tm
+(13 October 2005 15:46) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+39 0 obj
+542
+endobj
+40 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F10 10 0 R
+/F21 15 0 R
+/F23 17 0 R
+>>
+>>
+endobj
+41 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 40 0 R
+/Contents 38 0 R
+>>
+endobj
+42 0 obj
+<<
+/Length 43 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(examples/copy_output.pql) Tj
+1 0 0 1 370.19 797 Tm
+(Copy Output Record Example Script) Tj
+/F21 12 Tf
+1 0 0 1 52.0 750.0 Tm
+0.0000 Tw
+(6. PEQUEL GENERATED PROGRAM ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 731.4 Tm
+0.0000 Tw
+( # vim: syntax=perl ts=4 sw=4 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 723.0 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 714.6 Tm
+0.0000 Tw
+( #Generated By: pequel Version 2.3-5, Build: Wednesday October  12 23:16:49 BST 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 706.2 Tm
+0.0000 Tw
+( #            : https://sourceforge.net/projects/pequel/ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 697.8 Tm
+0.0000 Tw
+( #Script Name : examples/copy_output.pql ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 689.4 Tm
+0.0000 Tw
+( #Created On  : Thu Oct 13 15:46:21 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 681.0 Tm
+0.0000 Tw
+( #For         :  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 672.6 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 664.2 Tm
+0.0000 Tw
+( #Options: ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 655.8 Tm
+0.0000 Tw
+( #pequeldoc\(pdf\) generate pod / pdf pequel script Reference Guide. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 647.4 Tm
+0.0000 Tw
+( #detail\(1\) Include Pequel Generated Program chapter in Pequeldoc ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 639.0 Tm
+0.0000 Tw
+( #prefix\(examples\) directory pathname prefix. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 630.6 Tm
+0.0000 Tw
+( #script_name\(examples/copy_output.pql\) script filename ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 622.2 Tm
+0.0000 Tw
+( #input_file\(chain_pequel_pt1.pql\) input data filename ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 613.8 Tm
+0.0000 Tw
+( #optimize\(1\) optimize generated code. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 605.4 Tm
+0.0000 Tw
+( #doc_title\(Copy Output Record Example Script\) document title. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 597.0 Tm
+0.0000 Tw
+( #doc_email\(sample@youraddress.com\) document email entry. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 588.6 Tm
+0.0000 Tw
+( #doc_version\(2.3\) document version for pequel script. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 580.2 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 571.8 Tm
+0.0000 Tw
+( use strict; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 563.4 Tm
+0.0000 Tw
+( use Fcntl ':flock'; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 555.0 Tm
+0.0000 Tw
+( use constant _I_LOCATION         => int    0; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 546.6 Tm
+0.0000 Tw
+( use constant _I_PRODUCT_CODE     => int    1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 538.2 Tm
+0.0000 Tw
+( use constant _I_SALES_TOTAL      => int    2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 529.8 Tm
+0.0000 Tw
+( use constant _I_LOCATION_DESC    => int    3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 521.4 Tm
+0.0000 Tw
+( use constant _I_DESCRIPTION      => int    4; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 513.0 Tm
+0.0000 Tw
+( use constant _O_LOCATION         => int    1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 504.6 Tm
+0.0000 Tw
+( use constant _O_DESCRIPTION      => int    2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 496.2 Tm
+0.0000 Tw
+( use constant _O_SALES_TOTAL      => int    3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 487.8 Tm
+0.0000 Tw
+( use constant _T_LOC_DESCRIPT_FLD_1   => int    0; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 479.4 Tm
+0.0000 Tw
+( use constant _I_LOC_DESCRIPT_LOCATION_FLD_KEY => int    5; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 471.0 Tm
+0.0000 Tw
+( use constant _I_LOC_DESCRIPT_LOCATION_FLD_1  => int    6; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 462.6 Tm
+0.0000 Tw
+( local $\\="\\n"; local $,="|"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 454.2 Tm
+0.0000 Tw
+( print STDERR '[examples/copy_output.pql ' . localtime\(\) . "] Init"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 445.8 Tm
+0.0000 Tw
+( use constant VERBOSE => int 10000; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 437.4 Tm
+0.0000 Tw
+( use constant LAST_ICELL => int 4; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 429.0 Tm
+0.0000 Tw
+( my @I_VAL; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 420.6 Tm
+0.0000 Tw
+( my @O_VAL; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 412.2 Tm
+0.0000 Tw
+( my $key__I_LOCATION; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 403.8 Tm
+0.0000 Tw
+( my $previous_key__I_LOCATION = undef; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 395.4 Tm
+0.0000 Tw
+( foreach my $f \(1..3\) \{ $O_VAL[$f] = undef; \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 387.0 Tm
+0.0000 Tw
+( my $_TABLE_LOC_DESCRIPT = &InitLookupLOC_DESCRIPT; # ref to %$LOC_DESCRIPT hash ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 378.6 Tm
+0.0000 Tw
+( if \(open\(INPUT_CHAIN_PEQUEL_PT1, '-|'\) == 0\) # Fork -- read from child ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 370.2 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 361.8 Tm
+0.0000 Tw
+(     &p_input_chain_pequel_pt1::input_chain_pequel_pt1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 353.4 Tm
+0.0000 Tw
+(     exit\(0\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 345.0 Tm
+0.0000 Tw
+( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 328.2 Tm
+0.0000 Tw
+( open\(STDOUT, '|-', q\{sort -t'|' -y -k 1,1 -k 3nr,3nr 2>/dev/null |\}\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 319.8 Tm
+0.0000 Tw
+( if \(open\(DIVERT_INPUT_COPY_OUTPUT_WA, '|-'\) == 0\) # Fork -- write to child ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 311.4 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 303.0 Tm
+0.0000 Tw
+(     &p_divert_input_copy_output_wa::divert_input_copy_output_wa; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 294.6 Tm
+0.0000 Tw
+(     exit\(0\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 286.2 Tm
+0.0000 Tw
+( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 269.4 Tm
+0.0000 Tw
+( if \(open\(DIVERT_INPUT_COPY_OUTPUT_SA, '|-'\) == 0\) # Fork -- write to child ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 261.0 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 252.6 Tm
+0.0000 Tw
+(     &p_divert_input_copy_output_sa::divert_input_copy_output_sa; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 244.2 Tm
+0.0000 Tw
+(     exit\(0\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 235.8 Tm
+0.0000 Tw
+( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 219.0 Tm
+0.0000 Tw
+( if \(open\(DIVERT_INPUT_COPY_OUTPUT_NSW, '|-'\) == 0\) # Fork -- write to child ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 210.6 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 202.2 Tm
+0.0000 Tw
+(     &p_divert_input_copy_output_nsw::divert_input_copy_output_nsw; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 193.8 Tm
+0.0000 Tw
+(     exit\(0\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 185.4 Tm
+0.0000 Tw
+( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 168.6 Tm
+0.0000 Tw
+( if \(open\(DIVERT_INPUT_COPY_OUTPUT_VIC, '|-'\) == 0\) # Fork -- write to child ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 160.2 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 151.8 Tm
+0.0000 Tw
+(     &p_divert_input_copy_output_vic::divert_input_copy_output_vic; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 143.4 Tm
+0.0000 Tw
+(     exit\(0\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 135.0 Tm
+0.0000 Tw
+( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 118.2 Tm
+0.0000 Tw
+( if \(open\(DIVERT_INPUT_COPY_OUTPUT_NT, '|-'\) == 0\) # Fork -- write to child ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 109.8 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 101.4 Tm
+0.0000 Tw
+(     &p_divert_input_copy_output_nt::divert_input_copy_output_nt; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 93.0 Tm
+0.0000 Tw
+(     exit\(0\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 84.6 Tm
+0.0000 Tw
+( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 67.8 Tm
+0.0000 Tw
+( print STDERR '[examples/copy_output.pql ' . localtime\(\) . "] Start"; ) Tj
+/F10 7 Tf
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(13 October 2005 15:46) Tj
+1 0 0 1 537.44 37 Tm
+(7) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+43 0 obj
+7161
+endobj
+44 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F10 10 0 R
+/F21 15 0 R
+>>
+>>
+endobj
+45 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 44 0 R
+/Contents 42 0 R
+>>
+endobj
+46 0 obj
+<<
+/Length 47 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Copy Output Record Example Script) Tj
+1 0 0 1 416.86 797 Tm
+(examples/copy_output.pql) Tj
+/F10 7 Tf
+1 0 0 1 76.0 771.6 Tm
+0.0000 Tw
+( use Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 763.2 Tm
+0.0000 Tw
+( my $benchmark_start = new Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 754.8 Tm
+0.0000 Tw
+( while \(<INPUT_CHAIN_PEQUEL_PT1>\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 746.4 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 738.0 Tm
+0.0000 Tw
+(     print STDERR '[examples/copy_output.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE == 0\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 729.6 Tm
+0.0000 Tw
+(     chomp; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 721.2 Tm
+0.0000 Tw
+(     @I_VAL = split\("[|]", $_\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 712.8 Tm
+0.0000 Tw
+(     next unless \($I_VAL[_I_LOCATION] eq 'WA' || $I_VAL[_I_LOCATION] eq 'SA' || $I_VAL[_I_LOCATION] eq 'NSW' || ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 704.4 Tm
+0.0000 Tw
+(  $I_VAL[_I_LOCATION] eq 'VIC' || $I_VAL[_I_LOCATION] eq 'NT'\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 696.0 Tm
+0.0000 Tw
+(     if \($I_VAL[_I_LOCATION] eq 'WA'\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 687.6 Tm
+0.0000 Tw
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 679.2 Tm
+0.0000 Tw
+(         print DIVERT_INPUT_COPY_OUTPUT_WA ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 670.8 Tm
+0.0000 Tw
+(             @I_VAL[0..LAST_ICELL]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 662.4 Tm
+0.0000 Tw
+(         next; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 654.0 Tm
+0.0000 Tw
+(     \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 637.2 Tm
+0.0000 Tw
+(     if \($I_VAL[_I_LOCATION] eq 'SA'\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 628.8 Tm
+0.0000 Tw
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 620.4 Tm
+0.0000 Tw
+(         print DIVERT_INPUT_COPY_OUTPUT_SA ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 612.0 Tm
+0.0000 Tw
+(             @I_VAL[0..LAST_ICELL]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 603.6 Tm
+0.0000 Tw
+(         next; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 595.2 Tm
+0.0000 Tw
+(     \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 578.4 Tm
+0.0000 Tw
+(     if \($I_VAL[_I_LOCATION] eq 'NSW'\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 570.0 Tm
+0.0000 Tw
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 561.6 Tm
+0.0000 Tw
+(         print DIVERT_INPUT_COPY_OUTPUT_NSW ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 553.2 Tm
+0.0000 Tw
+(             @I_VAL[0..LAST_ICELL]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 544.8 Tm
+0.0000 Tw
+(         next; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 536.4 Tm
+0.0000 Tw
+(     \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 519.6 Tm
+0.0000 Tw
+(     if \($I_VAL[_I_LOCATION] eq 'VIC'\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 511.2 Tm
+0.0000 Tw
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 502.8 Tm
+0.0000 Tw
+(         print DIVERT_INPUT_COPY_OUTPUT_VIC ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 494.4 Tm
+0.0000 Tw
+(             @I_VAL[0..LAST_ICELL]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 486.0 Tm
+0.0000 Tw
+(         next; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 477.6 Tm
+0.0000 Tw
+(     \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 460.8 Tm
+0.0000 Tw
+(     if \($I_VAL[_I_LOCATION] eq 'NT'\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 452.4 Tm
+0.0000 Tw
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 444.0 Tm
+0.0000 Tw
+(         print DIVERT_INPUT_COPY_OUTPUT_NT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 435.6 Tm
+0.0000 Tw
+(             @I_VAL[0..LAST_ICELL]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 427.2 Tm
+0.0000 Tw
+(         next; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 418.8 Tm
+0.0000 Tw
+(     \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 402.0 Tm
+0.0000 Tw
+(     $key__I_LOCATION = $I_VAL[_I_LOCATION]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 393.6 Tm
+0.0000 Tw
+(     if \(!defined\($previous_key__I_LOCATION\)\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 385.2 Tm
+0.0000 Tw
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 376.8 Tm
+0.0000 Tw
+(         $previous_key__I_LOCATION = $key__I_LOCATION; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 368.4 Tm
+0.0000 Tw
+(     \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 351.6 Tm
+0.0000 Tw
+(     elsif \($previous_key__I_LOCATION ne $key__I_LOCATION\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 343.2 Tm
+0.0000 Tw
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 334.8 Tm
+0.0000 Tw
+(         flock\(STDOUT, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 326.4 Tm
+0.0000 Tw
+(         print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 318.0 Tm
+0.0000 Tw
+(             $O_VAL[_O_LOCATION], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 309.6 Tm
+0.0000 Tw
+(             $O_VAL[_O_DESCRIPTION], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 301.2 Tm
+0.0000 Tw
+(             $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 292.8 Tm
+0.0000 Tw
+(         if ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 284.4 Tm
+0.0000 Tw
+(         \( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 276.0 Tm
+0.0000 Tw
+(             $O_VAL[_O_SALES_TOTAL] > 0 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 267.6 Tm
+0.0000 Tw
+(         \); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 259.2 Tm
+0.0000 Tw
+(         flock\(STDOUT, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 250.8 Tm
+0.0000 Tw
+(         $previous_key__I_LOCATION = $key__I_LOCATION; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 242.4 Tm
+0.0000 Tw
+(         @O_VAL = undef; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 234.0 Tm
+0.0000 Tw
+(     \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 217.2 Tm
+0.0000 Tw
+(     $I_VAL[_I_LOCATION_DESC] = $$_TABLE_LOC_DESCRIPT\{qq\{$I_VAL[_I_LOCATION]\}\}; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 208.8 Tm
+0.0000 Tw
+(     $O_VAL[_O_LOCATION] = $I_VAL[_I_LOCATION_DESC]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 200.4 Tm
+0.0000 Tw
+(     $I_VAL[_I_DESCRIPTION] = 'State Total'; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 192.0 Tm
+0.0000 Tw
+(     $O_VAL[_O_DESCRIPTION] = $I_VAL[_I_DESCRIPTION]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 183.6 Tm
+0.0000 Tw
+(     $O_VAL[_O_SALES_TOTAL] += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 175.2 Tm
+0.0000 Tw
+( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 158.4 Tm
+0.0000 Tw
+( flock\(STDOUT, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 150.0 Tm
+0.0000 Tw
+( print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 141.6 Tm
+0.0000 Tw
+(     $O_VAL[_O_LOCATION], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 133.2 Tm
+0.0000 Tw
+(     $O_VAL[_O_DESCRIPTION], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 124.8 Tm
+0.0000 Tw
+(     $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 116.4 Tm
+0.0000 Tw
+( if ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 108.0 Tm
+0.0000 Tw
+( \( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 99.6 Tm
+0.0000 Tw
+(     $O_VAL[_O_SALES_TOTAL] > 0 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 91.2 Tm
+0.0000 Tw
+( \); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 82.8 Tm
+0.0000 Tw
+( flock\(STDOUT, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 74.4 Tm
+0.0000 Tw
+( close\(DIVERT_INPUT_COPY_OUTPUT_NT\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 66.0 Tm
+0.0000 Tw
+( close\(DIVERT_INPUT_COPY_OUTPUT_VIC\); ) Tj
+/F10 7 Tf
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(8) Tj
+1 0 0 1 437.39 37 Tm
+(13 October 2005 15:46) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+47 0 obj
+6371
+endobj
+48 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F10 10 0 R
+/F21 15 0 R
+>>
+>>
+endobj
+49 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 48 0 R
+/Contents 46 0 R
+>>
+endobj
+50 0 obj
+<<
+/Length 51 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(examples/copy_output.pql) Tj
+1 0 0 1 370.19 797 Tm
+(Copy Output Record Example Script) Tj
+/F10 7 Tf
+1 0 0 1 76.0 771.6 Tm
+0.0000 Tw
+( close\(DIVERT_INPUT_COPY_OUTPUT_NSW\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 763.2 Tm
+0.0000 Tw
+( close\(DIVERT_INPUT_COPY_OUTPUT_SA\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 754.8 Tm
+0.0000 Tw
+( close\(DIVERT_INPUT_COPY_OUTPUT_WA\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 746.4 Tm
+0.0000 Tw
+( close\(STDOUT\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 738.0 Tm
+0.0000 Tw
+( print STDERR '[examples/copy_output.pql ' . localtime\(\) . "] $. records."; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 729.6 Tm
+0.0000 Tw
+( my $benchmark_end = new Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 721.2 Tm
+0.0000 Tw
+( my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 712.8 Tm
+0.0000 Tw
+( print STDERR '[examples/copy_output.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark_timediff\)] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 704.4 Tm
+0.0000 Tw
+( \}"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 696.0 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 687.6 Tm
+0.0000 Tw
+( #++++++ Table LOC_DESCRIPT --> Type :Pequel::Type::Table::Local ++++++ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 679.2 Tm
+0.0000 Tw
+( sub InitLookupLOC_DESCRIPT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 670.8 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 662.4 Tm
+0.0000 Tw
+(     my %_TABLE_LOC_DESCRIPT; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 654.0 Tm
+0.0000 Tw
+(     %_TABLE_LOC_DESCRIPT = ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 645.6 Tm
+0.0000 Tw
+(     \( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 637.2 Tm
+0.0000 Tw
+(         'NSW' => 'New South Wales', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 628.8 Tm
+0.0000 Tw
+(         'NT' => 'Northern Territory', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 620.4 Tm
+0.0000 Tw
+(         'QLD' => 'Queensland', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 612.0 Tm
+0.0000 Tw
+(         'SA' => 'South Australia', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 603.6 Tm
+0.0000 Tw
+(         'VIC' => 'Victoria', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 595.2 Tm
+0.0000 Tw
+(         'WA' => 'Western Australia' ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 586.8 Tm
+0.0000 Tw
+(     \); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 578.4 Tm
+0.0000 Tw
+(     return \\%_TABLE_LOC_DESCRIPT; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 570.0 Tm
+0.0000 Tw
+( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 553.2 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 544.8 Tm
+0.0000 Tw
+(     package p_input_chain_pequel_pt1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 536.4 Tm
+0.0000 Tw
+(     sub input_chain_pequel_pt1 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 528.0 Tm
+0.0000 Tw
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 519.6 Tm
+0.0000 Tw
+( #     vim: syntax=perl ts=4 sw=4 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 511.2 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 502.8 Tm
+0.0000 Tw
+( #    Generated By: pequel Version 2.3-5, Build: Wednesday October  12 23:16:49 BST 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 494.4 Tm
+0.0000 Tw
+( #                : https://sourceforge.net/projects/pequel/ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 486.0 Tm
+0.0000 Tw
+( #    Script Name : examples/chain_pequel_pt1.pql ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 477.6 Tm
+0.0000 Tw
+( #    Created On  : Thu Oct 13 15:46:22 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 469.2 Tm
+0.0000 Tw
+( #    For         :  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 460.8 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 452.4 Tm
+0.0000 Tw
+( #    Options: ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 444.0 Tm
+0.0000 Tw
+( #        input_file\(sample.data\) input data filename ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 435.6 Tm
+0.0000 Tw
+( #        optimize\(1\) optimize generated code. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 427.2 Tm
+0.0000 Tw
+( #        hash\(1\) Generate in memory. Input data can be unsorted. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 418.8 Tm
+0.0000 Tw
+( #        doc_title\(Pequel Chaining Part-1 Example Script\) document title. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 410.4 Tm
+0.0000 Tw
+( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 402.0 Tm
+0.0000 Tw
+( #        doc_version\(2.3\) document version for pequel script. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 393.6 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 385.2 Tm
+0.0000 Tw
+(         use strict; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 376.8 Tm
+0.0000 Tw
+(         use constant _I_PRODUCT_CODE    => int    0; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 368.4 Tm
+0.0000 Tw
+(         use constant _I_COST_PRICE      => int    1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 360.0 Tm
+0.0000 Tw
+(         use constant _I_DESCRIPTION     => int    2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 351.6 Tm
+0.0000 Tw
+(         use constant _I_SALES_CODE      => int    3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 343.2 Tm
+0.0000 Tw
+(         use constant _I_SALES_PRICE     => int    4; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 334.8 Tm
+0.0000 Tw
+(         use constant _I_SALES_QTY       => int    5; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 326.4 Tm
+0.0000 Tw
+(         use constant _I_SALES_DATE      => int    6; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 318.0 Tm
+0.0000 Tw
+(         use constant _I_LOCATION        => int    7; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 309.6 Tm
+0.0000 Tw
+(         use constant _I_SALES_TOTAL     => int    8; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 301.2 Tm
+0.0000 Tw
+(         use constant _O_LOCATION        => int    1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 292.8 Tm
+0.0000 Tw
+(         use constant _O_PRODUCT_CODE    => int    2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 284.4 Tm
+0.0000 Tw
+(         use constant _O_SALES_TOTAL     => int    3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 276.0 Tm
+0.0000 Tw
+(         local $\\="\\n"; local $,="|"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 267.6 Tm
+0.0000 Tw
+(         print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] Init"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 259.2 Tm
+0.0000 Tw
+(         use constant VERBOSE => int 10000; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 250.8 Tm
+0.0000 Tw
+(         use constant LAST_ICELL => int 8; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 242.4 Tm
+0.0000 Tw
+(         my @I_VAL; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 234.0 Tm
+0.0000 Tw
+(         my %O_VAL; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 225.6 Tm
+0.0000 Tw
+(         my $key; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 217.2 Tm
+0.0000 Tw
+(         open\(DATA, q\{examples/sample.data\}\)|| die "Cannot open examples/sample.data: $!"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 208.8 Tm
+0.0000 Tw
+(         open\(STDOUT, '|-', q\{sort -t'|' -y -k 1,1 2>/dev/null |\}\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 200.4 Tm
+0.0000 Tw
+(         print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] Start"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 192.0 Tm
+0.0000 Tw
+(         use Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 183.6 Tm
+0.0000 Tw
+(         my $benchmark_start = new Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 175.2 Tm
+0.0000 Tw
+(         while \(<DATA>\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 166.8 Tm
+0.0000 Tw
+(         \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 158.4 Tm
+0.0000 Tw
+(             print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE == ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 150.0 Tm
+0.0000 Tw
+(  0\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 141.6 Tm
+0.0000 Tw
+(             chomp; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 133.2 Tm
+0.0000 Tw
+(             @I_VAL = split\("[|]", $_\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 124.8 Tm
+0.0000 Tw
+(             $key = \( $I_VAL[_I_LOCATION] \) . '|' . \( $I_VAL[_I_PRODUCT_CODE] \); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 116.4 Tm
+0.0000 Tw
+(             $O_VAL\{$key\}\{_O_LOCATION\} = $I_VAL[_I_LOCATION]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 108.0 Tm
+0.0000 Tw
+(             $O_VAL\{$key\}\{_O_PRODUCT_CODE\} = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 99.6 Tm
+0.0000 Tw
+(             $I_VAL[_I_SALES_TOTAL] = $I_VAL[_I_SALES_QTY] * $I_VAL[_I_SALES_PRICE]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 91.2 Tm
+0.0000 Tw
+(             $O_VAL\{$key\}\{_O_SALES_TOTAL\} += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 82.8 Tm
+0.0000 Tw
+(         \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 66.0 Tm
+0.0000 Tw
+(         foreach $key \(sort  keys %O_VAL\) ) Tj
+/F10 7 Tf
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(13 October 2005 15:46) Tj
+1 0 0 1 537.44 37 Tm
+(9) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+51 0 obj
+8301
+endobj
+52 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F10 10 0 R
+/F21 15 0 R
+>>
+>>
+endobj
+53 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 52 0 R
+/Contents 50 0 R
+>>
+endobj
+54 0 obj
+<<
+/Length 55 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Copy Output Record Example Script) Tj
+1 0 0 1 416.86 797 Tm
+(examples/copy_output.pql) Tj
+/F10 7 Tf
+1 0 0 1 76.0 771.6 Tm
+0.0000 Tw
+(         \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 763.2 Tm
+0.0000 Tw
+(             print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 754.8 Tm
+0.0000 Tw
+(                 $O_VAL\{$key\}\{_O_LOCATION\}, ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 746.4 Tm
+0.0000 Tw
+(                 $O_VAL\{$key\}\{_O_PRODUCT_CODE\}, ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 738.0 Tm
+0.0000 Tw
+(                 $O_VAL\{$key\}\{_O_SALES_TOTAL\} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 729.6 Tm
+0.0000 Tw
+(             ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 721.2 Tm
+0.0000 Tw
+(         \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 704.4 Tm
+0.0000 Tw
+(         close\(STDOUT\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 696.0 Tm
+0.0000 Tw
+(         print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] $. records."; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 687.6 Tm
+0.0000 Tw
+(         my $benchmark_end = new Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 679.2 Tm
+0.0000 Tw
+(         my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 670.8 Tm
+0.0000 Tw
+(         print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchma ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 662.4 Tm
+0.0000 Tw
+( rk_timediff\)]\}"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 654.0 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 645.6 Tm
+0.0000 Tw
+(     \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 628.8 Tm
+0.0000 Tw
+( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 612.0 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 603.6 Tm
+0.0000 Tw
+(     package p_divert_input_copy_output_sa; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 595.2 Tm
+0.0000 Tw
+(     sub divert_input_copy_output_sa ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 586.8 Tm
+0.0000 Tw
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 578.4 Tm
+0.0000 Tw
+( #     vim: syntax=perl ts=4 sw=4 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 570.0 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 561.6 Tm
+0.0000 Tw
+( #    Generated By: pequel Version 2.3-5, Build: Wednesday October  12 23:16:49 BST 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 553.2 Tm
+0.0000 Tw
+( #                : https://sourceforge.net/projects/pequel/ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 544.8 Tm
+0.0000 Tw
+( #    Script Name : examples/copy_output_SA.pql ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 536.4 Tm
+0.0000 Tw
+( #    Created On  : Thu Oct 13 15:46:27 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 528.0 Tm
+0.0000 Tw
+( #    For         :  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 519.6 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 511.2 Tm
+0.0000 Tw
+( #    Options: ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 502.8 Tm
+0.0000 Tw
+( #        optimize\(1\) optimize generated code. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 494.4 Tm
+0.0000 Tw
+( #        doc_title\(Copy Output Record Example Script\) document title. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 486.0 Tm
+0.0000 Tw
+( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 477.6 Tm
+0.0000 Tw
+( #        doc_version\(2.3\) document version for pequel script. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 469.2 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 460.8 Tm
+0.0000 Tw
+(         use strict; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 452.4 Tm
+0.0000 Tw
+(         use Fcntl ':flock'; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 444.0 Tm
+0.0000 Tw
+(         use constant _I_LOCATION         => int    0; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 435.6 Tm
+0.0000 Tw
+(         use constant _I_PRODUCT_CODE     => int    1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 427.2 Tm
+0.0000 Tw
+(         use constant _I_SALES_TOTAL      => int    2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 418.8 Tm
+0.0000 Tw
+(         use constant _I_LOCATION_NAME    => int    3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 410.4 Tm
+0.0000 Tw
+(         use constant _O_LOCATION_NAME    => int    1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 402.0 Tm
+0.0000 Tw
+(         use constant _O_PRODUCT_CODE     => int    2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 393.6 Tm
+0.0000 Tw
+(         use constant _O_SALES_TOTAL      => int    3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 385.2 Tm
+0.0000 Tw
+(         local $\\="\\n"; local $,="|"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 376.8 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_SA.pql ' . localtime\(\) . "] Init"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 368.4 Tm
+0.0000 Tw
+(         use constant VERBOSE => int 10000; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 360.0 Tm
+0.0000 Tw
+(         use constant LAST_ICELL => int 3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 351.6 Tm
+0.0000 Tw
+(         my @I_VAL; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 343.2 Tm
+0.0000 Tw
+(         my @O_VAL; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 334.8 Tm
+0.0000 Tw
+(         my $key__I_PRODUCT_CODE; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 326.4 Tm
+0.0000 Tw
+(         my $previous_key__I_PRODUCT_CODE = undef; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 318.0 Tm
+0.0000 Tw
+(         foreach my $f \(1..3\) \{ $O_VAL[$f] = undef; \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 309.6 Tm
+0.0000 Tw
+( #     Sort:PRODUCT_CODE\(asc:string\)  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 301.2 Tm
+0.0000 Tw
+(         open\(DATA, q\{cat - | sort -t'|' -y -k 2,2 2>/dev/null |\}\) || die "Cannot open input: $!"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 292.8 Tm
+0.0000 Tw
+(         if \(open\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, '|-'\) == 0\) # Fork -- write to child ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 284.4 Tm
+0.0000 Tw
+(         \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 276.0 Tm
+0.0000 Tw
+(             &p_copy_output_copy_output_combiner::copy_output_copy_output_combiner; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 267.6 Tm
+0.0000 Tw
+(             exit\(0\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 259.2 Tm
+0.0000 Tw
+(         \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 242.4 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_SA.pql ' . localtime\(\) . "] Start"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 234.0 Tm
+0.0000 Tw
+(         use Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 225.6 Tm
+0.0000 Tw
+(         my $benchmark_start = new Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 217.2 Tm
+0.0000 Tw
+(         while \(<DATA>\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 208.8 Tm
+0.0000 Tw
+(         \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 200.4 Tm
+0.0000 Tw
+(             print STDERR '[examples/copy_output_SA.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE == 0 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 192.0 Tm
+0.0000 Tw
+( \); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 183.6 Tm
+0.0000 Tw
+(             chomp; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 175.2 Tm
+0.0000 Tw
+(             @I_VAL = split\("[|]", $_\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 166.8 Tm
+0.0000 Tw
+(             $key__I_PRODUCT_CODE = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 158.4 Tm
+0.0000 Tw
+(             if \(!defined\($previous_key__I_PRODUCT_CODE\)\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 150.0 Tm
+0.0000 Tw
+(             \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 141.6 Tm
+0.0000 Tw
+(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 133.2 Tm
+0.0000 Tw
+(             \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 116.4 Tm
+0.0000 Tw
+(             elsif \($previous_key__I_PRODUCT_CODE ne $key__I_PRODUCT_CODE\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 108.0 Tm
+0.0000 Tw
+(             \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 99.6 Tm
+0.0000 Tw
+(                 flock\(STDOUT, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 91.2 Tm
+0.0000 Tw
+(                 print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 82.8 Tm
+0.0000 Tw
+(                     $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 74.4 Tm
+0.0000 Tw
+(                     $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 66.0 Tm
+0.0000 Tw
+(                     $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(10) Tj
+1 0 0 1 437.39 37 Tm
+(13 October 2005 15:46) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+55 0 obj
+7902
+endobj
+56 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F10 10 0 R
+/F21 15 0 R
+>>
+>>
+endobj
+57 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 56 0 R
+/Contents 54 0 R
+>>
+endobj
+58 0 obj
+<<
+/Length 59 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(examples/copy_output.pql) Tj
+1 0 0 1 370.19 797 Tm
+(Copy Output Record Example Script) Tj
+/F10 7 Tf
+1 0 0 1 76.0 771.6 Tm
+0.0000 Tw
+(                 ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 763.2 Tm
+0.0000 Tw
+(                 flock\(STDOUT, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 754.8 Tm
+0.0000 Tw
+(                 if \($O_VAL[_O_SALES_TOTAL] > 0\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 746.4 Tm
+0.0000 Tw
+(                 \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 738.0 Tm
+0.0000 Tw
+(                     flock\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 729.6 Tm
+0.0000 Tw
+(                     print COPY_OUTPUT_COPY_OUTPUT_COMBINER ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 721.2 Tm
+0.0000 Tw
+(                         $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 712.8 Tm
+0.0000 Tw
+(                         $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 704.4 Tm
+0.0000 Tw
+(                         $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 696.0 Tm
+0.0000 Tw
+(                     ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 687.6 Tm
+0.0000 Tw
+(                     flock\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 679.2 Tm
+0.0000 Tw
+(                 \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 662.4 Tm
+0.0000 Tw
+(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 654.0 Tm
+0.0000 Tw
+(                 @O_VAL = undef; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 645.6 Tm
+0.0000 Tw
+(             \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 628.8 Tm
+0.0000 Tw
+(             $I_VAL[_I_LOCATION_NAME] = 'South Australia'; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 620.4 Tm
+0.0000 Tw
+(             $O_VAL[_O_LOCATION_NAME] = $I_VAL[_I_LOCATION_NAME]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 612.0 Tm
+0.0000 Tw
+(             $O_VAL[_O_PRODUCT_CODE] = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 603.6 Tm
+0.0000 Tw
+(             $O_VAL[_O_SALES_TOTAL] += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 595.2 Tm
+0.0000 Tw
+(         \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 578.4 Tm
+0.0000 Tw
+(         flock\(STDOUT, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 570.0 Tm
+0.0000 Tw
+(         print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 561.6 Tm
+0.0000 Tw
+(             $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 553.2 Tm
+0.0000 Tw
+(             $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 544.8 Tm
+0.0000 Tw
+(             $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 536.4 Tm
+0.0000 Tw
+(         ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 528.0 Tm
+0.0000 Tw
+(         flock\(STDOUT, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 519.6 Tm
+0.0000 Tw
+(         if \($O_VAL[_O_SALES_TOTAL] > 0\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 511.2 Tm
+0.0000 Tw
+(         \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 502.8 Tm
+0.0000 Tw
+(             flock\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 494.4 Tm
+0.0000 Tw
+(             print COPY_OUTPUT_COPY_OUTPUT_COMBINER ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 486.0 Tm
+0.0000 Tw
+(                 $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 477.6 Tm
+0.0000 Tw
+(                 $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 469.2 Tm
+0.0000 Tw
+(                 $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 460.8 Tm
+0.0000 Tw
+(             ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 452.4 Tm
+0.0000 Tw
+(             flock\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 444.0 Tm
+0.0000 Tw
+(         \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 427.2 Tm
+0.0000 Tw
+(         close\(COPY_OUTPUT_COPY_OUTPUT_COMBINER\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 418.8 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_SA.pql ' . localtime\(\) . "] $. records."; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 410.4 Tm
+0.0000 Tw
+(         my $benchmark_end = new Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 402.0 Tm
+0.0000 Tw
+(         my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 393.6 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_SA.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 385.2 Tm
+0.0000 Tw
+( _timediff\)]\}"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 376.8 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 368.4 Tm
+0.0000 Tw
+(     \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 351.6 Tm
+0.0000 Tw
+( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 334.8 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 326.4 Tm
+0.0000 Tw
+(     package p_divert_input_copy_output_wa; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 318.0 Tm
+0.0000 Tw
+(     sub divert_input_copy_output_wa ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 309.6 Tm
+0.0000 Tw
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 301.2 Tm
+0.0000 Tw
+( #     vim: syntax=perl ts=4 sw=4 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 292.8 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 284.4 Tm
+0.0000 Tw
+( #    Generated By: pequel Version 2.3-5, Build: Wednesday October  12 23:16:49 BST 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 276.0 Tm
+0.0000 Tw
+( #                : https://sourceforge.net/projects/pequel/ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 267.6 Tm
+0.0000 Tw
+( #    Script Name : examples/copy_output_WA.pql ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 259.2 Tm
+0.0000 Tw
+( #    Created On  : Thu Oct 13 15:46:24 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 250.8 Tm
+0.0000 Tw
+( #    For         :  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 242.4 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 234.0 Tm
+0.0000 Tw
+( #    Options: ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 225.6 Tm
+0.0000 Tw
+( #        optimize\(1\) optimize generated code. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 217.2 Tm
+0.0000 Tw
+( #        doc_title\(Copy Output Record Example Script\) document title. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 208.8 Tm
+0.0000 Tw
+( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 200.4 Tm
+0.0000 Tw
+( #        doc_version\(2.3\) document version for pequel script. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 192.0 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 183.6 Tm
+0.0000 Tw
+(         use strict; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 175.2 Tm
+0.0000 Tw
+(         use Fcntl ':flock'; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 166.8 Tm
+0.0000 Tw
+(         use constant _I_LOCATION         => int    0; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 158.4 Tm
+0.0000 Tw
+(         use constant _I_PRODUCT_CODE     => int    1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 150.0 Tm
+0.0000 Tw
+(         use constant _I_SALES_TOTAL      => int    2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 141.6 Tm
+0.0000 Tw
+(         use constant _I_LOCATION_NAME    => int    3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 133.2 Tm
+0.0000 Tw
+(         use constant _O_LOCATION_NAME    => int    1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 124.8 Tm
+0.0000 Tw
+(         use constant _O_PRODUCT_CODE     => int    2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 116.4 Tm
+0.0000 Tw
+(         use constant _O_SALES_TOTAL      => int    3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 108.0 Tm
+0.0000 Tw
+(         local $\\="\\n"; local $,="|"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 99.6 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_WA.pql ' . localtime\(\) . "] Init"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 91.2 Tm
+0.0000 Tw
+(         use constant VERBOSE => int 10000; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 82.8 Tm
+0.0000 Tw
+(         use constant LAST_ICELL => int 3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 74.4 Tm
+0.0000 Tw
+(         my @I_VAL; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 66.0 Tm
+0.0000 Tw
+(         my @O_VAL; ) Tj
+/F10 7 Tf
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(13 October 2005 15:46) Tj
+1 0 0 1 531.88 37 Tm
+(11) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+59 0 obj
+7808
+endobj
+60 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F10 10 0 R
+/F21 15 0 R
+>>
+>>
+endobj
+61 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 60 0 R
+/Contents 58 0 R
+>>
+endobj
+62 0 obj
+<<
+/Length 63 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Copy Output Record Example Script) Tj
+1 0 0 1 416.86 797 Tm
+(examples/copy_output.pql) Tj
+/F10 7 Tf
+1 0 0 1 76.0 771.6 Tm
+0.0000 Tw
+(         my $key__I_PRODUCT_CODE; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 763.2 Tm
+0.0000 Tw
+(         my $previous_key__I_PRODUCT_CODE = undef; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 754.8 Tm
+0.0000 Tw
+(         foreach my $f \(1..3\) \{ $O_VAL[$f] = undef; \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 746.4 Tm
+0.0000 Tw
+( #     Sort:PRODUCT_CODE\(asc:string\)  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 738.0 Tm
+0.0000 Tw
+(         open\(DATA, q\{cat - | sort -t'|' -y -k 2,2 2>/dev/null |\}\) || die "Cannot open input: $!"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 729.6 Tm
+0.0000 Tw
+(         if \(open\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, '|-'\) == 0\) # Fork -- write to child ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 721.2 Tm
+0.0000 Tw
+(         \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 712.8 Tm
+0.0000 Tw
+(             &p_copy_output_copy_output_combiner::copy_output_copy_output_combiner; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 704.4 Tm
+0.0000 Tw
+(             exit\(0\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 696.0 Tm
+0.0000 Tw
+(         \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 679.2 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_WA.pql ' . localtime\(\) . "] Start"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 670.8 Tm
+0.0000 Tw
+(         use Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 662.4 Tm
+0.0000 Tw
+(         my $benchmark_start = new Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 654.0 Tm
+0.0000 Tw
+(         while \(<DATA>\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 645.6 Tm
+0.0000 Tw
+(         \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 637.2 Tm
+0.0000 Tw
+(             print STDERR '[examples/copy_output_WA.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE == 0 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 628.8 Tm
+0.0000 Tw
+( \); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 620.4 Tm
+0.0000 Tw
+(             chomp; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 612.0 Tm
+0.0000 Tw
+(             @I_VAL = split\("[|]", $_\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 603.6 Tm
+0.0000 Tw
+(             $key__I_PRODUCT_CODE = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 595.2 Tm
+0.0000 Tw
+(             if \(!defined\($previous_key__I_PRODUCT_CODE\)\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 586.8 Tm
+0.0000 Tw
+(             \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 578.4 Tm
+0.0000 Tw
+(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 570.0 Tm
+0.0000 Tw
+(             \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 553.2 Tm
+0.0000 Tw
+(             elsif \($previous_key__I_PRODUCT_CODE ne $key__I_PRODUCT_CODE\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 544.8 Tm
+0.0000 Tw
+(             \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 536.4 Tm
+0.0000 Tw
+(                 flock\(STDOUT, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 528.0 Tm
+0.0000 Tw
+(                 print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 519.6 Tm
+0.0000 Tw
+(                     $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 511.2 Tm
+0.0000 Tw
+(                     $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 502.8 Tm
+0.0000 Tw
+(                     $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 494.4 Tm
+0.0000 Tw
+(                 ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 486.0 Tm
+0.0000 Tw
+(                 flock\(STDOUT, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 477.6 Tm
+0.0000 Tw
+(                 if \($O_VAL[_O_SALES_TOTAL] > 0\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 469.2 Tm
+0.0000 Tw
+(                 \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 460.8 Tm
+0.0000 Tw
+(                     flock\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 452.4 Tm
+0.0000 Tw
+(                     print COPY_OUTPUT_COPY_OUTPUT_COMBINER ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 444.0 Tm
+0.0000 Tw
+(                         $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 435.6 Tm
+0.0000 Tw
+(                         $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 427.2 Tm
+0.0000 Tw
+(                         $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 418.8 Tm
+0.0000 Tw
+(                     ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 410.4 Tm
+0.0000 Tw
+(                     flock\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 402.0 Tm
+0.0000 Tw
+(                 \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 385.2 Tm
+0.0000 Tw
+(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 376.8 Tm
+0.0000 Tw
+(                 @O_VAL = undef; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 368.4 Tm
+0.0000 Tw
+(             \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 351.6 Tm
+0.0000 Tw
+(             $I_VAL[_I_LOCATION_NAME] = 'Western Australia'; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 343.2 Tm
+0.0000 Tw
+(             $O_VAL[_O_LOCATION_NAME] = $I_VAL[_I_LOCATION_NAME]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 334.8 Tm
+0.0000 Tw
+(             $O_VAL[_O_PRODUCT_CODE] = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 326.4 Tm
+0.0000 Tw
+(             $O_VAL[_O_SALES_TOTAL] += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 318.0 Tm
+0.0000 Tw
+(         \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 301.2 Tm
+0.0000 Tw
+(         flock\(STDOUT, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 292.8 Tm
+0.0000 Tw
+(         print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 284.4 Tm
+0.0000 Tw
+(             $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 276.0 Tm
+0.0000 Tw
+(             $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 267.6 Tm
+0.0000 Tw
+(             $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 259.2 Tm
+0.0000 Tw
+(         ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 250.8 Tm
+0.0000 Tw
+(         flock\(STDOUT, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 242.4 Tm
+0.0000 Tw
+(         if \($O_VAL[_O_SALES_TOTAL] > 0\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 234.0 Tm
+0.0000 Tw
+(         \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 225.6 Tm
+0.0000 Tw
+(             flock\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 217.2 Tm
+0.0000 Tw
+(             print COPY_OUTPUT_COPY_OUTPUT_COMBINER ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 208.8 Tm
+0.0000 Tw
+(                 $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 200.4 Tm
+0.0000 Tw
+(                 $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 192.0 Tm
+0.0000 Tw
+(                 $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 183.6 Tm
+0.0000 Tw
+(             ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 175.2 Tm
+0.0000 Tw
+(             flock\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 166.8 Tm
+0.0000 Tw
+(         \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 150.0 Tm
+0.0000 Tw
+(         close\(COPY_OUTPUT_COPY_OUTPUT_COMBINER\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 141.6 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_WA.pql ' . localtime\(\) . "] $. records."; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 133.2 Tm
+0.0000 Tw
+(         my $benchmark_end = new Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 124.8 Tm
+0.0000 Tw
+(         my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 116.4 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_WA.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 108.0 Tm
+0.0000 Tw
+( _timediff\)]\}"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 99.6 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 91.2 Tm
+0.0000 Tw
+(     \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 74.4 Tm
+0.0000 Tw
+( \} ) Tj
+/F10 7 Tf
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(12) Tj
+1 0 0 1 437.39 37 Tm
+(13 October 2005 15:46) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+63 0 obj
+7475
+endobj
+64 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F10 10 0 R
+/F21 15 0 R
+>>
+>>
+endobj
+65 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 64 0 R
+/Contents 62 0 R
+>>
+endobj
+66 0 obj
+<<
+/Length 67 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(examples/copy_output.pql) Tj
+1 0 0 1 370.19 797 Tm
+(Copy Output Record Example Script) Tj
+/F10 7 Tf
+1 0 0 1 76.0 771.6 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 763.2 Tm
+0.0000 Tw
+(     package p_divert_input_copy_output_nt; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 754.8 Tm
+0.0000 Tw
+(     sub divert_input_copy_output_nt ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 746.4 Tm
+0.0000 Tw
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 738.0 Tm
+0.0000 Tw
+( #     vim: syntax=perl ts=4 sw=4 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 729.6 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 721.2 Tm
+0.0000 Tw
+( #    Generated By: pequel Version 2.3-5, Build: Wednesday October  12 23:16:49 BST 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 712.8 Tm
+0.0000 Tw
+( #                : https://sourceforge.net/projects/pequel/ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 704.4 Tm
+0.0000 Tw
+( #    Script Name : examples/copy_output_NT.pql ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 696.0 Tm
+0.0000 Tw
+( #    Created On  : Thu Oct 13 15:46:31 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 687.6 Tm
+0.0000 Tw
+( #    For         :  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 679.2 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 670.8 Tm
+0.0000 Tw
+( #    Options: ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 662.4 Tm
+0.0000 Tw
+( #        optimize\(1\) optimize generated code. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 654.0 Tm
+0.0000 Tw
+( #        doc_title\(Copy Output Record Example Script\) document title. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 645.6 Tm
+0.0000 Tw
+( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 637.2 Tm
+0.0000 Tw
+( #        doc_version\(2.3\) document version for pequel script. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 628.8 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 620.4 Tm
+0.0000 Tw
+(         use strict; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 612.0 Tm
+0.0000 Tw
+(         use Fcntl ':flock'; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 603.6 Tm
+0.0000 Tw
+(         use constant _I_LOCATION         => int    0; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 595.2 Tm
+0.0000 Tw
+(         use constant _I_PRODUCT_CODE     => int    1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 586.8 Tm
+0.0000 Tw
+(         use constant _I_SALES_TOTAL      => int    2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 578.4 Tm
+0.0000 Tw
+(         use constant _I_LOCATION_NAME    => int    3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 570.0 Tm
+0.0000 Tw
+(         use constant _O_LOCATION_NAME    => int    1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 561.6 Tm
+0.0000 Tw
+(         use constant _O_PRODUCT_CODE     => int    2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 553.2 Tm
+0.0000 Tw
+(         use constant _O_SALES_TOTAL      => int    3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 544.8 Tm
+0.0000 Tw
+(         local $\\="\\n"; local $,="|"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 536.4 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_NT.pql ' . localtime\(\) . "] Init"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 528.0 Tm
+0.0000 Tw
+(         use constant VERBOSE => int 10000; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 519.6 Tm
+0.0000 Tw
+(         use constant LAST_ICELL => int 3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 511.2 Tm
+0.0000 Tw
+(         my @I_VAL; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 502.8 Tm
+0.0000 Tw
+(         my @O_VAL; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 494.4 Tm
+0.0000 Tw
+(         my $key__I_PRODUCT_CODE; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 486.0 Tm
+0.0000 Tw
+(         my $previous_key__I_PRODUCT_CODE = undef; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 477.6 Tm
+0.0000 Tw
+(         foreach my $f \(1..3\) \{ $O_VAL[$f] = undef; \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 469.2 Tm
+0.0000 Tw
+( #     Sort:PRODUCT_CODE\(asc:string\)  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 460.8 Tm
+0.0000 Tw
+(         open\(DATA, q\{cat - | sort -t'|' -y -k 2,2 2>/dev/null |\}\) || die "Cannot open input: $!"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 452.4 Tm
+0.0000 Tw
+(         if \(open\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, '|-'\) == 0\) # Fork -- write to child ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 444.0 Tm
+0.0000 Tw
+(         \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 435.6 Tm
+0.0000 Tw
+(             &p_copy_output_copy_output_combiner::copy_output_copy_output_combiner; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 427.2 Tm
+0.0000 Tw
+(             exit\(0\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 418.8 Tm
+0.0000 Tw
+(         \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 402.0 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_NT.pql ' . localtime\(\) . "] Start"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 393.6 Tm
+0.0000 Tw
+(         use Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 385.2 Tm
+0.0000 Tw
+(         my $benchmark_start = new Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 376.8 Tm
+0.0000 Tw
+(         while \(<DATA>\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 368.4 Tm
+0.0000 Tw
+(         \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 360.0 Tm
+0.0000 Tw
+(             print STDERR '[examples/copy_output_NT.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE == 0 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 351.6 Tm
+0.0000 Tw
+( \); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 343.2 Tm
+0.0000 Tw
+(             chomp; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 334.8 Tm
+0.0000 Tw
+(             @I_VAL = split\("[|]", $_\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 326.4 Tm
+0.0000 Tw
+(             $key__I_PRODUCT_CODE = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 318.0 Tm
+0.0000 Tw
+(             if \(!defined\($previous_key__I_PRODUCT_CODE\)\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 309.6 Tm
+0.0000 Tw
+(             \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 301.2 Tm
+0.0000 Tw
+(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 292.8 Tm
+0.0000 Tw
+(             \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 276.0 Tm
+0.0000 Tw
+(             elsif \($previous_key__I_PRODUCT_CODE ne $key__I_PRODUCT_CODE\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 267.6 Tm
+0.0000 Tw
+(             \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 259.2 Tm
+0.0000 Tw
+(                 flock\(STDOUT, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 250.8 Tm
+0.0000 Tw
+(                 print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 242.4 Tm
+0.0000 Tw
+(                     $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 234.0 Tm
+0.0000 Tw
+(                     $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 225.6 Tm
+0.0000 Tw
+(                     $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 217.2 Tm
+0.0000 Tw
+(                 ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 208.8 Tm
+0.0000 Tw
+(                 flock\(STDOUT, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 200.4 Tm
+0.0000 Tw
+(                 if \($O_VAL[_O_SALES_TOTAL] > 0\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 192.0 Tm
+0.0000 Tw
+(                 \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 183.6 Tm
+0.0000 Tw
+(                     flock\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 175.2 Tm
+0.0000 Tw
+(                     print COPY_OUTPUT_COPY_OUTPUT_COMBINER ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 166.8 Tm
+0.0000 Tw
+(                         $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 158.4 Tm
+0.0000 Tw
+(                         $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 150.0 Tm
+0.0000 Tw
+(                         $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 141.6 Tm
+0.0000 Tw
+(                     ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 133.2 Tm
+0.0000 Tw
+(                     flock\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 124.8 Tm
+0.0000 Tw
+(                 \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 108.0 Tm
+0.0000 Tw
+(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 99.6 Tm
+0.0000 Tw
+(                 @O_VAL = undef; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 91.2 Tm
+0.0000 Tw
+(             \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 74.4 Tm
+0.0000 Tw
+(             $I_VAL[_I_LOCATION_NAME] = 'Northern Territory'; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 66.0 Tm
+0.0000 Tw
+(             $O_VAL[_O_LOCATION_NAME] = $I_VAL[_I_LOCATION_NAME]; ) Tj
+/F10 7 Tf
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(13 October 2005 15:46) Tj
+1 0 0 1 531.88 37 Tm
+(13) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+67 0 obj
+8023
+endobj
+68 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F10 10 0 R
+/F21 15 0 R
+>>
+>>
+endobj
+69 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 68 0 R
+/Contents 66 0 R
+>>
+endobj
+70 0 obj
+<<
+/Length 71 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Copy Output Record Example Script) Tj
+1 0 0 1 416.86 797 Tm
+(examples/copy_output.pql) Tj
+/F10 7 Tf
+1 0 0 1 76.0 771.6 Tm
+0.0000 Tw
+(             $O_VAL[_O_PRODUCT_CODE] = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 763.2 Tm
+0.0000 Tw
+(             $O_VAL[_O_SALES_TOTAL] += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 754.8 Tm
+0.0000 Tw
+(         \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 738.0 Tm
+0.0000 Tw
+(         flock\(STDOUT, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 729.6 Tm
+0.0000 Tw
+(         print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 721.2 Tm
+0.0000 Tw
+(             $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 712.8 Tm
+0.0000 Tw
+(             $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 704.4 Tm
+0.0000 Tw
+(             $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 696.0 Tm
+0.0000 Tw
+(         ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 687.6 Tm
+0.0000 Tw
+(         flock\(STDOUT, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 679.2 Tm
+0.0000 Tw
+(         if \($O_VAL[_O_SALES_TOTAL] > 0\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 670.8 Tm
+0.0000 Tw
+(         \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 662.4 Tm
+0.0000 Tw
+(             flock\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 654.0 Tm
+0.0000 Tw
+(             print COPY_OUTPUT_COPY_OUTPUT_COMBINER ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 645.6 Tm
+0.0000 Tw
+(                 $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 637.2 Tm
+0.0000 Tw
+(                 $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 628.8 Tm
+0.0000 Tw
+(                 $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 620.4 Tm
+0.0000 Tw
+(             ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 612.0 Tm
+0.0000 Tw
+(             flock\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 603.6 Tm
+0.0000 Tw
+(         \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 586.8 Tm
+0.0000 Tw
+(         close\(COPY_OUTPUT_COPY_OUTPUT_COMBINER\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 578.4 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_NT.pql ' . localtime\(\) . "] $. records."; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 570.0 Tm
+0.0000 Tw
+(         my $benchmark_end = new Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 561.6 Tm
+0.0000 Tw
+(         my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 553.2 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_NT.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 544.8 Tm
+0.0000 Tw
+( _timediff\)]\}"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 536.4 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 528.0 Tm
+0.0000 Tw
+(     \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 511.2 Tm
+0.0000 Tw
+( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 494.4 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 486.0 Tm
+0.0000 Tw
+(     package p_divert_input_copy_output_vic; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 477.6 Tm
+0.0000 Tw
+(     sub divert_input_copy_output_vic ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 469.2 Tm
+0.0000 Tw
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 460.8 Tm
+0.0000 Tw
+( #     vim: syntax=perl ts=4 sw=4 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 452.4 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 444.0 Tm
+0.0000 Tw
+( #    Generated By: pequel Version 2.3-5, Build: Wednesday October  12 23:16:49 BST 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 435.6 Tm
+0.0000 Tw
+( #                : https://sourceforge.net/projects/pequel/ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 427.2 Tm
+0.0000 Tw
+( #    Script Name : examples/copy_output_VIC.pql ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 418.8 Tm
+0.0000 Tw
+( #    Created On  : Thu Oct 13 15:46:30 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 410.4 Tm
+0.0000 Tw
+( #    For         :  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 402.0 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 393.6 Tm
+0.0000 Tw
+( #    Options: ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 385.2 Tm
+0.0000 Tw
+( #        optimize\(1\) optimize generated code. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 376.8 Tm
+0.0000 Tw
+( #        doc_title\(Copy Output Record Example Script\) document title. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 368.4 Tm
+0.0000 Tw
+( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 360.0 Tm
+0.0000 Tw
+( #        doc_version\(2.3\) document version for pequel script. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 351.6 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 343.2 Tm
+0.0000 Tw
+(         use strict; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 334.8 Tm
+0.0000 Tw
+(         use Fcntl ':flock'; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 326.4 Tm
+0.0000 Tw
+(         use constant _I_LOCATION         => int    0; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 318.0 Tm
+0.0000 Tw
+(         use constant _I_PRODUCT_CODE     => int    1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 309.6 Tm
+0.0000 Tw
+(         use constant _I_SALES_TOTAL      => int    2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 301.2 Tm
+0.0000 Tw
+(         use constant _I_LOCATION_NAME    => int    3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 292.8 Tm
+0.0000 Tw
+(         use constant _O_LOCATION_NAME    => int    1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 284.4 Tm
+0.0000 Tw
+(         use constant _O_PRODUCT_CODE     => int    2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 276.0 Tm
+0.0000 Tw
+(         use constant _O_SALES_TOTAL      => int    3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 267.6 Tm
+0.0000 Tw
+(         local $\\="\\n"; local $,="|"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 259.2 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_VIC.pql ' . localtime\(\) . "] Init"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 250.8 Tm
+0.0000 Tw
+(         use constant VERBOSE => int 10000; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 242.4 Tm
+0.0000 Tw
+(         use constant LAST_ICELL => int 3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 234.0 Tm
+0.0000 Tw
+(         my @I_VAL; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 225.6 Tm
+0.0000 Tw
+(         my @O_VAL; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 217.2 Tm
+0.0000 Tw
+(         my $key__I_PRODUCT_CODE; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 208.8 Tm
+0.0000 Tw
+(         my $previous_key__I_PRODUCT_CODE = undef; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 200.4 Tm
+0.0000 Tw
+(         foreach my $f \(1..3\) \{ $O_VAL[$f] = undef; \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 192.0 Tm
+0.0000 Tw
+( #     Sort:PRODUCT_CODE\(asc:string\)  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 183.6 Tm
+0.0000 Tw
+(         open\(DATA, q\{cat - | sort -t'|' -y -k 2,2 2>/dev/null |\}\) || die "Cannot open input: $!"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 175.2 Tm
+0.0000 Tw
+(         if \(open\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, '|-'\) == 0\) # Fork -- write to child ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 166.8 Tm
+0.0000 Tw
+(         \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 158.4 Tm
+0.0000 Tw
+(             &p_copy_output_copy_output_combiner::copy_output_copy_output_combiner; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 150.0 Tm
+0.0000 Tw
+(             exit\(0\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 141.6 Tm
+0.0000 Tw
+(         \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 124.8 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_VIC.pql ' . localtime\(\) . "] Start"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 116.4 Tm
+0.0000 Tw
+(         use Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 108.0 Tm
+0.0000 Tw
+(         my $benchmark_start = new Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 99.6 Tm
+0.0000 Tw
+(         while \(<DATA>\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 91.2 Tm
+0.0000 Tw
+(         \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 82.8 Tm
+0.0000 Tw
+(             print STDERR '[examples/copy_output_VIC.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE ==  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 74.4 Tm
+0.0000 Tw
+( 0\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 66.0 Tm
+0.0000 Tw
+(             chomp; ) Tj
+/F10 7 Tf
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(14) Tj
+1 0 0 1 437.39 37 Tm
+(13 October 2005 15:46) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+71 0 obj
+7928
+endobj
+72 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F10 10 0 R
+/F21 15 0 R
+>>
+>>
+endobj
+73 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 72 0 R
+/Contents 70 0 R
+>>
+endobj
+74 0 obj
+<<
+/Length 75 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(examples/copy_output.pql) Tj
+1 0 0 1 370.19 797 Tm
+(Copy Output Record Example Script) Tj
+/F10 7 Tf
+1 0 0 1 76.0 771.6 Tm
+0.0000 Tw
+(             @I_VAL = split\("[|]", $_\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 763.2 Tm
+0.0000 Tw
+(             $key__I_PRODUCT_CODE = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 754.8 Tm
+0.0000 Tw
+(             if \(!defined\($previous_key__I_PRODUCT_CODE\)\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 746.4 Tm
+0.0000 Tw
+(             \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 738.0 Tm
+0.0000 Tw
+(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 729.6 Tm
+0.0000 Tw
+(             \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 712.8 Tm
+0.0000 Tw
+(             elsif \($previous_key__I_PRODUCT_CODE ne $key__I_PRODUCT_CODE\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 704.4 Tm
+0.0000 Tw
+(             \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 696.0 Tm
+0.0000 Tw
+(                 flock\(STDOUT, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 687.6 Tm
+0.0000 Tw
+(                 print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 679.2 Tm
+0.0000 Tw
+(                     $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 670.8 Tm
+0.0000 Tw
+(                     $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 662.4 Tm
+0.0000 Tw
+(                     $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 654.0 Tm
+0.0000 Tw
+(                 ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 645.6 Tm
+0.0000 Tw
+(                 flock\(STDOUT, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 637.2 Tm
+0.0000 Tw
+(                 if \($O_VAL[_O_SALES_TOTAL] > 0\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 628.8 Tm
+0.0000 Tw
+(                 \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 620.4 Tm
+0.0000 Tw
+(                     flock\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 612.0 Tm
+0.0000 Tw
+(                     print COPY_OUTPUT_COPY_OUTPUT_COMBINER ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 603.6 Tm
+0.0000 Tw
+(                         $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 595.2 Tm
+0.0000 Tw
+(                         $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 586.8 Tm
+0.0000 Tw
+(                         $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 578.4 Tm
+0.0000 Tw
+(                     ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 570.0 Tm
+0.0000 Tw
+(                     flock\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 561.6 Tm
+0.0000 Tw
+(                 \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 544.8 Tm
+0.0000 Tw
+(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 536.4 Tm
+0.0000 Tw
+(                 @O_VAL = undef; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 528.0 Tm
+0.0000 Tw
+(             \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 511.2 Tm
+0.0000 Tw
+(             $I_VAL[_I_LOCATION_NAME] = 'Victoria'; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 502.8 Tm
+0.0000 Tw
+(             $O_VAL[_O_LOCATION_NAME] = $I_VAL[_I_LOCATION_NAME]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 494.4 Tm
+0.0000 Tw
+(             $O_VAL[_O_PRODUCT_CODE] = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 486.0 Tm
+0.0000 Tw
+(             $O_VAL[_O_SALES_TOTAL] += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 477.6 Tm
+0.0000 Tw
+(         \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 460.8 Tm
+0.0000 Tw
+(         flock\(STDOUT, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 452.4 Tm
+0.0000 Tw
+(         print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 444.0 Tm
+0.0000 Tw
+(             $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 435.6 Tm
+0.0000 Tw
+(             $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 427.2 Tm
+0.0000 Tw
+(             $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 418.8 Tm
+0.0000 Tw
+(         ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 410.4 Tm
+0.0000 Tw
+(         flock\(STDOUT, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 402.0 Tm
+0.0000 Tw
+(         if \($O_VAL[_O_SALES_TOTAL] > 0\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 393.6 Tm
+0.0000 Tw
+(         \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 385.2 Tm
+0.0000 Tw
+(             flock\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 376.8 Tm
+0.0000 Tw
+(             print COPY_OUTPUT_COPY_OUTPUT_COMBINER ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 368.4 Tm
+0.0000 Tw
+(                 $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 360.0 Tm
+0.0000 Tw
+(                 $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 351.6 Tm
+0.0000 Tw
+(                 $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 343.2 Tm
+0.0000 Tw
+(             ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 334.8 Tm
+0.0000 Tw
+(             flock\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 326.4 Tm
+0.0000 Tw
+(         \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 309.6 Tm
+0.0000 Tw
+(         close\(COPY_OUTPUT_COPY_OUTPUT_COMBINER\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 301.2 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_VIC.pql ' . localtime\(\) . "] $. records."; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 292.8 Tm
+0.0000 Tw
+(         my $benchmark_end = new Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 284.4 Tm
+0.0000 Tw
+(         my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 276.0 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_VIC.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmar ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 267.6 Tm
+0.0000 Tw
+( k_timediff\)]\}"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 259.2 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 250.8 Tm
+0.0000 Tw
+(     \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 234.0 Tm
+0.0000 Tw
+( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 217.2 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 208.8 Tm
+0.0000 Tw
+(     package p_divert_input_copy_output_nsw; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 200.4 Tm
+0.0000 Tw
+(     sub divert_input_copy_output_nsw ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 192.0 Tm
+0.0000 Tw
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 183.6 Tm
+0.0000 Tw
+( #     vim: syntax=perl ts=4 sw=4 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 175.2 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 166.8 Tm
+0.0000 Tw
+( #    Generated By: pequel Version 2.3-5, Build: Wednesday October  12 23:16:49 BST 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 158.4 Tm
+0.0000 Tw
+( #                : https://sourceforge.net/projects/pequel/ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 150.0 Tm
+0.0000 Tw
+( #    Script Name : examples/copy_output_NSW.pql ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 141.6 Tm
+0.0000 Tw
+( #    Created On  : Thu Oct 13 15:46:28 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 133.2 Tm
+0.0000 Tw
+( #    For         :  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 124.8 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 116.4 Tm
+0.0000 Tw
+( #    Options: ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 108.0 Tm
+0.0000 Tw
+( #        optimize\(1\) optimize generated code. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 99.6 Tm
+0.0000 Tw
+( #        doc_title\(Copy Output Record Example Script\) document title. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 91.2 Tm
+0.0000 Tw
+( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 82.8 Tm
+0.0000 Tw
+( #        doc_version\(2.3\) document version for pequel script. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 74.4 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 66.0 Tm
+0.0000 Tw
+(         use strict; ) Tj
+/F10 7 Tf
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(13 October 2005 15:46) Tj
+1 0 0 1 531.88 37 Tm
+(15) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+75 0 obj
+7666
+endobj
+76 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F10 10 0 R
+/F21 15 0 R
+>>
+>>
+endobj
+77 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 76 0 R
+/Contents 74 0 R
+>>
+endobj
+78 0 obj
+<<
+/Length 79 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Copy Output Record Example Script) Tj
+1 0 0 1 416.86 797 Tm
+(examples/copy_output.pql) Tj
+/F10 7 Tf
+1 0 0 1 76.0 771.6 Tm
+0.0000 Tw
+(         use Fcntl ':flock'; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 763.2 Tm
+0.0000 Tw
+(         use constant _I_LOCATION         => int    0; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 754.8 Tm
+0.0000 Tw
+(         use constant _I_PRODUCT_CODE     => int    1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 746.4 Tm
+0.0000 Tw
+(         use constant _I_SALES_TOTAL      => int    2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 738.0 Tm
+0.0000 Tw
+(         use constant _I_LOCATION_NAME    => int    3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 729.6 Tm
+0.0000 Tw
+(         use constant _O_LOCATION_NAME    => int    1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 721.2 Tm
+0.0000 Tw
+(         use constant _O_PRODUCT_CODE     => int    2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 712.8 Tm
+0.0000 Tw
+(         use constant _O_SALES_TOTAL      => int    3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 704.4 Tm
+0.0000 Tw
+(         local $\\="\\n"; local $,="|"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 696.0 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_NSW.pql ' . localtime\(\) . "] Init"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 687.6 Tm
+0.0000 Tw
+(         use constant VERBOSE => int 10000; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 679.2 Tm
+0.0000 Tw
+(         use constant LAST_ICELL => int 3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 670.8 Tm
+0.0000 Tw
+(         my @I_VAL; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 662.4 Tm
+0.0000 Tw
+(         my @O_VAL; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 654.0 Tm
+0.0000 Tw
+(         my $key__I_PRODUCT_CODE; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 645.6 Tm
+0.0000 Tw
+(         my $previous_key__I_PRODUCT_CODE = undef; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 637.2 Tm
+0.0000 Tw
+(         foreach my $f \(1..3\) \{ $O_VAL[$f] = undef; \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 628.8 Tm
+0.0000 Tw
+( #     Sort:PRODUCT_CODE\(asc:string\)  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 620.4 Tm
+0.0000 Tw
+(         open\(DATA, q\{cat - | sort -t'|' -y -k 2,2 2>/dev/null |\}\) || die "Cannot open input: $!"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 612.0 Tm
+0.0000 Tw
+(         if \(open\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, '|-'\) == 0\) # Fork -- write to child ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 603.6 Tm
+0.0000 Tw
+(         \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 595.2 Tm
+0.0000 Tw
+(             &p_copy_output_copy_output_combiner::copy_output_copy_output_combiner; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 586.8 Tm
+0.0000 Tw
+(             exit\(0\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 578.4 Tm
+0.0000 Tw
+(         \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 561.6 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_NSW.pql ' . localtime\(\) . "] Start"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 553.2 Tm
+0.0000 Tw
+(         use Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 544.8 Tm
+0.0000 Tw
+(         my $benchmark_start = new Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 536.4 Tm
+0.0000 Tw
+(         while \(<DATA>\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 528.0 Tm
+0.0000 Tw
+(         \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 519.6 Tm
+0.0000 Tw
+(             print STDERR '[examples/copy_output_NSW.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE ==  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 511.2 Tm
+0.0000 Tw
+( 0\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 502.8 Tm
+0.0000 Tw
+(             chomp; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 494.4 Tm
+0.0000 Tw
+(             @I_VAL = split\("[|]", $_\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 486.0 Tm
+0.0000 Tw
+(             $key__I_PRODUCT_CODE = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 477.6 Tm
+0.0000 Tw
+(             if \(!defined\($previous_key__I_PRODUCT_CODE\)\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 469.2 Tm
+0.0000 Tw
+(             \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 460.8 Tm
+0.0000 Tw
+(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 452.4 Tm
+0.0000 Tw
+(             \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 435.6 Tm
+0.0000 Tw
+(             elsif \($previous_key__I_PRODUCT_CODE ne $key__I_PRODUCT_CODE\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 427.2 Tm
+0.0000 Tw
+(             \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 418.8 Tm
+0.0000 Tw
+(                 flock\(STDOUT, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 410.4 Tm
+0.0000 Tw
+(                 print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 402.0 Tm
+0.0000 Tw
+(                     $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 393.6 Tm
+0.0000 Tw
+(                     $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 385.2 Tm
+0.0000 Tw
+(                     $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 376.8 Tm
+0.0000 Tw
+(                 ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 368.4 Tm
+0.0000 Tw
+(                 flock\(STDOUT, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 360.0 Tm
+0.0000 Tw
+(                 if \($O_VAL[_O_SALES_TOTAL] > 0\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 351.6 Tm
+0.0000 Tw
+(                 \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 343.2 Tm
+0.0000 Tw
+(                     flock\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 334.8 Tm
+0.0000 Tw
+(                     print COPY_OUTPUT_COPY_OUTPUT_COMBINER ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 326.4 Tm
+0.0000 Tw
+(                         $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 318.0 Tm
+0.0000 Tw
+(                         $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 309.6 Tm
+0.0000 Tw
+(                         $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 301.2 Tm
+0.0000 Tw
+(                     ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 292.8 Tm
+0.0000 Tw
+(                     flock\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 284.4 Tm
+0.0000 Tw
+(                 \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 267.6 Tm
+0.0000 Tw
+(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 259.2 Tm
+0.0000 Tw
+(                 @O_VAL = undef; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 250.8 Tm
+0.0000 Tw
+(             \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 234.0 Tm
+0.0000 Tw
+(             $I_VAL[_I_LOCATION_NAME] = 'New South Wales'; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 225.6 Tm
+0.0000 Tw
+(             $O_VAL[_O_LOCATION_NAME] = $I_VAL[_I_LOCATION_NAME]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 217.2 Tm
+0.0000 Tw
+(             $O_VAL[_O_PRODUCT_CODE] = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 208.8 Tm
+0.0000 Tw
+(             $O_VAL[_O_SALES_TOTAL] += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 200.4 Tm
+0.0000 Tw
+(         \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 183.6 Tm
+0.0000 Tw
+(         flock\(STDOUT, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 175.2 Tm
+0.0000 Tw
+(         print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 166.8 Tm
+0.0000 Tw
+(             $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 158.4 Tm
+0.0000 Tw
+(             $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 150.0 Tm
+0.0000 Tw
+(             $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 141.6 Tm
+0.0000 Tw
+(         ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 133.2 Tm
+0.0000 Tw
+(         flock\(STDOUT, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 124.8 Tm
+0.0000 Tw
+(         if \($O_VAL[_O_SALES_TOTAL] > 0\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 116.4 Tm
+0.0000 Tw
+(         \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 108.0 Tm
+0.0000 Tw
+(             flock\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 99.6 Tm
+0.0000 Tw
+(             print COPY_OUTPUT_COPY_OUTPUT_COMBINER ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 91.2 Tm
+0.0000 Tw
+(                 $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 82.8 Tm
+0.0000 Tw
+(                 $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 74.4 Tm
+0.0000 Tw
+(                 $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 66.0 Tm
+0.0000 Tw
+(             ; ) Tj
+/F10 7 Tf
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(16) Tj
+1 0 0 1 437.39 37 Tm
+(13 October 2005 15:46) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+79 0 obj
+7690
+endobj
+80 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F10 10 0 R
+/F21 15 0 R
+>>
+>>
+endobj
+81 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 80 0 R
+/Contents 78 0 R
+>>
+endobj
+82 0 obj
+<<
+/Length 83 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(examples/copy_output.pql) Tj
+1 0 0 1 370.19 797 Tm
+(Copy Output Record Example Script) Tj
+/F10 7 Tf
+1 0 0 1 76.0 771.6 Tm
+0.0000 Tw
+(             flock\(COPY_OUTPUT_COPY_OUTPUT_COMBINER, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 763.2 Tm
+0.0000 Tw
+(         \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 746.4 Tm
+0.0000 Tw
+(         close\(COPY_OUTPUT_COPY_OUTPUT_COMBINER\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 738.0 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_NSW.pql ' . localtime\(\) . "] $. records."; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 729.6 Tm
+0.0000 Tw
+(         my $benchmark_end = new Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 721.2 Tm
+0.0000 Tw
+(         my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 712.8 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_NSW.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmar ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 704.4 Tm
+0.0000 Tw
+( k_timediff\)]\}"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 696.0 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 687.6 Tm
+0.0000 Tw
+(     \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 670.8 Tm
+0.0000 Tw
+( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 654.0 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 645.6 Tm
+0.0000 Tw
+(     package p_copy_output_copy_output_combiner; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 637.2 Tm
+0.0000 Tw
+(     sub copy_output_copy_output_combiner ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 628.8 Tm
+0.0000 Tw
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 620.4 Tm
+0.0000 Tw
+( #     vim: syntax=perl ts=4 sw=4 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 612.0 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 603.6 Tm
+0.0000 Tw
+( #    Generated By: pequel Version 2.3-5, Build: Wednesday October  12 23:16:49 BST 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 595.2 Tm
+0.0000 Tw
+( #                : https://sourceforge.net/projects/pequel/ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 586.8 Tm
+0.0000 Tw
+( #    Script Name : examples/copy_output_combiner.pql ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 578.4 Tm
+0.0000 Tw
+( #    Created On  : Thu Oct 13 15:46:25 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 570.0 Tm
+0.0000 Tw
+( #    For         :  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 561.6 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 553.2 Tm
+0.0000 Tw
+( #    Options: ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 544.8 Tm
+0.0000 Tw
+( #        optimize\(1\) optimize generated code. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 536.4 Tm
+0.0000 Tw
+( #        doc_title\(Copy Output Record Example Script\) document title. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 528.0 Tm
+0.0000 Tw
+( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 519.6 Tm
+0.0000 Tw
+( #        doc_version\(2.3\) document version for pequel script. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 511.2 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 502.8 Tm
+0.0000 Tw
+(         use strict; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 494.4 Tm
+0.0000 Tw
+(         use Fcntl ':flock'; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 486.0 Tm
+0.0000 Tw
+(         use constant _I_LOCATION_NAME    => int    0; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 477.6 Tm
+0.0000 Tw
+(         use constant _I_PRODUCT_CODE     => int    1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 469.2 Tm
+0.0000 Tw
+(         use constant _I_SALES_TOTAL      => int    2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 460.8 Tm
+0.0000 Tw
+(         use constant _I_DESCRIPTION      => int    3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 452.4 Tm
+0.0000 Tw
+(         use constant _O_LOCATION_NAME    => int    1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 444.0 Tm
+0.0000 Tw
+(         use constant _O_DESCRIPTION      => int    2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 435.6 Tm
+0.0000 Tw
+(         use constant _O_SALES_TOTAL      => int    3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 427.2 Tm
+0.0000 Tw
+(         local $\\="\\n"; local $,="|"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 418.8 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_combiner.pql ' . localtime\(\) . "] Init"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 410.4 Tm
+0.0000 Tw
+(         use constant VERBOSE => int 10000; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 402.0 Tm
+0.0000 Tw
+(         use constant LAST_ICELL => int 3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 393.6 Tm
+0.0000 Tw
+(         my @I_VAL; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 385.2 Tm
+0.0000 Tw
+(         my @O_VAL; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 376.8 Tm
+0.0000 Tw
+(         my $key__I_LOCATION_NAME; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 368.4 Tm
+0.0000 Tw
+(         my $previous_key__I_LOCATION_NAME = undef; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 360.0 Tm
+0.0000 Tw
+(         foreach my $f \(1..3\) \{ $O_VAL[$f] = undef; \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 351.6 Tm
+0.0000 Tw
+( #     Sort:LOCATION_NAME\(asc:string\)  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 343.2 Tm
+0.0000 Tw
+(         open\(DATA, q\{cat - | sort -t'|' -y -k 1,1 2>/dev/null |\}\) || die "Cannot open input: $!"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 334.8 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_combiner.pql ' . localtime\(\) . "] Start"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 326.4 Tm
+0.0000 Tw
+(         use Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 318.0 Tm
+0.0000 Tw
+(         my $benchmark_start = new Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 309.6 Tm
+0.0000 Tw
+(         while \(<DATA>\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 301.2 Tm
+0.0000 Tw
+(         \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 292.8 Tm
+0.0000 Tw
+(             print STDERR '[examples/copy_output_combiner.pql ' . localtime\(\) . "] $. records." if \($. % VERBOS ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 284.4 Tm
+0.0000 Tw
+( E == 0\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 276.0 Tm
+0.0000 Tw
+(             chomp; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 267.6 Tm
+0.0000 Tw
+(             @I_VAL = split\("[|]", $_\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 259.2 Tm
+0.0000 Tw
+(             $key__I_LOCATION_NAME = $I_VAL[_I_LOCATION_NAME]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 250.8 Tm
+0.0000 Tw
+(             if \(!defined\($previous_key__I_LOCATION_NAME\)\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 242.4 Tm
+0.0000 Tw
+(             \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 234.0 Tm
+0.0000 Tw
+(                 $previous_key__I_LOCATION_NAME = $key__I_LOCATION_NAME; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 225.6 Tm
+0.0000 Tw
+(             \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 208.8 Tm
+0.0000 Tw
+(             elsif \($previous_key__I_LOCATION_NAME ne $key__I_LOCATION_NAME\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 200.4 Tm
+0.0000 Tw
+(             \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 192.0 Tm
+0.0000 Tw
+(                 flock\(STDOUT, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 183.6 Tm
+0.0000 Tw
+(                 print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 175.2 Tm
+0.0000 Tw
+(                     $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 166.8 Tm
+0.0000 Tw
+(                     $O_VAL[_O_DESCRIPTION], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 158.4 Tm
+0.0000 Tw
+(                     $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 150.0 Tm
+0.0000 Tw
+(                 ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 141.6 Tm
+0.0000 Tw
+(                 flock\(STDOUT, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 133.2 Tm
+0.0000 Tw
+(                 $previous_key__I_LOCATION_NAME = $key__I_LOCATION_NAME; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 124.8 Tm
+0.0000 Tw
+(                 @O_VAL = undef; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 116.4 Tm
+0.0000 Tw
+(             \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 99.6 Tm
+0.0000 Tw
+(             $O_VAL[_O_LOCATION_NAME] = $I_VAL[_I_LOCATION_NAME]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 91.2 Tm
+0.0000 Tw
+(             $I_VAL[_I_DESCRIPTION] = 'State Total'; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 82.8 Tm
+0.0000 Tw
+(             $O_VAL[_O_DESCRIPTION] = $I_VAL[_I_DESCRIPTION]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 74.4 Tm
+0.0000 Tw
+(             $O_VAL[_O_SALES_TOTAL] += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 66.0 Tm
+0.0000 Tw
+(         \} ) Tj
+/F10 7 Tf
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(13 October 2005 15:46) Tj
+1 0 0 1 531.88 37 Tm
+(17) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+83 0 obj
+8086
+endobj
+84 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F10 10 0 R
+/F21 15 0 R
+>>
+>>
+endobj
+85 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 84 0 R
+/Contents 82 0 R
+>>
+endobj
+86 0 obj
+<<
+/Length 87 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Copy Output Record Example Script) Tj
+1 0 0 1 416.86 797 Tm
+(examples/copy_output.pql) Tj
+/F10 7 Tf
+1 0 0 1 76.0 771.6 Tm
+0.0000 Tw
+(         flock\(STDOUT, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 763.2 Tm
+0.0000 Tw
+(         print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 754.8 Tm
+0.0000 Tw
+(             $O_VAL[_O_LOCATION_NAME], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 746.4 Tm
+0.0000 Tw
+(             $O_VAL[_O_DESCRIPTION], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 738.0 Tm
+0.0000 Tw
+(             $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 729.6 Tm
+0.0000 Tw
+(         ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 721.2 Tm
+0.0000 Tw
+(         flock\(STDOUT, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 712.8 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_combiner.pql ' . localtime\(\) . "] $. records."; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 704.4 Tm
+0.0000 Tw
+(         my $benchmark_end = new Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 696.0 Tm
+0.0000 Tw
+(         my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 687.6 Tm
+0.0000 Tw
+(         print STDERR '[examples/copy_output_combiner.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($ben ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 679.2 Tm
+0.0000 Tw
+( chmark_timediff\)]\}"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 670.8 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 662.4 Tm
+0.0000 Tw
+(     \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 645.6 Tm
+0.0000 Tw
+( \} ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(18) Tj
+1 0 0 1 437.39 37 Tm
+(13 October 2005 15:46) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+87 0 obj
+1692
+endobj
+88 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F10 10 0 R
+/F21 15 0 R
+>>
+>>
+endobj
+89 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 88 0 R
+/Contents 86 0 R
+>>
+endobj
+90 0 obj
+<<
+/Length 91 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(examples/copy_output.pql) Tj
+1 0 0 1 370.19 797 Tm
+(Copy Output Record Example Script) Tj
+/F21 12 Tf
+1 0 0 1 52.0 750.0 Tm
+0.0000 Tw
+(7. ABOUT PEQUEL ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 735.6 Tm
+0.0000 Tw
+(This document was generated by Pequel. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 711.6 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(https://sourceforge.net/projects/pequel/) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 669.6 Tm
+0.0000 Tw
+(COPYRIGHT ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 657.6 Tm
+0.0000 Tw
+(Copyright \2511999-2005, Mario Gaffiero. All Rights Reserved. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 645.6 Tm
+0.0000 Tw
+(`Pequel' TM Copyright \2511999-2005, Mario Gaffiero. All Rights Reserved. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 621.6 Tm
+2.3993 Tw
+(This program and all its component contents is copyrighted free software by Mario Gaffiero and is) Tj
+1 0 0 1 76.0 609.6 Tm
+1.5600 Tw
+(released under the GNU General Public License \(GPL\), Version 2, a copy of which may be found at) Tj
+1 0 0 1 76.0 597.6 Tm
+0.0000 Tw
+(http://www.opensource.org/licenses/gpl-license.html ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 573.6 Tm
+1.7241 Tw
+(Pequel is free software; you can redistribute it and/or modify it under the terms of the GNU General) Tj
+1 0 0 1 76.0 561.6 Tm
+0.2841 Tw
+(Public License as published by the Free Software Foundation; either version 2 of the License, or \(at your) Tj
+1 0 0 1 76.0 549.6 Tm
+0.0000 Tw
+(option\) any later version. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 525.6 Tm
+0.3847 Tw
+(Pequel is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the) Tj
+1 0 0 1 76.0 513.6 Tm
+0.8077 Tw
+(implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU) Tj
+1 0 0 1 76.0 501.6 Tm
+0.0000 Tw
+(General Public License for more details. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 477.6 Tm
+0.7933 Tw
+(You should have received a copy of the GNU General Public License along with Pequel; if not, write to) Tj
+1 0 0 1 76.0 465.6 Tm
+0.0000 Tw
+(the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(13 October 2005 15:46) Tj
+1 0 0 1 531.88 37 Tm
+(19) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+91 0 obj
+2235
+endobj
+92 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F20 14 0 R
+/F21 15 0 R
+/F23 17 0 R
+>>
+>>
+endobj
+93 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 92 0 R
+/Contents 90 0 R
+>>
+endobj
+94 0 obj
+<<
+/Length 95 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Copy Output Record Example Script) Tj
+1 0 0 1 416.86 797 Tm
+(examples/copy_output.pql) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(20) Tj
+1 0 0 1 437.39 37 Tm
+(13 October 2005 15:46) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+95 0 obj
+283
+endobj
+96 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F21 15 0 R
+>>
+>>
+endobj
+97 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 96 0 R
+/Contents 94 0 R
+>>
+endobj
+98 0 obj
+<<
+/Length 99 0 R
+>>
+stream
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+/F20 20 Tf
+1 0 0 1 218.57 770 Tm
+(Table of Contents) Tj
+1 0 0 1 136.33 746 Tm
+(Copy Output Record Example Script) Tj
+/F20 10 Tf
+ET
+q
+0.95 g
+52 695 491 12 re
+f
+Q
+BT
+1 0 0 1 76 698 Tm
+(SCRIPT NAME) Tj
+1 0 0 1 513.44 698 Tm
+(1) Tj
+ET
+q
+1 g
+52 683 491 12 re
+f
+Q
+BT
+1 0 0 1 76 686 Tm
+(DESCRIPTION) Tj
+1 0 0 1 513.44 686 Tm
+(1) Tj
+ET
+q
+0.95 g
+52 671 491 12 re
+f
+Q
+BT
+1 0 0 1 76 674 Tm
+(1. PROCESS DETAILS) Tj
+1 0 0 1 513.44 674 Tm
+(1) Tj
+ET
+q
+1 g
+52 659 491 12 re
+f
+Q
+BT
+1 0 0 1 100 662 Tm
+(1.1 LOCATION) Tj
+1 0 0 1 513.44 662 Tm
+(1) Tj
+ET
+q
+0.95 g
+52 647 491 12 re
+f
+Q
+BT
+1 0 0 1 124 650 Tm
+(Description) Tj
+1 0 0 1 513.44 650 Tm
+(1) Tj
+ET
+q
+1 g
+52 635 491 12 re
+f
+Q
+BT
+1 0 0 1 124 638 Tm
+(Derived Input Field Evaluation) Tj
+1 0 0 1 513.44 638 Tm
+(1) Tj
+ET
+q
+0.95 g
+52 623 491 12 re
+f
+Q
+BT
+1 0 0 1 100 626 Tm
+(1.2 DESCRIPTION) Tj
+1 0 0 1 513.44 626 Tm
+(1) Tj
+ET
+q
+1 g
+52 611 491 12 re
+f
+Q
+BT
+1 0 0 1 124 614 Tm
+(Description) Tj
+1 0 0 1 513.44 614 Tm
+(1) Tj
+ET
+q
+0.95 g
+52 599 491 12 re
+f
+Q
+BT
+1 0 0 1 124 602 Tm
+(Derived Input Field Evaluation) Tj
+1 0 0 1 513.44 602 Tm
+(1) Tj
+ET
+q
+1 g
+52 587 491 12 re
+f
+Q
+BT
+1 0 0 1 100 590 Tm
+(1.3 SALES_TOTAL) Tj
+1 0 0 1 513.44 590 Tm
+(1) Tj
+ET
+q
+0.95 g
+52 575 491 12 re
+f
+Q
+BT
+1 0 0 1 124 578 Tm
+(Description) Tj
+1 0 0 1 513.44 578 Tm
+(1) Tj
+ET
+q
+1 g
+52 563 491 12 re
+f
+Q
+BT
+1 0 0 1 76 566 Tm
+(2. CONFIGURATION SETTINGS) Tj
+1 0 0 1 513.44 566 Tm
+(2) Tj
+ET
+q
+0.95 g
+52 551 491 12 re
+f
+Q
+BT
+1 0 0 1 100 554 Tm
+(2.1 pequeldoc) Tj
+1 0 0 1 513.44 554 Tm
+(2) Tj
+ET
+q
+1 g
+52 539 491 12 re
+f
+Q
+BT
+1 0 0 1 100 542 Tm
+(2.2 detail) Tj
+1 0 0 1 513.44 542 Tm
+(2) Tj
+ET
+q
+0.95 g
+52 527 491 12 re
+f
+Q
+BT
+1 0 0 1 100 530 Tm
+(2.3 prefix) Tj
+1 0 0 1 513.44 530 Tm
+(2) Tj
+ET
+q
+1 g
+52 515 491 12 re
+f
+Q
+BT
+1 0 0 1 100 518 Tm
+(2.4 script_name) Tj
+1 0 0 1 513.44 518 Tm
+(2) Tj
+ET
+q
+0.95 g
+52 503 491 12 re
+f
+Q
+BT
+1 0 0 1 100 506 Tm
+(2.5 input_file) Tj
+1 0 0 1 513.44 506 Tm
+(2) Tj
+ET
+q
+1 g
+52 491 491 12 re
+f
+Q
+BT
+1 0 0 1 100 494 Tm
+(2.6 optimize) Tj
+1 0 0 1 513.44 494 Tm
+(2) Tj
+ET
+q
+0.95 g
+52 479 491 12 re
+f
+Q
+BT
+1 0 0 1 100 482 Tm
+(2.7 doc_title) Tj
+1 0 0 1 513.44 482 Tm
+(2) Tj
+ET
+q
+1 g
+52 467 491 12 re
+f
+Q
+BT
+1 0 0 1 100 470 Tm
+(2.8 doc_email) Tj
+1 0 0 1 513.44 470 Tm
+(2) Tj
+ET
+q
+0.95 g
+52 455 491 12 re
+f
+Q
+BT
+1 0 0 1 100 458 Tm
+(2.9 doc_version) Tj
+1 0 0 1 513.44 458 Tm
+(2) Tj
+ET
+q
+1 g
+52 443 491 12 re
+f
+Q
+BT
+1 0 0 1 76 446 Tm
+(3. TABLES) Tj
+1 0 0 1 513.44 446 Tm
+(3) Tj
+ET
+q
+0.95 g
+52 431 491 12 re
+f
+Q
+BT
+1 0 0 1 100 434 Tm
+(3.1 LOC_DESCRIPT) Tj
+1 0 0 1 513.44 434 Tm
+(3) Tj
+ET
+q
+1 g
+52 419 491 12 re
+f
+Q
+BT
+1 0 0 1 124 422 Tm
+(Data) Tj
+1 0 0 1 513.44 422 Tm
+(3) Tj
+ET
+q
+0.95 g
+52 407 491 12 re
+f
+Q
+BT
+1 0 0 1 76 410 Tm
+(4. TABLE INFORMATION SUMMARY) Tj
+1 0 0 1 513.44 410 Tm
+(4) Tj
+ET
+q
+1 g
+52 395 491 12 re
+f
+Q
+BT
+1 0 0 1 100 398 Tm
+(4.1 Table List Sorted By Table Name) Tj
+1 0 0 1 513.44 398 Tm
+(4) Tj
+ET
+q
+0.95 g
+52 383 491 12 re
+f
+Q
+BT
+1 0 0 1 76 386 Tm
+(5. EXAMPLES/COPY_OUTPUT.PQL) Tj
+1 0 0 1 513.44 386 Tm
+(5) Tj
+ET
+q
+1 g
+52 371 491 12 re
+f
+Q
+BT
+1 0 0 1 100 374 Tm
+(options) Tj
+1 0 0 1 513.44 374 Tm
+(5) Tj
+ET
+q
+0.95 g
+52 359 491 12 re
+f
+Q
+BT
+1 0 0 1 100 362 Tm
+(init table) Tj
+1 0 0 1 513.44 362 Tm
+(5) Tj
+ET
+q
+1 g
+52 347 491 12 re
+f
+Q
+BT
+1 0 0 1 100 350 Tm
+(input section) Tj
+1 0 0 1 513.44 350 Tm
+(5) Tj
+ET
+q
+0.95 g
+52 335 491 12 re
+f
+Q
+BT
+1 0 0 1 100 338 Tm
+(divert record\(pequel:copy_output_WA.pql\)) Tj
+1 0 0 1 513.44 338 Tm
+(5) Tj
+ET
+q
+1 g
+52 323 491 12 re
+f
+Q
+BT
+1 0 0 1 100 326 Tm
+(divert record\(pequel:copy_output_SA.pql\)) Tj
+1 0 0 1 513.44 326 Tm
+(5) Tj
+ET
+q
+0.95 g
+52 311 491 12 re
+f
+Q
+BT
+1 0 0 1 100 314 Tm
+(divert record\(pequel:copy_output_NSW.pql\)) Tj
+1 0 0 1 513.44 314 Tm
+(5) Tj
+ET
+q
+1 g
+52 299 491 12 re
+f
+Q
+BT
+1 0 0 1 100 302 Tm
+(divert record\(pequel:copy_output_VIC.pql\)) Tj
+1 0 0 1 513.44 302 Tm
+(5) Tj
+ET
+q
+0.95 g
+52 287 491 12 re
+f
+Q
+BT
+1 0 0 1 100 290 Tm
+(divert record\(pequel:copy_output_NT.pql\)) Tj
+1 0 0 1 513.44 290 Tm
+(5) Tj
+ET
+q
+1 g
+52 275 491 12 re
+f
+Q
+BT
+1 0 0 1 100 278 Tm
+(filter) Tj
+1 0 0 1 513.44 278 Tm
+(5) Tj
+ET
+q
+0.95 g
+52 263 491 12 re
+f
+Q
+BT
+1 0 0 1 100 266 Tm
+(sort by) Tj
+1 0 0 1 513.44 266 Tm
+(5) Tj
+ET
+q
+1 g
+52 251 491 12 re
+f
+Q
+BT
+1 0 0 1 100 254 Tm
+(group by) Tj
+1 0 0 1 513.44 254 Tm
+(5) Tj
+ET
+q
+0.95 g
+52 239 491 12 re
+f
+Q
+BT
+1 0 0 1 100 242 Tm
+(output section) Tj
+1 0 0 1 513.44 242 Tm
+(5) Tj
+ET
+q
+1 g
+52 227 491 12 re
+f
+Q
+BT
+1 0 0 1 100 230 Tm
+(having) Tj
+1 0 0 1 513.44 230 Tm
+(5) Tj
+ET
+q
+0.95 g
+52 215 491 12 re
+f
+Q
+BT
+1 0 0 1 100 218 Tm
+(sort output) Tj
+1 0 0 1 513.44 218 Tm
+(6) Tj
+ET
+q
+1 g
+52 203 491 12 re
+f
+Q
+BT
+1 0 0 1 76 206 Tm
+(6. PEQUEL GENERATED PROGRAM) Tj
+1 0 0 1 513.44 206 Tm
+(7) Tj
+ET
+q
+0.95 g
+52 191 491 12 re
+f
+Q
+BT
+1 0 0 1 76 194 Tm
+(7. ABOUT PEQUEL) Tj
+1 0 0 1 507.88 194 Tm
+(19) Tj
+ET
+q
+1 g
+52 179 491 12 re
+f
+Q
+BT
+1 0 0 1 100 182 Tm
+(COPYRIGHT) Tj
+1 0 0 1 507.88 182 Tm
+(19) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(13 October 2005 15:46) Tj
+1 0 0 1 540.22 37 Tm
+(i) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+99 0 obj
+4948
+endobj
+100 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F20 14 0 R
+/F21 15 0 R
+>>
+>>
+endobj
+101 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 100 0 R
+/Contents 98 0 R
+>>
+endobj
+102 0 obj
+<<
+/Length 103 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Copy Output Record Example Script) Tj
+1 0 0 1 458.55 797 Tm
+(Table of Contents) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(ii) Tj
+1 0 0 1 437.39 37 Tm
+(13 October 2005 15:46) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+103 0 obj
+276
+endobj
+104 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F21 15 0 R
+>>
+>>
+endobj
+105 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 104 0 R
+/Contents 102 0 R
+>>
+endobj
+106 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 109 0 R
+/Contents 107 0 R
+>>
+endobj
+107 0 obj
+<<
+/Length 108 0 R
+>>
+stream
+q
+1 0 0 rg
+180 626 8 130 re
+F
+Q
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+210 626 m
+543 626 l
+s
+BT
+/F21 24 Tf
+1 0 0 1 210 706 Tm
+0 -30 TD
+(examples/copy_output.pql) Tj
+T* (by ) Tj
+0 0 0.8 rg
+/F22 12 Tf
+(Pequel) Tj
+/F21 9 Tf
+T* (sample@youraddress.com) Tj
+/F20 20 Tf
+0 g
+1 0 0 1 136.33 371 Tm
+(Copy Output Record Example Script) Tj
+/F21 9 Tf
+T* (2.3) Tj
+ET
+endstream
+endobj
+108 0 obj
+347
+endobj
+109 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F20 14 0 R
+/F21 15 0 R
+/F22 16 0 R
+>>
+>>
+endobj
+110 0 obj
+<<
+/Length 111 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(examples/copy_output.pql) Tj
+1 0 0 1 370.19 797 Tm
+(Copy Output Record Example Script) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(13 October 2005 15:46) Tj
+1 0 0 1 543 37 Tm
+() Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+111 0 obj
+278
+endobj
+112 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F21 15 0 R
+>>
+>>
+endobj
+113 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 112 0 R
+/Contents 110 0 R
+>>
+endobj
+115 0 obj
+<<
+/Parent 114 0 R
+/Dest [101 0 R /Fit]
+/First 116 0 R
+/Last 158 0 R
+/Count 44 
+/Title (Table of Contents)
+>>
+endobj
+116 0 obj
+<<
+/Parent 115 0 R
+/Dest [21 0 R /FitH 764.4]
+/Next 117 0 R
+/Title (SCRIPT NAME)
+>>
+endobj
+117 0 obj
+<<
+/Parent 115 0 R
+/Dest [21 0 R /FitH 720]
+/Previous 116 0 R
+/Next 118 0 R
+/Title (DESCRIPTION)
+>>
+endobj
+118 0 obj
+<<
+/Parent 115 0 R
+/Dest [21 0 R /FitH 684]
+/Previous 117 0 R
+/Next 127 0 R
+/First 119 0 R
+/Last 125 0 R
+/Count 8 
+/Title (1. PROCESS DETAILS)
+>>
+endobj
+119 0 obj
+<<
+/Parent 118 0 R
+/Dest [21 0 R /FitH 469.2]
+/Next 122 0 R
+/First 120 0 R
+/Last 121 0 R
+/Count 2 
+/Title (1.1 LOCATION)
+>>
+endobj
+120 0 obj
+<<
+/Parent 119 0 R
+/Dest [21 0 R /FitH 430.8]
+/Next 121 0 R
+/Title (Description)
+>>
+endobj
+121 0 obj
+<<
+/Parent 119 0 R
+/Dest [21 0 R /FitH 392.4]
+/Previous 120 0 R
+/Title (Derived Input Field Evaluation)
+>>
+endobj
+122 0 obj
+<<
+/Parent 118 0 R
+/Dest [21 0 R /FitH 355.2]
+/Previous 119 0 R
+/Next 125 0 R
+/First 123 0 R
+/Last 124 0 R
+/Count 2 
+/Title (1.2 DESCRIPTION)
+>>
+endobj
+123 0 obj
+<<
+/Parent 122 0 R
+/Dest [21 0 R /FitH 316.8]
+/Next 124 0 R
+/Title (Description)
+>>
+endobj
+124 0 obj
+<<
+/Parent 122 0 R
+/Dest [21 0 R /FitH 278.4]
+/Previous 123 0 R
+/Title (Derived Input Field Evaluation)
+>>
+endobj
+125 0 obj
+<<
+/Parent 118 0 R
+/Dest [21 0 R /FitH 241.2]
+/Previous 122 0 R
+/First 126 0 R
+/Last 126 0 R
+/Count 1 
+/Title (1.3 SALES_TOTAL)
+>>
+endobj
+126 0 obj
+<<
+/Parent 125 0 R
+/Dest [21 0 R /FitH 202.8]
+/Title (Description)
+>>
+endobj
+127 0 obj
+<<
+/Parent 115 0 R
+/Dest [25 0 R /FitH 764.4]
+/Previous 118 0 R
+/Next 137 0 R
+/First 128 0 R
+/Last 136 0 R
+/Count 9 
+/Title (2. CONFIGURATION SETTINGS)
+>>
+endobj
+128 0 obj
+<<
+/Parent 127 0 R
+/Dest [25 0 R /FitH 726]
+/Next 129 0 R
+/Title (2.1 pequeldoc)
+>>
+endobj
+129 0 obj
+<<
+/Parent 127 0 R
+/Dest [25 0 R /FitH 684]
+/Previous 128 0 R
+/Next 130 0 R
+/Title (2.2 detail)
+>>
+endobj
+130 0 obj
+<<
+/Parent 127 0 R
+/Dest [25 0 R /FitH 642]
+/Previous 129 0 R
+/Next 131 0 R
+/Title (2.3 prefix)
+>>
+endobj
+131 0 obj
+<<
+/Parent 127 0 R
+/Dest [25 0 R /FitH 600]
+/Previous 130 0 R
+/Next 132 0 R
+/Title (2.4 script_name)
+>>
+endobj
+132 0 obj
+<<
+/Parent 127 0 R
+/Dest [25 0 R /FitH 558]
+/Previous 131 0 R
+/Next 133 0 R
+/Title (2.5 input_file)
+>>
+endobj
+133 0 obj
+<<
+/Parent 127 0 R
+/Dest [25 0 R /FitH 516]
+/Previous 132 0 R
+/Next 134 0 R
+/Title (2.6 optimize)
+>>
+endobj
+134 0 obj
+<<
+/Parent 127 0 R
+/Dest [25 0 R /FitH 474]
+/Previous 133 0 R
+/Next 135 0 R
+/Title (2.7 doc_title)
+>>
+endobj
+135 0 obj
+<<
+/Parent 127 0 R
+/Dest [25 0 R /FitH 432]
+/Previous 134 0 R
+/Next 136 0 R
+/Title (2.8 doc_email)
+>>
+endobj
+136 0 obj
+<<
+/Parent 127 0 R
+/Dest [25 0 R /FitH 390]
+/Previous 135 0 R
+/Title (2.9 doc_version)
+>>
+endobj
+137 0 obj
+<<
+/Parent 115 0 R
+/Dest [29 0 R /FitH 764.4]
+/Previous 127 0 R
+/Next 140 0 R
+/First 138 0 R
+/Last 138 0 R
+/Count 2 
+/Title (3. TABLES)
+>>
+endobj
+138 0 obj
+<<
+/Parent 137 0 R
+/Dest [29 0 R /FitH 726]
+/First 139 0 R
+/Last 139 0 R
+/Count 1 
+/Title (3.1 LOC_DESCRIPT)
+>>
+endobj
+139 0 obj
+<<
+/Parent 138 0 R
+/Dest [29 0 R /FitH 699.6]
+/Title (Data)
+>>
+endobj
+140 0 obj
+<<
+/Parent 115 0 R
+/Dest [33 0 R /FitH 764.4]
+/Previous 137 0 R
+/Next 142 0 R
+/First 141 0 R
+/Last 141 0 R
+/Count 1 
+/Title (4. TABLE INFORMATION SUMMARY)
+>>
+endobj
+141 0 obj
+<<
+/Parent 140 0 R
+/Dest [33 0 R /FitH 726]
+/Title (4.1 Table List Sorted By Table Name)
+>>
+endobj
+142 0 obj
+<<
+/Parent 115 0 R
+/Dest [37 0 R /FitH 764.4]
+/Previous 140 0 R
+/Next 157 0 R
+/First 143 0 R
+/Last 156 0 R
+/Count 14 
+/Title (5. EXAMPLES/COPY_OUTPUT.PQL)
+>>
+endobj
+143 0 obj
+<<
+/Parent 142 0 R
+/Dest [37 0 R /FitH 726]
+/Next 144 0 R
+/Title (options)
+>>
+endobj
+144 0 obj
+<<
+/Parent 142 0 R
+/Dest [37 0 R /FitH 621.6]
+/Previous 143 0 R
+/Next 145 0 R
+/Title (init table)
+>>
+endobj
+145 0 obj
+<<
+/Parent 142 0 R
+/Dest [37 0 R /FitH 542.4]
+/Previous 144 0 R
+/Next 146 0 R
+/Title (input section)
+>>
+endobj
+146 0 obj
+<<
+/Parent 142 0 R
+/Dest [37 0 R /FitH 463.2]
+/Previous 145 0 R
+/Next 147 0 R
+/Title (divert record\(pequel:copy_output_WA.pql\))
+>>
+endobj
+147 0 obj
+<<
+/Parent 142 0 R
+/Dest [37 0 R /FitH 426]
+/Previous 146 0 R
+/Next 148 0 R
+/Title (divert record\(pequel:copy_output_SA.pql\))
+>>
+endobj
+148 0 obj
+<<
+/Parent 142 0 R
+/Dest [37 0 R /FitH 388.8]
+/Previous 147 0 R
+/Next 149 0 R
+/Title (divert record\(pequel:copy_output_NSW.pql\))
+>>
+endobj
+149 0 obj
+<<
+/Parent 142 0 R
+/Dest [37 0 R /FitH 351.600000000001]
+/Previous 148 0 R
+/Next 150 0 R
+/Title (divert record\(pequel:copy_output_VIC.pql\))
+>>
+endobj
+150 0 obj
+<<
+/Parent 142 0 R
+/Dest [37 0 R /FitH 314.400000000001]
+/Previous 149 0 R
+/Next 151 0 R
+/Title (divert record\(pequel:copy_output_NT.pql\))
+>>
+endobj
+151 0 obj
+<<
+/Parent 142 0 R
+/Dest [37 0 R /FitH 277.200000000001]
+/Previous 150 0 R
+/Next 152 0 R
+/Title (filter)
+>>
+endobj
+152 0 obj
+<<
+/Parent 142 0 R
+/Dest [37 0 R /FitH 240.000000000001]
+/Previous 151 0 R
+/Next 153 0 R
+/Title (sort by)
+>>
+endobj
+153 0 obj
+<<
+/Parent 142 0 R
+/Dest [37 0 R /FitH 202.800000000001]
+/Previous 152 0 R
+/Next 154 0 R
+/Title (group by)
+>>
+endobj
+154 0 obj
+<<
+/Parent 142 0 R
+/Dest [37 0 R /FitH 165.600000000001]
+/Previous 153 0 R
+/Next 155 0 R
+/Title (output section)
+>>
+endobj
+155 0 obj
+<<
+/Parent 142 0 R
+/Dest [37 0 R /FitH 111.600000000001]
+/Previous 154 0 R
+/Next 156 0 R
+/Title (having)
+>>
+endobj
+156 0 obj
+<<
+/Parent 142 0 R
+/Dest [41 0 R /FitH 792]
+/Previous 155 0 R
+/Title (sort output)
+>>
+endobj
+157 0 obj
+<<
+/Parent 115 0 R
+/Dest [45 0 R /FitH 764.4]
+/Previous 142 0 R
+/Next 158 0 R
+/Title (6. PEQUEL GENERATED PROGRAM)
+>>
+endobj
+158 0 obj
+<<
+/Parent 115 0 R
+/Dest [93 0 R /FitH 764.4]
+/Previous 157 0 R
+/First 159 0 R
+/Last 159 0 R
+/Count 1 
+/Title (7. ABOUT PEQUEL)
+>>
+endobj
+159 0 obj
+<<
+/Parent 158 0 R
+/Dest [93 0 R /FitH 681.6]
+/Title (COPYRIGHT)
+>>
+endobj
+114 0 obj
+<<
+/Type /Outlines
+/Count 45
+/First 115 0 R
+/Last 159 0 R
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 4 0 R
+/PageMode /UseOutlines
+/Outlines 114 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Pages
+/Kids [ 106 0 R 113 0 R 101 0 R 105 0 R 21 0 R 25 0 R 29 0 R 33 0 R 37 0 R 41 0 R 45 0 R 49 0 R 53 0 R 57 0 R 61 0 R 65 0 R 69 0 R 73 0 R 77 0 R 81 0 R 85 0 R 89 0 R 93 0 R 97 0 R ]
+/Count 24
+/MediaBox [0 0 595 842]
+>>
+endobj
+xref
+0 160
+0000000000 65535 f 
+0000000015 00000 n 
+0000000171 00000 n 
+0000123908 00000 n 
+0000123998 00000 n 
+0000000292 00000 n 
+0000002392 00000 n 
+0000002491 00000 n 
+0000002589 00000 n 
+0000002689 00000 n 
+0000002793 00000 n 
+0000002889 00000 n 
+0000002990 00000 n 
+0000003094 00000 n 
+0000003202 00000 n 
+0000003300 00000 n 
+0000003403 00000 n 
+0000003509 00000 n 
+0000003623 00000 n 
+0000007790 00000 n 
+0000007811 00000 n 
+0000007961 00000 n 
+0000008044 00000 n 
+0000010346 00000 n 
+0000010367 00000 n 
+0000010493 00000 n 
+0000010576 00000 n 
+0000011916 00000 n 
+0000011937 00000 n 
+0000012063 00000 n 
+0000012146 00000 n 
+0000012832 00000 n 
+0000012852 00000 n 
+0000012990 00000 n 
+0000013073 00000 n 
+0000017659 00000 n 
+0000017680 00000 n 
+0000017806 00000 n 
+0000017889 00000 n 
+0000018485 00000 n 
+0000018505 00000 n 
+0000018631 00000 n 
+0000018714 00000 n 
+0000025929 00000 n 
+0000025950 00000 n 
+0000026064 00000 n 
+0000026147 00000 n 
+0000032572 00000 n 
+0000032593 00000 n 
+0000032707 00000 n 
+0000032790 00000 n 
+0000041145 00000 n 
+0000041166 00000 n 
+0000041280 00000 n 
+0000041363 00000 n 
+0000049319 00000 n 
+0000049340 00000 n 
+0000049454 00000 n 
+0000049537 00000 n 
+0000057399 00000 n 
+0000057420 00000 n 
+0000057534 00000 n 
+0000057617 00000 n 
+0000065146 00000 n 
+0000065167 00000 n 
+0000065281 00000 n 
+0000065364 00000 n 
+0000073441 00000 n 
+0000073462 00000 n 
+0000073576 00000 n 
+0000073659 00000 n 
+0000081641 00000 n 
+0000081662 00000 n 
+0000081776 00000 n 
+0000081859 00000 n 
+0000089579 00000 n 
+0000089600 00000 n 
+0000089714 00000 n 
+0000089797 00000 n 
+0000097541 00000 n 
+0000097562 00000 n 
+0000097676 00000 n 
+0000097759 00000 n 
+0000105899 00000 n 
+0000105920 00000 n 
+0000106034 00000 n 
+0000106117 00000 n 
+0000107863 00000 n 
+0000107884 00000 n 
+0000107998 00000 n 
+0000108081 00000 n 
+0000110370 00000 n 
+0000110391 00000 n 
+0000110517 00000 n 
+0000110600 00000 n 
+0000110937 00000 n 
+0000110957 00000 n 
+0000111059 00000 n 
+0000111142 00000 n 
+0000116144 00000 n 
+0000116165 00000 n 
+0000116280 00000 n 
+0000116365 00000 n 
+0000116697 00000 n 
+0000116718 00000 n 
+0000116821 00000 n 
+0000116907 00000 n 
+0000116993 00000 n 
+0000117396 00000 n 
+0000117417 00000 n 
+0000117544 00000 n 
+0000117878 00000 n 
+0000117899 00000 n 
+0000118002 00000 n 
+0000123830 00000 n 
+0000118088 00000 n 
+0000118215 00000 n 
+0000118316 00000 n 
+0000118433 00000 n 
+0000118596 00000 n 
+0000118737 00000 n 
+0000118838 00000 n 
+0000118962 00000 n 
+0000119124 00000 n 
+0000119225 00000 n 
+0000119349 00000 n 
+0000119497 00000 n 
+0000119584 00000 n 
+0000119756 00000 n 
+0000119857 00000 n 
+0000119973 00000 n 
+0000120089 00000 n 
+0000120210 00000 n 
+0000120330 00000 n 
+0000120448 00000 n 
+0000120567 00000 n 
+0000120686 00000 n 
+0000120793 00000 n 
+0000120949 00000 n 
+0000121078 00000 n 
+0000121158 00000 n 
+0000121333 00000 n 
+0000121442 00000 n 
+0000121617 00000 n 
+0000121712 00000 n 
+0000121830 00000 n 
+0000121951 00000 n 
+0000122101 00000 n 
+0000122249 00000 n 
+0000122400 00000 n 
+0000122562 00000 n 
+0000122723 00000 n 
+0000122848 00000 n 
+0000122974 00000 n 
+0000123101 00000 n 
+0000123234 00000 n 
+0000123359 00000 n 
+0000123462 00000 n 
+0000123597 00000 n 
+0000123745 00000 n 
+trailer
+<<
+/Size 160
+/Root 3 0 R
+/Info 2 0 R
+>>
+startxref
+124248
+%%EOF

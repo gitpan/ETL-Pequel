@@ -1,0 +1,51 @@
+// vim: syntax=pequel ts=4 sw=4
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//  Script       : conditional_aggr.pql
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+options
+    header                  // (default) write header record to output.
+    optimize                // (default) optimize generated code.
+    doc_title("Conditional Aggregation Example Script")
+    doc_email("sample@youraddress.com")
+    doc_version(2.2)
+
+description section
+	Demonstrates the use of conditional aggregations. A conditional aggregate 
+	is done with the 'where' clause. This example analyses the COST_PRICE in 
+	various ways for the two states: NSW and VIC.
+
+input section
+    PRODUCT_CODE,
+    COST_PRICE,
+    DESCRIPTION,
+    SALES_CODE,
+	SALES_PRICE,
+	SALES_QTY,
+	SALES_DATE,
+	LOCATION
+
+sort by
+	PRODUCT_CODE
+
+group by
+	PRODUCT_CODE
+
+output section
+	string PRODUCT_CODE				PRODUCT_CODE
+	numeric AVG_COST_PRICE			avg COST_PRICE
+	numeric MIN_COST_PRICE			min COST_PRICE
+	numeric MAX_COST_PRICE			max COST_PRICE
+	numeric SUM_COST_PRICE			sum COST_PRICE
+
+	numeric AVG_COST_PRICE_NSW		avg COST_PRICE where LOCATION eq 'NSW'
+	numeric MIN_COST_PRICE_NSW		min COST_PRICE where LOCATION eq 'NSW'
+	numeric MAX_COST_PRICE_NSW		max COST_PRICE where LOCATION eq 'NSW'
+	numeric SUM_COST_PRICE_NSW		sum COST_PRICE where LOCATION eq 'NSW'
+
+	numeric AVG_COST_PRICE_VIC		avg COST_PRICE where LOCATION eq 'VIC'
+	numeric MIN_COST_PRICE_VIC		min COST_PRICE where LOCATION eq 'VIC'
+	numeric MAX_COST_PRICE_VIC		max COST_PRICE where LOCATION eq 'VIC'
+	numeric SUM_COST_PRICE_VIC		sum COST_PRICE where LOCATION eq 'VIC'
+
+	numeric RANGE_COST_PRICE		= MAX_COST_PRICE - MIN_COST_PRICE

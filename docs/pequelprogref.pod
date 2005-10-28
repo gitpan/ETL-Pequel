@@ -1,0 +1,8052 @@
+=pod
+
+
+
+=head1 Pequel Class Hierarchy
+
+
+
+=begin
+
+
+
+    
+    +---root
+        |   
+        +---Pequel::Base
+        |   |   
+        |   +---Pequel::Script
+        |       |   
+        |       +---Pequel::Main
+        |   
+        +---Pequel::Error
+        |   
+        +---Pequel::Parse::Compile
+        |   |   
+        |   +---Pequel::Parse
+        |   
+        +---Pequel::Collection::Element
+            |   
+            +---Pequel::Collection::Cursor
+            |   |   
+            |   +---Pequel::Collection::Iterator
+            |       |   
+            |       +---Pequel::Collection::Vector
+            |           |   
+            |           +---Pequel::Collection::Hierarchy
+            |           |   |   
+            |           |   +---Pequel::Type::Option::Group::Docgen
+            |           |   |   
+            |           |   +---Pequel::Type::Option::Group::Table
+            |           |   |   
+            |           |   +---Pequel::Type::Option::Group::Oracle
+            |           |   |   
+            |           |   +---Pequel::Type::Option::Group::Sqlite
+            |           |   |   
+            |           |   +---Pequel::Type::Option::Group::Inline
+            |           |   |   
+            |           |   +---Pequel::Type::Option::Group::Developer
+            |           |   |   
+            |           |   +---Pequel::Type::Option::Group::Basic
+            |           |   |   
+            |           |   +---Pequel::Type::Option::Group::CommandLineOnly
+            |           |   |   
+            |           |   +---Pequel::Type::Option
+            |           |   |   
+            |           |   +---Pequel::Type::Macro::Group::Basic
+            |           |   |   
+            |           |   +---Pequel::Type::Macro::Group::Date
+            |           |   |   
+            |           |   +---Pequel::Type::Macro::Group::String
+            |           |   |   
+            |           |   +---Pequel::Type::Macro::Group::Array
+            |           |   |   
+            |           |   +---Pequel::Type::Macro::Group::Arithmetic
+            |           |   |   
+            |           |   +---Pequel::Type::Macro::Group::Other
+            |           |   |   
+            |           |   +---Pequel::Type::Macro
+            |           |   
+            |           +---Pequel::Collection::Vector::Stack
+            |           |   |   
+            |           |   +---Pequel::Code::Generic
+            |           |       |   
+            |           |       +---Pequel::Code::C
+            |           |       |   
+            |           |       +---Pequel::Code::Perl
+            |           |       |   
+            |           |       +---Pequel::Code::Pod
+            |           |       |   |   
+            |           |       |   +---Pequel::Lister
+            |           |       |       |   
+            |           |       |       +---Pequel::Lister::SrcList
+            |           |       |       |   
+            |           |       |       +---Pequel::Lister::ProgRef
+            |           |       |   
+            |           |       +---Pequel::Code
+            |           |           |   
+            |           |           +---Pequel::Docgen
+            |           |           |   
+            |           |           +---Pequel::Engine
+            |           |           |   
+            |           |           +---Pequel::Engine::Inline
+            |           |   
+            |           +---Pequel::Type::Data
+            |           |   
+            |           +---Pequel::Type::Date
+            |           |   
+            |           +---Pequel::Type::Month
+            |           |   
+            |           +---Pequel::Type::Sections
+            |           |   
+            |           +---Pequel::Type::Aggregate
+            |           |   
+            |           +---Pequel::Type::Db::Vector
+            |           |   |   
+            |           |   +---Pequel::Type::Db::Oracle
+            |           |   |   
+            |           |   +---Pequel::Type::Db::Sqlite
+            |           |   
+            |           +---Pequel::Type::Db
+            |           |   
+            |           +---Pequel::Table
+            |           |   
+            |           +---Pequel::Table::Data
+            |   
+            +---Pequel::Code::Line::Element
+            |   
+            +---Pequel::Type::Element
+            |   |   
+            |   +---Pequel::Type::Date::Part
+            |   |   
+            |   +---Pequel::Type::Date::Element
+            |   |   
+            |   +---Pequel::Type::Option::Element
+            |   |   |   
+            |   |   +---Pequel::Type::Option::Version
+            |   |   |   
+            |   |   +---Pequel::Type::Option::Usage
+            |   |   |   
+            |   |   +---Pequel::Type::Option::SrcList
+            |   |   |   
+            |   |   +---Pequel::Type::Option::ProgRef
+            |   |   |   
+            |   |   +---Pequel::Type::Option::Pequeldoc
+            |   |   |   
+            |   |   +---Pequel::Type::Option::ViewCode
+            |   |   |   
+            |   |   +---Pequel::Type::Option::DumpCode
+            |   |   |   
+            |   |   +---Pequel::Type::Option::NoVerbose
+            |   |   |   
+            |   |   +---Pequel::Type::Option::Check
+            |   |   |   
+            |   |   +---Pequel::Type::Option::TableInfo
+            |   |   |   
+            |   |   +---Pequel::Type::Option::MacroInfo
+            |   |   |   
+            |   |   +---Pequel::Type::Option::List
+            |   |   
+            |   +---Pequel::Type::Aggregate::Element
+            |   |   |   
+            |   |   +---Pequel::Type::Aggregate::equals
+            |   |   |   
+            |   |   +---Pequel::Type::Aggregate::Sum
+            |   |   |   
+            |   |   +---Pequel::Type::Aggregate::SumDistinct
+            |   |   |   
+            |   |   +---Pequel::Type::Aggregate::ValuesUniq
+            |   |   |   
+            |   |   +---Pequel::Type::Aggregate::ValuesAll
+            |   |   |   
+            |   |   +---Pequel::Type::Aggregate::Count
+            |   |   |   
+            |   |   +---Pequel::Type::Aggregate::Minimum
+            |   |   |   |   
+            |   |   |   +---Pequel::Type::Aggregate::Min
+            |   |   |   
+            |   |   +---Pequel::Type::Aggregate::Maximum
+            |   |   |   |   
+            |   |   |   +---Pequel::Type::Aggregate::Max
+            |   |   |   
+            |   |   +---Pequel::Type::Aggregate::Last
+            |   |   |   
+            |   |   +---Pequel::Type::Aggregate::First
+            |   |   |   
+            |   |   +---Pequel::Type::Aggregate::Flag
+            |   |   |   
+            |   |   +---Pequel::Type::Aggregate::Distinct
+            |   |   |   |   
+            |   |   |   +---Pequel::Type::Aggregate::CountDistinct
+            |   |   |   
+            |   |   +---Pequel::Type::Aggregate::AvgDistinct
+            |   |   |   
+            |   |   +---Pequel::Type::Aggregate::Avg
+            |   |   |   |   
+            |   |   |   +---Pequel::Type::Aggregate::Mean
+            |   |   |   
+            |   |   +---Pequel::Type::Aggregate::Median
+            |   |   |   
+            |   |   +---Pequel::Type::Aggregate::Variance
+            |   |   |   
+            |   |   +---Pequel::Type::Aggregate::Stddev
+            |   |   |   
+            |   |   +---Pequel::Type::Aggregate::Range
+            |   |   |   
+            |   |   +---Pequel::Type::Aggregate::Mode
+            |   |   |   
+            |   |   +---Pequel::Type::Aggregate::Serial
+            |   |   
+            |   +---Pequel::Type::Macro::Element
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Date
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::MonthsSince
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::MonthsBetween
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::DateLastDay
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::LastDay
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::DateNextDay
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::DayNumber
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::AddDays
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Y
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::D
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::M
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Map
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Today
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::MonthsSinceCache
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::ToArray
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::ArrSize
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::ArrSort
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::ArrReverse
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::ArrValuesUniq
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::ArrSum
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::ArrAvg
+            |   |   |   |   
+            |   |   |   +---Pequel::Type::Macro::ArrMean
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::ArrShift
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::ArrPop
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::ArrPush
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::ArrFirst
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::ArrLast
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::ArrMin
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::ArrMax
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::ArrLookup
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Lookup
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Period
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Month
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Length
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Substr
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Index
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::RightIndex
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Lc
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Uc
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::LcFirst
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::UcFirst
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Commify
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Env
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Option
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::MatchAny
+            |   |   |   |   
+            |   |   |   +---Pequel::Type::Macro::Match
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Select
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Generic
+            |   |   |   |   
+            |   |   |   +---Pequel::Type::Macro::Ord
+            |   |   |   |   
+            |   |   |   +---Pequel::Type::Macro::Sqrt
+            |   |   |   |   
+            |   |   |   +---Pequel::Type::Macro::Rand
+            |   |   |   |   
+            |   |   |   +---Pequel::Type::Macro::Sin
+            |   |   |   |   
+            |   |   |   +---Pequel::Type::Macro::Exp
+            |   |   |   |   
+            |   |   |   +---Pequel::Type::Macro::Cos
+            |   |   |   |   
+            |   |   |   +---Pequel::Type::Macro::Log
+            |   |   |   |   
+            |   |   |   +---Pequel::Type::Macro::Chr
+            |   |   |   |   
+            |   |   |   +---Pequel::Type::Macro::Abs
+            |   |   |   |   
+            |   |   |   +---Pequel::Type::Macro::Int
+            |   |   |   |   
+            |   |   |   +---Pequel::Type::Macro::Atan2
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Sign
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Trunc
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Trim
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Spaceout
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::TrimTrailing
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::TrimLeading
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::ClipStr
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::LeftClipStr
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::RightClipStr
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::LeftPadStr
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::RightPadStr
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::RemoveSpaces
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::ToNumber
+            |   |   |   |   
+            |   |   |   +---Pequel::Type::Macro::ExtractNumeric
+            |   |   |   |   
+            |   |   |   +---Pequel::Type::Macro::RemoveNonNumeric
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::RemoveNumeric
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::RemoveSpecial
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Translate
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Initcap
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::ExtractInit
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Soundex
+            |   |   |   
+            |   |   +---Pequel::Type::Macro::Banding
+            |   |   |   
+            |   |   +---Pequel::Type::UserMacro
+            |   |   
+            |   +---Pequel::Type::Db::Element
+            |   |   |   
+            |   |   +---Pequel::Type::Db::Oracle::Element
+            |   |   |   
+            |   |   +---Pequel::Type::Db::Sqlite::Element
+            |   |   
+            |   +---Pequel::Type::Table::Element
+            |   |   |   
+            |   |   +---Pequel::Type::Table::Local
+            |   |   |   
+            |   |   +---Pequel::Type::Table::External
+            |   |       |   
+            |   |       +---Pequel::Type::Table::External::Inline
+            |   |           |   
+            |   |           +---Pequel::Type::Table::Oracle
+            |   |           |   |   
+            |   |           |   +---Pequel::Type::Table::Oracle::Merge
+            |   |           |   
+            |   |           +---Pequel::Type::Table::Sqlite
+            |   |               |   
+            |   |               +---Pequel::Type::Table::Sqlite::Merge
+            |   |   
+            |   +---Pequel::Field::Element
+            |   |   |   
+            |   |   +---Pequel::Field::Input::Element
+            |   |   |   
+            |   |   +---Pequel::Field::Output::Element
+            |   |   |   
+            |   |   +---Pequel::Table::Refkey::Element
+            |   |   |   
+            |   |   +---Pequel::Table::Field::Element
+            |   |   
+            |   +---Pequel::Docgen::Chapter::Element
+            |       |   
+            |       +---Pequel::Docgen::Chapter::Overview
+            |       |   
+            |       +---Pequel::Docgen::Chapter::Config
+            |       |   
+            |       +---Pequel::Docgen::Chapter::InputFields
+            |       |   
+            |       +---Pequel::Docgen::Chapter::Tables
+            |       |   
+            |       +---Pequel::Docgen::Chapter::TablesSummary
+            |       |   
+            |       +---Pequel::Docgen::Chapter::PequelScript
+            |       |   
+            |       +---Pequel::Docgen::Chapter::PequelGenerated
+            |   
+            +---Pequel::Type::Section
+            |   |   
+            |   +---Pequel::Type::Section::Options
+            |   |   
+            |   +---Pequel::Type::Section::FieldProcess
+            |   |   |   
+            |   |   +---Pequel::Type::Section::FieldProcess::Pre
+            |   |   |   
+            |   |   +---Pequel::Type::Section::FieldProcess::Post
+            |   |   
+            |   +---Pequel::Type::Section::Description
+            |   |   
+            |   +---Pequel::Type::Section::UsePackage
+            |   |   
+            |   +---Pequel::Type::Section::Input
+            |   |   
+            |   +---Pequel::Type::Section::SortBy
+            |   |   
+            |   +---Pequel::Type::Section::DedupOn
+            |   |   
+            |   +---Pequel::Type::Section::GroupBy
+            |   |   
+            |   +---Pequel::Type::Section::Filter
+            |   |   
+            |   +---Pequel::Type::Section::Output
+            |   |   
+            |   +---Pequel::Type::Section::Reject
+            |   |   
+            |   +---Pequel::Type::Section::Having
+            |   |   
+            |   +---Pequel::Type::Section::Summary
+            |   |   
+            |   +---Pequel::Type::Section::InitMONTH
+            |   |   
+            |   +---Pequel::Type::Section::InitPERIOD
+            |   |   
+            |   +---Pequel::Type::Section::InitTable
+            |   |   
+            |   +---Pequel::Type::Section::LoadTable
+            |       |   
+            |       +---Pequel::Type::Section::LoadTable::Persistent
+            |       |   
+            |       +---Pequel::Type::Section::LoadTable::Sqlite
+            |       |   |   
+            |       |   +---Pequel::Type::Section::LoadTable::Sqlite::Merge
+            |       |   
+            |       +---Pequel::Type::Section::LoadTable::Oracle
+            |           |   
+            |           +---Pequel::Type::Section::LoadTable::Oracle::Merge
+            |   
+            +---Pequel::Table::Data::Element
+=end
+
+=page
+
+
+
+=head1 Pequel Packages
+
+
+
+=head2 Base/Base.pm
+
+
+
+Pequel::Base
+
+=head2 Script/Script.pm
+
+
+
+Pequel::Script
+
+=head2 Main/Main.pm
+
+
+
+Pequel::Main
+
+=head2 Error/Error.pm
+
+
+
+Pequel::Error
+
+=head2 Parse/Parse.pm
+
+
+
+Pequel::Parse::Compile
+
+Pequel::Parse
+
+=head2 Collection/Collection.pm
+
+
+
+Pequel::Collection::Element
+
+Pequel::Collection::Cursor
+
+Pequel::Collection::Iterator
+
+Pequel::Collection::Vector
+
+Pequel::Collection::Hierarchy
+
+Pequel::Collection::Vector::Stack
+
+=head2 Code/Code.pm
+
+
+
+Pequel::Code::Line::Element
+
+Pequel::Code::Generic
+
+Pequel::Code::C
+
+Pequel::Code::Perl
+
+Pequel::Code::Pod
+
+Pequel::Code
+
+=head2 Type/Type.pm
+
+
+
+Pequel::Type::Element
+
+Pequel::Type::Data
+
+=head2 Type/Date/Date.pm
+
+
+
+Pequel::Type::Date::Part
+
+Pequel::Type::Date::Element
+
+Pequel::Type::Date
+
+Pequel::Type::Month
+
+=head2 Type/Option/Option.pm
+
+
+
+Pequel::Type::Option::Element
+
+Pequel::Type::Option::Version
+
+Pequel::Type::Option::Usage
+
+Pequel::Type::Option::SrcList
+
+Pequel::Type::Option::ProgRef
+
+Pequel::Type::Option::Pequeldoc
+
+Pequel::Type::Option::ViewCode
+
+Pequel::Type::Option::DumpCode
+
+Pequel::Type::Option::NoVerbose
+
+Pequel::Type::Option::Check
+
+Pequel::Type::Option::TableInfo
+
+Pequel::Type::Option::MacroInfo
+
+Pequel::Type::Option::List
+
+Pequel::Type::Option::Group::Docgen
+
+Pequel::Type::Option::Group::Table
+
+Pequel::Type::Option::Group::Oracle
+
+Pequel::Type::Option::Group::Sqlite
+
+Pequel::Type::Option::Group::Inline
+
+Pequel::Type::Option::Group::Developer
+
+Pequel::Type::Option::Group::Basic
+
+Pequel::Type::Option::Group::CommandLineOnly
+
+Pequel::Type::Option
+
+=head2 Type/Section/Section.pm
+
+
+
+Pequel::Type::Section
+
+Pequel::Type::Section::Options
+
+Pequel::Type::Section::FieldProcess
+
+Pequel::Type::Section::FieldProcess::Pre
+
+Pequel::Type::Section::FieldProcess::Post
+
+Pequel::Type::Section::Description
+
+Pequel::Type::Section::UsePackage
+
+Pequel::Type::Section::Input
+
+Pequel::Type::Section::SortBy
+
+Pequel::Type::Section::DedupOn
+
+Pequel::Type::Section::GroupBy
+
+Pequel::Type::Section::Filter
+
+Pequel::Type::Section::Output
+
+Pequel::Type::Section::Reject
+
+Pequel::Type::Section::Having
+
+Pequel::Type::Section::Summary
+
+Pequel::Type::Section::InitMONTH
+
+Pequel::Type::Section::InitPERIOD
+
+Pequel::Type::Section::InitTable
+
+Pequel::Type::Section::LoadTable
+
+Pequel::Type::Section::LoadTable::Persistent
+
+Pequel::Type::Section::LoadTable::Sqlite
+
+Pequel::Type::Section::LoadTable::Sqlite::Merge
+
+Pequel::Type::Section::LoadTable::Oracle
+
+Pequel::Type::Section::LoadTable::Oracle::Merge
+
+Pequel::Type::Sections
+
+=head2 Type/Aggregate/Aggregate.pm
+
+
+
+Pequel::Type::Aggregate::Element
+
+Pequel::Type::Aggregate::equals
+
+Pequel::Type::Aggregate::Sum
+
+Pequel::Type::Aggregate::SumDistinct
+
+Pequel::Type::Aggregate::ValuesUniq
+
+Pequel::Type::Aggregate::ValuesAll
+
+Pequel::Type::Aggregate::Count
+
+Pequel::Type::Aggregate::Minimum
+
+Pequel::Type::Aggregate::Min
+
+Pequel::Type::Aggregate::Maximum
+
+Pequel::Type::Aggregate::Max
+
+Pequel::Type::Aggregate::Last
+
+Pequel::Type::Aggregate::First
+
+Pequel::Type::Aggregate::Flag
+
+Pequel::Type::Aggregate::Distinct
+
+Pequel::Type::Aggregate::CountDistinct
+
+Pequel::Type::Aggregate::AvgDistinct
+
+Pequel::Type::Aggregate::Avg
+
+Pequel::Type::Aggregate::Mean
+
+Pequel::Type::Aggregate::Median
+
+Pequel::Type::Aggregate::Variance
+
+Pequel::Type::Aggregate::Stddev
+
+Pequel::Type::Aggregate::Range
+
+Pequel::Type::Aggregate::Mode
+
+Pequel::Type::Aggregate::Serial
+
+Pequel::Type::Aggregate
+
+=head2 Type/Macro/Macro.pm
+
+
+
+Pequel::Type::Macro::Element
+
+Pequel::Type::Macro::Date
+
+Pequel::Type::Macro::MonthsSince
+
+Pequel::Type::Macro::MonthsBetween
+
+Pequel::Type::Macro::DateLastDay
+
+Pequel::Type::Macro::LastDay
+
+Pequel::Type::Macro::DateNextDay
+
+Pequel::Type::Macro::DayNumber
+
+Pequel::Type::Macro::AddDays
+
+Pequel::Type::Macro::Y
+
+Pequel::Type::Macro::D
+
+Pequel::Type::Macro::M
+
+Pequel::Type::Macro::Map
+
+Pequel::Type::Macro::Today
+
+Pequel::Type::Macro::MonthsSinceCache
+
+Pequel::Type::Macro::ToArray
+
+Pequel::Type::Macro::ArrSize
+
+Pequel::Type::Macro::ArrSort
+
+Pequel::Type::Macro::ArrReverse
+
+Pequel::Type::Macro::ArrValuesUniq
+
+Pequel::Type::Macro::ArrSum
+
+Pequel::Type::Macro::ArrAvg
+
+Pequel::Type::Macro::ArrMean
+
+Pequel::Type::Macro::ArrShift
+
+Pequel::Type::Macro::ArrPop
+
+Pequel::Type::Macro::ArrPush
+
+Pequel::Type::Macro::ArrFirst
+
+Pequel::Type::Macro::ArrLast
+
+Pequel::Type::Macro::ArrMin
+
+Pequel::Type::Macro::ArrMax
+
+Pequel::Type::Macro::ArrLookup
+
+Pequel::Type::Macro::Lookup
+
+Pequel::Type::Macro::Period
+
+Pequel::Type::Macro::Month
+
+Pequel::Type::Macro::Length
+
+Pequel::Type::Macro::Substr
+
+Pequel::Type::Macro::Index
+
+Pequel::Type::Macro::RightIndex
+
+Pequel::Type::Macro::Lc
+
+Pequel::Type::Macro::Uc
+
+Pequel::Type::Macro::LcFirst
+
+Pequel::Type::Macro::UcFirst
+
+Pequel::Type::Macro::Commify
+
+Pequel::Type::Macro::Env
+
+Pequel::Type::Macro::Option
+
+Pequel::Type::Macro::MatchAny
+
+Pequel::Type::Macro::Match
+
+Pequel::Type::Macro::Select
+
+Pequel::Type::Macro::Generic
+
+Pequel::Type::Macro::Ord
+
+Pequel::Type::Macro::Sqrt
+
+Pequel::Type::Macro::Rand
+
+Pequel::Type::Macro::Sin
+
+Pequel::Type::Macro::Exp
+
+Pequel::Type::Macro::Cos
+
+Pequel::Type::Macro::Log
+
+Pequel::Type::Macro::Chr
+
+Pequel::Type::Macro::Abs
+
+Pequel::Type::Macro::Int
+
+Pequel::Type::Macro::Atan2
+
+Pequel::Type::Macro::Sign
+
+Pequel::Type::Macro::Trunc
+
+Pequel::Type::Macro::Trim
+
+Pequel::Type::Macro::Spaceout
+
+Pequel::Type::Macro::TrimTrailing
+
+Pequel::Type::Macro::TrimLeading
+
+Pequel::Type::Macro::ClipStr
+
+Pequel::Type::Macro::LeftClipStr
+
+Pequel::Type::Macro::RightClipStr
+
+Pequel::Type::Macro::LeftPadStr
+
+Pequel::Type::Macro::RightPadStr
+
+Pequel::Type::Macro::RemoveSpaces
+
+Pequel::Type::Macro::ToNumber
+
+Pequel::Type::Macro::ExtractNumeric
+
+Pequel::Type::Macro::RemoveNonNumeric
+
+Pequel::Type::Macro::RemoveNumeric
+
+Pequel::Type::Macro::RemoveSpecial
+
+Pequel::Type::Macro::Translate
+
+Pequel::Type::Macro::Initcap
+
+Pequel::Type::Macro::ExtractInit
+
+Pequel::Type::Macro::Soundex
+
+Pequel::Type::Macro::Banding
+
+Pequel::Type::UserMacro
+
+Pequel::Type::Macro::Group::Basic
+
+Pequel::Type::Macro::Group::Date
+
+Pequel::Type::Macro::Group::String
+
+Pequel::Type::Macro::Group::Array
+
+Pequel::Type::Macro::Group::Arithmetic
+
+Pequel::Type::Macro::Group::Other
+
+Pequel::Type::Macro
+
+=head2 Type/Db/Db.pm
+
+
+
+Pequel::Type::Db::Element
+
+Pequel::Type::Db::Vector
+
+Pequel::Type::Db
+
+=head2 Type/Db/Oracle/Oracle.pm
+
+
+
+Pequel::Type::Db::Oracle::Element
+
+Pequel::Type::Db::Oracle
+
+=head2 Type/Db/Sqlite/Sqlite.pm
+
+
+
+Pequel::Type::Db::Sqlite::Element
+
+Pequel::Type::Db::Sqlite
+
+=head2 Type/Table/Table.pm
+
+
+
+Pequel::Type::Table::Element
+
+Pequel::Type::Table::Local
+
+Pequel::Type::Table::External
+
+Pequel::Type::Table::External::Inline
+
+=head2 Type/Table/Oracle/Oracle.pm
+
+
+
+Pequel::Type::Table::Oracle
+
+Pequel::Type::Table::Oracle::Merge
+
+=head2 Type/Table/Sqlite/Sqlite.pm
+
+
+
+Pequel::Type::Table::Sqlite
+
+Pequel::Type::Table::Sqlite::Merge
+
+=head2 Field/Field.pm
+
+
+
+Pequel::Field::Element
+
+Pequel::Field::Input::Element
+
+Pequel::Field::Output::Element
+
+=head2 Table/Table.pm
+
+
+
+Pequel::Table
+
+Pequel::Table::Refkey::Element
+
+Pequel::Table::Field::Element
+
+Pequel::Table::Data::Element
+
+Pequel::Table::Data
+
+=head2 Docgen/Docgen.pm
+
+
+
+Pequel::Docgen
+
+Pequel::Docgen::Chapter::Element
+
+Pequel::Docgen::Chapter::Overview
+
+Pequel::Docgen::Chapter::Config
+
+Pequel::Docgen::Chapter::InputFields
+
+Pequel::Docgen::Chapter::Tables
+
+Pequel::Docgen::Chapter::TablesSummary
+
+Pequel::Docgen::Chapter::PequelScript
+
+Pequel::Docgen::Chapter::PequelGenerated
+
+=head2 Lister/Lister.pm
+
+
+
+Pequel::Lister
+
+Pequel::Lister::SrcList
+
+Pequel::Lister::ProgRef
+
+=head2 Engine/Engine.pm
+
+
+
+Pequel::Engine
+
+=head2 Engine/Inline/Inline.pm
+
+
+
+Pequel::Engine::Inline
+
+=page
+
+
+
+=head1 Pequel Types
+
+
+
+=head2 Data Type
+
+
+
+type.string
+
+type.numeric
+
+type.decimal
+
+type.date
+
+type.time
+
+type.array
+
+=head2 Date Type
+
+
+
+date.DD/MM/YYYY
+
+date.DD/MM/YY
+
+date.DDMMYY
+
+date.DDMMYYYY
+
+date.DDMMMYY
+
+date.YYYYMMDD
+
+date.YYMMDD
+
+date.MM/DD/YYYY
+
+date.MM/DD/YY
+
+date.MMDDYY
+
+date.MMDDYYYY
+
+date.YYYY-MM-DD
+
+date.YY-MM-DD
+
+=head2 Month Type
+
+
+
+month.JAN
+
+month.FEB
+
+month.MAR
+
+month.APR
+
+month.MAY
+
+month.JUN
+
+month.JUL
+
+month.AUG
+
+month.SEP
+
+month.OCT
+
+month.NOV
+
+month.DEC
+
+=head2 Option Type
+
+
+
+option.verbose
+
+option.noverbose
+
+option.input_delimiter
+
+option.output_delimiter
+
+option.input_file
+
+option.output_file
+
+option.script_name
+
+option.discard_header
+
+option.header
+
+option.noheader
+
+option.addpipe
+
+option.noaddpipe
+
+option.optimize
+
+option.nooptimize
+
+option.nulls
+
+option.nonulls
+
+option.reject_file
+
+option.default_datetype
+
+option.default_list_delimiter
+
+option.hash
+
+option.transfer
+
+option.suppress_output
+
+option.num_threads
+
+option.sort_tmp_dir
+
+option.logfilename
+
+option.logging
+
+option.display_table_stats
+
+option.reload_tables
+
+option.load_tables_only
+
+option.table_drop_unused_fields
+
+option.table_dir
+
+option.oracle_prefetch_count
+
+option.oracle_home
+
+option.oracle_sqlldr_rows
+
+option.oracle_use_merge_fetch_macro
+
+option.sqlite_dir
+
+option.sqlite_merge_optimize
+
+option.sqlite_merge_optimize_count
+
+option.use_inline
+
+option.inline_clean_after_build
+
+option.inline_clean_build_area
+
+option.inline_build_noisy
+
+option.inline_build_timers
+
+option.inline_force_build
+
+option.inline_print_info
+
+option.inline_directory
+
+option.inline_cache_recs
+
+option.use_av_store_macro
+
+option.inline_merge_optimize
+
+option.inline_merge_optimize_count
+
+option.doc_title
+
+option.doc_version
+
+option.doc_email
+
+option.dumpcode
+
+option.debug_show_caller
+
+option.debug
+
+option.debug_generate
+
+option.debug_parser
+
+option.diagnostics
+
+option.tinfo
+
+option.minfo
+
+option.pequelsrclist
+
+option.pequelprogref
+
+option.version
+
+option.usage
+
+option.viewcode
+
+option.syntax_check
+
+option.list
+
+option.pequeldoc
+
+option.detail
+
+=head2 Macro Type
+
+
+
+macro.select
+
+macro.lookup
+
+macro.map
+
+macro.match_any
+
+macro.match
+
+macro.env
+
+macro.option
+
+macro.banding
+
+macro.date
+
+macro.period
+
+macro.month
+
+macro.months_since
+
+macro.today
+
+macro.months_between
+
+macro.d
+
+macro.m
+
+macro.y
+
+macro.day_number
+
+macro.date_last_day
+
+macro.last_day
+
+macro.date_next_day
+
+macro.length
+
+macro.substr
+
+macro.index
+
+macro.rindex
+
+macro.lc
+
+macro.uc
+
+macro.lc_first
+
+macro.uc_first
+
+macro.commify
+
+macro.trim
+
+macro.trim_leading
+
+macro.trim_trailing
+
+macro.clip_str
+
+macro.left_clip_str
+
+macro.right_clip_str
+
+macro.left_pad_str
+
+macro.right_pad_str
+
+macro.translate
+
+macro.initcap
+
+macro.extract_init
+
+macro.soundex
+
+macro.spaceout
+
+macro.to_number
+
+macro.extract_numeric
+
+macro.remove_non_numeric
+
+macro.remove_special
+
+macro.remove_numeric
+
+macro.remove_spaces
+
+macro.to_array
+
+macro.arr_size
+
+macro.arr_sort
+
+macro.arr_reverse
+
+macro.arr_shift
+
+macro.arr_pop
+
+macro.arr_first
+
+macro.arr_first
+
+macro.arr_min
+
+macro.arr_max
+
+macro.arr_avg
+
+macro.mean
+
+macro.arr_sum
+
+macro.arr_lookup
+
+macro.arr_values_uniq
+
+macro.sqrt
+
+macro.rand
+
+macro.ord
+
+macro.log
+
+macro.sin
+
+macro.exp
+
+macro.cos
+
+macro.chr
+
+macro.abs
+
+macro.int
+
+macro.atan2
+
+macro.sign
+
+macro.trunc
+
+=head2 Section Type
+
+
+
+section.options
+
+section.description section
+
+section.use package
+
+section.init _MONTH
+
+section.init _PERIOD
+
+section.init table
+
+section.load table sqlite merge
+
+section.load table sqlite
+
+section.load table oracle merge
+
+section.load table oracle
+
+section.load table
+
+section.input section
+
+section.field preprocess
+
+section.sort by
+
+section.group by
+
+section.dedup on
+
+section.filter
+
+section.output section
+
+section.field postprocess
+
+section.reject
+
+section.having
+
+section.summary section
+
+=head2 Aggregate Type
+
+
+
+aggregate.count
+
+aggregate.count_distinct
+
+aggregate.min
+
+aggregate.max
+
+aggregate.minimum
+
+aggregate.maximum
+
+aggregate.sum
+
+aggregate.sum_distinct
+
+aggregate.first
+
+aggregate.last
+
+aggregate.flag
+
+aggregate.distinct
+
+aggregate.avg
+
+aggregate.avg_distinct
+
+aggregate.=
+
+aggregate.serial
+
+aggregate.values_all
+
+aggregate.values_uniq
+
+aggregate.mean
+
+aggregate.median
+
+aggregate.variance
+
+aggregate.stddev
+
+aggregate.range
+
+aggregate.mode
+
+=head2 Db Type
+
+
+
+db.oracle
+
+db.sqlite
+
+=page
+
+
+
+=head1 Pequel Class Reference
+
+
+
+=head1 Pequel::Base
+
+
+
+I<-- Base Class -->
+
+Package I<Base/Base.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<error>
+
+
+
+=item F<parser>
+
+
+
+=item F<tables>
+
+
+
+=item F<t_data>
+
+
+
+=item F<t_date>
+
+
+
+=item F<t_month>
+
+
+
+=item F<t_option>
+
+
+
+=item F<t_section>
+
+
+
+=item F<t_macro>
+
+
+
+=item F<t_aggregate>
+
+
+
+=item F<t_db>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<AUTOLOAD>
+
+
+
+=item F<new>
+
+
+
+=item F<version>
+
+
+
+=item F<programName>
+
+
+
+=item F<root>
+
+
+
+=item F<c_numOutputFields>
+
+
+
+=item F<c_numInputFields>
+
+
+
+=page
+
+
+
+=head1 Pequel::Script
+
+
+
+Extends I<Pequel::Base>
+
+Package I<Script/Script.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<scriptOrig>
+
+
+
+=item F<scriptCppProcessed>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<read>
+
+
+
+=item F<preProcess>
+
+
+
+=item F<prepare>
+
+
+
+=item F<parse>
+
+
+
+=item F<compile>
+
+
+
+=item F<check>
+
+
+
+=page
+
+
+
+=head1 Pequel::Main
+
+
+
+Extends I<Pequel::Script>
+
+Package I<Main/Main.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<main>
+
+
+
+=item F<parseCmdLine>
+
+
+
+=item F<initRc>
+
+
+
+=page
+
+
+
+=head1 Pequel::Error
+
+
+
+I<-- Base Class -->
+
+Package I<Error/Error.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<warning>
+
+
+
+=item F<fatalError>
+
+
+
+=item F<error>
+
+
+
+=item F<msgStderr>
+
+
+
+=item F<msgStderrNonl>
+
+
+
+=page
+
+
+
+=head1 Pequel::Parse::Compile
+
+
+
+I<-- Base Class -->
+
+Package I<Parse/Parse.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<root>
+
+
+
+=item F<compile>
+
+
+
+=item F<compileInputFields>
+
+
+
+=item F<compileOutput>
+
+
+
+=item F<extractNextMacro>
+
+
+
+=item F<compileMacro>
+
+
+
+=item F<extractNextTable>
+
+
+
+=item F<compileTable>
+
+
+
+=item F<XextractNextTable>
+
+
+
+=item F<XcompileTable>
+
+
+
+=item F<compileArray>
+
+
+
+=item F<compileToArray>
+
+
+
+=head1 Pequel::Parse
+
+
+
+Extends I<Pequel::Parse::Compile>
+
+Package I<Parse/Parse.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<splitEntries>
+
+
+
+=item F<saveAnd>
+
+
+
+=item F<restoreAnd>
+
+
+
+=item F<saveAmp>
+
+
+
+=item F<restoreAmp>
+
+
+
+=item F<saveQuotes>
+
+
+
+=item F<restoreQuotes>
+
+
+
+=item F<saveCommas>
+
+
+
+=item F<restoreCommas>
+
+
+
+=item F<saveQuotedCommas>
+
+
+
+=item F<restoreQuotedCommas>
+
+
+
+=item F<saveQuotedPc>
+
+
+
+=item F<restoreQuotedPc>
+
+
+
+=item F<saveEscPc>
+
+
+
+=item F<restoreEscPc>
+
+
+
+=item F<saveSpaces>
+
+
+
+=item F<restoreSpaces>
+
+
+
+=item F<saveAt>
+
+
+
+=item F<restoreAt>
+
+
+
+=item F<leftClip >
+
+
+
+=item F<rightClip >
+
+
+
+=page
+
+
+
+=head1 Pequel::Collection::Element
+
+
+
+I<-- Base Class -->
+
+Package I<Collection/Collection.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<name>
+
+
+
+=item F<number>
+
+
+
+=item F<value>
+
+
+
+=item F<uniq>
+
+
+
+=item F<comment>
+
+
+
+=item F<setIndex>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<index>
+
+
+
+=item F<compile>
+
+
+
+=item F<root>
+
+
+
+=item F<check_equals>
+
+
+
+=item F<equals            >
+
+
+
+=item F<set            >
+
+
+
+=item F<toString>
+
+
+
+=head1 Pequel::Collection::Cursor
+
+
+
+Extends I<Pequel::Collection::Element>
+
+Package I<Collection/Collection.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<index>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<dec>
+
+
+
+=item F<inc>
+
+
+
+=item F<reset>
+
+
+
+=head1 Pequel::Collection::Iterator
+
+
+
+Extends I<Pequel::Collection::Cursor>
+
+Package I<Collection/Collection.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<current>
+
+
+
+=item F<next>
+
+
+
+=item F<prev>
+
+
+
+=item F<last    >
+
+
+
+=item F<first>
+
+
+
+=head1 Pequel::Collection::Vector
+
+
+
+Extends I<Pequel::Collection::Iterator>
+
+Package I<Collection/Collection.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<_vector>
+
+
+
+=item F<expandAll>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<add>
+
+
+
+=item F<addAll>
+
+
+
+=item F<exists>
+
+
+
+=item F<search>
+
+
+
+=item F<toArray>
+
+
+
+=item F<size>
+
+
+
+=item F<clear>
+
+
+
+=item F<clone>
+
+
+
+=item F<equals>
+
+
+
+=item F<elementAt>
+
+
+
+=item F<root>
+
+
+
+=item F<extract>
+
+
+
+=item F<get>
+
+
+
+=item F<regEx>
+
+
+
+=item F<setAll>
+
+
+
+=item F<set>
+
+
+
+=item F<put>
+
+
+
+=item F<lastIndex>
+
+
+
+=item F<elements>
+
+
+
+=item F<addElement>
+
+
+
+=item F<toString>
+
+
+
+=item F<toArraySort>
+
+
+
+=item F<toArrayUniq>
+
+
+
+=item F<toArrayName>
+
+
+
+=item F<toArrayNumber>
+
+
+
+=item F<toArrayValue>
+
+
+
+=head1 Pequel::Collection::Hierarchy
+
+
+
+Extends I<Pequel::Collection::Vector>
+
+Package I<Collection/Collection.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<branches>
+
+
+
+=item F<branch>
+
+
+
+=item F<tree>
+
+
+
+=head1 Pequel::Collection::Vector::Stack
+
+
+
+Extends I<Pequel::Collection::Vector>
+
+Package I<Collection/Collection.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<push>
+
+
+
+=item F<pushAll>
+
+
+
+=item F<pop>
+
+
+
+=item F<shift>
+
+
+
+=item F<unshift>
+
+
+
+=item F<unshiftAll>
+
+
+
+=page
+
+
+
+=head1 Pequel::Code::Line::Element
+
+
+
+Extends I<Pequel::Collection::Element>
+
+Package I<Code/Code.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<noNewline>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Code::Generic
+
+
+
+Extends I<Pequel::Collection::Vector::Stack>
+
+Package I<Code/Code.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<blockType>
+
+
+
+=item F<currentTab>
+
+
+
+=item F<tabs>
+
+
+
+=item F<showComments>
+
+
+
+=item F<floatComments>
+
+
+
+=item F<tabSize>
+
+
+
+=item F<text>
+
+
+
+=item F<raw>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<add>
+
+
+
+=item F<_add>
+
+
+
+=item F<addNonl>
+
+
+
+=item F<addAll>
+
+
+
+=item F<nl>
+
+
+
+=item F<over>
+
+
+
+=item F<back>
+
+
+
+=item F<open>
+
+
+
+=item F<openBlock>
+
+
+
+=item F<close>
+
+
+
+=item F<closeBlock>
+
+
+
+=item F<endList>
+
+
+
+=item F<prepare>
+
+
+
+=item F<appendText>
+
+
+
+=item F<sprint>
+
+
+
+=item F<sprintRaw>
+
+
+
+=item F<print>
+
+
+
+=item F<printToFile>
+
+
+
+=item F<printStderr>
+
+
+
+=item F<showCode>
+
+
+
+=item F<podToPdf>
+
+
+
+=item F<leftIndentBlock>
+
+
+
+=item F<rightIndentBlock>
+
+
+
+=item F<codeOpenLog>
+
+
+
+=item F<codeWriteLog>
+
+
+
+=item F<verboseMessage>
+
+
+
+=item F<verboseCCMessage>
+
+
+
+=item F<append        >
+
+
+
+=item F<addCommentBegin>
+
+
+
+=item F<addCommentEnd>
+
+
+
+=item F<addComment>
+
+
+
+=item F<addBar>
+
+
+
+=item F<addFmt>
+
+
+
+=head1 Pequel::Code::C
+
+
+
+Extends I<Pequel::Code::Generic>
+
+Package I<Code/Code.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<addCommentBegin>
+
+
+
+=item F<addCommentEnd>
+
+
+
+=item F<addComment>
+
+
+
+=item F<addBar>
+
+
+
+=head1 Pequel::Code::Perl
+
+
+
+Extends I<Pequel::Code::Generic>
+
+Package I<Code/Code.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<addCommentBegin>
+
+
+
+=item F<addCommentEnd>
+
+
+
+=item F<addComment>
+
+
+
+=item F<addBar>
+
+
+
+=head1 Pequel::Code::Pod
+
+
+
+Extends I<Pequel::Code::Generic>
+
+Package I<Code/Code.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<insideBegin>
+
+
+
+=item F<pdfName>
+
+
+
+=item F<podName>
+
+
+
+=item F<docTitle>
+
+
+
+=item F<docVersion>
+
+
+
+=item F<docType>
+
+
+
+=item F<docEmail>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<pod>
+
+
+
+=item F<add>
+
+
+
+=item F<head1>
+
+
+
+=item F<head2>
+
+
+
+=item F<item>
+
+
+
+=item F<itemBold>
+
+
+
+=item F<itemBoldItalic>
+
+
+
+=item F<begin>
+
+
+
+=item F<end>
+
+
+
+=item F<page        >
+
+
+
+=item F<over>
+
+
+
+=item F<back>
+
+
+
+=item F<setBold>
+
+
+
+=item F<setItalic>
+
+
+
+=item F<setHighlight>
+
+
+
+=item F<setLink>
+
+
+
+=item F<podToPdf>
+
+
+
+=head1 Pequel::Code
+
+
+
+Extends I<Pequel::Code::Generic>
+
+Package I<Code/Code.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=page
+
+
+
+=head1 Pequel::Type::Element
+
+
+
+Extends I<Pequel::Collection::Element>
+
+Package I<Type/Type.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<useList>
+
+
+
+=item F<sourceSectionName>
+
+
+
+=item F<sourceFieldName>
+
+
+
+=item F<timeStamp>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Data
+
+
+
+Extends I<Pequel::Collection::Vector>
+
+Package I<Type/Type.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=page
+
+
+
+=head1 Pequel::Type::Date::Part
+
+
+
+Extends I<Pequel::Type::Element>
+
+Package I<Type/Date/Date.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<pos>
+
+
+
+=item F<len>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Date::Element
+
+
+
+Extends I<Pequel::Type::Element>
+
+Package I<Type/Date/Date.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<d>
+
+
+
+=item F<m>
+
+
+
+=item F<y>
+
+
+
+=item F<regEx>
+
+
+
+=item F<fmt>
+
+
+
+=item F<delimiter>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeCmpDate>
+
+
+
+=item F<codeToCCYYMMDD>
+
+
+
+=item F<codeFmtDate>
+
+
+
+=item F<dmyOrder>
+
+
+
+=head1 Pequel::Type::Date
+
+
+
+Extends I<Pequel::Collection::Vector>
+
+Package I<Type/Date/Date.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<addUserType>
+
+
+
+=head1 Pequel::Type::Month
+
+
+
+Extends I<Pequel::Collection::Vector>
+
+Package I<Type/Date/Date.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=page
+
+
+
+=head1 Pequel::Type::Option::Element
+
+
+
+Extends I<Pequel::Type::Element>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<cmdAlias>
+
+
+
+=item F<cmdFormat>
+
+
+
+=item F<format>
+
+
+
+=item F<allow>
+
+
+
+=item F<usage>
+
+
+
+=item F<description>
+
+
+
+=item F<required>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Option::Version
+
+
+
+Extends I<Pequel::Type::Option::Element>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<cmdExec>
+
+
+
+=head1 Pequel::Type::Option::Usage
+
+
+
+Extends I<Pequel::Type::Option::Element>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<cmdExec>
+
+
+
+=head1 Pequel::Type::Option::SrcList
+
+
+
+Extends I<Pequel::Type::Option::Element>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<cmdExec>
+
+
+
+=head1 Pequel::Type::Option::ProgRef
+
+
+
+Extends I<Pequel::Type::Option::Element>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<cmdExec>
+
+
+
+=head1 Pequel::Type::Option::Pequeldoc
+
+
+
+Extends I<Pequel::Type::Option::Element>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<cmdExec>
+
+
+
+=head1 Pequel::Type::Option::ViewCode
+
+
+
+Extends I<Pequel::Type::Option::Element>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<cmdExec>
+
+
+
+=head1 Pequel::Type::Option::DumpCode
+
+
+
+Extends I<Pequel::Type::Option::Element>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<cmdExec>
+
+
+
+=head1 Pequel::Type::Option::NoVerbose
+
+
+
+Extends I<Pequel::Type::Option::Element>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<cmdExec>
+
+
+
+=head1 Pequel::Type::Option::Check
+
+
+
+Extends I<Pequel::Type::Option::Element>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<cmdExec>
+
+
+
+=head1 Pequel::Type::Option::TableInfo
+
+
+
+Extends I<Pequel::Type::Option::Element>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<cmdExec>
+
+
+
+=head1 Pequel::Type::Option::MacroInfo
+
+
+
+Extends I<Pequel::Type::Option::Element>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<cmdExec>
+
+
+
+=head1 Pequel::Type::Option::List
+
+
+
+Extends I<Pequel::Type::Option::Element>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<cmdExec>
+
+
+
+=head1 Pequel::Type::Option::Group::Docgen
+
+
+
+Extends I<Pequel::Collection::Hierarchy>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Option::Group::Table
+
+
+
+Extends I<Pequel::Collection::Hierarchy>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Option::Group::Oracle
+
+
+
+Extends I<Pequel::Collection::Hierarchy>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Option::Group::Sqlite
+
+
+
+Extends I<Pequel::Collection::Hierarchy>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Option::Group::Inline
+
+
+
+Extends I<Pequel::Collection::Hierarchy>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Option::Group::Developer
+
+
+
+Extends I<Pequel::Collection::Hierarchy>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Option::Group::Basic
+
+
+
+Extends I<Pequel::Collection::Hierarchy>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Option::Group::CommandLineOnly
+
+
+
+Extends I<Pequel::Collection::Hierarchy>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Option
+
+
+
+Extends I<Pequel::Collection::Hierarchy>
+
+Package I<Type/Option/Option.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<getAlias>
+
+
+
+=page
+
+
+
+=head1 Pequel::Type::Section
+
+
+
+Extends I<Pequel::Collection::Element>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<lines>
+
+
+
+=item F<items>
+
+
+
+=item F<present>
+
+
+
+=item F<required>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit         >
+
+
+
+=item F<codeReset         >
+
+
+
+=item F<codeBreakBefore         >
+
+
+
+=item F<codeBreakAfter         >
+
+
+
+=item F<codeMainBefore         >
+
+
+
+=item F<codeMainAfter         >
+
+
+
+=item F<parseAll>
+
+
+
+=item F<parse>
+
+
+
+=item F<compile>
+
+
+
+=item F<regEx>
+
+
+
+=head1 Pequel::Type::Section::Options
+
+
+
+Extends I<Pequel::Type::Section>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<parse>
+
+
+
+=head1 Pequel::Type::Section::FieldProcess
+
+
+
+Extends I<Pequel::Type::Section>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<parse>
+
+
+
+=head1 Pequel::Type::Section::FieldProcess::Pre
+
+
+
+Extends I<Pequel::Type::Section::FieldProcess>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeBreakBefore>
+
+
+
+=item F<parse>
+
+
+
+=head1 Pequel::Type::Section::FieldProcess::Post
+
+
+
+Extends I<Pequel::Type::Section::FieldProcess>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeMainAfter>
+
+
+
+=item F<parse>
+
+
+
+=head1 Pequel::Type::Section::Description
+
+
+
+Extends I<Pequel::Type::Section>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Section::UsePackage
+
+
+
+Extends I<Pequel::Type::Section>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=head1 Pequel::Type::Section::Input
+
+
+
+Extends I<Pequel::Type::Section>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<parse>
+
+
+
+=head1 Pequel::Type::Section::SortBy
+
+
+
+Extends I<Pequel::Type::Section>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<parse>
+
+
+
+=head1 Pequel::Type::Section::DedupOn
+
+
+
+Extends I<Pequel::Type::Section>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<codeBreakAfter>
+
+
+
+=item F<parse>
+
+
+
+=head1 Pequel::Type::Section::GroupBy
+
+
+
+Extends I<Pequel::Type::Section>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<parse>
+
+
+
+=head1 Pequel::Type::Section::Filter
+
+
+
+Extends I<Pequel::Type::Section>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeBreakBefore>
+
+
+
+=head1 Pequel::Type::Section::Output
+
+
+
+Extends I<Pequel::Type::Section>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<parse>
+
+
+
+=head1 Pequel::Type::Section::Reject
+
+
+
+Extends I<Pequel::Type::Section>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<codeBreakBefore>
+
+
+
+=item F<parse>
+
+
+
+=head1 Pequel::Type::Section::Having
+
+
+
+Extends I<Pequel::Type::Section>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<parse>
+
+
+
+=head1 Pequel::Type::Section::Summary
+
+
+
+Extends I<Pequel::Type::Section>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Section::InitMONTH
+
+
+
+Extends I<Pequel::Type::Section>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<parse>
+
+
+
+=head1 Pequel::Type::Section::InitPERIOD
+
+
+
+Extends I<Pequel::Type::Section>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<parse>
+
+
+
+=head1 Pequel::Type::Section::InitTable
+
+
+
+Extends I<Pequel::Type::Section>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<parse>
+
+
+
+=head1 Pequel::Type::Section::LoadTable
+
+
+
+Extends I<Pequel::Type::Section>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<persistent>
+
+
+
+=item F<merge>
+
+
+
+=item F<parse>
+
+
+
+=head1 Pequel::Type::Section::LoadTable::Persistent
+
+
+
+Extends I<Pequel::Type::Section::LoadTable>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Section::LoadTable::Sqlite
+
+
+
+Extends I<Pequel::Type::Section::LoadTable>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<parse>
+
+
+
+=head1 Pequel::Type::Section::LoadTable::Sqlite::Merge
+
+
+
+Extends I<Pequel::Type::Section::LoadTable::Sqlite>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Section::LoadTable::Oracle
+
+
+
+Extends I<Pequel::Type::Section::LoadTable>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<parse>
+
+
+
+=head1 Pequel::Type::Section::LoadTable::Oracle::Merge
+
+
+
+Extends I<Pequel::Type::Section::LoadTable::Oracle>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Sections
+
+
+
+Extends I<Pequel::Collection::Vector>
+
+Package I<Type/Section/Section.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=page
+
+
+
+=head1 Pequel::Type::Aggregate::Element
+
+
+
+Extends I<Pequel::Type::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<rightOp>
+
+
+
+=item F<level>
+
+
+
+=item F<allowType>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<codeReset>
+
+
+
+=item F<codeOutputFinal>
+
+
+
+=item F<codeOutput>
+
+
+
+=item F<hash>
+
+
+
+=head1 Pequel::Type::Aggregate::equals
+
+
+
+Extends I<Pequel::Type::Aggregate::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeOutputFinal>
+
+
+
+=head1 Pequel::Type::Aggregate::Sum
+
+
+
+Extends I<Pequel::Type::Aggregate::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeOutput>
+
+
+
+=head1 Pequel::Type::Aggregate::SumDistinct
+
+
+
+Extends I<Pequel::Type::Aggregate::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<codeReset>
+
+
+
+=item F<codeOutput>
+
+
+
+=head1 Pequel::Type::Aggregate::ValuesUniq
+
+
+
+Extends I<Pequel::Type::Aggregate::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<codeReset>
+
+
+
+=item F<codeOutputFinal>
+
+
+
+=item F<codeOutput>
+
+
+
+=head1 Pequel::Type::Aggregate::ValuesAll
+
+
+
+Extends I<Pequel::Type::Aggregate::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<codeReset>
+
+
+
+=item F<codeOutputFinal>
+
+
+
+=item F<codeOutput>
+
+
+
+=head1 Pequel::Type::Aggregate::Count
+
+
+
+Extends I<Pequel::Type::Aggregate::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeOutput>
+
+
+
+=head1 Pequel::Type::Aggregate::Minimum
+
+
+
+Extends I<Pequel::Type::Aggregate::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeOutput>
+
+
+
+=head1 Pequel::Type::Aggregate::Min
+
+
+
+Extends I<Pequel::Type::Aggregate::Minimum>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Aggregate::Maximum
+
+
+
+Extends I<Pequel::Type::Aggregate::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeOutput>
+
+
+
+=head1 Pequel::Type::Aggregate::Max
+
+
+
+Extends I<Pequel::Type::Aggregate::Maximum>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Aggregate::Last
+
+
+
+Extends I<Pequel::Type::Aggregate::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeOutput>
+
+
+
+=head1 Pequel::Type::Aggregate::First
+
+
+
+Extends I<Pequel::Type::Aggregate::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeOutput>
+
+
+
+=head1 Pequel::Type::Aggregate::Flag
+
+
+
+Extends I<Pequel::Type::Aggregate::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeOutput>
+
+
+
+=head1 Pequel::Type::Aggregate::Distinct
+
+
+
+Extends I<Pequel::Type::Aggregate::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<codeReset>
+
+
+
+=item F<codeOutput>
+
+
+
+=head1 Pequel::Type::Aggregate::CountDistinct
+
+
+
+Extends I<Pequel::Type::Aggregate::Distinct>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Aggregate::AvgDistinct
+
+
+
+Extends I<Pequel::Type::Aggregate::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<codeReset>
+
+
+
+=item F<codeOutputFinal>
+
+
+
+=item F<codeOutput>
+
+
+
+=head1 Pequel::Type::Aggregate::Avg
+
+
+
+Extends I<Pequel::Type::Aggregate::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<codeReset>
+
+
+
+=item F<codeOutputFinal>
+
+
+
+=item F<codeOutput>
+
+
+
+=head1 Pequel::Type::Aggregate::Mean
+
+
+
+Extends I<Pequel::Type::Aggregate::Avg>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Aggregate::Median
+
+
+
+Extends I<Pequel::Type::Aggregate::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<codeReset>
+
+
+
+=item F<codeOutputFinal>
+
+
+
+=item F<codeOutput>
+
+
+
+=head1 Pequel::Type::Aggregate::Variance
+
+
+
+Extends I<Pequel::Type::Aggregate::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<codeReset>
+
+
+
+=item F<codeOutputFinal>
+
+
+
+=item F<codeOutput>
+
+
+
+=head1 Pequel::Type::Aggregate::Stddev
+
+
+
+Extends I<Pequel::Type::Aggregate::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<codeReset>
+
+
+
+=item F<codeOutputFinal>
+
+
+
+=item F<codeOutput>
+
+
+
+=head1 Pequel::Type::Aggregate::Range
+
+
+
+Extends I<Pequel::Type::Aggregate::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<codeReset>
+
+
+
+=item F<codeOutputFinal>
+
+
+
+=item F<codeOutput>
+
+
+
+=head1 Pequel::Type::Aggregate::Mode
+
+
+
+Extends I<Pequel::Type::Aggregate::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<codeReset>
+
+
+
+=item F<codeOutputFinal>
+
+
+
+=item F<codeOutput>
+
+
+
+=head1 Pequel::Type::Aggregate::Serial
+
+
+
+Extends I<Pequel::Type::Aggregate::Element>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<codeOutputFinal>
+
+
+
+=item F<codeOutput>
+
+
+
+=head1 Pequel::Type::Aggregate
+
+
+
+Extends I<Pequel::Collection::Vector>
+
+Package I<Type/Aggregate/Aggregate.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=page
+
+
+
+=head1 Pequel::Type::Macro::Element
+
+
+
+Extends I<Pequel::Type::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<usageFmt>
+
+
+
+=item F<eval>
+
+
+
+=item F<external>
+
+
+
+=item F<args>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<inWords>
+
+
+
+=head1 Pequel::Type::Macro::Date
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::MonthsSince
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::MonthsBetween
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::DateLastDay
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::LastDay
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::DateNextDay
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::DayNumber
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::AddDays
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Y
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::D
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::M
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Map
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Today
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::MonthsSinceCache
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::ToArray
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::ArrSize
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::ArrSort
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::ArrReverse
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::ArrValuesUniq
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::ArrSum
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::ArrAvg
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::ArrMean
+
+
+
+Extends I<Pequel::Type::Macro::ArrAvg>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro::ArrShift
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::ArrPop
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::ArrPush
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::ArrFirst
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::ArrLast
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::ArrMin
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::ArrMax
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::ArrLookup
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Lookup
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Period
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Month
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Length
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Substr
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Index
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::RightIndex
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Lc
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Uc
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::LcFirst
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::UcFirst
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Commify
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Env
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Option
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::MatchAny
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Match
+
+
+
+Extends I<Pequel::Type::Macro::MatchAny>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro::Select
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=item F<format>
+
+
+
+=item F<inWords>
+
+
+
+=head1 Pequel::Type::Macro::Generic
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Ord
+
+
+
+Extends I<Pequel::Type::Macro::Generic>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro::Sqrt
+
+
+
+Extends I<Pequel::Type::Macro::Generic>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro::Rand
+
+
+
+Extends I<Pequel::Type::Macro::Generic>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro::Sin
+
+
+
+Extends I<Pequel::Type::Macro::Generic>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro::Exp
+
+
+
+Extends I<Pequel::Type::Macro::Generic>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro::Cos
+
+
+
+Extends I<Pequel::Type::Macro::Generic>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro::Log
+
+
+
+Extends I<Pequel::Type::Macro::Generic>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro::Chr
+
+
+
+Extends I<Pequel::Type::Macro::Generic>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro::Abs
+
+
+
+Extends I<Pequel::Type::Macro::Generic>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro::Int
+
+
+
+Extends I<Pequel::Type::Macro::Generic>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro::Atan2
+
+
+
+Extends I<Pequel::Type::Macro::Generic>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro::Sign
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Trunc
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Trim
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Spaceout
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::TrimTrailing
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::TrimLeading
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::ClipStr
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::LeftClipStr
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::RightClipStr
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::LeftPadStr
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::RightPadStr
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::RemoveSpaces
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::ToNumber
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::ExtractNumeric
+
+
+
+Extends I<Pequel::Type::Macro::ToNumber>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro::RemoveNonNumeric
+
+
+
+Extends I<Pequel::Type::Macro::ToNumber>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro::RemoveNumeric
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::RemoveSpecial
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Translate
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Initcap
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::ExtractInit
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Soundex
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Banding
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::UserMacro
+
+
+
+Extends I<Pequel::Type::Macro::Element>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Type::Macro::Group::Basic
+
+
+
+Extends I<Pequel::Collection::Hierarchy>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro::Group::Date
+
+
+
+Extends I<Pequel::Collection::Hierarchy>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro::Group::String
+
+
+
+Extends I<Pequel::Collection::Hierarchy>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro::Group::Array
+
+
+
+Extends I<Pequel::Collection::Hierarchy>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro::Group::Arithmetic
+
+
+
+Extends I<Pequel::Collection::Hierarchy>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro::Group::Other
+
+
+
+Extends I<Pequel::Collection::Hierarchy>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Type::Macro
+
+
+
+Extends I<Pequel::Collection::Hierarchy>
+
+Package I<Type/Macro/Macro.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=page
+
+
+
+=head1 Pequel::Type::Db::Element
+
+
+
+Extends I<Pequel::Type::Element>
+
+Package I<Type/Db/Db.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<dataSourceFilename>
+
+
+
+=item F<username>
+
+
+
+=item F<password>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInlineClose >
+
+
+
+=item F<codeInlineInit >
+
+
+
+=item F<codeInlineOpen >
+
+
+
+=item F<codeInlinePragma >
+
+
+
+=item F<codeInlinePrep >
+
+
+
+=item F<codeInlineReset >
+
+
+
+=item F<codeInlineDecl  >
+
+
+
+=item F<codeInlineValueDecl  >
+
+
+
+=head1 Pequel::Type::Db::Vector
+
+
+
+Extends I<Pequel::Collection::Vector>
+
+Package I<Type/Db/Db.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<cacheRecs>
+
+
+
+=item F<codeConnect >
+
+
+
+=item F<codeInlineClose >
+
+
+
+=item F<codeInlineInit >
+
+
+
+=item F<codeInlineOpen >
+
+
+
+=item F<codeInlinePragma >
+
+
+
+=item F<codeInlinePrep >
+
+
+
+=item F<codeInlineReset >
+
+
+
+=item F<codeInlineDecl  >
+
+
+
+=item F<codeInlineValueDecl  >
+
+
+
+=item F<codeInlineConfigFlags >
+
+
+
+=item F<codeInlineConfigLibs >
+
+
+
+=item F<codeInlineConfigIncludes >
+
+
+
+=item F<codeInlineIncludes >
+
+
+
+=item F<codeInlineFunctions >
+
+
+
+=item F<codeDisconnect >
+
+
+
+=head1 Pequel::Type::Db
+
+
+
+Extends I<Pequel::Collection::Vector>
+
+Package I<Type/Db/Db.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<tableList>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeConnect>
+
+
+
+=item F<codeDisconnect>
+
+
+
+=item F<codeInlineConfigLibs>
+
+
+
+=item F<codeInlineConfigIncludes>
+
+
+
+=item F<codeInlineConfigFlags>
+
+
+
+=item F<codeInlineConfigOptimize>
+
+
+
+=item F<codeInlineClose>
+
+
+
+=item F<codeInlineInit>
+
+
+
+=item F<codeInlineOpen>
+
+
+
+=item F<codeInlinePragma>
+
+
+
+=item F<codeInlinePrep>
+
+
+
+=item F<codeInlineReset>
+
+
+
+=item F<codeInlineDecl>
+
+
+
+=item F<codeInlineValueDecl>
+
+
+
+=item F<codeInlineIncludes>
+
+
+
+=item F<codeInlineFunctions>
+
+
+
+=item F<codeInlineFieldNamesDecl>
+
+
+
+=item F<maxHeaderLen>
+
+
+
+=item F<maxTableHeaderLen>
+
+
+
+=page
+
+
+
+=head1 Pequel::Type::Db::Oracle::Element
+
+
+
+Extends I<Pequel::Type::Db::Element>
+
+Package I<Type/Db/Oracle/Oracle.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInlineInit>
+
+
+
+=item F<codeInlineOpen>
+
+
+
+=item F<codeInlineClose>
+
+
+
+=item F<codeInlinePragma>
+
+
+
+=item F<codeInlinePrep>
+
+
+
+=item F<codeInlineReset>
+
+
+
+=item F<codeInlineDecl>
+
+
+
+=item F<codeInlineValueDecl>
+
+
+
+=head1 Pequel::Type::Db::Oracle
+
+
+
+Extends I<Pequel::Type::Db::Vector>
+
+Package I<Type/Db/Oracle/Oracle.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeConnect>
+
+
+
+=item F<codeDisconnect>
+
+
+
+=item F<codeInlineInit>
+
+
+
+=item F<codeInlineOpen>
+
+
+
+=item F<codeInlineClose>
+
+
+
+=item F<codeInlinePragma>
+
+
+
+=item F<codeInlinePrep>
+
+
+
+=item F<codeInlineReset>
+
+
+
+=item F<codeInlineDecl>
+
+
+
+=item F<codeInlineValueDecl>
+
+
+
+=item F<codeInlineConfigOptimize>
+
+
+
+=item F<codeInlineConfigFlags>
+
+
+
+=item F<codeInlineConfigLibs>
+
+
+
+=item F<codeInlineConfigIncludes>
+
+
+
+=item F<codeInlineIncludes>
+
+
+
+=item F<codeInlineFunctions>
+
+
+
+=page
+
+
+
+=head1 Pequel::Type::Db::Sqlite::Element
+
+
+
+Extends I<Pequel::Type::Db::Element>
+
+Package I<Type/Db/Sqlite/Sqlite.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInlineClose>
+
+
+
+=item F<codeInlineInit>
+
+
+
+=item F<codeInlineOpen>
+
+
+
+=item F<codeInlinePragma>
+
+
+
+=item F<codeInlinePrep>
+
+
+
+=item F<codeInlineReset>
+
+
+
+=item F<codeInlineDecl>
+
+
+
+=item F<codeInlineValueDecl>
+
+
+
+=head1 Pequel::Type::Db::Sqlite
+
+
+
+Extends I<Pequel::Type::Db::Vector>
+
+Package I<Type/Db/Sqlite/Sqlite.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeConnect>
+
+
+
+=item F<codeDisconnect>
+
+
+
+=item F<codeInlineClose>
+
+
+
+=item F<codeInlineDecl>
+
+
+
+=item F<codeInlineInit>
+
+
+
+=item F<codeInlineOpen>
+
+
+
+=item F<codeInlinePragma>
+
+
+
+=item F<codeInlinePrep>
+
+
+
+=item F<codeInlineReset>
+
+
+
+=item F<codeInlineValueDecl>
+
+
+
+=item F<codeInlineConfigOptimize>
+
+
+
+=item F<codeInlineConfigFlags>
+
+
+
+=item F<codeInlineConfigLibs>
+
+
+
+=item F<codeInlineConfigIncludes>
+
+
+
+=item F<codeInlineIncludes>
+
+
+
+=item F<codeInlineFunctions>
+
+
+
+=page
+
+
+
+=head1 Pequel::Type::Table::Element
+
+
+
+Extends I<Pequel::Type::Element>
+
+Package I<Type/Table/Table.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<dataSourceFilename>
+
+
+
+=item F<keyColumn>
+
+
+
+=item F<keyType>
+
+
+
+=item F<engine>
+
+
+
+=item F<persistent>
+
+
+
+=item F<merge>
+
+
+
+=item F<type>
+
+
+
+=item F<loadAtRuntime>
+
+
+
+=item F<refKeyList>
+
+
+
+=item F<refKeyExpList>
+
+
+
+=item F<sequence>
+
+
+
+=item F<fields>
+
+
+
+=item F<data>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=item F<codeVar>
+
+
+
+=item F<Xcompile>
+
+
+
+=item F<setSequence>
+
+
+
+=item F<codeConnect>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<codePrepare>
+
+
+
+=item F<codeFetchRow>
+
+
+
+=item F<codeClose>
+
+
+
+=item F<codeLoadTable>
+
+
+
+=item F<docOverview>
+
+
+
+=item F<docPequelScript>
+
+
+
+=head1 Pequel::Type::Table::Local
+
+
+
+Extends I<Pequel::Type::Table::Element>
+
+Package I<Type/Table/Table.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<codeLoadTable>
+
+
+
+=item F<codeVar>
+
+
+
+=head1 Pequel::Type::Table::External
+
+
+
+Extends I<Pequel::Type::Table::Element>
+
+Package I<Type/Table/Table.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<dbFileType>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<dbFilename>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<codeConnect>
+
+
+
+=item F<codePrepare>
+
+
+
+=item F<codeFetchRow>
+
+
+
+=item F<codeClose>
+
+
+
+=item F<codeLoadTable>
+
+
+
+=item F<codeVar>
+
+
+
+=item F<dataSourceFieldNameList>
+
+
+
+=item F<dataSourceFieldColumnList>
+
+
+
+=item F<selectList>
+
+
+
+=head1 Pequel::Type::Table::External::Inline
+
+
+
+Extends I<Pequel::Type::Table::External>
+
+Package I<Type/Table/Table.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<db>
+
+
+
+=item F<keyFieldName>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<cacheRecs>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<codeVar>
+
+
+
+=item F<codeClose>
+
+
+
+=item F<codeFetchRow>
+
+
+
+=item F<codePrepare>
+
+
+
+=page
+
+
+
+=head1 Pequel::Type::Table::Oracle
+
+
+
+Extends I<Pequel::Type::Table::External::Inline>
+
+Package I<Type/Table/Oracle/Oracle.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeLoadTable>
+
+
+
+=item F<codeInlineClose>
+
+
+
+=item F<codeInlineInit>
+
+
+
+=item F<codeInlineOpen>
+
+
+
+=item F<codeInlinePragma>
+
+
+
+=item F<codeInlinePrep>
+
+
+
+=item F<codeInlineDefine>
+
+
+
+=item F<codeInlineReset>
+
+
+
+=item F<codeInlineDecl>
+
+
+
+=item F<codeInlineValueDecl>
+
+
+
+=head1 Pequel::Type::Table::Oracle::Merge
+
+
+
+Extends I<Pequel::Type::Table::Oracle>
+
+Package I<Type/Table/Oracle/Oracle.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=page
+
+
+
+=head1 Pequel::Type::Table::Sqlite
+
+
+
+Extends I<Pequel::Type::Table::External::Inline>
+
+Package I<Type/Table/Sqlite/Sqlite.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<codeLoadTable>
+
+
+
+=item F<codeInlineClose>
+
+
+
+=item F<codeInlineInit>
+
+
+
+=item F<codeInlineOpen>
+
+
+
+=item F<codeInlinePragma>
+
+
+
+=item F<codeInlinePrep>
+
+
+
+=item F<codeInlineReset>
+
+
+
+=item F<codeInlineDecl>
+
+
+
+=item F<codeInlineValueDecl>
+
+
+
+=head1 Pequel::Type::Table::Sqlite::Merge
+
+
+
+Extends I<Pequel::Type::Table::Sqlite>
+
+Package I<Type/Table/Sqlite/Sqlite.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=page
+
+
+
+=head1 Pequel::Field::Element
+
+
+
+Extends I<Pequel::Type::Element>
+
+Package I<Field/Field.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<type>
+
+
+
+=item F<dateType>
+
+
+
+=item F<calc>
+
+
+
+=item F<calcOrig>
+
+
+
+=item F<operator>
+
+
+
+=item F<direction>
+
+
+
+=item F<inputField>
+
+
+
+=item F<outputField>
+
+
+
+=item F<id>
+
+
+
+=item F<codeVar>
+
+
+
+=item F<ref>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=head1 Pequel::Field::Input::Element
+
+
+
+Extends I<Pequel::Field::Element>
+
+Package I<Field/Field.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<refTableList>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Field::Output::Element
+
+
+
+Extends I<Pequel::Field::Element>
+
+Package I<Field/Field.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<clause>
+
+
+
+=item F<listDelimiter>
+
+
+
+=item F<aggregate>
+
+
+
+=item F<inputField>
+
+
+
+=item F<condition>
+
+
+
+=item F<serialStart>
+
+
+
+=item F<calculated>
+
+
+
+=item F<CFlds>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<compile>
+
+
+
+=page
+
+
+
+=head1 Pequel::Table
+
+
+
+Extends I<Pequel::Collection::Vector>
+
+Package I<Table/Table.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<lastSequence>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<setTableSequence>
+
+
+
+=head1 Pequel::Table::Refkey::Element
+
+
+
+Extends I<Pequel::Field::Element>
+
+Package I<Table/Table.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<tableField>
+
+
+
+=item F<table>
+
+
+
+=item F<referenceFieldList>
+
+
+
+=item F<startFieldNumber>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Table::Field::Element
+
+
+
+Extends I<Pequel::Field::Element>
+
+Package I<Table/Table.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<column>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Table::Data::Element
+
+
+
+Extends I<Pequel::Collection::Element>
+
+Package I<Table/Table.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Table::Data
+
+
+
+Extends I<Pequel::Collection::Vector>
+
+Package I<Table/Table.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=page
+
+
+
+=head1 Pequel::Docgen
+
+
+
+Extends I<Pequel::Code>
+
+Package I<Docgen/Docgen.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<docType>
+
+
+
+=item F<generate>
+
+
+
+=item F<genFull>
+
+
+
+=item F<genBrief>
+
+
+
+=item F<sections>
+
+
+
+=item F<displayPod>
+
+
+
+=item F<podToPdf>
+
+
+
+=item F<has_page_tag>
+
+
+
+=item F<paper>
+
+
+
+=head1 Pequel::Docgen::Chapter::Element
+
+
+
+Extends I<Pequel::Type::Element>
+
+Package I<Docgen/Docgen.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<generate>
+
+
+
+=item F<heading>
+
+
+
+=item F<formatSwitch>
+
+
+
+=item F<formatIf>
+
+
+
+=head1 Pequel::Docgen::Chapter::Overview
+
+
+
+Extends I<Pequel::Docgen::Chapter::Element>
+
+Package I<Docgen/Docgen.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<generate>
+
+
+
+=head1 Pequel::Docgen::Chapter::Config
+
+
+
+Extends I<Pequel::Docgen::Chapter::Element>
+
+Package I<Docgen/Docgen.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<generate>
+
+
+
+=head1 Pequel::Docgen::Chapter::InputFields
+
+
+
+Extends I<Pequel::Docgen::Chapter::Element>
+
+Package I<Docgen/Docgen.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Docgen::Chapter::Tables
+
+
+
+Extends I<Pequel::Docgen::Chapter::Element>
+
+Package I<Docgen/Docgen.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<generate>
+
+
+
+=head1 Pequel::Docgen::Chapter::TablesSummary
+
+
+
+Extends I<Pequel::Docgen::Chapter::Element>
+
+Package I<Docgen/Docgen.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<generate>
+
+
+
+=head1 Pequel::Docgen::Chapter::PequelScript
+
+
+
+Extends I<Pequel::Docgen::Chapter::Element>
+
+Package I<Docgen/Docgen.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<generate>
+
+
+
+=head1 Pequel::Docgen::Chapter::PequelGenerated
+
+
+
+Extends I<Pequel::Docgen::Chapter::Element>
+
+Package I<Docgen/Docgen.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<generate>
+
+
+
+=page
+
+
+
+=head1 Pequel::Lister
+
+
+
+Extends I<Pequel::Code::Pod>
+
+Package I<Lister/Lister.pm>
+
+=head2 Class Attributes
+
+
+
+=item F<pmList>
+
+
+
+=item F<classHierarchy>
+
+
+
+=item F<classReference>
+
+
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=head1 Pequel::Lister::SrcList
+
+
+
+Extends I<Pequel::Lister>
+
+Package I<Lister/Lister.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<generate>
+
+
+
+=item F<packageFileName>
+
+
+
+=item F<packageClasses>
+
+
+
+=head1 Pequel::Lister::ProgRef
+
+
+
+Extends I<Pequel::Lister>
+
+Package I<Lister/Lister.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<generate>
+
+
+
+=item F<sectionClassHierarchy>
+
+
+
+=item F<sectionPackageList>
+
+
+
+=item F<sectionTypeList>
+
+
+
+=item F<sectionClassReference>
+
+
+
+=item F<generateClassHierarchy>
+
+
+
+=item F<generateReference>
+
+
+
+=page
+
+
+
+=head1 Pequel::Engine
+
+
+
+Extends I<Pequel::Code>
+
+Package I<Engine/Engine.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<execute>
+
+
+
+=item F<generate>
+
+
+
+=item F<codeDecl>
+
+
+
+=item F<codeInit>
+
+
+
+=item F<codeBreak>
+
+
+
+=item F<codePrint>
+
+
+
+=item F<codeMainBody>
+
+
+
+=item F<codeOutput>
+
+
+
+=item F<codeOutputFinal>
+
+
+
+=item F<codeHeaderInfo>
+
+
+
+=item F<codeUseStd>
+
+
+
+=item F<codeInputRecordLimitBreak>
+
+
+
+=item F<lineCounterVar>
+
+
+
+=item F<codeIncRecordCounter>
+
+
+
+=item F<codeRecordCounterMessage>
+
+
+
+=item F<codeRecordCounterMessageFinal>
+
+
+
+=item F<codeBenchmarkInit>
+
+
+
+=item F<codeBenchmarkStart>
+
+
+
+=item F<codeBenchmarkEnd>
+
+
+
+=item F<codeOpenOutput>
+
+
+
+=item F<codeOutputHeaderRecord>
+
+
+
+=item F<codeNumericFieldsInit>
+
+
+
+=item F<codeZeroNulls    >
+
+
+
+=item F<sortString>
+
+
+
+=item F<codeOpen>
+
+
+
+=item F<maxHeaderLen>
+
+
+
+=item F<codeInputVarNames>
+
+
+
+=item F<codeOutputVarNames>
+
+
+
+=item F<codeTableFieldNames>
+
+
+
+=item F<codeInlineTableFieldNames    >
+
+
+
+=item F<maxTableHeaderLen>
+
+
+
+=page
+
+
+
+=head1 Pequel::Engine::Inline
+
+
+
+Extends I<Pequel::Code>
+
+Package I<Engine/Inline/Inline.pm>
+
+=head2 Class Methods
+
+
+
+=item F<new>
+
+
+
+=item F<generate>
+
+
+
+=item F<codeInlineReset>
+
+
+
+=item F<codeInlineThreadsReset>
+
+
+
+=item F<codeInlineThreadsCreateFunc>
+
+
+
+=item F<codeInlineReadCache>
+
+
+
+=item F<codeInlineReadSplit>
+
+
+

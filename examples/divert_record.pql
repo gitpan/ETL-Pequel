@@ -1,0 +1,39 @@
+// vim: syntax=pequel ts=4 sw=4
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//  Script      : divert_record.pql
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+options
+	input_file(chain_pequel_pt1.pql) // The sub-pequel (pt1) script's output is piped to this (pt2) script's input
+    optimize
+    doc_title("Divert Record Example Script")
+    doc_email("sample@youraddress.com")
+    doc_version(2.3)
+	unpack_input
+
+description section
+
+input section
+    LOCATION
+	PRODUCT_CODE
+    SALES_TOTAL
+	CATEGORY => 'HIGH'
+
+#sort by
+	#LOCATION
+
+divert input record (diverted_record_low.pql)
+	SALES_TOTAL <= 100000
+
+divert input record (diverted_record_med.pql)
+	SALES_TOTAL > 100000 && SALES_TOTAL <= 200000
+
+output section
+	string CATEGORY			CATEGORY
+    string LOCATION 		LOCATION
+	string PRODUCT_CODE		PRODUCT_CODE
+    decimal SALES_TOTAL	 	SALES_TOTAL
+
+#sort output
+	#LOCATION
+	#SALES_TOTAL numeric

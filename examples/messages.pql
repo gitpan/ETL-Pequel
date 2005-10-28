@@ -1,0 +1,49 @@
+// vim: syntax=pequel ts=4 sw=4
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//  Script       : messages.pql
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+options
+    header                // (default) write header record to output.
+    optimize              // (default) optimize generated code.
+	nulls
+    doc_title("Message Sections Example Script")
+    doc_email("sample@youraddress.com")
+    doc_version(2.3)
+
+description section
+	Demonstrates the use of display-message section types. Each of these sections will
+	display the message contained in the  section argument if any of the condition items
+	match the current record. The 'abort' version will cause Pequel to abort the 
+	processing after the message has been displayed. Messages are displayed to
+	the standard error (STDERR) output. Message text can contain input and output
+	field names which will be interpolated with their value unless the field
+	name is enclosed within quotes.
+
+input section
+    product_code,
+    cost_price,
+    description,
+    sales_code,
+	sales_price,
+	sales_qty,
+	sales_date,
+	location,
+	salesman_list
+
+display message on input abort("Product code: product_code")
+	product_code =~ /^A111/
+	product_code =~ /^X111/
+
+sort by
+	location
+
+group by
+	location
+
+output section
+	string location				location
+	string num_products 		distinct product_code
+
+display message on output("Location location contains less than 15 products: num_products.")
+	num_products < 15

@@ -1,0 +1,30 @@
+// vim: syntax=pequel ts=4 sw=4
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//  Script      : output_combiner.pql
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+options
+	input_file(copy_output.pql) // The sub-pequel (pt1) script's output is piped to this (pt2) script's input
+    optimize                // (default) optimize generated code.
+    doc_title("Output Combiner Example Script")
+    doc_email("sample@youraddress.com")
+    doc_version(2.3)
+
+description section
+
+input section
+    LOCATION
+	DESCRIPTION
+    SALES_TOTAL
+	SALES_TOTAL_FMT => &sprintf("%16s", &commify(&sprintf("%.2f", SALES_TOTAL)))
+
+filter
+	DESCRIPTION !~ /State\s+Total/i
+
+sort by
+    SALES_TOTAL numeric desc
+
+output section
+	string SALES_TOTAL		SALES_TOTAL_FMT
+    string LOCATION 		LOCATION
+    string DESCRIPTION		DESCRIPTION

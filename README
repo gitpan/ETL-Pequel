@@ -1,0 +1,147 @@
+Installation Instructions
+
+perl Makefile.PL
+
+-or to specify different perl library path-
+
+perl Makefile.PL PREFIX=/product/perldev/Perl/Modules
+
+make
+
+make test
+
+make install
+
+
+Documentation
+-------------
+The lastest documentation and package may be found at:
+
+http://sourceforge.net/projects/pequel/
+
+
+
+Installation troubleshooting
+----------------------------
+
+When installing into non-default directory, i.e., if you used the PREFIX, then you need to (probably) set the
+following environment before 'make install'
+
+PERL_INSTALL_ROOT -- set this to whatever you specified for PREFIX above.
+
+
+...and the following before executing 'pequel'
+
+PERL5LIB -- note the Installing messages displayed during the 'make install', and set this to the path up to and excluding
+'Pequel'.
+
+PATH -- add the directory containing the Pequel executable to the PATH variable. 
+Note the installation messages for '.../bin/pequel'; add this path to the PATH environment variable.
+
+
+
+
+
+Example installation
+--------------------
+
+> perl Makefile.PL PREFIX=/usr/local/Perl
+Checking if your kit is complete...
+Looks good
+Writing Makefile for ETL::Pequel
+
+> make
+Skip lib/ETL/Pequel.pm (unchanged)
+Skip lib/ETL/Pequel/Main.pm (unchanged)
+Skip lib/ETL/Pequel/Param.pm (unchanged)
+Skip lib/ETL/Pequel/Type.pm (unchanged)
+Skip lib/ETL/Pequel/Script.pm (unchanged)
+Skip lib/ETL/Pequel/Field.pm (unchanged)
+Skip lib/ETL/Pequel/Error.pm (unchanged)
+Skip lib/ETL/Pequel/Engine.pm (unchanged)
+Skip lib/ETL/Pequel/Engine/Inline.pm (unchanged)
+Skip lib/ETL/Pequel/Collection.pm (unchanged)
+Skip lib/ETL/Pequel/Code.pm (unchanged)
+Skip lib/ETL/Pequel/Docgen.pm (unchanged)
+Skip lib/ETL/Pequel/Parse.pm (unchanged)
+Skip lib/ETL/Pequel/Pod2Pdf.pm (unchanged)
+Skip lib/ETL/Pequel/Lister.pm (unchanged)
+Skip lib/ETL/Pequel/Table.pm (unchanged)
+Skip lib/ETL/Pequel/Type/Date.pm (unchanged)
+Skip lib/ETL/Pequel/Type/Section.pm (unchanged)
+Skip lib/ETL/Pequel/Type/Option.pm (unchanged)
+Skip lib/ETL/Pequel/Type/Macro.pm (unchanged)
+Skip lib/ETL/Pequel/Type/Aggregate.pm (unchanged)
+Skip lib/ETL/Pequel/Type/Db.pm (unchanged)
+Skip lib/ETL/Pequel/Type/Db/Oracle.pm (unchanged)
+Skip lib/ETL/Pequel/Type/Db/Sqlite.pm (unchanged)
+Skip lib/ETL/Pequel/Type/Table.pm (unchanged)
+Skip lib/ETL/Pequel/Type/Table/Oracle.pm (unchanged)
+Skip lib/ETL/Pequel/Type/Table/Sqlite.pm (unchanged)
+Manifying blib/man3/ETL::Pequel::Pod2Pdf.3
+
+> export PERL_INSTALL_ROOT=/usr/local/Perl
+> make test
+t/01_aggregates_1........ok
+t/02_array_fields........ok
+t/03_conditional_aggr....ok
+t/04_filter_regex........ok
+t/05_group_by_derived....ok
+t/06_group_by_derived_2..ok
+t/07_hash_option.........ok
+t/08_local_table.........ok
+t/09_macro_select........ok
+t/10_output_calc_fields..ok
+t/11_statistics_aggr.....ok
+t/12_statistics_aggr_2...ok
+t/13_transfer_option.....ok
+t/14_simple_tables.......ok
+t/15_external_tables.....ok
+t/16_sales_ttl_by_loc....ok
+t/17_pequel_tables.......ok
+t/18_chain_pequel........ok
+t/19_divert_record.......ok
+t/20_copy_record.........ok
+t/21_copy_output.........ok
+t/22_output_combiner.....ok
+All tests successful.
+Files=22, Tests=22, 155 wallclock secs (136.11 cusr + 19.73 csys = 155.84 CPU)
+
+> make install
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Param.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Code.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Collection.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Docgen.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Engine.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Error.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Field.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Lister.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Main.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Parse.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Pod2Pdf.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Script.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Table.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Type.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Type/Aggregate.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Type/Date.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Type/Db.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Type/Macro.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Type/Option.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Type/Section.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Type/Table.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Type/Table/Oracle.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Type/Table/Sqlite.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Type/Db/Oracle.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Type/Db/Sqlite.pm
+Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/ETL/Pequel/Engine/Inline.pm
+Installing /usr/local/Perl/usr/local/Perl/bin/pequel
+Installing /usr/local/Perl/usr/local/Perl/bin/pequelpod2pdf
+Installing /usr/local/Perl/usr/local/Perl/man/man3/Pequel::Pod2Pdf.3
+Writing /usr/perl5/site_perl/5.6.1/sun4-solaris-64int/auto/Pequel/.packlist
+Appending installation info to /usr/local/Perl/lib/sun4-solaris-64int/perllocal.pod
+
+> export PERL5LIB=/usr/local/Perl/usr/perl5/site_perl
+> export PATH=$PATH:/usr/local/Perl/usr/local/Perl/bin
+> pequel -v
+pequel Version 2.3-6, Build: Monday October  24 23:16:49 BST 2005
+

@@ -4,8 +4,8 @@
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 options
-    header                  # (default) write header record to output.
-    optimize                # (default) optimize generated code.
+    header
+    optimize
 	transfer
 	discard_header
 	default_datetype(DD/MM/YYYY)

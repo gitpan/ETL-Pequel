@@ -2,7 +2,7 @@
 
 =head1 NAME
 
-PEQUEL - Pequel ETL Query Language User Guide
+PEQUEL - Pequel User Guide
 
 =cut --------------------------------------------------------------------------
 
@@ -2806,16 +2806,6 @@ I<New in v2>. The F<index> macro returns the position of I<substr> in I<field> a
 
 B<&index(><field>, <substr>, <offset>B<)>
 
-
-=item I<Examples>
-
-=begin
-
- input section
-     HAS
-
-
-=end
 
 =back
 

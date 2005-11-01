@@ -1,6 +1,6 @@
 Revision history
 
-* Version 2.4-1 -- 30 October 2005
+* Version 2.4-1 -- 1 November 2005
 
 - New root namespace: ETL::Pequel. 
 - Initial Perl module program access interface via ETL::Pequel.pm. 
@@ -21,6 +21,7 @@ Revision history
 - Additional example scripts demonstrate new pack_output/unpack_input feature.
 - Additional example scripts demonstrate new macros.
 - Additional example scripts demonstrate new message section types.
+- Fixed test failures.
 
 * Version 2.3-4 -- 6 October 2005
 

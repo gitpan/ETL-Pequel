@@ -42,12 +42,6 @@ require 5.005_62;
 use strict;
 use attributes qw(get reftype);
 use warnings;
-#use Pequel::Base;
-#use Pequel::Collection;
-#use Pequel::Type;
-use vars qw($VERSION $BUILD);
-$VERSION = "2.3-2";
-$BUILD = 'Thursday September 22 19:56:01 BST 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Type::Aggregate::Element;

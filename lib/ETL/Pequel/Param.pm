@@ -33,10 +33,7 @@ require 5.005_62;
 use strict;
 use attributes qw(get reftype);
 use warnings;
-use vars qw($VERSION $BUILD);
 use constant DEBUG => 0;
-$VERSION = "2.3-2";
-$BUILD = 'Thursday September 29 19:56:02 BST 2005';
 
 # ----------------------------------------------------------------------------------------------------
 {

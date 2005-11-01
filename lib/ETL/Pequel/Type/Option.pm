@@ -45,13 +45,6 @@ require 5.005_62;
 use strict;
 use attributes qw(get reftype);
 use warnings;
-#use Pequel::Base;
-#use Pequel::Collection;
-#use Pequel::Type;
-use vars qw($VERSION $BUILD);
-$VERSION = "2.3-1";
-$BUILD = 'Tuesday September 20 19:06:05 BST 2005';
-
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Type::Option::Element;
@@ -1597,7 +1590,7 @@ $self->PARAM->error->msgStderr("This option is not currently available.");
 				name => 'cpp_cmd',		
 				value => 'cpp',
 				cmd_format => ':s',
-				cmd_type => 0,
+				cmd_type => 2,
 				inherit => 1,
 				PARAM => $param,
 			),

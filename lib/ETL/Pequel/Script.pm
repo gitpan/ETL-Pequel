@@ -33,9 +33,6 @@ require 5.005_62;
 use strict;
 use attributes qw(get reftype);
 use warnings;
-use vars qw($VERSION $BUILD);
-$VERSION = "1.1-2";
-$BUILD = 'Thursday August 25 09:45:06 BST 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Script;			# contains vector of Pequel::Section::Element objects

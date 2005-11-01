@@ -24,6 +24,7 @@
 # ----------------------------------------------------------------------------------------------------
 # Modification History
 # When          Version     Who     What
+# 01/11/2005	2.4-2		gaffie	Fixed test failures -- caused by CPP parsing '#' comment.
 # 26/10/2005	2.4-1		gaffie	ETL::Pequel.pm
 # 26/10/2005	2.3-6		gaffie	display message section types.
 # 26/10/2005	2.3-6		gaffie	&input_record_count() macros.
@@ -139,8 +140,8 @@ use strict;
 use attributes qw(get reftype);
 use warnings;
 use vars qw($VERSION $BUILD);
-$VERSION = "2.4-1";
-$BUILD = 'Friday October  28 23:16:49 BST 2005';
+$VERSION = "2.4-2";
+$BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 
 # ----------------------------------------------------------------------------------------------------
 {

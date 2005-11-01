@@ -31,9 +31,6 @@ require 5.005_62;
 use strict;
 use attributes qw(get reftype);
 use warnings;
-use vars qw($VERSION $BUILD);
-$VERSION = "1.1-1";
-$BUILD = 'Tue Jan 27 15:45:31 EST 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Type::Element;

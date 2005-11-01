@@ -5,6 +5,7 @@
 
 options
     header                  // (default) write header record to output.
+	discard_header
     optimize                // (default) optimize generated code.
     doc_title("Statistics Aggregates Example Script")
     doc_email("sample@youraddress.com")
@@ -28,10 +29,6 @@ sort by
 
 group by
 	SALES_CODE
-
-filter
-	# Discard header record
-	SALES_QTY ne 'SALES_QTY'
 
 output section
 	string SALES_CODE 			SALES_CODE

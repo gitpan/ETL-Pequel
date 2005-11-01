@@ -43,13 +43,6 @@ require 5.005_62;
 use strict;
 use attributes qw(get reftype);
 use warnings;
-#use Pequel::Base;
-#use Pequel::Collection;
-#use Pequel::Type;
-use vars qw($VERSION $BUILD);
-$VERSION = "2.3-1";
-$BUILD = 'Tuesday September 20 14:06:05 BST 2005';
-
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Engine::Inline;

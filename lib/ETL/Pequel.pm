@@ -31,39 +31,38 @@ use strict;
 use attributes qw(get reftype);
 use warnings;
 use vars qw($VERSION $BUILD);
-$VERSION = "2.4-1";
-$BUILD = 'Thursday October  27 23:16:49 BST 2005';
-
+$VERSION = "2.4-2";
+$BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel;
 	use UNIVERSAL qw( isa can );
 
-	use constant OPTIONS 				=> 'options';
-	use constant PROPERTIES 			=> 'options';
-	use constant DESCRIPTION 			=> 'description section';
-	use constant INPUT_SECTION	 		=> 'input section';
-	use constant GROUP_BY 				=> 'group by';
-	use constant SORT_BY 				=> 'sort by';
-	use constant SORT_INPUT				=> 'sort by';
-	use constant SORT_OUTPUT 			=> 'sort output';
-	use constant LOAD_TABLE 			=> 'load table';
-	use constant LOAD_TABLE_PEQUEL 		=> 'load table pequel';
-	use constant INIT_TABLE 			=> 'init table';
-	use constant FILTER		 			=> 'filter';
-	use constant FILTER_INPUT		 	=> 'filter';
-	use constant REJECT		 			=> 'reject';
-	use constant OUTPUT_SECTION			=> 'output section';
-	use constant HAVING		 			=> 'having';
-	use constant FILTER_OUTPUT		 	=> 'having';
-	use constant DEDUP_ON		 		=> 'dedup on';
-	use constant USE_PACKAGE 			=> 'use package';
-	use constant FIELD_PREPROCESS 		=> 'field preprocess';
-	use constant FIELD_POSTPROCESS 		=> 'field postprocess';
-	use constant DIVERT_INPUT_RECORD 	=> 'divert input record';
-	use constant COPY_INPUT_RECORD 		=> 'copy input record';
-	use constant DIVERT_OUTPUT_RECORD 	=> 'divert output record';
-	use constant COPY_OUTPUT_RECORD 	=> 'copy output record';
+	use constant OPTIONS 							=> 'options';
+	use constant PROPERTIES 						=> 'options'; # alternate name
+	use constant DESCRIPTION 						=> 'description section';
+	use constant INPUT_SECTION	 					=> 'input section';
+	use constant GROUP_BY 							=> 'group by';
+	use constant SORT_BY 							=> 'sort by';
+	use constant SORT_INPUT							=> 'sort by'; # alternate name
+	use constant SORT_OUTPUT 						=> 'sort output';
+	use constant LOAD_TABLE 						=> 'load table';
+	use constant LOAD_TABLE_PEQUEL 					=> 'load table pequel';
+	use constant INIT_TABLE 						=> 'init table';
+	use constant FILTER		 						=> 'filter';
+	use constant FILTER_INPUT		 				=> 'filter'; # alternate name
+	use constant REJECT		 						=> 'reject';
+	use constant OUTPUT_SECTION						=> 'output section';
+	use constant HAVING		 						=> 'having';
+	use constant FILTER_OUTPUT		 				=> 'having'; # alternate name
+	use constant DEDUP_ON		 					=> 'dedup on';
+	use constant USE_PACKAGE 						=> 'use package';
+	use constant FIELD_PREPROCESS 					=> 'field preprocess';
+	use constant FIELD_POSTPROCESS 					=> 'field postprocess';
+	use constant DIVERT_INPUT_RECORD 				=> 'divert input record';
+	use constant COPY_INPUT_RECORD 					=> 'copy input record';
+	use constant DIVERT_OUTPUT_RECORD 				=> 'divert output record';
+	use constant COPY_OUTPUT_RECORD 				=> 'copy output record';
 	use constant DISPLAY_MESSAGE_ON_INPUT			=> 'display message on input';
 	use constant DISPLAY_MESSAGE_ON_INPUT_ABORT		=> 'display message on input abort';
 	use constant DISPLAY_MESSAGE_ON_OUTPUT			=> 'display message on output';

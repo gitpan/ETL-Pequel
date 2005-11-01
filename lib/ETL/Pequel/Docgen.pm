@@ -33,10 +33,7 @@ use strict;
 use UNIVERSAL qw( isa can );
 use attributes qw(get reftype);
 use warnings;
-use vars qw($VERSION $BUILD);
 use ETL::Pequel::Type;
-$VERSION = "2.2-9";
-$BUILD = 'Tuesday September 13 08:43:08 BST 2005';
 
 # ----------------------------------------------------------------------------------------------------
 {

@@ -1,4 +1,22 @@
+INTRODUCTION:
+
+pequel -- Generate Perl programs for data transformation processes.
+
+Pequel is a comprehensive data processing system for raw (ASCII) data file processing. 
+It features a simple, user-friendly event driven scripting interface that transparently 
+generates, builds and executes highly efficient data-processing programs. By using the 
+Pequel scripting language, the user can create and maintain complex ETL data transformation 
+processes quickly, easily, and accurately.  
+
+
+Pequel is hosted on sourceforge: 
+
+http://sourceforge.net/projects/pequel/
+
+
+
 Installation Instructions
+-------------------------
 
 perl Makefile.PL
 
@@ -145,3 +163,23 @@ Appending installation info to /usr/local/Perl/lib/sun4-solaris-64int/perllocal.
 > pequel -v
 pequel Version 2.3-6, Build: Monday October  24 23:16:49 BST 2005
 
+
+Copyright Notice
+----------------
+Copyright 1999-2005 Mario Gaffiero.
+
+This file is part of Pequel(TM).
+
+Pequel is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+Pequel is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Pequel; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA

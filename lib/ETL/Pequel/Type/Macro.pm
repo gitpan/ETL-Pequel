@@ -38,10 +38,6 @@ require 5.005_62;
 use strict;
 use attributes qw(get reftype);
 use warnings;
-use vars qw($VERSION $BUILD);
-$VERSION = "2.3-6";
-$BUILD = 'Wednesday October  26 23:16:49 BST 2005';
-
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Type::Macro::Element;

@@ -32,9 +32,8 @@ use strict;
 use attributes qw(get reftype);
 use warnings;
 use vars qw($VERSION $BUILD);
-$VERSION = "1.1-1";
-$BUILD = 'Thu Mar 25 10:41:30 EST 2005';
-
+$VERSION = "2.4-3";
+$BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Type::Table::Sqlite;

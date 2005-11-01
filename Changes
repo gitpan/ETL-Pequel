@@ -1,6 +1,11 @@
 Revision history
 
-* Version 2.4-1 -- 1 November 2005
+* Version 2.4-3 -- 1 November 2005
+
+- Add VERSION labels for all modules.
+
+
+* Version 2.4-2 -- 1 November 2005
 
 - New root namespace: ETL::Pequel. 
 - Initial Perl module program access interface via ETL::Pequel.pm. 

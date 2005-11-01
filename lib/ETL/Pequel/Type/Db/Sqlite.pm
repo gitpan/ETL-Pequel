@@ -35,9 +35,8 @@ use warnings;
 #use Pequel::Type;
 #use Pequel::Type::Db;
 use vars qw($VERSION $BUILD);
-$VERSION = "1.1-1";
-$BUILD = 'Mon Mar 15 14:01:04 EST 2005';
-
+$VERSION = "2.4-3";
+$BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Type::Db::Sqlite::Element;

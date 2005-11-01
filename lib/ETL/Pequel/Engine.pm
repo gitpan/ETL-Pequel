@@ -41,7 +41,9 @@ require 5.005_62;
 use strict;
 use attributes qw(get reftype);
 #use warnings; --- NOT HERE because the eval in execute will complain!
-
+use vars qw($VERSION $BUILD);
+$VERSION = "2.4-3";
+$BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Engine;

@@ -43,6 +43,9 @@ use strict;
 use attributes qw(get reftype);
 use warnings;
 use lib './lib';
+use vars qw($VERSION $BUILD);
+$VERSION = "2.4-3";
+$BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Type::Section;

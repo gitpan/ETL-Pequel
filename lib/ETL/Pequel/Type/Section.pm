@@ -24,6 +24,8 @@
 # ----------------------------------------------------------------------------------------------------
 # Modification History
 # When          Version     Who     What
+# 03/11/2005	2.4-4		gaffie	Bug fix field-process sections.
+# 03/11/2005	2.4-4		gaffie	Bug fix in reject-section.
 # 26/10/2005	2.3-6		gaffie	display message section types.
 # 21/09/2005	2.3-6		gaffie	add() function.
 # 20/09/2005	2.3-6		gaffie	unpack_input/pack_output implementation.
@@ -44,8 +46,8 @@ use attributes qw(get reftype);
 use warnings;
 use lib './lib';
 use vars qw($VERSION $BUILD);
-$VERSION = "2.4-3";
-$BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
+$VERSION = "2.4-4";
+$BUILD = 'Thursday November  3 14:56:42 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Type::Section;
@@ -352,33 +354,7 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		{
 			$name = $code_line;
 		}
-		$self-addItem(name => $name, operator => $operator, type => $type, calc => $calc);
-	}
-
-	sub addItem : method
-	{
-		my $self = shift;
-		my %params = @_;
-		my $name = 		$params{'name'} 	|| $self->add_error(ref($self), 'name');
-		my $type = 		$params{'type'} 	|| $self->add_error(ref($self), 'type');
-		my $operator = 	$params{'operator'};
-		my $calc = 		$params{'calc'};
-
-		$type = ($type eq 'array')
-			? $self->PARAM->datatypes->exists('array')
-			: $self->PARAM->datatypes->exists('string');
-
-		$self->items->add(ETL::Pequel::Field::Element->new
-		(
-			name => $name, 
-			calc => $self->PARAM->parser->compile($calc, $self->name, $name), # MUST BE DONE EARLY
-			calc_orig => $calc,
-			operator => $operator, 
-			type => $type,
-			input_field => $self->PARAM->sections->exists('input section')->items->exists($name),
-			output_field => $self->PARAM->sections->exists('output section')->items->exists($name),
-			PARAM => $self->PARAM,
-		));
+		$self->addItem(name => $name, operator => $operator, type => $type, calc => $calc);
 	}
 }
 # ----------------------------------------------------------------------------------------------------
@@ -417,7 +393,27 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 	sub addItem : method
 	{
 		my $self = shift;
-		$self->SUPER::addItem(@_);
+		my %params = @_;
+		my $name = 		$params{'name'} 	|| $self->add_error(ref($self), 'name');
+		my $type = 		$params{'type'} 	|| $self->add_error(ref($self), 'type');
+		my $operator = 	$params{'operator'};
+		my $calc = 		$params{'calc'};
+
+		$type = ($type eq 'array')
+			? $self->PARAM->datatypes->exists('array')
+			: $self->PARAM->datatypes->exists('string');
+
+		$self->items->add(ETL::Pequel::Field::Element->new
+		(
+			name => $name, 
+			calc => $self->PARAM->parser->compile($calc, $self->name, $name), # MUST BE DONE EARLY
+			calc_orig => $calc,
+			operator => $operator, 
+			type => $type,
+			input_field => $self->PARAM->sections->exists('input section')->items->exists($name),
+			output_field => $self->PARAM->sections->exists('output section')->items->exists($name),
+			PARAM => $self->PARAM,
+		));
 
 		$self->PARAM->error->fatalError
 		("[10106] In section '@{[ $self->name() ]}': Input field '@{[ $self->items->last->name ]}' is not defined.")
@@ -462,7 +458,27 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 	sub addItem : method
 	{
 		my $self = shift;
-		$self->SUPER::addItem(@_);
+		my %params = @_;
+		my $name = 		$params{'name'} 	|| $self->add_error(ref($self), 'name');
+		my $type = 		$params{'type'} 	|| $self->add_error(ref($self), 'type');
+		my $operator = 	$params{'operator'};
+		my $calc = 		$params{'calc'};
+
+		$type = ($type eq 'array')
+			? $self->PARAM->datatypes->exists('array')
+			: $self->PARAM->datatypes->exists('string');
+
+		$self->items->add(ETL::Pequel::Field::Element->new
+		(
+			name => $name, 
+			calc => $self->PARAM->parser->compileOutput($calc, $self->name, $name), # MUST BE DONE EARLY
+			calc_orig => $calc,
+			operator => $operator, 
+			type => $type,
+			input_field => $self->PARAM->sections->exists('input section')->items->exists($name),
+			output_field => $self->PARAM->sections->exists('output section')->items->exists($name),
+			PARAM => $self->PARAM,
+		));
 
 		$self->PARAM->error->fatalError
 		("[10107] In section '@{[ $self->name() ]}': Output field '@{[ $self->items->last->name ]}' is not defined.")
@@ -617,7 +633,10 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 	sub compile : method
 	{
 		my $self = shift;
+#>		This should be cought by properties->compile()
 		return unless ($self->PARAM->properties('input_file') =~ /([\w|_|\d]+\.pql)/);
+#>			|| ref($self->PARAM->properties('input_file')) =~ /^ETL::Pequel/);
+
 		my $scriptname = $self->PARAM->getscriptname($self->PARAM->properties('input_file'));
 	
 		my $filename = $self->PARAM->getfilepath($self->PARAM->properties('input_file'));
@@ -633,8 +652,11 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		{
 			$self->PARAM->root->PARAM->pequel_script->add(ETL::Pequel::Collection::Element->new
 			(
-				name => $self->PARAM->properties('input_file'), 
+				name => $self->PARAM->properties('input_file'), 	# use $scriptname
 				value => ETL::Pequel::Main->new($filename, $self->PARAM),
+#>				value => (ref($scriptname) =~ /^ETL::Pequel/)
+#>					? $scriptname # already prepared script
+#>					: ETL::Pequel::Main->new($filename, $self->PARAM),
 			));
 		}
 		my $sub_pql = $self->PARAM->root->PARAM->pequel_script->find($self->PARAM->properties('input_file'))->value();
@@ -1806,14 +1828,13 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
     sub codeBreakBefore : method 
 	{ 
 		my $self = shift; 
-		my $c = $self->SUPER::codeBreakBefore;
-		$c->add("if (( @{[ join(') || (', map($self->PARAM->parser->compile($_->value), $self->items->toArray)) ]} ))");
-		$c->openBlock("{");
-		$c->add("local \$\\=\"\\n\";");
-		$c->add("print REJECT \$_;");
-		$c->add("next;");
-		$c->closeBlock;
-		return $c;
+		my $engine = shift;
+		$engine->add("if (( @{[ join(') || (', map($self->PARAM->parser->compile($_->value), $self->items->toArray)) ]} ))");
+		$engine->openBlock("{");
+		$engine->add("local \$\\=\"\\n\";");
+		$engine->add("print REJECT \$_;");
+		$engine->add("next;");
+		$engine->closeBlock;
 	}
 
 	sub addItem : method	# !! TODO: check this

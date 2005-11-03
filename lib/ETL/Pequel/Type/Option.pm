@@ -1111,6 +1111,7 @@ $self->PARAM->error->msgStderr("This option is not currently available.");
 				cmd_alias => ETL::Pequel::Collection::Vector->new
 				(
 					ETL::Pequel::Type::Element->new(name => 'dc'),
+					ETL::Pequel::Type::Element->new(name => 'dump_code'),
 #?					ETL::Pequel::Type::Element->new(name => 'diag'),
 				),
 				PARAM => $param,

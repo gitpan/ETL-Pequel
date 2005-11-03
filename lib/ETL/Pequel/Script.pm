@@ -165,7 +165,7 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		if (defined($args))
 		{
 			# Create a new section by appending the args to section name:
-			my $new_section_name = $args; $new_section_name =~ s/[\.\:\-\'\"\$\%\#\=]|\s+/_/g;
+			my $new_section_name = $args; $new_section_name =~ s/[\>\<\(\)\[\]\{\}\.\:\-\'\"\$\%\#\=]|\s+/_/g;
 			my $new_section_packname = ref($s) . '::' . uc($new_section_name);
 			$new_section_name = $s->name . ' ' . $new_section_name;
 			my $snew;

@@ -24,6 +24,8 @@
 # ----------------------------------------------------------------------------------------------------
 # Modification History
 # When          Version     Who     What
+# 03/11/2005	2.4-4		gaffie	Bug fix field-process sections.
+# 03/11/2005	2.4-4		gaffie	Bug fix in reject-section.
 # 01/11/2005	2.4-2		gaffie	Fixed test failures -- caused by CPP parsing '#' comment.
 # 26/10/2005	2.4-1		gaffie	ETL::Pequel.pm
 # 26/10/2005	2.3-6		gaffie	display message section types.
@@ -140,9 +142,8 @@ use strict;
 use attributes qw(get reftype);
 use warnings;
 use vars qw($VERSION $BUILD);
-use vars qw($VERSION $BUILD);
-$VERSION = "2.4-3";
-$BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
+$VERSION = "2.4-4";
+$BUILD = 'Thursday November  3 23:56:42 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Main;

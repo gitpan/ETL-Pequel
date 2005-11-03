@@ -189,4 +189,7 @@ examples/macro_counters.pql.pdf
 examples/messages.pql
 examples/messages.pql.2.code
 examples/messages.pql.pdf
+examples/all_sections.pql
+examples/all_sections.pql.2.code
+examples/all_sections.pql.pdf
 examples/README

@@ -9,101 +9,105 @@ PEQUEL - Pequel User Guide
 =head1 OVERVIEW -- WHAT IS PEQUEL?
 
 
-F<Pequel> is a comprehensive ETL (Extract-Transform-Load) data processing system for raw (ASCII) data file processing. It features a simple, user-friendly event driven scripting interface that transparently generates, builds and executes highly efficient data-processing programs. By using the F<Pequel> scripting language, the user can create and maintain complex ETL data transformation processes quickly, easily, and accurately.  
+F<Pequel> is a comprehensive system for data file processing and transformation. It features a simple, user-friendly event driven scripting interface that transparently generates, builds and executes highly efficient data-processing programs. By using the F<Pequel> scripting language, the user can create and maintain complex data transformation processes quickly, easily, and accurately. Incidentally, the name I<pequel> is derived from I<perl'ish sequel>. 
 
 
-The F<Pequel> scripting language is aimed at non-programmer users and is simple to learn and use. It is event driven -- the user need only fill in the details for each event as required. It can also be used to effectively simplify what would otherwise be a complex SQL statement.
+The F<Pequel> system can be used by both technical (programmers) and non-technical end users. For non-technicasl users the F<Pequel> scripting language is simple to learn and F<Pequel> will transperantly generate, build and execute the transformation process. For developers the generated transformation program can be examined and extended, though this is rarely necessary as the scripting language contains constructs that are powerfull enough to handle even the most complex tranformation process. A Perl module F<Pequel.pm> is provided for developers which will allow the creation of F<Pequel> processes within Perl programs.
 
 
-The F<Pequel> scripting language allows embeded Perl expressions, thus giving access to regular expressions, built-in functions, and all Perl operators. 
+The F<Pequel> scripting language is both simple and powerfull. It is event driven with each event defining a specific stage in the overall transformation process. Each event section is filled in systematically by a list of I<items>. These items can be I<condition statements>, I<field names>, I<property settings>, I<aggregation statements>, I<calculation statements>, and so on. A full and comprehensive array of I<aggregates> and I<macros> are available, as well as full Perl regular expressions within statements.
 
 
-F<Pequel> is installed as a Perl module. 
-
-
-F<Pequel> generates highly efficient Perl and C code. The emphasis in the generated code is performance -- to process maximum records in minimum time. The generated code can be dumped into a program file, modified and executed independently of Pequel.
+F<Pequel> generates highly efficient Perl and C code. The generated code is as efficient as hand-written code. The emphasis in the generated code is performance -- to process maximum records in minimum time. The generated code can be dumped into a program file and executed independently of F<Pequel>. 
 
 
 The F<Pequel> scipt is self-documenting via F<pequeldoc>. F<Pequel> will automatically generate the Pequel Script Programmer's Reference Manual in pdf format. This manual contains detailed and summarised information about the script, and includes cross-reference information. It will also contain an optional listing of the generated program.
 
 
-The following guide describes the use of the F<Pequel> scripting language in detail.
+F<Pequel> is installed as a Perl module. 
 
 
-Pequel can be used to process data in a number of different ways, including the following:
+F<Pequel> currently supports the following incoming data stream formats: variable length delimited, CVS, fixed length, Apache CLF, and anything else that Perl I<pack/unpack> can handle.
 
 
-=item F<Selecting records (filtering)>
 
-Use Perl expressions to select records. The full power of Perl regular expressions and Perl built-in functions is also available.
-
-
-=item F<Grouping and Statistics>
-
-Records with similar characteristics can be grouped together.  Calculate statistics, such as max, min, mean, sum, and count, on grouped record sets. Grouping can also be done on unsorted input data using the C<hash> option.
+F<Pequel> has a multitude of uses:
 
 
-=item F<Calculations>
+=item F<Selecting Columns>
 
-Perform calculations on input fields to generate new (derived) fields, using Perl expressions. Calculations can be performed on both numeric fields (mathematical) and string fields (such as concatenation, substr, etc).
-
-
-=item F<Cleaning Data>
-
-Use Pequel with perl regular expressions to reject I<bad> records. Rejected records will be saved in a I<reject> file.
+Use F<Pequel> to output selected columns from an input data stream.
 
 
-=item F<Analysing Data Quality>
+=item F<Selecting Records>
 
-Data can be analysed for quality, and a summary analysis report generated which will reflect the overall quality of the data.
+Output selected records based on filtering conditional statements. Full Perl regular expressions are available.
 
 
-=page
+=item F<Deriving New Columns>
+
+Derive new columns using simple to complex expressions. Perform calculations on input fields to generate new (derived) fields, using Perl expressions. Calculations can be performed on both numeric fields (mathematical) and string fields (such as concatenation, substr, etc).
+
+
+=item F<Grouping and Aggregating Data>
+
+Records with similar characteristics can be grouped together. Calculate aggregations, such as max, min, mean, sum, and count, on grouped record sets. 
+
+
+=item F<In-Memory Sort-less Aggregation>
+
+Grouping can be performed in memory on unsorted input data using the C<hash> option.
+
 
 =item F<Statistics>
 
-Generate summary statistical information.
+F<Pequel> provides a comprehensive array of statistical aggregate functions.
 
 
-=item F<Converting Data>
+=item F<Data Cleansing>
 
-Perform any kind of data conversion. These include, converting from one data type to another, reformatting, case change, splitting a field into two or more fields, combining two or more fields into one field, converting date fields from one date format to another, padding, etc.
+F<Pequel> can be effectively used for checking and resolving invalid data.
 
 
-=item F<Tables and Cross References>
+=item F<Data Frequency/Quality Analysis>
 
-Load and use tables to lookup / cross-reference values by key.
+TBD
+
+
+=item F<Data Conversion>
+
+Convert data using any of the built-in macros and Perl regular expressions. Perform any kind of data conversion. These include, converting from one data type to another, reformatting, case change, splitting a field into two or more fields, combining two or more fields into one field, converting date fields from one date format to another, padding, etc.
+
+
+=item F<Distributed Data Processing>
+
+Data can be distributed based on conditions to multiple F<Pequel> processes.
+
+
+=item F<Combining Data>
+
+Data output from multiple F<Pequel> processes can be combined into the incoming data stream.
+
+
+=item F<Merging Data>
+
+Data from any number of external files or other F<Pequel> processes can be merged via the F<Pequel> I<tables> facility.
+
+
+=item F<Piped Data Processing>
+
+The output from one F<Pequel> process can be piped into a second F<Pequel> process simply by specifying the first script name as the I<input_file> property for the second script.
+
+
+=item F<Array Fields>
+
+F<Pequel> supports I<array> fields and provides a comprehensive set of array I<macros> to manipulate or generate array fields. 
 
 
 =item F<Database Connectivity>
 
-Direct access to database (Oracle, Sqlite, etc) tables. I<New in v2>. Pequel will generate low level database API code. Currently supported databases are Oracle (via OCI), and Sqlite.
+Direct access to database (Oracle, Sqlite, etc) tables via the F<Pequel> I<table> facility. Pequel will generate low level database API code. Currently supported databases are Oracle (via OCI), and Sqlite.
 
-
-=item F<Merge and n-Way Join>
-
-Similarly sorted data source files can be merged. Similar to join, but no limit to number of source files that can be joined (merged) simultaneously. I<New in v2>.
-
-
-=item F<Extract Data from Database Table(s)>
-
-I<TBD version 2.5>
-
-Data can be extracted directly from database tables, and from a mix of database types (Oracle, Sqlite, Mysql, Sybase, etc), into tables and into the input-section.
-
-
-=item F<Load Data into Database Table(s)>
-
-I<TBD version 2.5>
-
-The output data can be directly batch-loaded into a database table. 
-
-
-=item F<Input Binary Data Files>
-
-I<TBD version 3.0>
-
-Access to binary data files via the input-section and tables.
 
 
 =cut --------------------------------------------------------------------------
@@ -115,7 +119,7 @@ Access to binary data files via the input-section and tables.
 
 =item F<pequel scriptfile.pql  E<lt>  I<file_in>  E<gt>  I<file_out>>
 
-Execute F<pequel> with I<scriptfile.pql> script to process I<file_in> data file, resulting in I<file_out>.
+Execute F<pequel> with I<scriptfile.pql> script to process I<file_in> data file, resulting in I<file_out>. The I<scriptfile.pql> will contain the transformation instructions.
 
 
 =item F<pequel -c scriptfile.pql>
@@ -153,11 +157,11 @@ Generate the Script Reference document in pdf format for the Pequel script I<scr
 
 =page
 
-=head1 TUTORIAL
+=head1 QUICK START
 
 =head2 Create Pequel Script
 
-Use your prefered text editor to create a pequel script I<scriptname.pql>. Syntax highlighting is available for F<vim> with the F<pequel.vim> syntax file (in I<vim/sytnax>).
+Use your prefered text editor to create a pequel script I<myscript.pql>. Syntax highlighting is available for F<vim> with the F<pequel.vim> syntax file (in I<vim/sytnax>) -- copy the F<pequel.vim> file into the I<syntax> directory of the I<vim> installation.
 
 All that is required is to fill in, at least, the F<output section>, or specify F<transfer> option. The F<transfer> option will have the effect of copying all input field values to the output. This is effectively a I<straight through> process -- the resulting output is identical to the input.
 
@@ -188,13 +192,30 @@ All that is required is to fill in, at least, the F<output section>, or specify 
 
 =head2 Check The Pequel Script
 
-Do a syntax check on the script by using the Pequel C<-c> option. This should return the words C<I<scriptname.pql> Syntax OK>. 
+Do a syntax check on the script by using the Pequel C<-c> option. This should return the words C<I<myscript.pql> Syntax OK>. 
 
 =over 4
 
-C<pequel -c scriptname.pql>
+C<pequel -c myscript.pql>
 
-C<scriptname.pql Syntax OK> 
+C<myscript.pql Syntax OK> 
+
+=back
+
+=cut --------------------------------------------------------------------------
+
+
+=head2 Dump and View The Generated Perl Program
+
+Optionally, the generated Perl program can be I<dumped> and viewed. The program will be dumped in a file with the same name and path as the script with a I<'.2.code'> suffix.
+
+=over 4
+
+C<pequel -dumpcode myscript.pql>
+
+C<Processing pequel script 'myscript.pql'...................>
+
+C<->E<gt>C<myscript.pql.2.code>
 
 =back
 
@@ -206,11 +227,15 @@ If syntax check is ok, run the script -- the I<sample.data> data file in the I<e
 
 =over 4
 
-C<pequel scriptname.pql> E<lt> I<inputdata> E<gt> I<outputdata>
+C<pequel myscript.pql> E<lt> I<inputdata> E<gt> I<outputdata>
 
 =back
 
 =cut --------------------------------------------------------------------------
+
+=page
+
+=head1 TUTORIAL
 
 =head2 Select A Subset Of Records
 
@@ -783,6 +808,11 @@ Display Pequel Version information
 Display Table information for all tables declared in the pequel script
 
 
+=item F<cpp_cmd, cpp_args>
+
+Override the default I<cpp> command name and any additional agruments required.
+
+
 
 =cut --------------------------------------------------------------------------
 
@@ -790,7 +820,7 @@ Display Table information for all tables declared in the pequel script
 
 =head1 PEQUEL LANGUAGE REFERENCE
 
-A Pequel script is divided into sections. Each section is delimited by a section name, which appears on a line on its own, followed by a list of statements/items. Each I<item> line must be terminated by a newline comma (or both). In order to split an I<item> line into mutiple lines (for better readability) use the line continuation character C<\>. 
+A Pequel script is divided into sections. Each section begins with a section name, which appears on a line on its own, followed by a list of items. Each I<item> line must be terminated by a newline comma (or both). In order to split an I<item> line into mutiple lines (for better readability) use the line continuation character C<\>. 
 
 
 Pequel is I<event> driven. Each section within an Pequel script describes an event. For example, the F<input section> is activated whenever an input record is read; the F<output section> is activated whenever an aggregation is performed. 
@@ -813,12 +843,137 @@ Pequel also handles a number of date field formats. The F<&date()> macro provide
 
 =head2 Comments
 
-Any text following and including the C<#> symbol is considered as comment text. C style comments (C<//> and C</* ... */>) are also supported if your system provides the F<cpp> preprocessor.
+Any text following and including the C<#> symbol or C<//> is considered as comment text. If the I<cpp> preprocessor is available then comments are limited to C style comments with (C<//> and C</* ... */>) -- the C<#> becomes a macro directive.
+
+
+=head2 Statement Line Continuation
+
+Each item within a section must appear on a single line. In order to break up an item statement (for better readability) us the line continuation character I<\>.
 
 
 =head2 Pre Processor
 
 If your system provides the F<cpp> preprocessor, your Pequel script may include any C/C++ style macros and defines.
+
+
+=head2 Section Types
+
+
+=item F<options>
+
+Specify properties.
+
+
+=item F<description>
+
+This section contains free-format text to describe the function of the script.
+
+
+=item F<use package>
+
+Specify any external Perl package modules.
+
+
+=item F<input section>
+
+The items within this section consist of input data stream field names followed by any derived field definitions. 
+
+
+=item F<field preprocess>
+
+Specify any input field pre-processing which will occur before the field is referenced by any derived field.
+
+
+=item F<filter>
+
+The I<filter> section specifies one or more condition item statements which will be used to match incoming data records and filter out any records that do not match all the condition item statements.
+
+
+=item F<reject>
+
+
+=item F<divert input record>
+
+If the input record matches any of the condition item statements then I<divert> the record to the specified F<Pequel> process or file.
+
+
+=item F<copy input record>
+
+If the input record matches any of the condition item statements then I<copy> the record to the specified F<Pequel> process or file.
+
+
+=item F<display message on input>
+
+If the input record matches any of the condition item statements then display the specified message to I<stderr>.
+
+
+=item F<display message on input abort>
+
+If the input record matches any of the condition item statements then display the specified message to I<stderr> then exit the process.
+
+
+=item F<sort by>
+
+The I<sort by> section contains a list of input field items with optional type and sort order specifications. These fields specify the sort ordering for the input data stream.
+
+
+=item F<group by>
+
+The I<group by> section contains a list of input field items with optional type specification. These fields specify the grouping requirements for the input data stream.
+
+
+=item F<dedup on>
+
+
+=item F<output section>
+
+The I<output section> contains a list of output field definitions. 
+
+
+=item F<field postprocess>
+
+Specify any output field post-processing.
+
+
+=item F<having>
+
+The I<having> section specifies one or more condition item statements which will be used to match output data records and filter out any records that do not match all the condition item statements.
+
+
+=item F<divert output record>
+
+If the output record matches any of the condition item statements then I<divert> the record to the specified F<Pequel> process or file.
+
+
+=item F<copy output record>
+
+If the output record matches any of the condition item statements then I<copy> the record to the specified F<Pequel> process or file.
+
+
+=item F<display message on output>
+
+If the output record matches any of the condition item statements then display the specified message to I<stderr>.
+
+
+=item F<display message on output abort>
+
+If the output record matches any of the condition item statements then display the specified message to I<stderr> then exit the process.
+
+
+=item F<init table>
+
+Initialise local tables.
+
+
+=item F<load table>
+
+Load and initialise external tables.
+
+
+=item F<load table pequel>
+
+Load table from output of external F<Pequel> script.
+
 
 
 =head2 OPTIONS SECTION
@@ -853,6 +1008,16 @@ B<options>
 Set the verbose option to display progress information to STDERR during the transform run. Requires one parameter. This will instruct Pequel to display a counter message on specified number of records read from input.
 
 
+=item F<silent> 
+
+Supress all processing messages to I<stderr>.
+
+
+=item F<prefix>
+
+Specify a prefix path. The prefix will be used with all external file names unless the name starts with a '/'.
+
+
 =item F<input_delimiter>
 
 Specify the character that is used to delimit columns in the input data stream. This is usually the pipe C<|> character, but can be any character including the space character. For multiple spaces use C<\s+>, and for multiple tabs use C<\t+>. This input delimiter will default to the pipe character if I<input_delimiter> is not specified.
@@ -870,7 +1035,7 @@ If the input data stream contains an initial header record then this option must
 
 =item F<input_file> 
 
-Specify the file name as a parameter. If specified, the input data will be read from this file; otherwise it will be read from STDIN.
+Specify the file name as a parameter. If specified, the input data will be read from this file; otherwise it will be read from STDIN. If the I<input_file> option contains a F<Pequel> script name (anyting ending in I<.pql>) then the output from executin this input script will be chained to produce the input data stream.
 
 
 =item F<output_file> 
@@ -928,21 +1093,6 @@ If specified, numeric and decimal values with a zero/null value will be output a
 If specified, numeric and decimal values with a zero/null value will be output as C<0>. 
 
 
-=item F<varnames> 
-
-Use for debugging the generated code. This setting will display the field name, instead of just the field number, in the generated Perl code. This is the default setting.
-
-
-=item F<novarnames> 
-
-This will cause the generated code to contain field numbers only instead of field names.
-
-
-=item F<noexecute> 
-
-Use for debugging. With this option, the generated code is displayed to STDOUT instead of being executed.
-
-
 =item F<reject_file> 
 
 Use this option to specify a file name to contain the rejected records. These are records that are rejected by the filter specified in the reject section. If no reject file option is specified then the default reject file name is the script file name with C<.reject> appended.
@@ -996,6 +1146,31 @@ Specify the user's email that will appear on the pequeldoc generated manual.
 =item F<doc_version>
 
 Specify the Pequel script version number that will appear on the pequeldoc generated manual.
+
+
+=item F<gzcat_cmd, gzcat_args>
+
+Override the default I<gzcat> command name and any additional agruments required.
+
+
+=item F<cat_cmd, cat_args>
+
+Override the default I<cat> command name and any additional agruments required.
+
+
+=item F<sort_cmd, sort_args>
+
+Override the default I<sort> command name and any additional agruments required.
+
+
+=item F<pack_output, output_pack_fmt>
+
+The output data stream can be packed using the format specified in the I<output_pack_fmt>. These properties can also be used to produce I<fixed format> and I<binary> output. The default format is I<A3/Z*> repeated for each output field. Please refer to the Perl I<perlpacktut> manual for a detailed desctiption of formats.
+
+
+=item F<unpack_input, input_pack_fmt>
+
+The packed input data stream can be unpacked using the format specified in the I<unput_pack_fmt>. These properties can also be used to input I<fixed format> and I<binary> input. The default format is I<A3/Z*> repeated for each input field. Please refer to the Perl I<perlpacktut> manual for a detailed desctiption of formats.
 
 
 =cut --------------------------------------------------------------------------
@@ -1184,55 +1359,6 @@ B<load table> [ B<persistant> ]
 
 =end
 
-
-=cut --------------------------------------------------------------------------
-
-=head2 INIT _PERIOD SECTION
-
-Use this section to initialise the special internal F<_PERIOD> table. The F<_PERIOD> table is accessed by using the F<&period()> macro. This will map all dates within the start and end date specified to the period value (string or numeric). Please note the space after C<init> and before C<_PERIOD>. This section is optional. See also F<&period()> macro below.
-
-
-=item I<Format>
-
-B<init _PERIOD> [ B<persistant> ]
-    <period value> <start date> <end date> <date fmt> [, ...]
-
-
-=item I<Examples>
-
-=begin
- 
- init _PERIOD
-     Q1 01JAN01 31MAR01 DDMMMYY,
-     Q2 01APR01 30JUN01 DDMMMYY,
-     Q3 01JUL01 30SEP01 DDMMMYY,
-     Q4 01OCT01 31DEC01 DDMMMYY
-
-=end
-
-=cut --------------------------------------------------------------------------
-
-=head2 INIT _MONTH SECTION
-
-Use this section to initialise the special internal F<_MONTH> table. The F<_MONTH> table is accessed by using the F<%month()> macro. This will map all dates within the start and end date specified to the month value (numeric or string). Please note the space after C<init> and before C<_MONTH>. This section is optional. See also F<%month()> macro below.
-
-
-=item I<Format>
-
-B<init _MONTH> [ B<persistant> ]
-    <month value> <start date> <end date> <date fmt> [, ...]
-
-
-=item I<Examples>
-
-=begin
-
- init _MONTH
-     JAN 01/01/2002 01/31/2002 MM/DD/YYYY,
-     FEB 02/01/2002 02/28/2002 MM/DD/YYYY,
-     MAR 03/01/2002 03/30/2002 MM/DD/YYYY
-
-=end
 
 =cut --------------------------------------------------------------------------
 
@@ -4269,6 +4395,252 @@ The 'load table oracle' section will load the ASCII data contained in the file s
 
 =page
 
+=head1 PERL MODULE INTERFACE
+
+The Perl module F<ETL::Pequel.pm> provides developers with access to the F<Pequel> functions from a perl program. The following synopsis should be self-explanatory. Basically an I<ETL::Pequel> objcect is created via the I<new> function, then items are added to each section as required. Use the I<section> function to return a pointer to a section type, then use the I<addItem> function for the section-type pointer to add items to the section. The I<section> function requires a single parameter containing the section name. The I<addItem> function requires one or more named parameters, some of which are optional. This is followed by a call to I<prepare> and I<generate>, and optionally I<check>. Finally a call to I<execute> will set off the transformation process.
+
+
+=head2 Synopsis
+
+
+=begin
+
+    use ETL::Pequel;
+    use strict;
+    
+    my $p = ETL::Pequel->new();
+    my $s;
+    
+    $s = $p->section(ETL::Pequel::OPTIONS);
+    $s->addItem(name => 'header',       value => 1);
+    $s->addItem(name => 'optimize',     value => 1);
+    $s->addItem(name => 'hash',         value => 1);
+    $s->addItem(name => 'nulls',        value => 1);
+    $s->addItem(name => 'doc_title',    value => "Aggregates Example Script");
+    $s->addItem(name => 'doc_email',    value => "sample\@youraddress.com");
+    $s->addItem(name => 'doc_version',  value => '2.4');
+    
+    $s = $p->section(ETL::Pequel::DESCRIPTION);
+    $s->addItem(value => 'Demonstrates aggregation and use of various aggregate function.');
+    
+    $s = $p->section(ETL::Pequel::INPUT_SECTION);
+    $s->addItem(name => 'PRODUCT_CODE',     type => 'string');
+    $s->addItem(name => 'COST_PRICE',       type => 'string');
+    $s->addItem(name => 'DESCRIPTION',      type => 'string');
+    $s->addItem(name => 'SALES_CODE',       type => 'string');
+    $s->addItem(name => 'SALES_PRICE',      type => 'string');
+    $s->addItem(name => 'SALES_QTY',        type => 'string');
+    $s->addItem(name => 'SALES_DATE',       type => 'string');
+    $s->addItem(name => 'LOCATION',         type => 'string');
+    $s->addItem(name => 'SALES_TOTAL',      type => 'string', 
+           operator => '=>', calc => 'SALES_QTY * SALES_PRICE');
+    
+    $s = $p->section(ETL::Pequel::SORT_BY);
+    $s->addItem(fld => 'PRODUCT_CODE');
+    $s->addItem(fld => 'LOCATION');
+    
+    $s = $p->section(ETL::Pequel::GROUP_BY);
+    $s->addItem(fld => 'PRODUCT_CODE');
+    $s->addItem(fld => 'LOCATION');
+   
+    $s = $p->section(ETL::Pequel::OUTPUT_SECTION);
+    $s->addItem(type => 'string',  field => 'LOCATION',        clause => 'LOCATION');
+    $s->addItem(type => 'string',  field => 'PRODUCT_CODE',    clause => 'PRODUCT_CODE');
+    $s->addItem(type => 'decimal', field => 'MIN_COST_PRICE',  clause => 'min COST_PRICE');
+    $s->addItem(type => 'decimal', field => 'MAX_COST_PRICE',  clause => 'max COST_PRICE');
+    $s->addItem(type => 'decimal', field => 'AVG_SALES_PRICE', clause => 'mean SALES_PRICE');
+    $s->addItem(type => 'numeric', field => '_AVG_SALES_QTY',  clause => 'mean SALES_QTY');
+    $s->addItem(type => 'decimal', field => 'SALES_TOTAL',     clause => 'sum SALES_TOTAL');
+    $s->addItem(type => 'decimal', field => 'SALES_TOTAL_2',   clause => 'sum SALES_TOTAL');
+    $s->addItem(type => 'decimal', field => 'RANGE_COST',      clause => 'range COST_PRICE');
+    $s->addItem(type => 'numeric', field => 'MODE_SALES_CODE', clause => 'mode SALES_CODE');
+    $s->addItem(type => 'numeric', field => 'AVGS',            clause => '= _AVG_SALES_QTY * 2');
+    
+    $p->prepare();
+    $p->generate();
+
+    if ($p->check() =~ /syntax\s+ok/i)
+    {
+        $p->engine->printToFile("$0.2.code");
+        $p->execute();
+    }
+
+=end
+
+
+=head2 Function Reference
+
+=item F<new>
+
+Create a new F<Pequel> object. The I<new> function requires no parameters. It will create an F<ETL::Pequel> object and return a pointer to this.
+
+=begin
+
+    my $p = ETL::Pequel->new();
+
+=end
+
+The section name are pre-declared in the F<ETL::Pequel.pm> module and include the following:
+
+C<ETL::Pequel::OPTIONS>
+
+C<ETL::Pequel::DESCRIPTION>
+
+C<ETL::Pequel::INPUT_SECTION>
+
+C<ETL::Pequel::GROUP_BY>
+
+C<ETL::Pequel::SORT_BY>
+
+C<ETL::Pequel::SORT_OUTPUT>
+
+C<ETL::Pequel::LOAD_TABLE>
+
+C<ETL::Pequel::LOAD_TABLE_PEQUEL>
+
+C<ETL::Pequel::INIT_TABLE>
+
+C<ETL::Pequel::FILTER>
+
+C<ETL::Pequel::REJECT>
+
+C<ETL::Pequel::OUTPUT_SECTION>
+
+C<ETL::Pequel::HAVING>
+
+C<ETL::Pequel::DEDUP_ON>
+
+C<ETL::Pequel::USE_PACKAGE>
+
+C<ETL::Pequel::FIELD_PREPROCESS>
+
+C<ETL::Pequel::FIELD_POSTPROCESS>
+
+C<ETL::Pequel::DIVERT_INPUT_RECORD>
+
+C<ETL::Pequel::COPY_INPUT_RECORD>
+
+C<ETL::Pequel::DIVERT_OUTPUT_RECORD>
+
+C<ETL::Pequel::COPY_OUTPUT_RECORD>
+
+C<ETL::Pequel::DISPLAY_MESSAGE_ON_INPUT>
+
+C<ETL::Pequel::DISPLAY_MESSAGE_ON_INPUT_ABORT>
+
+C<ETL::Pequel::DISPLAY_MESSAGE_ON_OUTPUT>
+
+C<ETL::Pequel::DISPLAY_MESSAGE_ON_OUTPUT_ABORT>
+
+
+=item F<section>
+
+The I<section> function of the I<ETL::Pequel> object requires a single parameter containing the section name. It will return a pointer to the section object.
+
+=begin
+
+    my $s = $p->section(ETL::Pequel::OPTIONS);
+
+=end
+
+=item F<addItem>
+
+The I<addItem> function of the section object is used to add items to a section. This function requires one or more named parameters. Some parameters are optional. The following table lists the parameter requirements for each section type:
+
+C<options ( name [ value ] )>
+
+C<field_preprocess ( name type [ operator calc ] )>
+
+C<field_postprocess ( name type [ operator calc ] )>
+
+C<description ( value )>
+
+C<use_package ( value )>
+
+C<input_section ( name [ type operator calc ] )>
+
+C<output_section ( type field [ clause ] )>
+
+C<filter ( value )>
+
+C<reject ( value )>
+
+C<sort_by ( fld [ type sort ] )>
+
+C<group_by ( fld [ type sort ] )>
+
+C<sort_output ( fld [ type ] )>
+
+C<dedup_on ( fld [ type ] )>
+
+C<having ( value )>
+
+C<divert_input_record ( value )>
+
+C<copy_input_record ( value )>
+
+C<divert_output_record ( value )>
+
+C<copy_output_record ( value )>
+
+C<display_message_on_input ( value )>
+
+C<display_message_on_input_abort ( value )>
+
+C<display_message_on_output ( value )>
+
+C<display_message_on_output_abort ( value )>
+
+C<init_table ( name key values )>
+
+C<load_table ( name filename keycol keytype field_list )>
+
+C<load_table_pequel ( name scriptname keyfield [ keytype ] )>
+
+
+=begin
+  
+    $s = $p->section(ETL::Pequel::INPUT_SECTION);
+    $s->addItem(name => 'PRODUCT_CODE',     type => 'string');
+
+=end
+
+
+=item F<prepare>
+
+The I<prepare> function of the I<ETL::Pequel> object requires no parameters.  It should be called after all the section items have been filled.
+
+
+=item F<generate>
+
+The I<generate> function of the I<ETL::Pequel> object requires no parameters.  It should be called after I<prepare>. This function will generate the perl code for the I<ETL::Pequel> object.
+
+
+=item F<check>
+
+The I<check> function of the I<ETL::Pequel> object requires no parameters.  It should be called after I<generate>. This function will syntax check the generated perl program and return I<'Syntax OK'> or an error message if the syntax check fails.
+
+
+=item F<execute>
+
+The I<execute> function will do just that -- execute the generated program.
+
+
+=item F<printToFile>
+
+The I<printToFile> function of the I<ETL::Pequel> object requires a single parameter containing the file name wich will contain the generated Perl program.  It should be called after I<generate>. This function will sace the generated code in the external file.
+
+=begin
+
+    $p->engine->printToFile("$0.2.code");
+
+=end
+
+
+=cut --------------------------------------------------------------------------
+
+=page
+
 =head1 INSTALLATION INSTRUCTIONS
 
 F<Pequel> is installed as a Perl module.
@@ -4314,114 +4686,37 @@ You will also need to set the F<PERL5LIB> and F<PATH> environment variables befo
   > perl Makefile.PL PREFIX=/usr/local/Perl
   Checking if your kit is complete...
   Looks good
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Param
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Code
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Collection
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Docgen
-  Checking if your kit is complete...
-  Looks good
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Engine::Inline
-  Writing Makefile for Pequel::Engine
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Error
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Field
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Lister
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Main
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Parse
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Pod2Pdf
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Script
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Table
-  Checking if your kit is complete...
-  Looks good
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Type::Aggregate
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Type::Date
-  Checking if your kit is complete...
-  Looks good
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Type::Db::Oracle
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Type::Db::Sqlite
-  Writing Makefile for Pequel::Type::Db
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Type::Macro
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Type::Option
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Type::Section
-  Checking if your kit is complete...
-  Looks good
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Type::Table::Oracle
-  Checking if your kit is complete...
-  Looks good
-  Writing Makefile for Pequel::Type::Table::Sqlite
-  Writing Makefile for Pequel::Type::Table
-  Writing Makefile for Pequel::Type
-  Writing Makefile for Pequel
-  
+  Writing Makefile for ETL::Pequel
+
   > make
-  cp Param.pm ../lib/Pequel/Param.pm
-  cp Code.pm ../lib/Pequel/Code.pm
-  cp Collection.pm ../lib/Pequel/Collection.pm
-  cp Docgen.pm ../lib/Pequel/Docgen.pm
-  cp Engine.pm ../lib/Pequel/Engine.pm
-  cp Inline.pm ../../lib/Pequel/Engine/Inline.pm
-  cp Error.pm ../lib/Pequel/Error.pm
-  cp Field.pm ../lib/Pequel/Field.pm
-  cp Lister.pm ../lib/Pequel/Lister.pm
-  cp Main.pm ../lib/Pequel/Main.pm
-  cp Parse.pm ../lib/Pequel/Parse.pm
-  cp Pod2Pdf.pm ../lib/Pequel/Pod2Pdf.pm
-  Manifying ../blib/man3/Pequel::Pod2Pdf.3
-  cp Script.pm ../lib/Pequel/Script.pm
-  cp Table.pm ../lib/Pequel/Table.pm
-  cp Type.pm ../lib/Pequel/Type.pm
-  cp Aggregate.pm ../../lib/Pequel/Type/Aggregate.pm
-  cp Date.pm ../../lib/Pequel/Type/Date.pm
-  cp Db.pm ../../lib/Pequel/Type/Db.pm
-  cp Oracle.pm ../../../lib/Pequel/Type/Db/Oracle.pm
-  cp Sqlite.pm ../../../lib/Pequel/Type/Db/Sqlite.pm
-  cp Macro.pm ../../lib/Pequel/Type/Macro.pm
-  cp Option.pm ../../lib/Pequel/Type/Option.pm
-  cp Section.pm ../../lib/Pequel/Type/Section.pm
-  cp Table.pm ../../lib/Pequel/Type/Table.pm
-  cp Oracle.pm ../../../lib/Pequel/Type/Table/Oracle.pm
-  cp Sqlite.pm ../../../lib/Pequel/Type/Table/Sqlite.pm
+  Skip lib/ETL/Pequel.pm (unchanged)
+  Skip lib/ETL/Pequel/Main.pm (unchanged)
+  Skip lib/ETL/Pequel/Param.pm (unchanged)
+  Skip lib/ETL/Pequel/Type.pm (unchanged)
+  Skip lib/ETL/Pequel/Script.pm (unchanged)
+  Skip lib/ETL/Pequel/Field.pm (unchanged)
+  Skip lib/ETL/Pequel/Error.pm (unchanged)
+  Skip lib/ETL/Pequel/Engine.pm (unchanged)
+  Skip lib/ETL/Pequel/Engine/Inline.pm (unchanged)
+  Skip lib/ETL/Pequel/Collection.pm (unchanged)
+  Skip lib/ETL/Pequel/Code.pm (unchanged)
+  Skip lib/ETL/Pequel/Docgen.pm (unchanged)
+  Skip lib/ETL/Pequel/Parse.pm (unchanged)
+  Skip lib/ETL/Pequel/Pod2Pdf.pm (unchanged)
+  Skip lib/ETL/Pequel/Lister.pm (unchanged)
+  Skip lib/ETL/Pequel/Table.pm (unchanged)
+  Skip lib/ETL/Pequel/Type/Date.pm (unchanged)
+  Skip lib/ETL/Pequel/Type/Section.pm (unchanged)
+  Skip lib/ETL/Pequel/Type/Option.pm (unchanged)
+  Skip lib/ETL/Pequel/Type/Macro.pm (unchanged)
+  Skip lib/ETL/Pequel/Type/Aggregate.pm (unchanged)
+  Skip lib/ETL/Pequel/Type/Db.pm (unchanged)
+  Skip lib/ETL/Pequel/Type/Db/Oracle.pm (unchanged)
+  Skip lib/ETL/Pequel/Type/Db/Sqlite.pm (unchanged)
+  Skip lib/ETL/Pequel/Type/Table.pm (unchanged)
+  Skip lib/ETL/Pequel/Type/Table/Oracle.pm (unchanged)
+  Skip lib/ETL/Pequel/Type/Table/Sqlite.pm (unchanged)
+  Manifying blib/man3/ETL::Pequel::Pod2Pdf.3
 
   > export PERL_INSTALL_ROOT=/usr/local/Perl
   > make test
@@ -4443,11 +4738,14 @@ You will also need to set the F<PERL5LIB> and F<PATH> environment variables befo
   t/16_sales_ttl_by_loc....ok
   t/17_pequel_tables.......ok
   t/18_chain_pequel........ok
+  t/19_divert_record.......ok
+  t/20_copy_record.........ok
+  t/21_copy_output.........ok
+  t/22_output_combiner.....ok
   All tests successful.
-  Files=18, Tests=18, 71 wallclock secs (64.37 cusr +  6.79 csys = 71.16 CPU)
+  Files=22, Tests=22, 71 wallclock secs (64.37 cusr +  6.79 csys = 71.16 CPU)
 
   > make install
-  Installing /usr/local/Perl/usr/local/Perl/man/man3/Pequel::Pod2Pdf.3
   Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Param.pm
   Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Code.pm
   Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Collection.pm
@@ -4474,6 +4772,7 @@ You will also need to set the F<PERL5LIB> and F<PATH> environment variables befo
   Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Type/Db/Oracle.pm
   Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Type/Db/Sqlite.pm
   Installing /usr/local/Perl/usr/perl5/site_perl/5.6.1/Pequel/Engine/Inline.pm
+  Installing /usr/local/Perl/usr/local/Perl/man/man3/Pequel::Pod2Pdf.3
   Installing /usr/local/Perl/usr/local/Perl/bin/pequel
   Installing /usr/local/Perl/usr/local/Perl/bin/pequelpod2pdf
   Writing /usr/perl5/site_perl/5.6.1/sun4-solaris-64int/auto/Pequel/.packlist
@@ -4482,7 +4781,7 @@ You will also need to set the F<PERL5LIB> and F<PATH> environment variables befo
   > export PERL5LIB=/usr/local/Perl/usr/perl5/site_perl
   > export PATH=$PATH:/usr/local/Perl/usr/local/Perl/bin
   > pequel -v
-  pequel Version 2.2-5, Build: Thu Jun 17 10:57:29 EST 2005
+  pequel Version 2.4-4, Build: Tuesday November  1 23:45:13 GMT 2005
 
 =end
 
@@ -4505,7 +4804,7 @@ Certain options (such as I<use_inline>, I<input_delimiter_extra>) will cause F<P
 
 =item *
 
-The Inline Oracle and Sqlite Tables functionality as of version 2.2-8 requires further extensive testing.
+The Inline Oracle and Sqlite Tables functionality as of version 2.4-x requires further extensive testing.
 
 
 =item *
@@ -4525,12 +4824,7 @@ F<summary section> is not implemented.
 
 =item *
 
-When using a I<derived input field> in F<group by>, the derived field is not calculated early enough.
-
-
-=item *
-
-If you specify F<group by> you must also specify F<sort by> (unless your input is already sorted in the required order).
+If you specify F<group by> you must also specify F<sort by> (unless your input is already sorted in the required order or hash is specified).
 
 
 

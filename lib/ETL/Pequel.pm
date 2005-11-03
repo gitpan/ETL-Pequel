@@ -31,8 +31,8 @@ use strict;
 use attributes qw(get reftype);
 use warnings;
 use vars qw($VERSION $BUILD);
-$VERSION = "2.4-3";
-$BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
+$VERSION = "2.4-4";
+$BUILD = 'Thursday November  3 23:56:42 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel;

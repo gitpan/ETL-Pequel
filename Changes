@@ -1,9 +1,14 @@
 Revision history
 
+* Version 2.4-4 -- 3 November 2005
+
+- Updated User Guide to include perl module ETL::Pequel.pm interface reference.
+- Bug fix in field pre/post process sections.
+- Bug fix in reject section.
+
 * Version 2.4-3 -- 1 November 2005
 
 - Add VERSION labels for all modules.
-
 
 * Version 2.4-2 -- 1 November 2005
 

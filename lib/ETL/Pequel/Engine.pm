@@ -24,6 +24,7 @@
 # ----------------------------------------------------------------------------------------------------
 # Modification History
 # When          Version     Who     What
+# 03/11/2005	2.4-4		gaffie	Fixed PrintHeader().
 # 20/09/2005	2.3-6		gaffie	unpack_input/pack_output implementation.
 # 04/09/2005	2.3-3		gaffie	Support input_file(pequel-script) with sort-by.
 # 04/09/2005	2.3-3		gaffie	Support sort-output with 'close(out)' code.
@@ -42,8 +43,8 @@ use strict;
 use attributes qw(get reftype);
 #use warnings; --- NOT HERE because the eval in execute will complain!
 use vars qw($VERSION $BUILD);
-$VERSION = "2.4-3";
-$BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
+$VERSION = "2.4-4";
+$BUILD = 'Thursday November  3 23:56:42 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Engine;
@@ -96,6 +97,7 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		my $self = shift;
 
 		$self->PARAM->error->msgStderrNonl($self->PARAM->properties('debug') ? 'generate...' : '.');
+		$self->clear();	# In case of successive generate() calls.
 		$self->codeHeaderInfo;
 		$self->codeInit;
 
@@ -844,6 +846,7 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 	sub codeSubPrintHeader : method
 	{
 		my $self = shift;
+		my $ofl = shift || 'STDOUT';
 		return unless ($self->PARAM->properties('header')); #< || $self->PARAM->properties('print_header'));
 
 		$self->add('sub PrintHeader');
@@ -851,7 +854,8 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 
 			$self->add('local $\="\n";');
 			$self->add("local \$,=\"@{[ $self->PARAM->properties('output_delimiter') ]}\";");
-			$self->add("print @{[ $self->PARAM->properties('output_file') ? 'OUTPUT_FILE' : '']}");
+			$self->add("flock($ofl, LOCK_EX);") if ($self->PARAM->properties('lock_output'));
+			$self->add("print $ofl");
 
 			$self->over;
 				map($self->add("'@{[ $_->name ]}',"), grep($_->name !~ /^_/, $self->PARAM->sections->exists('input section')->items->toArray))
@@ -864,6 +868,7 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 				$self->endList;
 				$self->add(";");
 			$self->back;
+			$self->add("flock($ofl, LOCK_UN);") if ($self->PARAM->properties('lock_output'));
 
 		$self->closeBlock;
 	}

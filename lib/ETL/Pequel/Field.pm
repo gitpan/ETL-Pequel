@@ -24,6 +24,7 @@
 # ----------------------------------------------------------------------------------------------------
 # Modification History
 # When          Version     Who     What
+# 11/11/2005	2.4-5		gaffie	implement new option show_synonyms -- 
 # ----------------------------------------------------------------------------------------------------
 # TO DO:
 # ----------------------------------------------------------------------------------------------------
@@ -56,6 +57,7 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 			inputField
 			outputField
 			id
+			synonym
 			codeVar
 			ref
 		);
@@ -91,6 +93,7 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		$self->inputField($params{'input_field'});
 		$self->outputField($params{'output_field'});
 		$self->id($params{'id'});
+		$self->synonym($params{'synonym'});
 		$self->codeVar($params{'code_var'});
 		$self->comment($params{'comment'});
 		$self->ref($params{'ref'});
@@ -139,7 +142,11 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
         $self = $class->SUPER::new(@_);
         bless($self, $class);
 
-		$self->id("_I_@{[ $self->name ]}");
+		$self->synonym("_I_@{[ $self->name ]}");
+		$self->PARAM->properties('show_synonyms') 
+			? $self->id("_I_@{[ $self->name ]}")
+			: $self->id("@{[ $self->PARAM->sections->find('input section')->items->size() ]}"); # Input field nums 0 base.
+#<		$self->id("_I_@{[ $self->name ]}");
 		$self->codeVar("\$I_VAL[@{[ $self->id ]}]");
 		$self->refTableList(ETL::Pequel::Collection::Vector->new);
 
@@ -217,8 +224,11 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		$self->inputField($params{'input_field'});
 		$self->condition($params{'condition'});
 		$self->serialStart($params{'serial_start'});
-
-		$self->id("_O_@{[ $self->name ]}");
+		$self->synonym("_O_@{[ $self->name ]}");
+		$self->PARAM->properties('show_synonyms') 
+			? $self->id("_O_@{[ $self->name ]}")
+			: $self->id("@{[ $self->PARAM->sections->find('output section')->items->size()+1 ]}"); # Output field nums 1 base.
+#<		$self->id("_O_@{[ $self->name ]}");
 		$self->codeVar($self->PARAM->properties('hash') 
 			? "\$O_VAL{\$key}{@{[ $self->id ]}}" 
 			: "\$O_VAL[@{[ $self->id ]}]");

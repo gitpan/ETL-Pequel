@@ -34,12 +34,12 @@ $s->addItem(name => 'LOCATION', 		type => 'string');
 $s->addItem(name => 'SALES_TOTAL', 		type => 'string', operator => '=>', calc => 'SALES_QTY * SALES_PRICE');
 
 $s = $p->section(ETL::Pequel::SORT_BY);
-$s->addItem(fld => 'PRODUCT_CODE');
 $s->addItem(fld => 'LOCATION');
+$s->addItem(fld => 'PRODUCT_CODE');
 
 $s = $p->section(ETL::Pequel::GROUP_BY);
-$s->addItem(fld => 'PRODUCT_CODE');
 $s->addItem(fld => 'LOCATION');
+$s->addItem(fld => 'PRODUCT_CODE');
 
 $s = $p->section(ETL::Pequel::OUTPUT_SECTION);
 $s->addItem(type => 'string', 	field => 'LOCATION', 		clause => 'LOCATION');
@@ -53,7 +53,6 @@ $s->addItem(type => 'decimal',	field => 'SALES_TOTAL_2',	clause => 'sum SALES_TO
 $s->addItem(type => 'decimal',	field => 'RANGE_COST',		clause => 'range COST_PRICE');
 $s->addItem(type => 'numeric',	field => 'MODE_SALES_CODE',	clause => 'mode SALES_CODE');
 $s->addItem(type => 'numeric',	field => 'AVGS',			clause => '= _AVG_SALES_QTY * 2');
-
 
 $p->prepare();
 $p->generate();

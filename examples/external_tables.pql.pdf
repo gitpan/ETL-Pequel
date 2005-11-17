@@ -11,7 +11,7 @@
 endobj
 2 0 obj
 <<
-/CreationDate (D:20050913101925+0100)
+/CreationDate (D:20051116140325+0000)
 /Producer (Pequel)
 /Title (External Tables Example Script)
 >>
@@ -181,7 +181,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(external_tables.pql) Tj
+(examples/external_tables.pql) Tj
 1 0 0 1 394.05 797 Tm
 (External Tables Example Script) Tj
 /F21 12 Tf
@@ -191,7 +191,7 @@ BT
 /F20 10 Tf
 1 0 0 1 76.0 735.6 Tm
 0.0000 Tw
-(external_tables.pql ) Tj
+(examples/external_tables.pql ) Tj
 /F21 12 Tf
 1 0 0 1 52.0 705.6 Tm
 0.0000 Tw
@@ -479,7 +479,7 @@ BT
 (exists %SAMPLE2\(PRODUCT_CODE\); ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:19) Tj
+(16 November 2005 14:03) Tj
 1 0 0 1 537.44 37 Tm
 (1) Tj
 ET
@@ -489,7 +489,7 @@ S
 endstream
 endobj
 19 0 obj
-4840
+4857
 endobj
 20 0 obj
 <<
@@ -527,8 +527,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (External Tables Example Script) Tj
-1 0 0 1 452.41 797 Tm
-(external_tables.pql) Tj
+1 0 0 1 404.05 797 Tm
+(examples/external_tables.pql) Tj
 /F21 10 Tf
 1 0 0 1 52.0 780.0 Tm
 0.0000 Tw
@@ -724,8 +724,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (2) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:19) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:03) Tj
 ET
 52 50 m
 543 50 l
@@ -733,7 +733,7 @@ S
 endstream
 endobj
 23 0 obj
-2910
+2918
 endobj
 24 0 obj
 <<
@@ -769,7 +769,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(external_tables.pql) Tj
+(examples/external_tables.pql) Tj
 1 0 0 1 394.05 797 Tm
 (External Tables Example Script) Tj
 /F21 12 Tf
@@ -782,18 +782,32 @@ BT
 (2.1 ) Tj
 /F23 10 Tf
 0.0000 Tw
-(pequeldoc) Tj
+(prefix) Tj
 /F21 10 Tf
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 702.0 Tm
 0.0000 Tw
-(generate pod / pdf pequel script Reference Guide.: pdf ) Tj
+(directory pathname prefix.: examples ) Tj
 /F21 10 Tf
 1 0 0 1 52.0 672.0 Tm
 0.0000 Tw
 (2.2 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(pequeldoc) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 660.0 Tm
+0.0000 Tw
+(generate pod / pdf pequel script Reference Guide.: pdf ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 630.0 Tm
+0.0000 Tw
+(2.3 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (detail) Tj
@@ -801,13 +815,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 660.0 Tm
+1 0 0 1 76.0 618.0 Tm
 0.0000 Tw
 (Include Pequel Generated Program chapter in Pequeldoc: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 630.0 Tm
+1 0 0 1 52.0 588.0 Tm
 0.0000 Tw
-(2.3 ) Tj
+(2.4 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (script_name) Tj
@@ -815,13 +829,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 618.0 Tm
+1 0 0 1 76.0 576.0 Tm
 0.0000 Tw
-(script filename: external_tables.pql ) Tj
+(script filename: examples/external_tables.pql ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 588.0 Tm
+1 0 0 1 52.0 546.0 Tm
 0.0000 Tw
-(2.4 ) Tj
+(2.5 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (header) Tj
@@ -829,13 +843,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 576.0 Tm
+1 0 0 1 76.0 534.0 Tm
 0.0000 Tw
 (write header record to output.: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 546.0 Tm
+1 0 0 1 52.0 504.0 Tm
 0.0000 Tw
-(2.5 ) Tj
+(2.6 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (optimize) Tj
@@ -843,13 +857,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 534.0 Tm
+1 0 0 1 76.0 492.0 Tm
 0.0000 Tw
 (optimize generated code.: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 504.0 Tm
+1 0 0 1 52.0 462.0 Tm
 0.0000 Tw
-(2.6 ) Tj
+(2.7 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_title) Tj
@@ -857,13 +871,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 492.0 Tm
+1 0 0 1 76.0 450.0 Tm
 0.0000 Tw
 (document title.: External Tables Example Script ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 462.0 Tm
+1 0 0 1 52.0 420.0 Tm
 0.0000 Tw
-(2.7 ) Tj
+(2.8 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_email) Tj
@@ -871,13 +885,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 450.0 Tm
+1 0 0 1 76.0 408.0 Tm
 0.0000 Tw
 (document email entry.: sample@youraddress.com ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 420.0 Tm
+1 0 0 1 52.0 378.0 Tm
 0.0000 Tw
-(2.8 ) Tj
+(2.9 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_version) Tj
@@ -885,12 +899,12 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 408.0 Tm
+1 0 0 1 76.0 366.0 Tm
 0.0000 Tw
 (document version for pequel script.: 2.2 ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:19) Tj
+(16 November 2005 14:03) Tj
 1 0 0 1 537.44 37 Tm
 (3) Tj
 ET
@@ -900,7 +914,7 @@ S
 endstream
 endobj
 27 0 obj
-2022
+2239
 endobj
 28 0 obj
 <<
@@ -936,8 +950,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (External Tables Example Script) Tj
-1 0 0 1 452.41 797 Tm
-(external_tables.pql) Tj
+1 0 0 1 404.05 797 Tm
+(examples/external_tables.pql) Tj
 /F21 12 Tf
 1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
@@ -975,220 +989,358 @@ BT
 /F20 10 Tf
 1 0 0 1 76.0 675.6 Tm
 0.0000 Tw
-(L100RWT02 \217) Tj
+(L103BJG04 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( IBM 2000 IT P4-1600/512/40GB NT ) Tj
+( Toshiba 4000 IT P4-1800/1GB/60GB WA ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 663.6 Tm
 0.0000 Tw
-(K109KWO08 \217) Tj
+(A100AIX09 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( Philips 8000 GR P3-1300/1GB/20GB NT ) Tj
+( Compaq 9000 GR P4-1700/256/40GB WA ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 651.6 Tm
 0.0000 Tw
-(L106FEU09 \217) Tj
+(B111KYK01 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( Toshiba 9000 EN P4-1900/1GB/60GB PER ) Tj
+( Dell 1000 FR P4-1700/128/40GB PER ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 639.6 Tm
 0.0000 Tw
-(B101XDR04 \217) Tj
+(E100QTG07 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( HP 4000 SP P3-1400/128/60GB SA ) Tj
+( Fujitsu 7000 SP P4-1700/512/10GB NT ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 627.6 Tm
 0.0000 Tw
-(L118DVB09 \217) Tj
+(K113JAD05 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( Cannon 9000 FR P4-1600/256/30GB SA ) Tj
+( Fujitsu 5000 IT P3-1200/512/10GB PER ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 615.6 Tm
 0.0000 Tw
-(J103CFG04 \217) Tj
+(J115JBW09 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( Cannon 4000 EN P3-1400/128/20GB QLD ) Tj
+( Compaq 9000 IT P3-1200/128/40GB SYD ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 603.6 Tm
 0.0000 Tw
-(G113IVP03 \217) Tj
+(J109NYP03 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( Philips 3000 GR P3-880/128/10GB WA ) Tj
+( HP 3000 IT P3-880/128/10GB MEL ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 591.6 Tm
 0.0000 Tw
-(D104FNJ08 \217) Tj
+(A106UIH04 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( Compaq 8000 GR P3-880/1GB/10GB VIC ) Tj
+( Toshiba 4000 GR P4-1700/256/40GB ALIC ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 579.6 Tm
 0.0000 Tw
-(E108HQQ06 \217) Tj
+(H107VAE06 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( IBM 6000 SP P4-1800/512/60GB VIC ) Tj
+( Toshiba 6000 FR P3-880/512/20GB WA ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 567.6 Tm
 0.0000 Tw
-(J108NQE07 \217) Tj
+(F104ICW08 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( Dell 7000 IT P3-880/256/40GB QLD ) Tj
+( Compaq 8000 SP P4-1700/128/60GB PER ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 555.6 Tm
 0.0000 Tw
-(G100YTF02 \217) Tj
+(C103WEO02 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( IBM 2000 FR P4-1800/128/20GB QLD ) Tj
+( Cannon 2000 FR P4-1600/128/60GB WA ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 543.6 Tm
 0.0000 Tw
-(L103ENU10 \217) Tj
+(I108THJ06 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( Fujitsu 10000 GR P4-1800/128/10GB VIC ) Tj
+( Dell 6000 GR P3-880/128/40GB VIC ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 531.6 Tm
 0.0000 Tw
-(B103CUO10 \217) Tj
+(D105BWE02 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( Toshiba 10000 SP P3-880/256/10GB WA ) Tj
+( IBM 2000 IT P4-1700/1GB/60GB PER ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 519.6 Tm
 0.0000 Tw
-(G105DJH10 \217) Tj
+(G111FOI06 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( Fujitsu 10000 EN P3-880/1GB/30GB PER ) Tj
+( Toshiba 6000 FR P4-1900/512/60GB NT ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 507.6 Tm
 0.0000 Tw
-(G104QGG05 \217) Tj
+(I111AGN09 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( Dell 5000 SP P3-1200/512/20GB WA ) Tj
+( Toshiba 9000 GR P4-1700/256/10GB PER ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 495.6 Tm
 0.0000 Tw
-(G116VHO02 \217) Tj
+(J102MLC05 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( Dell 2000 SP P3-1200/128/30GB ALIC ) Tj
+( Fujitsu 5000 IT P3-1200/1GB/60GB VIC ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 483.6 Tm
 0.0000 Tw
-(C104LIS01 \217) Tj
+(G113WVH04 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( Dell 1000 FR P4-1600/128/20GB SYD ) Tj
+( Compaq 4000 SP P4-1800/256/20GB NT ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 471.6 Tm
 0.0000 Tw
-(E102ITQ08 \217) Tj
+(I109JTE07 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( Philips 8000 EN P4-2000/512/30GB NSW ) Tj
+( IBM 7000 GR P3-1200/512/40GB MEL ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 459.6 Tm
 0.0000 Tw
-(K102YAP03 \217) Tj
+(C119GHQ10 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( HP 3000 IT P3-1200/128/30GB NSW ) Tj
+( Dell 10000 FR P4-1700/1GB/30GB SYD ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 447.6 Tm
 0.0000 Tw
-(G111IPN09 \217) Tj
+(I115YVQ02 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( Fujitsu 9000 FR P3-1200/1GB/40GB NSW ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 405.6 Tm
-0.0000 Tw
-(3.2 ) Tj
-/F23 10 Tf
-0.0000 Tw
-(SAMPLE2) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
+( Cannon 2000 EN P4-2000/256/10GB NSW ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 393.6 Tm
+1 0 0 1 76.0 435.6 Tm
 0.0000 Tw
-(Table Type: ) Tj
-/F23 10 Tf
-0.0000 Tw
-(external) Tj
+(F105RTJ10 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( ) Tj
+( Dell 10000 FR P3-900/512/20GB WA ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 381.6 Tm
+1 0 0 1 76.0 423.6 Tm
 0.0000 Tw
-(Data Source Filename: ) Tj
-/F23 10 Tf
-0.0000 Tw
-(sample.data) Tj
+(A109IWD09 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( ) Tj
+( Compaq 9000 IT P4-1700/128/20GB QLD ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 369.6 Tm
+1 0 0 1 76.0 411.6 Tm
 0.0000 Tw
-(Key Field Number: ) Tj
-/F23 10 Tf
-0.0000 Tw
-(1) Tj
+(E119HQG01 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( ) Tj
+( Dell 1000 GR P4-2000/1GB/40GB NT ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 345.6 Tm
+1 0 0 1 76.0 399.6 Tm
 0.0000 Tw
-() Tj
-/F21 10 Tf
-0.0000 Tw
-(3.2.1) Tj
+(A112HHM10 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( ) Tj
-/F23 10 Tf
+( Cannon 10000 FR P3-880/256/30GB SYD ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 387.6 Tm
 0.0000 Tw
-(DESCRIPTION = 3) Tj
+(K112WIS07 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( ) Tj
+( Dell 7000 IT P3-1200/256/20GB PER ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 333.6 Tm
+1 0 0 1 76.0 375.6 Tm
 0.0000 Tw
-() Tj
-/F21 10 Tf
-0.0000 Tw
-(3.2.2) Tj
+(J112YXH07 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( ) Tj
-/F23 10 Tf
+( IBM 7000 EN P3-1400/256/40GB VIC ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 363.6 Tm
 0.0000 Tw
-(LOCATION = 8) Tj
+(I105RHR09 \217) Tj
 /F20 10 Tf
 0.0000 Tw
-( ) Tj
+( IBM 9000 FR P3-1200/512/40GB NT ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 351.6 Tm
+0.0000 Tw
+(L116RWV08 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Philips 8000 SP P3-900/128/10GB NSW ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 339.6 Tm
+0.0000 Tw
+(D117WMU02 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( HP 2000 GR P4-1800/1GB/20GB QLD ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 327.6 Tm
+0.0000 Tw
+(C119HJM01 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Philips 1000 IT P3-1400/512/40GB NSW ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 315.6 Tm
+0.0000 Tw
+(L118PFA09 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Philips 9000 IT P4-1800/128/30GB SYD ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 303.6 Tm
+0.0000 Tw
+(E112SJD07 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( IBM 7000 GR P3-1200/1GB/20GB SYD ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 291.6 Tm
+0.0000 Tw
+(F102EUR03 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Cannon 3000 EN P4-2000/512/30GB MEL ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 279.6 Tm
+0.0000 Tw
+(B117DAR07 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Cannon 7000 SP P4-1800/128/40GB ALIC ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 267.6 Tm
+0.0000 Tw
+(G103TKH08 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Fujitsu 8000 SP P4-1700/128/60GB ALIC ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 255.6 Tm
+0.0000 Tw
+(G106VOK04 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Fujitsu 4000 SP P3-900/512/40GB NT ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 243.6 Tm
+0.0000 Tw
+(F117WIP08 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( IBM 8000 IT P3-900/1GB/10GB MEL ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 231.6 Tm
+0.0000 Tw
+(L105HMB07 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Philips 7000 FR P4-1600/1GB/10GB MEL ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 219.6 Tm
+0.0000 Tw
+(H113KDM07 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Compaq 7000 EN P3-880/512/40GB NT ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 207.6 Tm
+0.0000 Tw
+(C114ERT05 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( IBM 5000 IT P4-1800/1GB/30GB VIC ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 195.6 Tm
+0.0000 Tw
+(H106LAF10 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Dell 10000 GR P4-2000/1GB/40GB SA ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 183.6 Tm
+0.0000 Tw
+(E100JMA04 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Cannon 4000 FR P3-1200/512/10GB VIC ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 171.6 Tm
+0.0000 Tw
+(E104HDH01 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Compaq 1000 EN P3-1200/256/20GB QLD ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 159.6 Tm
+0.0000 Tw
+(A109AYU10 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( IBM 10000 FR P4-1700/512/10GB MEL ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 147.6 Tm
+0.0000 Tw
+(K111HOR02 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Cannon 2000 EN P4-1700/128/20GB NT ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 135.6 Tm
+0.0000 Tw
+(J112XUI05 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Dell 5000 EN P3-880/512/30GB PER ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 123.6 Tm
+0.0000 Tw
+(J117YTJ03 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( IBM 3000 EN P4-1900/128/20GB VIC ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 111.6 Tm
+0.0000 Tw
+(D113QFU10 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Compaq 10000 SP P4-1900/1GB/30GB WA ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 99.6 Tm
+0.0000 Tw
+(K106NSX06 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Fujitsu 6000 IT P3-900/256/20GB NT ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 87.6 Tm
+0.0000 Tw
+(E108UFJ05 \217) Tj
+/F20 10 Tf
+0.0000 Tw
+( Compaq 5000 SP P3-880/128/30GB VIC ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (4) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:19) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:03) Tj
 ET
 52 50 m
 543 50 l
@@ -1196,7 +1348,7 @@ S
 endstream
 endobj
 31 0 obj
-4048
+6980
 endobj
 32 0 obj
 <<
@@ -1231,9 +1383,131 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(external_tables.pql) Tj
+(examples/external_tables.pql) Tj
 1 0 0 1 394.05 797 Tm
 (External Tables Example Script) Tj
+/F21 10 Tf
+1 0 0 1 52.0 780.0 Tm
+0.0000 Tw
+(3.2 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(SAMPLE2) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 768.0 Tm
+0.0000 Tw
+(Table Type: ) Tj
+/F23 10 Tf
+0.0000 Tw
+(external) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 756.0 Tm
+0.0000 Tw
+(Data Source Filename: ) Tj
+/F23 10 Tf
+0.0000 Tw
+(sample.data) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 744.0 Tm
+0.0000 Tw
+(Key Field Number: ) Tj
+/F23 10 Tf
+0.0000 Tw
+(1) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 720.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(3.2.1) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F23 10 Tf
+0.0000 Tw
+(DESCRIPTION = 3) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 708.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(3.2.2) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F23 10 Tf
+0.0000 Tw
+(LOCATION = 8) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(16 November 2005 14:03) Tj
+1 0 0 1 537.44 37 Tm
+(5) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+35 0 obj
+1138
+endobj
+36 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F20 14 0 R
+/F21 15 0 R
+/F23 17 0 R
+>>
+>>
+endobj
+37 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 36 0 R
+/Contents 34 0 R
+>>
+endobj
+38 0 obj
+<<
+/Length 39 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(External Tables Example Script) Tj
+1 0 0 1 404.05 797 Tm
+(examples/external_tables.pql) Tj
 /F21 12 Tf
 1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
@@ -1276,19 +1550,19 @@ BT
 (\) ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:19) Tj
-1 0 0 1 537.44 37 Tm
-(5) Tj
+(6) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:03) Tj
 ET
 52 50 m
 543 50 l
 S
 endstream
 endobj
-35 0 obj
-806
+39 0 obj
+814
 endobj
-36 0 obj
+40 0 obj
 <<
 /ProcSet [/PDF /Text]
 /ColorSpace <</DefaultRGB 1 0 R>>
@@ -1297,351 +1571,6 @@ endobj
 /F20 14 0 R
 /F21 15 0 R
 /F22 16 0 R
-/F23 17 0 R
->>
->>
-endobj
-37 0 obj
-<<
-/Type /Page
-/Parent 4 0 R
-/Resources 36 0 R
-/Contents 34 0 R
->>
-endobj
-38 0 obj
-<<
-/Length 39 0 R
->>
-stream
-52 792 m
-543 792 l
-S
-BT
-0 G
-1 i 0 J 0 j 0.1 w 10 M []0 d
-/F21 10 Tf
-1 0 0 1 52 797 Tm
-(External Tables Example Script) Tj
-1 0 0 1 452.41 797 Tm
-(external_tables.pql) Tj
-/F21 12 Tf
-1 0 0 1 52.0 750.0 Tm
-0.0000 Tw
-(5. EXTERNAL_TABLES.PQL ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 714.0 Tm
-0.0000 Tw
-() Tj
-/F23 10 Tf
-0.0000 Tw
-(options) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 697.8 Tm
-0.0000 Tw
-(    pequeldoc\(pdf\) ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 689.4 Tm
-0.0000 Tw
-(    detail\(1\) ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 681.0 Tm
-0.0000 Tw
-(    script_name\(external_tables.pql\) ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 672.6 Tm
-0.0000 Tw
-(    header\(1\) ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 664.2 Tm
-0.0000 Tw
-(    optimize\(1\) ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 655.8 Tm
-0.0000 Tw
-(    doc_title\(External Tables Example Script\) ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 647.4 Tm
-0.0000 Tw
-(    doc_email\(sample@youraddress.com\) ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 639.0 Tm
-0.0000 Tw
-(    doc_version\(2.2\) ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 618.0 Tm
-0.0000 Tw
-() Tj
-/F23 10 Tf
-0.0000 Tw
-(description) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 601.8 Tm
-0.0000 Tw
-(    Demonstrates the use of external tables. ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 593.4 Tm
-0.0000 Tw
-(    The default method for loading an external table is to embed the table contents in ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 585.0 Tm
-0.0000 Tw
-(    the generated code. SAMPLE1 is a example of an embedded table. External tables ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 576.6 Tm
-0.0000 Tw
-(    may also be loaded dynamically \(at runtime\) -- the '_' table name prefix instructs ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 568.2 Tm
-0.0000 Tw
-(    Pequel to load the table dynamically. SAMPLE2 is an axample of a dynamic table. ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 559.8 Tm
-0.0000 Tw
-(    The optional environment variable 'PEQUEL_TABLE_PATH' may be set to the path for ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 551.4 Tm
-0.0000 Tw
-(    the location of the table data-source-files. This path will be used to locate the ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 543.0 Tm
-0.0000 Tw
-(    data-source-files unless the data source filename is an absolute path name. ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 522.0 Tm
-0.0000 Tw
-() Tj
-/F23 10 Tf
-0.0000 Tw
-(init table) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 505.8 Tm
-0.0000 Tw
-(    SAMPLE1 L100RWT02 IBM 2000 IT P4-1600/512/40GB NT ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 497.4 Tm
-0.0000 Tw
-(    SAMPLE1 K109KWO08 Philips 8000 GR P3-1300/1GB/20GB NT ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 489.0 Tm
-0.0000 Tw
-(    SAMPLE1 L106FEU09 Toshiba 9000 EN P4-1900/1GB/60GB PER ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 480.6 Tm
-0.0000 Tw
-(    SAMPLE1 B101XDR04 HP 4000 SP P3-1400/128/60GB SA ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 472.2 Tm
-0.0000 Tw
-(    SAMPLE1 L118DVB09 Cannon 9000 FR P4-1600/256/30GB SA ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 463.8 Tm
-0.0000 Tw
-(    SAMPLE1 J103CFG04 Cannon 4000 EN P3-1400/128/20GB QLD ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 455.4 Tm
-0.0000 Tw
-(    SAMPLE1 G113IVP03 Philips 3000 GR P3-880/128/10GB WA ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 447.0 Tm
-0.0000 Tw
-(    SAMPLE1 D104FNJ08 Compaq 8000 GR P3-880/1GB/10GB VIC ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 438.6 Tm
-0.0000 Tw
-(    SAMPLE1 E108HQQ06 IBM 6000 SP P4-1800/512/60GB VIC ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 430.2 Tm
-0.0000 Tw
-(    SAMPLE1 J108NQE07 Dell 7000 IT P3-880/256/40GB QLD ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 421.8 Tm
-0.0000 Tw
-(    SAMPLE1 G100YTF02 IBM 2000 FR P4-1800/128/20GB QLD ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 413.4 Tm
-0.0000 Tw
-(    SAMPLE1 L103ENU10 Fujitsu 10000 GR P4-1800/128/10GB VIC ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 405.0 Tm
-0.0000 Tw
-(    SAMPLE1 B103CUO10 Toshiba 10000 SP P3-880/256/10GB WA ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 396.6 Tm
-0.0000 Tw
-(    SAMPLE1 G105DJH10 Fujitsu 10000 EN P3-880/1GB/30GB PER ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 388.2 Tm
-0.0000 Tw
-(    SAMPLE1 G104QGG05 Dell 5000 SP P3-1200/512/20GB WA ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 379.8 Tm
-0.0000 Tw
-(    SAMPLE1 G116VHO02 Dell 2000 SP P3-1200/128/30GB ALIC ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 371.4 Tm
-0.0000 Tw
-(    SAMPLE1 C104LIS01 Dell 1000 FR P4-1600/128/20GB SYD ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 363.0 Tm
-0.0000 Tw
-(    SAMPLE1 E102ITQ08 Philips 8000 EN P4-2000/512/30GB NSW ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 354.6 Tm
-0.0000 Tw
-(    SAMPLE1 K102YAP03 HP 3000 IT P3-1200/128/30GB NSW ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 346.2 Tm
-0.0000 Tw
-(    SAMPLE1 G111IPN09 Fujitsu 9000 FR P3-1200/1GB/40GB NSW ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 325.2 Tm
-0.0000 Tw
-() Tj
-/F23 10 Tf
-0.0000 Tw
-(load table) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 309.0 Tm
-0.0000 Tw
-(    SAMPLE1 /* Table Name */ \\ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 300.6 Tm
-0.0000 Tw
-(        sample.data /* Data Source Filename */ \\ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 292.2 Tm
-0.0000 Tw
-(        1 /* Key Column Number */ \\ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 283.8 Tm
-0.0000 Tw
-(         \\ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 275.4 Tm
-0.0000 Tw
-(        DESCRIPTION = 3 \\ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 267.0 Tm
-0.0000 Tw
-(        LOCATION = 8 ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 250.2 Tm
-0.0000 Tw
-(    SAMPLE2 /* Table Name */ \\ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 241.8 Tm
-0.0000 Tw
-(        sample.data /* Data Source Filename */ \\ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 233.4 Tm
-0.0000 Tw
-(        1 /* Key Column Number */ \\ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 225.0 Tm
-0.0000 Tw
-(         \\ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 216.6 Tm
-0.0000 Tw
-(        DESCRIPTION = 3 \\ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 208.2 Tm
-0.0000 Tw
-(        LOCATION = 8 ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 187.2 Tm
-0.0000 Tw
-() Tj
-/F23 10 Tf
-0.0000 Tw
-(sort by) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 171.0 Tm
-0.0000 Tw
-(    PRODUCT_CODE string  ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 150.0 Tm
-0.0000 Tw
-() Tj
-/F23 10 Tf
-0.0000 Tw
-(group by) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 133.8 Tm
-0.0000 Tw
-(    PRODUCT_CODE string ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 112.8 Tm
-0.0000 Tw
-() Tj
-/F23 10 Tf
-0.0000 Tw
-(input section) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 96.6 Tm
-0.0000 Tw
-(    PRODUCT_CODE ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 88.2 Tm
-0.0000 Tw
-(    COST_PRICE ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 79.8 Tm
-0.0000 Tw
-(    DESCRIPTION ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 71.4 Tm
-0.0000 Tw
-(    SALES_CODE ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 63.0 Tm
-0.0000 Tw
-(    SALES_PRICE ) Tj
-/F10 7 Tf
-/F21 10 Tf
-1 0 0 1 52 37 Tm
-(6) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:19) Tj
-ET
-52 50 m
-543 50 l
-S
-endstream
-endobj
-39 0 obj
-6268
-endobj
-40 0 obj
-<<
-/ProcSet [/PDF /Text]
-/ColorSpace <</DefaultRGB 1 0 R>>
-/Font
-<<
-/F10 10 0 R
-/F21 15 0 R
 /F23 17 0 R
 >>
 >>
@@ -1667,82 +1596,314 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(external_tables.pql) Tj
+(examples/external_tables.pql) Tj
 1 0 0 1 394.05 797 Tm
 (External Tables Example Script) Tj
-/F10 7 Tf
-1 0 0 1 76.0 771.6 Tm
+/F21 12 Tf
+1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
-(    SALES_QTY ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 763.2 Tm
-0.0000 Tw
-(    SALES_DATE ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 754.8 Tm
-0.0000 Tw
-(    LOCATION ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 746.4 Tm
-0.0000 Tw
-(    S1_DESCRIPTION => %SAMPLE1\(PRODUCT_CODE\)->DESCRIPTION ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 729.6 Tm
-0.0000 Tw
-(    S1_LOCATION => %SAMPLE1\(PRODUCT_CODE\)->LOCATION ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 712.8 Tm
-0.0000 Tw
-(    S2_DESCRIPTION => %SAMPLE2\(PRODUCT_CODE\)->DESCRIPTION ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 696.0 Tm
-0.0000 Tw
-(    S2_LOCATION => %SAMPLE2\(PRODUCT_CODE\)->LOCATION ) Tj
+(5. EXAMPLES/EXTERNAL_TABLES.PQL ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 675.0 Tm
+1 0 0 1 52.0 714.0 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
 0.0000 Tw
-(output section) Tj
+(options) Tj
 /F21 10 Tf
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 658.8 Tm
+1 0 0 1 76.0 697.8 Tm
 0.0000 Tw
-(    string    PRODUCT_CODE      PRODUCT_CODE ) Tj
+(    prefix\(examples\) ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 650.4 Tm
+1 0 0 1 76.0 689.4 Tm
 0.0000 Tw
-(    numeric   RECORD_COUNT      count * ) Tj
+(    pequeldoc\(pdf\) ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 642.0 Tm
+1 0 0 1 76.0 681.0 Tm
 0.0000 Tw
-(    numeric   SALES_QTY_SAMPLE1 sum SALES_QTY where exists %SAMPLE1\(PRODUCT_CODE\) ) Tj
+(    detail\(1\) ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 633.6 Tm
+1 0 0 1 76.0 672.6 Tm
 0.0000 Tw
-(    numeric   SALES_QTY_SAMPLE2 sum SALES_QTY where exists %SAMPLE2\(PRODUCT_CODE\) ) Tj
+(    script_name\(examples/external_tables.pql\) ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 625.2 Tm
+1 0 0 1 76.0 664.2 Tm
 0.0000 Tw
-(    string    S1_DESCRIPTION    S1_DESCRIPTION ) Tj
+(    header\(1\) ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 616.8 Tm
+1 0 0 1 76.0 655.8 Tm
 0.0000 Tw
-(    string    S1_LOCATION       S1_LOCATION ) Tj
+(    optimize\(1\) ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 608.4 Tm
+1 0 0 1 76.0 647.4 Tm
 0.0000 Tw
-(    string    S2_DESCRIPTION    S2_DESCRIPTION ) Tj
+(    doc_title\(External Tables Example Script\) ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 600.0 Tm
+1 0 0 1 76.0 639.0 Tm
 0.0000 Tw
-(    string    S2_LOCATION       S2_LOCATION ) Tj
+(    doc_email\(sample@youraddress.com\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 630.6 Tm
+0.0000 Tw
+(    doc_version\(2.2\) ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 609.6 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(description) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 593.4 Tm
+0.0000 Tw
+(    Demonstrates the use of external tables. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 585.0 Tm
+0.0000 Tw
+(    The default method for loading an external table is to embed the table contents in ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 576.6 Tm
+0.0000 Tw
+(    the generated code. SAMPLE1 is a example of an embedded table. External tables ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 568.2 Tm
+0.0000 Tw
+(    may also be loaded dynamically \(at runtime\) -- the '_' table name prefix instructs ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 559.8 Tm
+0.0000 Tw
+(    Pequel to load the table dynamically. SAMPLE2 is an axample of a dynamic table. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 551.4 Tm
+0.0000 Tw
+(    The optional environment variable 'PEQUEL_TABLE_PATH' may be set to the path for ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 543.0 Tm
+0.0000 Tw
+(    the location of the table data-source-files. This path will be used to locate the ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 534.6 Tm
+0.0000 Tw
+(    data-source-files unless the data source filename is an absolute path name. ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 513.6 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(init table) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 497.4 Tm
+0.0000 Tw
+(    SAMPLE1 L103BJG04 Toshiba 4000 IT P4-1800/1GB/60GB WA ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 489.0 Tm
+0.0000 Tw
+(    SAMPLE1 A100AIX09 Compaq 9000 GR P4-1700/256/40GB WA ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 480.6 Tm
+0.0000 Tw
+(    SAMPLE1 B111KYK01 Dell 1000 FR P4-1700/128/40GB PER ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 472.2 Tm
+0.0000 Tw
+(    SAMPLE1 E100QTG07 Fujitsu 7000 SP P4-1700/512/10GB NT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 463.8 Tm
+0.0000 Tw
+(    SAMPLE1 K113JAD05 Fujitsu 5000 IT P3-1200/512/10GB PER ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 455.4 Tm
+0.0000 Tw
+(    SAMPLE1 J115JBW09 Compaq 9000 IT P3-1200/128/40GB SYD ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 447.0 Tm
+0.0000 Tw
+(    SAMPLE1 J109NYP03 HP 3000 IT P3-880/128/10GB MEL ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 438.6 Tm
+0.0000 Tw
+(    SAMPLE1 A106UIH04 Toshiba 4000 GR P4-1700/256/40GB ALIC ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 430.2 Tm
+0.0000 Tw
+(    SAMPLE1 H107VAE06 Toshiba 6000 FR P3-880/512/20GB WA ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 421.8 Tm
+0.0000 Tw
+(    SAMPLE1 F104ICW08 Compaq 8000 SP P4-1700/128/60GB PER ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 413.4 Tm
+0.0000 Tw
+(    SAMPLE1 C103WEO02 Cannon 2000 FR P4-1600/128/60GB WA ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 405.0 Tm
+0.0000 Tw
+(    SAMPLE1 I108THJ06 Dell 6000 GR P3-880/128/40GB VIC ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 396.6 Tm
+0.0000 Tw
+(    SAMPLE1 D105BWE02 IBM 2000 IT P4-1700/1GB/60GB PER ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 388.2 Tm
+0.0000 Tw
+(    SAMPLE1 G111FOI06 Toshiba 6000 FR P4-1900/512/60GB NT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 379.8 Tm
+0.0000 Tw
+(    SAMPLE1 I111AGN09 Toshiba 9000 GR P4-1700/256/10GB PER ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 371.4 Tm
+0.0000 Tw
+(    SAMPLE1 J102MLC05 Fujitsu 5000 IT P3-1200/1GB/60GB VIC ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 363.0 Tm
+0.0000 Tw
+(    SAMPLE1 G113WVH04 Compaq 4000 SP P4-1800/256/20GB NT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 354.6 Tm
+0.0000 Tw
+(    SAMPLE1 I109JTE07 IBM 7000 GR P3-1200/512/40GB MEL ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 346.2 Tm
+0.0000 Tw
+(    SAMPLE1 C119GHQ10 Dell 10000 FR P4-1700/1GB/30GB SYD ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 337.8 Tm
+0.0000 Tw
+(    SAMPLE1 I115YVQ02 Cannon 2000 EN P4-2000/256/10GB NSW ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 329.4 Tm
+0.0000 Tw
+(    SAMPLE1 F105RTJ10 Dell 10000 FR P3-900/512/20GB WA ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 321.0 Tm
+0.0000 Tw
+(    SAMPLE1 A109IWD09 Compaq 9000 IT P4-1700/128/20GB QLD ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 312.6 Tm
+0.0000 Tw
+(    SAMPLE1 E119HQG01 Dell 1000 GR P4-2000/1GB/40GB NT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 304.2 Tm
+0.0000 Tw
+(    SAMPLE1 A112HHM10 Cannon 10000 FR P3-880/256/30GB SYD ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 295.8 Tm
+0.0000 Tw
+(    SAMPLE1 K112WIS07 Dell 7000 IT P3-1200/256/20GB PER ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 287.4 Tm
+0.0000 Tw
+(    SAMPLE1 J112YXH07 IBM 7000 EN P3-1400/256/40GB VIC ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 279.0 Tm
+0.0000 Tw
+(    SAMPLE1 I105RHR09 IBM 9000 FR P3-1200/512/40GB NT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 270.6 Tm
+0.0000 Tw
+(    SAMPLE1 L116RWV08 Philips 8000 SP P3-900/128/10GB NSW ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 262.2 Tm
+0.0000 Tw
+(    SAMPLE1 D117WMU02 HP 2000 GR P4-1800/1GB/20GB QLD ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 253.8 Tm
+0.0000 Tw
+(    SAMPLE1 C119HJM01 Philips 1000 IT P3-1400/512/40GB NSW ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 245.4 Tm
+0.0000 Tw
+(    SAMPLE1 L118PFA09 Philips 9000 IT P4-1800/128/30GB SYD ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 237.0 Tm
+0.0000 Tw
+(    SAMPLE1 E112SJD07 IBM 7000 GR P3-1200/1GB/20GB SYD ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 228.6 Tm
+0.0000 Tw
+(    SAMPLE1 F102EUR03 Cannon 3000 EN P4-2000/512/30GB MEL ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 220.2 Tm
+0.0000 Tw
+(    SAMPLE1 B117DAR07 Cannon 7000 SP P4-1800/128/40GB ALIC ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 211.8 Tm
+0.0000 Tw
+(    SAMPLE1 G103TKH08 Fujitsu 8000 SP P4-1700/128/60GB ALIC ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 203.4 Tm
+0.0000 Tw
+(    SAMPLE1 G106VOK04 Fujitsu 4000 SP P3-900/512/40GB NT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 195.0 Tm
+0.0000 Tw
+(    SAMPLE1 F117WIP08 IBM 8000 IT P3-900/1GB/10GB MEL ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 186.6 Tm
+0.0000 Tw
+(    SAMPLE1 L105HMB07 Philips 7000 FR P4-1600/1GB/10GB MEL ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 178.2 Tm
+0.0000 Tw
+(    SAMPLE1 H113KDM07 Compaq 7000 EN P3-880/512/40GB NT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 169.8 Tm
+0.0000 Tw
+(    SAMPLE1 C114ERT05 IBM 5000 IT P4-1800/1GB/30GB VIC ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 161.4 Tm
+0.0000 Tw
+(    SAMPLE1 H106LAF10 Dell 10000 GR P4-2000/1GB/40GB SA ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 153.0 Tm
+0.0000 Tw
+(    SAMPLE1 E100JMA04 Cannon 4000 FR P3-1200/512/10GB VIC ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 144.6 Tm
+0.0000 Tw
+(    SAMPLE1 E104HDH01 Compaq 1000 EN P3-1200/256/20GB QLD ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 136.2 Tm
+0.0000 Tw
+(    SAMPLE1 A109AYU10 IBM 10000 FR P4-1700/512/10GB MEL ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 127.8 Tm
+0.0000 Tw
+(    SAMPLE1 K111HOR02 Cannon 2000 EN P4-1700/128/20GB NT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 119.4 Tm
+0.0000 Tw
+(    SAMPLE1 J112XUI05 Dell 5000 EN P3-880/512/30GB PER ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 111.0 Tm
+0.0000 Tw
+(    SAMPLE1 J117YTJ03 IBM 3000 EN P4-1900/128/20GB VIC ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 102.6 Tm
+0.0000 Tw
+(    SAMPLE1 D113QFU10 Compaq 10000 SP P4-1900/1GB/30GB WA ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 94.2 Tm
+0.0000 Tw
+(    SAMPLE1 K106NSX06 Fujitsu 6000 IT P3-900/256/20GB NT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 85.8 Tm
+0.0000 Tw
+(    SAMPLE1 E108UFJ05 Compaq 5000 SP P3-880/128/30GB VIC ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:19) Tj
+(16 November 2005 14:03) Tj
 1 0 0 1 537.44 37 Tm
 (7) Tj
 ET
@@ -1752,7 +1913,7 @@ S
 endstream
 endobj
 43 0 obj
-1819
+7656
 endobj
 44 0 obj
 <<
@@ -1788,334 +1949,199 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (External Tables Example Script) Tj
-1 0 0 1 452.41 797 Tm
-(external_tables.pql) Tj
-/F21 12 Tf
-1 0 0 1 52.0 750.0 Tm
+1 0 0 1 404.05 797 Tm
+(examples/external_tables.pql) Tj
+/F21 10 Tf
+1 0 0 1 52.0 780.0 Tm
 0.0000 Tw
-(6. PEQUEL GENERATED PROGRAM ) Tj
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(load table) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 731.4 Tm
+1 0 0 1 76.0 763.8 Tm
 0.0000 Tw
-( # vim: syntax=perl ts=4 sw=4 ) Tj
+(    SAMPLE1 /* Table Name */ \\ ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 723.0 Tm
+1 0 0 1 76.0 755.4 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+(        sample.data /* Data Source Filename */ \\ ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 714.6 Tm
+1 0 0 1 76.0 747.0 Tm
 0.0000 Tw
-( #Generated By: pequel Version 2.2-9, Build: Tuesday September 13 08:43:08 BST 2005 ) Tj
+(        1 /* Key Column Number */ \\ ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 706.2 Tm
+1 0 0 1 76.0 738.6 Tm
 0.0000 Tw
-( #            : https://sourceforge.net/projects/pequel/ ) Tj
+(         \\ ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 697.8 Tm
+1 0 0 1 76.0 730.2 Tm
 0.0000 Tw
-( #Script Name : external_tables.pql ) Tj
+(        DESCRIPTION = 3 \\ ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 689.4 Tm
+1 0 0 1 76.0 721.8 Tm
 0.0000 Tw
-( #Created On  : Tue Sep 13 10:19:23 2005 ) Tj
+(        LOCATION = 8 ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 681.0 Tm
+1 0 0 1 76.0 705.0 Tm
 0.0000 Tw
-( #For         :  ) Tj
+(    SAMPLE2 /* Table Name */ \\ ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 672.6 Tm
+1 0 0 1 76.0 696.6 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+(        sample.data /* Data Source Filename */ \\ ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 664.2 Tm
+1 0 0 1 76.0 688.2 Tm
 0.0000 Tw
-( #Options: ) Tj
+(        1 /* Key Column Number */ \\ ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 655.8 Tm
+1 0 0 1 76.0 679.8 Tm
 0.0000 Tw
-( #pequeldoc\(pdf\) generate pod / pdf pequel script Reference Guide. ) Tj
+(         \\ ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 647.4 Tm
+1 0 0 1 76.0 671.4 Tm
 0.0000 Tw
-( #detail\(1\) Include Pequel Generated Program chapter in Pequeldoc ) Tj
+(        DESCRIPTION = 3 \\ ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 639.0 Tm
+1 0 0 1 76.0 663.0 Tm
 0.0000 Tw
-( #script_name\(external_tables.pql\) script filename ) Tj
+(        LOCATION = 8 ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 642.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(input section) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 630.6 Tm
+1 0 0 1 76.0 625.8 Tm
 0.0000 Tw
-( #header\(1\) write header record to output. ) Tj
+(    PRODUCT_CODE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 622.2 Tm
+1 0 0 1 76.0 617.4 Tm
 0.0000 Tw
-( #optimize\(1\) optimize generated code. ) Tj
+(    COST_PRICE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 613.8 Tm
+1 0 0 1 76.0 609.0 Tm
 0.0000 Tw
-( #doc_title\(External Tables Example Script\) document title. ) Tj
+(    DESCRIPTION ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 605.4 Tm
+1 0 0 1 76.0 600.6 Tm
 0.0000 Tw
-( #doc_email\(sample@youraddress.com\) document email entry. ) Tj
+(    SALES_CODE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 597.0 Tm
+1 0 0 1 76.0 592.2 Tm
 0.0000 Tw
-( #doc_version\(2.2\) document version for pequel script. ) Tj
+(    SALES_PRICE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 588.6 Tm
+1 0 0 1 76.0 583.8 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+(    SALES_QTY ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 580.2 Tm
+1 0 0 1 76.0 575.4 Tm
 0.0000 Tw
-( use strict; ) Tj
+(    SALES_DATE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 571.8 Tm
+1 0 0 1 76.0 567.0 Tm
 0.0000 Tw
-( local $\\="\\n"; local $,="|"; ) Tj
+(    LOCATION ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 563.4 Tm
+1 0 0 1 76.0 558.6 Tm
 0.0000 Tw
-( print STDERR '[external_tables.pql ' . localtime\(\) . "] Init"; ) Tj
+(    S1_DESCRIPTION => %SAMPLE1\(PRODUCT_CODE\)->DESCRIPTION ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 555.0 Tm
+1 0 0 1 76.0 541.8 Tm
 0.0000 Tw
-( use constant VERBOSE => int 10000; ) Tj
+(    S1_LOCATION => %SAMPLE1\(PRODUCT_CODE\)->LOCATION ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 546.6 Tm
+1 0 0 1 76.0 525.0 Tm
 0.0000 Tw
-( use constant LAST_ICELL => int 11; ) Tj
+(    S2_DESCRIPTION => %SAMPLE2\(PRODUCT_CODE\)->DESCRIPTION ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 538.2 Tm
+1 0 0 1 76.0 508.2 Tm
 0.0000 Tw
-( my @I_VAL; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 529.8 Tm
+(    S2_LOCATION => %SAMPLE2\(PRODUCT_CODE\)->LOCATION ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 487.2 Tm
 0.0000 Tw
-( my @O_VAL; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 521.4 Tm
+() Tj
+/F23 10 Tf
 0.0000 Tw
-( my $key__I_PRODUCT_CODE; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 513.0 Tm
+(sort by) Tj
+/F21 10 Tf
 0.0000 Tw
-( my $previous_key__I_PRODUCT_CODE = undef; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 504.6 Tm
-0.0000 Tw
-( foreach my $f \(1..8\) \{ $O_VAL[$f] = undef; \} ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 496.2 Tm
-0.0000 Tw
-( my $_TABLE_SAMPLE1 = &InitLookupSAMPLE1; # ref to %$SAMPLE1 hash ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 487.8 Tm
-0.0000 Tw
-( my $_TABLE_SAMPLE2 = &LoadTableSAMPLE2; # ref to %$SAMPLE2 hash ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 479.4 Tm
-0.0000 Tw
-( use constant _I_PRODUCT_CODE         => int    0; ) Tj
+( ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 471.0 Tm
 0.0000 Tw
-( use constant _I_COST_PRICE           => int    1; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 462.6 Tm
+(    PRODUCT_CODE string  ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 450.0 Tm
 0.0000 Tw
-( use constant _I_DESCRIPTION          => int    2; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 454.2 Tm
+() Tj
+/F23 10 Tf
 0.0000 Tw
-( use constant _I_SALES_CODE           => int    3; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 445.8 Tm
+(group by) Tj
+/F21 10 Tf
 0.0000 Tw
-( use constant _I_SALES_PRICE          => int    4; ) Tj
+( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 437.4 Tm
+1 0 0 1 76.0 433.8 Tm
 0.0000 Tw
-( use constant _I_SALES_QTY            => int    5; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 429.0 Tm
+(    PRODUCT_CODE string ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 412.8 Tm
 0.0000 Tw
-( use constant _I_SALES_DATE           => int    6; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 420.6 Tm
+() Tj
+/F23 10 Tf
 0.0000 Tw
-( use constant _I_LOCATION             => int    7; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 412.2 Tm
+(output section) Tj
+/F21 10 Tf
 0.0000 Tw
-( use constant _I_S1_DESCRIPTION       => int    8; ) Tj
+( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 403.8 Tm
+1 0 0 1 76.0 396.6 Tm
 0.0000 Tw
-( use constant _I_S1_LOCATION          => int    9; ) Tj
+(    string    PRODUCT_CODE      PRODUCT_CODE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 395.4 Tm
+1 0 0 1 76.0 388.2 Tm
 0.0000 Tw
-( use constant _I_S2_DESCRIPTION       => int   10; ) Tj
+(    numeric   RECORD_COUNT      count * ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 387.0 Tm
+1 0 0 1 76.0 379.8 Tm
 0.0000 Tw
-( use constant _I_S2_LOCATION          => int   11; ) Tj
+(    numeric   SALES_QTY_SAMPLE1 sum SALES_QTY where exists %SAMPLE1\(PRODUCT_CODE\) ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 378.6 Tm
+1 0 0 1 76.0 371.4 Tm
 0.0000 Tw
-( use constant _O_PRODUCT_CODE         => int    1; ) Tj
+(    numeric   SALES_QTY_SAMPLE2 sum SALES_QTY where exists %SAMPLE2\(PRODUCT_CODE\) ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 370.2 Tm
+1 0 0 1 76.0 363.0 Tm
 0.0000 Tw
-( use constant _O_RECORD_COUNT         => int    2; ) Tj
+(    string    S1_DESCRIPTION    S1_DESCRIPTION ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 361.8 Tm
+1 0 0 1 76.0 354.6 Tm
 0.0000 Tw
-( use constant _O_SALES_QTY_SAMPLE1    => int    3; ) Tj
+(    string    S1_LOCATION       S1_LOCATION ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 353.4 Tm
+1 0 0 1 76.0 346.2 Tm
 0.0000 Tw
-( use constant _O_SALES_QTY_SAMPLE2    => int    4; ) Tj
+(    string    S2_DESCRIPTION    S2_DESCRIPTION ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 345.0 Tm
+1 0 0 1 76.0 337.8 Tm
 0.0000 Tw
-( use constant _O_S1_DESCRIPTION       => int    5; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 336.6 Tm
-0.0000 Tw
-( use constant _O_S1_LOCATION          => int    6; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 328.2 Tm
-0.0000 Tw
-( use constant _O_S2_DESCRIPTION       => int    7; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 319.8 Tm
-0.0000 Tw
-( use constant _O_S2_LOCATION          => int    8; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 311.4 Tm
-0.0000 Tw
-( use constant _T_SAMPLE1_FLD_DESCRIPTION   => int    0; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 303.0 Tm
-0.0000 Tw
-( use constant _T_SAMPLE1_FLD_LOCATION      => int    1; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 294.6 Tm
-0.0000 Tw
-( use constant _T_SAMPLE2_FLD_DESCRIPTION   => int    0; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 286.2 Tm
-0.0000 Tw
-( use constant _T_SAMPLE2_FLD_LOCATION      => int    1; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 277.8 Tm
-0.0000 Tw
-( use constant _I_SAMPLE1_PRODUCT_CODE_FLD_KEY          => int   12; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 269.4 Tm
-0.0000 Tw
-( use constant _I_SAMPLE1_PRODUCT_CODE_FLD_DESCRIPTION  => int   13; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 261.0 Tm
-0.0000 Tw
-( use constant _I_SAMPLE1_PRODUCT_CODE_FLD_LOCATION     => int   14; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 252.6 Tm
-0.0000 Tw
-( use constant _I_SAMPLE2_PRODUCT_CODE_FLD_KEY          => int   15; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 244.2 Tm
-0.0000 Tw
-( use constant _I_SAMPLE2_PRODUCT_CODE_FLD_DESCRIPTION  => int   16; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 235.8 Tm
-0.0000 Tw
-( use constant _I_SAMPLE2_PRODUCT_CODE_FLD_LOCATION     => int   17; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 227.4 Tm
-0.0000 Tw
-( open\(DATA, q\{cat - | sort -t'|' -y -k 1,1 |\}\) || die "Cannot open input: $!"; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 219.0 Tm
-0.0000 Tw
-( &PrintHeader\(\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 210.6 Tm
-0.0000 Tw
-( print STDERR '[external_tables.pql ' . localtime\(\) . "] Start"; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 202.2 Tm
-0.0000 Tw
-( use Benchmark; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 193.8 Tm
-0.0000 Tw
-( my $benchmark_start = new Benchmark; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 185.4 Tm
-0.0000 Tw
-( while \(<DATA>\) ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 177.0 Tm
-0.0000 Tw
-( \{ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 168.6 Tm
-0.0000 Tw
-(     print STDERR '[external_tables.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE == 0\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 160.2 Tm
-0.0000 Tw
-(     chomp; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 151.8 Tm
-0.0000 Tw
-(     @I_VAL = split\("[|]", $_\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 143.4 Tm
-0.0000 Tw
-(     $key__I_PRODUCT_CODE = $I_VAL[_I_PRODUCT_CODE]; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 135.0 Tm
-0.0000 Tw
-(     if \(!defined\($previous_key__I_PRODUCT_CODE\)\) ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 126.6 Tm
-0.0000 Tw
-(     \{ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 118.2 Tm
-0.0000 Tw
-(         $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 109.8 Tm
-0.0000 Tw
-(     \} ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 93.0 Tm
-0.0000 Tw
-(     elsif \($previous_key__I_PRODUCT_CODE ne $key__I_PRODUCT_CODE\) ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 84.6 Tm
-0.0000 Tw
-(     \{ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 76.2 Tm
-0.0000 Tw
-(         print  ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 67.8 Tm
-0.0000 Tw
-(             $O_VAL[_O_PRODUCT_CODE], ) Tj
-/F10 7 Tf
+(    string    S2_LOCATION       S2_LOCATION ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (8) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:19) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:03) Tj
 ET
 52 50 m
 543 50 l
@@ -2123,7 +2149,7 @@ S
 endstream
 endobj
 47 0 obj
-8010
+3679
 endobj
 48 0 obj
 <<
@@ -2133,6 +2159,7 @@ endobj
 <<
 /F10 10 0 R
 /F21 15 0 R
+/F23 17 0 R
 >>
 >>
 endobj
@@ -2157,333 +2184,337 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(external_tables.pql) Tj
+(examples/external_tables.pql) Tj
 1 0 0 1 394.05 797 Tm
 (External Tables Example Script) Tj
-/F10 7 Tf
-1 0 0 1 76.0 771.6 Tm
+/F21 12 Tf
+1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
-(             $O_VAL[_O_RECORD_COUNT], ) Tj
+(6. PEQUEL GENERATED PROGRAM ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 763.2 Tm
+1 0 0 1 76.0 731.4 Tm
 0.0000 Tw
-(             $O_VAL[_O_SALES_QTY_SAMPLE1], ) Tj
+( #!/usr/bin/perl ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 754.8 Tm
-0.0000 Tw
-(             $O_VAL[_O_SALES_QTY_SAMPLE2], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 746.4 Tm
-0.0000 Tw
-(             $O_VAL[_O_S1_DESCRIPTION], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 738.0 Tm
-0.0000 Tw
-(             $O_VAL[_O_S1_LOCATION], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 729.6 Tm
-0.0000 Tw
-(             $O_VAL[_O_S2_DESCRIPTION], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 721.2 Tm
-0.0000 Tw
-(             $O_VAL[_O_S2_LOCATION] ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 712.8 Tm
-0.0000 Tw
-(         ; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 704.4 Tm
-0.0000 Tw
-(         $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 696.0 Tm
-0.0000 Tw
-(         @O_VAL = undef; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 687.6 Tm
-0.0000 Tw
-(     \} ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 670.8 Tm
-0.0000 Tw
-(     $O_VAL[_O_PRODUCT_CODE] = $I_VAL[_I_PRODUCT_CODE]; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 662.4 Tm
-0.0000 Tw
-(     $O_VAL[_O_RECORD_COUNT]++; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 654.0 Tm
-0.0000 Tw
-(     $I_VAL[_I_S1_DESCRIPTION] = $\{$$_TABLE_SAMPLE1\{qq\{$I_VAL[_I_PRODUCT_CODE]\}\}\}[_T_SAMPLE1_FLD_DESCRIPTION]; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 645.6 Tm
-0.0000 Tw
-(     $O_VAL[_O_S1_DESCRIPTION] = $I_VAL[_I_S1_DESCRIPTION]; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 637.2 Tm
-0.0000 Tw
-(     $I_VAL[_I_S1_LOCATION] = $\{$$_TABLE_SAMPLE1\{qq\{$I_VAL[_I_PRODUCT_CODE]\}\}\}[_T_SAMPLE1_FLD_LOCATION]; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 628.8 Tm
-0.0000 Tw
-(     $O_VAL[_O_S1_LOCATION] = $I_VAL[_I_S1_LOCATION]; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 620.4 Tm
-0.0000 Tw
-(     $I_VAL[_I_S2_DESCRIPTION] = $\{$$_TABLE_SAMPLE2\{qq\{$I_VAL[_I_PRODUCT_CODE]\}\}\}[_T_SAMPLE2_FLD_DESCRIPTION]; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 612.0 Tm
-0.0000 Tw
-(     $O_VAL[_O_S2_DESCRIPTION] = $I_VAL[_I_S2_DESCRIPTION]; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 603.6 Tm
-0.0000 Tw
-(     $I_VAL[_I_S2_LOCATION] = $\{$$_TABLE_SAMPLE2\{qq\{$I_VAL[_I_PRODUCT_CODE]\}\}\}[_T_SAMPLE2_FLD_LOCATION]; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 595.2 Tm
-0.0000 Tw
-(     $O_VAL[_O_S2_LOCATION] = $I_VAL[_I_S2_LOCATION]; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 578.4 Tm
-0.0000 Tw
-(     if \(exists $$_TABLE_SAMPLE1\{qq\{$I_VAL[_I_PRODUCT_CODE]\}\}\) \{ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 570.0 Tm
-0.0000 Tw
-(         $O_VAL[_O_SALES_QTY_SAMPLE1] += $I_VAL[_I_SALES_QTY] unless \($I_VAL[_I_SALES_QTY] eq ''\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 561.6 Tm
-0.0000 Tw
-(     \} ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 544.8 Tm
-0.0000 Tw
-(     if \(exists $$_TABLE_SAMPLE2\{qq\{$I_VAL[_I_PRODUCT_CODE]\}\}\) \{ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 536.4 Tm
-0.0000 Tw
-(         $O_VAL[_O_SALES_QTY_SAMPLE2] += $I_VAL[_I_SALES_QTY] unless \($I_VAL[_I_SALES_QTY] eq ''\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 528.0 Tm
-0.0000 Tw
-(     \} ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 519.6 Tm
-0.0000 Tw
-( \} ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 502.8 Tm
-0.0000 Tw
-( print  ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 494.4 Tm
-0.0000 Tw
-(     $O_VAL[_O_PRODUCT_CODE], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 486.0 Tm
-0.0000 Tw
-(     $O_VAL[_O_RECORD_COUNT], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 477.6 Tm
-0.0000 Tw
-(     $O_VAL[_O_SALES_QTY_SAMPLE1], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 469.2 Tm
-0.0000 Tw
-(     $O_VAL[_O_SALES_QTY_SAMPLE2], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 460.8 Tm
-0.0000 Tw
-(     $O_VAL[_O_S1_DESCRIPTION], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 452.4 Tm
-0.0000 Tw
-(     $O_VAL[_O_S1_LOCATION], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 444.0 Tm
-0.0000 Tw
-(     $O_VAL[_O_S2_DESCRIPTION], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 435.6 Tm
-0.0000 Tw
-(     $O_VAL[_O_S2_LOCATION] ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 427.2 Tm
-0.0000 Tw
-( ; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 418.8 Tm
-0.0000 Tw
-( print STDERR '[external_tables.pql ' . localtime\(\) . "] $. records."; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 410.4 Tm
-0.0000 Tw
-( my $benchmark_end = new Benchmark; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 402.0 Tm
-0.0000 Tw
-( my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 393.6 Tm
-0.0000 Tw
-( print STDERR '[external_tables.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark_timediff\)]\}"; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 385.2 Tm
+1 0 0 1 76.0 723.0 Tm
 0.0000 Tw
 ( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 376.8 Tm
+1 0 0 1 76.0 714.6 Tm
 0.0000 Tw
-( #++++++ Table SAMPLE1 --> Type :Pequel::Type::Table::Local ++++++ ) Tj
+( # vim: syntax=perl ts=4 sw=4 ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 368.4 Tm
+1 0 0 1 76.0 706.2 Tm
 0.0000 Tw
-( sub InitLookupSAMPLE1 ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 360.0 Tm
+1 0 0 1 76.0 697.8 Tm
+0.0000 Tw
+( #Generated By: pequel Version 2.4-5, Build: Wednesday November 16 21:56:42 GMT 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 689.4 Tm
+0.0000 Tw
+( #            : http://sourceforge.net/projects/pequel/ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 681.0 Tm
+0.0000 Tw
+( #Script Name : external_tables.pql ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 672.6 Tm
+0.0000 Tw
+( #Created On  : Wed Nov 16 14:03:24 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 664.2 Tm
+0.0000 Tw
+( #Perl Version: /usr/bin/perl 5.6.1 on solaris ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 655.8 Tm
+0.0000 Tw
+( #For         :  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 647.4 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 639.0 Tm
+0.0000 Tw
+( #Options: ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 630.6 Tm
+0.0000 Tw
+( #prefix\(examples\) directory pathname prefix. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 622.2 Tm
+0.0000 Tw
+( #pequeldoc\(pdf\) generate pod / pdf pequel script Reference Guide. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 613.8 Tm
+0.0000 Tw
+( #detail\(1\) Include Pequel Generated Program chapter in Pequeldoc ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 605.4 Tm
+0.0000 Tw
+( #script_name\(examples/external_tables.pql\) script filename ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 597.0 Tm
+0.0000 Tw
+( #header\(1\) write header record to output. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 588.6 Tm
+0.0000 Tw
+( #optimize\(1\) optimize generated code. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 580.2 Tm
+0.0000 Tw
+( #doc_title\(External Tables Example Script\) document title. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 571.8 Tm
+0.0000 Tw
+( #doc_email\(sample@youraddress.com\) document email entry. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 563.4 Tm
+0.0000 Tw
+( #doc_version\(2.2\) document version for pequel script. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 555.0 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 546.6 Tm
+0.0000 Tw
+( use strict; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 538.2 Tm
+0.0000 Tw
+( use constant _I_PRODUCT_CODE         => int    0; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 529.8 Tm
+0.0000 Tw
+( use constant _I_COST_PRICE           => int    1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 521.4 Tm
+0.0000 Tw
+( use constant _I_DESCRIPTION          => int    2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 513.0 Tm
+0.0000 Tw
+( use constant _I_SALES_CODE           => int    3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 504.6 Tm
+0.0000 Tw
+( use constant _I_SALES_PRICE          => int    4; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 496.2 Tm
+0.0000 Tw
+( use constant _I_SALES_QTY            => int    5; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 487.8 Tm
+0.0000 Tw
+( use constant _I_SALES_DATE           => int    6; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 479.4 Tm
+0.0000 Tw
+( use constant _I_LOCATION             => int    7; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 471.0 Tm
+0.0000 Tw
+( use constant _I_S1_DESCRIPTION       => int    8; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 462.6 Tm
+0.0000 Tw
+( use constant _I_S1_LOCATION          => int    9; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 454.2 Tm
+0.0000 Tw
+( use constant _I_S2_DESCRIPTION       => int   10; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 445.8 Tm
+0.0000 Tw
+( use constant _I_S2_LOCATION          => int   11; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 437.4 Tm
+0.0000 Tw
+( use constant _O_PRODUCT_CODE         => int    1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 429.0 Tm
+0.0000 Tw
+( use constant _O_RECORD_COUNT         => int    2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 420.6 Tm
+0.0000 Tw
+( use constant _O_SALES_QTY_SAMPLE1    => int    3; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 412.2 Tm
+0.0000 Tw
+( use constant _O_SALES_QTY_SAMPLE2    => int    4; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 403.8 Tm
+0.0000 Tw
+( use constant _O_S1_DESCRIPTION       => int    5; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 395.4 Tm
+0.0000 Tw
+( use constant _O_S1_LOCATION          => int    6; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 387.0 Tm
+0.0000 Tw
+( use constant _O_S2_DESCRIPTION       => int    7; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 378.6 Tm
+0.0000 Tw
+( use constant _O_S2_LOCATION          => int    8; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 370.2 Tm
+0.0000 Tw
+( use constant _T_SAMPLE1_FLD_DESCRIPTION   => int    0; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 361.8 Tm
+0.0000 Tw
+( use constant _T_SAMPLE1_FLD_LOCATION      => int    1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 353.4 Tm
+0.0000 Tw
+( use constant _T_SAMPLE2_FLD_DESCRIPTION   => int    0; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 345.0 Tm
+0.0000 Tw
+( use constant _T_SAMPLE2_FLD_LOCATION      => int    1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 336.6 Tm
+0.0000 Tw
+( use constant _I_SAMPLE1_PRODUCT_CODE_FLD_KEY          => int   12; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 328.2 Tm
+0.0000 Tw
+( use constant _I_SAMPLE1_PRODUCT_CODE_FLD_DESCRIPTION  => int   13; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 319.8 Tm
+0.0000 Tw
+( use constant _I_SAMPLE1_PRODUCT_CODE_FLD_LOCATION     => int   14; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 311.4 Tm
+0.0000 Tw
+( use constant _I_SAMPLE2_PRODUCT_CODE_FLD_KEY          => int   15; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 303.0 Tm
+0.0000 Tw
+( use constant _I_SAMPLE2_PRODUCT_CODE_FLD_DESCRIPTION  => int   16; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 294.6 Tm
+0.0000 Tw
+( use constant _I_SAMPLE2_PRODUCT_CODE_FLD_LOCATION     => int   17; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 286.2 Tm
+0.0000 Tw
+( local $\\="\\n"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 277.8 Tm
+0.0000 Tw
+( local $,="|"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 269.4 Tm
+0.0000 Tw
+( print STDERR '[examples/external_tables.pql ' . localtime\(\) . "] Init"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 261.0 Tm
+0.0000 Tw
+( use constant VERBOSE => int 10000; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 252.6 Tm
+0.0000 Tw
+( use constant LAST_ICELL => int 11; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 244.2 Tm
+0.0000 Tw
+( my @I_VAL; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 235.8 Tm
+0.0000 Tw
+( my @O_VAL; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 227.4 Tm
+0.0000 Tw
+( my $_inprecs=0; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 219.0 Tm
+0.0000 Tw
+( my $key__I_PRODUCT_CODE; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 210.6 Tm
+0.0000 Tw
+( my $previous_key__I_PRODUCT_CODE = undef; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 202.2 Tm
+0.0000 Tw
+( foreach my $f \(1..8\) \{ $O_VAL[$f] = undef; \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 193.8 Tm
+0.0000 Tw
+( my $_TABLE_SAMPLE1 = &InitLookupSAMPLE1; # ref to %$SAMPLE1 hash ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 185.4 Tm
+0.0000 Tw
+( my $_TABLE_SAMPLE2 = &LoadTableSAMPLE2; # ref to %$SAMPLE2 hash ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 177.0 Tm
+0.0000 Tw
+( # Sort:PRODUCT_CODE\(asc:string\)  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 168.6 Tm
+0.0000 Tw
+( open\(DATA, q\{cat  - | sort  -t'|' -y -k 1,1 2>/dev/null |\}\) || die "Cannot open input: $!"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 160.2 Tm
+0.0000 Tw
+( &PrintHeader\(\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 151.8 Tm
+0.0000 Tw
+( print STDERR '[examples/external_tables.pql ' . localtime\(\) . "] Start"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 143.4 Tm
+0.0000 Tw
+( use Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 135.0 Tm
+0.0000 Tw
+( my $benchmark_start = new Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 126.6 Tm
+0.0000 Tw
+( while \(<DATA>\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 118.2 Tm
 0.0000 Tw
 ( \{ ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 351.6 Tm
+1 0 0 1 76.0 109.8 Tm
 0.0000 Tw
-(     my %_TABLE_SAMPLE1; ) Tj
+(     ++$_inprecs; ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 343.2 Tm
+1 0 0 1 76.0 101.4 Tm
 0.0000 Tw
-(     %_TABLE_SAMPLE1 = ) Tj
+(     print STDERR '[examples/external_tables.pql ' . localtime\(\) . "] $_inprecs records." if \($_inprecs % VERBO ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 334.8 Tm
+1 0 0 1 76.0 93.0 Tm
 0.0000 Tw
-(     \( ) Tj
+( SE == 0\); ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 326.4 Tm
+1 0 0 1 76.0 84.6 Tm
 0.0000 Tw
-(         'B101XDR04' => ['HP 4000 SP P3-1400/128/60GB', 'SA'], ) Tj
+(     chomp; ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 318.0 Tm
+1 0 0 1 76.0 76.2 Tm
 0.0000 Tw
-(         'B103CUO10' => ['Toshiba 10000 SP P3-880/256/10GB', 'WA'], ) Tj
+(     @I_VAL = split\("[|]", $_\); ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 309.6 Tm
+1 0 0 1 76.0 67.8 Tm
 0.0000 Tw
-(         'C104LIS01' => ['Dell 1000 FR P4-1600/128/20GB', 'SYD'], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 301.2 Tm
-0.0000 Tw
-(         'D104FNJ08' => ['Compaq 8000 GR P3-880/1GB/10GB', 'VIC'], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 292.8 Tm
-0.0000 Tw
-(         'E102ITQ08' => ['Philips 8000 EN P4-2000/512/30GB', 'NSW'], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 284.4 Tm
-0.0000 Tw
-(         'E108HQQ06' => ['IBM 6000 SP P4-1800/512/60GB', 'VIC'], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 276.0 Tm
-0.0000 Tw
-(         'G100YTF02' => ['IBM 2000 FR P4-1800/128/20GB', 'QLD'], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 267.6 Tm
-0.0000 Tw
-(         'G104QGG05' => ['Dell 5000 SP P3-1200/512/20GB', 'WA'], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 259.2 Tm
-0.0000 Tw
-(         'G105DJH10' => ['Fujitsu 10000 EN P3-880/1GB/30GB', 'PER'], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 250.8 Tm
-0.0000 Tw
-(         'G111IPN09' => ['Fujitsu 9000 FR P3-1200/1GB/40GB', 'NSW'], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 242.4 Tm
-0.0000 Tw
-(         'G113IVP03' => ['Philips 3000 GR P3-880/128/10GB', 'WA'], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 234.0 Tm
-0.0000 Tw
-(         'G116VHO02' => ['Dell 2000 SP P3-1200/128/30GB', 'ALIC'], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 225.6 Tm
-0.0000 Tw
-(         'J103CFG04' => ['Cannon 4000 EN P3-1400/128/20GB', 'QLD'], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 217.2 Tm
-0.0000 Tw
-(         'J108NQE07' => ['Dell 7000 IT P3-880/256/40GB', 'QLD'], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 208.8 Tm
-0.0000 Tw
-(         'K102YAP03' => ['HP 3000 IT P3-1200/128/30GB', 'NSW'], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 200.4 Tm
-0.0000 Tw
-(         'K109KWO08' => ['Philips 8000 GR P3-1300/1GB/20GB', 'NT'], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 192.0 Tm
-0.0000 Tw
-(         'L100RWT02' => ['IBM 2000 IT P4-1600/512/40GB', 'NT'], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 183.6 Tm
-0.0000 Tw
-(         'L103ENU10' => ['Fujitsu 10000 GR P4-1800/128/10GB', 'VIC'], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 175.2 Tm
-0.0000 Tw
-(         'L106FEU09' => ['Toshiba 9000 EN P4-1900/1GB/60GB', 'PER'], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 166.8 Tm
-0.0000 Tw
-(         'L118DVB09' => ['Cannon 9000 FR P4-1600/256/30GB', 'SA'] ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 158.4 Tm
-0.0000 Tw
-(     \); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 150.0 Tm
-0.0000 Tw
-(     return \\%_TABLE_SAMPLE1; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 141.6 Tm
-0.0000 Tw
-( \} ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 124.8 Tm
-0.0000 Tw
-( #++++++ Table SAMPLE2 --> Type :Pequel::Type::Table::External ++++++ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 116.4 Tm
-0.0000 Tw
-( sub LoadTableSAMPLE2 ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 108.0 Tm
-0.0000 Tw
-( \{ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 99.6 Tm
-0.0000 Tw
-(     my %_TABLE_SAMPLE2; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 91.2 Tm
-0.0000 Tw
-(     my $dsf = "@\{[ $ENV\{PEQUEL_TABLE_PATH\} eq '' ? '' : $ENV\{PEQUEL_TABLE_PATH\} . '/']\}" . 'sample.data'; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 82.8 Tm
-0.0000 Tw
-(     print STDERR '[external_tables.pql ' . localtime\(\) . "] Loading table SAMPLE2 from $dsf..."; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 74.4 Tm
-0.0000 Tw
-(     open\(SAMPLE2, "sort -u -t'|' -k 1 $dsf |"\) || die\("Unable to open table source file $dsf"\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 66.0 Tm
-0.0000 Tw
-(     while \(<SAMPLE2>\) ) Tj
+(     $key__I_PRODUCT_CODE = $I_VAL[_I_PRODUCT_CODE]; ) Tj
 /F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:19) Tj
+(16 November 2005 14:03) Tj
 1 0 0 1 537.44 37 Tm
 (9) Tj
 ET
@@ -2493,7 +2524,7 @@ S
 endstream
 endobj
 51 0 obj
-8293
+8155
 endobj
 52 0 obj
 <<
@@ -2528,117 +2559,334 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (External Tables Example Script) Tj
-1 0 0 1 452.41 797 Tm
-(external_tables.pql) Tj
+1 0 0 1 404.05 797 Tm
+(examples/external_tables.pql) Tj
 /F10 7 Tf
 1 0 0 1 76.0 771.6 Tm
 0.0000 Tw
-(     \{ ) Tj
+(     if \(!defined\($previous_key__I_PRODUCT_CODE\)\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 763.2 Tm
 0.0000 Tw
-(         chomp; ) Tj
+(     \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 754.8 Tm
 0.0000 Tw
-(         my \(@flds\) = split\("[|]", $_, -1\); ) Tj
+(         $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 746.4 Tm
 0.0000 Tw
-(         $_TABLE_SAMPLE2\{$flds[0]\} = [ @flds[ 2,7 ]]; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 738.0 Tm
-0.0000 Tw
-(         print STDERR '[external_tables.pql ' . localtime\(\) . "] Table SAMPLE2 $. records..." if \($. % 100000 = ) Tj
+(     \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 729.6 Tm
 0.0000 Tw
-( = 0\); ) Tj
+(     elsif \($previous_key__I_PRODUCT_CODE ne $key__I_PRODUCT_CODE\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 721.2 Tm
 0.0000 Tw
-(     \} ) Tj
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 712.8 Tm
+0.0000 Tw
+(         print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 704.4 Tm
 0.0000 Tw
-(     print STDERR '[external_tables.pql ' . localtime\(\) . "] Table SAMPLE2 loaded $. records."; ) Tj
+(             $O_VAL[_O_PRODUCT_CODE], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 696.0 Tm
 0.0000 Tw
-(     close\(SAMPLE2\); ) Tj
+(             $O_VAL[_O_RECORD_COUNT], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 687.6 Tm
 0.0000 Tw
-(     return \\%_TABLE_SAMPLE2; ) Tj
+(             $O_VAL[_O_SALES_QTY_SAMPLE1], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 679.2 Tm
 0.0000 Tw
-( \} ) Tj
+(             $O_VAL[_O_SALES_QTY_SAMPLE2], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 670.8 Tm
+0.0000 Tw
+(             $O_VAL[_O_S1_DESCRIPTION], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 662.4 Tm
 0.0000 Tw
-( sub PrintHeader ) Tj
+(             $O_VAL[_O_S1_LOCATION], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 654.0 Tm
 0.0000 Tw
-( \{ ) Tj
+(             $O_VAL[_O_S2_DESCRIPTION], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 645.6 Tm
 0.0000 Tw
-(     local $\\="\\n"; ) Tj
+(             $O_VAL[_O_S2_LOCATION] ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 637.2 Tm
 0.0000 Tw
-(     local $,="|"; ) Tj
+(         ; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 628.8 Tm
 0.0000 Tw
-(     print  ) Tj
+(         $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 620.4 Tm
 0.0000 Tw
-(         'PRODUCT_CODE', ) Tj
+(         @O_VAL = undef; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 612.0 Tm
 0.0000 Tw
-(         'RECORD_COUNT', ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 603.6 Tm
-0.0000 Tw
-(         'SALES_QTY_SAMPLE1', ) Tj
+(     \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 595.2 Tm
 0.0000 Tw
-(         'SALES_QTY_SAMPLE2', ) Tj
+(     $O_VAL[_O_PRODUCT_CODE] = $I_VAL[_I_PRODUCT_CODE]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 586.8 Tm
 0.0000 Tw
-(         'S1_DESCRIPTION', ) Tj
+(     $O_VAL[_O_RECORD_COUNT]++; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 578.4 Tm
 0.0000 Tw
-(         'S1_LOCATION', ) Tj
+(     $I_VAL[_I_S1_DESCRIPTION] = $\{$$_TABLE_SAMPLE1\{qq\{$I_VAL[_I_PRODUCT_CODE]\}\}\}[_T_SAMPLE1_FLD_DESCRIPTION]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 570.0 Tm
 0.0000 Tw
-(         'S2_DESCRIPTION', ) Tj
+(     $O_VAL[_O_S1_DESCRIPTION] = $I_VAL[_I_S1_DESCRIPTION]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 561.6 Tm
 0.0000 Tw
-(         'S2_LOCATION' ) Tj
+(     $I_VAL[_I_S1_LOCATION] = $\{$$_TABLE_SAMPLE1\{qq\{$I_VAL[_I_PRODUCT_CODE]\}\}\}[_T_SAMPLE1_FLD_LOCATION]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 553.2 Tm
 0.0000 Tw
-(         ; ) Tj
+(     $O_VAL[_O_S1_LOCATION] = $I_VAL[_I_S1_LOCATION]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 544.8 Tm
 0.0000 Tw
+(     $I_VAL[_I_S2_DESCRIPTION] = $\{$$_TABLE_SAMPLE2\{qq\{$I_VAL[_I_PRODUCT_CODE]\}\}\}[_T_SAMPLE2_FLD_DESCRIPTION]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 536.4 Tm
+0.0000 Tw
+(     $O_VAL[_O_S2_DESCRIPTION] = $I_VAL[_I_S2_DESCRIPTION]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 528.0 Tm
+0.0000 Tw
+(     $I_VAL[_I_S2_LOCATION] = $\{$$_TABLE_SAMPLE2\{qq\{$I_VAL[_I_PRODUCT_CODE]\}\}\}[_T_SAMPLE2_FLD_LOCATION]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 519.6 Tm
+0.0000 Tw
+(     $O_VAL[_O_S2_LOCATION] = $I_VAL[_I_S2_LOCATION]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 502.8 Tm
+0.0000 Tw
+(     if \(exists $$_TABLE_SAMPLE1\{qq\{$I_VAL[_I_PRODUCT_CODE]\}\}\) \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 494.4 Tm
+0.0000 Tw
+(         $O_VAL[_O_SALES_QTY_SAMPLE1] += $I_VAL[_I_SALES_QTY] unless \($I_VAL[_I_SALES_QTY] eq ''\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 486.0 Tm
+0.0000 Tw
+(     \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 469.2 Tm
+0.0000 Tw
+(     if \(exists $$_TABLE_SAMPLE2\{qq\{$I_VAL[_I_PRODUCT_CODE]\}\}\) \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 460.8 Tm
+0.0000 Tw
+(         $O_VAL[_O_SALES_QTY_SAMPLE2] += $I_VAL[_I_SALES_QTY] unless \($I_VAL[_I_SALES_QTY] eq ''\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 452.4 Tm
+0.0000 Tw
+(     \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 444.0 Tm
+0.0000 Tw
 ( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 427.2 Tm
+0.0000 Tw
+( print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 418.8 Tm
+0.0000 Tw
+(     $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 410.4 Tm
+0.0000 Tw
+(     $O_VAL[_O_RECORD_COUNT], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 402.0 Tm
+0.0000 Tw
+(     $O_VAL[_O_SALES_QTY_SAMPLE1], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 393.6 Tm
+0.0000 Tw
+(     $O_VAL[_O_SALES_QTY_SAMPLE2], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 385.2 Tm
+0.0000 Tw
+(     $O_VAL[_O_S1_DESCRIPTION], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 376.8 Tm
+0.0000 Tw
+(     $O_VAL[_O_S1_LOCATION], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 368.4 Tm
+0.0000 Tw
+(     $O_VAL[_O_S2_DESCRIPTION], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 360.0 Tm
+0.0000 Tw
+(     $O_VAL[_O_S2_LOCATION] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 351.6 Tm
+0.0000 Tw
+( ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 343.2 Tm
+0.0000 Tw
+( close\(DATA\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 334.8 Tm
+0.0000 Tw
+( print STDERR '[examples/external_tables.pql ' . localtime\(\) . "] $_inprecs records."; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 326.4 Tm
+0.0000 Tw
+( my $benchmark_end = new Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 318.0 Tm
+0.0000 Tw
+( my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 309.6 Tm
+0.0000 Tw
+( print STDERR '[examples/external_tables.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark_timedi ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 301.2 Tm
+0.0000 Tw
+( ff\)]\}"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 292.8 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 284.4 Tm
+0.0000 Tw
+( #++++++ Table SAMPLE1 --> Type :ETL::Pequel::Type::Table::Local ++++++ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 276.0 Tm
+0.0000 Tw
+( sub InitLookupSAMPLE1 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 267.6 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 259.2 Tm
+0.0000 Tw
+(     my %_TABLE_SAMPLE1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 250.8 Tm
+0.0000 Tw
+(     %_TABLE_SAMPLE1 = ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 242.4 Tm
+0.0000 Tw
+(     \( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 234.0 Tm
+0.0000 Tw
+(         'A100AIX09' => ['Compaq 9000 GR P4-1700/256/40GB', 'WA'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 225.6 Tm
+0.0000 Tw
+(         'A106UIH04' => ['Toshiba 4000 GR P4-1700/256/40GB', 'ALIC'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 217.2 Tm
+0.0000 Tw
+(         'A109AYU10' => ['IBM 10000 FR P4-1700/512/10GB', 'MEL'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 208.8 Tm
+0.0000 Tw
+(         'A109IWD09' => ['Compaq 9000 IT P4-1700/128/20GB', 'QLD'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 200.4 Tm
+0.0000 Tw
+(         'A112HHM10' => ['Cannon 10000 FR P3-880/256/30GB', 'SYD'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 192.0 Tm
+0.0000 Tw
+(         'B111KYK01' => ['Dell 1000 FR P4-1700/128/40GB', 'PER'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 183.6 Tm
+0.0000 Tw
+(         'B117DAR07' => ['Cannon 7000 SP P4-1800/128/40GB', 'ALIC'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 175.2 Tm
+0.0000 Tw
+(         'C103WEO02' => ['Cannon 2000 FR P4-1600/128/60GB', 'WA'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 166.8 Tm
+0.0000 Tw
+(         'C114ERT05' => ['IBM 5000 IT P4-1800/1GB/30GB', 'VIC'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 158.4 Tm
+0.0000 Tw
+(         'C119GHQ10' => ['Dell 10000 FR P4-1700/1GB/30GB', 'SYD'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 150.0 Tm
+0.0000 Tw
+(         'C119HJM01' => ['Philips 1000 IT P3-1400/512/40GB', 'NSW'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 141.6 Tm
+0.0000 Tw
+(         'D105BWE02' => ['IBM 2000 IT P4-1700/1GB/60GB', 'PER'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 133.2 Tm
+0.0000 Tw
+(         'D113QFU10' => ['Compaq 10000 SP P4-1900/1GB/30GB', 'WA'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 124.8 Tm
+0.0000 Tw
+(         'D117WMU02' => ['HP 2000 GR P4-1800/1GB/20GB', 'QLD'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 116.4 Tm
+0.0000 Tw
+(         'E100JMA04' => ['Cannon 4000 FR P3-1200/512/10GB', 'VIC'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 108.0 Tm
+0.0000 Tw
+(         'E100QTG07' => ['Fujitsu 7000 SP P4-1700/512/10GB', 'NT'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 99.6 Tm
+0.0000 Tw
+(         'E104HDH01' => ['Compaq 1000 EN P3-1200/256/20GB', 'QLD'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 91.2 Tm
+0.0000 Tw
+(         'E108UFJ05' => ['Compaq 5000 SP P3-880/128/30GB', 'VIC'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 82.8 Tm
+0.0000 Tw
+(         'E112SJD07' => ['IBM 7000 GR P3-1200/1GB/20GB', 'SYD'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 74.4 Tm
+0.0000 Tw
+(         'E119HQG01' => ['Dell 1000 GR P4-2000/1GB/40GB', 'NT'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 66.0 Tm
+0.0000 Tw
+(         'F102EUR03' => ['Cannon 3000 EN P4-2000/512/30GB', 'MEL'], ) Tj
+/F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (10) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:19) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:03) Tj
 ET
 52 50 m
 543 50 l
@@ -2646,7 +2894,7 @@ S
 endstream
 endobj
 55 0 obj
-2240
+8196
 endobj
 56 0 obj
 <<
@@ -2680,9 +2928,322 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(external_tables.pql) Tj
+(examples/external_tables.pql) Tj
 1 0 0 1 394.05 797 Tm
 (External Tables Example Script) Tj
+/F10 7 Tf
+1 0 0 1 76.0 771.6 Tm
+0.0000 Tw
+(         'F104ICW08' => ['Compaq 8000 SP P4-1700/128/60GB', 'PER'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 763.2 Tm
+0.0000 Tw
+(         'F105RTJ10' => ['Dell 10000 FR P3-900/512/20GB', 'WA'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 754.8 Tm
+0.0000 Tw
+(         'F117WIP08' => ['IBM 8000 IT P3-900/1GB/10GB', 'MEL'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 746.4 Tm
+0.0000 Tw
+(         'G103TKH08' => ['Fujitsu 8000 SP P4-1700/128/60GB', 'ALIC'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 738.0 Tm
+0.0000 Tw
+(         'G106VOK04' => ['Fujitsu 4000 SP P3-900/512/40GB', 'NT'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 729.6 Tm
+0.0000 Tw
+(         'G111FOI06' => ['Toshiba 6000 FR P4-1900/512/60GB', 'NT'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 721.2 Tm
+0.0000 Tw
+(         'G113WVH04' => ['Compaq 4000 SP P4-1800/256/20GB', 'NT'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 712.8 Tm
+0.0000 Tw
+(         'H106LAF10' => ['Dell 10000 GR P4-2000/1GB/40GB', 'SA'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 704.4 Tm
+0.0000 Tw
+(         'H107VAE06' => ['Toshiba 6000 FR P3-880/512/20GB', 'WA'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 696.0 Tm
+0.0000 Tw
+(         'H113KDM07' => ['Compaq 7000 EN P3-880/512/40GB', 'NT'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 687.6 Tm
+0.0000 Tw
+(         'I105RHR09' => ['IBM 9000 FR P3-1200/512/40GB', 'NT'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 679.2 Tm
+0.0000 Tw
+(         'I108THJ06' => ['Dell 6000 GR P3-880/128/40GB', 'VIC'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 670.8 Tm
+0.0000 Tw
+(         'I109JTE07' => ['IBM 7000 GR P3-1200/512/40GB', 'MEL'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 662.4 Tm
+0.0000 Tw
+(         'I111AGN09' => ['Toshiba 9000 GR P4-1700/256/10GB', 'PER'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 654.0 Tm
+0.0000 Tw
+(         'I115YVQ02' => ['Cannon 2000 EN P4-2000/256/10GB', 'NSW'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 645.6 Tm
+0.0000 Tw
+(         'J102MLC05' => ['Fujitsu 5000 IT P3-1200/1GB/60GB', 'VIC'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 637.2 Tm
+0.0000 Tw
+(         'J109NYP03' => ['HP 3000 IT P3-880/128/10GB', 'MEL'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 628.8 Tm
+0.0000 Tw
+(         'J112XUI05' => ['Dell 5000 EN P3-880/512/30GB', 'PER'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 620.4 Tm
+0.0000 Tw
+(         'J112YXH07' => ['IBM 7000 EN P3-1400/256/40GB', 'VIC'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 612.0 Tm
+0.0000 Tw
+(         'J115JBW09' => ['Compaq 9000 IT P3-1200/128/40GB', 'SYD'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 603.6 Tm
+0.0000 Tw
+(         'J117YTJ03' => ['IBM 3000 EN P4-1900/128/20GB', 'VIC'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 595.2 Tm
+0.0000 Tw
+(         'K106NSX06' => ['Fujitsu 6000 IT P3-900/256/20GB', 'NT'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 586.8 Tm
+0.0000 Tw
+(         'K111HOR02' => ['Cannon 2000 EN P4-1700/128/20GB', 'NT'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 578.4 Tm
+0.0000 Tw
+(         'K112WIS07' => ['Dell 7000 IT P3-1200/256/20GB', 'PER'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 570.0 Tm
+0.0000 Tw
+(         'K113JAD05' => ['Fujitsu 5000 IT P3-1200/512/10GB', 'PER'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 561.6 Tm
+0.0000 Tw
+(         'L103BJG04' => ['Toshiba 4000 IT P4-1800/1GB/60GB', 'WA'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 553.2 Tm
+0.0000 Tw
+(         'L105HMB07' => ['Philips 7000 FR P4-1600/1GB/10GB', 'MEL'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 544.8 Tm
+0.0000 Tw
+(         'L116RWV08' => ['Philips 8000 SP P3-900/128/10GB', 'NSW'], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 536.4 Tm
+0.0000 Tw
+(         'L118PFA09' => ['Philips 9000 IT P4-1800/128/30GB', 'SYD'] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 528.0 Tm
+0.0000 Tw
+(     \); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 519.6 Tm
+0.0000 Tw
+(     return \\%_TABLE_SAMPLE1; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 511.2 Tm
+0.0000 Tw
+( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 494.4 Tm
+0.0000 Tw
+( #++++++ Table SAMPLE2 --> Type :ETL::Pequel::Type::Table::External ++++++ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 486.0 Tm
+0.0000 Tw
+( sub LoadTableSAMPLE2 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 477.6 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 469.2 Tm
+0.0000 Tw
+(     my %_TABLE_SAMPLE2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 460.8 Tm
+0.0000 Tw
+(     my $dsf = 'examples/sample.data'; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 452.4 Tm
+0.0000 Tw
+(     print STDERR '[examples/external_tables.pql ' . localtime\(\) . "] Loading table SAMPLE2 from $dsf..."; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 444.0 Tm
+0.0000 Tw
+(     open\(SAMPLE2, "sort  -u -t'|' -k 1 $dsf |"\) || die\("Unable to open table source file $dsf"\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 435.6 Tm
+0.0000 Tw
+(     while \(<SAMPLE2>\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 427.2 Tm
+0.0000 Tw
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 418.8 Tm
+0.0000 Tw
+(         chomp; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 410.4 Tm
+0.0000 Tw
+(         my \(@flds\) = split\("[|]", $_, -1\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 402.0 Tm
+0.0000 Tw
+(         $_TABLE_SAMPLE2\{$flds[0]\} = [ @flds[ 2,7 ]]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 393.6 Tm
+0.0000 Tw
+(         print STDERR '[examples/external_tables.pql ' . localtime\(\) . "] Table SAMPLE2 $. records..." if \($. % ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 385.2 Tm
+0.0000 Tw
+(  100000 == 0\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 376.8 Tm
+0.0000 Tw
+(     \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 360.0 Tm
+0.0000 Tw
+(     print STDERR '[examples/external_tables.pql ' . localtime\(\) . "] Table SAMPLE2 loaded $. records."; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 351.6 Tm
+0.0000 Tw
+(     close\(SAMPLE2\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 343.2 Tm
+0.0000 Tw
+(     return \\%_TABLE_SAMPLE2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 334.8 Tm
+0.0000 Tw
+( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 318.0 Tm
+0.0000 Tw
+( sub PrintHeader ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 309.6 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 301.2 Tm
+0.0000 Tw
+(     local $\\="\\n"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 292.8 Tm
+0.0000 Tw
+(     local $,="|"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 284.4 Tm
+0.0000 Tw
+(     print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 276.0 Tm
+0.0000 Tw
+(         'PRODUCT_CODE', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 267.6 Tm
+0.0000 Tw
+(         'RECORD_COUNT', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 259.2 Tm
+0.0000 Tw
+(         'SALES_QTY_SAMPLE1', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 250.8 Tm
+0.0000 Tw
+(         'SALES_QTY_SAMPLE2', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 242.4 Tm
+0.0000 Tw
+(         'S1_DESCRIPTION', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 234.0 Tm
+0.0000 Tw
+(         'S1_LOCATION', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 225.6 Tm
+0.0000 Tw
+(         'S2_DESCRIPTION', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 217.2 Tm
+0.0000 Tw
+(         'S2_LOCATION' ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 208.8 Tm
+0.0000 Tw
+(         ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 200.4 Tm
+0.0000 Tw
+( \} ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(16 November 2005 14:03) Tj
+1 0 0 1 531.88 37 Tm
+(11) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+59 0 obj
+6573
+endobj
+60 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F10 10 0 R
+/F21 15 0 R
+>>
+>>
+endobj
+61 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 60 0 R
+/Contents 58 0 R
+>>
+endobj
+62 0 obj
+<<
+/Length 63 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(External Tables Example Script) Tj
+1 0 0 1 404.05 797 Tm
+(examples/external_tables.pql) Tj
 /F21 12 Tf
 1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
@@ -2752,19 +3313,19 @@ BT
 (the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:19) Tj
-1 0 0 1 531.88 37 Tm
-(11) Tj
+(12) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:03) Tj
 ET
 52 50 m
 543 50 l
 S
 endstream
 endobj
-59 0 obj
-2229
+63 0 obj
+2237
 endobj
-60 0 obj
+64 0 obj
 <<
 /ProcSet [/PDF /Text]
 /ColorSpace <</DefaultRGB 1 0 R>>
@@ -2773,54 +3334,6 @@ endobj
 /F20 14 0 R
 /F21 15 0 R
 /F23 17 0 R
->>
->>
-endobj
-61 0 obj
-<<
-/Type /Page
-/Parent 4 0 R
-/Resources 60 0 R
-/Contents 58 0 R
->>
-endobj
-62 0 obj
-<<
-/Length 63 0 R
->>
-stream
-52 792 m
-543 792 l
-S
-BT
-0 G
-1 i 0 J 0 j 0.1 w 10 M []0 d
-/F21 10 Tf
-1 0 0 1 52 797 Tm
-(External Tables Example Script) Tj
-1 0 0 1 452.41 797 Tm
-(external_tables.pql) Tj
-/F21 10 Tf
-1 0 0 1 52 37 Tm
-(12) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:19) Tj
-ET
-52 50 m
-543 50 l
-S
-endstream
-endobj
-63 0 obj
-277
-endobj
-64 0 obj
-<<
-/ProcSet [/PDF /Text]
-/ColorSpace <</DefaultRGB 1 0 R>>
-/Font
-<<
-/F21 15 0 R
 >>
 >>
 endobj
@@ -2835,6 +3348,102 @@ endobj
 66 0 obj
 <<
 /Length 67 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(examples/external_tables.pql) Tj
+1 0 0 1 394.05 797 Tm
+(External Tables Example Script) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(16 November 2005 14:03) Tj
+1 0 0 1 531.88 37 Tm
+(13) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+67 0 obj
+285
+endobj
+68 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F21 15 0 R
+>>
+>>
+endobj
+69 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 68 0 R
+/Contents 66 0 R
+>>
+endobj
+70 0 obj
+<<
+/Length 71 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(External Tables Example Script) Tj
+1 0 0 1 404.05 797 Tm
+(examples/external_tables.pql) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(14) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:03) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+71 0 obj
+285
+endobj
+72 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F21 15 0 R
+>>
+>>
+endobj
+73 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 72 0 R
+/Contents 70 0 R
+>>
+endobj
+74 0 obj
+<<
+/Length 75 0 R
 >>
 stream
 S
@@ -3142,7 +3751,7 @@ f
 Q
 BT
 1 0 0 1 100 386 Tm
-(2.1 pequeldoc) Tj
+(2.1 prefix) Tj
 1 0 0 1 513.44 386 Tm
 (3) Tj
 ET
@@ -3153,7 +3762,7 @@ f
 Q
 BT
 1 0 0 1 100 374 Tm
-(2.2 detail) Tj
+(2.2 pequeldoc) Tj
 1 0 0 1 513.44 374 Tm
 (3) Tj
 ET
@@ -3164,7 +3773,7 @@ f
 Q
 BT
 1 0 0 1 100 362 Tm
-(2.3 script_name) Tj
+(2.3 detail) Tj
 1 0 0 1 513.44 362 Tm
 (3) Tj
 ET
@@ -3175,7 +3784,7 @@ f
 Q
 BT
 1 0 0 1 100 350 Tm
-(2.4 header) Tj
+(2.4 script_name) Tj
 1 0 0 1 513.44 350 Tm
 (3) Tj
 ET
@@ -3186,7 +3795,7 @@ f
 Q
 BT
 1 0 0 1 100 338 Tm
-(2.5 optimize) Tj
+(2.5 header) Tj
 1 0 0 1 513.44 338 Tm
 (3) Tj
 ET
@@ -3197,7 +3806,7 @@ f
 Q
 BT
 1 0 0 1 100 326 Tm
-(2.6 doc_title) Tj
+(2.6 optimize) Tj
 1 0 0 1 513.44 326 Tm
 (3) Tj
 ET
@@ -3208,7 +3817,7 @@ f
 Q
 BT
 1 0 0 1 100 314 Tm
-(2.7 doc_email) Tj
+(2.7 doc_title) Tj
 1 0 0 1 513.44 314 Tm
 (3) Tj
 ET
@@ -3219,7 +3828,7 @@ f
 Q
 BT
 1 0 0 1 100 302 Tm
-(2.8 doc_version) Tj
+(2.8 doc_email) Tj
 1 0 0 1 513.44 302 Tm
 (3) Tj
 ET
@@ -3229,10 +3838,10 @@ q
 f
 Q
 BT
-1 0 0 1 76 290 Tm
-(3. TABLES) Tj
+1 0 0 1 100 290 Tm
+(2.9 doc_version) Tj
 1 0 0 1 513.44 290 Tm
-(4) Tj
+(3) Tj
 ET
 q
 1 g
@@ -3240,8 +3849,8 @@ q
 f
 Q
 BT
-1 0 0 1 100 278 Tm
-(3.1 SAMPLE1) Tj
+1 0 0 1 76 278 Tm
+(3. TABLES) Tj
 1 0 0 1 513.44 278 Tm
 (4) Tj
 ET
@@ -3251,8 +3860,8 @@ q
 f
 Q
 BT
-1 0 0 1 124 266 Tm
-(Data) Tj
+1 0 0 1 100 266 Tm
+(3.1 SAMPLE1) Tj
 1 0 0 1 513.44 266 Tm
 (4) Tj
 ET
@@ -3262,8 +3871,8 @@ q
 f
 Q
 BT
-1 0 0 1 100 254 Tm
-(3.2 SAMPLE2) Tj
+1 0 0 1 124 254 Tm
+(Data) Tj
 1 0 0 1 513.44 254 Tm
 (4) Tj
 ET
@@ -3273,8 +3882,8 @@ q
 f
 Q
 BT
-1 0 0 1 76 242 Tm
-(4. TABLE INFORMATION SUMMARY) Tj
+1 0 0 1 100 242 Tm
+(3.2 SAMPLE2) Tj
 1 0 0 1 513.44 242 Tm
 (5) Tj
 ET
@@ -3284,10 +3893,10 @@ q
 f
 Q
 BT
-1 0 0 1 100 230 Tm
-(4.1 Table List Sorted By Table Name) Tj
+1 0 0 1 76 230 Tm
+(4. TABLE INFORMATION SUMMARY) Tj
 1 0 0 1 513.44 230 Tm
-(5) Tj
+(6) Tj
 ET
 q
 0.95 g
@@ -3295,8 +3904,8 @@ q
 f
 Q
 BT
-1 0 0 1 76 218 Tm
-(5. EXTERNAL_TABLES.PQL) Tj
+1 0 0 1 100 218 Tm
+(4.1 Table List Sorted By Table Name) Tj
 1 0 0 1 513.44 218 Tm
 (6) Tj
 ET
@@ -3306,10 +3915,10 @@ q
 f
 Q
 BT
-1 0 0 1 100 206 Tm
-(options) Tj
+1 0 0 1 76 206 Tm
+(5. EXAMPLES/EXTERNAL_TABLES.PQL) Tj
 1 0 0 1 513.44 206 Tm
-(6) Tj
+(7) Tj
 ET
 q
 0.95 g
@@ -3318,9 +3927,9 @@ f
 Q
 BT
 1 0 0 1 100 194 Tm
-(description) Tj
+(options) Tj
 1 0 0 1 513.44 194 Tm
-(6) Tj
+(7) Tj
 ET
 q
 1 g
@@ -3329,9 +3938,9 @@ f
 Q
 BT
 1 0 0 1 100 182 Tm
-(init table) Tj
+(description) Tj
 1 0 0 1 513.44 182 Tm
-(6) Tj
+(7) Tj
 ET
 q
 0.95 g
@@ -3340,9 +3949,9 @@ f
 Q
 BT
 1 0 0 1 100 170 Tm
-(load table) Tj
+(init table) Tj
 1 0 0 1 513.44 170 Tm
-(6) Tj
+(7) Tj
 ET
 q
 1 g
@@ -3351,9 +3960,9 @@ f
 Q
 BT
 1 0 0 1 100 158 Tm
-(sort by) Tj
+(load table) Tj
 1 0 0 1 513.44 158 Tm
-(6) Tj
+(8) Tj
 ET
 q
 0.95 g
@@ -3362,9 +3971,9 @@ f
 Q
 BT
 1 0 0 1 100 146 Tm
-(group by) Tj
+(input section) Tj
 1 0 0 1 513.44 146 Tm
-(6) Tj
+(8) Tj
 ET
 q
 1 g
@@ -3373,9 +3982,9 @@ f
 Q
 BT
 1 0 0 1 100 134 Tm
-(input section) Tj
+(sort by) Tj
 1 0 0 1 513.44 134 Tm
-(6) Tj
+(8) Tj
 ET
 q
 0.95 g
@@ -3384,9 +3993,9 @@ f
 Q
 BT
 1 0 0 1 100 122 Tm
-(output section) Tj
+(group by) Tj
 1 0 0 1 513.44 122 Tm
-(7) Tj
+(8) Tj
 ET
 q
 1 g
@@ -3394,8 +4003,8 @@ q
 f
 Q
 BT
-1 0 0 1 76 110 Tm
-(6. PEQUEL GENERATED PROGRAM) Tj
+1 0 0 1 100 110 Tm
+(output section) Tj
 1 0 0 1 513.44 110 Tm
 (8) Tj
 ET
@@ -3406,9 +4015,9 @@ f
 Q
 BT
 1 0 0 1 76 98 Tm
-(7. ABOUT PEQUEL) Tj
-1 0 0 1 507.88 98 Tm
-(11) Tj
+(6. PEQUEL GENERATED PROGRAM) Tj
+1 0 0 1 513.44 98 Tm
+(9) Tj
 ET
 q
 1 g
@@ -3416,13 +4025,24 @@ q
 f
 Q
 BT
-1 0 0 1 100 86 Tm
-(COPYRIGHT) Tj
+1 0 0 1 76 86 Tm
+(7. ABOUT PEQUEL) Tj
 1 0 0 1 507.88 86 Tm
-(11) Tj
+(12) Tj
+ET
+q
+0.95 g
+52 71 491 12 re
+f
+Q
+BT
+1 0 0 1 100 74 Tm
+(COPYRIGHT) Tj
+1 0 0 1 507.88 74 Tm
+(12) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:19) Tj
+(16 November 2005 14:03) Tj
 1 0 0 1 540.22 37 Tm
 (i) Tj
 ET
@@ -3431,10 +4051,10 @@ ET
 S
 endstream
 endobj
-67 0 obj
-5677
+75 0 obj
+5782
 endobj
-68 0 obj
+76 0 obj
 <<
 /ProcSet [/PDF /Text]
 /ColorSpace <</DefaultRGB 1 0 R>>
@@ -3445,17 +4065,17 @@ endobj
 >>
 >>
 endobj
-69 0 obj
+77 0 obj
 <<
 /Type /Page
 /Parent 4 0 R
-/Resources 68 0 R
-/Contents 66 0 R
+/Resources 76 0 R
+/Contents 74 0 R
 >>
 endobj
-70 0 obj
+78 0 obj
 <<
-/Length 71 0 R
+/Length 79 0 R
 >>
 stream
 52 792 m
@@ -3472,114 +4092,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (ii) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:19) Tj
-ET
-52 50 m
-543 50 l
-S
-endstream
-endobj
-71 0 obj
-275
-endobj
-72 0 obj
-<<
-/ProcSet [/PDF /Text]
-/ColorSpace <</DefaultRGB 1 0 R>>
-/Font
-<<
-/F21 15 0 R
->>
->>
-endobj
-73 0 obj
-<<
-/Type /Page
-/Parent 4 0 R
-/Resources 72 0 R
-/Contents 70 0 R
->>
-endobj
-74 0 obj
-<<
-/Type /Page
-/Parent 4 0 R
-/Resources 77 0 R
-/Contents 75 0 R
->>
-endobj
-75 0 obj
-<<
-/Length 76 0 R
->>
-stream
-q
-1 0 0 rg
-180 626 8 130 re
-F
-Q
-0 G
-1 i 0 J 0 j 0.1 w 10 M []0 d
-210 626 m
-543 626 l
-s
-BT
-/F21 24 Tf
-1 0 0 1 210 706 Tm
-0 -30 TD
-(external_tables.pql) Tj
-T* (by ) Tj
-0 0 0.8 rg
-/F22 12 Tf
-(Pequel) Tj
-/F21 9 Tf
-T* (sample@youraddress.com) Tj
-/F20 20 Tf
-0 g
-1 0 0 1 158.01 371 Tm
-(External Tables Example Script) Tj
-/F21 9 Tf
-T* (2.2) Tj
-ET
-endstream
-endobj
-76 0 obj
-339
-endobj
-77 0 obj
-<<
-/ProcSet [/PDF /Text]
-/ColorSpace <</DefaultRGB 1 0 R>>
-/Font
-<<
-/F20 14 0 R
-/F21 15 0 R
-/F22 16 0 R
->>
->>
-endobj
-78 0 obj
-<<
-/Length 79 0 R
->>
-stream
-52 792 m
-543 792 l
-S
-BT
-0 G
-1 i 0 J 0 j 0.1 w 10 M []0 d
-/F21 10 Tf
-1 0 0 1 52 797 Tm
-(external_tables.pql) Tj
-1 0 0 1 394.05 797 Tm
-(External Tables Example Script) Tj
-/F21 10 Tf
-1 0 0 1 52 37 Tm
-(13 September 2005 10:19) Tj
-1 0 0 1 543 37 Tm
-() Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:03) Tj
 ET
 52 50 m
 543 50 l
@@ -3587,7 +4101,7 @@ S
 endstream
 endobj
 79 0 obj
-272
+274
 endobj
 80 0 obj
 <<
@@ -3607,503 +4121,618 @@ endobj
 /Contents 78 0 R
 >>
 endobj
-83 0 obj
+82 0 obj
 <<
-/Parent 82 0 R
-/Dest [69 0 R /Fit]
-/First 84 0 R
-/Last 134 0 R
-/Count 52 
-/Title (Table of Contents)
+/Type /Page
+/Parent 4 0 R
+/Resources 85 0 R
+/Contents 83 0 R
 >>
 endobj
-84 0 obj
+83 0 obj
 <<
-/Parent 83 0 R
-/Dest [21 0 R /FitH 764.4]
-/Next 85 0 R
-/Title (SCRIPT NAME)
+/Length 84 0 R
 >>
+stream
+q
+1 0 0 rg
+180 626 8 130 re
+F
+Q
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+210 626 m
+543 626 l
+s
+BT
+/F21 24 Tf
+1 0 0 1 210 706 Tm
+0 -30 TD
+(examples/external_tables.pql) Tj
+T* (by ) Tj
+0 0 0.8 rg
+/F22 12 Tf
+(Pequel) Tj
+/F21 9 Tf
+T* (sample@youraddress.com) Tj
+/F20 20 Tf
+0 g
+1 0 0 1 158.01 371 Tm
+(External Tables Example Script) Tj
+/F21 9 Tf
+T* (2.2) Tj
+ET
+endstream
+endobj
+84 0 obj
+348
 endobj
 85 0 obj
 <<
-/Parent 83 0 R
-/Dest [21 0 R /FitH 720]
-/Previous 84 0 R
-/Next 86 0 R
-/Title (DESCRIPTION)
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F20 14 0 R
+/F21 15 0 R
+/F22 16 0 R
+>>
 >>
 endobj
 86 0 obj
 <<
-/Parent 83 0 R
-/Dest [21 0 R /FitH 615.6]
-/Previous 85 0 R
-/Next 109 0 R
-/First 87 0 R
-/Last 106 0 R
-/Count 22 
-/Title (1. PROCESS DETAILS)
+/Length 87 0 R
 >>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(examples/external_tables.pql) Tj
+1 0 0 1 394.05 797 Tm
+(External Tables Example Script) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(16 November 2005 14:03) Tj
+1 0 0 1 543 37 Tm
+() Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
 endobj
 87 0 obj
-<<
-/Parent 86 0 R
-/Dest [21 0 R /FitH 460.8]
-/Next 89 0 R
-/First 88 0 R
-/Last 88 0 R
-/Count 1 
-/Title (1.1 PRODUCT_CODE)
->>
+280
 endobj
 88 0 obj
 <<
-/Parent 87 0 R
-/Dest [21 0 R /FitH 422.4]
-/Title (Description)
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F21 15 0 R
+>>
 >>
 endobj
 89 0 obj
 <<
-/Parent 86 0 R
-/Dest [21 0 R /FitH 380.4]
-/Previous 87 0 R
-/Next 91 0 R
-/First 90 0 R
-/Last 90 0 R
-/Count 1 
-/Title (1.2 RECORD_COUNT)
->>
-endobj
-90 0 obj
-<<
-/Parent 89 0 R
-/Dest [21 0 R /FitH 342]
-/Title (Description)
+/Type /Page
+/Parent 4 0 R
+/Resources 88 0 R
+/Contents 86 0 R
 >>
 endobj
 91 0 obj
 <<
-/Parent 86 0 R
-/Dest [21 0 R /FitH 300]
-/Previous 89 0 R
-/Next 94 0 R
+/Parent 90 0 R
+/Dest [77 0 R /Fit]
 /First 92 0 R
-/Last 93 0 R
-/Count 2 
-/Title (1.3 SALES_QTY_SAMPLE1)
+/Last 143 0 R
+/Count 53 
+/Title (Table of Contents)
 >>
 endobj
 92 0 obj
 <<
 /Parent 91 0 R
-/Dest [21 0 R /FitH 261.6]
+/Dest [21 0 R /FitH 764.4]
 /Next 93 0 R
-/Title (Description)
+/Title (SCRIPT NAME)
 >>
 endobj
 93 0 obj
 <<
 /Parent 91 0 R
-/Dest [21 0 R /FitH 223.2]
+/Dest [21 0 R /FitH 720]
 /Previous 92 0 R
-/Title (Aggregation condition)
+/Next 94 0 R
+/Title (DESCRIPTION)
 >>
 endobj
 94 0 obj
 <<
-/Parent 86 0 R
-/Dest [21 0 R /FitH 181.2]
-/Previous 91 0 R
-/Next 97 0 R
+/Parent 91 0 R
+/Dest [21 0 R /FitH 615.6]
+/Previous 93 0 R
+/Next 117 0 R
 /First 95 0 R
-/Last 96 0 R
-/Count 2 
-/Title (1.4 SALES_QTY_SAMPLE2)
+/Last 114 0 R
+/Count 22 
+/Title (1. PROCESS DETAILS)
 >>
 endobj
 95 0 obj
 <<
 /Parent 94 0 R
-/Dest [21 0 R /FitH 142.8]
-/Next 96 0 R
-/Title (Description)
+/Dest [21 0 R /FitH 460.8]
+/Next 97 0 R
+/First 96 0 R
+/Last 96 0 R
+/Count 1 
+/Title (1.1 PRODUCT_CODE)
 >>
 endobj
 96 0 obj
 <<
-/Parent 94 0 R
-/Dest [21 0 R /FitH 104.4]
-/Previous 95 0 R
-/Title (Aggregation condition)
+/Parent 95 0 R
+/Dest [21 0 R /FitH 422.4]
+/Title (Description)
 >>
 endobj
 97 0 obj
 <<
-/Parent 86 0 R
-/Dest [25 0 R /FitH 792]
-/Previous 94 0 R
-/Next 100 0 R
+/Parent 94 0 R
+/Dest [21 0 R /FitH 380.4]
+/Previous 95 0 R
+/Next 99 0 R
 /First 98 0 R
-/Last 99 0 R
-/Count 2 
-/Title (1.5 S1_DESCRIPTION)
+/Last 98 0 R
+/Count 1 
+/Title (1.2 RECORD_COUNT)
 >>
 endobj
 98 0 obj
 <<
 /Parent 97 0 R
-/Dest [25 0 R /FitH 753.6]
-/Next 99 0 R
+/Dest [21 0 R /FitH 342]
 /Title (Description)
 >>
 endobj
 99 0 obj
 <<
-/Parent 97 0 R
-/Dest [25 0 R /FitH 715.2]
-/Previous 98 0 R
-/Title (Derived Input Field Evaluation)
+/Parent 94 0 R
+/Dest [21 0 R /FitH 300]
+/Previous 97 0 R
+/Next 102 0 R
+/First 100 0 R
+/Last 101 0 R
+/Count 2 
+/Title (1.3 SALES_QTY_SAMPLE1)
 >>
 endobj
 100 0 obj
 <<
-/Parent 86 0 R
-/Dest [25 0 R /FitH 678]
-/Previous 97 0 R
-/Next 103 0 R
-/First 101 0 R
-/Last 102 0 R
-/Count 2 
-/Title (1.6 S1_LOCATION)
+/Parent 99 0 R
+/Dest [21 0 R /FitH 261.6]
+/Next 101 0 R
+/Title (Description)
 >>
 endobj
 101 0 obj
 <<
-/Parent 100 0 R
-/Dest [25 0 R /FitH 639.6]
-/Next 102 0 R
-/Title (Description)
+/Parent 99 0 R
+/Dest [21 0 R /FitH 223.2]
+/Previous 100 0 R
+/Title (Aggregation condition)
 >>
 endobj
 102 0 obj
 <<
-/Parent 100 0 R
-/Dest [25 0 R /FitH 601.2]
-/Previous 101 0 R
-/Title (Derived Input Field Evaluation)
+/Parent 94 0 R
+/Dest [21 0 R /FitH 181.2]
+/Previous 99 0 R
+/Next 105 0 R
+/First 103 0 R
+/Last 104 0 R
+/Count 2 
+/Title (1.4 SALES_QTY_SAMPLE2)
 >>
 endobj
 103 0 obj
 <<
-/Parent 86 0 R
-/Dest [25 0 R /FitH 564]
-/Previous 100 0 R
-/Next 106 0 R
-/First 104 0 R
-/Last 105 0 R
-/Count 2 
-/Title (1.7 S2_DESCRIPTION)
+/Parent 102 0 R
+/Dest [21 0 R /FitH 142.8]
+/Next 104 0 R
+/Title (Description)
 >>
 endobj
 104 0 obj
 <<
-/Parent 103 0 R
-/Dest [25 0 R /FitH 525.6]
-/Next 105 0 R
-/Title (Description)
+/Parent 102 0 R
+/Dest [21 0 R /FitH 104.4]
+/Previous 103 0 R
+/Title (Aggregation condition)
 >>
 endobj
 105 0 obj
 <<
-/Parent 103 0 R
-/Dest [25 0 R /FitH 487.2]
-/Previous 104 0 R
-/Title (Derived Input Field Evaluation)
+/Parent 94 0 R
+/Dest [25 0 R /FitH 792]
+/Previous 102 0 R
+/Next 108 0 R
+/First 106 0 R
+/Last 107 0 R
+/Count 2 
+/Title (1.5 S1_DESCRIPTION)
 >>
 endobj
 106 0 obj
 <<
-/Parent 86 0 R
-/Dest [25 0 R /FitH 450]
-/Previous 103 0 R
-/First 107 0 R
-/Last 108 0 R
-/Count 2 
-/Title (1.8 S2_LOCATION)
+/Parent 105 0 R
+/Dest [25 0 R /FitH 753.6]
+/Next 107 0 R
+/Title (Description)
 >>
 endobj
 107 0 obj
 <<
-/Parent 106 0 R
-/Dest [25 0 R /FitH 411.6]
-/Next 108 0 R
-/Title (Description)
+/Parent 105 0 R
+/Dest [25 0 R /FitH 715.2]
+/Previous 106 0 R
+/Title (Derived Input Field Evaluation)
 >>
 endobj
 108 0 obj
 <<
-/Parent 106 0 R
-/Dest [25 0 R /FitH 373.2]
-/Previous 107 0 R
-/Title (Derived Input Field Evaluation)
+/Parent 94 0 R
+/Dest [25 0 R /FitH 678]
+/Previous 105 0 R
+/Next 111 0 R
+/First 109 0 R
+/Last 110 0 R
+/Count 2 
+/Title (1.6 S1_LOCATION)
 >>
 endobj
 109 0 obj
 <<
-/Parent 83 0 R
-/Dest [29 0 R /FitH 764.4]
-/Previous 86 0 R
-/Next 118 0 R
-/First 110 0 R
-/Last 117 0 R
-/Count 8 
-/Title (2. CONFIGURATION SETTINGS)
+/Parent 108 0 R
+/Dest [25 0 R /FitH 639.6]
+/Next 110 0 R
+/Title (Description)
 >>
 endobj
 110 0 obj
 <<
-/Parent 109 0 R
-/Dest [29 0 R /FitH 726]
-/Next 111 0 R
-/Title (2.1 pequeldoc)
+/Parent 108 0 R
+/Dest [25 0 R /FitH 601.2]
+/Previous 109 0 R
+/Title (Derived Input Field Evaluation)
 >>
 endobj
 111 0 obj
 <<
-/Parent 109 0 R
-/Dest [29 0 R /FitH 684]
-/Previous 110 0 R
-/Next 112 0 R
-/Title (2.2 detail)
+/Parent 94 0 R
+/Dest [25 0 R /FitH 564]
+/Previous 108 0 R
+/Next 114 0 R
+/First 112 0 R
+/Last 113 0 R
+/Count 2 
+/Title (1.7 S2_DESCRIPTION)
 >>
 endobj
 112 0 obj
 <<
-/Parent 109 0 R
-/Dest [29 0 R /FitH 642]
-/Previous 111 0 R
+/Parent 111 0 R
+/Dest [25 0 R /FitH 525.6]
 /Next 113 0 R
-/Title (2.3 script_name)
+/Title (Description)
 >>
 endobj
 113 0 obj
 <<
-/Parent 109 0 R
-/Dest [29 0 R /FitH 600]
+/Parent 111 0 R
+/Dest [25 0 R /FitH 487.2]
 /Previous 112 0 R
-/Next 114 0 R
-/Title (2.4 header)
+/Title (Derived Input Field Evaluation)
 >>
 endobj
 114 0 obj
 <<
-/Parent 109 0 R
-/Dest [29 0 R /FitH 558]
-/Previous 113 0 R
-/Next 115 0 R
-/Title (2.5 optimize)
+/Parent 94 0 R
+/Dest [25 0 R /FitH 450]
+/Previous 111 0 R
+/First 115 0 R
+/Last 116 0 R
+/Count 2 
+/Title (1.8 S2_LOCATION)
 >>
 endobj
 115 0 obj
 <<
-/Parent 109 0 R
-/Dest [29 0 R /FitH 516]
-/Previous 114 0 R
+/Parent 114 0 R
+/Dest [25 0 R /FitH 411.6]
 /Next 116 0 R
-/Title (2.6 doc_title)
+/Title (Description)
 >>
 endobj
 116 0 obj
 <<
-/Parent 109 0 R
-/Dest [29 0 R /FitH 474]
+/Parent 114 0 R
+/Dest [25 0 R /FitH 373.2]
 /Previous 115 0 R
-/Next 117 0 R
-/Title (2.7 doc_email)
+/Title (Derived Input Field Evaluation)
 >>
 endobj
 117 0 obj
 <<
-/Parent 109 0 R
-/Dest [29 0 R /FitH 432]
-/Previous 116 0 R
-/Title (2.8 doc_version)
+/Parent 91 0 R
+/Dest [29 0 R /FitH 764.4]
+/Previous 94 0 R
+/Next 127 0 R
+/First 118 0 R
+/Last 126 0 R
+/Count 9 
+/Title (2. CONFIGURATION SETTINGS)
 >>
 endobj
 118 0 obj
 <<
-/Parent 83 0 R
-/Dest [33 0 R /FitH 764.4]
-/Previous 109 0 R
-/Next 122 0 R
-/First 119 0 R
-/Last 121 0 R
-/Count 3 
-/Title (3. TABLES)
+/Parent 117 0 R
+/Dest [29 0 R /FitH 726]
+/Next 119 0 R
+/Title (2.1 prefix)
 >>
 endobj
 119 0 obj
 <<
-/Parent 118 0 R
-/Dest [33 0 R /FitH 726]
-/Next 121 0 R
-/First 120 0 R
-/Last 120 0 R
-/Count 1 
-/Title (3.1 SAMPLE1)
+/Parent 117 0 R
+/Dest [29 0 R /FitH 684]
+/Previous 118 0 R
+/Next 120 0 R
+/Title (2.2 pequeldoc)
 >>
 endobj
 120 0 obj
 <<
-/Parent 119 0 R
-/Dest [33 0 R /FitH 699.6]
-/Title (Data)
+/Parent 117 0 R
+/Dest [29 0 R /FitH 642]
+/Previous 119 0 R
+/Next 121 0 R
+/Title (2.3 detail)
 >>
 endobj
 121 0 obj
 <<
-/Parent 118 0 R
-/Dest [33 0 R /FitH 417.6]
-/Previous 119 0 R
-/Title (3.2 SAMPLE2)
+/Parent 117 0 R
+/Dest [29 0 R /FitH 600]
+/Previous 120 0 R
+/Next 122 0 R
+/Title (2.4 script_name)
 >>
 endobj
 122 0 obj
 <<
-/Parent 83 0 R
-/Dest [37 0 R /FitH 764.4]
-/Previous 118 0 R
-/Next 124 0 R
-/First 123 0 R
-/Last 123 0 R
-/Count 1 
-/Title (4. TABLE INFORMATION SUMMARY)
+/Parent 117 0 R
+/Dest [29 0 R /FitH 558]
+/Previous 121 0 R
+/Next 123 0 R
+/Title (2.5 header)
 >>
 endobj
 123 0 obj
 <<
-/Parent 122 0 R
-/Dest [37 0 R /FitH 726]
-/Title (4.1 Table List Sorted By Table Name)
+/Parent 117 0 R
+/Dest [29 0 R /FitH 516]
+/Previous 122 0 R
+/Next 124 0 R
+/Title (2.6 optimize)
 >>
 endobj
 124 0 obj
 <<
-/Parent 83 0 R
-/Dest [41 0 R /FitH 764.4]
-/Previous 122 0 R
-/Next 133 0 R
-/First 125 0 R
-/Last 132 0 R
-/Count 8 
-/Title (5. EXTERNAL_TABLES.PQL)
+/Parent 117 0 R
+/Dest [29 0 R /FitH 474]
+/Previous 123 0 R
+/Next 125 0 R
+/Title (2.7 doc_title)
 >>
 endobj
 125 0 obj
 <<
-/Parent 124 0 R
-/Dest [41 0 R /FitH 726]
+/Parent 117 0 R
+/Dest [29 0 R /FitH 432]
+/Previous 124 0 R
 /Next 126 0 R
-/Title (options)
+/Title (2.8 doc_email)
 >>
 endobj
 126 0 obj
 <<
-/Parent 124 0 R
-/Dest [41 0 R /FitH 630]
+/Parent 117 0 R
+/Dest [29 0 R /FitH 390]
 /Previous 125 0 R
-/Next 127 0 R
-/Title (description)
+/Title (2.9 doc_version)
 >>
 endobj
 127 0 obj
 <<
-/Parent 124 0 R
-/Dest [41 0 R /FitH 534]
-/Previous 126 0 R
-/Next 128 0 R
-/Title (init table)
+/Parent 91 0 R
+/Dest [33 0 R /FitH 764.4]
+/Previous 117 0 R
+/Next 131 0 R
+/First 128 0 R
+/Last 130 0 R
+/Count 3 
+/Title (3. TABLES)
 >>
 endobj
 128 0 obj
 <<
-/Parent 124 0 R
-/Dest [41 0 R /FitH 337.200000000001]
-/Previous 127 0 R
-/Next 129 0 R
-/Title (load table)
+/Parent 127 0 R
+/Dest [33 0 R /FitH 726]
+/Next 130 0 R
+/First 129 0 R
+/Last 129 0 R
+/Count 1 
+/Title (3.1 SAMPLE1)
 >>
 endobj
 129 0 obj
 <<
-/Parent 124 0 R
-/Dest [41 0 R /FitH 199.200000000001]
-/Previous 128 0 R
-/Next 130 0 R
-/Title (sort by)
+/Parent 128 0 R
+/Dest [33 0 R /FitH 699.6]
+/Title (Data)
 >>
 endobj
 130 0 obj
 <<
-/Parent 124 0 R
-/Dest [41 0 R /FitH 162.000000000001]
-/Previous 129 0 R
-/Next 131 0 R
-/Title (group by)
+/Parent 127 0 R
+/Dest [37 0 R /FitH 792]
+/Previous 128 0 R
+/Title (3.2 SAMPLE2)
 >>
 endobj
 131 0 obj
 <<
-/Parent 124 0 R
-/Dest [41 0 R /FitH 124.800000000001]
-/Previous 130 0 R
-/Next 132 0 R
-/Title (input section)
+/Parent 91 0 R
+/Dest [41 0 R /FitH 764.4]
+/Previous 127 0 R
+/Next 133 0 R
+/First 132 0 R
+/Last 132 0 R
+/Count 1 
+/Title (4. TABLE INFORMATION SUMMARY)
 >>
 endobj
 132 0 obj
 <<
-/Parent 124 0 R
-/Dest [45 0 R /FitH 687]
-/Previous 131 0 R
-/Title (output section)
+/Parent 131 0 R
+/Dest [41 0 R /FitH 726]
+/Title (4.1 Table List Sorted By Table Name)
 >>
 endobj
 133 0 obj
 <<
-/Parent 83 0 R
-/Dest [49 0 R /FitH 764.4]
-/Previous 124 0 R
-/Next 134 0 R
-/Title (6. PEQUEL GENERATED PROGRAM)
+/Parent 91 0 R
+/Dest [45 0 R /FitH 764.4]
+/Previous 131 0 R
+/Next 142 0 R
+/First 134 0 R
+/Last 141 0 R
+/Count 8 
+/Title (5. EXAMPLES/EXTERNAL_TABLES.PQL)
 >>
 endobj
 134 0 obj
 <<
-/Parent 83 0 R
-/Dest [61 0 R /FitH 764.4]
-/Previous 133 0 R
-/First 135 0 R
-/Last 135 0 R
-/Count 1 
-/Title (7. ABOUT PEQUEL)
+/Parent 133 0 R
+/Dest [45 0 R /FitH 726]
+/Next 135 0 R
+/Title (options)
 >>
 endobj
 135 0 obj
 <<
-/Parent 134 0 R
-/Dest [61 0 R /FitH 681.6]
+/Parent 133 0 R
+/Dest [45 0 R /FitH 621.6]
+/Previous 134 0 R
+/Next 136 0 R
+/Title (description)
+>>
+endobj
+136 0 obj
+<<
+/Parent 133 0 R
+/Dest [45 0 R /FitH 525.6]
+/Previous 135 0 R
+/Next 137 0 R
+/Title (init table)
+>>
+endobj
+137 0 obj
+<<
+/Parent 133 0 R
+/Dest [49 0 R /FitH 792]
+/Previous 136 0 R
+/Next 138 0 R
+/Title (load table)
+>>
+endobj
+138 0 obj
+<<
+/Parent 133 0 R
+/Dest [49 0 R /FitH 654]
+/Previous 137 0 R
+/Next 139 0 R
+/Title (input section)
+>>
+endobj
+139 0 obj
+<<
+/Parent 133 0 R
+/Dest [49 0 R /FitH 499.200000000001]
+/Previous 138 0 R
+/Next 140 0 R
+/Title (sort by)
+>>
+endobj
+140 0 obj
+<<
+/Parent 133 0 R
+/Dest [49 0 R /FitH 462.000000000001]
+/Previous 139 0 R
+/Next 141 0 R
+/Title (group by)
+>>
+endobj
+141 0 obj
+<<
+/Parent 133 0 R
+/Dest [49 0 R /FitH 424.800000000001]
+/Previous 140 0 R
+/Title (output section)
+>>
+endobj
+142 0 obj
+<<
+/Parent 91 0 R
+/Dest [53 0 R /FitH 764.4]
+/Previous 133 0 R
+/Next 143 0 R
+/Title (6. PEQUEL GENERATED PROGRAM)
+>>
+endobj
+143 0 obj
+<<
+/Parent 91 0 R
+/Dest [65 0 R /FitH 764.4]
+/Previous 142 0 R
+/First 144 0 R
+/Last 144 0 R
+/Count 1 
+/Title (7. ABOUT PEQUEL)
+>>
+endobj
+144 0 obj
+<<
+/Parent 143 0 R
+/Dest [65 0 R /FitH 681.6]
 /Title (COPYRIGHT)
 >>
 endobj
-82 0 obj
+90 0 obj
 <<
 /Type /Outlines
-/Count 53
-/First 83 0 R
-/Last 135 0 R
+/Count 54
+/First 91 0 R
+/Last 144 0 R
 >>
 endobj
 3 0 obj
@@ -4111,24 +4740,24 @@ endobj
 /Type /Catalog
 /Pages 4 0 R
 /PageMode /UseOutlines
-/Outlines 82 0 R
+/Outlines 90 0 R
 >>
 endobj
 4 0 obj
 <<
 /Type /Pages
-/Kids [ 74 0 R 81 0 R 69 0 R 73 0 R 21 0 R 25 0 R 29 0 R 33 0 R 37 0 R 41 0 R 45 0 R 49 0 R 53 0 R 57 0 R 61 0 R 65 0 R ]
-/Count 16
+/Kids [ 82 0 R 89 0 R 77 0 R 81 0 R 21 0 R 25 0 R 29 0 R 33 0 R 37 0 R 41 0 R 45 0 R 49 0 R 53 0 R 57 0 R 61 0 R 65 0 R 69 0 R 73 0 R ]
+/Count 18
 /MediaBox [0 0 595 842]
 >>
 endobj
 xref
-0 136
+0 145
 0000000000 65535 f 
 0000000015 00000 n 
 0000000171 00000 n 
-0000065038 00000 n 
-0000065127 00000 n 
+0000078094 00000 n 
+0000078183 00000 n 
 0000000289 00000 n 
 0000002389 00000 n 
 0000002488 00000 n 
@@ -4143,129 +4772,138 @@ xref
 0000003400 00000 n 
 0000003506 00000 n 
 0000003620 00000 n 
-0000008514 00000 n 
-0000008535 00000 n 
-0000008685 00000 n 
-0000008768 00000 n 
-0000011732 00000 n 
-0000011753 00000 n 
-0000011891 00000 n 
-0000011974 00000 n 
-0000014050 00000 n 
-0000014071 00000 n 
-0000014197 00000 n 
-0000014280 00000 n 
-0000018382 00000 n 
-0000018403 00000 n 
-0000018529 00000 n 
-0000018612 00000 n 
-0000019472 00000 n 
-0000019492 00000 n 
-0000019630 00000 n 
-0000019713 00000 n 
-0000026035 00000 n 
-0000026056 00000 n 
-0000026182 00000 n 
-0000026265 00000 n 
-0000028138 00000 n 
-0000028159 00000 n 
-0000028285 00000 n 
-0000028368 00000 n 
-0000036432 00000 n 
-0000036453 00000 n 
-0000036567 00000 n 
-0000036650 00000 n 
-0000044997 00000 n 
-0000045018 00000 n 
-0000045132 00000 n 
-0000045215 00000 n 
-0000047509 00000 n 
-0000047530 00000 n 
-0000047644 00000 n 
-0000047727 00000 n 
-0000050010 00000 n 
-0000050031 00000 n 
-0000050157 00000 n 
-0000050240 00000 n 
-0000050571 00000 n 
-0000050591 00000 n 
-0000050693 00000 n 
-0000050776 00000 n 
-0000056507 00000 n 
-0000056528 00000 n 
-0000056642 00000 n 
-0000056725 00000 n 
-0000057054 00000 n 
-0000057074 00000 n 
-0000057176 00000 n 
-0000057259 00000 n 
-0000057342 00000 n 
-0000057735 00000 n 
-0000057755 00000 n 
-0000057881 00000 n 
-0000058207 00000 n 
-0000058227 00000 n 
-0000058329 00000 n 
-0000064962 00000 n 
-0000058412 00000 n 
-0000058535 00000 n 
-0000058633 00000 n 
-0000058746 00000 n 
-0000058908 00000 n 
-0000059048 00000 n 
-0000059133 00000 n 
-0000059290 00000 n 
-0000059373 00000 n 
-0000059533 00000 n 
-0000059631 00000 n 
-0000059743 00000 n 
-0000059905 00000 n 
-0000060003 00000 n 
-0000060115 00000 n 
-0000060273 00000 n 
-0000060371 00000 n 
-0000060492 00000 n 
-0000060650 00000 n 
-0000060751 00000 n 
-0000060875 00000 n 
-0000061037 00000 n 
-0000061138 00000 n 
-0000061262 00000 n 
-0000061407 00000 n 
-0000061508 00000 n 
-0000061632 00000 n 
-0000061802 00000 n 
-0000061903 00000 n 
-0000062019 00000 n 
-0000062140 00000 n 
-0000062256 00000 n 
-0000062374 00000 n 
-0000062493 00000 n 
-0000062612 00000 n 
-0000062719 00000 n 
-0000062874 00000 n 
-0000063012 00000 n 
-0000063092 00000 n 
-0000063197 00000 n 
-0000063371 00000 n 
-0000063480 00000 n 
-0000063648 00000 n 
-0000063743 00000 n 
-0000063860 00000 n 
-0000063976 00000 n 
-0000064105 00000 n 
-0000064231 00000 n 
-0000064358 00000 n 
-0000064490 00000 n 
-0000064596 00000 n 
-0000064730 00000 n 
-0000064877 00000 n 
+0000008531 00000 n 
+0000008552 00000 n 
+0000008702 00000 n 
+0000008785 00000 n 
+0000011757 00000 n 
+0000011778 00000 n 
+0000011916 00000 n 
+0000011999 00000 n 
+0000014292 00000 n 
+0000014313 00000 n 
+0000014439 00000 n 
+0000014522 00000 n 
+0000021556 00000 n 
+0000021577 00000 n 
+0000021703 00000 n 
+0000021786 00000 n 
+0000022978 00000 n 
+0000022999 00000 n 
+0000023125 00000 n 
+0000023208 00000 n 
+0000024076 00000 n 
+0000024096 00000 n 
+0000024234 00000 n 
+0000024317 00000 n 
+0000032027 00000 n 
+0000032048 00000 n 
+0000032174 00000 n 
+0000032257 00000 n 
+0000035990 00000 n 
+0000036011 00000 n 
+0000036137 00000 n 
+0000036220 00000 n 
+0000044429 00000 n 
+0000044450 00000 n 
+0000044564 00000 n 
+0000044647 00000 n 
+0000052897 00000 n 
+0000052918 00000 n 
+0000053032 00000 n 
+0000053115 00000 n 
+0000059742 00000 n 
+0000059763 00000 n 
+0000059877 00000 n 
+0000059960 00000 n 
+0000062251 00000 n 
+0000062272 00000 n 
+0000062398 00000 n 
+0000062481 00000 n 
+0000062820 00000 n 
+0000062840 00000 n 
+0000062942 00000 n 
+0000063025 00000 n 
+0000063364 00000 n 
+0000063384 00000 n 
+0000063486 00000 n 
+0000063569 00000 n 
+0000069405 00000 n 
+0000069426 00000 n 
+0000069540 00000 n 
+0000069623 00000 n 
+0000069951 00000 n 
+0000069971 00000 n 
+0000070073 00000 n 
+0000070156 00000 n 
+0000070239 00000 n 
+0000070641 00000 n 
+0000070661 00000 n 
+0000070787 00000 n 
+0000071121 00000 n 
+0000071141 00000 n 
+0000071243 00000 n 
+0000078018 00000 n 
+0000071326 00000 n 
+0000071449 00000 n 
+0000071547 00000 n 
+0000071660 00000 n 
+0000071822 00000 n 
+0000071962 00000 n 
+0000072047 00000 n 
+0000072204 00000 n 
+0000072287 00000 n 
+0000072450 00000 n 
+0000072550 00000 n 
+0000072664 00000 n 
+0000072830 00000 n 
+0000072931 00000 n 
+0000073046 00000 n 
+0000073208 00000 n 
+0000073309 00000 n 
+0000073433 00000 n 
+0000073592 00000 n 
+0000073693 00000 n 
+0000073817 00000 n 
+0000073979 00000 n 
+0000074080 00000 n 
+0000074204 00000 n 
+0000074349 00000 n 
+0000074450 00000 n 
+0000074574 00000 n 
+0000074744 00000 n 
+0000074842 00000 n 
+0000074961 00000 n 
+0000075077 00000 n 
+0000075198 00000 n 
+0000075314 00000 n 
+0000075432 00000 n 
+0000075551 00000 n 
+0000075670 00000 n 
+0000075777 00000 n 
+0000075932 00000 n 
+0000076070 00000 n 
+0000076150 00000 n 
+0000076253 00000 n 
+0000076427 00000 n 
+0000076536 00000 n 
+0000076713 00000 n 
+0000076808 00000 n 
+0000076927 00000 n 
+0000077045 00000 n 
+0000077161 00000 n 
+0000077280 00000 n 
+0000077406 00000 n 
+0000077533 00000 n 
+0000077652 00000 n 
+0000077786 00000 n 
+0000077933 00000 n 
 trailer
 <<
-/Size 136
+/Size 145
 /Root 3 0 R
 /Info 2 0 R
 >>
 startxref
-65317
+78387
 %%EOF

@@ -11,7 +11,7 @@
 endobj
 2 0 obj
 <<
-/CreationDate (D:20051026131253+0100)
+/CreationDate (D:20051116140602+0000)
 /Producer (Pequel)
 /Title (Counter Macros Example Script)
 >>
@@ -394,7 +394,7 @@ BT
 ( ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(26 October 2005 13:12) Tj
+(16 November 2005 14:06) Tj
 1 0 0 1 537.44 37 Tm
 (1) Tj
 ET
@@ -404,7 +404,7 @@ S
 endstream
 endobj
 19 0 obj
-3219
+3220
 endobj
 20 0 obj
 <<
@@ -453,18 +453,32 @@ BT
 (2.1 ) Tj
 /F23 10 Tf
 0.0000 Tw
-(pequeldoc) Tj
+(prefix) Tj
 /F21 10 Tf
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 702.0 Tm
 0.0000 Tw
-(generate pod / pdf pequel script Reference Guide.: pdf ) Tj
+(directory pathname prefix.: examples ) Tj
 /F21 10 Tf
 1 0 0 1 52.0 672.0 Tm
 0.0000 Tw
 (2.2 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(pequeldoc) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 660.0 Tm
+0.0000 Tw
+(generate pod / pdf pequel script Reference Guide.: pdf ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 630.0 Tm
+0.0000 Tw
+(2.3 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (detail) Tj
@@ -472,41 +486,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 660.0 Tm
-0.0000 Tw
-(Include Pequel Generated Program chapter in Pequeldoc: 1 ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 630.0 Tm
-0.0000 Tw
-(2.3 ) Tj
-/F23 10 Tf
-0.0000 Tw
-(noverbose) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
-/F20 10 Tf
 1 0 0 1 76.0 618.0 Tm
 0.0000 Tw
-(do not progress counter: 1 ) Tj
+(Include Pequel Generated Program chapter in Pequeldoc: 1 ) Tj
 /F21 10 Tf
 1 0 0 1 52.0 588.0 Tm
 0.0000 Tw
 (2.4 ) Tj
-/F23 10 Tf
-0.0000 Tw
-(prefix) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
-/F20 10 Tf
-1 0 0 1 76.0 576.0 Tm
-0.0000 Tw
-(directory pathname prefix.: examples ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 546.0 Tm
-0.0000 Tw
-(2.5 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (script_name) Tj
@@ -514,13 +500,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 534.0 Tm
+1 0 0 1 76.0 576.0 Tm
 0.0000 Tw
 (script filename: examples/macro_counters.pql ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 504.0 Tm
+1 0 0 1 52.0 546.0 Tm
 0.0000 Tw
-(2.6 ) Tj
+(2.5 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (header) Tj
@@ -528,13 +514,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 492.0 Tm
+1 0 0 1 76.0 534.0 Tm
 0.0000 Tw
 (write header record to output.: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 462.0 Tm
+1 0 0 1 52.0 504.0 Tm
 0.0000 Tw
-(2.7 ) Tj
+(2.6 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (optimize) Tj
@@ -542,13 +528,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 450.0 Tm
+1 0 0 1 76.0 492.0 Tm
 0.0000 Tw
 (optimize generated code.: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 420.0 Tm
+1 0 0 1 52.0 462.0 Tm
 0.0000 Tw
-(2.8 ) Tj
+(2.7 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (nulls) Tj
@@ -556,13 +542,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 408.0 Tm
+1 0 0 1 76.0 450.0 Tm
 0.0000 Tw
 (print zero for null numeric/decimal.: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 378.0 Tm
+1 0 0 1 52.0 420.0 Tm
 0.0000 Tw
-(2.9 ) Tj
+(2.8 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_title) Tj
@@ -570,13 +556,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 366.0 Tm
+1 0 0 1 76.0 408.0 Tm
 0.0000 Tw
 (document title.: Counter Macros Example Script ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 336.0 Tm
+1 0 0 1 52.0 378.0 Tm
 0.0000 Tw
-(2.10 ) Tj
+(2.9 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_email) Tj
@@ -584,13 +570,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 324.0 Tm
+1 0 0 1 76.0 366.0 Tm
 0.0000 Tw
 (document email entry.: sample@youraddress.com ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 294.0 Tm
+1 0 0 1 52.0 336.0 Tm
 0.0000 Tw
-(2.11 ) Tj
+(2.10 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_version) Tj
@@ -598,14 +584,14 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 282.0 Tm
+1 0 0 1 76.0 324.0 Tm
 0.0000 Tw
 (document version for pequel script.: 2.3 ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (2) Tj
-1 0 0 1 437.39 37 Tm
-(26 October 2005 13:12) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:06) Tj
 ET
 52 50 m
 543 50 l
@@ -613,7 +599,7 @@ S
 endstream
 endobj
 23 0 obj
-2631
+2438
 endobj
 24 0 obj
 <<
@@ -657,7 +643,7 @@ BT
 (3. TABLES ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(26 October 2005 13:12) Tj
+(16 November 2005 14:06) Tj
 1 0 0 1 537.44 37 Tm
 (3) Tj
 ET
@@ -667,7 +653,7 @@ S
 endstream
 endobj
 27 0 obj
-340
+341
 endobj
 28 0 obj
 <<
@@ -714,8 +700,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (4) Tj
-1 0 0 1 437.39 37 Tm
-(26 October 2005 13:12) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:06) Tj
 ET
 52 50 m
 543 50 l
@@ -723,7 +709,7 @@ S
 endstream
 endobj
 31 0 obj
-444
+445
 endobj
 32 0 obj
 <<
@@ -776,49 +762,45 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 697.8 Tm
 0.0000 Tw
-(    pequeldoc\(pdf\) ) Tj
+(    prefix\(examples\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 689.4 Tm
 0.0000 Tw
-(    detail\(1\) ) Tj
+(    pequeldoc\(pdf\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 681.0 Tm
 0.0000 Tw
-(    noverbose\(1\) ) Tj
+(    detail\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 672.6 Tm
 0.0000 Tw
-(    prefix\(examples\) ) Tj
+(    script_name\(examples/macro_counters.pql\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 664.2 Tm
 0.0000 Tw
-(    script_name\(examples/macro_counters.pql\) ) Tj
+(    header\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 655.8 Tm
 0.0000 Tw
-(    header\(1\) ) Tj
+(    optimize\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 647.4 Tm
 0.0000 Tw
-(    optimize\(1\) ) Tj
+(    nulls\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 639.0 Tm
 0.0000 Tw
-(    nulls\(1\) ) Tj
+(    doc_title\(Counter Macros Example Script\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 630.6 Tm
 0.0000 Tw
-(    doc_title\(Counter Macros Example Script\) ) Tj
+(    doc_email\(sample@youraddress.com\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 622.2 Tm
 0.0000 Tw
-(    doc_email\(sample@youraddress.com\) ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 613.8 Tm
-0.0000 Tw
 (    doc_version\(2.3\) ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 592.8 Tm
+1 0 0 1 52.0 601.2 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -828,11 +810,11 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 576.6 Tm
+1 0 0 1 76.0 585.0 Tm
 0.0000 Tw
 (    Demonstrates the use of &input_record_count\(\) macro. ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 555.6 Tm
+1 0 0 1 52.0 564.0 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -842,47 +824,47 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 539.4 Tm
+1 0 0 1 76.0 547.8 Tm
 0.0000 Tw
 (    product_code ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 531.0 Tm
+1 0 0 1 76.0 539.4 Tm
 0.0000 Tw
 (    cost_price ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 522.6 Tm
+1 0 0 1 76.0 531.0 Tm
 0.0000 Tw
 (    description ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 514.2 Tm
+1 0 0 1 76.0 522.6 Tm
 0.0000 Tw
 (    sales_code ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 505.8 Tm
+1 0 0 1 76.0 514.2 Tm
 0.0000 Tw
 (    sales_price ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 497.4 Tm
+1 0 0 1 76.0 505.8 Tm
 0.0000 Tw
 (    sales_qty ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 489.0 Tm
+1 0 0 1 76.0 497.4 Tm
 0.0000 Tw
 (    sales_date ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 480.6 Tm
+1 0 0 1 76.0 489.0 Tm
 0.0000 Tw
 (    location ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 472.2 Tm
+1 0 0 1 76.0 480.6 Tm
 0.0000 Tw
 (    salesman_list ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 463.8 Tm
+1 0 0 1 76.0 472.2 Tm
 0.0000 Tw
 (    record_number => &input_record_count\(\) ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 442.8 Tm
+1 0 0 1 52.0 451.2 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -892,24 +874,24 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 426.6 Tm
+1 0 0 1 76.0 435.0 Tm
 0.0000 Tw
 (    numeric   record_number record_number ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 418.2 Tm
+1 0 0 1 76.0 426.6 Tm
 0.0000 Tw
 (    string    location      location ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 409.8 Tm
+1 0 0 1 76.0 418.2 Tm
 0.0000 Tw
 (    string    product_code  product_code ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 401.4 Tm
+1 0 0 1 76.0 409.8 Tm
 0.0000 Tw
 (    decimal   sales_qty     sales_qty ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(26 October 2005 13:12) Tj
+(16 November 2005 14:06) Tj
 1 0 0 1 537.44 37 Tm
 (5) Tj
 ET
@@ -919,7 +901,7 @@ S
 endstream
 endobj
 35 0 obj
-2756
+2690
 endobj
 36 0 obj
 <<
@@ -980,7 +962,7 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 697.8 Tm
 0.0000 Tw
-( #Generated By: pequel Version 2.3-6, Build: Wednesday October  26 23:16:49 BST 2005 ) Tj
+( #Generated By: pequel Version 2.4-5, Build: Wednesday November 16 21:56:42 GMT 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 689.4 Tm
 0.0000 Tw
@@ -988,11 +970,11 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 681.0 Tm
 0.0000 Tw
-( #Script Name : examples/macro_counters.pql ) Tj
+( #Script Name : macro_counters.pql ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 672.6 Tm
 0.0000 Tw
-( #Created On  : Wed Oct 26 13:12:53 2005 ) Tj
+( #Created On  : Wed Nov 16 14:06:01 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 664.2 Tm
 0.0000 Tw
@@ -1012,119 +994,119 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 630.6 Tm
 0.0000 Tw
-( #pequeldoc\(pdf\) generate pod / pdf pequel script Reference Guide. ) Tj
+( #prefix\(examples\) directory pathname prefix. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 622.2 Tm
 0.0000 Tw
-( #detail\(1\) Include Pequel Generated Program chapter in Pequeldoc ) Tj
+( #pequeldoc\(pdf\) generate pod / pdf pequel script Reference Guide. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 613.8 Tm
 0.0000 Tw
-( #noverbose\(1\) do not progress counter ) Tj
+( #detail\(1\) Include Pequel Generated Program chapter in Pequeldoc ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 605.4 Tm
 0.0000 Tw
-( #prefix\(examples\) directory pathname prefix. ) Tj
+( #script_name\(examples/macro_counters.pql\) script filename ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 597.0 Tm
 0.0000 Tw
-( #script_name\(examples/macro_counters.pql\) script filename ) Tj
+( #header\(1\) write header record to output. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 588.6 Tm
 0.0000 Tw
-( #header\(1\) write header record to output. ) Tj
+( #optimize\(1\) optimize generated code. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 580.2 Tm
 0.0000 Tw
-( #optimize\(1\) optimize generated code. ) Tj
+( #nulls\(1\) print zero for null numeric/decimal. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 571.8 Tm
 0.0000 Tw
-( #nulls\(1\) print zero for null numeric/decimal. ) Tj
+( #doc_title\(Counter Macros Example Script\) document title. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 563.4 Tm
 0.0000 Tw
-( #doc_title\(Counter Macros Example Script\) document title. ) Tj
+( #doc_email\(sample@youraddress.com\) document email entry. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 555.0 Tm
 0.0000 Tw
-( #doc_email\(sample@youraddress.com\) document email entry. ) Tj
+( #doc_version\(2.3\) document version for pequel script. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 546.6 Tm
 0.0000 Tw
-( #doc_version\(2.3\) document version for pequel script. ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 538.2 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( use strict; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 529.8 Tm
 0.0000 Tw
-( use strict; ) Tj
+( use constant _I_product_code     => int    0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 521.4 Tm
 0.0000 Tw
-( use constant _I_product_code     => int    0; ) Tj
+( use constant _I_cost_price       => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 513.0 Tm
 0.0000 Tw
-( use constant _I_cost_price       => int    1; ) Tj
+( use constant _I_description      => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 504.6 Tm
 0.0000 Tw
-( use constant _I_description      => int    2; ) Tj
+( use constant _I_sales_code       => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 496.2 Tm
 0.0000 Tw
-( use constant _I_sales_code       => int    3; ) Tj
+( use constant _I_sales_price      => int    4; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 487.8 Tm
 0.0000 Tw
-( use constant _I_sales_price      => int    4; ) Tj
+( use constant _I_sales_qty        => int    5; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 479.4 Tm
 0.0000 Tw
-( use constant _I_sales_qty        => int    5; ) Tj
+( use constant _I_sales_date       => int    6; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 471.0 Tm
 0.0000 Tw
-( use constant _I_sales_date       => int    6; ) Tj
+( use constant _I_location         => int    7; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 462.6 Tm
 0.0000 Tw
-( use constant _I_location         => int    7; ) Tj
+( use constant _I_salesman_list    => int    8; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 454.2 Tm
 0.0000 Tw
-( use constant _I_salesman_list    => int    8; ) Tj
+( use constant _I_record_number    => int    9; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 445.8 Tm
 0.0000 Tw
-( use constant _I_record_number    => int    9; ) Tj
+( use constant _O_record_number    => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 437.4 Tm
 0.0000 Tw
-( use constant _O_record_number    => int    1; ) Tj
+( use constant _O_location         => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 429.0 Tm
 0.0000 Tw
-( use constant _O_location         => int    2; ) Tj
+( use constant _O_product_code     => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 420.6 Tm
 0.0000 Tw
-( use constant _O_product_code     => int    3; ) Tj
+( use constant _O_sales_qty        => int    4; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 412.2 Tm
 0.0000 Tw
-( use constant _O_sales_qty        => int    4; ) Tj
+( local $\\="\\n"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 403.8 Tm
 0.0000 Tw
-( local $\\="\\n"; ) Tj
+( local $,="|"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 395.4 Tm
 0.0000 Tw
-( local $,="|"; ) Tj
+( print STDERR '[examples/macro_counters.pql ' . localtime\(\) . "] Init"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 387.0 Tm
 0.0000 Tw
@@ -1144,128 +1126,145 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 353.4 Tm
 0.0000 Tw
-( foreach my $f \(1..4\) \{ $O_VAL[$f] = undef; \} ) Tj
+( my $_inprecs=0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 345.0 Tm
 0.0000 Tw
-( &PrintHeader\(\); ) Tj
+( foreach my $f \(1..4\) \{ $O_VAL[$f] = undef; \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 336.6 Tm
 0.0000 Tw
-( while \(<STDIN>\) ) Tj
+( &PrintHeader\(\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 328.2 Tm
 0.0000 Tw
-( \{ ) Tj
+( print STDERR '[examples/macro_counters.pql ' . localtime\(\) . "] Start"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 319.8 Tm
 0.0000 Tw
-(     chomp; ) Tj
+( use Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 311.4 Tm
 0.0000 Tw
-(     @I_VAL = split\("[|]", $_\); ) Tj
+( my $benchmark_start = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 303.0 Tm
 0.0000 Tw
-(     $I_VAL[_I_record_number] = int\($.\); ) Tj
+( while \(<STDIN>\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 294.6 Tm
 0.0000 Tw
-(     $O_VAL[_O_record_number] = $I_VAL[_I_record_number]; ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 286.2 Tm
 0.0000 Tw
-(     $O_VAL[_O_location] = $I_VAL[_I_location]; ) Tj
+(     ++$_inprecs; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 277.8 Tm
 0.0000 Tw
-(     $O_VAL[_O_product_code] = $I_VAL[_I_product_code]; ) Tj
+(     print STDERR '[examples/macro_counters.pql ' . localtime\(\) . "] $_inprecs records." if \($_inprecs % VERBOS ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 269.4 Tm
 0.0000 Tw
-(     $O_VAL[_O_sales_qty] = $I_VAL[_I_sales_qty]; ) Tj
+( E == 0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 261.0 Tm
 0.0000 Tw
-(     print STDOUT ) Tj
+(     chomp; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 252.6 Tm
 0.0000 Tw
-(         $O_VAL[_O_record_number], ) Tj
+(     @I_VAL = split\("[|]", $_\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 244.2 Tm
 0.0000 Tw
-(         $O_VAL[_O_location], ) Tj
+(     $I_VAL[_I_record_number] = int\($.\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 235.8 Tm
 0.0000 Tw
-(         $O_VAL[_O_product_code], ) Tj
+(     $O_VAL[_O_record_number] = $I_VAL[_I_record_number]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 227.4 Tm
 0.0000 Tw
-(         $O_VAL[_O_sales_qty] ) Tj
+(     $O_VAL[_O_location] = $I_VAL[_I_location]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 219.0 Tm
 0.0000 Tw
-(     ; ) Tj
+(     $O_VAL[_O_product_code] = $I_VAL[_I_product_code]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 210.6 Tm
 0.0000 Tw
-( \} ) Tj
+(     $O_VAL[_O_sales_qty] = $I_VAL[_I_sales_qty]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 202.2 Tm
+0.0000 Tw
+(     print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 193.8 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+(         $O_VAL[_O_record_number], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 185.4 Tm
 0.0000 Tw
-( sub PrintHeader ) Tj
+(         $O_VAL[_O_location], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 177.0 Tm
 0.0000 Tw
-( \{ ) Tj
+(         $O_VAL[_O_product_code], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 168.6 Tm
 0.0000 Tw
-(     local $\\="\\n"; ) Tj
+(         $O_VAL[_O_sales_qty] ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 160.2 Tm
 0.0000 Tw
-(     local $,="|"; ) Tj
+(     ; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 151.8 Tm
 0.0000 Tw
-(     print  ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 143.4 Tm
-0.0000 Tw
-(         'record_number', ) Tj
+( \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 135.0 Tm
 0.0000 Tw
-(         'location', ) Tj
+( close\(STDIN\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 126.6 Tm
 0.0000 Tw
-(         'product_code', ) Tj
+( print STDERR '[examples/macro_counters.pql ' . localtime\(\) . "] $_inprecs records."; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 118.2 Tm
 0.0000 Tw
-(         'sales_qty' ) Tj
+( my $benchmark_end = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 109.8 Tm
 0.0000 Tw
-(         ; ) Tj
+( my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 101.4 Tm
 0.0000 Tw
-( \} ) Tj
+( print STDERR '[examples/macro_counters.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark_timedif ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 93.0 Tm
+0.0000 Tw
+( f\)]\}"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 84.6 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 76.2 Tm
+0.0000 Tw
+( sub PrintHeader ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 67.8 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (6) Tj
-1 0 0 1 437.39 37 Tm
-(26 October 2005 13:12) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:06) Tj
 ET
 52 50 m
 543 50 l
@@ -1273,7 +1272,7 @@ S
 endstream
 endobj
 39 0 obj
-6954
+7645
 endobj
 40 0 obj
 <<
@@ -1310,6 +1309,91 @@ BT
 (examples/macro_counters.pql) Tj
 1 0 0 1 391.85 797 Tm
 (Counter Macros Example Script) Tj
+/F10 7 Tf
+1 0 0 1 76.0 771.6 Tm
+0.0000 Tw
+(     local $\\="\\n"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 763.2 Tm
+0.0000 Tw
+(     local $,="|"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 754.8 Tm
+0.0000 Tw
+(     print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 746.4 Tm
+0.0000 Tw
+(         'record_number', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 738.0 Tm
+0.0000 Tw
+(         'location', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 729.6 Tm
+0.0000 Tw
+(         'product_code', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 721.2 Tm
+0.0000 Tw
+(         'sales_qty' ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 712.8 Tm
+0.0000 Tw
+(         ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 704.4 Tm
+0.0000 Tw
+( \} ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(16 November 2005 14:06) Tj
+1 0 0 1 537.44 37 Tm
+(7) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+43 0 obj
+881
+endobj
+44 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F10 10 0 R
+/F21 15 0 R
+>>
+>>
+endobj
+45 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 44 0 R
+/Contents 42 0 R
+>>
+endobj
+46 0 obj
+<<
+/Length 47 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Counter Macros Example Script) Tj
+1 0 0 1 399.06 797 Tm
+(examples/macro_counters.pql) Tj
 /F21 12 Tf
 1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
@@ -1379,19 +1463,19 @@ BT
 (the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(26 October 2005 13:12) Tj
-1 0 0 1 537.44 37 Tm
-(7) Tj
+(8) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:06) Tj
 ET
 52 50 m
 543 50 l
 S
 endstream
 endobj
-43 0 obj
-2233
+47 0 obj
+2234
 endobj
-44 0 obj
+48 0 obj
 <<
 /ProcSet [/PDF /Text]
 /ColorSpace <</DefaultRGB 1 0 R>>
@@ -1403,17 +1487,65 @@ endobj
 >>
 >>
 endobj
-45 0 obj
+49 0 obj
 <<
 /Type /Page
 /Parent 4 0 R
-/Resources 44 0 R
-/Contents 42 0 R
+/Resources 48 0 R
+/Contents 46 0 R
 >>
 endobj
-46 0 obj
+50 0 obj
 <<
-/Length 47 0 R
+/Length 51 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(examples/macro_counters.pql) Tj
+1 0 0 1 391.85 797 Tm
+(Counter Macros Example Script) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(16 November 2005 14:06) Tj
+1 0 0 1 537.44 37 Tm
+(9) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+51 0 obj
+282
+endobj
+52 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F21 15 0 R
+>>
+>>
+endobj
+53 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 52 0 R
+/Contents 50 0 R
+>>
+endobj
+54 0 obj
+<<
+/Length 55 0 R
 >>
 stream
 52 792 m
@@ -1429,19 +1561,19 @@ BT
 (examples/macro_counters.pql) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(8) Tj
-1 0 0 1 437.39 37 Tm
-(26 October 2005 13:12) Tj
+(10) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:06) Tj
 ET
 52 50 m
 543 50 l
 S
 endstream
 endobj
-47 0 obj
-281
+55 0 obj
+283
 endobj
-48 0 obj
+56 0 obj
 <<
 /ProcSet [/PDF /Text]
 /ColorSpace <</DefaultRGB 1 0 R>>
@@ -1451,17 +1583,17 @@ endobj
 >>
 >>
 endobj
-49 0 obj
+57 0 obj
 <<
 /Type /Page
 /Parent 4 0 R
-/Resources 48 0 R
-/Contents 46 0 R
+/Resources 56 0 R
+/Contents 54 0 R
 >>
 endobj
-50 0 obj
+58 0 obj
 <<
-/Length 51 0 R
+/Length 59 0 R
 >>
 stream
 S
@@ -1626,7 +1758,7 @@ f
 Q
 BT
 1 0 0 1 100 542 Tm
-(2.1 pequeldoc) Tj
+(2.1 prefix) Tj
 1 0 0 1 513.44 542 Tm
 (2) Tj
 ET
@@ -1637,7 +1769,7 @@ f
 Q
 BT
 1 0 0 1 100 530 Tm
-(2.2 detail) Tj
+(2.2 pequeldoc) Tj
 1 0 0 1 513.44 530 Tm
 (2) Tj
 ET
@@ -1648,7 +1780,7 @@ f
 Q
 BT
 1 0 0 1 100 518 Tm
-(2.3 noverbose) Tj
+(2.3 detail) Tj
 1 0 0 1 513.44 518 Tm
 (2) Tj
 ET
@@ -1659,7 +1791,7 @@ f
 Q
 BT
 1 0 0 1 100 506 Tm
-(2.4 prefix) Tj
+(2.4 script_name) Tj
 1 0 0 1 513.44 506 Tm
 (2) Tj
 ET
@@ -1670,7 +1802,7 @@ f
 Q
 BT
 1 0 0 1 100 494 Tm
-(2.5 script_name) Tj
+(2.5 header) Tj
 1 0 0 1 513.44 494 Tm
 (2) Tj
 ET
@@ -1681,7 +1813,7 @@ f
 Q
 BT
 1 0 0 1 100 482 Tm
-(2.6 header) Tj
+(2.6 optimize) Tj
 1 0 0 1 513.44 482 Tm
 (2) Tj
 ET
@@ -1692,7 +1824,7 @@ f
 Q
 BT
 1 0 0 1 100 470 Tm
-(2.7 optimize) Tj
+(2.7 nulls) Tj
 1 0 0 1 513.44 470 Tm
 (2) Tj
 ET
@@ -1703,7 +1835,7 @@ f
 Q
 BT
 1 0 0 1 100 458 Tm
-(2.8 nulls) Tj
+(2.8 doc_title) Tj
 1 0 0 1 513.44 458 Tm
 (2) Tj
 ET
@@ -1714,7 +1846,7 @@ f
 Q
 BT
 1 0 0 1 100 446 Tm
-(2.9 doc_title) Tj
+(2.9 doc_email) Tj
 1 0 0 1 513.44 446 Tm
 (2) Tj
 ET
@@ -1725,7 +1857,7 @@ f
 Q
 BT
 1 0 0 1 100 434 Tm
-(2.10 doc_email) Tj
+(2.10 doc_version) Tj
 1 0 0 1 513.44 434 Tm
 (2) Tj
 ET
@@ -1735,10 +1867,10 @@ q
 f
 Q
 BT
-1 0 0 1 100 422 Tm
-(2.11 doc_version) Tj
+1 0 0 1 76 422 Tm
+(3. TABLES) Tj
 1 0 0 1 513.44 422 Tm
-(2) Tj
+(3) Tj
 ET
 q
 0.95 g
@@ -1747,9 +1879,9 @@ f
 Q
 BT
 1 0 0 1 76 410 Tm
-(3. TABLES) Tj
+(4. TABLE INFORMATION SUMMARY) Tj
 1 0 0 1 513.44 410 Tm
-(3) Tj
+(4) Tj
 ET
 q
 1 g
@@ -1757,8 +1889,8 @@ q
 f
 Q
 BT
-1 0 0 1 76 398 Tm
-(4. TABLE INFORMATION SUMMARY) Tj
+1 0 0 1 100 398 Tm
+(4.1 Table List Sorted By Table Name) Tj
 1 0 0 1 513.44 398 Tm
 (4) Tj
 ET
@@ -1768,10 +1900,10 @@ q
 f
 Q
 BT
-1 0 0 1 100 386 Tm
-(4.1 Table List Sorted By Table Name) Tj
+1 0 0 1 76 386 Tm
+(5. EXAMPLES/MACRO_COUNTERS.PQL) Tj
 1 0 0 1 513.44 386 Tm
-(4) Tj
+(5) Tj
 ET
 q
 1 g
@@ -1779,8 +1911,8 @@ q
 f
 Q
 BT
-1 0 0 1 76 374 Tm
-(5. EXAMPLES/MACRO_COUNTERS.PQL) Tj
+1 0 0 1 100 374 Tm
+(options) Tj
 1 0 0 1 513.44 374 Tm
 (5) Tj
 ET
@@ -1791,7 +1923,7 @@ f
 Q
 BT
 1 0 0 1 100 362 Tm
-(options) Tj
+(description) Tj
 1 0 0 1 513.44 362 Tm
 (5) Tj
 ET
@@ -1802,7 +1934,7 @@ f
 Q
 BT
 1 0 0 1 100 350 Tm
-(description) Tj
+(input section) Tj
 1 0 0 1 513.44 350 Tm
 (5) Tj
 ET
@@ -1813,7 +1945,7 @@ f
 Q
 BT
 1 0 0 1 100 338 Tm
-(input section) Tj
+(output section) Tj
 1 0 0 1 513.44 338 Tm
 (5) Tj
 ET
@@ -1823,10 +1955,10 @@ q
 f
 Q
 BT
-1 0 0 1 100 326 Tm
-(output section) Tj
+1 0 0 1 76 326 Tm
+(6. PEQUEL GENERATED PROGRAM) Tj
 1 0 0 1 513.44 326 Tm
-(5) Tj
+(6) Tj
 ET
 q
 0.95 g
@@ -1835,9 +1967,9 @@ f
 Q
 BT
 1 0 0 1 76 314 Tm
-(6. PEQUEL GENERATED PROGRAM) Tj
+(7. ABOUT PEQUEL) Tj
 1 0 0 1 513.44 314 Tm
-(6) Tj
+(8) Tj
 ET
 q
 1 g
@@ -1845,24 +1977,13 @@ q
 f
 Q
 BT
-1 0 0 1 76 302 Tm
-(7. ABOUT PEQUEL) Tj
-1 0 0 1 513.44 302 Tm
-(7) Tj
-ET
-q
-0.95 g
-52 287 491 12 re
-f
-Q
-BT
-1 0 0 1 100 290 Tm
+1 0 0 1 100 302 Tm
 (COPYRIGHT) Tj
-1 0 0 1 513.44 290 Tm
-(7) Tj
+1 0 0 1 513.44 302 Tm
+(8) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(26 October 2005 13:12) Tj
+(16 November 2005 14:06) Tj
 1 0 0 1 540.22 37 Tm
 (i) Tj
 ET
@@ -1871,10 +1992,10 @@ ET
 S
 endstream
 endobj
-51 0 obj
-3898
+59 0 obj
+3795
 endobj
-52 0 obj
+60 0 obj
 <<
 /ProcSet [/PDF /Text]
 /ColorSpace <</DefaultRGB 1 0 R>>
@@ -1885,17 +2006,17 @@ endobj
 >>
 >>
 endobj
-53 0 obj
+61 0 obj
 <<
 /Type /Page
 /Parent 4 0 R
-/Resources 52 0 R
-/Contents 50 0 R
+/Resources 60 0 R
+/Contents 58 0 R
 >>
 endobj
-54 0 obj
+62 0 obj
 <<
-/Length 55 0 R
+/Length 63 0 R
 >>
 stream
 52 792 m
@@ -1912,18 +2033,18 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (ii) Tj
-1 0 0 1 437.39 37 Tm
-(26 October 2005 13:12) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:06) Tj
 ET
 52 50 m
 543 50 l
 S
 endstream
 endobj
-55 0 obj
-272
+63 0 obj
+273
 endobj
-56 0 obj
+64 0 obj
 <<
 /ProcSet [/PDF /Text]
 /ColorSpace <</DefaultRGB 1 0 R>>
@@ -1933,25 +2054,25 @@ endobj
 >>
 >>
 endobj
-57 0 obj
+65 0 obj
 <<
 /Type /Page
 /Parent 4 0 R
-/Resources 56 0 R
-/Contents 54 0 R
+/Resources 64 0 R
+/Contents 62 0 R
 >>
 endobj
-58 0 obj
+66 0 obj
 <<
 /Type /Page
 /Parent 4 0 R
-/Resources 61 0 R
-/Contents 59 0 R
+/Resources 69 0 R
+/Contents 67 0 R
 >>
 endobj
-59 0 obj
+67 0 obj
 <<
-/Length 60 0 R
+/Length 68 0 R
 >>
 stream
 q
@@ -1984,10 +2105,10 @@ T* (2.3) Tj
 ET
 endstream
 endobj
-60 0 obj
+68 0 obj
 346
 endobj
-61 0 obj
+69 0 obj
 <<
 /ProcSet [/PDF /Text]
 /ColorSpace <</DefaultRGB 1 0 R>>
@@ -1999,9 +2120,9 @@ endobj
 >>
 >>
 endobj
-62 0 obj
+70 0 obj
 <<
-/Length 63 0 R
+/Length 71 0 R
 >>
 stream
 52 792 m
@@ -2017,7 +2138,7 @@ BT
 (Counter Macros Example Script) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(26 October 2005 13:12) Tj
+(16 November 2005 14:06) Tj
 1 0 0 1 543 37 Tm
 () Tj
 ET
@@ -2026,10 +2147,10 @@ ET
 S
 endstream
 endobj
-63 0 obj
-277
+71 0 obj
+278
 endobj
-64 0 obj
+72 0 obj
 <<
 /ProcSet [/PDF /Text]
 /ColorSpace <</DefaultRGB 1 0 R>>
@@ -2039,352 +2160,343 @@ endobj
 >>
 >>
 endobj
-65 0 obj
+73 0 obj
 <<
 /Type /Page
 /Parent 4 0 R
-/Resources 64 0 R
-/Contents 62 0 R
->>
-endobj
-67 0 obj
-<<
-/Parent 66 0 R
-/Dest [53 0 R /Fit]
-/First 68 0 R
-/Last 101 0 R
-/Count 35 
-/Title (Table of Contents)
->>
-endobj
-68 0 obj
-<<
-/Parent 67 0 R
-/Dest [21 0 R /FitH 764.4]
-/Next 69 0 R
-/Title (SCRIPT NAME)
->>
-endobj
-69 0 obj
-<<
-/Parent 67 0 R
-/Dest [21 0 R /FitH 720]
-/Previous 68 0 R
-/Next 70 0 R
-/Title (DESCRIPTION)
->>
-endobj
-70 0 obj
-<<
-/Parent 67 0 R
-/Dest [21 0 R /FitH 675.6]
-/Previous 69 0 R
-/Next 80 0 R
-/First 71 0 R
-/Last 78 0 R
-/Count 9 
-/Title (1. PROCESS DETAILS)
->>
-endobj
-71 0 obj
-<<
-/Parent 70 0 R
-/Dest [21 0 R /FitH 568.8]
-/Next 74 0 R
-/First 72 0 R
-/Last 73 0 R
-/Count 2 
-/Title (1.1 record_number)
->>
-endobj
-72 0 obj
-<<
-/Parent 71 0 R
-/Dest [21 0 R /FitH 530.4]
-/Next 73 0 R
-/Title (Description)
->>
-endobj
-73 0 obj
-<<
-/Parent 71 0 R
-/Dest [21 0 R /FitH 492]
-/Previous 72 0 R
-/Title (Derived Input Field Evaluation)
->>
-endobj
-74 0 obj
-<<
-/Parent 70 0 R
-/Dest [21 0 R /FitH 454.8]
-/Previous 71 0 R
-/Next 76 0 R
-/First 75 0 R
-/Last 75 0 R
-/Count 1 
-/Title (1.2 location)
+/Resources 72 0 R
+/Contents 70 0 R
 >>
 endobj
 75 0 obj
 <<
 /Parent 74 0 R
-/Dest [21 0 R /FitH 416.4]
-/Title (Description)
+/Dest [61 0 R /Fit]
+/First 76 0 R
+/Last 108 0 R
+/Count 34 
+/Title (Table of Contents)
 >>
 endobj
 76 0 obj
 <<
-/Parent 70 0 R
-/Dest [21 0 R /FitH 374.4]
-/Previous 74 0 R
-/Next 78 0 R
-/First 77 0 R
-/Last 77 0 R
-/Count 1 
-/Title (1.3 product_code)
+/Parent 75 0 R
+/Dest [21 0 R /FitH 764.4]
+/Next 77 0 R
+/Title (SCRIPT NAME)
 >>
 endobj
 77 0 obj
 <<
-/Parent 76 0 R
-/Dest [21 0 R /FitH 336]
-/Title (Description)
+/Parent 75 0 R
+/Dest [21 0 R /FitH 720]
+/Previous 76 0 R
+/Next 78 0 R
+/Title (DESCRIPTION)
 >>
 endobj
 78 0 obj
 <<
-/Parent 70 0 R
-/Dest [21 0 R /FitH 294]
-/Previous 76 0 R
+/Parent 75 0 R
+/Dest [21 0 R /FitH 675.6]
+/Previous 77 0 R
+/Next 88 0 R
 /First 79 0 R
-/Last 79 0 R
-/Count 1 
-/Title (1.4 sales_qty)
+/Last 86 0 R
+/Count 9 
+/Title (1. PROCESS DETAILS)
 >>
 endobj
 79 0 obj
 <<
 /Parent 78 0 R
-/Dest [21 0 R /FitH 255.6]
-/Title (Description)
+/Dest [21 0 R /FitH 568.8]
+/Next 82 0 R
+/First 80 0 R
+/Last 81 0 R
+/Count 2 
+/Title (1.1 record_number)
 >>
 endobj
 80 0 obj
 <<
-/Parent 67 0 R
-/Dest [25 0 R /FitH 764.4]
-/Previous 70 0 R
-/Next 92 0 R
-/First 81 0 R
-/Last 91 0 R
-/Count 11 
-/Title (2. CONFIGURATION SETTINGS)
+/Parent 79 0 R
+/Dest [21 0 R /FitH 530.4]
+/Next 81 0 R
+/Title (Description)
 >>
 endobj
 81 0 obj
 <<
-/Parent 80 0 R
-/Dest [25 0 R /FitH 726]
-/Next 82 0 R
-/Title (2.1 pequeldoc)
+/Parent 79 0 R
+/Dest [21 0 R /FitH 492]
+/Previous 80 0 R
+/Title (Derived Input Field Evaluation)
 >>
 endobj
 82 0 obj
 <<
-/Parent 80 0 R
-/Dest [25 0 R /FitH 684]
-/Previous 81 0 R
-/Next 83 0 R
-/Title (2.2 detail)
+/Parent 78 0 R
+/Dest [21 0 R /FitH 454.8]
+/Previous 79 0 R
+/Next 84 0 R
+/First 83 0 R
+/Last 83 0 R
+/Count 1 
+/Title (1.2 location)
 >>
 endobj
 83 0 obj
 <<
-/Parent 80 0 R
-/Dest [25 0 R /FitH 642]
-/Previous 82 0 R
-/Next 84 0 R
-/Title (2.3 noverbose)
+/Parent 82 0 R
+/Dest [21 0 R /FitH 416.4]
+/Title (Description)
 >>
 endobj
 84 0 obj
 <<
-/Parent 80 0 R
-/Dest [25 0 R /FitH 600]
-/Previous 83 0 R
-/Next 85 0 R
-/Title (2.4 prefix)
+/Parent 78 0 R
+/Dest [21 0 R /FitH 374.4]
+/Previous 82 0 R
+/Next 86 0 R
+/First 85 0 R
+/Last 85 0 R
+/Count 1 
+/Title (1.3 product_code)
 >>
 endobj
 85 0 obj
 <<
-/Parent 80 0 R
-/Dest [25 0 R /FitH 558]
-/Previous 84 0 R
-/Next 86 0 R
-/Title (2.5 script_name)
+/Parent 84 0 R
+/Dest [21 0 R /FitH 336]
+/Title (Description)
 >>
 endobj
 86 0 obj
 <<
-/Parent 80 0 R
-/Dest [25 0 R /FitH 516]
-/Previous 85 0 R
-/Next 87 0 R
-/Title (2.6 header)
+/Parent 78 0 R
+/Dest [21 0 R /FitH 294]
+/Previous 84 0 R
+/First 87 0 R
+/Last 87 0 R
+/Count 1 
+/Title (1.4 sales_qty)
 >>
 endobj
 87 0 obj
 <<
-/Parent 80 0 R
-/Dest [25 0 R /FitH 474]
-/Previous 86 0 R
-/Next 88 0 R
-/Title (2.7 optimize)
+/Parent 86 0 R
+/Dest [21 0 R /FitH 255.6]
+/Title (Description)
 >>
 endobj
 88 0 obj
 <<
-/Parent 80 0 R
-/Dest [25 0 R /FitH 432]
-/Previous 87 0 R
-/Next 89 0 R
-/Title (2.8 nulls)
+/Parent 75 0 R
+/Dest [25 0 R /FitH 764.4]
+/Previous 78 0 R
+/Next 99 0 R
+/First 89 0 R
+/Last 98 0 R
+/Count 10 
+/Title (2. CONFIGURATION SETTINGS)
 >>
 endobj
 89 0 obj
 <<
-/Parent 80 0 R
-/Dest [25 0 R /FitH 390]
-/Previous 88 0 R
+/Parent 88 0 R
+/Dest [25 0 R /FitH 726]
 /Next 90 0 R
-/Title (2.9 doc_title)
+/Title (2.1 prefix)
 >>
 endobj
 90 0 obj
 <<
-/Parent 80 0 R
-/Dest [25 0 R /FitH 348]
+/Parent 88 0 R
+/Dest [25 0 R /FitH 684]
 /Previous 89 0 R
 /Next 91 0 R
-/Title (2.10 doc_email)
+/Title (2.2 pequeldoc)
 >>
 endobj
 91 0 obj
 <<
-/Parent 80 0 R
-/Dest [25 0 R /FitH 306]
+/Parent 88 0 R
+/Dest [25 0 R /FitH 642]
 /Previous 90 0 R
-/Title (2.11 doc_version)
+/Next 92 0 R
+/Title (2.3 detail)
 >>
 endobj
 92 0 obj
 <<
-/Parent 67 0 R
-/Dest [29 0 R /FitH 764.4]
-/Previous 80 0 R
+/Parent 88 0 R
+/Dest [25 0 R /FitH 600]
+/Previous 91 0 R
 /Next 93 0 R
-/Title (3. TABLES)
+/Title (2.4 script_name)
 >>
 endobj
 93 0 obj
 <<
-/Parent 67 0 R
-/Dest [33 0 R /FitH 764.4]
+/Parent 88 0 R
+/Dest [25 0 R /FitH 558]
 /Previous 92 0 R
-/Next 95 0 R
-/First 94 0 R
-/Last 94 0 R
-/Count 1 
-/Title (4. TABLE INFORMATION SUMMARY)
+/Next 94 0 R
+/Title (2.5 header)
 >>
 endobj
 94 0 obj
 <<
-/Parent 93 0 R
-/Dest [33 0 R /FitH 726]
-/Title (4.1 Table List Sorted By Table Name)
+/Parent 88 0 R
+/Dest [25 0 R /FitH 516]
+/Previous 93 0 R
+/Next 95 0 R
+/Title (2.6 optimize)
 >>
 endobj
 95 0 obj
 <<
-/Parent 67 0 R
-/Dest [37 0 R /FitH 764.4]
-/Previous 93 0 R
-/Next 100 0 R
-/First 96 0 R
-/Last 99 0 R
-/Count 4 
-/Title (5. EXAMPLES/MACRO_COUNTERS.PQL)
+/Parent 88 0 R
+/Dest [25 0 R /FitH 474]
+/Previous 94 0 R
+/Next 96 0 R
+/Title (2.7 nulls)
 >>
 endobj
 96 0 obj
 <<
-/Parent 95 0 R
-/Dest [37 0 R /FitH 726]
+/Parent 88 0 R
+/Dest [25 0 R /FitH 432]
+/Previous 95 0 R
 /Next 97 0 R
-/Title (options)
+/Title (2.8 doc_title)
 >>
 endobj
 97 0 obj
 <<
-/Parent 95 0 R
-/Dest [37 0 R /FitH 604.8]
+/Parent 88 0 R
+/Dest [25 0 R /FitH 390]
 /Previous 96 0 R
 /Next 98 0 R
-/Title (description)
+/Title (2.9 doc_email)
 >>
 endobj
 98 0 obj
 <<
-/Parent 95 0 R
-/Dest [37 0 R /FitH 567.6]
+/Parent 88 0 R
+/Dest [25 0 R /FitH 348]
 /Previous 97 0 R
-/Next 99 0 R
-/Title (input section)
+/Title (2.10 doc_version)
 >>
 endobj
 99 0 obj
 <<
-/Parent 95 0 R
-/Dest [37 0 R /FitH 454.8]
-/Previous 98 0 R
-/Title (output section)
+/Parent 75 0 R
+/Dest [29 0 R /FitH 764.4]
+/Previous 88 0 R
+/Next 100 0 R
+/Title (3. TABLES)
 >>
 endobj
 100 0 obj
 <<
-/Parent 67 0 R
-/Dest [41 0 R /FitH 764.4]
-/Previous 95 0 R
-/Next 101 0 R
-/Title (6. PEQUEL GENERATED PROGRAM)
+/Parent 75 0 R
+/Dest [33 0 R /FitH 764.4]
+/Previous 99 0 R
+/Next 102 0 R
+/First 101 0 R
+/Last 101 0 R
+/Count 1 
+/Title (4. TABLE INFORMATION SUMMARY)
 >>
 endobj
 101 0 obj
 <<
-/Parent 67 0 R
-/Dest [45 0 R /FitH 764.4]
-/Previous 100 0 R
-/First 102 0 R
-/Last 102 0 R
-/Count 1 
-/Title (7. ABOUT PEQUEL)
+/Parent 100 0 R
+/Dest [33 0 R /FitH 726]
+/Title (4.1 Table List Sorted By Table Name)
 >>
 endobj
 102 0 obj
 <<
-/Parent 101 0 R
-/Dest [45 0 R /FitH 681.6]
+/Parent 75 0 R
+/Dest [37 0 R /FitH 764.4]
+/Previous 100 0 R
+/Next 107 0 R
+/First 103 0 R
+/Last 106 0 R
+/Count 4 
+/Title (5. EXAMPLES/MACRO_COUNTERS.PQL)
+>>
+endobj
+103 0 obj
+<<
+/Parent 102 0 R
+/Dest [37 0 R /FitH 726]
+/Next 104 0 R
+/Title (options)
+>>
+endobj
+104 0 obj
+<<
+/Parent 102 0 R
+/Dest [37 0 R /FitH 613.2]
+/Previous 103 0 R
+/Next 105 0 R
+/Title (description)
+>>
+endobj
+105 0 obj
+<<
+/Parent 102 0 R
+/Dest [37 0 R /FitH 576]
+/Previous 104 0 R
+/Next 106 0 R
+/Title (input section)
+>>
+endobj
+106 0 obj
+<<
+/Parent 102 0 R
+/Dest [37 0 R /FitH 463.2]
+/Previous 105 0 R
+/Title (output section)
+>>
+endobj
+107 0 obj
+<<
+/Parent 75 0 R
+/Dest [41 0 R /FitH 764.4]
+/Previous 102 0 R
+/Next 108 0 R
+/Title (6. PEQUEL GENERATED PROGRAM)
+>>
+endobj
+108 0 obj
+<<
+/Parent 75 0 R
+/Dest [49 0 R /FitH 764.4]
+/Previous 107 0 R
+/First 109 0 R
+/Last 109 0 R
+/Count 1 
+/Title (7. ABOUT PEQUEL)
+>>
+endobj
+109 0 obj
+<<
+/Parent 108 0 R
+/Dest [49 0 R /FitH 681.6]
 /Title (COPYRIGHT)
 >>
 endobj
-66 0 obj
+74 0 obj
 <<
 /Type /Outlines
-/Count 36
-/First 67 0 R
-/Last 102 0 R
+/Count 35
+/First 75 0 R
+/Last 109 0 R
 >>
 endobj
 3 0 obj
@@ -2392,24 +2504,24 @@ endobj
 /Type /Catalog
 /Pages 4 0 R
 /PageMode /UseOutlines
-/Outlines 66 0 R
+/Outlines 74 0 R
 >>
 endobj
 4 0 obj
 <<
 /Type /Pages
-/Kids [ 58 0 R 65 0 R 53 0 R 57 0 R 21 0 R 25 0 R 29 0 R 33 0 R 37 0 R 41 0 R 45 0 R 49 0 R ]
-/Count 12
+/Kids [ 66 0 R 73 0 R 61 0 R 65 0 R 21 0 R 25 0 R 29 0 R 33 0 R 37 0 R 41 0 R 45 0 R 49 0 R 53 0 R 57 0 R ]
+/Count 14
 /MediaBox [0 0 595 842]
 >>
 endobj
 xref
-0 103
+0 110
 0000000000 65535 f 
 0000000015 00000 n 
 0000000171 00000 n 
-0000034918 00000 n 
-0000035007 00000 n 
+0000036856 00000 n 
+0000036945 00000 n 
 0000000288 00000 n 
 0000002388 00000 n 
 0000002487 00000 n 
@@ -2424,96 +2536,103 @@ xref
 0000003399 00000 n 
 0000003505 00000 n 
 0000003619 00000 n 
-0000006892 00000 n 
-0000006913 00000 n 
-0000007051 00000 n 
-0000007134 00000 n 
-0000009819 00000 n 
-0000009840 00000 n 
-0000009966 00000 n 
-0000010049 00000 n 
-0000010443 00000 n 
-0000010463 00000 n 
-0000010565 00000 n 
-0000010648 00000 n 
-0000011146 00000 n 
-0000011166 00000 n 
-0000011268 00000 n 
-0000011351 00000 n 
-0000014161 00000 n 
-0000014182 00000 n 
-0000014308 00000 n 
-0000014391 00000 n 
-0000021399 00000 n 
-0000021420 00000 n 
-0000021534 00000 n 
-0000021617 00000 n 
-0000023904 00000 n 
-0000023925 00000 n 
-0000024051 00000 n 
-0000024134 00000 n 
-0000024469 00000 n 
-0000024489 00000 n 
-0000024591 00000 n 
-0000024674 00000 n 
-0000028626 00000 n 
-0000028647 00000 n 
-0000028761 00000 n 
-0000028844 00000 n 
-0000029170 00000 n 
-0000029190 00000 n 
-0000029292 00000 n 
-0000029375 00000 n 
-0000029458 00000 n 
-0000029858 00000 n 
-0000029878 00000 n 
-0000030004 00000 n 
-0000030335 00000 n 
-0000030355 00000 n 
-0000030457 00000 n 
-0000034842 00000 n 
-0000030540 00000 n 
-0000030663 00000 n 
-0000030761 00000 n 
-0000030874 00000 n 
-0000031033 00000 n 
-0000031174 00000 n 
-0000031272 00000 n 
-0000031391 00000 n 
-0000031544 00000 n 
-0000031629 00000 n 
-0000031786 00000 n 
-0000031869 00000 n 
-0000032008 00000 n 
-0000032093 00000 n 
-0000032260 00000 n 
-0000032358 00000 n 
-0000032470 00000 n 
-0000032585 00000 n 
-0000032697 00000 n 
-0000032814 00000 n 
-0000032926 00000 n 
-0000033040 00000 n 
-0000033151 00000 n 
-0000033266 00000 n 
-0000033382 00000 n 
-0000033487 00000 n 
-0000033600 00000 n 
-0000033769 00000 n 
-0000033876 00000 n 
-0000034048 00000 n 
-0000034140 00000 n 
-0000034255 00000 n 
-0000034372 00000 n 
-0000034477 00000 n 
-0000034610 00000 n 
-0000034757 00000 n 
+0000006893 00000 n 
+0000006914 00000 n 
+0000007052 00000 n 
+0000007135 00000 n 
+0000009627 00000 n 
+0000009648 00000 n 
+0000009774 00000 n 
+0000009857 00000 n 
+0000010252 00000 n 
+0000010272 00000 n 
+0000010374 00000 n 
+0000010457 00000 n 
+0000010956 00000 n 
+0000010976 00000 n 
+0000011078 00000 n 
+0000011161 00000 n 
+0000013905 00000 n 
+0000013926 00000 n 
+0000014052 00000 n 
+0000014135 00000 n 
+0000021834 00000 n 
+0000021855 00000 n 
+0000021969 00000 n 
+0000022052 00000 n 
+0000022987 00000 n 
+0000023007 00000 n 
+0000023121 00000 n 
+0000023204 00000 n 
+0000025492 00000 n 
+0000025513 00000 n 
+0000025639 00000 n 
+0000025722 00000 n 
+0000026058 00000 n 
+0000026078 00000 n 
+0000026180 00000 n 
+0000026263 00000 n 
+0000026600 00000 n 
+0000026620 00000 n 
+0000026722 00000 n 
+0000026805 00000 n 
+0000030654 00000 n 
+0000030675 00000 n 
+0000030789 00000 n 
+0000030872 00000 n 
+0000031199 00000 n 
+0000031219 00000 n 
+0000031321 00000 n 
+0000031404 00000 n 
+0000031487 00000 n 
+0000031887 00000 n 
+0000031907 00000 n 
+0000032033 00000 n 
+0000032365 00000 n 
+0000032385 00000 n 
+0000032487 00000 n 
+0000036780 00000 n 
+0000032570 00000 n 
+0000032693 00000 n 
+0000032791 00000 n 
+0000032904 00000 n 
+0000033063 00000 n 
+0000033204 00000 n 
+0000033302 00000 n 
+0000033421 00000 n 
+0000033574 00000 n 
+0000033659 00000 n 
+0000033816 00000 n 
+0000033899 00000 n 
+0000034038 00000 n 
+0000034123 00000 n 
+0000034290 00000 n 
+0000034385 00000 n 
+0000034500 00000 n 
+0000034612 00000 n 
+0000034729 00000 n 
+0000034841 00000 n 
+0000034955 00000 n 
+0000035066 00000 n 
+0000035181 00000 n 
+0000035296 00000 n 
+0000035401 00000 n 
+0000035515 00000 n 
+0000035688 00000 n 
+0000035797 00000 n 
+0000035973 00000 n 
+0000036068 00000 n 
+0000036187 00000 n 
+0000036306 00000 n 
+0000036414 00000 n 
+0000036548 00000 n 
+0000036695 00000 n 
 trailer
 <<
-/Size 103
+/Size 110
 /Root 3 0 R
 /Info 2 0 R
 >>
 startxref
-35169
+37121
 %%EOF

@@ -5,6 +5,7 @@
 
 options
     optimize                // (default) optimize generated code.
+	hash
     doc_title("Copy Output Record Example Script")
     doc_email("sample@youraddress.com")
     doc_version(2.3)

@@ -11,7 +11,7 @@
 endobj
 2 0 obj
 <<
-/CreationDate (D:20050913104318+0100)
+/CreationDate (D:20051116142041+0000)
 /Producer (Pequel)
 /Title (Statistics Aggregates Example Script)
 >>
@@ -181,7 +181,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(statistics_aggr.pql) Tj
+(examples/statistics_aggr.pql) Tj
 1 0 0 1 365.72 797 Tm
 (Statistics Aggregates Example Script) Tj
 /F21 12 Tf
@@ -191,7 +191,7 @@ BT
 /F20 10 Tf
 1 0 0 1 76.0 735.6 Tm
 0.0000 Tw
-(statistics_aggr.pql ) Tj
+(examples/statistics_aggr.pql ) Tj
 /F21 12 Tf
 1 0 0 1 52.0 705.6 Tm
 0.0000 Tw
@@ -506,7 +506,7 @@ BT
 ( ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:43) Tj
+(16 November 2005 14:20) Tj
 1 0 0 1 537.44 37 Tm
 (1) Tj
 ET
@@ -516,7 +516,7 @@ S
 endstream
 endobj
 19 0 obj
-4569
+4586
 endobj
 20 0 obj
 <<
@@ -554,8 +554,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Statistics Aggregates Example Script) Tj
-1 0 0 1 454.64 797 Tm
-(statistics_aggr.pql) Tj
+1 0 0 1 406.28 797 Tm
+(examples/statistics_aggr.pql) Tj
 /F20 10 Tf
 1 0 0 1 76.0 780.0 Tm
 0.0000 Tw
@@ -809,8 +809,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (2) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:43) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:20) Tj
 ET
 52 50 m
 543 50 l
@@ -818,7 +818,7 @@ S
 endstream
 endobj
 23 0 obj
-3484
+3492
 endobj
 24 0 obj
 <<
@@ -853,7 +853,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(statistics_aggr.pql) Tj
+(examples/statistics_aggr.pql) Tj
 1 0 0 1 365.72 797 Tm
 (Statistics Aggregates Example Script) Tj
 /F21 12 Tf
@@ -866,18 +866,32 @@ BT
 (2.1 ) Tj
 /F23 10 Tf
 0.0000 Tw
-(pequeldoc) Tj
+(prefix) Tj
 /F21 10 Tf
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 702.0 Tm
 0.0000 Tw
-(generate pod / pdf pequel script Reference Guide.: pdf ) Tj
+(directory pathname prefix.: examples ) Tj
 /F21 10 Tf
 1 0 0 1 52.0 672.0 Tm
 0.0000 Tw
 (2.2 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(pequeldoc) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 660.0 Tm
+0.0000 Tw
+(generate pod / pdf pequel script Reference Guide.: pdf ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 630.0 Tm
+0.0000 Tw
+(2.3 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (detail) Tj
@@ -885,13 +899,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 660.0 Tm
+1 0 0 1 76.0 618.0 Tm
 0.0000 Tw
 (Include Pequel Generated Program chapter in Pequeldoc: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 630.0 Tm
+1 0 0 1 52.0 588.0 Tm
 0.0000 Tw
-(2.3 ) Tj
+(2.4 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (script_name) Tj
@@ -899,13 +913,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 618.0 Tm
+1 0 0 1 76.0 576.0 Tm
 0.0000 Tw
-(script filename: statistics_aggr.pql ) Tj
+(script filename: examples/statistics_aggr.pql ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 588.0 Tm
+1 0 0 1 52.0 546.0 Tm
 0.0000 Tw
-(2.4 ) Tj
+(2.5 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (header) Tj
@@ -913,13 +927,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 576.0 Tm
+1 0 0 1 76.0 534.0 Tm
 0.0000 Tw
 (write header record to output.: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 546.0 Tm
+1 0 0 1 52.0 504.0 Tm
 0.0000 Tw
-(2.5 ) Tj
+(2.6 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (optimize) Tj
@@ -927,13 +941,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 534.0 Tm
+1 0 0 1 76.0 492.0 Tm
 0.0000 Tw
 (optimize generated code.: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 504.0 Tm
+1 0 0 1 52.0 462.0 Tm
 0.0000 Tw
-(2.6 ) Tj
+(2.7 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_title) Tj
@@ -941,13 +955,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 492.0 Tm
+1 0 0 1 76.0 450.0 Tm
 0.0000 Tw
 (document title.: Statistics Aggregates Example Script ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 462.0 Tm
+1 0 0 1 52.0 420.0 Tm
 0.0000 Tw
-(2.7 ) Tj
+(2.8 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_email) Tj
@@ -955,13 +969,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 450.0 Tm
+1 0 0 1 76.0 408.0 Tm
 0.0000 Tw
 (document email entry.: sample@youraddress.com ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 420.0 Tm
+1 0 0 1 52.0 378.0 Tm
 0.0000 Tw
-(2.8 ) Tj
+(2.9 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_version) Tj
@@ -969,12 +983,12 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 408.0 Tm
+1 0 0 1 76.0 366.0 Tm
 0.0000 Tw
 (document version for pequel script.: 2.2 ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:43) Tj
+(16 November 2005 14:20) Tj
 1 0 0 1 537.44 37 Tm
 (3) Tj
 ET
@@ -984,7 +998,7 @@ S
 endstream
 endobj
 27 0 obj
-2034
+2251
 endobj
 28 0 obj
 <<
@@ -1020,8 +1034,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Statistics Aggregates Example Script) Tj
-1 0 0 1 454.64 797 Tm
-(statistics_aggr.pql) Tj
+1 0 0 1 406.28 797 Tm
+(examples/statistics_aggr.pql) Tj
 /F21 12 Tf
 1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
@@ -1029,8 +1043,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (4) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:43) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:20) Tj
 ET
 52 50 m
 543 50 l
@@ -1038,7 +1052,7 @@ S
 endstream
 endobj
 31 0 obj
-341
+349
 endobj
 32 0 obj
 <<
@@ -1071,7 +1085,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(statistics_aggr.pql) Tj
+(examples/statistics_aggr.pql) Tj
 1 0 0 1 365.72 797 Tm
 (Statistics Aggregates Example Script) Tj
 /F21 12 Tf
@@ -1084,7 +1098,7 @@ BT
 (4.1 Table List Sorted By Table Name ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:43) Tj
+(16 November 2005 14:20) Tj
 1 0 0 1 537.44 37 Tm
 (5) Tj
 ET
@@ -1094,7 +1108,7 @@ S
 endstream
 endobj
 35 0 obj
-445
+453
 endobj
 36 0 obj
 <<
@@ -1128,12 +1142,12 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Statistics Aggregates Example Script) Tj
-1 0 0 1 454.64 797 Tm
-(statistics_aggr.pql) Tj
+1 0 0 1 406.28 797 Tm
+(examples/statistics_aggr.pql) Tj
 /F21 12 Tf
 1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
-(5. STATISTICS_AGGR.PQL ) Tj
+(5. EXAMPLES/STATISTICS_AGGR.PQL ) Tj
 /F21 10 Tf
 1 0 0 1 52.0 714.0 Tm
 0.0000 Tw
@@ -1147,37 +1161,41 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 697.8 Tm
 0.0000 Tw
-(    pequeldoc\(pdf\) ) Tj
+(    prefix\(examples\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 689.4 Tm
 0.0000 Tw
-(    detail\(1\) ) Tj
+(    pequeldoc\(pdf\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 681.0 Tm
 0.0000 Tw
-(    script_name\(statistics_aggr.pql\) ) Tj
+(    detail\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 672.6 Tm
 0.0000 Tw
-(    header\(1\) ) Tj
+(    script_name\(examples/statistics_aggr.pql\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 664.2 Tm
 0.0000 Tw
-(    optimize\(1\) ) Tj
+(    header\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 655.8 Tm
 0.0000 Tw
-(    doc_title\(Statistics Aggregates Example Script\) ) Tj
+(    optimize\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 647.4 Tm
 0.0000 Tw
-(    doc_email\(sample@youraddress.com\) ) Tj
+(    doc_title\(Statistics Aggregates Example Script\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 639.0 Tm
 0.0000 Tw
+(    doc_email\(sample@youraddress.com\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 630.6 Tm
+0.0000 Tw
 (    doc_version\(2.2\) ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 618.0 Tm
+1 0 0 1 52.0 609.6 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -1187,39 +1205,11 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 601.8 Tm
+1 0 0 1 76.0 593.4 Tm
 0.0000 Tw
 (    Demonstrate various statistical aggregates functions. ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 580.8 Tm
-0.0000 Tw
-() Tj
-/F23 10 Tf
-0.0000 Tw
-(sort by) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 564.6 Tm
-0.0000 Tw
-(    SALES_CODE string  ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 543.6 Tm
-0.0000 Tw
-() Tj
-/F23 10 Tf
-0.0000 Tw
-(group by) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 527.4 Tm
-0.0000 Tw
-(    SALES_CODE string ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 506.4 Tm
+1 0 0 1 52.0 572.4 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -1229,39 +1219,67 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 490.2 Tm
+1 0 0 1 76.0 556.2 Tm
 0.0000 Tw
 (    PRODUCT_CODE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 481.8 Tm
+1 0 0 1 76.0 547.8 Tm
 0.0000 Tw
 (    COST_PRICE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 473.4 Tm
+1 0 0 1 76.0 539.4 Tm
 0.0000 Tw
 (    DESCRIPTION ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 465.0 Tm
+1 0 0 1 76.0 531.0 Tm
 0.0000 Tw
 (    SALES_CODE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 456.6 Tm
+1 0 0 1 76.0 522.6 Tm
 0.0000 Tw
 (    SALES_PRICE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 448.2 Tm
+1 0 0 1 76.0 514.2 Tm
 0.0000 Tw
 (    SALES_QTY ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 439.8 Tm
+1 0 0 1 76.0 505.8 Tm
 0.0000 Tw
 (    SALES_DATE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 431.4 Tm
+1 0 0 1 76.0 497.4 Tm
 0.0000 Tw
 (    LOCATION ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 410.4 Tm
+1 0 0 1 52.0 476.4 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(sort by) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 460.2 Tm
+0.0000 Tw
+(    SALES_CODE string  ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 439.2 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(group by) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 423.0 Tm
+0.0000 Tw
+(    SALES_CODE string ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 402.0 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -1271,58 +1289,58 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 394.2 Tm
+1 0 0 1 76.0 385.8 Tm
 0.0000 Tw
 (    string    SALES_CODE        SALES_CODE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 385.8 Tm
+1 0 0 1 76.0 377.4 Tm
 0.0000 Tw
 (    numeric   COUNT_LOCATION    distinct LOCATION ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 377.4 Tm
+1 0 0 1 76.0 369.0 Tm
 0.0000 Tw
 (    numeric   COUNT_PRODUCTS    distinct PRODUCT_CODE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 369.0 Tm
+1 0 0 1 76.0 360.6 Tm
 0.0000 Tw
 (    decimal   TOTAL_SALES_PRICE sum SALES_PRICE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 360.6 Tm
+1 0 0 1 76.0 352.2 Tm
 0.0000 Tw
 (    decimal   TOTAL_SALES_QTY   sum SALES_QTY ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 352.2 Tm
+1 0 0 1 76.0 343.8 Tm
 0.0000 Tw
 (    numeric   MEDIAN_QTY        median SALES_QTY ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 343.8 Tm
+1 0 0 1 76.0 335.4 Tm
 0.0000 Tw
 (    numeric   VARIANCE_QTY      variance SALES_QTY ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 335.4 Tm
+1 0 0 1 76.0 327.0 Tm
 0.0000 Tw
 (    numeric   STDDEV_QTY        stddev SALES_QTY ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 327.0 Tm
+1 0 0 1 76.0 318.6 Tm
 0.0000 Tw
 (    numeric   RANGE_QTY         range SALES_QTY ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 318.6 Tm
+1 0 0 1 76.0 310.2 Tm
 0.0000 Tw
 (    numeric   RANGE_QTY_2       = RANGE_QTY * 2 ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 310.2 Tm
+1 0 0 1 76.0 301.8 Tm
 0.0000 Tw
 (    numeric   RANGE_QTY_3       = RANGE_QTY * 3 ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 301.8 Tm
+1 0 0 1 76.0 293.4 Tm
 0.0000 Tw
 (    decimal   TEST_1            = MEDIAN_QTY + 100 ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (6) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:43) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:20) Tj
 ET
 52 50 m
 543 50 l
@@ -1330,7 +1348,7 @@ S
 endstream
 endobj
 39 0 obj
-3562
+3659
 endobj
 40 0 obj
 <<
@@ -1365,7 +1383,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(statistics_aggr.pql) Tj
+(examples/statistics_aggr.pql) Tj
 1 0 0 1 365.72 797 Tm
 (Statistics Aggregates Example Script) Tj
 /F21 12 Tf
@@ -1375,7 +1393,7 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 731.4 Tm
 0.0000 Tw
-( # vim: syntax=perl ts=4 sw=4 ) Tj
+( #!/usr/bin/perl ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 723.0 Tm
 0.0000 Tw
@@ -1383,315 +1401,315 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 714.6 Tm
 0.0000 Tw
-( #Generated By: pequel Version 2.2-9, Build: Tuesday September 13 08:43:08 BST 2005 ) Tj
+( # vim: syntax=perl ts=4 sw=4 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 706.2 Tm
 0.0000 Tw
-( #            : https://sourceforge.net/projects/pequel/ ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 697.8 Tm
 0.0000 Tw
-( #Script Name : statistics_aggr.pql ) Tj
+( #Generated By: pequel Version 2.4-5, Build: Wednesday November 16 21:56:42 GMT 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 689.4 Tm
 0.0000 Tw
-( #Created On  : Tue Sep 13 10:43:17 2005 ) Tj
+( #            : http://sourceforge.net/projects/pequel/ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 681.0 Tm
 0.0000 Tw
-( #For         :  ) Tj
+( #Script Name : statistics_aggr.pql ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 672.6 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #Created On  : Wed Nov 16 14:20:40 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 664.2 Tm
 0.0000 Tw
-( #Options: ) Tj
+( #Perl Version: /usr/bin/perl 5.6.1 on solaris ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 655.8 Tm
 0.0000 Tw
-( #pequeldoc\(pdf\) generate pod / pdf pequel script Reference Guide. ) Tj
+( #For         :  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 647.4 Tm
 0.0000 Tw
-( #detail\(1\) Include Pequel Generated Program chapter in Pequeldoc ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 639.0 Tm
 0.0000 Tw
-( #script_name\(statistics_aggr.pql\) script filename ) Tj
+( #Options: ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 630.6 Tm
 0.0000 Tw
-( #header\(1\) write header record to output. ) Tj
+( #prefix\(examples\) directory pathname prefix. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 622.2 Tm
 0.0000 Tw
-( #optimize\(1\) optimize generated code. ) Tj
+( #pequeldoc\(pdf\) generate pod / pdf pequel script Reference Guide. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 613.8 Tm
 0.0000 Tw
-( #doc_title\(Statistics Aggregates Example Script\) document title. ) Tj
+( #detail\(1\) Include Pequel Generated Program chapter in Pequeldoc ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 605.4 Tm
 0.0000 Tw
-( #doc_email\(sample@youraddress.com\) document email entry. ) Tj
+( #script_name\(examples/statistics_aggr.pql\) script filename ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 597.0 Tm
 0.0000 Tw
-( #doc_version\(2.2\) document version for pequel script. ) Tj
+( #header\(1\) write header record to output. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 588.6 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #optimize\(1\) optimize generated code. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 580.2 Tm
 0.0000 Tw
-( use strict; ) Tj
+( #doc_title\(Statistics Aggregates Example Script\) document title. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 571.8 Tm
 0.0000 Tw
-( local $\\="\\n"; local $,="|"; ) Tj
+( #doc_email\(sample@youraddress.com\) document email entry. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 563.4 Tm
 0.0000 Tw
-( print STDERR '[statistics_aggr.pql ' . localtime\(\) . "] Init"; ) Tj
+( #doc_version\(2.2\) document version for pequel script. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 555.0 Tm
 0.0000 Tw
-( use constant VERBOSE => int 10000; ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 546.6 Tm
 0.0000 Tw
-( use constant LAST_ICELL => int 7; ) Tj
+( use strict; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 538.2 Tm
 0.0000 Tw
-( my @I_VAL; ) Tj
+( use constant _I_PRODUCT_CODE         => int    0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 529.8 Tm
 0.0000 Tw
-( my @O_VAL; ) Tj
+( use constant _I_COST_PRICE           => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 521.4 Tm
 0.0000 Tw
-( my %DISTINCT; ) Tj
+( use constant _I_DESCRIPTION          => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 513.0 Tm
 0.0000 Tw
-( my %MEDIAN; ) Tj
+( use constant _I_SALES_CODE           => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 504.6 Tm
 0.0000 Tw
-( my %MEDIAN_COUNT; ) Tj
+( use constant _I_SALES_PRICE          => int    4; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 496.2 Tm
 0.0000 Tw
-( my %VARIANCE; ) Tj
+( use constant _I_SALES_QTY            => int    5; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 487.8 Tm
 0.0000 Tw
-( my %STDDEV; ) Tj
+( use constant _I_SALES_DATE           => int    6; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 479.4 Tm
 0.0000 Tw
-( my %RANGE; ) Tj
+( use constant _I_LOCATION             => int    7; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 471.0 Tm
 0.0000 Tw
-( my $key__I_SALES_CODE; ) Tj
+( use constant _O_SALES_CODE           => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 462.6 Tm
 0.0000 Tw
-( my $previous_key__I_SALES_CODE = undef; ) Tj
+( use constant _O_COUNT_LOCATION       => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 454.2 Tm
 0.0000 Tw
-( foreach my $f \(1..12\) \{ $O_VAL[$f] = undef; \} ) Tj
+( use constant _O_COUNT_PRODUCTS       => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 445.8 Tm
 0.0000 Tw
-( use constant _I_PRODUCT_CODE         => int    0; ) Tj
+( use constant _O_TOTAL_SALES_PRICE    => int    4; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 437.4 Tm
 0.0000 Tw
-( use constant _I_COST_PRICE           => int    1; ) Tj
+( use constant _O_TOTAL_SALES_QTY      => int    5; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 429.0 Tm
 0.0000 Tw
-( use constant _I_DESCRIPTION          => int    2; ) Tj
+( use constant _O_MEDIAN_QTY           => int    6; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 420.6 Tm
 0.0000 Tw
-( use constant _I_SALES_CODE           => int    3; ) Tj
+( use constant _O_VARIANCE_QTY         => int    7; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 412.2 Tm
 0.0000 Tw
-( use constant _I_SALES_PRICE          => int    4; ) Tj
+( use constant _O_STDDEV_QTY           => int    8; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 403.8 Tm
 0.0000 Tw
-( use constant _I_SALES_QTY            => int    5; ) Tj
+( use constant _O_RANGE_QTY            => int    9; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 395.4 Tm
 0.0000 Tw
-( use constant _I_SALES_DATE           => int    6; ) Tj
+( use constant _O_RANGE_QTY_2          => int   10; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 387.0 Tm
 0.0000 Tw
-( use constant _I_LOCATION             => int    7; ) Tj
+( use constant _O_RANGE_QTY_3          => int   11; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 378.6 Tm
 0.0000 Tw
-( use constant _O_SALES_CODE           => int    1; ) Tj
+( use constant _O_TEST_1               => int   12; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 370.2 Tm
 0.0000 Tw
-( use constant _O_COUNT_LOCATION       => int    2; ) Tj
+( local $\\="\\n"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 361.8 Tm
 0.0000 Tw
-( use constant _O_COUNT_PRODUCTS       => int    3; ) Tj
+( local $,="|"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 353.4 Tm
 0.0000 Tw
-( use constant _O_TOTAL_SALES_PRICE    => int    4; ) Tj
+( print STDERR '[examples/statistics_aggr.pql ' . localtime\(\) . "] Init"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 345.0 Tm
 0.0000 Tw
-( use constant _O_TOTAL_SALES_QTY      => int    5; ) Tj
+( use constant VERBOSE => int 10000; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 336.6 Tm
 0.0000 Tw
-( use constant _O_MEDIAN_QTY           => int    6; ) Tj
+( use constant LAST_ICELL => int 7; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 328.2 Tm
 0.0000 Tw
-( use constant _O_VARIANCE_QTY         => int    7; ) Tj
+( my @I_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 319.8 Tm
 0.0000 Tw
-( use constant _O_STDDEV_QTY           => int    8; ) Tj
+( my @O_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 311.4 Tm
 0.0000 Tw
-( use constant _O_RANGE_QTY            => int    9; ) Tj
+( my $_inprecs=0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 303.0 Tm
 0.0000 Tw
-( use constant _O_RANGE_QTY_2          => int   10; ) Tj
+( my %DISTINCT; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 294.6 Tm
 0.0000 Tw
-( use constant _O_RANGE_QTY_3          => int   11; ) Tj
+( my %MEDIAN; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 286.2 Tm
 0.0000 Tw
-( use constant _O_TEST_1               => int   12; ) Tj
+( my %MEDIAN_COUNT; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 277.8 Tm
 0.0000 Tw
-( open\(DATA, q\{cat - | sort -t'|' -y -k 4,4 |\}\) || die "Cannot open input: $!"; ) Tj
+( my %VARIANCE; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 269.4 Tm
 0.0000 Tw
-( &PrintHeader\(\); ) Tj
+( my %STDDEV; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 261.0 Tm
 0.0000 Tw
-( print STDERR '[statistics_aggr.pql ' . localtime\(\) . "] Start"; ) Tj
+( my %RANGE; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 252.6 Tm
 0.0000 Tw
-( use Benchmark; ) Tj
+( my $key__I_SALES_CODE; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 244.2 Tm
 0.0000 Tw
-( my $benchmark_start = new Benchmark; ) Tj
+( my $previous_key__I_SALES_CODE = undef; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 235.8 Tm
 0.0000 Tw
-( while \(<DATA>\) ) Tj
+( foreach my $f \(1..12\) \{ $O_VAL[$f] = undef; \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 227.4 Tm
 0.0000 Tw
-( \{ ) Tj
+( # Sort:SALES_CODE\(asc:string\)  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 219.0 Tm
 0.0000 Tw
-(     print STDERR '[statistics_aggr.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE == 0\); ) Tj
+( open\(DATA, q\{cat  - | sort  -t'|' -y -k 4,4 2>/dev/null |\}\) || die "Cannot open input: $!"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 210.6 Tm
 0.0000 Tw
-(     chomp; ) Tj
+( &PrintHeader\(\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 202.2 Tm
 0.0000 Tw
-(     @I_VAL = split\("[|]", $_\); ) Tj
+( print STDERR '[examples/statistics_aggr.pql ' . localtime\(\) . "] Start"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 193.8 Tm
 0.0000 Tw
-(     $key__I_SALES_CODE = $I_VAL[_I_SALES_CODE]; ) Tj
+( use Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 185.4 Tm
 0.0000 Tw
-(     if \(!defined\($previous_key__I_SALES_CODE\)\) ) Tj
+( my $benchmark_start = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 177.0 Tm
 0.0000 Tw
-(     \{ ) Tj
+( while \(<DATA>\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 168.6 Tm
 0.0000 Tw
-(         $previous_key__I_SALES_CODE = $key__I_SALES_CODE; ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 160.2 Tm
 0.0000 Tw
-(     \} ) Tj
+(     ++$_inprecs; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 151.8 Tm
+0.0000 Tw
+(     print STDERR '[examples/statistics_aggr.pql ' . localtime\(\) . "] $_inprecs records." if \($_inprecs % VERBO ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 143.4 Tm
 0.0000 Tw
-(     elsif \($previous_key__I_SALES_CODE ne $key__I_SALES_CODE\) ) Tj
+( SE == 0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 135.0 Tm
 0.0000 Tw
-(     \{ ) Tj
+(     chomp; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 126.6 Tm
 0.0000 Tw
-(         $O_VAL[_O_MEDIAN_QTY] = $MEDIAN_COUNT\{_O_MEDIAN_QTY\} % 2 == 0 ? &\{sub\{\($_[0] + $_[1]\) / 2\}\}\(\(\( sort \{$ ) Tj
+(     @I_VAL = split\("[|]", $_\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 118.2 Tm
 0.0000 Tw
-( a <=> $b\} keys %\{$MEDIAN\{_O_MEDIAN_QTY\}\} \)[$MEDIAN_COUNT\{_O_MEDIAN_QTY\}/2-1, $MEDIAN_COUNT\{_O_MEDIAN_QTY\}/2]\)[ ) Tj
+(     $key__I_SALES_CODE = $I_VAL[_I_SALES_CODE]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 109.8 Tm
 0.0000 Tw
-( 0,1]\) : \(sort \{$a <=> $b\} keys %\{$MEDIAN\{_O_MEDIAN_QTY\}\} \)[\(\($MEDIAN_COUNT\{_O_MEDIAN_QTY\}+1\)/2\)-1]; ) Tj
+(     if \(!defined\($previous_key__I_SALES_CODE\)\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 101.4 Tm
 0.0000 Tw
-(         $O_VAL[_O_VARIANCE_QTY] = \($VARIANCE\{_O_VARIANCE_QTY\}\{_SUM_SQUARES\} / \($VARIANCE\{_O_VARIANCE_QTY\}\{_COU ) Tj
+(     \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 93.0 Tm
 0.0000 Tw
-( NT\} == 0 ? 1 : $VARIANCE\{_O_VARIANCE_QTY\}\{_COUNT\}\)\)- \(\($VARIANCE\{_O_VARIANCE_QTY\}\{_SUM\} / $VARIANCE\{_O_VARIANC ) Tj
+(         $previous_key__I_SALES_CODE = $key__I_SALES_CODE; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 84.6 Tm
 0.0000 Tw
-( E_QTY\}\{_COUNT\}\) ** 2\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 76.2 Tm
-0.0000 Tw
-(         $O_VAL[_O_STDDEV_QTY] = sqrt\(\($STDDEV\{_O_STDDEV_QTY\}\{_SUM_SQUARES\} / \($STDDEV\{_O_STDDEV_QTY\}\{_COUNT\} = ) Tj
+(     \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 67.8 Tm
 0.0000 Tw
-( = 0 ? 1 : $STDDEV\{_O_STDDEV_QTY\}\{_COUNT\}\)\)- \(\($STDDEV\{_O_STDDEV_QTY\}\{_SUM\} / $STDDEV\{_O_STDDEV_QTY\}\{_COUNT\}\) * ) Tj
+(     elsif \($previous_key__I_SALES_CODE ne $key__I_SALES_CODE\) ) Tj
 /F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:43) Tj
+(16 November 2005 14:20) Tj
 1 0 0 1 537.44 37 Tm
 (7) Tj
 ET
@@ -1701,7 +1719,7 @@ S
 endstream
 endobj
 43 0 obj
-8165
+7626
 endobj
 44 0 obj
 <<
@@ -1736,338 +1754,338 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Statistics Aggregates Example Script) Tj
-1 0 0 1 454.64 797 Tm
-(statistics_aggr.pql) Tj
+1 0 0 1 406.28 797 Tm
+(examples/statistics_aggr.pql) Tj
 /F10 7 Tf
 1 0 0 1 76.0 771.6 Tm
 0.0000 Tw
-( * 2\)\); ) Tj
+(     \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 763.2 Tm
 0.0000 Tw
-(         $O_VAL[_O_RANGE_QTY] = $RANGE\{_O_RANGE_QTY\}\{_MAX\} - $RANGE\{_O_RANGE_QTY\}\{_MIN\}; ) Tj
+(         $O_VAL[_O_MEDIAN_QTY] = $MEDIAN_COUNT\{_O_MEDIAN_QTY\} % 2 == 0 ? &\{sub\{\($_[0] + $_[1]\) / 2\}\}\(\(\( sort \{$ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 754.8 Tm
 0.0000 Tw
-(         $O_VAL[_O_RANGE_QTY_2] = $O_VAL[_O_RANGE_QTY] * 2; ) Tj
+( a <=> $b\} keys %\{$MEDIAN\{_O_MEDIAN_QTY\}\} \)[$MEDIAN_COUNT\{_O_MEDIAN_QTY\}/2-1, $MEDIAN_COUNT\{_O_MEDIAN_QTY\}/2]\)[ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 746.4 Tm
 0.0000 Tw
-(         $O_VAL[_O_RANGE_QTY_3] = $O_VAL[_O_RANGE_QTY] * 3; ) Tj
+( 0,1]\) : \(sort \{$a <=> $b\} keys %\{$MEDIAN\{_O_MEDIAN_QTY\}\} \)[\(\($MEDIAN_COUNT\{_O_MEDIAN_QTY\}+1\)/2\)-1]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 738.0 Tm
 0.0000 Tw
-(         $O_VAL[_O_TEST_1] = $O_VAL[_O_MEDIAN_QTY] + 100; ) Tj
+(         $O_VAL[_O_VARIANCE_QTY] = \($VARIANCE\{_O_VARIANCE_QTY\}\{_SUM_SQUARES\} / \($VARIANCE\{_O_VARIANCE_QTY\}\{_COU ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 729.6 Tm
 0.0000 Tw
-(         print  ) Tj
+( NT\} == 0 ? 1 : $VARIANCE\{_O_VARIANCE_QTY\}\{_COUNT\}\)\)- \(\($VARIANCE\{_O_VARIANCE_QTY\}\{_SUM\} / $VARIANCE\{_O_VARIANC ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 721.2 Tm
 0.0000 Tw
-(             $O_VAL[_O_SALES_CODE], ) Tj
+( E_QTY\}\{_COUNT\}\) ** 2\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 712.8 Tm
 0.0000 Tw
-(             $O_VAL[_O_COUNT_LOCATION], ) Tj
+(         $O_VAL[_O_STDDEV_QTY] = sqrt\(\($STDDEV\{_O_STDDEV_QTY\}\{_SUM_SQUARES\} / \($STDDEV\{_O_STDDEV_QTY\}\{_COUNT\} = ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 704.4 Tm
 0.0000 Tw
-(             $O_VAL[_O_COUNT_PRODUCTS], ) Tj
+( = 0 ? 1 : $STDDEV\{_O_STDDEV_QTY\}\{_COUNT\}\)\)- \(\($STDDEV\{_O_STDDEV_QTY\}\{_SUM\} / $STDDEV\{_O_STDDEV_QTY\}\{_COUNT\}\) * ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 696.0 Tm
 0.0000 Tw
-(             $O_VAL[_O_TOTAL_SALES_PRICE], ) Tj
+( * 2\)\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 687.6 Tm
 0.0000 Tw
-(             $O_VAL[_O_TOTAL_SALES_QTY], ) Tj
+(         $O_VAL[_O_RANGE_QTY] = $RANGE\{_O_RANGE_QTY\}\{_MAX\} - $RANGE\{_O_RANGE_QTY\}\{_MIN\}; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 679.2 Tm
 0.0000 Tw
-(             $O_VAL[_O_MEDIAN_QTY], ) Tj
+(         $O_VAL[_O_RANGE_QTY_2] = $O_VAL[_O_RANGE_QTY] * 2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 670.8 Tm
 0.0000 Tw
-(             $O_VAL[_O_VARIANCE_QTY], ) Tj
+(         $O_VAL[_O_RANGE_QTY_3] = $O_VAL[_O_RANGE_QTY] * 3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 662.4 Tm
 0.0000 Tw
-(             $O_VAL[_O_STDDEV_QTY], ) Tj
+(         $O_VAL[_O_TEST_1] = $O_VAL[_O_MEDIAN_QTY] + 100; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 654.0 Tm
 0.0000 Tw
-(             $O_VAL[_O_RANGE_QTY], ) Tj
+(         print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 645.6 Tm
 0.0000 Tw
-(             $O_VAL[_O_RANGE_QTY_2], ) Tj
+(             $O_VAL[_O_SALES_CODE], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 637.2 Tm
 0.0000 Tw
-(             $O_VAL[_O_RANGE_QTY_3], ) Tj
+(             $O_VAL[_O_COUNT_LOCATION], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 628.8 Tm
 0.0000 Tw
-(             $O_VAL[_O_TEST_1] ) Tj
+(             $O_VAL[_O_COUNT_PRODUCTS], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 620.4 Tm
 0.0000 Tw
-(         ; ) Tj
+(             $O_VAL[_O_TOTAL_SALES_PRICE], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 612.0 Tm
 0.0000 Tw
-(         $previous_key__I_SALES_CODE = $key__I_SALES_CODE; ) Tj
+(             $O_VAL[_O_TOTAL_SALES_QTY], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 603.6 Tm
 0.0000 Tw
-(         @O_VAL = undef; ) Tj
+(             $O_VAL[_O_MEDIAN_QTY], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 595.2 Tm
 0.0000 Tw
-(         %DISTINCT = undef; ) Tj
+(             $O_VAL[_O_VARIANCE_QTY], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 586.8 Tm
 0.0000 Tw
-(         %MEDIAN = undef; ) Tj
+(             $O_VAL[_O_STDDEV_QTY], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 578.4 Tm
 0.0000 Tw
-(         %MEDIAN_COUNT = undef; ) Tj
+(             $O_VAL[_O_RANGE_QTY], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 570.0 Tm
 0.0000 Tw
-(         %VARIANCE = undef; ) Tj
+(             $O_VAL[_O_RANGE_QTY_2], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 561.6 Tm
 0.0000 Tw
-(         %STDDEV = undef; ) Tj
+(             $O_VAL[_O_RANGE_QTY_3], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 553.2 Tm
 0.0000 Tw
-(         %RANGE = undef; ) Tj
+(             $O_VAL[_O_TEST_1] ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 544.8 Tm
 0.0000 Tw
-(     \} ) Tj
+(         ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 536.4 Tm
+0.0000 Tw
+(         $previous_key__I_SALES_CODE = $key__I_SALES_CODE; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 528.0 Tm
 0.0000 Tw
-(     $O_VAL[_O_SALES_CODE] = $I_VAL[_I_SALES_CODE]; ) Tj
+(         @O_VAL = undef; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 519.6 Tm
 0.0000 Tw
-(     $O_VAL[_O_COUNT_LOCATION]++ if \(defined\($I_VAL[_I_LOCATION]\) && ++$DISTINCT\{_O_COUNT_LOCATION\}\{qq\{$I_VAL[_ ) Tj
+(         %DISTINCT = undef; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 511.2 Tm
 0.0000 Tw
-( I_LOCATION]\}\} == 1\); ) Tj
+(         %MEDIAN = undef; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 502.8 Tm
 0.0000 Tw
-(     $O_VAL[_O_COUNT_PRODUCTS]++ if \(defined\($I_VAL[_I_PRODUCT_CODE]\) && ++$DISTINCT\{_O_COUNT_PRODUCTS\}\{qq\{$I_V ) Tj
+(         %MEDIAN_COUNT = undef; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 494.4 Tm
 0.0000 Tw
-( AL[_I_PRODUCT_CODE]\}\} == 1\); ) Tj
+(         %VARIANCE = undef; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 486.0 Tm
 0.0000 Tw
-(     $O_VAL[_O_TOTAL_SALES_PRICE] += $I_VAL[_I_SALES_PRICE] unless \($I_VAL[_I_SALES_PRICE] eq ''\); ) Tj
+(         %STDDEV = undef; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 477.6 Tm
 0.0000 Tw
-(     $O_VAL[_O_TOTAL_SALES_QTY] += $I_VAL[_I_SALES_QTY] unless \($I_VAL[_I_SALES_QTY] eq ''\); ) Tj
+(         %RANGE = undef; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 469.2 Tm
 0.0000 Tw
-(     $MEDIAN_COUNT\{_O_MEDIAN_QTY\}++ if \(++$MEDIAN\{_O_MEDIAN_QTY\}\{qq\{$I_VAL[_I_SALES_QTY]\}\} == 1\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 460.8 Tm
-0.0000 Tw
-(     $VARIANCE\{_O_VARIANCE_QTY\}\{_SUM\} += $I_VAL[_I_SALES_QTY]; ) Tj
+(     \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 452.4 Tm
 0.0000 Tw
-(     $VARIANCE\{_O_VARIANCE_QTY\}\{_SUM_SQUARES\} += $I_VAL[_I_SALES_QTY] ** 2; ) Tj
+(     $O_VAL[_O_SALES_CODE] = $I_VAL[_I_SALES_CODE]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 444.0 Tm
 0.0000 Tw
-(     $VARIANCE\{_O_VARIANCE_QTY\}\{_COUNT\}++; ) Tj
+(     $O_VAL[_O_COUNT_LOCATION]++  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 435.6 Tm
 0.0000 Tw
-(     $STDDEV\{_O_STDDEV_QTY\}\{_SUM\} += $I_VAL[_I_SALES_QTY]; ) Tj
+(         if \(defined\($I_VAL[_I_LOCATION]\) && ++$DISTINCT\{_O_COUNT_LOCATION\}\{qq\{$I_VAL[_I_LOCATION]\}\} == 1\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 427.2 Tm
 0.0000 Tw
-(     $STDDEV\{_O_STDDEV_QTY\}\{_SUM_SQUARES\} += $I_VAL[_I_SALES_QTY] ** 2; ) Tj
+(     $O_VAL[_O_COUNT_PRODUCTS]++  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 418.8 Tm
 0.0000 Tw
-(     $STDDEV\{_O_STDDEV_QTY\}\{_COUNT\}++; ) Tj
+(         if \(defined\($I_VAL[_I_PRODUCT_CODE]\) && ++$DISTINCT\{_O_COUNT_PRODUCTS\}\{qq\{$I_VAL[_I_PRODUCT_CODE]\}\} == ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 410.4 Tm
 0.0000 Tw
-(     $RANGE\{_O_RANGE_QTY\}\{_MIN\} = $I_VAL[_I_SALES_QTY] ) Tj
+(  1\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 402.0 Tm
 0.0000 Tw
-(         if ) Tj
+(     $O_VAL[_O_TOTAL_SALES_PRICE] += $I_VAL[_I_SALES_PRICE] unless \($I_VAL[_I_SALES_PRICE] eq ''\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 393.6 Tm
 0.0000 Tw
-(         \( ) Tj
+(     $O_VAL[_O_TOTAL_SALES_QTY] += $I_VAL[_I_SALES_QTY] unless \($I_VAL[_I_SALES_QTY] eq ''\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 385.2 Tm
 0.0000 Tw
-(             !defined\($RANGE\{_O_RANGE_QTY\}\{_MIN\}\) ) Tj
+(     $MEDIAN_COUNT\{_O_MEDIAN_QTY\}++ if \(++$MEDIAN\{_O_MEDIAN_QTY\}\{qq\{$I_VAL[_I_SALES_QTY]\}\} == 1\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 376.8 Tm
 0.0000 Tw
-(             || $I_VAL[_I_SALES_QTY] < $RANGE\{_O_RANGE_QTY\}\{_MIN\} ) Tj
+(     $VARIANCE\{_O_VARIANCE_QTY\}\{_SUM\} += $I_VAL[_I_SALES_QTY]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 368.4 Tm
 0.0000 Tw
-(         \); ) Tj
+(     $VARIANCE\{_O_VARIANCE_QTY\}\{_SUM_SQUARES\} += $I_VAL[_I_SALES_QTY] ** 2; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 360.0 Tm
+0.0000 Tw
+(     $VARIANCE\{_O_VARIANCE_QTY\}\{_COUNT\}++; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 351.6 Tm
 0.0000 Tw
-(     $RANGE\{_O_RANGE_QTY\}\{_MAX\} = $I_VAL[_I_SALES_QTY] ) Tj
+(     $STDDEV\{_O_STDDEV_QTY\}\{_SUM\} += $I_VAL[_I_SALES_QTY]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 343.2 Tm
 0.0000 Tw
-(         if ) Tj
+(     $STDDEV\{_O_STDDEV_QTY\}\{_SUM_SQUARES\} += $I_VAL[_I_SALES_QTY] ** 2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 334.8 Tm
 0.0000 Tw
-(         \( ) Tj
+(     $STDDEV\{_O_STDDEV_QTY\}\{_COUNT\}++; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 326.4 Tm
 0.0000 Tw
-(             !defined\($RANGE\{_O_RANGE_QTY\}\{_MAX\}\) ) Tj
+(     $RANGE\{_O_RANGE_QTY\}\{_MIN\} = $I_VAL[_I_SALES_QTY] ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 318.0 Tm
 0.0000 Tw
-(             || $I_VAL[_I_SALES_QTY] > $RANGE\{_O_RANGE_QTY\}\{_MAX\} ) Tj
+(         if ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 309.6 Tm
 0.0000 Tw
-(         \); ) Tj
+(         \( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 301.2 Tm
+0.0000 Tw
+(             !defined\($RANGE\{_O_RANGE_QTY\}\{_MIN\}\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 292.8 Tm
 0.0000 Tw
-( \} ) Tj
+(             || $I_VAL[_I_SALES_QTY] < $RANGE\{_O_RANGE_QTY\}\{_MIN\} ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 276.0 Tm
+1 0 0 1 76.0 284.4 Tm
 0.0000 Tw
-( $O_VAL[_O_MEDIAN_QTY] = $MEDIAN_COUNT\{_O_MEDIAN_QTY\} % 2 == 0 ? &\{sub\{\($_[0] + $_[1]\) / 2\}\}\(\(\( sort \{$a <=> $b ) Tj
+(         \); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 267.6 Tm
 0.0000 Tw
-( \} keys %\{$MEDIAN\{_O_MEDIAN_QTY\}\} \)[$MEDIAN_COUNT\{_O_MEDIAN_QTY\}/2-1, $MEDIAN_COUNT\{_O_MEDIAN_QTY\}/2]\)[0,1]\) :  ) Tj
+(     $RANGE\{_O_RANGE_QTY\}\{_MAX\} = $I_VAL[_I_SALES_QTY] ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 259.2 Tm
 0.0000 Tw
-( \(sort \{$a <=> $b\} keys %\{$MEDIAN\{_O_MEDIAN_QTY\}\} \)[\(\($MEDIAN_COUNT\{_O_MEDIAN_QTY\}+1\)/2\)-1]; ) Tj
+(         if ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 250.8 Tm
 0.0000 Tw
-( $O_VAL[_O_VARIANCE_QTY] = \($VARIANCE\{_O_VARIANCE_QTY\}\{_SUM_SQUARES\} / \($VARIANCE\{_O_VARIANCE_QTY\}\{_COUNT\} == 0 ) Tj
+(         \( ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 242.4 Tm
 0.0000 Tw
-(  ? 1 : $VARIANCE\{_O_VARIANCE_QTY\}\{_COUNT\}\)\)- \(\($VARIANCE\{_O_VARIANCE_QTY\}\{_SUM\} / $VARIANCE\{_O_VARIANCE_QTY\}\{_ ) Tj
+(             !defined\($RANGE\{_O_RANGE_QTY\}\{_MAX\}\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 234.0 Tm
 0.0000 Tw
-( COUNT\}\) ** 2\); ) Tj
+(             || $I_VAL[_I_SALES_QTY] > $RANGE\{_O_RANGE_QTY\}\{_MAX\} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 225.6 Tm
 0.0000 Tw
-( $O_VAL[_O_STDDEV_QTY] = sqrt\(\($STDDEV\{_O_STDDEV_QTY\}\{_SUM_SQUARES\} / \($STDDEV\{_O_STDDEV_QTY\}\{_COUNT\} == 0 ? 1  ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 217.2 Tm
-0.0000 Tw
-( : $STDDEV\{_O_STDDEV_QTY\}\{_COUNT\}\)\)- \(\($STDDEV\{_O_STDDEV_QTY\}\{_SUM\} / $STDDEV\{_O_STDDEV_QTY\}\{_COUNT\}\) ** 2\)\); ) Tj
+(         \); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 208.8 Tm
 0.0000 Tw
-( $O_VAL[_O_RANGE_QTY] = $RANGE\{_O_RANGE_QTY\}\{_MAX\} - $RANGE\{_O_RANGE_QTY\}\{_MIN\}; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 200.4 Tm
-0.0000 Tw
-( $O_VAL[_O_RANGE_QTY_2] = $O_VAL[_O_RANGE_QTY] * 2; ) Tj
+( \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 192.0 Tm
 0.0000 Tw
-( $O_VAL[_O_RANGE_QTY_3] = $O_VAL[_O_RANGE_QTY] * 3; ) Tj
+( $O_VAL[_O_MEDIAN_QTY] = $MEDIAN_COUNT\{_O_MEDIAN_QTY\} % 2 == 0 ? &\{sub\{\($_[0] + $_[1]\) / 2\}\}\(\(\( sort \{$a <=> $b ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 183.6 Tm
 0.0000 Tw
-( $O_VAL[_O_TEST_1] = $O_VAL[_O_MEDIAN_QTY] + 100; ) Tj
+( \} keys %\{$MEDIAN\{_O_MEDIAN_QTY\}\} \)[$MEDIAN_COUNT\{_O_MEDIAN_QTY\}/2-1, $MEDIAN_COUNT\{_O_MEDIAN_QTY\}/2]\)[0,1]\) :  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 175.2 Tm
 0.0000 Tw
-( print  ) Tj
+( \(sort \{$a <=> $b\} keys %\{$MEDIAN\{_O_MEDIAN_QTY\}\} \)[\(\($MEDIAN_COUNT\{_O_MEDIAN_QTY\}+1\)/2\)-1]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 166.8 Tm
 0.0000 Tw
-(     $O_VAL[_O_SALES_CODE], ) Tj
+( $O_VAL[_O_VARIANCE_QTY] = \($VARIANCE\{_O_VARIANCE_QTY\}\{_SUM_SQUARES\} / \($VARIANCE\{_O_VARIANCE_QTY\}\{_COUNT\} == 0 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 158.4 Tm
 0.0000 Tw
-(     $O_VAL[_O_COUNT_LOCATION], ) Tj
+(  ? 1 : $VARIANCE\{_O_VARIANCE_QTY\}\{_COUNT\}\)\)- \(\($VARIANCE\{_O_VARIANCE_QTY\}\{_SUM\} / $VARIANCE\{_O_VARIANCE_QTY\}\{_ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 150.0 Tm
 0.0000 Tw
-(     $O_VAL[_O_COUNT_PRODUCTS], ) Tj
+( COUNT\}\) ** 2\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 141.6 Tm
 0.0000 Tw
-(     $O_VAL[_O_TOTAL_SALES_PRICE], ) Tj
+( $O_VAL[_O_STDDEV_QTY] = sqrt\(\($STDDEV\{_O_STDDEV_QTY\}\{_SUM_SQUARES\} / \($STDDEV\{_O_STDDEV_QTY\}\{_COUNT\} == 0 ? 1  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 133.2 Tm
 0.0000 Tw
-(     $O_VAL[_O_TOTAL_SALES_QTY], ) Tj
+( : $STDDEV\{_O_STDDEV_QTY\}\{_COUNT\}\)\)- \(\($STDDEV\{_O_STDDEV_QTY\}\{_SUM\} / $STDDEV\{_O_STDDEV_QTY\}\{_COUNT\}\) ** 2\)\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 124.8 Tm
 0.0000 Tw
-(     $O_VAL[_O_MEDIAN_QTY], ) Tj
+( $O_VAL[_O_RANGE_QTY] = $RANGE\{_O_RANGE_QTY\}\{_MAX\} - $RANGE\{_O_RANGE_QTY\}\{_MIN\}; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 116.4 Tm
 0.0000 Tw
-(     $O_VAL[_O_VARIANCE_QTY], ) Tj
+( $O_VAL[_O_RANGE_QTY_2] = $O_VAL[_O_RANGE_QTY] * 2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 108.0 Tm
 0.0000 Tw
-(     $O_VAL[_O_STDDEV_QTY], ) Tj
+( $O_VAL[_O_RANGE_QTY_3] = $O_VAL[_O_RANGE_QTY] * 3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 99.6 Tm
 0.0000 Tw
-(     $O_VAL[_O_RANGE_QTY], ) Tj
+( $O_VAL[_O_TEST_1] = $O_VAL[_O_MEDIAN_QTY] + 100; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 91.2 Tm
 0.0000 Tw
-(     $O_VAL[_O_RANGE_QTY_2], ) Tj
+( print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 82.8 Tm
 0.0000 Tw
-(     $O_VAL[_O_RANGE_QTY_3], ) Tj
+(     $O_VAL[_O_SALES_CODE], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 74.4 Tm
 0.0000 Tw
-(     $O_VAL[_O_TEST_1] ) Tj
+(     $O_VAL[_O_COUNT_LOCATION], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 66.0 Tm
 0.0000 Tw
-( ; ) Tj
+(     $O_VAL[_O_COUNT_PRODUCTS], ) Tj
 /F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (8) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:43) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:20) Tj
 ET
 52 50 m
 543 50 l
@@ -2075,7 +2093,7 @@ S
 endstream
 endobj
 47 0 obj
-8153
+8825
 endobj
 48 0 obj
 <<
@@ -2109,108 +2127,156 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(statistics_aggr.pql) Tj
+(examples/statistics_aggr.pql) Tj
 1 0 0 1 365.72 797 Tm
 (Statistics Aggregates Example Script) Tj
 /F10 7 Tf
 1 0 0 1 76.0 771.6 Tm
 0.0000 Tw
-( print STDERR '[statistics_aggr.pql ' . localtime\(\) . "] $. records."; ) Tj
+(     $O_VAL[_O_TOTAL_SALES_PRICE], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 763.2 Tm
 0.0000 Tw
-( my $benchmark_end = new Benchmark; ) Tj
+(     $O_VAL[_O_TOTAL_SALES_QTY], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 754.8 Tm
 0.0000 Tw
-( my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+(     $O_VAL[_O_MEDIAN_QTY], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 746.4 Tm
 0.0000 Tw
-( print STDERR '[statistics_aggr.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark_timediff\)]\}"; ) Tj
+(     $O_VAL[_O_VARIANCE_QTY], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 738.0 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+(     $O_VAL[_O_STDDEV_QTY], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 729.6 Tm
 0.0000 Tw
-( sub PrintHeader ) Tj
+(     $O_VAL[_O_RANGE_QTY], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 721.2 Tm
 0.0000 Tw
-( \{ ) Tj
+(     $O_VAL[_O_RANGE_QTY_2], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 712.8 Tm
 0.0000 Tw
-(     local $\\="\\n"; ) Tj
+(     $O_VAL[_O_RANGE_QTY_3], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 704.4 Tm
 0.0000 Tw
-(     local $,="|"; ) Tj
+(     $O_VAL[_O_TEST_1] ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 696.0 Tm
 0.0000 Tw
-(     print  ) Tj
+( ; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 687.6 Tm
 0.0000 Tw
-(         'SALES_CODE', ) Tj
+( close\(DATA\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 679.2 Tm
 0.0000 Tw
-(         'COUNT_LOCATION', ) Tj
+( print STDERR '[examples/statistics_aggr.pql ' . localtime\(\) . "] $_inprecs records."; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 670.8 Tm
 0.0000 Tw
-(         'COUNT_PRODUCTS', ) Tj
+( my $benchmark_end = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 662.4 Tm
 0.0000 Tw
-(         'TOTAL_SALES_PRICE', ) Tj
+( my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 654.0 Tm
 0.0000 Tw
-(         'TOTAL_SALES_QTY', ) Tj
+( print STDERR '[examples/statistics_aggr.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark_timedi ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 645.6 Tm
 0.0000 Tw
-(         'MEDIAN_QTY', ) Tj
+( ff\)]\}"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 637.2 Tm
 0.0000 Tw
-(         'VARIANCE_QTY', ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 628.8 Tm
 0.0000 Tw
-(         'STDDEV_QTY', ) Tj
+( sub PrintHeader ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 620.4 Tm
 0.0000 Tw
-(         'RANGE_QTY', ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 612.0 Tm
 0.0000 Tw
-(         'RANGE_QTY_2', ) Tj
+(     local $\\="\\n"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 603.6 Tm
 0.0000 Tw
-(         'RANGE_QTY_3', ) Tj
+(     local $,="|"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 595.2 Tm
 0.0000 Tw
-(         'TEST_1' ) Tj
+(     print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 586.8 Tm
 0.0000 Tw
-(         ; ) Tj
+(         'SALES_CODE', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 578.4 Tm
+0.0000 Tw
+(         'COUNT_LOCATION', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 570.0 Tm
+0.0000 Tw
+(         'COUNT_PRODUCTS', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 561.6 Tm
+0.0000 Tw
+(         'TOTAL_SALES_PRICE', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 553.2 Tm
+0.0000 Tw
+(         'TOTAL_SALES_QTY', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 544.8 Tm
+0.0000 Tw
+(         'MEDIAN_QTY', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 536.4 Tm
+0.0000 Tw
+(         'VARIANCE_QTY', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 528.0 Tm
+0.0000 Tw
+(         'STDDEV_QTY', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 519.6 Tm
+0.0000 Tw
+(         'RANGE_QTY', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 511.2 Tm
+0.0000 Tw
+(         'RANGE_QTY_2', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 502.8 Tm
+0.0000 Tw
+(         'RANGE_QTY_3', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 494.4 Tm
+0.0000 Tw
+(         'TEST_1' ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 486.0 Tm
+0.0000 Tw
+(         ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 477.6 Tm
 0.0000 Tw
 ( \} ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:43) Tj
+(16 November 2005 14:20) Tj
 1 0 0 1 537.44 37 Tm
 (9) Tj
 ET
@@ -2220,7 +2286,7 @@ S
 endstream
 endobj
 51 0 obj
-2217
+3115
 endobj
 52 0 obj
 <<
@@ -2255,8 +2321,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Statistics Aggregates Example Script) Tj
-1 0 0 1 454.64 797 Tm
-(statistics_aggr.pql) Tj
+1 0 0 1 406.28 797 Tm
+(examples/statistics_aggr.pql) Tj
 /F21 12 Tf
 1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
@@ -2327,8 +2393,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (10) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:43) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:20) Tj
 ET
 52 50 m
 543 50 l
@@ -2336,7 +2402,7 @@ S
 endstream
 endobj
 55 0 obj
-2235
+2243
 endobj
 56 0 obj
 <<
@@ -2371,12 +2437,12 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(statistics_aggr.pql) Tj
+(examples/statistics_aggr.pql) Tj
 1 0 0 1 365.72 797 Tm
 (Statistics Aggregates Example Script) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:43) Tj
+(16 November 2005 14:20) Tj
 1 0 0 1 531.88 37 Tm
 (11) Tj
 ET
@@ -2386,7 +2452,7 @@ S
 endstream
 endobj
 59 0 obj
-283
+291
 endobj
 60 0 obj
 <<
@@ -2420,13 +2486,13 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Statistics Aggregates Example Script) Tj
-1 0 0 1 454.64 797 Tm
-(statistics_aggr.pql) Tj
+1 0 0 1 406.28 797 Tm
+(examples/statistics_aggr.pql) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (12) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:43) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:20) Tj
 ET
 52 50 m
 543 50 l
@@ -2434,7 +2500,7 @@ S
 endstream
 endobj
 63 0 obj
-283
+291
 endobj
 64 0 obj
 <<
@@ -2819,7 +2885,7 @@ f
 Q
 BT
 1 0 0 1 100 326 Tm
-(2.1 pequeldoc) Tj
+(2.1 prefix) Tj
 1 0 0 1 513.44 326 Tm
 (3) Tj
 ET
@@ -2830,7 +2896,7 @@ f
 Q
 BT
 1 0 0 1 100 314 Tm
-(2.2 detail) Tj
+(2.2 pequeldoc) Tj
 1 0 0 1 513.44 314 Tm
 (3) Tj
 ET
@@ -2841,7 +2907,7 @@ f
 Q
 BT
 1 0 0 1 100 302 Tm
-(2.3 script_name) Tj
+(2.3 detail) Tj
 1 0 0 1 513.44 302 Tm
 (3) Tj
 ET
@@ -2852,7 +2918,7 @@ f
 Q
 BT
 1 0 0 1 100 290 Tm
-(2.4 header) Tj
+(2.4 script_name) Tj
 1 0 0 1 513.44 290 Tm
 (3) Tj
 ET
@@ -2863,7 +2929,7 @@ f
 Q
 BT
 1 0 0 1 100 278 Tm
-(2.5 optimize) Tj
+(2.5 header) Tj
 1 0 0 1 513.44 278 Tm
 (3) Tj
 ET
@@ -2874,7 +2940,7 @@ f
 Q
 BT
 1 0 0 1 100 266 Tm
-(2.6 doc_title) Tj
+(2.6 optimize) Tj
 1 0 0 1 513.44 266 Tm
 (3) Tj
 ET
@@ -2885,7 +2951,7 @@ f
 Q
 BT
 1 0 0 1 100 254 Tm
-(2.7 doc_email) Tj
+(2.7 doc_title) Tj
 1 0 0 1 513.44 254 Tm
 (3) Tj
 ET
@@ -2896,7 +2962,7 @@ f
 Q
 BT
 1 0 0 1 100 242 Tm
-(2.8 doc_version) Tj
+(2.8 doc_email) Tj
 1 0 0 1 513.44 242 Tm
 (3) Tj
 ET
@@ -2906,10 +2972,10 @@ q
 f
 Q
 BT
-1 0 0 1 76 230 Tm
-(3. TABLES) Tj
+1 0 0 1 100 230 Tm
+(2.9 doc_version) Tj
 1 0 0 1 513.44 230 Tm
-(4) Tj
+(3) Tj
 ET
 q
 0.95 g
@@ -2918,9 +2984,9 @@ f
 Q
 BT
 1 0 0 1 76 218 Tm
-(4. TABLE INFORMATION SUMMARY) Tj
+(3. TABLES) Tj
 1 0 0 1 513.44 218 Tm
-(5) Tj
+(4) Tj
 ET
 q
 1 g
@@ -2928,8 +2994,8 @@ q
 f
 Q
 BT
-1 0 0 1 100 206 Tm
-(4.1 Table List Sorted By Table Name) Tj
+1 0 0 1 76 206 Tm
+(4. TABLE INFORMATION SUMMARY) Tj
 1 0 0 1 513.44 206 Tm
 (5) Tj
 ET
@@ -2939,10 +3005,10 @@ q
 f
 Q
 BT
-1 0 0 1 76 194 Tm
-(5. STATISTICS_AGGR.PQL) Tj
+1 0 0 1 100 194 Tm
+(4.1 Table List Sorted By Table Name) Tj
 1 0 0 1 513.44 194 Tm
-(6) Tj
+(5) Tj
 ET
 q
 1 g
@@ -2950,8 +3016,8 @@ q
 f
 Q
 BT
-1 0 0 1 100 182 Tm
-(options) Tj
+1 0 0 1 76 182 Tm
+(5. EXAMPLES/STATISTICS_AGGR.PQL) Tj
 1 0 0 1 513.44 182 Tm
 (6) Tj
 ET
@@ -2962,7 +3028,7 @@ f
 Q
 BT
 1 0 0 1 100 170 Tm
-(description) Tj
+(options) Tj
 1 0 0 1 513.44 170 Tm
 (6) Tj
 ET
@@ -2973,7 +3039,7 @@ f
 Q
 BT
 1 0 0 1 100 158 Tm
-(sort by) Tj
+(description) Tj
 1 0 0 1 513.44 158 Tm
 (6) Tj
 ET
@@ -2984,7 +3050,7 @@ f
 Q
 BT
 1 0 0 1 100 146 Tm
-(group by) Tj
+(input section) Tj
 1 0 0 1 513.44 146 Tm
 (6) Tj
 ET
@@ -2995,7 +3061,7 @@ f
 Q
 BT
 1 0 0 1 100 134 Tm
-(input section) Tj
+(sort by) Tj
 1 0 0 1 513.44 134 Tm
 (6) Tj
 ET
@@ -3006,7 +3072,7 @@ f
 Q
 BT
 1 0 0 1 100 122 Tm
-(output section) Tj
+(group by) Tj
 1 0 0 1 513.44 122 Tm
 (6) Tj
 ET
@@ -3016,10 +3082,10 @@ q
 f
 Q
 BT
-1 0 0 1 76 110 Tm
-(6. PEQUEL GENERATED PROGRAM) Tj
+1 0 0 1 100 110 Tm
+(output section) Tj
 1 0 0 1 513.44 110 Tm
-(7) Tj
+(6) Tj
 ET
 q
 0.95 g
@@ -3028,9 +3094,9 @@ f
 Q
 BT
 1 0 0 1 76 98 Tm
-(7. ABOUT PEQUEL) Tj
-1 0 0 1 507.88 98 Tm
-(10) Tj
+(6. PEQUEL GENERATED PROGRAM) Tj
+1 0 0 1 513.44 98 Tm
+(7) Tj
 ET
 q
 1 g
@@ -3038,13 +3104,24 @@ q
 f
 Q
 BT
-1 0 0 1 100 86 Tm
-(COPYRIGHT) Tj
+1 0 0 1 76 86 Tm
+(7. ABOUT PEQUEL) Tj
 1 0 0 1 507.88 86 Tm
+(10) Tj
+ET
+q
+0.95 g
+52 71 491 12 re
+f
+Q
+BT
+1 0 0 1 100 74 Tm
+(COPYRIGHT) Tj
+1 0 0 1 507.88 74 Tm
 (10) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:43) Tj
+(16 November 2005 14:20) Tj
 1 0 0 1 540.22 37 Tm
 (i) Tj
 ET
@@ -3054,7 +3131,7 @@ S
 endstream
 endobj
 67 0 obj
-5641
+5746
 endobj
 68 0 obj
 <<
@@ -3094,8 +3171,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (ii) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:43) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:20) Tj
 ET
 52 50 m
 543 50 l
@@ -3103,7 +3180,7 @@ S
 endstream
 endobj
 71 0 obj
-281
+280
 endobj
 72 0 obj
 <<
@@ -3150,7 +3227,7 @@ BT
 /F21 24 Tf
 1 0 0 1 210 706 Tm
 0 -30 TD
-(statistics_aggr.pql) Tj
+(examples/statistics_aggr.pql) Tj
 T* (by ) Tj
 0 0 0.8 rg
 /F22 12 Tf
@@ -3167,7 +3244,7 @@ ET
 endstream
 endobj
 76 0 obj
-345
+354
 endobj
 77 0 obj
 <<
@@ -3194,12 +3271,12 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(statistics_aggr.pql) Tj
+(examples/statistics_aggr.pql) Tj
 1 0 0 1 365.72 797 Tm
 (Statistics Aggregates Example Script) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:43) Tj
+(16 November 2005 14:20) Tj
 1 0 0 1 543 37 Tm
 () Tj
 ET
@@ -3209,7 +3286,7 @@ S
 endstream
 endobj
 79 0 obj
-278
+286
 endobj
 80 0 obj
 <<
@@ -3234,8 +3311,8 @@ endobj
 /Parent 82 0 R
 /Dest [69 0 R /Fit]
 /First 84 0 R
-/Last 134 0 R
-/Count 52 
+/Last 135 0 R
+/Count 53 
 /Title (Table of Contents)
 >>
 endobj
@@ -3526,10 +3603,10 @@ endobj
 /Parent 83 0 R
 /Dest [29 0 R /FitH 764.4]
 /Previous 86 0 R
-/Next 123 0 R
+/Next 124 0 R
 /First 115 0 R
-/Last 122 0 R
-/Count 8 
+/Last 123 0 R
+/Count 9 
 /Title (2. CONFIGURATION SETTINGS)
 >>
 endobj
@@ -3538,7 +3615,7 @@ endobj
 /Parent 114 0 R
 /Dest [29 0 R /FitH 726]
 /Next 116 0 R
-/Title (2.1 pequeldoc)
+/Title (2.1 prefix)
 >>
 endobj
 116 0 obj
@@ -3547,7 +3624,7 @@ endobj
 /Dest [29 0 R /FitH 684]
 /Previous 115 0 R
 /Next 117 0 R
-/Title (2.2 detail)
+/Title (2.2 pequeldoc)
 >>
 endobj
 117 0 obj
@@ -3556,7 +3633,7 @@ endobj
 /Dest [29 0 R /FitH 642]
 /Previous 116 0 R
 /Next 118 0 R
-/Title (2.3 script_name)
+/Title (2.3 detail)
 >>
 endobj
 118 0 obj
@@ -3565,7 +3642,7 @@ endobj
 /Dest [29 0 R /FitH 600]
 /Previous 117 0 R
 /Next 119 0 R
-/Title (2.4 header)
+/Title (2.4 script_name)
 >>
 endobj
 119 0 obj
@@ -3574,7 +3651,7 @@ endobj
 /Dest [29 0 R /FitH 558]
 /Previous 118 0 R
 /Next 120 0 R
-/Title (2.5 optimize)
+/Title (2.5 header)
 >>
 endobj
 120 0 obj
@@ -3583,7 +3660,7 @@ endobj
 /Dest [29 0 R /FitH 516]
 /Previous 119 0 R
 /Next 121 0 R
-/Title (2.6 doc_title)
+/Title (2.6 optimize)
 >>
 endobj
 121 0 obj
@@ -3592,7 +3669,7 @@ endobj
 /Dest [29 0 R /FitH 474]
 /Previous 120 0 R
 /Next 122 0 R
-/Title (2.7 doc_email)
+/Title (2.7 doc_title)
 >>
 endobj
 122 0 obj
@@ -3600,124 +3677,133 @@ endobj
 /Parent 114 0 R
 /Dest [29 0 R /FitH 432]
 /Previous 121 0 R
-/Title (2.8 doc_version)
+/Next 123 0 R
+/Title (2.8 doc_email)
 >>
 endobj
 123 0 obj
 <<
-/Parent 83 0 R
-/Dest [33 0 R /FitH 764.4]
-/Previous 114 0 R
-/Next 124 0 R
-/Title (3. TABLES)
+/Parent 114 0 R
+/Dest [29 0 R /FitH 390]
+/Previous 122 0 R
+/Title (2.9 doc_version)
 >>
 endobj
 124 0 obj
 <<
 /Parent 83 0 R
-/Dest [37 0 R /FitH 764.4]
-/Previous 123 0 R
-/Next 126 0 R
-/First 125 0 R
-/Last 125 0 R
-/Count 1 
-/Title (4. TABLE INFORMATION SUMMARY)
+/Dest [33 0 R /FitH 764.4]
+/Previous 114 0 R
+/Next 125 0 R
+/Title (3. TABLES)
 >>
 endobj
 125 0 obj
 <<
-/Parent 124 0 R
-/Dest [37 0 R /FitH 726]
-/Title (4.1 Table List Sorted By Table Name)
+/Parent 83 0 R
+/Dest [37 0 R /FitH 764.4]
+/Previous 124 0 R
+/Next 127 0 R
+/First 126 0 R
+/Last 126 0 R
+/Count 1 
+/Title (4. TABLE INFORMATION SUMMARY)
 >>
 endobj
 126 0 obj
 <<
-/Parent 83 0 R
-/Dest [41 0 R /FitH 764.4]
-/Previous 124 0 R
-/Next 133 0 R
-/First 127 0 R
-/Last 132 0 R
-/Count 6 
-/Title (5. STATISTICS_AGGR.PQL)
+/Parent 125 0 R
+/Dest [37 0 R /FitH 726]
+/Title (4.1 Table List Sorted By Table Name)
 >>
 endobj
 127 0 obj
 <<
-/Parent 126 0 R
-/Dest [41 0 R /FitH 726]
-/Next 128 0 R
-/Title (options)
+/Parent 83 0 R
+/Dest [41 0 R /FitH 764.4]
+/Previous 125 0 R
+/Next 134 0 R
+/First 128 0 R
+/Last 133 0 R
+/Count 6 
+/Title (5. EXAMPLES/STATISTICS_AGGR.PQL)
 >>
 endobj
 128 0 obj
 <<
-/Parent 126 0 R
-/Dest [41 0 R /FitH 630]
-/Previous 127 0 R
+/Parent 127 0 R
+/Dest [41 0 R /FitH 726]
 /Next 129 0 R
-/Title (description)
+/Title (options)
 >>
 endobj
 129 0 obj
 <<
-/Parent 126 0 R
-/Dest [41 0 R /FitH 592.8]
+/Parent 127 0 R
+/Dest [41 0 R /FitH 621.6]
 /Previous 128 0 R
 /Next 130 0 R
-/Title (sort by)
+/Title (description)
 >>
 endobj
 130 0 obj
 <<
-/Parent 126 0 R
-/Dest [41 0 R /FitH 555.6]
+/Parent 127 0 R
+/Dest [41 0 R /FitH 584.4]
 /Previous 129 0 R
 /Next 131 0 R
-/Title (group by)
+/Title (input section)
 >>
 endobj
 131 0 obj
 <<
-/Parent 126 0 R
-/Dest [41 0 R /FitH 518.4]
+/Parent 127 0 R
+/Dest [41 0 R /FitH 488.4]
 /Previous 130 0 R
 /Next 132 0 R
-/Title (input section)
+/Title (sort by)
 >>
 endobj
 132 0 obj
 <<
-/Parent 126 0 R
-/Dest [41 0 R /FitH 422.4]
+/Parent 127 0 R
+/Dest [41 0 R /FitH 451.2]
 /Previous 131 0 R
-/Title (output section)
+/Next 133 0 R
+/Title (group by)
 >>
 endobj
 133 0 obj
 <<
-/Parent 83 0 R
-/Dest [45 0 R /FitH 764.4]
-/Previous 126 0 R
-/Next 134 0 R
-/Title (6. PEQUEL GENERATED PROGRAM)
+/Parent 127 0 R
+/Dest [41 0 R /FitH 414]
+/Previous 132 0 R
+/Title (output section)
 >>
 endobj
 134 0 obj
 <<
 /Parent 83 0 R
-/Dest [57 0 R /FitH 764.4]
-/Previous 133 0 R
-/First 135 0 R
-/Last 135 0 R
-/Count 1 
-/Title (7. ABOUT PEQUEL)
+/Dest [45 0 R /FitH 764.4]
+/Previous 127 0 R
+/Next 135 0 R
+/Title (6. PEQUEL GENERATED PROGRAM)
 >>
 endobj
 135 0 obj
 <<
-/Parent 134 0 R
+/Parent 83 0 R
+/Dest [57 0 R /FitH 764.4]
+/Previous 134 0 R
+/First 136 0 R
+/Last 136 0 R
+/Count 1 
+/Title (7. ABOUT PEQUEL)
+>>
+endobj
+136 0 obj
+<<
+/Parent 135 0 R
 /Dest [57 0 R /FitH 681.6]
 /Title (COPYRIGHT)
 >>
@@ -3725,9 +3811,9 @@ endobj
 82 0 obj
 <<
 /Type /Outlines
-/Count 53
+/Count 54
 /First 83 0 R
-/Last 135 0 R
+/Last 136 0 R
 >>
 endobj
 3 0 obj
@@ -3747,12 +3833,12 @@ endobj
 >>
 endobj
 xref
-0 136
+0 137
 0000000000 65535 f 
 0000000015 00000 n 
 0000000171 00000 n 
-0000056881 00000 n 
-0000056970 00000 n 
+0000058537 00000 n 
+0000058626 00000 n 
 0000000295 00000 n 
 0000002395 00000 n 
 0000002494 00000 n 
@@ -3767,129 +3853,130 @@ xref
 0000003406 00000 n 
 0000003512 00000 n 
 0000003626 00000 n 
-0000008249 00000 n 
-0000008270 00000 n 
-0000008420 00000 n 
-0000008503 00000 n 
-0000012041 00000 n 
-0000012062 00000 n 
-0000012188 00000 n 
-0000012271 00000 n 
-0000014359 00000 n 
-0000014380 00000 n 
-0000014506 00000 n 
-0000014589 00000 n 
-0000014984 00000 n 
-0000015004 00000 n 
-0000015106 00000 n 
-0000015189 00000 n 
-0000015688 00000 n 
-0000015708 00000 n 
-0000015810 00000 n 
-0000015893 00000 n 
-0000019509 00000 n 
-0000019530 00000 n 
-0000019656 00000 n 
-0000019739 00000 n 
-0000027958 00000 n 
-0000027979 00000 n 
-0000028093 00000 n 
-0000028176 00000 n 
-0000036383 00000 n 
-0000036404 00000 n 
-0000036518 00000 n 
-0000036601 00000 n 
-0000038872 00000 n 
-0000038893 00000 n 
-0000039007 00000 n 
-0000039090 00000 n 
-0000041379 00000 n 
-0000041400 00000 n 
-0000041526 00000 n 
-0000041609 00000 n 
-0000041946 00000 n 
-0000041966 00000 n 
-0000042068 00000 n 
-0000042151 00000 n 
-0000042488 00000 n 
-0000042508 00000 n 
-0000042610 00000 n 
-0000042693 00000 n 
-0000048388 00000 n 
-0000048409 00000 n 
-0000048523 00000 n 
-0000048606 00000 n 
-0000048941 00000 n 
-0000048961 00000 n 
-0000049063 00000 n 
-0000049146 00000 n 
-0000049229 00000 n 
-0000049628 00000 n 
-0000049648 00000 n 
-0000049774 00000 n 
-0000050106 00000 n 
-0000050126 00000 n 
-0000050228 00000 n 
-0000056805 00000 n 
-0000050311 00000 n 
-0000050434 00000 n 
-0000050532 00000 n 
-0000050645 00000 n 
-0000050807 00000 n 
-0000050945 00000 n 
-0000051030 00000 n 
-0000051189 00000 n 
-0000051272 00000 n 
-0000051429 00000 n 
-0000051514 00000 n 
-0000051676 00000 n 
-0000051761 00000 n 
-0000051921 00000 n 
-0000052006 00000 n 
-0000052161 00000 n 
-0000052257 00000 n 
-0000052415 00000 n 
-0000052501 00000 n 
-0000052660 00000 n 
-0000052747 00000 n 
-0000052906 00000 n 
-0000052993 00000 n 
-0000053155 00000 n 
-0000053256 00000 n 
-0000053372 00000 n 
-0000053532 00000 n 
-0000053633 00000 n 
-0000053751 00000 n 
-0000053894 00000 n 
-0000053995 00000 n 
-0000054113 00000 n 
-0000054283 00000 n 
-0000054384 00000 n 
-0000054500 00000 n 
-0000054621 00000 n 
-0000054737 00000 n 
-0000054855 00000 n 
-0000054974 00000 n 
-0000055093 00000 n 
-0000055200 00000 n 
-0000055316 00000 n 
-0000055490 00000 n 
-0000055599 00000 n 
-0000055767 00000 n 
-0000055862 00000 n 
-0000055979 00000 n 
-0000056094 00000 n 
-0000056210 00000 n 
-0000056331 00000 n 
-0000056439 00000 n 
-0000056573 00000 n 
-0000056720 00000 n 
+0000008266 00000 n 
+0000008287 00000 n 
+0000008437 00000 n 
+0000008520 00000 n 
+0000012066 00000 n 
+0000012087 00000 n 
+0000012213 00000 n 
+0000012296 00000 n 
+0000014601 00000 n 
+0000014622 00000 n 
+0000014748 00000 n 
+0000014831 00000 n 
+0000015234 00000 n 
+0000015254 00000 n 
+0000015356 00000 n 
+0000015439 00000 n 
+0000015946 00000 n 
+0000015966 00000 n 
+0000016068 00000 n 
+0000016151 00000 n 
+0000019864 00000 n 
+0000019885 00000 n 
+0000020011 00000 n 
+0000020094 00000 n 
+0000027774 00000 n 
+0000027795 00000 n 
+0000027909 00000 n 
+0000027992 00000 n 
+0000036871 00000 n 
+0000036892 00000 n 
+0000037006 00000 n 
+0000037089 00000 n 
+0000040258 00000 n 
+0000040279 00000 n 
+0000040393 00000 n 
+0000040476 00000 n 
+0000042773 00000 n 
+0000042794 00000 n 
+0000042920 00000 n 
+0000043003 00000 n 
+0000043348 00000 n 
+0000043368 00000 n 
+0000043470 00000 n 
+0000043553 00000 n 
+0000043898 00000 n 
+0000043918 00000 n 
+0000044020 00000 n 
+0000044103 00000 n 
+0000049903 00000 n 
+0000049924 00000 n 
+0000050038 00000 n 
+0000050121 00000 n 
+0000050455 00000 n 
+0000050475 00000 n 
+0000050577 00000 n 
+0000050660 00000 n 
+0000050743 00000 n 
+0000051151 00000 n 
+0000051171 00000 n 
+0000051297 00000 n 
+0000051637 00000 n 
+0000051657 00000 n 
+0000051759 00000 n 
+0000058461 00000 n 
+0000051842 00000 n 
+0000051965 00000 n 
+0000052063 00000 n 
+0000052176 00000 n 
+0000052338 00000 n 
+0000052476 00000 n 
+0000052561 00000 n 
+0000052720 00000 n 
+0000052803 00000 n 
+0000052960 00000 n 
+0000053045 00000 n 
+0000053207 00000 n 
+0000053292 00000 n 
+0000053452 00000 n 
+0000053537 00000 n 
+0000053692 00000 n 
+0000053788 00000 n 
+0000053946 00000 n 
+0000054032 00000 n 
+0000054191 00000 n 
+0000054278 00000 n 
+0000054437 00000 n 
+0000054524 00000 n 
+0000054686 00000 n 
+0000054787 00000 n 
+0000054903 00000 n 
+0000055063 00000 n 
+0000055164 00000 n 
+0000055282 00000 n 
+0000055425 00000 n 
+0000055526 00000 n 
+0000055644 00000 n 
+0000055814 00000 n 
+0000055912 00000 n 
+0000056031 00000 n 
+0000056147 00000 n 
+0000056268 00000 n 
+0000056384 00000 n 
+0000056502 00000 n 
+0000056621 00000 n 
+0000056740 00000 n 
+0000056847 00000 n 
+0000056963 00000 n 
+0000057137 00000 n 
+0000057246 00000 n 
+0000057423 00000 n 
+0000057518 00000 n 
+0000057637 00000 n 
+0000057758 00000 n 
+0000057873 00000 n 
+0000057989 00000 n 
+0000058095 00000 n 
+0000058229 00000 n 
+0000058376 00000 n 
 trailer
 <<
-/Size 136
+/Size 137
 /Root 3 0 R
 /Info 2 0 R
 >>
 startxref
-57160
+58816
 %%EOF

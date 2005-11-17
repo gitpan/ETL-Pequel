@@ -11,7 +11,7 @@
 endobj
 2 0 obj
 <<
-/CreationDate (D:20050913102934+0100)
+/CreationDate (D:20051116140505+0000)
 /Producer (Pequel)
 /Title (Hash Option Example Script)
 >>
@@ -181,7 +181,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(hash_option.pql) Tj
+(examples/hash_option.pql) Tj
 1 0 0 1 408.52 797 Tm
 (Hash Option Example Script) Tj
 /F21 12 Tf
@@ -191,7 +191,7 @@ BT
 /F20 10 Tf
 1 0 0 1 76.0 735.6 Tm
 0.0000 Tw
-(hash_option.pql ) Tj
+(examples/hash_option.pql ) Tj
 /F21 12 Tf
 1 0 0 1 52.0 705.6 Tm
 0.0000 Tw
@@ -490,7 +490,7 @@ BT
 ( ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:29) Tj
+(16 November 2005 14:05) Tj
 1 0 0 1 537.44 37 Tm
 (1) Tj
 ET
@@ -500,7 +500,7 @@ S
 endstream
 endobj
 19 0 obj
-4603
+4620
 endobj
 20 0 obj
 <<
@@ -538,8 +538,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Hash Option Example Script) Tj
-1 0 0 1 465.77 797 Tm
-(hash_option.pql) Tj
+1 0 0 1 417.41 797 Tm
+(examples/hash_option.pql) Tj
 /F20 10 Tf
 1 0 0 1 76.0 780.0 Tm
 0.0000 Tw
@@ -709,8 +709,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (2) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:29) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:05) Tj
 ET
 52 50 m
 543 50 l
@@ -718,7 +718,7 @@ S
 endstream
 endobj
 23 0 obj
-2444
+2452
 endobj
 24 0 obj
 <<
@@ -753,7 +753,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(hash_option.pql) Tj
+(examples/hash_option.pql) Tj
 1 0 0 1 408.52 797 Tm
 (Hash Option Example Script) Tj
 /F21 12 Tf
@@ -766,18 +766,32 @@ BT
 (2.1 ) Tj
 /F23 10 Tf
 0.0000 Tw
-(pequeldoc) Tj
+(prefix) Tj
 /F21 10 Tf
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 702.0 Tm
 0.0000 Tw
-(generate pod / pdf pequel script Reference Guide.: pdf ) Tj
+(directory pathname prefix.: examples ) Tj
 /F21 10 Tf
 1 0 0 1 52.0 672.0 Tm
 0.0000 Tw
 (2.2 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(pequeldoc) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 660.0 Tm
+0.0000 Tw
+(generate pod / pdf pequel script Reference Guide.: pdf ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 630.0 Tm
+0.0000 Tw
+(2.3 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (detail) Tj
@@ -785,13 +799,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 660.0 Tm
+1 0 0 1 76.0 618.0 Tm
 0.0000 Tw
 (Include Pequel Generated Program chapter in Pequeldoc: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 630.0 Tm
+1 0 0 1 52.0 588.0 Tm
 0.0000 Tw
-(2.3 ) Tj
+(2.4 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (script_name) Tj
@@ -799,13 +813,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 618.0 Tm
+1 0 0 1 76.0 576.0 Tm
 0.0000 Tw
-(script filename: hash_option.pql ) Tj
+(script filename: examples/hash_option.pql ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 588.0 Tm
+1 0 0 1 52.0 546.0 Tm
 0.0000 Tw
-(2.4 ) Tj
+(2.5 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (header) Tj
@@ -813,13 +827,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 576.0 Tm
+1 0 0 1 76.0 534.0 Tm
 0.0000 Tw
 (write header record to output.: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 546.0 Tm
+1 0 0 1 52.0 504.0 Tm
 0.0000 Tw
-(2.5 ) Tj
+(2.6 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (optimize) Tj
@@ -827,13 +841,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 534.0 Tm
+1 0 0 1 76.0 492.0 Tm
 0.0000 Tw
 (optimize generated code.: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 504.0 Tm
+1 0 0 1 52.0 462.0 Tm
 0.0000 Tw
-(2.6 ) Tj
+(2.7 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (hash) Tj
@@ -841,13 +855,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 492.0 Tm
+1 0 0 1 76.0 450.0 Tm
 0.0000 Tw
 (Generate in memory. Input data can be unsorted.: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 462.0 Tm
+1 0 0 1 52.0 420.0 Tm
 0.0000 Tw
-(2.7 ) Tj
+(2.8 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_title) Tj
@@ -855,13 +869,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 450.0 Tm
+1 0 0 1 76.0 408.0 Tm
 0.0000 Tw
 (document title.: Hash Option Example Script ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 420.0 Tm
+1 0 0 1 52.0 378.0 Tm
 0.0000 Tw
-(2.8 ) Tj
+(2.9 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_email) Tj
@@ -869,13 +883,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 408.0 Tm
+1 0 0 1 76.0 366.0 Tm
 0.0000 Tw
 (document email entry.: sample@youraddress.com ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 378.0 Tm
+1 0 0 1 52.0 336.0 Tm
 0.0000 Tw
-(2.9 ) Tj
+(2.10 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_version) Tj
@@ -883,12 +897,12 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 366.0 Tm
+1 0 0 1 76.0 324.0 Tm
 0.0000 Tw
 (document version for pequel script.: 2.2 ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:29) Tj
+(16 November 2005 14:05) Tj
 1 0 0 1 537.44 37 Tm
 (3) Tj
 ET
@@ -898,7 +912,7 @@ S
 endstream
 endobj
 27 0 obj
-2218
+2436
 endobj
 28 0 obj
 <<
@@ -934,8 +948,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Hash Option Example Script) Tj
-1 0 0 1 465.77 797 Tm
-(hash_option.pql) Tj
+1 0 0 1 417.41 797 Tm
+(examples/hash_option.pql) Tj
 /F21 12 Tf
 1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
@@ -943,8 +957,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (4) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:29) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:05) Tj
 ET
 52 50 m
 543 50 l
@@ -952,7 +966,7 @@ S
 endstream
 endobj
 31 0 obj
-327
+335
 endobj
 32 0 obj
 <<
@@ -985,7 +999,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(hash_option.pql) Tj
+(examples/hash_option.pql) Tj
 1 0 0 1 408.52 797 Tm
 (Hash Option Example Script) Tj
 /F21 12 Tf
@@ -998,7 +1012,7 @@ BT
 (4.1 Table List Sorted By Table Name ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:29) Tj
+(16 November 2005 14:05) Tj
 1 0 0 1 537.44 37 Tm
 (5) Tj
 ET
@@ -1008,7 +1022,7 @@ S
 endstream
 endobj
 35 0 obj
-431
+439
 endobj
 36 0 obj
 <<
@@ -1042,12 +1056,12 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Hash Option Example Script) Tj
-1 0 0 1 465.77 797 Tm
-(hash_option.pql) Tj
+1 0 0 1 417.41 797 Tm
+(examples/hash_option.pql) Tj
 /F21 12 Tf
 1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
-(5. HASH_OPTION.PQL ) Tj
+(5. EXAMPLES/HASH_OPTION.PQL ) Tj
 /F21 10 Tf
 1 0 0 1 52.0 714.0 Tm
 0.0000 Tw
@@ -1061,41 +1075,45 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 697.8 Tm
 0.0000 Tw
-(    pequeldoc\(pdf\) ) Tj
+(    prefix\(examples\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 689.4 Tm
 0.0000 Tw
-(    detail\(1\) ) Tj
+(    pequeldoc\(pdf\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 681.0 Tm
 0.0000 Tw
-(    script_name\(hash_option.pql\) ) Tj
+(    detail\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 672.6 Tm
 0.0000 Tw
-(    header\(1\) ) Tj
+(    script_name\(examples/hash_option.pql\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 664.2 Tm
 0.0000 Tw
-(    optimize\(1\) ) Tj
+(    header\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 655.8 Tm
 0.0000 Tw
-(    hash\(1\) ) Tj
+(    optimize\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 647.4 Tm
 0.0000 Tw
-(    doc_title\(Hash Option Example Script\) ) Tj
+(    hash\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 639.0 Tm
 0.0000 Tw
-(    doc_email\(sample@youraddress.com\) ) Tj
+(    doc_title\(Hash Option Example Script\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 630.6 Tm
 0.0000 Tw
+(    doc_email\(sample@youraddress.com\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 622.2 Tm
+0.0000 Tw
 (    doc_version\(2.2\) ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 609.6 Tm
+1 0 0 1 52.0 601.2 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -1105,41 +1123,27 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 593.4 Tm
+1 0 0 1 76.0 585.0 Tm
 0.0000 Tw
 (    This example demonstrates the use of the 'hash' option. With the 'hash' option ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 585.0 Tm
+1 0 0 1 76.0 576.6 Tm
 0.0000 Tw
 (    input data sorting is not required -- the data will be aggregated in memory. ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 576.6 Tm
+1 0 0 1 76.0 568.2 Tm
 0.0000 Tw
 (    For this reason the 'hash' option should only be used when the total number of ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 568.2 Tm
+1 0 0 1 76.0 559.8 Tm
 0.0000 Tw
 (    groups is small ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 559.8 Tm
+1 0 0 1 76.0 551.4 Tm
 0.0000 Tw
 (    depending on the amount of available memory. ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 538.8 Tm
-0.0000 Tw
-() Tj
-/F23 10 Tf
-0.0000 Tw
-(group by) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 522.6 Tm
-0.0000 Tw
-(    LOCATION string ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 501.6 Tm
+1 0 0 1 52.0 530.4 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -1149,39 +1153,53 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 485.4 Tm
+1 0 0 1 76.0 514.2 Tm
 0.0000 Tw
 (    PRODUCT_CODE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 477.0 Tm
+1 0 0 1 76.0 505.8 Tm
 0.0000 Tw
 (    COST_PRICE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 468.6 Tm
+1 0 0 1 76.0 497.4 Tm
 0.0000 Tw
 (    DESCRIPTION ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 460.2 Tm
+1 0 0 1 76.0 489.0 Tm
 0.0000 Tw
 (    SALES_CODE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 451.8 Tm
+1 0 0 1 76.0 480.6 Tm
 0.0000 Tw
 (    SALES_PRICE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 443.4 Tm
+1 0 0 1 76.0 472.2 Tm
 0.0000 Tw
 (    SALES_QTY ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 435.0 Tm
+1 0 0 1 76.0 463.8 Tm
 0.0000 Tw
 (    SALES_DATE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 426.6 Tm
+1 0 0 1 76.0 455.4 Tm
 0.0000 Tw
 (    LOCATION ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 405.6 Tm
+1 0 0 1 52.0 434.4 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(group by) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 418.2 Tm
+0.0000 Tw
+(    LOCATION string ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 397.2 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -1191,46 +1209,46 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 389.4 Tm
+1 0 0 1 76.0 381.0 Tm
 0.0000 Tw
 (    string    LOCATION             LOCATION ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 381.0 Tm
+1 0 0 1 76.0 372.6 Tm
 0.0000 Tw
 (    numeric   MIN_COST_PRICE       min COST_PRICE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 372.6 Tm
+1 0 0 1 76.0 364.2 Tm
 0.0000 Tw
 (    numeric   MAX_COST_PRICE       max COST_PRICE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 364.2 Tm
+1 0 0 1 76.0 355.8 Tm
 0.0000 Tw
 (    numeric   _DISTINCT_SALES_CODE distinct SALES_CODE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 355.8 Tm
+1 0 0 1 76.0 347.4 Tm
 0.0000 Tw
 (    string    SALES_CODE_1         first SALES_CODE where _DISTINCT_SALES_CODE == 1 ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 347.4 Tm
+1 0 0 1 76.0 339.0 Tm
 0.0000 Tw
 (    string    SALES_CODE_2         first SALES_CODE where _DISTINCT_SALES_CODE == 2 ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 339.0 Tm
+1 0 0 1 76.0 330.6 Tm
 0.0000 Tw
 (    string    SALES_CODE_3         first SALES_CODE where _DISTINCT_SALES_CODE == 3 ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 330.6 Tm
+1 0 0 1 76.0 322.2 Tm
 0.0000 Tw
 (    string    SALES_CODE_4         first SALES_CODE where _DISTINCT_SALES_CODE == 4 ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 322.2 Tm
+1 0 0 1 76.0 313.8 Tm
 0.0000 Tw
 (    string    SALES_CODE_5         first SALES_CODE where _DISTINCT_SALES_CODE == 5 ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (6) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:29) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:05) Tj
 ET
 52 50 m
 543 50 l
@@ -1238,7 +1256,7 @@ S
 endstream
 endobj
 39 0 obj
-3748
+3845
 endobj
 40 0 obj
 <<
@@ -1273,7 +1291,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(hash_option.pql) Tj
+(examples/hash_option.pql) Tj
 1 0 0 1 408.52 797 Tm
 (Hash Option Example Script) Tj
 /F21 12 Tf
@@ -1283,7 +1301,7 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 731.4 Tm
 0.0000 Tw
-( # vim: syntax=perl ts=4 sw=4 ) Tj
+( #!/usr/bin/perl ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 723.0 Tm
 0.0000 Tw
@@ -1291,295 +1309,295 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 714.6 Tm
 0.0000 Tw
-( #Generated By: pequel Version 2.2-9, Build: Tuesday September 13 08:43:08 BST 2005 ) Tj
+( # vim: syntax=perl ts=4 sw=4 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 706.2 Tm
 0.0000 Tw
-( #            : https://sourceforge.net/projects/pequel/ ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 697.8 Tm
 0.0000 Tw
-( #Script Name : hash_option.pql ) Tj
+( #Generated By: pequel Version 2.4-5, Build: Wednesday November 16 21:56:42 GMT 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 689.4 Tm
 0.0000 Tw
-( #Created On  : Tue Sep 13 10:29:33 2005 ) Tj
+( #            : http://sourceforge.net/projects/pequel/ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 681.0 Tm
 0.0000 Tw
-( #For         :  ) Tj
+( #Script Name : hash_option.pql ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 672.6 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #Created On  : Wed Nov 16 14:05:05 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 664.2 Tm
 0.0000 Tw
-( #Options: ) Tj
+( #Perl Version: /usr/bin/perl 5.6.1 on solaris ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 655.8 Tm
 0.0000 Tw
-( #pequeldoc\(pdf\) generate pod / pdf pequel script Reference Guide. ) Tj
+( #For         :  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 647.4 Tm
 0.0000 Tw
-( #detail\(1\) Include Pequel Generated Program chapter in Pequeldoc ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 639.0 Tm
 0.0000 Tw
-( #script_name\(hash_option.pql\) script filename ) Tj
+( #Options: ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 630.6 Tm
 0.0000 Tw
-( #header\(1\) write header record to output. ) Tj
+( #prefix\(examples\) directory pathname prefix. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 622.2 Tm
 0.0000 Tw
-( #optimize\(1\) optimize generated code. ) Tj
+( #pequeldoc\(pdf\) generate pod / pdf pequel script Reference Guide. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 613.8 Tm
 0.0000 Tw
-( #hash\(1\) Generate in memory. Input data can be unsorted. ) Tj
+( #detail\(1\) Include Pequel Generated Program chapter in Pequeldoc ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 605.4 Tm
 0.0000 Tw
-( #doc_title\(Hash Option Example Script\) document title. ) Tj
+( #script_name\(examples/hash_option.pql\) script filename ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 597.0 Tm
 0.0000 Tw
-( #doc_email\(sample@youraddress.com\) document email entry. ) Tj
+( #header\(1\) write header record to output. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 588.6 Tm
 0.0000 Tw
-( #doc_version\(2.2\) document version for pequel script. ) Tj
+( #optimize\(1\) optimize generated code. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 580.2 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #hash\(1\) Generate in memory. Input data can be unsorted. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 571.8 Tm
 0.0000 Tw
-( use strict; ) Tj
+( #doc_title\(Hash Option Example Script\) document title. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 563.4 Tm
 0.0000 Tw
-( local $\\="\\n"; local $,="|"; ) Tj
+( #doc_email\(sample@youraddress.com\) document email entry. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 555.0 Tm
 0.0000 Tw
-( print STDERR '[hash_option.pql ' . localtime\(\) . "] Init"; ) Tj
+( #doc_version\(2.2\) document version for pequel script. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 546.6 Tm
 0.0000 Tw
-( use constant VERBOSE => int 10000; ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 538.2 Tm
 0.0000 Tw
-( use constant LAST_ICELL => int 7; ) Tj
+( use strict; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 529.8 Tm
 0.0000 Tw
-( my @I_VAL; ) Tj
+( use constant _I_PRODUCT_CODE            => int    0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 521.4 Tm
 0.0000 Tw
-( my %O_VAL; ) Tj
+( use constant _I_COST_PRICE              => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 513.0 Tm
 0.0000 Tw
-( my $key; ) Tj
+( use constant _I_DESCRIPTION             => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 504.6 Tm
 0.0000 Tw
-( my %DISTINCT; ) Tj
+( use constant _I_SALES_CODE              => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 496.2 Tm
 0.0000 Tw
-( use constant _I_PRODUCT_CODE            => int    0; ) Tj
+( use constant _I_SALES_PRICE             => int    4; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 487.8 Tm
 0.0000 Tw
-( use constant _I_COST_PRICE              => int    1; ) Tj
+( use constant _I_SALES_QTY               => int    5; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 479.4 Tm
 0.0000 Tw
-( use constant _I_DESCRIPTION             => int    2; ) Tj
+( use constant _I_SALES_DATE              => int    6; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 471.0 Tm
 0.0000 Tw
-( use constant _I_SALES_CODE              => int    3; ) Tj
+( use constant _I_LOCATION                => int    7; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 462.6 Tm
 0.0000 Tw
-( use constant _I_SALES_PRICE             => int    4; ) Tj
+( use constant _O_LOCATION                => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 454.2 Tm
 0.0000 Tw
-( use constant _I_SALES_QTY               => int    5; ) Tj
+( use constant _O_MIN_COST_PRICE          => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 445.8 Tm
 0.0000 Tw
-( use constant _I_SALES_DATE              => int    6; ) Tj
+( use constant _O_MAX_COST_PRICE          => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 437.4 Tm
 0.0000 Tw
-( use constant _I_LOCATION                => int    7; ) Tj
+( use constant _O__DISTINCT_SALES_CODE    => int    4; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 429.0 Tm
 0.0000 Tw
-( use constant _O_LOCATION                => int    1; ) Tj
+( use constant _O_SALES_CODE_1            => int    5; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 420.6 Tm
 0.0000 Tw
-( use constant _O_MIN_COST_PRICE          => int    2; ) Tj
+( use constant _O_SALES_CODE_2            => int    6; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 412.2 Tm
 0.0000 Tw
-( use constant _O_MAX_COST_PRICE          => int    3; ) Tj
+( use constant _O_SALES_CODE_3            => int    7; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 403.8 Tm
 0.0000 Tw
-( use constant _O__DISTINCT_SALES_CODE    => int    4; ) Tj
+( use constant _O_SALES_CODE_4            => int    8; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 395.4 Tm
 0.0000 Tw
-( use constant _O_SALES_CODE_1            => int    5; ) Tj
+( use constant _O_SALES_CODE_5            => int    9; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 387.0 Tm
 0.0000 Tw
-( use constant _O_SALES_CODE_2            => int    6; ) Tj
+( local $\\="\\n"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 378.6 Tm
 0.0000 Tw
-( use constant _O_SALES_CODE_3            => int    7; ) Tj
+( local $,="|"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 370.2 Tm
 0.0000 Tw
-( use constant _O_SALES_CODE_4            => int    8; ) Tj
+( print STDERR '[examples/hash_option.pql ' . localtime\(\) . "] Init"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 361.8 Tm
 0.0000 Tw
-( use constant _O_SALES_CODE_5            => int    9; ) Tj
+( use constant VERBOSE => int 10000; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 353.4 Tm
 0.0000 Tw
-( &PrintHeader\(\); ) Tj
+( use constant LAST_ICELL => int 7; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 345.0 Tm
 0.0000 Tw
-( print STDERR '[hash_option.pql ' . localtime\(\) . "] Start"; ) Tj
+( my @I_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 336.6 Tm
 0.0000 Tw
-( use Benchmark; ) Tj
+( my %O_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 328.2 Tm
 0.0000 Tw
-( my $benchmark_start = new Benchmark; ) Tj
+( my $key; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 319.8 Tm
 0.0000 Tw
-( while \(<STDIN>\) ) Tj
+( my $_inprecs=0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 311.4 Tm
 0.0000 Tw
-( \{ ) Tj
+( my %DISTINCT; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 303.0 Tm
 0.0000 Tw
-(     print STDERR '[hash_option.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE == 0\); ) Tj
+( &PrintHeader\(\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 294.6 Tm
 0.0000 Tw
-(     chomp; ) Tj
+( print STDERR '[examples/hash_option.pql ' . localtime\(\) . "] Start"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 286.2 Tm
 0.0000 Tw
-(     @I_VAL = split\("[|]", $_\); ) Tj
+( use Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 277.8 Tm
 0.0000 Tw
-(     $key = \( $I_VAL[_I_LOCATION] \); ) Tj
+( my $benchmark_start = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 269.4 Tm
 0.0000 Tw
-(     $O_VAL\{$key\}\{_O_LOCATION\} = $I_VAL[_I_LOCATION]; ) Tj
+( while \(<STDIN>\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 261.0 Tm
 0.0000 Tw
-(     $O_VAL\{$key\}\{_O_MIN_COST_PRICE\} = $I_VAL[_I_COST_PRICE] ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 252.6 Tm
 0.0000 Tw
-(         if \(!defined\($O_VAL\{$key\}\{_O_MIN_COST_PRICE\}\) || $I_VAL[_I_COST_PRICE] < $O_VAL\{$key\}\{_O_MIN_COST_PRIC ) Tj
+(     ++$_inprecs; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 244.2 Tm
 0.0000 Tw
-( E\}\); ) Tj
+(     print STDERR '[examples/hash_option.pql ' . localtime\(\) . "] $_inprecs records." if \($_inprecs % VERBOSE = ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 235.8 Tm
 0.0000 Tw
-(     $O_VAL\{$key\}\{_O_MAX_COST_PRICE\} = $I_VAL[_I_COST_PRICE] ) Tj
+( = 0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 227.4 Tm
 0.0000 Tw
-(         if \(!defined\($O_VAL\{$key\}\{_O_MAX_COST_PRICE\}\) || $I_VAL[_I_COST_PRICE] > $O_VAL\{$key\}\{_O_MAX_COST_PRIC ) Tj
+(     chomp; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 219.0 Tm
 0.0000 Tw
-( E\}\); ) Tj
+(     @I_VAL = split\("[|]", $_\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 210.6 Tm
 0.0000 Tw
-(     $O_VAL\{$key\}\{_O__DISTINCT_SALES_CODE\}++ if \(defined\($I_VAL[_I_SALES_CODE]\) && ++$DISTINCT\{$key\}\{_O__DISTIN ) Tj
+(     $key = \( $I_VAL[_I_LOCATION] \); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 202.2 Tm
 0.0000 Tw
-( CT_SALES_CODE\}\{qq\{$I_VAL[_I_SALES_CODE]\}\} == 1\); ) Tj
+(     $O_VAL\{$key\}\{_O_LOCATION\} = $I_VAL[_I_LOCATION]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 193.8 Tm
+0.0000 Tw
+(     $O_VAL\{$key\}\{_O_MIN_COST_PRICE\} = $I_VAL[_I_COST_PRICE] ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 185.4 Tm
 0.0000 Tw
-(     if \($O_VAL\{$key\}\{_O__DISTINCT_SALES_CODE\} == 1\) \{ ) Tj
+(         if \(!defined\($O_VAL\{$key\}\{_O_MIN_COST_PRICE\}\) || $I_VAL[_I_COST_PRICE] < $O_VAL\{$key\}\{_O_MIN_COST_PRIC ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 177.0 Tm
 0.0000 Tw
-(         $O_VAL\{$key\}\{_O_SALES_CODE_1\} = $I_VAL[_I_SALES_CODE] if \(!defined\($O_VAL\{$key\}\{_O_SALES_CODE_1\}\)\); ) Tj
+( E\}\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 168.6 Tm
 0.0000 Tw
-(     \} ) Tj
+(     $O_VAL\{$key\}\{_O_MAX_COST_PRICE\} = $I_VAL[_I_COST_PRICE] ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 160.2 Tm
 0.0000 Tw
-(     elsif \($O_VAL\{$key\}\{_O__DISTINCT_SALES_CODE\} == 2\) \{ ) Tj
+(         if \(!defined\($O_VAL\{$key\}\{_O_MAX_COST_PRICE\}\) || $I_VAL[_I_COST_PRICE] > $O_VAL\{$key\}\{_O_MAX_COST_PRIC ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 151.8 Tm
 0.0000 Tw
-(         $O_VAL\{$key\}\{_O_SALES_CODE_2\} = $I_VAL[_I_SALES_CODE] if \(!defined\($O_VAL\{$key\}\{_O_SALES_CODE_2\}\)\); ) Tj
+( E\}\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 143.4 Tm
 0.0000 Tw
-(     \} ) Tj
+(     $O_VAL\{$key\}\{_O__DISTINCT_SALES_CODE\}++  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 135.0 Tm
 0.0000 Tw
-(     elsif \($O_VAL\{$key\}\{_O__DISTINCT_SALES_CODE\} == 3\) \{ ) Tj
+(         if \(defined\($I_VAL[_I_SALES_CODE]\) && ++$DISTINCT\{$key\}\{_O__DISTINCT_SALES_CODE\}\{qq\{$I_VAL[_I_SALES_CO ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 126.6 Tm
 0.0000 Tw
-(         $O_VAL\{$key\}\{_O_SALES_CODE_3\} = $I_VAL[_I_SALES_CODE] if \(!defined\($O_VAL\{$key\}\{_O_SALES_CODE_3\}\)\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 118.2 Tm
-0.0000 Tw
-(     \} ) Tj
+( DE]\}\} == 1\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 109.8 Tm
 0.0000 Tw
-(     elsif \($O_VAL\{$key\}\{_O__DISTINCT_SALES_CODE\} == 4\) \{ ) Tj
+(     if \($O_VAL\{$key\}\{_O__DISTINCT_SALES_CODE\} == 1\) \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 101.4 Tm
 0.0000 Tw
-(         $O_VAL\{$key\}\{_O_SALES_CODE_4\} = $I_VAL[_I_SALES_CODE] if \(!defined\($O_VAL\{$key\}\{_O_SALES_CODE_4\}\)\); ) Tj
+(         $O_VAL\{$key\}\{_O_SALES_CODE_1\} = $I_VAL[_I_SALES_CODE] if \(!defined\($O_VAL\{$key\}\{_O_SALES_CODE_1\}\)\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 93.0 Tm
 0.0000 Tw
@@ -1587,11 +1605,11 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 84.6 Tm
 0.0000 Tw
-(     elsif \($O_VAL\{$key\}\{_O__DISTINCT_SALES_CODE\} == 5\) \{ ) Tj
+(     elsif \($O_VAL\{$key\}\{_O__DISTINCT_SALES_CODE\} == 2\) \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 76.2 Tm
 0.0000 Tw
-(         $O_VAL\{$key\}\{_O_SALES_CODE_5\} = $I_VAL[_I_SALES_CODE] if \(!defined\($O_VAL\{$key\}\{_O_SALES_CODE_5\}\)\); ) Tj
+(         $O_VAL\{$key\}\{_O_SALES_CODE_2\} = $I_VAL[_I_SALES_CODE] if \(!defined\($O_VAL\{$key\}\{_O_SALES_CODE_2\}\)\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 67.8 Tm
 0.0000 Tw
@@ -1599,7 +1617,7 @@ BT
 /F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:29) Tj
+(16 November 2005 14:05) Tj
 1 0 0 1 537.44 37 Tm
 (7) Tj
 ET
@@ -1609,7 +1627,7 @@ S
 endstream
 endobj
 43 0 obj
-8311
+8050
 endobj
 44 0 obj
 <<
@@ -1644,149 +1662,193 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Hash Option Example Script) Tj
-1 0 0 1 465.77 797 Tm
-(hash_option.pql) Tj
+1 0 0 1 417.41 797 Tm
+(examples/hash_option.pql) Tj
 /F10 7 Tf
 1 0 0 1 76.0 771.6 Tm
 0.0000 Tw
-( \} ) Tj
+(     elsif \($O_VAL\{$key\}\{_O__DISTINCT_SALES_CODE\} == 3\) \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 763.2 Tm
+0.0000 Tw
+(         $O_VAL\{$key\}\{_O_SALES_CODE_3\} = $I_VAL[_I_SALES_CODE] if \(!defined\($O_VAL\{$key\}\{_O_SALES_CODE_3\}\)\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 754.8 Tm
 0.0000 Tw
-( foreach $key \(sort  keys %O_VAL\) ) Tj
+(     \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 746.4 Tm
 0.0000 Tw
-( \{ ) Tj
+(     elsif \($O_VAL\{$key\}\{_O__DISTINCT_SALES_CODE\} == 4\) \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 738.0 Tm
 0.0000 Tw
-(     print  ) Tj
+(         $O_VAL\{$key\}\{_O_SALES_CODE_4\} = $I_VAL[_I_SALES_CODE] if \(!defined\($O_VAL\{$key\}\{_O_SALES_CODE_4\}\)\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 729.6 Tm
 0.0000 Tw
-(         $O_VAL\{$key\}\{_O_LOCATION\}, ) Tj
+(     \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 721.2 Tm
 0.0000 Tw
-(         $O_VAL\{$key\}\{_O_MIN_COST_PRICE\}, ) Tj
+(     elsif \($O_VAL\{$key\}\{_O__DISTINCT_SALES_CODE\} == 5\) \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 712.8 Tm
 0.0000 Tw
-(         $O_VAL\{$key\}\{_O_MAX_COST_PRICE\}, ) Tj
+(         $O_VAL\{$key\}\{_O_SALES_CODE_5\} = $I_VAL[_I_SALES_CODE] if \(!defined\($O_VAL\{$key\}\{_O_SALES_CODE_5\}\)\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 704.4 Tm
 0.0000 Tw
-(         $O_VAL\{$key\}\{_O_SALES_CODE_1\}, ) Tj
+(     \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 696.0 Tm
 0.0000 Tw
-(         $O_VAL\{$key\}\{_O_SALES_CODE_2\}, ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 687.6 Tm
-0.0000 Tw
-(         $O_VAL\{$key\}\{_O_SALES_CODE_3\}, ) Tj
+( \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 679.2 Tm
 0.0000 Tw
-(         $O_VAL\{$key\}\{_O_SALES_CODE_4\}, ) Tj
+( foreach $key \(sort  keys %O_VAL\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 670.8 Tm
 0.0000 Tw
-(         $O_VAL\{$key\}\{_O_SALES_CODE_5\} ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 662.4 Tm
 0.0000 Tw
-(     ; ) Tj
+(     print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 654.0 Tm
 0.0000 Tw
-( \} ) Tj
+(         $O_VAL\{$key\}\{_O_LOCATION\}, ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 645.6 Tm
+0.0000 Tw
+(         $O_VAL\{$key\}\{_O_MIN_COST_PRICE\}, ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 637.2 Tm
 0.0000 Tw
-( print STDERR '[hash_option.pql ' . localtime\(\) . "] $. records."; ) Tj
+(         $O_VAL\{$key\}\{_O_MAX_COST_PRICE\}, ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 628.8 Tm
 0.0000 Tw
-( my $benchmark_end = new Benchmark; ) Tj
+(         $O_VAL\{$key\}\{_O_SALES_CODE_1\}, ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 620.4 Tm
 0.0000 Tw
-( my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+(         $O_VAL\{$key\}\{_O_SALES_CODE_2\}, ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 612.0 Tm
 0.0000 Tw
-( print STDERR '[hash_option.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark_timediff\)]\}"; ) Tj
+(         $O_VAL\{$key\}\{_O_SALES_CODE_3\}, ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 603.6 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+(         $O_VAL\{$key\}\{_O_SALES_CODE_4\}, ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 595.2 Tm
 0.0000 Tw
-( sub PrintHeader ) Tj
+(         $O_VAL\{$key\}\{_O_SALES_CODE_5\} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 586.8 Tm
 0.0000 Tw
-( \{ ) Tj
+(     ; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 578.4 Tm
 0.0000 Tw
-(     local $\\="\\n"; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 570.0 Tm
-0.0000 Tw
-(     local $,="|"; ) Tj
+( \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 561.6 Tm
 0.0000 Tw
-(     print  ) Tj
+( close\(STDIN\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 553.2 Tm
 0.0000 Tw
-(         'LOCATION', ) Tj
+( print STDERR '[examples/hash_option.pql ' . localtime\(\) . "] $_inprecs records."; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 544.8 Tm
 0.0000 Tw
-(         'MIN_COST_PRICE', ) Tj
+( my $benchmark_end = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 536.4 Tm
 0.0000 Tw
-(         'MAX_COST_PRICE', ) Tj
+( my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 528.0 Tm
 0.0000 Tw
-(         'SALES_CODE_1', ) Tj
+( print STDERR '[examples/hash_option.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark_timediff\)] ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 519.6 Tm
 0.0000 Tw
-(         'SALES_CODE_2', ) Tj
+( \}"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 511.2 Tm
 0.0000 Tw
-(         'SALES_CODE_3', ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 502.8 Tm
 0.0000 Tw
-(         'SALES_CODE_4', ) Tj
+( sub PrintHeader ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 494.4 Tm
 0.0000 Tw
-(         'SALES_CODE_5' ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 486.0 Tm
 0.0000 Tw
-(         ; ) Tj
+(     local $\\="\\n"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 477.6 Tm
+0.0000 Tw
+(     local $,="|"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 469.2 Tm
+0.0000 Tw
+(     print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 460.8 Tm
+0.0000 Tw
+(         'LOCATION', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 452.4 Tm
+0.0000 Tw
+(         'MIN_COST_PRICE', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 444.0 Tm
+0.0000 Tw
+(         'MAX_COST_PRICE', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 435.6 Tm
+0.0000 Tw
+(         'SALES_CODE_1', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 427.2 Tm
+0.0000 Tw
+(         'SALES_CODE_2', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 418.8 Tm
+0.0000 Tw
+(         'SALES_CODE_3', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 410.4 Tm
+0.0000 Tw
+(         'SALES_CODE_4', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 402.0 Tm
+0.0000 Tw
+(         'SALES_CODE_5' ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 393.6 Tm
+0.0000 Tw
+(         ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 385.2 Tm
 0.0000 Tw
 ( \} ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (8) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:29) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:05) Tj
 ET
 52 50 m
 543 50 l
@@ -1794,7 +1856,7 @@ S
 endstream
 endobj
 47 0 obj
-2998
+4172
 endobj
 48 0 obj
 <<
@@ -1828,7 +1890,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(hash_option.pql) Tj
+(examples/hash_option.pql) Tj
 1 0 0 1 408.52 797 Tm
 (Hash Option Example Script) Tj
 /F21 12 Tf
@@ -1900,7 +1962,7 @@ BT
 (the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:29) Tj
+(16 November 2005 14:05) Tj
 1 0 0 1 537.44 37 Tm
 (9) Tj
 ET
@@ -1910,7 +1972,7 @@ S
 endstream
 endobj
 51 0 obj
-2220
+2228
 endobj
 52 0 obj
 <<
@@ -1946,13 +2008,13 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Hash Option Example Script) Tj
-1 0 0 1 465.77 797 Tm
-(hash_option.pql) Tj
+1 0 0 1 417.41 797 Tm
+(examples/hash_option.pql) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (10) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:29) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:05) Tj
 ET
 52 50 m
 543 50 l
@@ -1960,7 +2022,7 @@ S
 endstream
 endobj
 55 0 obj
-269
+277
 endobj
 56 0 obj
 <<
@@ -2279,7 +2341,7 @@ f
 Q
 BT
 1 0 0 1 100 398 Tm
-(2.1 pequeldoc) Tj
+(2.1 prefix) Tj
 1 0 0 1 513.44 398 Tm
 (3) Tj
 ET
@@ -2290,7 +2352,7 @@ f
 Q
 BT
 1 0 0 1 100 386 Tm
-(2.2 detail) Tj
+(2.2 pequeldoc) Tj
 1 0 0 1 513.44 386 Tm
 (3) Tj
 ET
@@ -2301,7 +2363,7 @@ f
 Q
 BT
 1 0 0 1 100 374 Tm
-(2.3 script_name) Tj
+(2.3 detail) Tj
 1 0 0 1 513.44 374 Tm
 (3) Tj
 ET
@@ -2312,7 +2374,7 @@ f
 Q
 BT
 1 0 0 1 100 362 Tm
-(2.4 header) Tj
+(2.4 script_name) Tj
 1 0 0 1 513.44 362 Tm
 (3) Tj
 ET
@@ -2323,7 +2385,7 @@ f
 Q
 BT
 1 0 0 1 100 350 Tm
-(2.5 optimize) Tj
+(2.5 header) Tj
 1 0 0 1 513.44 350 Tm
 (3) Tj
 ET
@@ -2334,7 +2396,7 @@ f
 Q
 BT
 1 0 0 1 100 338 Tm
-(2.6 hash) Tj
+(2.6 optimize) Tj
 1 0 0 1 513.44 338 Tm
 (3) Tj
 ET
@@ -2345,7 +2407,7 @@ f
 Q
 BT
 1 0 0 1 100 326 Tm
-(2.7 doc_title) Tj
+(2.7 hash) Tj
 1 0 0 1 513.44 326 Tm
 (3) Tj
 ET
@@ -2356,7 +2418,7 @@ f
 Q
 BT
 1 0 0 1 100 314 Tm
-(2.8 doc_email) Tj
+(2.8 doc_title) Tj
 1 0 0 1 513.44 314 Tm
 (3) Tj
 ET
@@ -2367,7 +2429,7 @@ f
 Q
 BT
 1 0 0 1 100 302 Tm
-(2.9 doc_version) Tj
+(2.9 doc_email) Tj
 1 0 0 1 513.44 302 Tm
 (3) Tj
 ET
@@ -2377,10 +2439,10 @@ q
 f
 Q
 BT
-1 0 0 1 76 290 Tm
-(3. TABLES) Tj
+1 0 0 1 100 290 Tm
+(2.10 doc_version) Tj
 1 0 0 1 513.44 290 Tm
-(4) Tj
+(3) Tj
 ET
 q
 1 g
@@ -2389,9 +2451,9 @@ f
 Q
 BT
 1 0 0 1 76 278 Tm
-(4. TABLE INFORMATION SUMMARY) Tj
+(3. TABLES) Tj
 1 0 0 1 513.44 278 Tm
-(5) Tj
+(4) Tj
 ET
 q
 0.95 g
@@ -2399,8 +2461,8 @@ q
 f
 Q
 BT
-1 0 0 1 100 266 Tm
-(4.1 Table List Sorted By Table Name) Tj
+1 0 0 1 76 266 Tm
+(4. TABLE INFORMATION SUMMARY) Tj
 1 0 0 1 513.44 266 Tm
 (5) Tj
 ET
@@ -2410,10 +2472,10 @@ q
 f
 Q
 BT
-1 0 0 1 76 254 Tm
-(5. HASH_OPTION.PQL) Tj
+1 0 0 1 100 254 Tm
+(4.1 Table List Sorted By Table Name) Tj
 1 0 0 1 513.44 254 Tm
-(6) Tj
+(5) Tj
 ET
 q
 0.95 g
@@ -2421,8 +2483,8 @@ q
 f
 Q
 BT
-1 0 0 1 100 242 Tm
-(options) Tj
+1 0 0 1 76 242 Tm
+(5. EXAMPLES/HASH_OPTION.PQL) Tj
 1 0 0 1 513.44 242 Tm
 (6) Tj
 ET
@@ -2433,7 +2495,7 @@ f
 Q
 BT
 1 0 0 1 100 230 Tm
-(description) Tj
+(options) Tj
 1 0 0 1 513.44 230 Tm
 (6) Tj
 ET
@@ -2444,7 +2506,7 @@ f
 Q
 BT
 1 0 0 1 100 218 Tm
-(group by) Tj
+(description) Tj
 1 0 0 1 513.44 218 Tm
 (6) Tj
 ET
@@ -2466,7 +2528,7 @@ f
 Q
 BT
 1 0 0 1 100 194 Tm
-(output section) Tj
+(group by) Tj
 1 0 0 1 513.44 194 Tm
 (6) Tj
 ET
@@ -2476,10 +2538,10 @@ q
 f
 Q
 BT
-1 0 0 1 76 182 Tm
-(6. PEQUEL GENERATED PROGRAM) Tj
+1 0 0 1 100 182 Tm
+(output section) Tj
 1 0 0 1 513.44 182 Tm
-(7) Tj
+(6) Tj
 ET
 q
 0.95 g
@@ -2488,9 +2550,9 @@ f
 Q
 BT
 1 0 0 1 76 170 Tm
-(7. ABOUT PEQUEL) Tj
+(6. PEQUEL GENERATED PROGRAM) Tj
 1 0 0 1 513.44 170 Tm
-(9) Tj
+(7) Tj
 ET
 q
 1 g
@@ -2498,13 +2560,24 @@ q
 f
 Q
 BT
-1 0 0 1 100 158 Tm
-(COPYRIGHT) Tj
+1 0 0 1 76 158 Tm
+(7. ABOUT PEQUEL) Tj
 1 0 0 1 513.44 158 Tm
+(9) Tj
+ET
+q
+0.95 g
+52 143 491 12 re
+f
+Q
+BT
+1 0 0 1 100 146 Tm
+(COPYRIGHT) Tj
+1 0 0 1 513.44 146 Tm
 (9) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:29) Tj
+(16 November 2005 14:05) Tj
 1 0 0 1 540.22 37 Tm
 (i) Tj
 ET
@@ -2514,7 +2587,7 @@ S
 endstream
 endobj
 59 0 obj
-5027
+5136
 endobj
 60 0 obj
 <<
@@ -2554,8 +2627,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (ii) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:29) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:05) Tj
 ET
 52 50 m
 543 50 l
@@ -2563,7 +2636,7 @@ S
 endstream
 endobj
 63 0 obj
-271
+270
 endobj
 64 0 obj
 <<
@@ -2610,7 +2683,7 @@ BT
 /F21 24 Tf
 1 0 0 1 210 706 Tm
 0 -30 TD
-(hash_option.pql) Tj
+(examples/hash_option.pql) Tj
 T* (by ) Tj
 0 0 0.8 rg
 /F22 12 Tf
@@ -2627,7 +2700,7 @@ ET
 endstream
 endobj
 68 0 obj
-330
+339
 endobj
 69 0 obj
 <<
@@ -2654,12 +2727,12 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(hash_option.pql) Tj
+(examples/hash_option.pql) Tj
 1 0 0 1 408.52 797 Tm
 (Hash Option Example Script) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:29) Tj
+(16 November 2005 14:05) Tj
 1 0 0 1 543 37 Tm
 () Tj
 ET
@@ -2669,7 +2742,7 @@ S
 endstream
 endobj
 71 0 obj
-264
+272
 endobj
 72 0 obj
 <<
@@ -2694,8 +2767,8 @@ endobj
 /Parent 74 0 R
 /Dest [61 0 R /Fit]
 /First 76 0 R
-/Last 120 0 R
-/Count 46 
+/Last 121 0 R
+/Count 47 
 /Title (Table of Contents)
 >>
 endobj
@@ -2928,10 +3001,10 @@ endobj
 /Parent 75 0 R
 /Dest [29 0 R /FitH 764.4]
 /Previous 78 0 R
-/Next 110 0 R
+/Next 111 0 R
 /First 101 0 R
-/Last 109 0 R
-/Count 9 
+/Last 110 0 R
+/Count 10 
 /Title (2. CONFIGURATION SETTINGS)
 >>
 endobj
@@ -2940,7 +3013,7 @@ endobj
 /Parent 100 0 R
 /Dest [29 0 R /FitH 726]
 /Next 102 0 R
-/Title (2.1 pequeldoc)
+/Title (2.1 prefix)
 >>
 endobj
 102 0 obj
@@ -2949,7 +3022,7 @@ endobj
 /Dest [29 0 R /FitH 684]
 /Previous 101 0 R
 /Next 103 0 R
-/Title (2.2 detail)
+/Title (2.2 pequeldoc)
 >>
 endobj
 103 0 obj
@@ -2958,7 +3031,7 @@ endobj
 /Dest [29 0 R /FitH 642]
 /Previous 102 0 R
 /Next 104 0 R
-/Title (2.3 script_name)
+/Title (2.3 detail)
 >>
 endobj
 104 0 obj
@@ -2967,7 +3040,7 @@ endobj
 /Dest [29 0 R /FitH 600]
 /Previous 103 0 R
 /Next 105 0 R
-/Title (2.4 header)
+/Title (2.4 script_name)
 >>
 endobj
 105 0 obj
@@ -2976,7 +3049,7 @@ endobj
 /Dest [29 0 R /FitH 558]
 /Previous 104 0 R
 /Next 106 0 R
-/Title (2.5 optimize)
+/Title (2.5 header)
 >>
 endobj
 106 0 obj
@@ -2985,7 +3058,7 @@ endobj
 /Dest [29 0 R /FitH 516]
 /Previous 105 0 R
 /Next 107 0 R
-/Title (2.6 hash)
+/Title (2.6 optimize)
 >>
 endobj
 107 0 obj
@@ -2994,7 +3067,7 @@ endobj
 /Dest [29 0 R /FitH 474]
 /Previous 106 0 R
 /Next 108 0 R
-/Title (2.7 doc_title)
+/Title (2.7 hash)
 >>
 endobj
 108 0 obj
@@ -3003,7 +3076,7 @@ endobj
 /Dest [29 0 R /FitH 432]
 /Previous 107 0 R
 /Next 109 0 R
-/Title (2.8 doc_email)
+/Title (2.8 doc_title)
 >>
 endobj
 109 0 obj
@@ -3011,79 +3084,79 @@ endobj
 /Parent 100 0 R
 /Dest [29 0 R /FitH 390]
 /Previous 108 0 R
-/Title (2.9 doc_version)
+/Next 110 0 R
+/Title (2.9 doc_email)
 >>
 endobj
 110 0 obj
 <<
-/Parent 75 0 R
-/Dest [33 0 R /FitH 764.4]
-/Previous 100 0 R
-/Next 111 0 R
-/Title (3. TABLES)
+/Parent 100 0 R
+/Dest [29 0 R /FitH 348]
+/Previous 109 0 R
+/Title (2.10 doc_version)
 >>
 endobj
 111 0 obj
 <<
 /Parent 75 0 R
-/Dest [37 0 R /FitH 764.4]
-/Previous 110 0 R
-/Next 113 0 R
-/First 112 0 R
-/Last 112 0 R
-/Count 1 
-/Title (4. TABLE INFORMATION SUMMARY)
+/Dest [33 0 R /FitH 764.4]
+/Previous 100 0 R
+/Next 112 0 R
+/Title (3. TABLES)
 >>
 endobj
 112 0 obj
 <<
-/Parent 111 0 R
-/Dest [37 0 R /FitH 726]
-/Title (4.1 Table List Sorted By Table Name)
+/Parent 75 0 R
+/Dest [37 0 R /FitH 764.4]
+/Previous 111 0 R
+/Next 114 0 R
+/First 113 0 R
+/Last 113 0 R
+/Count 1 
+/Title (4. TABLE INFORMATION SUMMARY)
 >>
 endobj
 113 0 obj
 <<
-/Parent 75 0 R
-/Dest [41 0 R /FitH 764.4]
-/Previous 111 0 R
-/Next 119 0 R
-/First 114 0 R
-/Last 118 0 R
-/Count 5 
-/Title (5. HASH_OPTION.PQL)
+/Parent 112 0 R
+/Dest [37 0 R /FitH 726]
+/Title (4.1 Table List Sorted By Table Name)
 >>
 endobj
 114 0 obj
 <<
-/Parent 113 0 R
-/Dest [41 0 R /FitH 726]
-/Next 115 0 R
-/Title (options)
+/Parent 75 0 R
+/Dest [41 0 R /FitH 764.4]
+/Previous 112 0 R
+/Next 120 0 R
+/First 115 0 R
+/Last 119 0 R
+/Count 5 
+/Title (5. EXAMPLES/HASH_OPTION.PQL)
 >>
 endobj
 115 0 obj
 <<
-/Parent 113 0 R
-/Dest [41 0 R /FitH 621.6]
-/Previous 114 0 R
+/Parent 114 0 R
+/Dest [41 0 R /FitH 726]
 /Next 116 0 R
-/Title (description)
+/Title (options)
 >>
 endobj
 116 0 obj
 <<
-/Parent 113 0 R
-/Dest [41 0 R /FitH 550.8]
+/Parent 114 0 R
+/Dest [41 0 R /FitH 613.2]
 /Previous 115 0 R
 /Next 117 0 R
-/Title (group by)
+/Title (description)
 >>
 endobj
 117 0 obj
 <<
-/Parent 113 0 R
-/Dest [41 0 R /FitH 513.6]
+/Parent 114 0 R
+/Dest [41 0 R /FitH 542.4]
 /Previous 116 0 R
 /Next 118 0 R
 /Title (input section)
@@ -3091,35 +3164,44 @@ endobj
 endobj
 118 0 obj
 <<
-/Parent 113 0 R
-/Dest [41 0 R /FitH 417.6]
+/Parent 114 0 R
+/Dest [41 0 R /FitH 446.4]
 /Previous 117 0 R
-/Title (output section)
+/Next 119 0 R
+/Title (group by)
 >>
 endobj
 119 0 obj
 <<
-/Parent 75 0 R
-/Dest [45 0 R /FitH 764.4]
-/Previous 113 0 R
-/Next 120 0 R
-/Title (6. PEQUEL GENERATED PROGRAM)
+/Parent 114 0 R
+/Dest [41 0 R /FitH 409.2]
+/Previous 118 0 R
+/Title (output section)
 >>
 endobj
 120 0 obj
 <<
 /Parent 75 0 R
-/Dest [53 0 R /FitH 764.4]
-/Previous 119 0 R
-/First 121 0 R
-/Last 121 0 R
-/Count 1 
-/Title (7. ABOUT PEQUEL)
+/Dest [45 0 R /FitH 764.4]
+/Previous 114 0 R
+/Next 121 0 R
+/Title (6. PEQUEL GENERATED PROGRAM)
 >>
 endobj
 121 0 obj
 <<
-/Parent 120 0 R
+/Parent 75 0 R
+/Dest [53 0 R /FitH 764.4]
+/Previous 120 0 R
+/First 122 0 R
+/Last 122 0 R
+/Count 1 
+/Title (7. ABOUT PEQUEL)
+>>
+endobj
+122 0 obj
+<<
+/Parent 121 0 R
 /Dest [53 0 R /FitH 681.6]
 /Title (COPYRIGHT)
 >>
@@ -3127,9 +3209,9 @@ endobj
 74 0 obj
 <<
 /Type /Outlines
-/Count 47
+/Count 48
 /First 75 0 R
-/Last 121 0 R
+/Last 122 0 R
 >>
 endobj
 3 0 obj
@@ -3149,12 +3231,12 @@ endobj
 >>
 endobj
 xref
-0 122
+0 123
 0000000000 65535 f 
 0000000015 00000 n 
 0000000171 00000 n 
-0000046709 00000 n 
-0000046798 00000 n 
+0000048246 00000 n 
+0000048335 00000 n 
 0000000285 00000 n 
 0000002385 00000 n 
 0000002484 00000 n 
@@ -3169,115 +3251,116 @@ xref
 0000003396 00000 n 
 0000003502 00000 n 
 0000003616 00000 n 
-0000008273 00000 n 
-0000008294 00000 n 
-0000008444 00000 n 
-0000008527 00000 n 
-0000011025 00000 n 
-0000011046 00000 n 
-0000011172 00000 n 
-0000011255 00000 n 
-0000013527 00000 n 
-0000013548 00000 n 
-0000013674 00000 n 
-0000013757 00000 n 
-0000014138 00000 n 
-0000014158 00000 n 
-0000014260 00000 n 
-0000014343 00000 n 
-0000014828 00000 n 
-0000014848 00000 n 
-0000014950 00000 n 
-0000015033 00000 n 
-0000018835 00000 n 
-0000018856 00000 n 
-0000018982 00000 n 
-0000019065 00000 n 
-0000027430 00000 n 
-0000027451 00000 n 
-0000027565 00000 n 
-0000027648 00000 n 
-0000030700 00000 n 
-0000030721 00000 n 
-0000030835 00000 n 
-0000030918 00000 n 
-0000033192 00000 n 
-0000033213 00000 n 
-0000033339 00000 n 
-0000033422 00000 n 
-0000033745 00000 n 
-0000033765 00000 n 
-0000033867 00000 n 
-0000033950 00000 n 
-0000039031 00000 n 
-0000039052 00000 n 
-0000039166 00000 n 
-0000039249 00000 n 
-0000039574 00000 n 
-0000039594 00000 n 
-0000039696 00000 n 
-0000039779 00000 n 
-0000039862 00000 n 
-0000040246 00000 n 
-0000040266 00000 n 
-0000040392 00000 n 
-0000040710 00000 n 
-0000040730 00000 n 
-0000040832 00000 n 
-0000046633 00000 n 
-0000040915 00000 n 
-0000041038 00000 n 
-0000041136 00000 n 
-0000041249 00000 n 
-0000041410 00000 n 
-0000041546 00000 n 
-0000041631 00000 n 
-0000041790 00000 n 
-0000041873 00000 n 
-0000042030 00000 n 
-0000042115 00000 n 
-0000042272 00000 n 
-0000042370 00000 n 
-0000042482 00000 n 
-0000042639 00000 n 
-0000042737 00000 n 
-0000042860 00000 n 
-0000043015 00000 n 
-0000043113 00000 n 
-0000043225 00000 n 
-0000043382 00000 n 
-0000043480 00000 n 
-0000043592 00000 n 
-0000043736 00000 n 
-0000043832 00000 n 
-0000043944 00000 n 
-0000044114 00000 n 
-0000044215 00000 n 
-0000044331 00000 n 
-0000044452 00000 n 
-0000044568 00000 n 
-0000044686 00000 n 
-0000044800 00000 n 
-0000044919 00000 n 
-0000045038 00000 n 
-0000045145 00000 n 
-0000045261 00000 n 
-0000045435 00000 n 
-0000045544 00000 n 
-0000045708 00000 n 
-0000045803 00000 n 
-0000045922 00000 n 
-0000046038 00000 n 
-0000046159 00000 n 
-0000046267 00000 n 
-0000046401 00000 n 
-0000046548 00000 n 
+0000008290 00000 n 
+0000008311 00000 n 
+0000008461 00000 n 
+0000008544 00000 n 
+0000011050 00000 n 
+0000011071 00000 n 
+0000011197 00000 n 
+0000011280 00000 n 
+0000013770 00000 n 
+0000013791 00000 n 
+0000013917 00000 n 
+0000014000 00000 n 
+0000014389 00000 n 
+0000014409 00000 n 
+0000014511 00000 n 
+0000014594 00000 n 
+0000015087 00000 n 
+0000015107 00000 n 
+0000015209 00000 n 
+0000015292 00000 n 
+0000019191 00000 n 
+0000019212 00000 n 
+0000019338 00000 n 
+0000019421 00000 n 
+0000027525 00000 n 
+0000027546 00000 n 
+0000027660 00000 n 
+0000027743 00000 n 
+0000031969 00000 n 
+0000031990 00000 n 
+0000032104 00000 n 
+0000032187 00000 n 
+0000034469 00000 n 
+0000034490 00000 n 
+0000034616 00000 n 
+0000034699 00000 n 
+0000035030 00000 n 
+0000035050 00000 n 
+0000035152 00000 n 
+0000035235 00000 n 
+0000040425 00000 n 
+0000040446 00000 n 
+0000040560 00000 n 
+0000040643 00000 n 
+0000040967 00000 n 
+0000040987 00000 n 
+0000041089 00000 n 
+0000041172 00000 n 
+0000041255 00000 n 
+0000041648 00000 n 
+0000041668 00000 n 
+0000041794 00000 n 
+0000042120 00000 n 
+0000042140 00000 n 
+0000042242 00000 n 
+0000048170 00000 n 
+0000042325 00000 n 
+0000042448 00000 n 
+0000042546 00000 n 
+0000042659 00000 n 
+0000042820 00000 n 
+0000042956 00000 n 
+0000043041 00000 n 
+0000043200 00000 n 
+0000043283 00000 n 
+0000043440 00000 n 
+0000043525 00000 n 
+0000043682 00000 n 
+0000043780 00000 n 
+0000043892 00000 n 
+0000044049 00000 n 
+0000044147 00000 n 
+0000044270 00000 n 
+0000044425 00000 n 
+0000044523 00000 n 
+0000044635 00000 n 
+0000044792 00000 n 
+0000044890 00000 n 
+0000045002 00000 n 
+0000045146 00000 n 
+0000045242 00000 n 
+0000045354 00000 n 
+0000045525 00000 n 
+0000045623 00000 n 
+0000045742 00000 n 
+0000045858 00000 n 
+0000045979 00000 n 
+0000046095 00000 n 
+0000046213 00000 n 
+0000046327 00000 n 
+0000046446 00000 n 
+0000046565 00000 n 
+0000046673 00000 n 
+0000046789 00000 n 
+0000046963 00000 n 
+0000047072 00000 n 
+0000047245 00000 n 
+0000047340 00000 n 
+0000047459 00000 n 
+0000047580 00000 n 
+0000047696 00000 n 
+0000047804 00000 n 
+0000047938 00000 n 
+0000048085 00000 n 
 trailer
 <<
-/Size 122
+/Size 123
 /Root 3 0 R
 /Info 2 0 R
 >>
 startxref
-46974
+48511
 %%EOF

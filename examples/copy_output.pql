@@ -65,5 +65,5 @@ having
 	SALES_TOTAL > 0
 	
 sort output
-	LOCATION
+    LOCATION
 	SALES_TOTAL numeric desc

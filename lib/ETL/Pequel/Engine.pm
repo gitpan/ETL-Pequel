@@ -24,6 +24,8 @@
 # ----------------------------------------------------------------------------------------------------
 # Modification History
 # When          Version     Who     What
+# 16/11/2005	2.4-5		gaffie	Bug fix -- input record line counter.
+# 04/11/2005	2.4-5		gaffie	Bug fix numeric/decimal type checking for nulls/nonulls options.
 # 03/11/2005	2.4-4		gaffie	Fixed PrintHeader().
 # 20/09/2005	2.3-6		gaffie	unpack_input/pack_output implementation.
 # 04/09/2005	2.3-3		gaffie	Support input_file(pequel-script) with sort-by.
@@ -43,8 +45,8 @@ use strict;
 use attributes qw(get reftype);
 #use warnings; --- NOT HERE because the eval in execute will complain!
 use vars qw($VERSION $BUILD);
-$VERSION = "2.4-4";
-$BUILD = 'Thursday November  3 23:56:42 GMT 2005';
+$VERSION = "2.4-5";
+$BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Engine;
@@ -112,6 +114,7 @@ $BUILD = 'Thursday November  3 23:56:42 GMT 2005';
 		}
 		return unless ($self->PARAM->sections->exists('input section')->items->size);
 	
+#>		$self->codeOpen();
 		map($self->addAll($_->codeOpen()), grep($_->items->size, $self->PARAM->sections->toArray));
 
 		$self->add("\&PrintHeader();") 
@@ -138,6 +141,7 @@ $BUILD = 'Thursday November  3 23:56:42 GMT 2005';
 
 #>		$self->codeSummarySection;
 		# Important -- first close last opened to prevent deadlock:
+#>		$self->codeClose();
 		map($self->addAll($_->codeClose), grep($_->items->size, reverse($self->PARAM->sections->toArray)));
 
 		$self->addAll($self->PARAM->dbtypes->codeDisconnect)
@@ -161,6 +165,48 @@ $BUILD = 'Thursday November  3 23:56:42 GMT 2005';
 		}
 	}
 
+#>	sub codeOpen : method
+#>	{
+#>		my $self = shift;
+#>		foreach ($self->PARAM->distributor->toArrayUniq())
+#>		{
+#>			my $fdname = $_;
+#>			$fdname =~ s/^.*://;
+#>			$fdname =~ s/^.*\///;
+#>			$fdname =~ s/\..*$//;
+#>			if ($_ =~ /^pequel:|\.pql$/i)
+#>			{
+#>				$self->add("if (open(::$fdname, '|-') == 0) # Fork -- write to child");# child reads STDIN
+#>				$self->openBlock("{");
+#>					$self->add("&p_@{[ lc($fdname) ]}::@{[ lc($fdname) ]};");
+#>					$self->add("exit(0);");
+#>				$self->closeBlock;
+#>				#>	check return of fork for null -- failed fork.
+#>			}
+#>			else # Its a file...
+#>			{
+#>				my $ofile = $_;
+#>				$ofile =~ s/^.*://;
+#>				$self->add("open(::$fdname, '>@{[ $ofile ]}');"); # || die...
+#>			}
+#>		}
+#>		map($self->addAll($_->codeOpen()), grep($_->items->size, $self->PARAM->sections->toArray));
+#>	}
+#>	
+#>	sub codeClose : method
+#>	{
+#>		my $self = shift;
+#>		map($self->addAll($_->codeClose), grep($_->items->size, reverse($self->PARAM->sections->toArray)));
+#>		foreach (reverse $self->PARAM->distributor->toArrayUniq())
+#>		{
+#>			my $fdname = $_;
+#>			$fdname =~ s/^.*://;
+#>			$fdname =~ s/^.*\///;
+#>			$fdname =~ s/\..*$//;
+#>			$self->add("close(::@{[ uc($fdname) ]});");
+#>		}
+#>	}
+
 	sub codePackages : method
 	{
 		my $self = shift;
@@ -170,6 +216,7 @@ $BUILD = 'Thursday November  3 23:56:42 GMT 2005';
 				$self->add("package p_@{[ lc($_->name) ]};");
 				$self->add("sub @{[ lc($_->name) ]}");
 				$self->openBlock("{");
+#>?				$self->add("my \$output_fd = shift || *STDOUT;");
 				$self->addAll($_->value->PARAM->ENGINE);
 				$self->closeBlock;
 			$self->closeBlock;
@@ -185,7 +232,6 @@ $BUILD = 'Thursday November  3 23:56:42 GMT 2005';
 
 		if ($self->PARAM->properties('use_inline'))
 		{
-			$self->add("my \$i;");
 			$self->add( "while (readsplit(\\\@I_VAL))");
 		}
 		else
@@ -345,6 +391,8 @@ $BUILD = 'Thursday November  3 23:56:42 GMT 2005';
 		$self->add("my \@O_VAL;") unless ($self->PARAM->properties('hash'));
 		$self->add("my \%O_VAL;") if ($self->PARAM->properties('hash'));
 		$self->add("my \$key;") if ($self->PARAM->properties('hash'));
+		$self->add("my @{[ $self->lineCounterVar ]}=0;") 
+			unless ($self->PARAM->properties('noverbose') || !$self->PARAM->properties('verbose'));
 
 #>		# types:
 #>		map
@@ -456,6 +504,7 @@ $BUILD = 'Thursday November  3 23:56:42 GMT 2005';
 				" || ", 
 				map
 				(
+#! type here is a string not object !
 					"\$previous_key_@{[ $_->inputField->id ]} @{[ $_->inputField->type =~ /numeric|decimal/ ? '!=' : 'ne' ]} \$key_@{[ $_->inputField->id ]}", 
 					$self->PARAM->sections->exists('group by')->items->toArray
 				)
@@ -511,7 +560,7 @@ $BUILD = 'Thursday November  3 23:56:42 GMT 2005';
 	sub codePrint : method
 	{
 		my $self = shift;
-		my $ofl = shift || 'STDOUT';
+		my $ofl = shift || 'STDOUT';	# --> ::STDOUT
 
 		$self->addCommentBegin("codePrint");
 		$self->add("flock($ofl, LOCK_EX);") if ($self->PARAM->properties('lock_output'));
@@ -787,16 +836,15 @@ $BUILD = 'Thursday November  3 23:56:42 GMT 2005';
 	sub lineCounterVar : method
 	{
 		my $self = shift;
-#<		return $self->root->t_db->tableList->size ? '$i' : '$.';
-		return $self->PARAM->properties('use_inline') ? '$i' : '$.';
+#<		return $self->PARAM->properties('use_inline') ? '$i' : '$.';
+		return '$_inprecs';
 	}
 	
 	sub codeIncRecordCounter : method
 	{
 		my $self = shift;
-#<		return unless ($self->root->t_db->tableList->size);
-		return unless ($self->PARAM->properties('use_inline'));
-		$self->add("++@{[ $self->lineCounterVar ]};");
+		return if ($self->PARAM->properties('noverbose') || !$self->PARAM->properties('verbose'));
+		$self->add("++@{[ $self->lineCounterVar ]};"); # unless $self->lineCounterVar eq '$.';
 	}
 	
 	sub codeRecordCounterMessage : method
@@ -804,7 +852,6 @@ $BUILD = 'Thursday November  3 23:56:42 GMT 2005';
 		my $self = shift;
 #? don't do this here but in verboseMessage()
 		return if ($self->PARAM->properties('noverbose') || !$self->PARAM->properties('verbose'));
-#<		my $inc = $self->root->t_db->tableList->size ? '++' : '';
 		$self->verboseMessage
 		(
 			"@{[ $self->lineCounterVar ]} records.", 
@@ -877,10 +924,10 @@ $BUILD = 'Thursday November  3 23:56:42 GMT 2005';
 	{
 		my $self = shift;
 		
-		if (grep($_->type =~ /numeric|decimal/, $self->PARAM->sections->exists('output section')->items->toArray))
+		if (grep($_->type->name() =~ /numeric|decimal/, $self->PARAM->sections->exists('output section')->items->toArray))
 		{
 			$self->addNonl("my \@numeric_fields = (");
-			$self->addNonl("@{[ join(',', map($_->number, grep($_->type =~ /numeric|decimal/, $self->PARAM->sections->exists('output section')->items->toArray))) ]}");
+			$self->addNonl("@{[ join(',', map($_->number, grep($_->type->name() =~ /numeric|decimal/, $self->PARAM->sections->exists('output section')->items->toArray))) ]}");
 			$self->add(");");	
 		}
 	}
@@ -893,15 +940,15 @@ $BUILD = 'Thursday November  3 23:56:42 GMT 2005';
 		{
 			foreach ($self->PARAM->sections->exists('output section')->items->toArray)
 			{ 
-				next unless ($_->type =~ /numeric|decimal/);
+				next unless ($_->type->name() =~ /numeric|decimal/);
 				next unless (!$_->aggregate && $_->inputField);	# same as __INPUT__
 				$self->add("@{[ $_->inputField->codeVar ]} = 0 if (@{[ $_->inputField->codeVar ]} == 0);");
 			}
 		}
-		if (grep($_->type =~ /numeric|decimal/, $self->PARAM->sections->exists('output section')->items->toArray))
+		if (grep($_->type->name() =~ /numeric|decimal/, $self->PARAM->sections->exists('output section')->items->toArray))
 		{ 
-			next unless ($_->type =~ /numeric|decimal/);
-			$self->add("foreach (\@numeric_fields)");
+#???		next unless ($_->type->name() =~ /numeric|decimal/);
+			$self->add("foreach my \$f (\@numeric_fields)");
 			$self->openBlock("{");
 			$self->add("\$O_VAL@{[ $self->PARAM->properties('hash') ? '{$key}{$f}' : '[$f]' ]} = 0");
 			$self->over;
@@ -930,7 +977,7 @@ $BUILD = 'Thursday November  3 23:56:42 GMT 2005';
 		foreach ($self->PARAM->sections->exists('input section')->items->toArray)
 		{
 			$self->addNonl(sprintf("use constant %-@{[ $self->maxHeaderLen+1 ]}s => int %4d;", 
-				$_->id, $_->number-1));
+				$_->synonym(), $_->number()-1));
 			$self->add;
 		}
 	}
@@ -942,7 +989,7 @@ $BUILD = 'Thursday November  3 23:56:42 GMT 2005';
 		foreach ($self->PARAM->sections->exists('output section')->items->toArray)
 		{
 			$self->addNonl(sprintf("use constant %-@{[ $self->maxHeaderLen+1 ]}s => int %4d;", 
-				$_->id, $_->number));
+				$_->synonym(), $_->number()));
 			$self->add;
 		}
 	}

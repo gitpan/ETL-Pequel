@@ -112,6 +112,8 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		$self->pequel_script_disallow(ETL::Pequel::Collection::Vector->new());
 		$self->ifields(ETL::Pequel::Collection::Vector->new());
 		$self->packages(ETL::Pequel::Collection::Vector->new());
+#>		$self->output_file(ETL::Pequel::Collection::Vector->new());
+#>?		$self->input_file(ETL::Pequel::Collection::Vector->new());
 
 		use ETL::Pequel::Table;
 		$self->tables(ETL::Pequel::Table->new);

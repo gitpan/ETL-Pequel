@@ -9,7 +9,7 @@ options
     doc_title("Divert Record Example Script")
     doc_email("sample@youraddress.com")
     doc_version(2.3)
-	unpack_input
+	//unpack_input
 
 description section
 
@@ -19,8 +19,8 @@ input section
     SALES_TOTAL
 	CATEGORY => 'HIGH'
 
-//sort by
-//	LOCATION
+sort by
+	LOCATION
 
 divert input record (diverted_record_low.pql)
 	SALES_TOTAL <= 100000
@@ -34,6 +34,5 @@ output section
 	string PRODUCT_CODE		PRODUCT_CODE
     decimal SALES_TOTAL	 	SALES_TOTAL
 
-//sort output
-//	LOCATION
-//	SALES_TOTAL numeric
+sort output
+	SALES_TOTAL numeric

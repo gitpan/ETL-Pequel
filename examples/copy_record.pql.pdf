@@ -11,7 +11,7 @@
 endobj
 2 0 obj
 <<
-/CreationDate (D:20051012152746+0100)
+/CreationDate (D:20051116140049+0000)
 /Producer (Pequel)
 /Title (Copy Record Example Script)
 >>
@@ -240,28 +240,6 @@ BT
 (' character. ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 583.2 Tm
-0.0000 Tw
-(Input stream is ) Tj
-/F21 10 Tf
-0.0000 Tw
-(sorted) Tj
-/F20 10 Tf
-0.0000 Tw
-( by the input field ) Tj
-/F23 10 Tf
-0.0000 Tw
-(LOCATION) Tj
-/F20 10 Tf
-0.0000 Tw
-( \() Tj
-/F22 10 Tf
-0.0000 Tw
-(string) Tj
-/F20 10 Tf
-0.0000 Tw
-(\). ) Tj
-/F20 10 Tf
-1 0 0 1 76.0 559.2 Tm
 0.7450 Tw
 (Input records are eliminated \() Tj
 /F21 10 Tf
@@ -273,14 +251,14 @@ BT
 /F23 10 Tf
 0.7450 Tw
 (LOCATION eq `WA' || LOCATION eq `SA' || LOCATION) Tj
-1 0 0 1 76.0 547.2 Tm
+1 0 0 1 76.0 571.2 Tm
 0.0000 Tw
 (eq `NSW' || LOCATION eq `VIC' || LOCATION eq `NT') Tj
 /F20 10 Tf
 0.0000 Tw
 (. ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 523.2 Tm
+1 0 0 1 76.0 547.2 Tm
 0.0000 Tw
 (Input records are ) Tj
 /F21 10 Tf
@@ -302,7 +280,7 @@ BT
 0.0000 Tw
 (\). ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 481.2 Tm
+1 0 0 1 52.0 505.2 Tm
 0.0000 Tw
 (1.1 ) Tj
 /F23 10 Tf
@@ -312,11 +290,11 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 469.2 Tm
+1 0 0 1 76.0 493.2 Tm
 0.0000 Tw
 (Output Field ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 442.8 Tm
+1 0 0 1 76.0 466.8 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -326,7 +304,7 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 430.8 Tm
+1 0 0 1 76.0 454.8 Tm
 0.0000 Tw
 (Set to input field ) Tj
 /F23 10 Tf
@@ -336,7 +314,7 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 404.4 Tm
+1 0 0 1 76.0 428.4 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -346,11 +324,11 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 388.2 Tm
+1 0 0 1 76.0 412.2 Tm
 0.0000 Tw
 (    => %LOC_DESCRIPT\(LOCATION\) ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 367.2 Tm
+1 0 0 1 52.0 391.2 Tm
 0.0000 Tw
 (1.2 ) Tj
 /F23 10 Tf
@@ -360,11 +338,11 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 355.2 Tm
+1 0 0 1 76.0 379.2 Tm
 0.0000 Tw
 (Output Field ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 328.8 Tm
+1 0 0 1 76.0 352.8 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -374,7 +352,7 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 316.8 Tm
+1 0 0 1 76.0 340.8 Tm
 0.0000 Tw
 (Set to input field ) Tj
 /F23 10 Tf
@@ -384,7 +362,7 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 290.4 Tm
+1 0 0 1 76.0 314.4 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -394,11 +372,11 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 274.2 Tm
+1 0 0 1 76.0 298.2 Tm
 0.0000 Tw
 (    => 'State Total' ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 253.2 Tm
+1 0 0 1 52.0 277.2 Tm
 0.0000 Tw
 (1.3 ) Tj
 /F23 10 Tf
@@ -408,11 +386,11 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 241.2 Tm
+1 0 0 1 76.0 265.2 Tm
 0.0000 Tw
 (Output Field ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 214.8 Tm
+1 0 0 1 76.0 238.8 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -422,7 +400,7 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 202.8 Tm
+1 0 0 1 76.0 226.8 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -439,7 +417,7 @@ BT
 (. ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(12 October 2005 15:27) Tj
+(16 November 2005 14:00) Tj
 1 0 0 1 537.44 37 Tm
 (1) Tj
 ET
@@ -449,7 +427,7 @@ S
 endstream
 endobj
 19 0 obj
-3851
+3578
 endobj
 20 0 obj
 <<
@@ -499,18 +477,32 @@ BT
 (2.1 ) Tj
 /F23 10 Tf
 0.0000 Tw
-(pequeldoc) Tj
+(prefix) Tj
 /F21 10 Tf
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 702.0 Tm
 0.0000 Tw
-(generate pod / pdf pequel script Reference Guide.: pdf ) Tj
+(directory pathname prefix.: examples ) Tj
 /F21 10 Tf
 1 0 0 1 52.0 672.0 Tm
 0.0000 Tw
 (2.2 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(pequeldoc) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 660.0 Tm
+0.0000 Tw
+(generate pod / pdf pequel script Reference Guide.: pdf ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 630.0 Tm
+0.0000 Tw
+(2.3 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (detail) Tj
@@ -518,23 +510,9 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 660.0 Tm
-0.0000 Tw
-(Include Pequel Generated Program chapter in Pequeldoc: 1 ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 630.0 Tm
-0.0000 Tw
-(2.3 ) Tj
-/F23 10 Tf
-0.0000 Tw
-(prefix) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
-/F20 10 Tf
 1 0 0 1 76.0 618.0 Tm
 0.0000 Tw
-(directory pathname prefix.: examples ) Tj
+(Include Pequel Generated Program chapter in Pequeldoc: 1 ) Tj
 /F21 10 Tf
 1 0 0 1 52.0 588.0 Tm
 0.0000 Tw
@@ -622,8 +600,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (2) Tj
-1 0 0 1 437.39 37 Tm
-(12 October 2005 15:27) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:00) Tj
 ET
 52 50 m
 543 50 l
@@ -631,7 +609,7 @@ S
 endstream
 endobj
 23 0 obj
-2234
+2235
 endobj
 24 0 obj
 <<
@@ -747,7 +725,7 @@ BT
 ( Victoria ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(12 October 2005 15:27) Tj
+(16 November 2005 14:00) Tj
 1 0 0 1 537.44 37 Tm
 (3) Tj
 ET
@@ -757,7 +735,7 @@ S
 endstream
 endobj
 27 0 obj
-1279
+1280
 endobj
 28 0 obj
 <<
@@ -822,8 +800,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (4) Tj
-1 0 0 1 437.39 37 Tm
-(12 October 2005 15:27) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:00) Tj
 ET
 52 50 m
 543 50 l
@@ -831,7 +809,7 @@ S
 endstream
 endobj
 31 0 obj
-625
+626
 endobj
 32 0 obj
 <<
@@ -887,15 +865,15 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 697.8 Tm
 0.0000 Tw
-(    pequeldoc\(pdf\) ) Tj
+(    prefix\(examples\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 689.4 Tm
 0.0000 Tw
-(    detail\(1\) ) Tj
+(    pequeldoc\(pdf\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 681.0 Tm
 0.0000 Tw
-(    prefix\(examples\) ) Tj
+(    detail\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 672.6 Tm
 0.0000 Tw
@@ -1074,30 +1052,16 @@ BT
 () Tj
 /F23 10 Tf
 0.0000 Tw
-(sort by) Tj
+(group by) Tj
 /F21 10 Tf
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 211.8 Tm
 0.0000 Tw
-(    LOCATION string  ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 190.8 Tm
-0.0000 Tw
-() Tj
-/F23 10 Tf
-0.0000 Tw
-(group by) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 174.6 Tm
-0.0000 Tw
 (    LOCATION string ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 153.6 Tm
+1 0 0 1 52.0 190.8 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -1107,19 +1071,19 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 137.4 Tm
+1 0 0 1 76.0 174.6 Tm
 0.0000 Tw
 (    string    LOCATION    LOCATION_DESC ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 129.0 Tm
+1 0 0 1 76.0 166.2 Tm
 0.0000 Tw
 (    string    DESCRIPTION DESCRIPTION ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 120.6 Tm
+1 0 0 1 76.0 157.8 Tm
 0.0000 Tw
 (    decimal   SALES_TOTAL sum SALES_TOTAL ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 99.6 Tm
+1 0 0 1 52.0 136.8 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -1129,16 +1093,16 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 83.4 Tm
+1 0 0 1 76.0 120.6 Tm
 0.0000 Tw
 (    LOCATION string  ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 75.0 Tm
+1 0 0 1 76.0 112.2 Tm
 0.0000 Tw
 (    SALES_TOTAL numeric des ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(12 October 2005 15:27) Tj
+(16 November 2005 14:00) Tj
 1 0 0 1 537.44 37 Tm
 (5) Tj
 ET
@@ -1148,7 +1112,7 @@ S
 endstream
 endobj
 35 0 obj
-4589
+4413
 endobj
 36 0 obj
 <<
@@ -1193,7 +1157,7 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 731.4 Tm
 0.0000 Tw
-( # vim: syntax=perl ts=4 sw=4 ) Tj
+( #!/usr/bin/perl ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 723.0 Tm
 0.0000 Tw
@@ -1201,297 +1165,301 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 714.6 Tm
 0.0000 Tw
-( #Generated By: pequel Version 2.3-4, Build: Wednesday October  12 23:16:49 BST 2005 ) Tj
+( # vim: syntax=perl ts=4 sw=4 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 706.2 Tm
 0.0000 Tw
-( #            : https://sourceforge.net/projects/pequel/ ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 697.8 Tm
 0.0000 Tw
-( #Script Name : examples/copy_record.pql ) Tj
+( #Generated By: pequel Version 2.4-5, Build: Wednesday November 16 21:56:42 GMT 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 689.4 Tm
 0.0000 Tw
-( #Created On  : Wed Oct 12 15:27:36 2005 ) Tj
+( #            : http://sourceforge.net/projects/pequel/ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 681.0 Tm
 0.0000 Tw
-( #For         :  ) Tj
+( #Script Name : copy_record.pql ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 672.6 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #Created On  : Wed Nov 16 14:00:48 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 664.2 Tm
 0.0000 Tw
-( #Options: ) Tj
+( #Perl Version: /usr/bin/perl 5.6.1 on solaris ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 655.8 Tm
 0.0000 Tw
-( #pequeldoc\(pdf\) generate pod / pdf pequel script Reference Guide. ) Tj
+( #For         :  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 647.4 Tm
 0.0000 Tw
-( #detail\(1\) Include Pequel Generated Program chapter in Pequeldoc ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 639.0 Tm
 0.0000 Tw
-( #prefix\(examples\) directory pathname prefix. ) Tj
+( #Options: ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 630.6 Tm
 0.0000 Tw
-( #script_name\(examples/copy_record.pql\) script filename ) Tj
+( #prefix\(examples\) directory pathname prefix. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 622.2 Tm
 0.0000 Tw
-( #input_file\(chain_pequel_pt1.pql\) input data filename ) Tj
+( #pequeldoc\(pdf\) generate pod / pdf pequel script Reference Guide. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 613.8 Tm
 0.0000 Tw
-( #optimize\(1\) optimize generated code. ) Tj
+( #detail\(1\) Include Pequel Generated Program chapter in Pequeldoc ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 605.4 Tm
 0.0000 Tw
-( #doc_title\(Copy Record Example Script\) document title. ) Tj
+( #script_name\(examples/copy_record.pql\) script filename ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 597.0 Tm
 0.0000 Tw
-( #doc_email\(sample@youraddress.com\) document email entry. ) Tj
+( #input_file\(chain_pequel_pt1.pql\) input data filename ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 588.6 Tm
 0.0000 Tw
-( #doc_version\(2.3\) document version for pequel script. ) Tj
+( #optimize\(1\) optimize generated code. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 580.2 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #doc_title\(Copy Record Example Script\) document title. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 571.8 Tm
 0.0000 Tw
-( use strict; ) Tj
+( #doc_email\(sample@youraddress.com\) document email entry. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 563.4 Tm
 0.0000 Tw
-( use Fcntl ':flock'; ) Tj
+( #doc_version\(2.3\) document version for pequel script. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 555.0 Tm
 0.0000 Tw
-( use constant _I_LOCATION         => int    0; ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 546.6 Tm
 0.0000 Tw
-( use constant _I_PRODUCT_CODE     => int    1; ) Tj
+( use strict; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 538.2 Tm
 0.0000 Tw
-( use constant _I_SALES_TOTAL      => int    2; ) Tj
+( use Fcntl ':flock'; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 529.8 Tm
 0.0000 Tw
-( use constant _I_LOCATION_DESC    => int    3; ) Tj
+( use constant _I_LOCATION         => int    0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 521.4 Tm
 0.0000 Tw
-( use constant _I_DESCRIPTION      => int    4; ) Tj
+( use constant _I_PRODUCT_CODE     => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 513.0 Tm
 0.0000 Tw
-( use constant _O_LOCATION         => int    1; ) Tj
+( use constant _I_SALES_TOTAL      => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 504.6 Tm
 0.0000 Tw
-( use constant _O_DESCRIPTION      => int    2; ) Tj
+( use constant _I_LOCATION_DESC    => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 496.2 Tm
 0.0000 Tw
-( use constant _O_SALES_TOTAL      => int    3; ) Tj
+( use constant _I_DESCRIPTION      => int    4; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 487.8 Tm
 0.0000 Tw
-( use constant _T_LOC_DESCRIPT_FLD_1   => int    0; ) Tj
+( use constant _O_LOCATION         => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 479.4 Tm
 0.0000 Tw
-( use constant _I_LOC_DESCRIPT_LOCATION_FLD_KEY => int    5; ) Tj
+( use constant _O_DESCRIPTION      => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 471.0 Tm
 0.0000 Tw
-( use constant _I_LOC_DESCRIPT_LOCATION_FLD_1  => int    6; ) Tj
+( use constant _O_SALES_TOTAL      => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 462.6 Tm
 0.0000 Tw
-( local $\\="\\n"; local $,="|"; ) Tj
+( use constant _T_LOC_DESCRIPT_FLD_1   => int    0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 454.2 Tm
 0.0000 Tw
-( print STDERR '[examples/copy_record.pql ' . localtime\(\) . "] Init"; ) Tj
+( use constant _I_LOC_DESCRIPT_LOCATION_FLD_KEY => int    5; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 445.8 Tm
 0.0000 Tw
-( use constant VERBOSE => int 10000; ) Tj
+( use constant _I_LOC_DESCRIPT_LOCATION_FLD_1  => int    6; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 437.4 Tm
 0.0000 Tw
-( use constant LAST_ICELL => int 4; ) Tj
+( local $\\="\\n"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 429.0 Tm
 0.0000 Tw
-( my @I_VAL; ) Tj
+( local $,="|"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 420.6 Tm
 0.0000 Tw
-( my @O_VAL; ) Tj
+( print STDERR '[examples/copy_record.pql ' . localtime\(\) . "] Init"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 412.2 Tm
 0.0000 Tw
-( my $key__I_LOCATION; ) Tj
+( use constant VERBOSE => int 10000; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 403.8 Tm
 0.0000 Tw
-( my $previous_key__I_LOCATION = undef; ) Tj
+( use constant LAST_ICELL => int 4; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 395.4 Tm
 0.0000 Tw
-( foreach my $f \(1..3\) \{ $O_VAL[$f] = undef; \} ) Tj
+( my @I_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 387.0 Tm
 0.0000 Tw
-( my $_TABLE_LOC_DESCRIPT = &InitLookupLOC_DESCRIPT; # ref to %$LOC_DESCRIPT hash ) Tj
+( my @O_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 378.6 Tm
 0.0000 Tw
-( if \(open\(CHAIN_PEQUEL_PT1, '-|'\) == 0\) # Fork -- read from child ) Tj
+( my $_inprecs=0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 370.2 Tm
 0.0000 Tw
-( \{ ) Tj
+( my $key__I_LOCATION; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 361.8 Tm
 0.0000 Tw
-(     &p_execPequelCHAIN_PEQUEL_PT1::execPequelCHAIN_PEQUEL_PT1; ) Tj
+( my $previous_key__I_LOCATION = undef; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 353.4 Tm
 0.0000 Tw
-(     exit\(0\); ) Tj
+( foreach my $f \(1..3\) \{ $O_VAL[$f] = undef; \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 345.0 Tm
 0.0000 Tw
-( \} ) Tj
+( my $_TABLE_LOC_DESCRIPT = &InitLookupLOC_DESCRIPT; # ref to %$LOC_DESCRIPT hash ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 336.6 Tm
+0.0000 Tw
+( if \(open\(READ_CHAIN_PEQUEL_PT1, '-|'\) == 0\) # Fork -- read from child ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 328.2 Tm
 0.0000 Tw
-( open\(STDOUT, '|-', q\{sort -t'|' -y -k 1,1 -k 3nr,3nr 2>/dev/null |\}\); ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 319.8 Tm
 0.0000 Tw
-( if \(open\(COPY_COPY_RECORD_WA, '|-'\) == 0\) # Fork -- write to child ) Tj
+(     &p_read_chain_pequel_pt1::read_chain_pequel_pt1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 311.4 Tm
 0.0000 Tw
-( \{ ) Tj
+(     exit\(0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 303.0 Tm
 0.0000 Tw
-(     &p_copy_copy_record_wa::copy_copy_record_wa; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 294.6 Tm
-0.0000 Tw
-(     exit\(0\); ) Tj
+( \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 286.2 Tm
 0.0000 Tw
-( \} ) Tj
+( open\(STDOUT, '|-', q\{sort  -t'|' -y -k 1,1 -k 3nr,3nr 2>/dev/null\}\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 277.8 Tm
+0.0000 Tw
+( if \(open\(COPY_INPUT_COPY_RECORD_WA, '|-'\) == 0\) # Fork -- write to child ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 269.4 Tm
 0.0000 Tw
-( if \(open\(COPY_COPY_RECORD_SA, '|-'\) == 0\) # Fork -- write to child ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 261.0 Tm
 0.0000 Tw
-( \{ ) Tj
+(     &p_copy_input_copy_record_wa::copy_input_copy_record_wa; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 252.6 Tm
 0.0000 Tw
-(     &p_copy_copy_record_sa::copy_copy_record_sa; ) Tj
+(     exit\(0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 244.2 Tm
 0.0000 Tw
-(     exit\(0\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 235.8 Tm
-0.0000 Tw
 ( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 227.4 Tm
+0.0000 Tw
+( if \(open\(COPY_INPUT_COPY_RECORD_SA, '|-'\) == 0\) # Fork -- write to child ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 219.0 Tm
 0.0000 Tw
-( if \(open\(COPY_COPY_RECORD_NSW, '|-'\) == 0\) # Fork -- write to child ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 210.6 Tm
 0.0000 Tw
-( \{ ) Tj
+(     &p_copy_input_copy_record_sa::copy_input_copy_record_sa; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 202.2 Tm
 0.0000 Tw
-(     &p_copy_copy_record_nsw::copy_copy_record_nsw; ) Tj
+(     exit\(0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 193.8 Tm
 0.0000 Tw
-(     exit\(0\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 185.4 Tm
-0.0000 Tw
 ( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 177.0 Tm
+0.0000 Tw
+( if \(open\(COPY_INPUT_COPY_RECORD_NSW, '|-'\) == 0\) # Fork -- write to child ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 168.6 Tm
 0.0000 Tw
-( if \(open\(COPY_COPY_RECORD_VIC, '|-'\) == 0\) # Fork -- write to child ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 160.2 Tm
 0.0000 Tw
-( \{ ) Tj
+(     &p_copy_input_copy_record_nsw::copy_input_copy_record_nsw; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 151.8 Tm
 0.0000 Tw
-(     &p_copy_copy_record_vic::copy_copy_record_vic; ) Tj
+(     exit\(0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 143.4 Tm
 0.0000 Tw
-(     exit\(0\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 135.0 Tm
-0.0000 Tw
 ( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 126.6 Tm
+0.0000 Tw
+( if \(open\(COPY_INPUT_COPY_RECORD_VIC, '|-'\) == 0\) # Fork -- write to child ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 118.2 Tm
 0.0000 Tw
-( if \(open\(COPY_COPY_RECORD_NT, '|-'\) == 0\) # Fork -- write to child ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 109.8 Tm
 0.0000 Tw
-( \{ ) Tj
+(     &p_copy_input_copy_record_vic::copy_input_copy_record_vic; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 101.4 Tm
 0.0000 Tw
-(     &p_copy_copy_record_nt::copy_copy_record_nt; ) Tj
+(     exit\(0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 93.0 Tm
 0.0000 Tw
-(     exit\(0\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 84.6 Tm
-0.0000 Tw
 ( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 76.2 Tm
+0.0000 Tw
+( if \(open\(COPY_INPUT_COPY_RECORD_NT, '|-'\) == 0\) # Fork -- write to child ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 67.8 Tm
 0.0000 Tw
-( print STDERR '[examples/copy_record.pql ' . localtime\(\) . "] Start"; ) Tj
+( \{ ) Tj
 /F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (6) Tj
-1 0 0 1 437.39 37 Tm
-(12 October 2005 15:27) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:00) Tj
 ET
 52 50 m
 543 50 l
@@ -1499,7 +1467,7 @@ S
 endstream
 endobj
 39 0 obj
-7029
+7183
 endobj
 40 0 obj
 <<
@@ -1539,75 +1507,75 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 771.6 Tm
 0.0000 Tw
-( use Benchmark; ) Tj
+(     &p_copy_input_copy_record_nt::copy_input_copy_record_nt; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 763.2 Tm
 0.0000 Tw
-( my $benchmark_start = new Benchmark; ) Tj
+(     exit\(0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 754.8 Tm
 0.0000 Tw
-( while \(<CHAIN_PEQUEL_PT1>\) ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 746.4 Tm
-0.0000 Tw
-( \{ ) Tj
+( \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 738.0 Tm
 0.0000 Tw
-(     print STDERR '[examples/copy_record.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE == 0\); ) Tj
+( print STDERR '[examples/copy_record.pql ' . localtime\(\) . "] Start"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 729.6 Tm
 0.0000 Tw
-(     chomp; ) Tj
+( use Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 721.2 Tm
 0.0000 Tw
-(     @I_VAL = split\("[|]", $_\); ) Tj
+( my $benchmark_start = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 712.8 Tm
 0.0000 Tw
-(     next unless \($I_VAL[_I_LOCATION] eq 'WA' || $I_VAL[_I_LOCATION] eq 'SA' || $I_VAL[_I_LOCATION] eq 'NSW' || ) Tj
+( while \(<READ_CHAIN_PEQUEL_PT1>\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 704.4 Tm
 0.0000 Tw
-(  $I_VAL[_I_LOCATION] eq 'VIC' || $I_VAL[_I_LOCATION] eq 'NT'\); ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 696.0 Tm
 0.0000 Tw
-(     if \($I_VAL[_I_LOCATION] eq 'WA'\) ) Tj
+(     ++$_inprecs; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 687.6 Tm
 0.0000 Tw
-(     \{ ) Tj
+(     print STDERR '[examples/copy_record.pql ' . localtime\(\) . "] $_inprecs records." if \($_inprecs % VERBOSE = ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 679.2 Tm
 0.0000 Tw
-(         print COPY_COPY_RECORD_WA ) Tj
+( = 0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 670.8 Tm
 0.0000 Tw
-(             @I_VAL[0..LAST_ICELL]; ) Tj
+(     chomp; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 662.4 Tm
 0.0000 Tw
-(     \} ) Tj
+(     @I_VAL = split\("[|]", $_\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 654.0 Tm
+0.0000 Tw
+(     next unless \($I_VAL[_I_LOCATION] eq 'WA' || $I_VAL[_I_LOCATION] eq 'SA' || $I_VAL[_I_LOCATION] eq 'NSW' || ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 645.6 Tm
 0.0000 Tw
-(     if \($I_VAL[_I_LOCATION] eq 'SA'\) ) Tj
+(  $I_VAL[_I_LOCATION] eq 'VIC' || $I_VAL[_I_LOCATION] eq 'NT'\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 637.2 Tm
 0.0000 Tw
-(     \{ ) Tj
+(     if \(\($I_VAL[_I_LOCATION] eq 'WA'\)\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 628.8 Tm
 0.0000 Tw
-(         print COPY_COPY_RECORD_SA ) Tj
+(     \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 620.4 Tm
 0.0000 Tw
-(             @I_VAL[0..LAST_ICELL]; ) Tj
+(         print COPY_INPUT_COPY_RECORD_WA $_; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 612.0 Tm
 0.0000 Tw
@@ -1615,7 +1583,7 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 595.2 Tm
 0.0000 Tw
-(     if \($I_VAL[_I_LOCATION] eq 'NSW'\) ) Tj
+(     if \(\($I_VAL[_I_LOCATION] eq 'SA'\)\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 586.8 Tm
 0.0000 Tw
@@ -1623,231 +1591,227 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 578.4 Tm
 0.0000 Tw
-(         print COPY_COPY_RECORD_NSW ) Tj
+(         print COPY_INPUT_COPY_RECORD_SA $_; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 570.0 Tm
 0.0000 Tw
-(             @I_VAL[0..LAST_ICELL]; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 561.6 Tm
-0.0000 Tw
 (     \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 553.2 Tm
+0.0000 Tw
+(     if \(\($I_VAL[_I_LOCATION] eq 'NSW'\)\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 544.8 Tm
 0.0000 Tw
-(     if \($I_VAL[_I_LOCATION] eq 'VIC'\) ) Tj
+(     \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 536.4 Tm
 0.0000 Tw
-(     \{ ) Tj
+(         print COPY_INPUT_COPY_RECORD_NSW $_; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 528.0 Tm
 0.0000 Tw
-(         print COPY_COPY_RECORD_VIC ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 519.6 Tm
-0.0000 Tw
-(             @I_VAL[0..LAST_ICELL]; ) Tj
+(     \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 511.2 Tm
 0.0000 Tw
-(     \} ) Tj
+(     if \(\($I_VAL[_I_LOCATION] eq 'VIC'\)\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 502.8 Tm
+0.0000 Tw
+(     \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 494.4 Tm
 0.0000 Tw
-(     if \($I_VAL[_I_LOCATION] eq 'NT'\) ) Tj
+(         print COPY_INPUT_COPY_RECORD_VIC $_; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 486.0 Tm
 0.0000 Tw
-(     \{ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 477.6 Tm
-0.0000 Tw
-(         print COPY_COPY_RECORD_NT ) Tj
+(     \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 469.2 Tm
 0.0000 Tw
-(             @I_VAL[0..LAST_ICELL]; ) Tj
+(     if \(\($I_VAL[_I_LOCATION] eq 'NT'\)\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 460.8 Tm
 0.0000 Tw
-(     \} ) Tj
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 452.4 Tm
+0.0000 Tw
+(         print COPY_INPUT_COPY_RECORD_NT $_; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 444.0 Tm
 0.0000 Tw
-(     $key__I_LOCATION = $I_VAL[_I_LOCATION]; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 435.6 Tm
-0.0000 Tw
-(     if \(!defined\($previous_key__I_LOCATION\)\) ) Tj
+(     \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 427.2 Tm
 0.0000 Tw
-(     \{ ) Tj
+(     $key__I_LOCATION = $I_VAL[_I_LOCATION]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 418.8 Tm
 0.0000 Tw
-(         $previous_key__I_LOCATION = $key__I_LOCATION; ) Tj
+(     if \(!defined\($previous_key__I_LOCATION\)\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 410.4 Tm
 0.0000 Tw
-(     \} ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 393.6 Tm
-0.0000 Tw
-(     elsif \($previous_key__I_LOCATION ne $key__I_LOCATION\) ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 385.2 Tm
-0.0000 Tw
 (     \{ ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 376.8 Tm
-0.0000 Tw
-(         flock\(STDOUT, LOCK_EX\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 368.4 Tm
-0.0000 Tw
-(         print STDOUT ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 360.0 Tm
-0.0000 Tw
-(             $O_VAL[_O_LOCATION], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 351.6 Tm
-0.0000 Tw
-(             $O_VAL[_O_DESCRIPTION], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 343.2 Tm
-0.0000 Tw
-(             $O_VAL[_O_SALES_TOTAL] ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 334.8 Tm
-0.0000 Tw
-(         ; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 326.4 Tm
-0.0000 Tw
-(         flock\(STDOUT, LOCK_UN\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 318.0 Tm
+1 0 0 1 76.0 402.0 Tm
 0.0000 Tw
 (         $previous_key__I_LOCATION = $key__I_LOCATION; ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 309.6 Tm
-0.0000 Tw
-(         @O_VAL = undef; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 301.2 Tm
+1 0 0 1 76.0 393.6 Tm
 0.0000 Tw
 (     \} ) Tj
 /F10 7 Tf
+1 0 0 1 76.0 376.8 Tm
+0.0000 Tw
+(     elsif \($previous_key__I_LOCATION ne $key__I_LOCATION\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 368.4 Tm
+0.0000 Tw
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 360.0 Tm
+0.0000 Tw
+(         flock\(STDOUT, LOCK_EX\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 351.6 Tm
+0.0000 Tw
+(         print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 343.2 Tm
+0.0000 Tw
+(             $O_VAL[_O_LOCATION], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 334.8 Tm
+0.0000 Tw
+(             $O_VAL[_O_DESCRIPTION], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 326.4 Tm
+0.0000 Tw
+(             $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 318.0 Tm
+0.0000 Tw
+(         ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 309.6 Tm
+0.0000 Tw
+(         flock\(STDOUT, LOCK_UN\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 301.2 Tm
+0.0000 Tw
+(         $previous_key__I_LOCATION = $key__I_LOCATION; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 292.8 Tm
+0.0000 Tw
+(         @O_VAL = undef; ) Tj
+/F10 7 Tf
 1 0 0 1 76.0 284.4 Tm
 0.0000 Tw
-(     $I_VAL[_I_LOCATION_DESC] = $$_TABLE_LOC_DESCRIPT\{qq\{$I_VAL[_I_LOCATION]\}\}; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 276.0 Tm
-0.0000 Tw
-(     $O_VAL[_O_LOCATION] = $I_VAL[_I_LOCATION_DESC]; ) Tj
+(     \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 267.6 Tm
 0.0000 Tw
-(     $I_VAL[_I_DESCRIPTION] = 'State Total'; ) Tj
+(     $I_VAL[_I_LOCATION_DESC] = $$_TABLE_LOC_DESCRIPT\{qq\{$I_VAL[_I_LOCATION]\}\}; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 259.2 Tm
 0.0000 Tw
-(     $O_VAL[_O_DESCRIPTION] = $I_VAL[_I_DESCRIPTION]; ) Tj
+(     $O_VAL[_O_LOCATION] = $I_VAL[_I_LOCATION_DESC]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 250.8 Tm
 0.0000 Tw
-(     $O_VAL[_O_SALES_TOTAL] += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
+(     $I_VAL[_I_DESCRIPTION] = 'State Total'; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 242.4 Tm
 0.0000 Tw
-( \} ) Tj
+(     $O_VAL[_O_DESCRIPTION] = $I_VAL[_I_DESCRIPTION]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 234.0 Tm
+0.0000 Tw
+(     $O_VAL[_O_SALES_TOTAL] += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 225.6 Tm
 0.0000 Tw
-( flock\(STDOUT, LOCK_EX\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 217.2 Tm
-0.0000 Tw
-( print STDOUT ) Tj
+( \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 208.8 Tm
 0.0000 Tw
-(     $O_VAL[_O_LOCATION], ) Tj
+( flock\(STDOUT, LOCK_EX\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 200.4 Tm
 0.0000 Tw
-(     $O_VAL[_O_DESCRIPTION], ) Tj
+( print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 192.0 Tm
 0.0000 Tw
-(     $O_VAL[_O_SALES_TOTAL] ) Tj
+(     $O_VAL[_O_LOCATION], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 183.6 Tm
 0.0000 Tw
-( ; ) Tj
+(     $O_VAL[_O_DESCRIPTION], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 175.2 Tm
 0.0000 Tw
-( flock\(STDOUT, LOCK_UN\); ) Tj
+(     $O_VAL[_O_SALES_TOTAL] ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 166.8 Tm
 0.0000 Tw
-( close\(COPY_COPY_RECORD_NT\); ) Tj
+( ; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 158.4 Tm
 0.0000 Tw
-( close\(COPY_COPY_RECORD_VIC\); ) Tj
+( flock\(STDOUT, LOCK_UN\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 150.0 Tm
 0.0000 Tw
-( close\(COPY_COPY_RECORD_NSW\); ) Tj
+( close\(COPY_INPUT_COPY_RECORD_NT\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 141.6 Tm
 0.0000 Tw
-( close\(COPY_COPY_RECORD_SA\); ) Tj
+( close\(COPY_INPUT_COPY_RECORD_VIC\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 133.2 Tm
 0.0000 Tw
-( close\(COPY_COPY_RECORD_WA\); ) Tj
+( close\(COPY_INPUT_COPY_RECORD_NSW\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 124.8 Tm
 0.0000 Tw
-( close\(STDOUT\); ) Tj
+( close\(COPY_INPUT_COPY_RECORD_SA\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 116.4 Tm
 0.0000 Tw
-( print STDERR '[examples/copy_record.pql ' . localtime\(\) . "] $. records."; ) Tj
+( close\(COPY_INPUT_COPY_RECORD_WA\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 108.0 Tm
 0.0000 Tw
-( my $benchmark_end = new Benchmark; ) Tj
+( close\(STDOUT\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 99.6 Tm
 0.0000 Tw
-( my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+( close\(READ_CHAIN_PEQUEL_PT1\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 91.2 Tm
 0.0000 Tw
-( print STDERR '[examples/copy_record.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark_timediff\)] ) Tj
+( print STDERR '[examples/copy_record.pql ' . localtime\(\) . "] $_inprecs records."; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 82.8 Tm
 0.0000 Tw
-( \}"; ) Tj
+( my $benchmark_end = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 74.4 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 66.0 Tm
 0.0000 Tw
-( #++++++ Table LOC_DESCRIPT --> Type :Pequel::Type::Table::Local ++++++ ) Tj
+( print STDERR '[examples/copy_record.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark_timediff\)] ) Tj
 /F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(12 October 2005 15:27) Tj
+(16 November 2005 14:00) Tj
 1 0 0 1 537.44 37 Tm
 (7) Tj
 ET
@@ -1857,7 +1821,7 @@ S
 endstream
 endobj
 43 0 obj
-6715
+6640
 endobj
 44 0 obj
 <<
@@ -1897,337 +1861,341 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 771.6 Tm
 0.0000 Tw
-( sub InitLookupLOC_DESCRIPT ) Tj
+( \}"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 763.2 Tm
 0.0000 Tw
-( \{ ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 754.8 Tm
 0.0000 Tw
-(     my %_TABLE_LOC_DESCRIPT; ) Tj
+( #++++++ Table LOC_DESCRIPT --> Type :ETL::Pequel::Type::Table::Local ++++++ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 746.4 Tm
 0.0000 Tw
-(     %_TABLE_LOC_DESCRIPT = ) Tj
+( sub InitLookupLOC_DESCRIPT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 738.0 Tm
 0.0000 Tw
-(     \( ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 729.6 Tm
 0.0000 Tw
-(         'NSW' => 'New South Wales', ) Tj
+(     my %_TABLE_LOC_DESCRIPT; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 721.2 Tm
 0.0000 Tw
-(         'NT' => 'Northern Territory', ) Tj
+(     %_TABLE_LOC_DESCRIPT = ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 712.8 Tm
 0.0000 Tw
-(         'QLD' => 'Queensland', ) Tj
+(     \( ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 704.4 Tm
 0.0000 Tw
-(         'SA' => 'South Australia', ) Tj
+(         'NSW' => 'New South Wales', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 696.0 Tm
 0.0000 Tw
-(         'VIC' => 'Victoria', ) Tj
+(         'NT' => 'Northern Territory', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 687.6 Tm
 0.0000 Tw
-(         'WA' => 'Western Australia' ) Tj
+(         'QLD' => 'Queensland', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 679.2 Tm
 0.0000 Tw
-(     \); ) Tj
+(         'SA' => 'South Australia', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 670.8 Tm
 0.0000 Tw
-(     return \\%_TABLE_LOC_DESCRIPT; ) Tj
+(         'VIC' => 'Victoria', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 662.4 Tm
 0.0000 Tw
-( \} ) Tj
+(         'WA' => 'Western Australia' ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 654.0 Tm
+0.0000 Tw
+(     \); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 645.6 Tm
 0.0000 Tw
-( \{ ) Tj
+(     return \\%_TABLE_LOC_DESCRIPT; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 637.2 Tm
 0.0000 Tw
-(     package p_execPequelCHAIN_PEQUEL_PT1; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 628.8 Tm
-0.0000 Tw
-(     sub execPequelCHAIN_PEQUEL_PT1 ) Tj
+( \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 620.4 Tm
 0.0000 Tw
-(     \{ ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 612.0 Tm
 0.0000 Tw
-( #     vim: syntax=perl ts=4 sw=4 ) Tj
+(     package p_copy_input_copy_record_sa; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 603.6 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+(     sub copy_input_copy_record_sa ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 595.2 Tm
 0.0000 Tw
-( #    Generated By: pequel Version 2.3-4, Build: Wednesday October  12 23:16:49 BST 2005 ) Tj
+(     \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 586.8 Tm
 0.0000 Tw
-( #                : https://sourceforge.net/projects/pequel/ ) Tj
+( #    !/usr/bin/perl ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 578.4 Tm
 0.0000 Tw
-( #    Script Name : examples/chain_pequel_pt1.pql ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 570.0 Tm
 0.0000 Tw
-( #    Created On  : Wed Oct 12 15:27:38 2005 ) Tj
+( #     vim: syntax=perl ts=4 sw=4 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 561.6 Tm
 0.0000 Tw
-( #    For         :  ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 553.2 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #    Generated By: pequel Version 2.4-5, Build: Wednesday November 16 21:56:42 GMT 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 544.8 Tm
 0.0000 Tw
-( #    Options: ) Tj
+( #                : http://sourceforge.net/projects/pequel/ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 536.4 Tm
 0.0000 Tw
-( #        input_file\(sample.data\) input data filename ) Tj
+( #    Script Name : copy_record_SA.pql ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 528.0 Tm
 0.0000 Tw
-( #        optimize\(1\) optimize generated code. ) Tj
+( #    Created On  : Wed Nov 16 14:00:43 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 519.6 Tm
 0.0000 Tw
-( #        hash\(1\) Generate in memory. Input data can be unsorted. ) Tj
+( #    Perl Version: /usr/bin/perl 5.6.1 on solaris ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 511.2 Tm
 0.0000 Tw
-( #        doc_title\(Pequel Chaining Part-1 Example Script\) document title. ) Tj
+( #    For         :  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 502.8 Tm
 0.0000 Tw
-( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 494.4 Tm
 0.0000 Tw
-( #        doc_version\(2.3\) document version for pequel script. ) Tj
+( #    Options: ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 486.0 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #        optimize\(1\) optimize generated code. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 477.6 Tm
 0.0000 Tw
-(         use strict; ) Tj
+( #        hash\(1\) Generate in memory. Input data can be unsorted. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 469.2 Tm
 0.0000 Tw
-(         use constant _I_PRODUCT_CODE    => int    0; ) Tj
+( #        doc_title\(Copy Record Example Script\) document title. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 460.8 Tm
 0.0000 Tw
-(         use constant _I_COST_PRICE      => int    1; ) Tj
+( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 452.4 Tm
 0.0000 Tw
-(         use constant _I_DESCRIPTION     => int    2; ) Tj
+( #        doc_version\(2.3\) document version for pequel script. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 444.0 Tm
 0.0000 Tw
-(         use constant _I_SALES_CODE      => int    3; ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 435.6 Tm
 0.0000 Tw
-(         use constant _I_SALES_PRICE     => int    4; ) Tj
+(         use strict; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 427.2 Tm
 0.0000 Tw
-(         use constant _I_SALES_QTY       => int    5; ) Tj
+(         use Fcntl ':flock'; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 418.8 Tm
 0.0000 Tw
-(         use constant _I_SALES_DATE      => int    6; ) Tj
+(         use constant _I_LOCATION         => int    0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 410.4 Tm
 0.0000 Tw
-(         use constant _I_LOCATION        => int    7; ) Tj
+(         use constant _I_PRODUCT_CODE     => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 402.0 Tm
 0.0000 Tw
-(         use constant _I_SALES_TOTAL     => int    8; ) Tj
+(         use constant _I_SALES_TOTAL      => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 393.6 Tm
 0.0000 Tw
-(         use constant _O_LOCATION        => int    1; ) Tj
+(         use constant _I_LOCATION_NAME    => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 385.2 Tm
 0.0000 Tw
-(         use constant _O_PRODUCT_CODE    => int    2; ) Tj
+(         use constant _O_LOCATION_NAME    => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 376.8 Tm
 0.0000 Tw
-(         use constant _O_SALES_TOTAL     => int    3; ) Tj
+(         use constant _O_PRODUCT_CODE     => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 368.4 Tm
 0.0000 Tw
-(         local $\\="\\n"; local $,="|"; ) Tj
+(         use constant _O_SALES_TOTAL      => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 360.0 Tm
 0.0000 Tw
-(         print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] Init"; ) Tj
+(         local $\\="\\n"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 351.6 Tm
 0.0000 Tw
-(         use constant VERBOSE => int 10000; ) Tj
+(         local $,="|"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 343.2 Tm
 0.0000 Tw
-(         use constant LAST_ICELL => int 8; ) Tj
+(         print STDERR '[examples/copy_record_SA.pql ' . localtime\(\) . "] Init"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 334.8 Tm
 0.0000 Tw
-(         my @I_VAL; ) Tj
+(         use constant VERBOSE => int 10000; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 326.4 Tm
 0.0000 Tw
-(         my %O_VAL; ) Tj
+(         use constant LAST_ICELL => int 3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 318.0 Tm
 0.0000 Tw
-(         my $key; ) Tj
+(         my @I_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 309.6 Tm
 0.0000 Tw
-(         open\(DATA, q\{examples/sample.data\}\)|| die "Cannot open examples/sample.data: $!"; ) Tj
+(         my %O_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 301.2 Tm
 0.0000 Tw
-(         open\(STDOUT, '|-', q\{sort -t'|' -y -k 1,1 2>/dev/null |\}\); ) Tj
+(         my $key; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 292.8 Tm
 0.0000 Tw
-(         print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] Start"; ) Tj
+(         my $_inprecs=0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 284.4 Tm
 0.0000 Tw
-(         use Benchmark; ) Tj
+(         print STDERR '[examples/copy_record_SA.pql ' . localtime\(\) . "] Start"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 276.0 Tm
 0.0000 Tw
-(         my $benchmark_start = new Benchmark; ) Tj
+(         use Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 267.6 Tm
 0.0000 Tw
-(         while \(<DATA>\) ) Tj
+(         my $benchmark_start = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 259.2 Tm
 0.0000 Tw
-(         \{ ) Tj
+(         while \(<STDIN>\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 250.8 Tm
 0.0000 Tw
-(             print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE == ) Tj
+(         \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 242.4 Tm
 0.0000 Tw
-(  0\); ) Tj
+(             ++$_inprecs; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 234.0 Tm
 0.0000 Tw
-(             chomp; ) Tj
+(             print STDERR '[examples/copy_record_SA.pql ' . localtime\(\) . "] $_inprecs records." if \($_inprecs  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 225.6 Tm
 0.0000 Tw
-(             @I_VAL = split\("[|]", $_\); ) Tj
+( % VERBOSE == 0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 217.2 Tm
 0.0000 Tw
-(             $key = \( $I_VAL[_I_LOCATION] \) . '|' . \( $I_VAL[_I_PRODUCT_CODE] \); ) Tj
+(             chomp; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 208.8 Tm
 0.0000 Tw
-(             $O_VAL\{$key\}\{_O_LOCATION\} = $I_VAL[_I_LOCATION]; ) Tj
+(             @I_VAL = split\("[|]", $_\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 200.4 Tm
 0.0000 Tw
-(             $O_VAL\{$key\}\{_O_PRODUCT_CODE\} = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+(             $key = \( $I_VAL[_I_PRODUCT_CODE] \); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 192.0 Tm
 0.0000 Tw
-(             $I_VAL[_I_SALES_TOTAL] = $I_VAL[_I_SALES_QTY] * $I_VAL[_I_SALES_PRICE]; ) Tj
+(             $I_VAL[_I_LOCATION_NAME] = 'South Australia'; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 183.6 Tm
 0.0000 Tw
-(             $O_VAL\{$key\}\{_O_SALES_TOTAL\} += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
+(             $O_VAL\{$key\}\{_O_LOCATION_NAME\} = $I_VAL[_I_LOCATION_NAME]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 175.2 Tm
 0.0000 Tw
-(         \} ) Tj
+(             $O_VAL\{$key\}\{_O_PRODUCT_CODE\} = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 166.8 Tm
+0.0000 Tw
+(             $O_VAL\{$key\}\{_O_SALES_TOTAL\} += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 158.4 Tm
 0.0000 Tw
-(         foreach $key \(sort  keys %O_VAL\) ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 150.0 Tm
-0.0000 Tw
-(         \{ ) Tj
+(         \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 141.6 Tm
 0.0000 Tw
-(             print STDOUT ) Tj
+(         foreach $key \(sort  keys %O_VAL\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 133.2 Tm
 0.0000 Tw
-(                 $O_VAL\{$key\}\{_O_LOCATION\}, ) Tj
+(         \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 124.8 Tm
 0.0000 Tw
-(                 $O_VAL\{$key\}\{_O_PRODUCT_CODE\}, ) Tj
+(             flock\(STDOUT, LOCK_EX\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 116.4 Tm
 0.0000 Tw
-(                 $O_VAL\{$key\}\{_O_SALES_TOTAL\} ) Tj
+(             print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 108.0 Tm
 0.0000 Tw
-(             ; ) Tj
+(                 $O_VAL\{$key\}\{_O_LOCATION_NAME\}, ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 99.6 Tm
 0.0000 Tw
-(         \} ) Tj
+(                 $O_VAL\{$key\}\{_O_PRODUCT_CODE\}, ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 91.2 Tm
+0.0000 Tw
+(                 $O_VAL\{$key\}\{_O_SALES_TOTAL\} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 82.8 Tm
 0.0000 Tw
-(         close\(STDOUT\); ) Tj
+(             ; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 74.4 Tm
 0.0000 Tw
-(         print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] $. records."; ) Tj
+(             flock\(STDOUT, LOCK_UN\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 66.0 Tm
 0.0000 Tw
-(         my $benchmark_end = new Benchmark; ) Tj
+(         \} ) Tj
 /F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (8) Tj
-1 0 0 1 437.39 37 Tm
-(12 October 2005 15:27) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:00) Tj
 ET
 52 50 m
 543 50 l
@@ -2235,7 +2203,7 @@ S
 endstream
 endobj
 47 0 obj
-8010
+7878
 endobj
 48 0 obj
 <<
@@ -2275,95 +2243,95 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 771.6 Tm
 0.0000 Tw
-(         my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+(         close\(STDIN\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 763.2 Tm
 0.0000 Tw
-(         print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchma ) Tj
+(         print STDERR '[examples/copy_record_SA.pql ' . localtime\(\) . "] $_inprecs records."; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 754.8 Tm
 0.0000 Tw
-( rk_timediff\)]\}"; ) Tj
+(         my $benchmark_end = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 746.4 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+(         my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 738.0 Tm
 0.0000 Tw
-(     \} ) Tj
+(         print STDERR '[examples/copy_record_SA.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 729.6 Tm
+0.0000 Tw
+( _timediff\)]\}"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 721.2 Tm
 0.0000 Tw
-( \} ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 704.4 Tm
+1 0 0 1 76.0 712.8 Tm
 0.0000 Tw
-( \{ ) Tj
+(     \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 696.0 Tm
 0.0000 Tw
-(     package p_copy_copy_record_wa; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 687.6 Tm
-0.0000 Tw
-(     sub copy_copy_record_wa ) Tj
+( \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 679.2 Tm
 0.0000 Tw
-(     \{ ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 670.8 Tm
 0.0000 Tw
-( #     vim: syntax=perl ts=4 sw=4 ) Tj
+(     package p_copy_input_copy_record_wa; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 662.4 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+(     sub copy_input_copy_record_wa ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 654.0 Tm
 0.0000 Tw
-( #    Generated By: pequel Version 2.3-4, Build: Wednesday October  12 23:16:49 BST 2005 ) Tj
+(     \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 645.6 Tm
 0.0000 Tw
-( #                : https://sourceforge.net/projects/pequel/ ) Tj
+( #    !/usr/bin/perl ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 637.2 Tm
 0.0000 Tw
-( #    Script Name : examples/copy_record_WA.pql ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 628.8 Tm
 0.0000 Tw
-( #    Created On  : Wed Oct 12 15:27:39 2005 ) Tj
+( #     vim: syntax=perl ts=4 sw=4 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 620.4 Tm
 0.0000 Tw
-( #    For         :  ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 612.0 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #    Generated By: pequel Version 2.4-5, Build: Wednesday November 16 21:56:42 GMT 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 603.6 Tm
 0.0000 Tw
-( #    Options: ) Tj
+( #                : http://sourceforge.net/projects/pequel/ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 595.2 Tm
 0.0000 Tw
-( #        optimize\(1\) optimize generated code. ) Tj
+( #    Script Name : copy_record_WA.pql ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 586.8 Tm
 0.0000 Tw
-( #        doc_title\(Copy Record Example Script\) document title. ) Tj
+( #    Created On  : Wed Nov 16 14:00:41 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 578.4 Tm
 0.0000 Tw
-( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
+( #    Perl Version: /usr/bin/perl 5.6.1 on solaris ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 570.0 Tm
 0.0000 Tw
-( #        doc_version\(2.3\) document version for pequel script. ) Tj
+( #    For         :  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 561.6 Tm
 0.0000 Tw
@@ -2371,231 +2339,235 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 553.2 Tm
 0.0000 Tw
-(         use strict; ) Tj
+( #    Options: ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 544.8 Tm
 0.0000 Tw
-(         use Fcntl ':flock'; ) Tj
+( #        optimize\(1\) optimize generated code. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 536.4 Tm
 0.0000 Tw
-(         use constant _I_LOCATION         => int    0; ) Tj
+( #        hash\(1\) Generate in memory. Input data can be unsorted. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 528.0 Tm
 0.0000 Tw
-(         use constant _I_PRODUCT_CODE     => int    1; ) Tj
+( #        doc_title\(Copy Record Example Script\) document title. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 519.6 Tm
 0.0000 Tw
-(         use constant _I_SALES_TOTAL      => int    2; ) Tj
+( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 511.2 Tm
 0.0000 Tw
-(         use constant _I_LOCATION_NAME    => int    3; ) Tj
+( #        doc_version\(2.3\) document version for pequel script. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 502.8 Tm
 0.0000 Tw
-(         use constant _O_LOCATION_NAME    => int    1; ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 494.4 Tm
 0.0000 Tw
-(         use constant _O_PRODUCT_CODE     => int    2; ) Tj
+(         use strict; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 486.0 Tm
 0.0000 Tw
-(         use constant _O_SALES_TOTAL      => int    3; ) Tj
+(         use Fcntl ':flock'; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 477.6 Tm
 0.0000 Tw
-(         local $\\="\\n"; local $,="|"; ) Tj
+(         use constant _I_LOCATION         => int    0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 469.2 Tm
 0.0000 Tw
-(         print STDERR '[examples/copy_record_WA.pql ' . localtime\(\) . "] Init"; ) Tj
+(         use constant _I_PRODUCT_CODE     => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 460.8 Tm
 0.0000 Tw
-(         use constant VERBOSE => int 10000; ) Tj
+(         use constant _I_SALES_TOTAL      => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 452.4 Tm
 0.0000 Tw
-(         use constant LAST_ICELL => int 3; ) Tj
+(         use constant _I_LOCATION_NAME    => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 444.0 Tm
 0.0000 Tw
-(         my @I_VAL; ) Tj
+(         use constant _O_LOCATION_NAME    => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 435.6 Tm
 0.0000 Tw
-(         my @O_VAL; ) Tj
+(         use constant _O_PRODUCT_CODE     => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 427.2 Tm
 0.0000 Tw
-(         my $key__I_PRODUCT_CODE; ) Tj
+(         use constant _O_SALES_TOTAL      => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 418.8 Tm
 0.0000 Tw
-(         my $previous_key__I_PRODUCT_CODE = undef; ) Tj
+(         local $\\="\\n"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 410.4 Tm
 0.0000 Tw
-(         foreach my $f \(1..3\) \{ $O_VAL[$f] = undef; \} ) Tj
+(         local $,="|"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 402.0 Tm
 0.0000 Tw
-( #     Sort:PRODUCT_CODE\(asc:string\)  ) Tj
+(         print STDERR '[examples/copy_record_WA.pql ' . localtime\(\) . "] Init"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 393.6 Tm
 0.0000 Tw
-(         open\(DATA, q\{cat - | sort -t'|' -y -k 2,2 2>/dev/null |\}\) || die "Cannot open input: $!"; ) Tj
+(         use constant VERBOSE => int 10000; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 385.2 Tm
 0.0000 Tw
-(         print STDERR '[examples/copy_record_WA.pql ' . localtime\(\) . "] Start"; ) Tj
+(         use constant LAST_ICELL => int 3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 376.8 Tm
 0.0000 Tw
-(         use Benchmark; ) Tj
+(         my @I_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 368.4 Tm
 0.0000 Tw
-(         my $benchmark_start = new Benchmark; ) Tj
+(         my %O_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 360.0 Tm
 0.0000 Tw
-(         while \(<DATA>\) ) Tj
+(         my $key; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 351.6 Tm
 0.0000 Tw
-(         \{ ) Tj
+(         my $_inprecs=0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 343.2 Tm
 0.0000 Tw
-(             print STDERR '[examples/copy_record_WA.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE == 0 ) Tj
+(         print STDERR '[examples/copy_record_WA.pql ' . localtime\(\) . "] Start"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 334.8 Tm
 0.0000 Tw
-( \); ) Tj
+(         use Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 326.4 Tm
 0.0000 Tw
-(             chomp; ) Tj
+(         my $benchmark_start = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 318.0 Tm
 0.0000 Tw
-(             @I_VAL = split\("[|]", $_\); ) Tj
+(         while \(<STDIN>\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 309.6 Tm
 0.0000 Tw
-(             $key__I_PRODUCT_CODE = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+(         \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 301.2 Tm
 0.0000 Tw
-(             if \(!defined\($previous_key__I_PRODUCT_CODE\)\) ) Tj
+(             ++$_inprecs; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 292.8 Tm
 0.0000 Tw
-(             \{ ) Tj
+(             print STDERR '[examples/copy_record_WA.pql ' . localtime\(\) . "] $_inprecs records." if \($_inprecs  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 284.4 Tm
 0.0000 Tw
-(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
+( % VERBOSE == 0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 276.0 Tm
 0.0000 Tw
-(             \} ) Tj
+(             chomp; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 267.6 Tm
+0.0000 Tw
+(             @I_VAL = split\("[|]", $_\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 259.2 Tm
 0.0000 Tw
-(             elsif \($previous_key__I_PRODUCT_CODE ne $key__I_PRODUCT_CODE\) ) Tj
+(             $key = \( $I_VAL[_I_PRODUCT_CODE] \); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 250.8 Tm
 0.0000 Tw
-(             \{ ) Tj
+(             $I_VAL[_I_LOCATION_NAME] = 'Western Australia'; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 242.4 Tm
 0.0000 Tw
-(                 flock\(STDOUT, LOCK_EX\); ) Tj
+(             $O_VAL\{$key\}\{_O_LOCATION_NAME\} = $I_VAL[_I_LOCATION_NAME]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 234.0 Tm
 0.0000 Tw
-(                 print STDOUT ) Tj
+(             $O_VAL\{$key\}\{_O_PRODUCT_CODE\} = $I_VAL[_I_PRODUCT_CODE]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 225.6 Tm
 0.0000 Tw
-(                     $O_VAL[_O_LOCATION_NAME], ) Tj
+(             $O_VAL\{$key\}\{_O_SALES_TOTAL\} += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 217.2 Tm
 0.0000 Tw
-(                     $O_VAL[_O_PRODUCT_CODE], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 208.8 Tm
-0.0000 Tw
-(                     $O_VAL[_O_SALES_TOTAL] ) Tj
+(         \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 200.4 Tm
 0.0000 Tw
-(                 ; ) Tj
+(         foreach $key \(sort  keys %O_VAL\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 192.0 Tm
 0.0000 Tw
-(                 flock\(STDOUT, LOCK_UN\); ) Tj
+(         \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 183.6 Tm
 0.0000 Tw
-(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
+(             flock\(STDOUT, LOCK_EX\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 175.2 Tm
 0.0000 Tw
-(                 @O_VAL = undef; ) Tj
+(             print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 166.8 Tm
 0.0000 Tw
-(             \} ) Tj
+(                 $O_VAL\{$key\}\{_O_LOCATION_NAME\}, ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 158.4 Tm
+0.0000 Tw
+(                 $O_VAL\{$key\}\{_O_PRODUCT_CODE\}, ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 150.0 Tm
 0.0000 Tw
-(             $I_VAL[_I_LOCATION_NAME] = 'Western Australia'; ) Tj
+(                 $O_VAL\{$key\}\{_O_SALES_TOTAL\} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 141.6 Tm
 0.0000 Tw
-(             $O_VAL[_O_LOCATION_NAME] = $I_VAL[_I_LOCATION_NAME]; ) Tj
+(             ; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 133.2 Tm
 0.0000 Tw
-(             $O_VAL[_O_PRODUCT_CODE] = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+(             flock\(STDOUT, LOCK_UN\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 124.8 Tm
 0.0000 Tw
-(             $O_VAL[_O_SALES_TOTAL] += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 116.4 Tm
-0.0000 Tw
 (         \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 108.0 Tm
+0.0000 Tw
+(         close\(STDIN\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 99.6 Tm
 0.0000 Tw
-(         flock\(STDOUT, LOCK_EX\); ) Tj
+(         print STDERR '[examples/copy_record_WA.pql ' . localtime\(\) . "] $_inprecs records."; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 91.2 Tm
 0.0000 Tw
-(         print STDOUT ) Tj
+(         my $benchmark_end = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 82.8 Tm
 0.0000 Tw
-(             $O_VAL[_O_LOCATION_NAME], ) Tj
+(         my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 74.4 Tm
 0.0000 Tw
-(             $O_VAL[_O_PRODUCT_CODE], ) Tj
+(         print STDERR '[examples/copy_record_WA.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 66.0 Tm
 0.0000 Tw
-(             $O_VAL[_O_SALES_TOTAL] ) Tj
+( _timediff\)]\}"; ) Tj
 /F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(12 October 2005 15:27) Tj
+(16 November 2005 14:00) Tj
 1 0 0 1 537.44 37 Tm
 (9) Tj
 ET
@@ -2605,7 +2577,7 @@ S
 endstream
 endobj
 51 0 obj
-7928
+8113
 endobj
 52 0 obj
 <<
@@ -2645,329 +2617,337 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 771.6 Tm
 0.0000 Tw
-(         ; ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 763.2 Tm
 0.0000 Tw
-(         flock\(STDOUT, LOCK_UN\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 754.8 Tm
-0.0000 Tw
-(         print STDERR '[examples/copy_record_WA.pql ' . localtime\(\) . "] $. records."; ) Tj
+(     \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 746.4 Tm
 0.0000 Tw
-(         my $benchmark_end = new Benchmark; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 738.0 Tm
-0.0000 Tw
-(         my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+( \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 729.6 Tm
 0.0000 Tw
-(         print STDERR '[examples/copy_record_WA.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 721.2 Tm
 0.0000 Tw
-( _timediff\)]\}"; ) Tj
+(     package p_read_chain_pequel_pt1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 712.8 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+(     sub read_chain_pequel_pt1 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 704.4 Tm
 0.0000 Tw
-(     \} ) Tj
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 696.0 Tm
+0.0000 Tw
+( #    !/usr/bin/perl ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 687.6 Tm
 0.0000 Tw
-( \} ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 670.8 Tm
-0.0000 Tw
-( \{ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 662.4 Tm
-0.0000 Tw
-(     package p_copy_copy_record_sa; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 654.0 Tm
-0.0000 Tw
-(     sub copy_copy_record_sa ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 645.6 Tm
-0.0000 Tw
-(     \{ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 637.2 Tm
+1 0 0 1 76.0 679.2 Tm
 0.0000 Tw
 ( #     vim: syntax=perl ts=4 sw=4 ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 628.8 Tm
+1 0 0 1 76.0 670.8 Tm
 0.0000 Tw
 ( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 662.4 Tm
+0.0000 Tw
+( #    Generated By: pequel Version 2.4-5, Build: Wednesday November 16 21:56:42 GMT 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 654.0 Tm
+0.0000 Tw
+( #                : http://sourceforge.net/projects/pequel/ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 645.6 Tm
+0.0000 Tw
+( #    Script Name : chain_pequel_pt1.pql ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 637.2 Tm
+0.0000 Tw
+( #    Created On  : Wed Nov 16 14:00:39 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 628.8 Tm
+0.0000 Tw
+( #    Perl Version: /usr/bin/perl 5.6.1 on solaris ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 620.4 Tm
 0.0000 Tw
-( #    Generated By: pequel Version 2.3-4, Build: Wednesday October  12 23:16:49 BST 2005 ) Tj
+( #    For         :  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 612.0 Tm
 0.0000 Tw
-( #                : https://sourceforge.net/projects/pequel/ ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 603.6 Tm
 0.0000 Tw
-( #    Script Name : examples/copy_record_SA.pql ) Tj
+( #    Options: ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 595.2 Tm
 0.0000 Tw
-( #    Created On  : Wed Oct 12 15:27:41 2005 ) Tj
+( #        input_file\(sample.data\) input data filename ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 586.8 Tm
 0.0000 Tw
-( #    For         :  ) Tj
+( #        optimize\(1\) optimize generated code. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 578.4 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #        doc_title\(Pequel Chaining Part-1 Example Script\) document title. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 570.0 Tm
 0.0000 Tw
-( #    Options: ) Tj
+( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 561.6 Tm
 0.0000 Tw
-( #        optimize\(1\) optimize generated code. ) Tj
+( #        doc_version\(2.3\) document version for pequel script. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 553.2 Tm
 0.0000 Tw
-( #        doc_title\(Copy Record Example Script\) document title. ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 544.8 Tm
 0.0000 Tw
-( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
+(         use strict; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 536.4 Tm
 0.0000 Tw
-( #        doc_version\(2.3\) document version for pequel script. ) Tj
+(         use constant _I_PRODUCT_CODE    => int    0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 528.0 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+(         use constant _I_COST_PRICE      => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 519.6 Tm
 0.0000 Tw
-(         use strict; ) Tj
+(         use constant _I_DESCRIPTION     => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 511.2 Tm
 0.0000 Tw
-(         use Fcntl ':flock'; ) Tj
+(         use constant _I_SALES_CODE      => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 502.8 Tm
 0.0000 Tw
-(         use constant _I_LOCATION         => int    0; ) Tj
+(         use constant _I_SALES_PRICE     => int    4; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 494.4 Tm
 0.0000 Tw
-(         use constant _I_PRODUCT_CODE     => int    1; ) Tj
+(         use constant _I_SALES_QTY       => int    5; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 486.0 Tm
 0.0000 Tw
-(         use constant _I_SALES_TOTAL      => int    2; ) Tj
+(         use constant _I_SALES_DATE      => int    6; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 477.6 Tm
 0.0000 Tw
-(         use constant _I_LOCATION_NAME    => int    3; ) Tj
+(         use constant _I_LOCATION        => int    7; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 469.2 Tm
 0.0000 Tw
-(         use constant _O_LOCATION_NAME    => int    1; ) Tj
+(         use constant _I_SALES_TOTAL     => int    8; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 460.8 Tm
 0.0000 Tw
-(         use constant _O_PRODUCT_CODE     => int    2; ) Tj
+(         use constant _O_LOCATION        => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 452.4 Tm
 0.0000 Tw
-(         use constant _O_SALES_TOTAL      => int    3; ) Tj
+(         use constant _O_PRODUCT_CODE    => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 444.0 Tm
 0.0000 Tw
-(         local $\\="\\n"; local $,="|"; ) Tj
+(         use constant _O_SALES_TOTAL     => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 435.6 Tm
 0.0000 Tw
-(         print STDERR '[examples/copy_record_SA.pql ' . localtime\(\) . "] Init"; ) Tj
+(         local $\\="\\n"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 427.2 Tm
 0.0000 Tw
-(         use constant VERBOSE => int 10000; ) Tj
+(         local $,="|"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 418.8 Tm
 0.0000 Tw
-(         use constant LAST_ICELL => int 3; ) Tj
+(         print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] Init"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 410.4 Tm
 0.0000 Tw
-(         my @I_VAL; ) Tj
+(         use constant VERBOSE => int 10000; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 402.0 Tm
 0.0000 Tw
-(         my @O_VAL; ) Tj
+(         use constant LAST_ICELL => int 8; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 393.6 Tm
 0.0000 Tw
-(         my $key__I_PRODUCT_CODE; ) Tj
+(         my @I_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 385.2 Tm
 0.0000 Tw
-(         my $previous_key__I_PRODUCT_CODE = undef; ) Tj
+(         my @O_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 376.8 Tm
 0.0000 Tw
-(         foreach my $f \(1..3\) \{ $O_VAL[$f] = undef; \} ) Tj
+(         my $_inprecs=0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 368.4 Tm
 0.0000 Tw
-( #     Sort:PRODUCT_CODE\(asc:string\)  ) Tj
+(         my $key__I_LOCATION; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 360.0 Tm
 0.0000 Tw
-(         open\(DATA, q\{cat - | sort -t'|' -y -k 2,2 2>/dev/null |\}\) || die "Cannot open input: $!"; ) Tj
+(         my $previous_key__I_LOCATION = undef; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 351.6 Tm
 0.0000 Tw
-(         print STDERR '[examples/copy_record_SA.pql ' . localtime\(\) . "] Start"; ) Tj
+(         my $key__I_PRODUCT_CODE; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 343.2 Tm
 0.0000 Tw
-(         use Benchmark; ) Tj
+(         my $previous_key__I_PRODUCT_CODE = undef; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 334.8 Tm
 0.0000 Tw
-(         my $benchmark_start = new Benchmark; ) Tj
+(         foreach my $f \(1..3\) \{ $O_VAL[$f] = undef; \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 326.4 Tm
 0.0000 Tw
-(         while \(<DATA>\) ) Tj
+( #     Sort:LOCATION\(asc:string\) PRODUCT_CODE\(asc:string\)  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 318.0 Tm
 0.0000 Tw
-(         \{ ) Tj
+(         open\(DATA, q\{sort  -t'|' -y -k 8,8 -k 1,1 examples/sample.data 2>/dev/null |\}\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 309.6 Tm
 0.0000 Tw
-(             print STDERR '[examples/copy_record_SA.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE == 0 ) Tj
+(         open\(STDOUT, '|-', q\{sort  -t'|' -y -k 1,1 2>/dev/null\}\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 301.2 Tm
 0.0000 Tw
-( \); ) Tj
+(         print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] Start"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 292.8 Tm
 0.0000 Tw
-(             chomp; ) Tj
+(         use Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 284.4 Tm
 0.0000 Tw
-(             @I_VAL = split\("[|]", $_\); ) Tj
+(         my $benchmark_start = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 276.0 Tm
 0.0000 Tw
-(             $key__I_PRODUCT_CODE = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+(         while \(<DATA>\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 267.6 Tm
 0.0000 Tw
-(             if \(!defined\($previous_key__I_PRODUCT_CODE\)\) ) Tj
+(         \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 259.2 Tm
 0.0000 Tw
-(             \{ ) Tj
+(             ++$_inprecs; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 250.8 Tm
 0.0000 Tw
-(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
+(             print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] $_inprecs records." if \($_inprec ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 242.4 Tm
 0.0000 Tw
-(             \} ) Tj
+( s % VERBOSE == 0\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 234.0 Tm
+0.0000 Tw
+(             chomp; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 225.6 Tm
 0.0000 Tw
-(             elsif \($previous_key__I_PRODUCT_CODE ne $key__I_PRODUCT_CODE\) ) Tj
+(             @I_VAL = split\("[|]", $_\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 217.2 Tm
 0.0000 Tw
-(             \{ ) Tj
+(             $key__I_LOCATION = $I_VAL[_I_LOCATION]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 208.8 Tm
 0.0000 Tw
-(                 flock\(STDOUT, LOCK_EX\); ) Tj
+(             $key__I_PRODUCT_CODE = $I_VAL[_I_PRODUCT_CODE]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 200.4 Tm
 0.0000 Tw
-(                 print STDOUT ) Tj
+(             if \(!defined\($previous_key__I_LOCATION\) || !defined\($previous_key__I_PRODUCT_CODE\)\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 192.0 Tm
 0.0000 Tw
-(                     $O_VAL[_O_LOCATION_NAME], ) Tj
+(             \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 183.6 Tm
 0.0000 Tw
-(                     $O_VAL[_O_PRODUCT_CODE], ) Tj
+(                 $previous_key__I_LOCATION = $key__I_LOCATION; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 175.2 Tm
 0.0000 Tw
-(                     $O_VAL[_O_SALES_TOTAL] ) Tj
+(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 166.8 Tm
 0.0000 Tw
-(                 ; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 158.4 Tm
-0.0000 Tw
-(                 flock\(STDOUT, LOCK_UN\); ) Tj
+(             \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 150.0 Tm
 0.0000 Tw
-(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
+(             elsif \($previous_key__I_LOCATION ne $key__I_LOCATION || $previous_key__I_PRODUCT_CODE ne $key__I_P ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 141.6 Tm
 0.0000 Tw
-(                 @O_VAL = undef; ) Tj
+( RODUCT_CODE\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 133.2 Tm
 0.0000 Tw
-(             \} ) Tj
+(             \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 124.8 Tm
+0.0000 Tw
+(                 print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 116.4 Tm
 0.0000 Tw
-(             $I_VAL[_I_LOCATION_NAME] = 'South Australia'; ) Tj
+(                     $O_VAL[_O_LOCATION], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 108.0 Tm
 0.0000 Tw
-(             $O_VAL[_O_LOCATION_NAME] = $I_VAL[_I_LOCATION_NAME]; ) Tj
+(                     $O_VAL[_O_PRODUCT_CODE], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 99.6 Tm
 0.0000 Tw
-(             $O_VAL[_O_PRODUCT_CODE] = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+(                     $O_VAL[_O_SALES_TOTAL] ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 91.2 Tm
 0.0000 Tw
-(             $O_VAL[_O_SALES_TOTAL] += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
+(                 ; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 82.8 Tm
 0.0000 Tw
-(         \} ) Tj
+(                 $previous_key__I_LOCATION = $key__I_LOCATION; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 74.4 Tm
+0.0000 Tw
+(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 66.0 Tm
 0.0000 Tw
-(         flock\(STDOUT, LOCK_EX\); ) Tj
+(                 @O_VAL = undef; ) Tj
 /F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (10) Tj
-1 0 0 1 437.39 37 Tm
-(12 October 2005 15:27) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:00) Tj
 ET
 52 50 m
 543 50 l
@@ -2975,7 +2955,7 @@ S
 endstream
 endobj
 55 0 obj
-7970
+8211
 endobj
 56 0 obj
 <<
@@ -3015,331 +2995,327 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 771.6 Tm
 0.0000 Tw
-(         print STDOUT ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 763.2 Tm
-0.0000 Tw
-(             $O_VAL[_O_LOCATION_NAME], ) Tj
+(             \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 754.8 Tm
 0.0000 Tw
-(             $O_VAL[_O_PRODUCT_CODE], ) Tj
+(             $O_VAL[_O_LOCATION] = $I_VAL[_I_LOCATION]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 746.4 Tm
 0.0000 Tw
-(             $O_VAL[_O_SALES_TOTAL] ) Tj
+(             $O_VAL[_O_PRODUCT_CODE] = $I_VAL[_I_PRODUCT_CODE]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 738.0 Tm
 0.0000 Tw
-(         ; ) Tj
+(             $I_VAL[_I_SALES_TOTAL] = $I_VAL[_I_SALES_QTY] * $I_VAL[_I_SALES_PRICE]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 729.6 Tm
 0.0000 Tw
-(         flock\(STDOUT, LOCK_UN\); ) Tj
+(             $O_VAL[_O_SALES_TOTAL] += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 721.2 Tm
 0.0000 Tw
-(         print STDERR '[examples/copy_record_SA.pql ' . localtime\(\) . "] $. records."; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 712.8 Tm
-0.0000 Tw
-(         my $benchmark_end = new Benchmark; ) Tj
+(         \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 704.4 Tm
 0.0000 Tw
-(         my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+(         print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 696.0 Tm
 0.0000 Tw
-(         print STDERR '[examples/copy_record_SA.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark ) Tj
+(             $O_VAL[_O_LOCATION], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 687.6 Tm
 0.0000 Tw
-( _timediff\)]\}"; ) Tj
+(             $O_VAL[_O_PRODUCT_CODE], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 679.2 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+(             $O_VAL[_O_SALES_TOTAL] ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 670.8 Tm
 0.0000 Tw
-(     \} ) Tj
+(         ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 662.4 Tm
+0.0000 Tw
+(         close\(STDOUT\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 654.0 Tm
 0.0000 Tw
-( \} ) Tj
+(         close\(DATA\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 645.6 Tm
+0.0000 Tw
+(         print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] $_inprecs records."; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 637.2 Tm
 0.0000 Tw
-( \{ ) Tj
+(         my $benchmark_end = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 628.8 Tm
 0.0000 Tw
-(     package p_copy_copy_record_nsw; ) Tj
+(         my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 620.4 Tm
 0.0000 Tw
-(     sub copy_copy_record_nsw ) Tj
+(         print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchma ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 612.0 Tm
 0.0000 Tw
-(     \{ ) Tj
+( rk_timediff\)]\}"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 603.6 Tm
 0.0000 Tw
-( #     vim: syntax=perl ts=4 sw=4 ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 595.2 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 586.8 Tm
-0.0000 Tw
-( #    Generated By: pequel Version 2.3-4, Build: Wednesday October  12 23:16:49 BST 2005 ) Tj
+(     \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 578.4 Tm
 0.0000 Tw
-( #                : https://sourceforge.net/projects/pequel/ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 570.0 Tm
-0.0000 Tw
-( #    Script Name : examples/copy_record_NSW.pql ) Tj
+( \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 561.6 Tm
 0.0000 Tw
-( #    Created On  : Wed Oct 12 15:27:42 2005 ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 553.2 Tm
 0.0000 Tw
-( #    For         :  ) Tj
+(     package p_copy_input_copy_record_nt; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 544.8 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+(     sub copy_input_copy_record_nt ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 536.4 Tm
 0.0000 Tw
-( #    Options: ) Tj
+(     \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 528.0 Tm
 0.0000 Tw
-( #        optimize\(1\) optimize generated code. ) Tj
+( #    !/usr/bin/perl ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 519.6 Tm
 0.0000 Tw
-( #        doc_title\(Copy Record Example Script\) document title. ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 511.2 Tm
 0.0000 Tw
-( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
+( #     vim: syntax=perl ts=4 sw=4 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 502.8 Tm
 0.0000 Tw
-( #        doc_version\(2.3\) document version for pequel script. ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 494.4 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #    Generated By: pequel Version 2.4-5, Build: Wednesday November 16 21:56:42 GMT 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 486.0 Tm
 0.0000 Tw
-(         use strict; ) Tj
+( #                : http://sourceforge.net/projects/pequel/ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 477.6 Tm
 0.0000 Tw
-(         use Fcntl ':flock'; ) Tj
+( #    Script Name : copy_record_NT.pql ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 469.2 Tm
 0.0000 Tw
-(         use constant _I_LOCATION         => int    0; ) Tj
+( #    Created On  : Wed Nov 16 14:00:48 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 460.8 Tm
 0.0000 Tw
-(         use constant _I_PRODUCT_CODE     => int    1; ) Tj
+( #    Perl Version: /usr/bin/perl 5.6.1 on solaris ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 452.4 Tm
 0.0000 Tw
-(         use constant _I_SALES_TOTAL      => int    2; ) Tj
+( #    For         :  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 444.0 Tm
 0.0000 Tw
-(         use constant _I_LOCATION_NAME    => int    3; ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 435.6 Tm
 0.0000 Tw
-(         use constant _O_LOCATION_NAME    => int    1; ) Tj
+( #    Options: ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 427.2 Tm
 0.0000 Tw
-(         use constant _O_PRODUCT_CODE     => int    2; ) Tj
+( #        optimize\(1\) optimize generated code. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 418.8 Tm
 0.0000 Tw
-(         use constant _O_SALES_TOTAL      => int    3; ) Tj
+( #        hash\(1\) Generate in memory. Input data can be unsorted. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 410.4 Tm
 0.0000 Tw
-(         local $\\="\\n"; local $,="|"; ) Tj
+( #        doc_title\(Copy Record Example Script\) document title. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 402.0 Tm
 0.0000 Tw
-(         print STDERR '[examples/copy_record_NSW.pql ' . localtime\(\) . "] Init"; ) Tj
+( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 393.6 Tm
 0.0000 Tw
-(         use constant VERBOSE => int 10000; ) Tj
+( #        doc_version\(2.3\) document version for pequel script. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 385.2 Tm
 0.0000 Tw
-(         use constant LAST_ICELL => int 3; ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 376.8 Tm
 0.0000 Tw
-(         my @I_VAL; ) Tj
+(         use strict; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 368.4 Tm
 0.0000 Tw
-(         my @O_VAL; ) Tj
+(         use Fcntl ':flock'; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 360.0 Tm
 0.0000 Tw
-(         my $key__I_PRODUCT_CODE; ) Tj
+(         use constant _I_LOCATION         => int    0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 351.6 Tm
 0.0000 Tw
-(         my $previous_key__I_PRODUCT_CODE = undef; ) Tj
+(         use constant _I_PRODUCT_CODE     => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 343.2 Tm
 0.0000 Tw
-(         foreach my $f \(1..3\) \{ $O_VAL[$f] = undef; \} ) Tj
+(         use constant _I_SALES_TOTAL      => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 334.8 Tm
 0.0000 Tw
-( #     Sort:PRODUCT_CODE\(asc:string\)  ) Tj
+(         use constant _I_LOCATION_NAME    => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 326.4 Tm
 0.0000 Tw
-(         open\(DATA, q\{cat - | sort -t'|' -y -k 2,2 2>/dev/null |\}\) || die "Cannot open input: $!"; ) Tj
+(         use constant _O_LOCATION_NAME    => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 318.0 Tm
 0.0000 Tw
-(         print STDERR '[examples/copy_record_NSW.pql ' . localtime\(\) . "] Start"; ) Tj
+(         use constant _O_PRODUCT_CODE     => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 309.6 Tm
 0.0000 Tw
-(         use Benchmark; ) Tj
+(         use constant _O_SALES_TOTAL      => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 301.2 Tm
 0.0000 Tw
-(         my $benchmark_start = new Benchmark; ) Tj
+(         local $\\="\\n"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 292.8 Tm
 0.0000 Tw
-(         while \(<DATA>\) ) Tj
+(         local $,="|"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 284.4 Tm
 0.0000 Tw
-(         \{ ) Tj
+(         print STDERR '[examples/copy_record_NT.pql ' . localtime\(\) . "] Init"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 276.0 Tm
 0.0000 Tw
-(             print STDERR '[examples/copy_record_NSW.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE ==  ) Tj
+(         use constant VERBOSE => int 10000; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 267.6 Tm
 0.0000 Tw
-( 0\); ) Tj
+(         use constant LAST_ICELL => int 3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 259.2 Tm
 0.0000 Tw
-(             chomp; ) Tj
+(         my @I_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 250.8 Tm
 0.0000 Tw
-(             @I_VAL = split\("[|]", $_\); ) Tj
+(         my %O_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 242.4 Tm
 0.0000 Tw
-(             $key__I_PRODUCT_CODE = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+(         my $key; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 234.0 Tm
 0.0000 Tw
-(             if \(!defined\($previous_key__I_PRODUCT_CODE\)\) ) Tj
+(         my $_inprecs=0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 225.6 Tm
 0.0000 Tw
-(             \{ ) Tj
+(         print STDERR '[examples/copy_record_NT.pql ' . localtime\(\) . "] Start"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 217.2 Tm
 0.0000 Tw
-(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
+(         use Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 208.8 Tm
 0.0000 Tw
-(             \} ) Tj
+(         my $benchmark_start = new Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 200.4 Tm
+0.0000 Tw
+(         while \(<STDIN>\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 192.0 Tm
 0.0000 Tw
-(             elsif \($previous_key__I_PRODUCT_CODE ne $key__I_PRODUCT_CODE\) ) Tj
+(         \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 183.6 Tm
 0.0000 Tw
-(             \{ ) Tj
+(             ++$_inprecs; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 175.2 Tm
 0.0000 Tw
-(                 flock\(STDOUT, LOCK_EX\); ) Tj
+(             print STDERR '[examples/copy_record_NT.pql ' . localtime\(\) . "] $_inprecs records." if \($_inprecs  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 166.8 Tm
 0.0000 Tw
-(                 print STDOUT ) Tj
+( % VERBOSE == 0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 158.4 Tm
 0.0000 Tw
-(                     $O_VAL[_O_LOCATION_NAME], ) Tj
+(             chomp; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 150.0 Tm
 0.0000 Tw
-(                     $O_VAL[_O_PRODUCT_CODE], ) Tj
+(             @I_VAL = split\("[|]", $_\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 141.6 Tm
 0.0000 Tw
-(                     $O_VAL[_O_SALES_TOTAL] ) Tj
+(             $key = \( $I_VAL[_I_PRODUCT_CODE] \); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 133.2 Tm
 0.0000 Tw
-(                 ; ) Tj
+(             $I_VAL[_I_LOCATION_NAME] = 'Northern Territory'; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 124.8 Tm
 0.0000 Tw
-(                 flock\(STDOUT, LOCK_UN\); ) Tj
+(             $O_VAL\{$key\}\{_O_LOCATION_NAME\} = $I_VAL[_I_LOCATION_NAME]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 116.4 Tm
 0.0000 Tw
-(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
+(             $O_VAL\{$key\}\{_O_PRODUCT_CODE\} = $I_VAL[_I_PRODUCT_CODE]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 108.0 Tm
 0.0000 Tw
-(                 @O_VAL = undef; ) Tj
+(             $O_VAL\{$key\}\{_O_SALES_TOTAL\} += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 99.6 Tm
 0.0000 Tw
-(             \} ) Tj
+(         \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 82.8 Tm
 0.0000 Tw
-(             $I_VAL[_I_LOCATION_NAME] = 'New South Wales'; ) Tj
+(         foreach $key \(sort  keys %O_VAL\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 74.4 Tm
 0.0000 Tw
-(             $O_VAL[_O_LOCATION_NAME] = $I_VAL[_I_LOCATION_NAME]; ) Tj
+(         \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 66.0 Tm
 0.0000 Tw
-(             $O_VAL[_O_PRODUCT_CODE] = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+(             flock\(STDOUT, LOCK_EX\); ) Tj
 /F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(12 October 2005 15:27) Tj
+(16 November 2005 14:00) Tj
 1 0 0 1 531.88 37 Tm
 (11) Tj
 ET
@@ -3349,7 +3325,7 @@ S
 endstream
 endobj
 59 0 obj
-8009
+7948
 endobj
 60 0 obj
 <<
@@ -3389,333 +3365,333 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 771.6 Tm
 0.0000 Tw
-(             $O_VAL[_O_SALES_TOTAL] += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
+(             print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 763.2 Tm
 0.0000 Tw
-(         \} ) Tj
+(                 $O_VAL\{$key\}\{_O_LOCATION_NAME\}, ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 754.8 Tm
+0.0000 Tw
+(                 $O_VAL\{$key\}\{_O_PRODUCT_CODE\}, ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 746.4 Tm
 0.0000 Tw
-(         flock\(STDOUT, LOCK_EX\); ) Tj
+(                 $O_VAL\{$key\}\{_O_SALES_TOTAL\} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 738.0 Tm
 0.0000 Tw
-(         print STDOUT ) Tj
+(             ; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 729.6 Tm
 0.0000 Tw
-(             $O_VAL[_O_LOCATION_NAME], ) Tj
+(             flock\(STDOUT, LOCK_UN\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 721.2 Tm
 0.0000 Tw
-(             $O_VAL[_O_PRODUCT_CODE], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 712.8 Tm
-0.0000 Tw
-(             $O_VAL[_O_SALES_TOTAL] ) Tj
+(         \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 704.4 Tm
 0.0000 Tw
-(         ; ) Tj
+(         close\(STDIN\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 696.0 Tm
 0.0000 Tw
-(         flock\(STDOUT, LOCK_UN\); ) Tj
+(         print STDERR '[examples/copy_record_NT.pql ' . localtime\(\) . "] $_inprecs records."; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 687.6 Tm
 0.0000 Tw
-(         print STDERR '[examples/copy_record_NSW.pql ' . localtime\(\) . "] $. records."; ) Tj
+(         my $benchmark_end = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 679.2 Tm
 0.0000 Tw
-(         my $benchmark_end = new Benchmark; ) Tj
+(         my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 670.8 Tm
 0.0000 Tw
-(         my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+(         print STDERR '[examples/copy_record_NT.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 662.4 Tm
 0.0000 Tw
-(         print STDERR '[examples/copy_record_NSW.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmar ) Tj
+( _timediff\)]\}"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 654.0 Tm
 0.0000 Tw
-( k_timediff\)]\}"; ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 645.6 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 637.2 Tm
-0.0000 Tw
 (     \} ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 620.4 Tm
+1 0 0 1 76.0 628.8 Tm
 0.0000 Tw
 ( \} ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 603.6 Tm
+1 0 0 1 76.0 612.0 Tm
 0.0000 Tw
 ( \{ ) Tj
 /F10 7 Tf
+1 0 0 1 76.0 603.6 Tm
+0.0000 Tw
+(     package p_copy_input_copy_record_vic; ) Tj
+/F10 7 Tf
 1 0 0 1 76.0 595.2 Tm
 0.0000 Tw
-(     package p_copy_copy_record_vic; ) Tj
+(     sub copy_input_copy_record_vic ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 586.8 Tm
 0.0000 Tw
-(     sub copy_copy_record_vic ) Tj
+(     \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 578.4 Tm
 0.0000 Tw
-(     \{ ) Tj
+( #    !/usr/bin/perl ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 570.0 Tm
 0.0000 Tw
-( #     vim: syntax=perl ts=4 sw=4 ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 561.6 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #     vim: syntax=perl ts=4 sw=4 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 553.2 Tm
 0.0000 Tw
-( #    Generated By: pequel Version 2.3-4, Build: Wednesday October  12 23:16:49 BST 2005 ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 544.8 Tm
 0.0000 Tw
-( #                : https://sourceforge.net/projects/pequel/ ) Tj
+( #    Generated By: pequel Version 2.4-5, Build: Wednesday November 16 21:56:42 GMT 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 536.4 Tm
 0.0000 Tw
-( #    Script Name : examples/copy_record_VIC.pql ) Tj
+( #                : http://sourceforge.net/projects/pequel/ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 528.0 Tm
 0.0000 Tw
-( #    Created On  : Wed Oct 12 15:27:43 2005 ) Tj
+( #    Script Name : copy_record_VIC.pql ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 519.6 Tm
 0.0000 Tw
-( #    For         :  ) Tj
+( #    Created On  : Wed Nov 16 14:00:46 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 511.2 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #    Perl Version: /usr/bin/perl 5.6.1 on solaris ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 502.8 Tm
 0.0000 Tw
-( #    Options: ) Tj
+( #    For         :  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 494.4 Tm
 0.0000 Tw
-( #        optimize\(1\) optimize generated code. ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 486.0 Tm
 0.0000 Tw
-( #        doc_title\(Copy Record Example Script\) document title. ) Tj
+( #    Options: ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 477.6 Tm
 0.0000 Tw
-( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
+( #        optimize\(1\) optimize generated code. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 469.2 Tm
 0.0000 Tw
-( #        doc_version\(2.3\) document version for pequel script. ) Tj
+( #        hash\(1\) Generate in memory. Input data can be unsorted. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 460.8 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #        doc_title\(Copy Record Example Script\) document title. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 452.4 Tm
 0.0000 Tw
-(         use strict; ) Tj
+( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 444.0 Tm
 0.0000 Tw
-(         use Fcntl ':flock'; ) Tj
+( #        doc_version\(2.3\) document version for pequel script. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 435.6 Tm
 0.0000 Tw
-(         use constant _I_LOCATION         => int    0; ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 427.2 Tm
 0.0000 Tw
-(         use constant _I_PRODUCT_CODE     => int    1; ) Tj
+(         use strict; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 418.8 Tm
 0.0000 Tw
-(         use constant _I_SALES_TOTAL      => int    2; ) Tj
+(         use Fcntl ':flock'; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 410.4 Tm
 0.0000 Tw
-(         use constant _I_LOCATION_NAME    => int    3; ) Tj
+(         use constant _I_LOCATION         => int    0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 402.0 Tm
 0.0000 Tw
-(         use constant _O_LOCATION_NAME    => int    1; ) Tj
+(         use constant _I_PRODUCT_CODE     => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 393.6 Tm
 0.0000 Tw
-(         use constant _O_PRODUCT_CODE     => int    2; ) Tj
+(         use constant _I_SALES_TOTAL      => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 385.2 Tm
 0.0000 Tw
-(         use constant _O_SALES_TOTAL      => int    3; ) Tj
+(         use constant _I_LOCATION_NAME    => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 376.8 Tm
 0.0000 Tw
-(         local $\\="\\n"; local $,="|"; ) Tj
+(         use constant _O_LOCATION_NAME    => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 368.4 Tm
 0.0000 Tw
-(         print STDERR '[examples/copy_record_VIC.pql ' . localtime\(\) . "] Init"; ) Tj
+(         use constant _O_PRODUCT_CODE     => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 360.0 Tm
 0.0000 Tw
-(         use constant VERBOSE => int 10000; ) Tj
+(         use constant _O_SALES_TOTAL      => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 351.6 Tm
 0.0000 Tw
-(         use constant LAST_ICELL => int 3; ) Tj
+(         local $\\="\\n"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 343.2 Tm
 0.0000 Tw
-(         my @I_VAL; ) Tj
+(         local $,="|"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 334.8 Tm
 0.0000 Tw
-(         my @O_VAL; ) Tj
+(         print STDERR '[examples/copy_record_VIC.pql ' . localtime\(\) . "] Init"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 326.4 Tm
 0.0000 Tw
-(         my $key__I_PRODUCT_CODE; ) Tj
+(         use constant VERBOSE => int 10000; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 318.0 Tm
 0.0000 Tw
-(         my $previous_key__I_PRODUCT_CODE = undef; ) Tj
+(         use constant LAST_ICELL => int 3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 309.6 Tm
 0.0000 Tw
-(         foreach my $f \(1..3\) \{ $O_VAL[$f] = undef; \} ) Tj
+(         my @I_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 301.2 Tm
 0.0000 Tw
-( #     Sort:PRODUCT_CODE\(asc:string\)  ) Tj
+(         my %O_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 292.8 Tm
 0.0000 Tw
-(         open\(DATA, q\{cat - | sort -t'|' -y -k 2,2 2>/dev/null |\}\) || die "Cannot open input: $!"; ) Tj
+(         my $key; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 284.4 Tm
 0.0000 Tw
-(         print STDERR '[examples/copy_record_VIC.pql ' . localtime\(\) . "] Start"; ) Tj
+(         my $_inprecs=0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 276.0 Tm
 0.0000 Tw
-(         use Benchmark; ) Tj
+(         print STDERR '[examples/copy_record_VIC.pql ' . localtime\(\) . "] Start"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 267.6 Tm
 0.0000 Tw
-(         my $benchmark_start = new Benchmark; ) Tj
+(         use Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 259.2 Tm
 0.0000 Tw
-(         while \(<DATA>\) ) Tj
+(         my $benchmark_start = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 250.8 Tm
 0.0000 Tw
-(         \{ ) Tj
+(         while \(<STDIN>\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 242.4 Tm
 0.0000 Tw
-(             print STDERR '[examples/copy_record_VIC.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE ==  ) Tj
+(         \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 234.0 Tm
 0.0000 Tw
-( 0\); ) Tj
+(             ++$_inprecs; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 225.6 Tm
 0.0000 Tw
-(             chomp; ) Tj
+(             print STDERR '[examples/copy_record_VIC.pql ' . localtime\(\) . "] $_inprecs records." if \($_inprecs ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 217.2 Tm
 0.0000 Tw
-(             @I_VAL = split\("[|]", $_\); ) Tj
+(  % VERBOSE == 0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 208.8 Tm
 0.0000 Tw
-(             $key__I_PRODUCT_CODE = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+(             chomp; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 200.4 Tm
 0.0000 Tw
-(             if \(!defined\($previous_key__I_PRODUCT_CODE\)\) ) Tj
+(             @I_VAL = split\("[|]", $_\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 192.0 Tm
 0.0000 Tw
-(             \{ ) Tj
+(             $key = \( $I_VAL[_I_PRODUCT_CODE] \); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 183.6 Tm
 0.0000 Tw
-(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
+(             $I_VAL[_I_LOCATION_NAME] = 'Victoria'; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 175.2 Tm
 0.0000 Tw
-(             \} ) Tj
+(             $O_VAL\{$key\}\{_O_LOCATION_NAME\} = $I_VAL[_I_LOCATION_NAME]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 166.8 Tm
+0.0000 Tw
+(             $O_VAL\{$key\}\{_O_PRODUCT_CODE\} = $I_VAL[_I_PRODUCT_CODE]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 158.4 Tm
 0.0000 Tw
-(             elsif \($previous_key__I_PRODUCT_CODE ne $key__I_PRODUCT_CODE\) ) Tj
+(             $O_VAL\{$key\}\{_O_SALES_TOTAL\} += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 150.0 Tm
 0.0000 Tw
-(             \{ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 141.6 Tm
-0.0000 Tw
-(                 flock\(STDOUT, LOCK_EX\); ) Tj
+(         \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 133.2 Tm
 0.0000 Tw
-(                 print STDOUT ) Tj
+(         foreach $key \(sort  keys %O_VAL\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 124.8 Tm
 0.0000 Tw
-(                     $O_VAL[_O_LOCATION_NAME], ) Tj
+(         \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 116.4 Tm
 0.0000 Tw
-(                     $O_VAL[_O_PRODUCT_CODE], ) Tj
+(             flock\(STDOUT, LOCK_EX\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 108.0 Tm
 0.0000 Tw
-(                     $O_VAL[_O_SALES_TOTAL] ) Tj
+(             print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 99.6 Tm
 0.0000 Tw
-(                 ; ) Tj
+(                 $O_VAL\{$key\}\{_O_LOCATION_NAME\}, ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 91.2 Tm
 0.0000 Tw
-(                 flock\(STDOUT, LOCK_UN\); ) Tj
+(                 $O_VAL\{$key\}\{_O_PRODUCT_CODE\}, ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 82.8 Tm
 0.0000 Tw
-(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
+(                 $O_VAL\{$key\}\{_O_SALES_TOTAL\} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 74.4 Tm
 0.0000 Tw
-(                 @O_VAL = undef; ) Tj
+(             ; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 66.0 Tm
 0.0000 Tw
-(             \} ) Tj
+(             flock\(STDOUT, LOCK_UN\); ) Tj
 /F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (12) Tj
-1 0 0 1 437.39 37 Tm
-(12 October 2005 15:27) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:00) Tj
 ET
 52 50 m
 543 50 l
@@ -3723,7 +3699,7 @@ S
 endstream
 endobj
 63 0 obj
-7971
+7967
 endobj
 64 0 obj
 <<
@@ -3763,71 +3739,63 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 771.6 Tm
 0.0000 Tw
-(             $I_VAL[_I_LOCATION_NAME] = 'Victoria'; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 763.2 Tm
-0.0000 Tw
-(             $O_VAL[_O_LOCATION_NAME] = $I_VAL[_I_LOCATION_NAME]; ) Tj
+(         \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 754.8 Tm
 0.0000 Tw
-(             $O_VAL[_O_PRODUCT_CODE] = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+(         close\(STDIN\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 746.4 Tm
 0.0000 Tw
-(             $O_VAL[_O_SALES_TOTAL] += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
+(         print STDERR '[examples/copy_record_VIC.pql ' . localtime\(\) . "] $_inprecs records."; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 738.0 Tm
 0.0000 Tw
-(         \} ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 721.2 Tm
-0.0000 Tw
-(         flock\(STDOUT, LOCK_EX\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 712.8 Tm
-0.0000 Tw
-(         print STDOUT ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 704.4 Tm
-0.0000 Tw
-(             $O_VAL[_O_LOCATION_NAME], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 696.0 Tm
-0.0000 Tw
-(             $O_VAL[_O_PRODUCT_CODE], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 687.6 Tm
-0.0000 Tw
-(             $O_VAL[_O_SALES_TOTAL] ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 679.2 Tm
-0.0000 Tw
-(         ; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 670.8 Tm
-0.0000 Tw
-(         flock\(STDOUT, LOCK_UN\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 662.4 Tm
-0.0000 Tw
-(         print STDERR '[examples/copy_record_VIC.pql ' . localtime\(\) . "] $. records."; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 654.0 Tm
-0.0000 Tw
 (         my $benchmark_end = new Benchmark; ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 645.6 Tm
+1 0 0 1 76.0 729.6 Tm
 0.0000 Tw
 (         my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 637.2 Tm
+1 0 0 1 76.0 721.2 Tm
 0.0000 Tw
 (         print STDERR '[examples/copy_record_VIC.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmar ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 628.8 Tm
+1 0 0 1 76.0 712.8 Tm
 0.0000 Tw
 ( k_timediff\)]\}"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 704.4 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 696.0 Tm
+0.0000 Tw
+(     \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 679.2 Tm
+0.0000 Tw
+( \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 662.4 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 654.0 Tm
+0.0000 Tw
+(     package p_copy_input_copy_record_nsw; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 645.6 Tm
+0.0000 Tw
+(     sub copy_input_copy_record_nsw ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 637.2 Tm
+0.0000 Tw
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 628.8 Tm
+0.0000 Tw
+( #    !/usr/bin/perl ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 620.4 Tm
 0.0000 Tw
@@ -3835,55 +3803,63 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 612.0 Tm
 0.0000 Tw
-(     \} ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 595.2 Tm
-0.0000 Tw
-( \} ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 578.4 Tm
-0.0000 Tw
-( \{ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 570.0 Tm
-0.0000 Tw
-(     package p_copy_copy_record_nt; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 561.6 Tm
-0.0000 Tw
-(     sub copy_copy_record_nt ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 553.2 Tm
-0.0000 Tw
-(     \{ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 544.8 Tm
-0.0000 Tw
 ( #     vim: syntax=perl ts=4 sw=4 ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 536.4 Tm
+1 0 0 1 76.0 603.6 Tm
 0.0000 Tw
 ( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
+1 0 0 1 76.0 595.2 Tm
+0.0000 Tw
+( #    Generated By: pequel Version 2.4-5, Build: Wednesday November 16 21:56:42 GMT 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 586.8 Tm
+0.0000 Tw
+( #                : http://sourceforge.net/projects/pequel/ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 578.4 Tm
+0.0000 Tw
+( #    Script Name : copy_record_NSW.pql ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 570.0 Tm
+0.0000 Tw
+( #    Created On  : Wed Nov 16 14:00:44 2005 ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 561.6 Tm
+0.0000 Tw
+( #    Perl Version: /usr/bin/perl 5.6.1 on solaris ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 553.2 Tm
+0.0000 Tw
+( #    For         :  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 544.8 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 536.4 Tm
+0.0000 Tw
+( #    Options: ) Tj
+/F10 7 Tf
 1 0 0 1 76.0 528.0 Tm
 0.0000 Tw
-( #    Generated By: pequel Version 2.3-4, Build: Wednesday October  12 23:16:49 BST 2005 ) Tj
+( #        optimize\(1\) optimize generated code. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 519.6 Tm
 0.0000 Tw
-( #                : https://sourceforge.net/projects/pequel/ ) Tj
+( #        hash\(1\) Generate in memory. Input data can be unsorted. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 511.2 Tm
 0.0000 Tw
-( #    Script Name : examples/copy_record_NT.pql ) Tj
+( #        doc_title\(Copy Record Example Script\) document title. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 502.8 Tm
 0.0000 Tw
-( #    Created On  : Wed Oct 12 15:27:45 2005 ) Tj
+( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 494.4 Tm
 0.0000 Tw
-( #    For         :  ) Tj
+( #        doc_version\(2.3\) document version for pequel script. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 486.0 Tm
 0.0000 Tw
@@ -3891,203 +3867,199 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 477.6 Tm
 0.0000 Tw
-( #    Options: ) Tj
+(         use strict; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 469.2 Tm
 0.0000 Tw
-( #        optimize\(1\) optimize generated code. ) Tj
+(         use Fcntl ':flock'; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 460.8 Tm
 0.0000 Tw
-( #        doc_title\(Copy Record Example Script\) document title. ) Tj
+(         use constant _I_LOCATION         => int    0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 452.4 Tm
 0.0000 Tw
-( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
+(         use constant _I_PRODUCT_CODE     => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 444.0 Tm
 0.0000 Tw
-( #        doc_version\(2.3\) document version for pequel script. ) Tj
+(         use constant _I_SALES_TOTAL      => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 435.6 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+(         use constant _I_LOCATION_NAME    => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 427.2 Tm
 0.0000 Tw
-(         use strict; ) Tj
+(         use constant _O_LOCATION_NAME    => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 418.8 Tm
 0.0000 Tw
-(         use Fcntl ':flock'; ) Tj
+(         use constant _O_PRODUCT_CODE     => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 410.4 Tm
 0.0000 Tw
-(         use constant _I_LOCATION         => int    0; ) Tj
+(         use constant _O_SALES_TOTAL      => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 402.0 Tm
 0.0000 Tw
-(         use constant _I_PRODUCT_CODE     => int    1; ) Tj
+(         local $\\="\\n"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 393.6 Tm
 0.0000 Tw
-(         use constant _I_SALES_TOTAL      => int    2; ) Tj
+(         local $,="|"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 385.2 Tm
 0.0000 Tw
-(         use constant _I_LOCATION_NAME    => int    3; ) Tj
+(         print STDERR '[examples/copy_record_NSW.pql ' . localtime\(\) . "] Init"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 376.8 Tm
 0.0000 Tw
-(         use constant _O_LOCATION_NAME    => int    1; ) Tj
+(         use constant VERBOSE => int 10000; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 368.4 Tm
 0.0000 Tw
-(         use constant _O_PRODUCT_CODE     => int    2; ) Tj
+(         use constant LAST_ICELL => int 3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 360.0 Tm
 0.0000 Tw
-(         use constant _O_SALES_TOTAL      => int    3; ) Tj
+(         my @I_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 351.6 Tm
 0.0000 Tw
-(         local $\\="\\n"; local $,="|"; ) Tj
+(         my %O_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 343.2 Tm
 0.0000 Tw
-(         print STDERR '[examples/copy_record_NT.pql ' . localtime\(\) . "] Init"; ) Tj
+(         my $key; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 334.8 Tm
 0.0000 Tw
-(         use constant VERBOSE => int 10000; ) Tj
+(         my $_inprecs=0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 326.4 Tm
 0.0000 Tw
-(         use constant LAST_ICELL => int 3; ) Tj
+(         print STDERR '[examples/copy_record_NSW.pql ' . localtime\(\) . "] Start"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 318.0 Tm
 0.0000 Tw
-(         my @I_VAL; ) Tj
+(         use Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 309.6 Tm
 0.0000 Tw
-(         my @O_VAL; ) Tj
+(         my $benchmark_start = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 301.2 Tm
 0.0000 Tw
-(         my $key__I_PRODUCT_CODE; ) Tj
+(         while \(<STDIN>\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 292.8 Tm
 0.0000 Tw
-(         my $previous_key__I_PRODUCT_CODE = undef; ) Tj
+(         \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 284.4 Tm
 0.0000 Tw
-(         foreach my $f \(1..3\) \{ $O_VAL[$f] = undef; \} ) Tj
+(             ++$_inprecs; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 276.0 Tm
 0.0000 Tw
-( #     Sort:PRODUCT_CODE\(asc:string\)  ) Tj
+(             print STDERR '[examples/copy_record_NSW.pql ' . localtime\(\) . "] $_inprecs records." if \($_inprecs ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 267.6 Tm
 0.0000 Tw
-(         open\(DATA, q\{cat - | sort -t'|' -y -k 2,2 2>/dev/null |\}\) || die "Cannot open input: $!"; ) Tj
+(  % VERBOSE == 0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 259.2 Tm
 0.0000 Tw
-(         print STDERR '[examples/copy_record_NT.pql ' . localtime\(\) . "] Start"; ) Tj
+(             chomp; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 250.8 Tm
 0.0000 Tw
-(         use Benchmark; ) Tj
+(             @I_VAL = split\("[|]", $_\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 242.4 Tm
 0.0000 Tw
-(         my $benchmark_start = new Benchmark; ) Tj
+(             $key = \( $I_VAL[_I_PRODUCT_CODE] \); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 234.0 Tm
 0.0000 Tw
-(         while \(<DATA>\) ) Tj
+(             $I_VAL[_I_LOCATION_NAME] = 'New South Wales'; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 225.6 Tm
 0.0000 Tw
-(         \{ ) Tj
+(             $O_VAL\{$key\}\{_O_LOCATION_NAME\} = $I_VAL[_I_LOCATION_NAME]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 217.2 Tm
 0.0000 Tw
-(             print STDERR '[examples/copy_record_NT.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE == 0 ) Tj
+(             $O_VAL\{$key\}\{_O_PRODUCT_CODE\} = $I_VAL[_I_PRODUCT_CODE]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 208.8 Tm
 0.0000 Tw
-( \); ) Tj
+(             $O_VAL\{$key\}\{_O_SALES_TOTAL\} += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 200.4 Tm
 0.0000 Tw
-(             chomp; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 192.0 Tm
-0.0000 Tw
-(             @I_VAL = split\("[|]", $_\); ) Tj
+(         \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 183.6 Tm
 0.0000 Tw
-(             $key__I_PRODUCT_CODE = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+(         foreach $key \(sort  keys %O_VAL\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 175.2 Tm
 0.0000 Tw
-(             if \(!defined\($previous_key__I_PRODUCT_CODE\)\) ) Tj
+(         \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 166.8 Tm
 0.0000 Tw
-(             \{ ) Tj
+(             flock\(STDOUT, LOCK_EX\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 158.4 Tm
 0.0000 Tw
-(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
+(             print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 150.0 Tm
 0.0000 Tw
-(             \} ) Tj
+(                 $O_VAL\{$key\}\{_O_LOCATION_NAME\}, ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 141.6 Tm
+0.0000 Tw
+(                 $O_VAL\{$key\}\{_O_PRODUCT_CODE\}, ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 133.2 Tm
 0.0000 Tw
-(             elsif \($previous_key__I_PRODUCT_CODE ne $key__I_PRODUCT_CODE\) ) Tj
+(                 $O_VAL\{$key\}\{_O_SALES_TOTAL\} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 124.8 Tm
 0.0000 Tw
-(             \{ ) Tj
+(             ; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 116.4 Tm
 0.0000 Tw
-(                 flock\(STDOUT, LOCK_EX\); ) Tj
+(             flock\(STDOUT, LOCK_UN\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 108.0 Tm
 0.0000 Tw
-(                 print STDOUT ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 99.6 Tm
-0.0000 Tw
-(                     $O_VAL[_O_LOCATION_NAME], ) Tj
+(         \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 91.2 Tm
 0.0000 Tw
-(                     $O_VAL[_O_PRODUCT_CODE], ) Tj
+(         close\(STDIN\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 82.8 Tm
 0.0000 Tw
-(                     $O_VAL[_O_SALES_TOTAL] ) Tj
+(         print STDERR '[examples/copy_record_NSW.pql ' . localtime\(\) . "] $_inprecs records."; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 74.4 Tm
 0.0000 Tw
-(                 ; ) Tj
+(         my $benchmark_end = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 66.0 Tm
 0.0000 Tw
-(                 flock\(STDOUT, LOCK_UN\); ) Tj
+(         my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
 /F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(12 October 2005 15:27) Tj
+(16 November 2005 14:00) Tj
 1 0 0 1 531.88 37 Tm
 (13) Tj
 ET
@@ -4097,7 +4069,7 @@ S
 endstream
 endobj
 67 0 obj
-8027
+7952
 endobj
 68 0 obj
 <<
@@ -4137,100 +4109,28 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 771.6 Tm
 0.0000 Tw
-(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
+(         print STDERR '[examples/copy_record_NSW.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmar ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 763.2 Tm
 0.0000 Tw
-(                 @O_VAL = undef; ) Tj
+( k_timediff\)]\}"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 754.8 Tm
 0.0000 Tw
-(             \} ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 738.0 Tm
-0.0000 Tw
-(             $I_VAL[_I_LOCATION_NAME] = 'Northern Territory'; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 729.6 Tm
-0.0000 Tw
-(             $O_VAL[_O_LOCATION_NAME] = $I_VAL[_I_LOCATION_NAME]; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 721.2 Tm
-0.0000 Tw
-(             $O_VAL[_O_PRODUCT_CODE] = $I_VAL[_I_PRODUCT_CODE]; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 712.8 Tm
-0.0000 Tw
-(             $O_VAL[_O_SALES_TOTAL] += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 704.4 Tm
-0.0000 Tw
-(         \} ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 687.6 Tm
-0.0000 Tw
-(         flock\(STDOUT, LOCK_EX\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 679.2 Tm
-0.0000 Tw
-(         print STDOUT ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 670.8 Tm
-0.0000 Tw
-(             $O_VAL[_O_LOCATION_NAME], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 662.4 Tm
-0.0000 Tw
-(             $O_VAL[_O_PRODUCT_CODE], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 654.0 Tm
-0.0000 Tw
-(             $O_VAL[_O_SALES_TOTAL] ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 645.6 Tm
-0.0000 Tw
-(         ; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 637.2 Tm
-0.0000 Tw
-(         flock\(STDOUT, LOCK_UN\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 628.8 Tm
-0.0000 Tw
-(         print STDERR '[examples/copy_record_NT.pql ' . localtime\(\) . "] $. records."; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 620.4 Tm
-0.0000 Tw
-(         my $benchmark_end = new Benchmark; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 612.0 Tm
-0.0000 Tw
-(         my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 603.6 Tm
-0.0000 Tw
-(         print STDERR '[examples/copy_record_NT.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 595.2 Tm
-0.0000 Tw
-( _timediff\)]\}"; ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 586.8 Tm
-0.0000 Tw
 ( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 578.4 Tm
+1 0 0 1 76.0 746.4 Tm
 0.0000 Tw
 (     \} ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 561.6 Tm
+1 0 0 1 76.0 729.6 Tm
 0.0000 Tw
 ( \} ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (14) Tj
-1 0 0 1 437.39 37 Tm
-(12 October 2005 15:27) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:00) Tj
 ET
 52 50 m
 543 50 l
@@ -4238,7 +4138,7 @@ S
 endstream
 endobj
 71 0 obj
-2485
+767
 endobj
 72 0 obj
 <<
@@ -4344,7 +4244,7 @@ BT
 (the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(12 October 2005 15:27) Tj
+(16 November 2005 14:00) Tj
 1 0 0 1 531.88 37 Tm
 (15) Tj
 ET
@@ -4354,7 +4254,7 @@ S
 endstream
 endobj
 75 0 obj
-2228
+2229
 endobj
 76 0 obj
 <<
@@ -4395,8 +4295,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (16) Tj
-1 0 0 1 437.39 37 Tm
-(12 October 2005 15:27) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:00) Tj
 ET
 52 50 m
 543 50 l
@@ -4404,7 +4304,7 @@ S
 endstream
 endobj
 79 0 obj
-276
+277
 endobj
 80 0 obj
 <<
@@ -4580,7 +4480,7 @@ f
 Q
 BT
 1 0 0 1 100 554 Tm
-(2.1 pequeldoc) Tj
+(2.1 prefix) Tj
 1 0 0 1 513.44 554 Tm
 (2) Tj
 ET
@@ -4591,7 +4491,7 @@ f
 Q
 BT
 1 0 0 1 100 542 Tm
-(2.2 detail) Tj
+(2.2 pequeldoc) Tj
 1 0 0 1 513.44 542 Tm
 (2) Tj
 ET
@@ -4602,7 +4502,7 @@ f
 Q
 BT
 1 0 0 1 100 530 Tm
-(2.3 prefix) Tj
+(2.3 detail) Tj
 1 0 0 1 513.44 530 Tm
 (2) Tj
 ET
@@ -4844,7 +4744,7 @@ f
 Q
 BT
 1 0 0 1 100 266 Tm
-(sort by) Tj
+(group by) Tj
 1 0 0 1 513.44 266 Tm
 (5) Tj
 ET
@@ -4855,7 +4755,7 @@ f
 Q
 BT
 1 0 0 1 100 254 Tm
-(group by) Tj
+(output section) Tj
 1 0 0 1 513.44 254 Tm
 (5) Tj
 ET
@@ -4866,7 +4766,7 @@ f
 Q
 BT
 1 0 0 1 100 242 Tm
-(output section) Tj
+(sort output) Tj
 1 0 0 1 513.44 242 Tm
 (5) Tj
 ET
@@ -4876,10 +4776,10 @@ q
 f
 Q
 BT
-1 0 0 1 100 230 Tm
-(sort output) Tj
+1 0 0 1 76 230 Tm
+(6. PEQUEL GENERATED PROGRAM) Tj
 1 0 0 1 513.44 230 Tm
-(5) Tj
+(6) Tj
 ET
 q
 0.95 g
@@ -4888,9 +4788,9 @@ f
 Q
 BT
 1 0 0 1 76 218 Tm
-(6. PEQUEL GENERATED PROGRAM) Tj
-1 0 0 1 513.44 218 Tm
-(6) Tj
+(7. ABOUT PEQUEL) Tj
+1 0 0 1 507.88 218 Tm
+(15) Tj
 ET
 q
 1 g
@@ -4898,24 +4798,13 @@ q
 f
 Q
 BT
-1 0 0 1 76 206 Tm
-(7. ABOUT PEQUEL) Tj
-1 0 0 1 507.88 206 Tm
-(15) Tj
-ET
-q
-0.95 g
-52 191 491 12 re
-f
-Q
-BT
-1 0 0 1 100 194 Tm
+1 0 0 1 100 206 Tm
 (COPYRIGHT) Tj
-1 0 0 1 507.88 194 Tm
+1 0 0 1 507.88 206 Tm
 (15) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(12 October 2005 15:27) Tj
+(16 November 2005 14:00) Tj
 1 0 0 1 540.22 37 Tm
 (i) Tj
 ET
@@ -4925,7 +4814,7 @@ S
 endstream
 endobj
 83 0 obj
-4838
+4742
 endobj
 84 0 obj
 <<
@@ -4965,8 +4854,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (ii) Tj
-1 0 0 1 437.39 37 Tm
-(12 October 2005 15:27) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:00) Tj
 ET
 52 50 m
 543 50 l
@@ -4974,7 +4863,7 @@ S
 endstream
 endobj
 87 0 obj
-269
+270
 endobj
 88 0 obj
 <<
@@ -5070,7 +4959,7 @@ BT
 (Copy Record Example Script) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(12 October 2005 15:27) Tj
+(16 November 2005 14:00) Tj
 1 0 0 1 543 37 Tm
 () Tj
 ET
@@ -5080,7 +4969,7 @@ S
 endstream
 endobj
 95 0 obj
-271
+272
 endobj
 96 0 obj
 <<
@@ -5105,8 +4994,8 @@ endobj
 /Parent 98 0 R
 /Dest [85 0 R /Fit]
 /First 100 0 R
-/Last 141 0 R
-/Count 43 
+/Last 140 0 R
+/Count 42 
 /Title (Table of Contents)
 >>
 endobj
@@ -5142,7 +5031,7 @@ endobj
 103 0 obj
 <<
 /Parent 102 0 R
-/Dest [21 0 R /FitH 493.2]
+/Dest [21 0 R /FitH 517.2]
 /Next 106 0 R
 /First 104 0 R
 /Last 105 0 R
@@ -5153,7 +5042,7 @@ endobj
 104 0 obj
 <<
 /Parent 103 0 R
-/Dest [21 0 R /FitH 454.8]
+/Dest [21 0 R /FitH 478.8]
 /Next 105 0 R
 /Title (Description)
 >>
@@ -5161,7 +5050,7 @@ endobj
 105 0 obj
 <<
 /Parent 103 0 R
-/Dest [21 0 R /FitH 416.4]
+/Dest [21 0 R /FitH 440.4]
 /Previous 104 0 R
 /Title (Derived Input Field Evaluation)
 >>
@@ -5169,7 +5058,7 @@ endobj
 106 0 obj
 <<
 /Parent 102 0 R
-/Dest [21 0 R /FitH 379.2]
+/Dest [21 0 R /FitH 403.2]
 /Previous 103 0 R
 /Next 109 0 R
 /First 107 0 R
@@ -5181,7 +5070,7 @@ endobj
 107 0 obj
 <<
 /Parent 106 0 R
-/Dest [21 0 R /FitH 340.8]
+/Dest [21 0 R /FitH 364.8]
 /Next 108 0 R
 /Title (Description)
 >>
@@ -5189,7 +5078,7 @@ endobj
 108 0 obj
 <<
 /Parent 106 0 R
-/Dest [21 0 R /FitH 302.4]
+/Dest [21 0 R /FitH 326.4]
 /Previous 107 0 R
 /Title (Derived Input Field Evaluation)
 >>
@@ -5197,7 +5086,7 @@ endobj
 109 0 obj
 <<
 /Parent 102 0 R
-/Dest [21 0 R /FitH 265.2]
+/Dest [21 0 R /FitH 289.2]
 /Previous 106 0 R
 /First 110 0 R
 /Last 110 0 R
@@ -5208,7 +5097,7 @@ endobj
 110 0 obj
 <<
 /Parent 109 0 R
-/Dest [21 0 R /FitH 226.8]
+/Dest [21 0 R /FitH 250.8]
 /Title (Description)
 >>
 endobj
@@ -5229,7 +5118,7 @@ endobj
 /Parent 111 0 R
 /Dest [25 0 R /FitH 726]
 /Next 113 0 R
-/Title (2.1 pequeldoc)
+/Title (2.1 prefix)
 >>
 endobj
 113 0 obj
@@ -5238,7 +5127,7 @@ endobj
 /Dest [25 0 R /FitH 684]
 /Previous 112 0 R
 /Next 114 0 R
-/Title (2.2 detail)
+/Title (2.2 pequeldoc)
 >>
 endobj
 114 0 obj
@@ -5247,7 +5136,7 @@ endobj
 /Dest [25 0 R /FitH 642]
 /Previous 113 0 R
 /Next 115 0 R
-/Title (2.3 prefix)
+/Title (2.3 detail)
 >>
 endobj
 115 0 obj
@@ -5356,10 +5245,10 @@ endobj
 /Parent 99 0 R
 /Dest [37 0 R /FitH 764.4]
 /Previous 124 0 R
-/Next 140 0 R
+/Next 139 0 R
 /First 127 0 R
-/Last 139 0 R
-/Count 13 
+/Last 138 0 R
+/Count 12 
 /Title (5. EXAMPLES/COPY_RECORD.PQL)
 >>
 endobj
@@ -5449,7 +5338,7 @@ endobj
 /Dest [37 0 R /FitH 240.000000000001]
 /Previous 135 0 R
 /Next 137 0 R
-/Title (sort by)
+/Title (group by)
 >>
 endobj
 137 0 obj
@@ -5458,49 +5347,40 @@ endobj
 /Dest [37 0 R /FitH 202.800000000001]
 /Previous 136 0 R
 /Next 138 0 R
-/Title (group by)
+/Title (output section)
 >>
 endobj
 138 0 obj
 <<
 /Parent 126 0 R
-/Dest [37 0 R /FitH 165.600000000001]
+/Dest [37 0 R /FitH 148.800000000001]
 /Previous 137 0 R
-/Next 139 0 R
-/Title (output section)
+/Title (sort output)
 >>
 endobj
 139 0 obj
 <<
-/Parent 126 0 R
-/Dest [37 0 R /FitH 111.600000000001]
-/Previous 138 0 R
-/Title (sort output)
+/Parent 99 0 R
+/Dest [41 0 R /FitH 764.4]
+/Previous 126 0 R
+/Next 140 0 R
+/Title (6. PEQUEL GENERATED PROGRAM)
 >>
 endobj
 140 0 obj
 <<
 /Parent 99 0 R
-/Dest [41 0 R /FitH 764.4]
-/Previous 126 0 R
-/Next 141 0 R
-/Title (6. PEQUEL GENERATED PROGRAM)
->>
-endobj
-141 0 obj
-<<
-/Parent 99 0 R
 /Dest [77 0 R /FitH 764.4]
-/Previous 140 0 R
-/First 142 0 R
-/Last 142 0 R
+/Previous 139 0 R
+/First 141 0 R
+/Last 141 0 R
 /Count 1 
 /Title (7. ABOUT PEQUEL)
 >>
 endobj
-142 0 obj
+141 0 obj
 <<
-/Parent 141 0 R
+/Parent 140 0 R
 /Dest [77 0 R /FitH 681.6]
 /Title (COPYRIGHT)
 >>
@@ -5508,9 +5388,9 @@ endobj
 98 0 obj
 <<
 /Type /Outlines
-/Count 44
+/Count 43
 /First 99 0 R
-/Last 142 0 R
+/Last 141 0 R
 >>
 endobj
 3 0 obj
@@ -5530,12 +5410,12 @@ endobj
 >>
 endobj
 xref
-0 143
+0 142
 0000000000 65535 f 
 0000000015 00000 n 
 0000000171 00000 n 
-0000099763 00000 n 
-0000099852 00000 n 
+0000097613 00000 n 
+0000097702 00000 n 
 0000000285 00000 n 
 0000002385 00000 n 
 0000002484 00000 n 
@@ -5550,136 +5430,135 @@ xref
 0000003396 00000 n 
 0000003502 00000 n 
 0000003616 00000 n 
-0000007521 00000 n 
-0000007542 00000 n 
-0000007692 00000 n 
-0000007775 00000 n 
-0000010063 00000 n 
-0000010084 00000 n 
-0000010210 00000 n 
-0000010293 00000 n 
-0000011626 00000 n 
-0000011647 00000 n 
-0000011773 00000 n 
-0000011856 00000 n 
-0000012535 00000 n 
-0000012555 00000 n 
-0000012693 00000 n 
-0000012776 00000 n 
-0000017419 00000 n 
-0000017440 00000 n 
-0000017566 00000 n 
-0000017649 00000 n 
-0000024732 00000 n 
-0000024753 00000 n 
-0000024867 00000 n 
-0000024950 00000 n 
-0000031719 00000 n 
-0000031740 00000 n 
-0000031854 00000 n 
-0000031937 00000 n 
-0000040001 00000 n 
-0000040022 00000 n 
-0000040136 00000 n 
-0000040219 00000 n 
-0000048201 00000 n 
-0000048222 00000 n 
-0000048336 00000 n 
-0000048419 00000 n 
-0000056443 00000 n 
-0000056464 00000 n 
-0000056578 00000 n 
-0000056661 00000 n 
-0000064724 00000 n 
-0000064745 00000 n 
-0000064859 00000 n 
-0000064942 00000 n 
-0000072967 00000 n 
-0000072988 00000 n 
-0000073102 00000 n 
-0000073185 00000 n 
-0000081266 00000 n 
-0000081287 00000 n 
-0000081401 00000 n 
-0000081484 00000 n 
-0000084023 00000 n 
-0000084044 00000 n 
-0000084158 00000 n 
-0000084241 00000 n 
-0000086523 00000 n 
-0000086544 00000 n 
-0000086670 00000 n 
-0000086753 00000 n 
-0000087083 00000 n 
-0000087103 00000 n 
-0000087205 00000 n 
-0000087288 00000 n 
-0000092180 00000 n 
-0000092201 00000 n 
-0000092315 00000 n 
-0000092398 00000 n 
-0000092721 00000 n 
-0000092741 00000 n 
-0000092843 00000 n 
-0000092926 00000 n 
-0000093009 00000 n 
-0000093403 00000 n 
-0000093423 00000 n 
-0000093549 00000 n 
-0000093874 00000 n 
-0000093894 00000 n 
-0000093996 00000 n 
-0000099687 00000 n 
-0000094079 00000 n 
-0000094203 00000 n 
-0000094303 00000 n 
-0000094419 00000 n 
-0000094581 00000 n 
-0000094722 00000 n 
-0000094823 00000 n 
-0000094947 00000 n 
-0000095109 00000 n 
-0000095210 00000 n 
-0000095334 00000 n 
-0000095482 00000 n 
-0000095569 00000 n 
-0000095740 00000 n 
-0000095841 00000 n 
-0000095957 00000 n 
-0000096073 00000 n 
-0000096194 00000 n 
-0000096314 00000 n 
-0000096432 00000 n 
-0000096551 00000 n 
+0000007248 00000 n 
+0000007269 00000 n 
+0000007419 00000 n 
+0000007502 00000 n 
+0000009791 00000 n 
+0000009812 00000 n 
+0000009938 00000 n 
+0000010021 00000 n 
+0000011355 00000 n 
+0000011376 00000 n 
+0000011502 00000 n 
+0000011585 00000 n 
+0000012265 00000 n 
+0000012285 00000 n 
+0000012423 00000 n 
+0000012506 00000 n 
+0000016973 00000 n 
+0000016994 00000 n 
+0000017120 00000 n 
+0000017203 00000 n 
+0000024440 00000 n 
+0000024461 00000 n 
+0000024575 00000 n 
+0000024658 00000 n 
+0000031352 00000 n 
+0000031373 00000 n 
+0000031487 00000 n 
+0000031570 00000 n 
+0000039502 00000 n 
+0000039523 00000 n 
+0000039637 00000 n 
+0000039720 00000 n 
+0000047887 00000 n 
+0000047908 00000 n 
+0000048022 00000 n 
+0000048105 00000 n 
+0000056370 00000 n 
+0000056391 00000 n 
+0000056505 00000 n 
+0000056588 00000 n 
+0000064590 00000 n 
+0000064611 00000 n 
+0000064725 00000 n 
+0000064808 00000 n 
+0000072829 00000 n 
+0000072850 00000 n 
+0000072964 00000 n 
+0000073047 00000 n 
+0000081053 00000 n 
+0000081074 00000 n 
+0000081188 00000 n 
+0000081271 00000 n 
+0000082092 00000 n 
+0000082112 00000 n 
+0000082226 00000 n 
+0000082309 00000 n 
+0000084592 00000 n 
+0000084613 00000 n 
+0000084739 00000 n 
+0000084822 00000 n 
+0000085153 00000 n 
+0000085173 00000 n 
+0000085275 00000 n 
+0000085358 00000 n 
+0000090154 00000 n 
+0000090175 00000 n 
+0000090289 00000 n 
+0000090372 00000 n 
+0000090696 00000 n 
+0000090716 00000 n 
+0000090818 00000 n 
+0000090901 00000 n 
+0000090984 00000 n 
+0000091378 00000 n 
+0000091398 00000 n 
+0000091524 00000 n 
+0000091850 00000 n 
+0000091870 00000 n 
+0000091972 00000 n 
+0000097537 00000 n 
+0000092055 00000 n 
+0000092179 00000 n 
+0000092279 00000 n 
+0000092395 00000 n 
+0000092557 00000 n 
+0000092698 00000 n 
+0000092799 00000 n 
+0000092923 00000 n 
+0000093085 00000 n 
+0000093186 00000 n 
+0000093310 00000 n 
+0000093458 00000 n 
+0000093545 00000 n 
+0000093716 00000 n 
+0000093814 00000 n 
+0000093933 00000 n 
+0000094049 00000 n 
+0000094170 00000 n 
+0000094290 00000 n 
+0000094408 00000 n 
+0000094527 00000 n 
+0000094646 00000 n 
+0000094753 00000 n 
+0000094908 00000 n 
+0000095037 00000 n 
+0000095117 00000 n 
+0000095291 00000 n 
+0000095400 00000 n 
+0000095574 00000 n 
+0000095669 00000 n 
+0000095787 00000 n 
+0000095908 00000 n 
+0000096056 00000 n 
+0000096202 00000 n 
+0000096351 00000 n 
+0000096511 00000 n 
 0000096670 00000 n 
-0000096777 00000 n 
-0000096932 00000 n 
-0000097061 00000 n 
-0000097141 00000 n 
-0000097315 00000 n 
-0000097424 00000 n 
-0000097598 00000 n 
-0000097693 00000 n 
-0000097811 00000 n 
-0000097932 00000 n 
-0000098080 00000 n 
-0000098226 00000 n 
-0000098375 00000 n 
-0000098535 00000 n 
-0000098694 00000 n 
-0000098819 00000 n 
-0000098945 00000 n 
-0000099072 00000 n 
-0000099205 00000 n 
-0000099321 00000 n 
-0000099455 00000 n 
-0000099602 00000 n 
+0000096795 00000 n 
+0000096922 00000 n 
+0000097055 00000 n 
+0000097171 00000 n 
+0000097305 00000 n 
+0000097452 00000 n 
 trailer
 <<
-/Size 143
+/Size 142
 /Root 3 0 R
 /Info 2 0 R
 >>
 startxref
-100070
+97920
 %%EOF

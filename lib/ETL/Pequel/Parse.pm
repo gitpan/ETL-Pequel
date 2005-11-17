@@ -193,6 +193,7 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		{
 			last if ($pos > length($$clause));
 			my $p = substr($$clause, $pos, 1);
+#>			$text =~ /('|")([^\1]*)\1/; print "Found quote:$1$2$1\n"; # find matching quotes
 			if ($p eq '"' || $p eq "'")
 			{
 				if (!$inside_quotes || ($inside_quotes && $p eq $inside_quotes_char)) 

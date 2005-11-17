@@ -11,7 +11,7 @@
 endobj
 2 0 obj
 <<
-/CreationDate (D:20050913104615+0100)
+/CreationDate (D:20051116142215+0000)
 /Producer (Pequel)
 /Title (Transfer Option Example Script)
 >>
@@ -181,7 +181,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(transfer_option.pql) Tj
+(examples/transfer_option.pql) Tj
 1 0 0 1 392.96 797 Tm
 (Transfer Option Example Script) Tj
 /F21 12 Tf
@@ -191,7 +191,7 @@ BT
 /F20 10 Tf
 1 0 0 1 76.0 735.6 Tm
 0.0000 Tw
-(transfer_option.pql ) Tj
+(examples/transfer_option.pql ) Tj
 /F21 12 Tf
 1 0 0 1 52.0 705.6 Tm
 0.0000 Tw
@@ -415,7 +415,7 @@ BT
 (    => %LOC_DESCRIPTION\(LOCATION\)->2 ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:46) Tj
+(16 November 2005 14:22) Tj
 1 0 0 1 537.44 37 Tm
 (1) Tj
 ET
@@ -425,7 +425,7 @@ S
 endstream
 endobj
 19 0 obj
-3621
+3638
 endobj
 20 0 obj
 <<
@@ -462,8 +462,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Transfer Option Example Script) Tj
-1 0 0 1 451.88 797 Tm
-(transfer_option.pql) Tj
+1 0 0 1 403.52 797 Tm
+(examples/transfer_option.pql) Tj
 /F21 10 Tf
 1 0 0 1 52.0 780.0 Tm
 0.0000 Tw
@@ -639,8 +639,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (2) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:46) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:22) Tj
 ET
 52 50 m
 543 50 l
@@ -648,7 +648,7 @@ S
 endstream
 endobj
 23 0 obj
-2984
+2992
 endobj
 24 0 obj
 <<
@@ -684,7 +684,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(transfer_option.pql) Tj
+(examples/transfer_option.pql) Tj
 1 0 0 1 392.96 797 Tm
 (Transfer Option Example Script) Tj
 /F21 12 Tf
@@ -697,18 +697,32 @@ BT
 (2.1 ) Tj
 /F23 10 Tf
 0.0000 Tw
-(pequeldoc) Tj
+(prefix) Tj
 /F21 10 Tf
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 702.0 Tm
 0.0000 Tw
-(generate pod / pdf pequel script Reference Guide.: pdf ) Tj
+(directory pathname prefix.: examples ) Tj
 /F21 10 Tf
 1 0 0 1 52.0 672.0 Tm
 0.0000 Tw
 (2.2 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(pequeldoc) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 660.0 Tm
+0.0000 Tw
+(generate pod / pdf pequel script Reference Guide.: pdf ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 630.0 Tm
+0.0000 Tw
+(2.3 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (detail) Tj
@@ -716,13 +730,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 660.0 Tm
+1 0 0 1 76.0 618.0 Tm
 0.0000 Tw
 (Include Pequel Generated Program chapter in Pequeldoc: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 630.0 Tm
+1 0 0 1 52.0 588.0 Tm
 0.0000 Tw
-(2.3 ) Tj
+(2.4 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (script_name) Tj
@@ -730,13 +744,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 618.0 Tm
+1 0 0 1 76.0 576.0 Tm
 0.0000 Tw
-(script filename: transfer_option.pql ) Tj
+(script filename: examples/transfer_option.pql ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 588.0 Tm
+1 0 0 1 52.0 546.0 Tm
 0.0000 Tw
-(2.4 ) Tj
+(2.5 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (header) Tj
@@ -744,13 +758,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 576.0 Tm
+1 0 0 1 76.0 534.0 Tm
 0.0000 Tw
 (write header record to output.: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 546.0 Tm
+1 0 0 1 52.0 504.0 Tm
 0.0000 Tw
-(2.5 ) Tj
+(2.6 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (optimize) Tj
@@ -758,13 +772,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 534.0 Tm
+1 0 0 1 76.0 492.0 Tm
 0.0000 Tw
 (optimize generated code.: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 504.0 Tm
+1 0 0 1 52.0 462.0 Tm
 0.0000 Tw
-(2.6 ) Tj
+(2.7 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (transfer) Tj
@@ -772,13 +786,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 492.0 Tm
+1 0 0 1 76.0 450.0 Tm
 0.0000 Tw
 (Copy input \(including calculated fields\) to output.: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 462.0 Tm
+1 0 0 1 52.0 420.0 Tm
 0.0000 Tw
-(2.7 ) Tj
+(2.8 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (discard_header) Tj
@@ -786,13 +800,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 450.0 Tm
+1 0 0 1 76.0 408.0 Tm
 0.0000 Tw
 (Input file has header record - must be discarded.: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 420.0 Tm
+1 0 0 1 52.0 378.0 Tm
 0.0000 Tw
-(2.8 ) Tj
+(2.9 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (default_datetype) Tj
@@ -800,13 +814,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 408.0 Tm
+1 0 0 1 76.0 366.0 Tm
 0.0000 Tw
 (default date format: DD/MM/YYYY ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 378.0 Tm
+1 0 0 1 52.0 336.0 Tm
 0.0000 Tw
-(2.9 ) Tj
+(2.10 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_title) Tj
@@ -814,13 +828,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 366.0 Tm
+1 0 0 1 76.0 324.0 Tm
 0.0000 Tw
 (document title.: Transfer Option Example Script ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 336.0 Tm
+1 0 0 1 52.0 294.0 Tm
 0.0000 Tw
-(2.10 ) Tj
+(2.11 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_email) Tj
@@ -828,13 +842,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 324.0 Tm
+1 0 0 1 76.0 282.0 Tm
 0.0000 Tw
 (document email entry.: sample@youraddress.com ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 294.0 Tm
+1 0 0 1 52.0 252.0 Tm
 0.0000 Tw
-(2.11 ) Tj
+(2.12 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_version) Tj
@@ -842,12 +856,12 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 282.0 Tm
+1 0 0 1 76.0 240.0 Tm
 0.0000 Tw
 (document version for pequel script.: 2.2 ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:46) Tj
+(16 November 2005 14:22) Tj
 1 0 0 1 537.44 37 Tm
 (3) Tj
 ET
@@ -857,7 +871,7 @@ S
 endstream
 endobj
 27 0 obj
-2675
+2893
 endobj
 28 0 obj
 <<
@@ -893,8 +907,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Transfer Option Example Script) Tj
-1 0 0 1 451.88 797 Tm
-(transfer_option.pql) Tj
+1 0 0 1 403.52 797 Tm
+(examples/transfer_option.pql) Tj
 /F21 12 Tf
 1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
@@ -1060,8 +1074,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (4) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:46) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:22) Tj
 ET
 52 50 m
 543 50 l
@@ -1069,7 +1083,7 @@ S
 endstream
 endobj
 31 0 obj
-2429
+2437
 endobj
 32 0 obj
 <<
@@ -1104,7 +1118,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(transfer_option.pql) Tj
+(examples/transfer_option.pql) Tj
 1 0 0 1 392.96 797 Tm
 (Transfer Option Example Script) Tj
 /F21 12 Tf
@@ -1149,7 +1163,7 @@ BT
 (\) ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:46) Tj
+(16 November 2005 14:22) Tj
 1 0 0 1 537.44 37 Tm
 (5) Tj
 ET
@@ -1159,7 +1173,7 @@ S
 endstream
 endobj
 35 0 obj
-816
+824
 endobj
 36 0 obj
 <<
@@ -1196,12 +1210,12 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Transfer Option Example Script) Tj
-1 0 0 1 451.88 797 Tm
-(transfer_option.pql) Tj
+1 0 0 1 403.52 797 Tm
+(examples/transfer_option.pql) Tj
 /F21 12 Tf
 1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
-(5. TRANSFER_OPTION.PQL ) Tj
+(5. EXAMPLES/TRANSFER_OPTION.PQL ) Tj
 /F21 10 Tf
 1 0 0 1 52.0 714.0 Tm
 0.0000 Tw
@@ -1215,49 +1229,53 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 697.8 Tm
 0.0000 Tw
-(    pequeldoc\(pdf\) ) Tj
+(    prefix\(examples\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 689.4 Tm
 0.0000 Tw
-(    detail\(1\) ) Tj
+(    pequeldoc\(pdf\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 681.0 Tm
 0.0000 Tw
-(    script_name\(transfer_option.pql\) ) Tj
+(    detail\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 672.6 Tm
 0.0000 Tw
-(    header\(1\) ) Tj
+(    script_name\(examples/transfer_option.pql\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 664.2 Tm
 0.0000 Tw
-(    optimize\(1\) ) Tj
+(    header\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 655.8 Tm
 0.0000 Tw
-(    transfer\(1\) ) Tj
+(    optimize\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 647.4 Tm
 0.0000 Tw
-(    discard_header\(1\) ) Tj
+(    transfer\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 639.0 Tm
 0.0000 Tw
-(    default_datetype\(DD/MM/YYYY\) ) Tj
+(    discard_header\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 630.6 Tm
 0.0000 Tw
-(    doc_title\(Transfer Option Example Script\) ) Tj
+(    default_datetype\(DD/MM/YYYY\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 622.2 Tm
 0.0000 Tw
-(    doc_email\(sample@youraddress.com\) ) Tj
+(    doc_title\(Transfer Option Example Script\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 613.8 Tm
 0.0000 Tw
+(    doc_email\(sample@youraddress.com\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 605.4 Tm
+0.0000 Tw
 (    doc_version\(2.2\) ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 592.8 Tm
+1 0 0 1 52.0 584.4 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -1267,19 +1285,19 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 576.6 Tm
+1 0 0 1 76.0 568.2 Tm
 0.0000 Tw
 (    Demonstrates use of 'transfer' option ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 568.2 Tm
+1 0 0 1 76.0 559.8 Tm
 0.0000 Tw
 (    and &date\(\) macro. ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 559.8 Tm
+1 0 0 1 76.0 551.4 Tm
 0.0000 Tw
 (    Note the &date\(\) macro converts date values to YYYYMMDD format. ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 538.8 Tm
+1 0 0 1 52.0 530.4 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -1289,63 +1307,63 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 522.6 Tm
+1 0 0 1 76.0 514.2 Tm
 0.0000 Tw
 (    LOC_DESCRIPT NSW New South Wales ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 514.2 Tm
+1 0 0 1 76.0 505.8 Tm
 0.0000 Tw
 (    LOC_DESCRIPT WA Western Australia ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 505.8 Tm
+1 0 0 1 76.0 497.4 Tm
 0.0000 Tw
 (    LOC_DESCRIPT SYD Sydney ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 497.4 Tm
+1 0 0 1 76.0 489.0 Tm
 0.0000 Tw
 (    LOC_DESCRIPT MEL Melbourne ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 489.0 Tm
+1 0 0 1 76.0 480.6 Tm
 0.0000 Tw
 (    LOC_DESCRIPT SA South Australia ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 480.6 Tm
+1 0 0 1 76.0 472.2 Tm
 0.0000 Tw
 (    LOC_DESCRIPT NT Northern Territory ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 472.2 Tm
+1 0 0 1 76.0 463.8 Tm
 0.0000 Tw
 (    LOC_DESCRIPT QLD Queensland ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 463.8 Tm
+1 0 0 1 76.0 455.4 Tm
 0.0000 Tw
 (    LOC_DESCRIPT VIC Victoria ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 455.4 Tm
+1 0 0 1 76.0 447.0 Tm
 0.0000 Tw
 (    LOC_DESCRIPT PER Perth ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 447.0 Tm
+1 0 0 1 76.0 438.6 Tm
 0.0000 Tw
 (    LOC_DESCRIPT ALIC Alice Springs ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 430.2 Tm
+1 0 0 1 76.0 421.8 Tm
 0.0000 Tw
 (    LOC_DESCRIPTION WA Western Australia 4001 ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 421.8 Tm
+1 0 0 1 76.0 413.4 Tm
 0.0000 Tw
 (    LOC_DESCRIPTION NSW New South Wales 2061 ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 413.4 Tm
+1 0 0 1 76.0 405.0 Tm
 0.0000 Tw
 (    LOC_DESCRIPTION SA South Australia 3023 ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 405.0 Tm
+1 0 0 1 76.0 396.6 Tm
 0.0000 Tw
 (    LOC_DESCRIPTION QLD Queensland 6099 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 384.0 Tm
+1 0 0 1 52.0 375.6 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -1355,102 +1373,102 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 367.8 Tm
+1 0 0 1 76.0 359.4 Tm
 0.0000 Tw
 (    PRODUCT_CODE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 359.4 Tm
+1 0 0 1 76.0 351.0 Tm
 0.0000 Tw
 (    COST_PRICE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 351.0 Tm
+1 0 0 1 76.0 342.6 Tm
 0.0000 Tw
 (    DESCRIPTION ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 342.6 Tm
+1 0 0 1 76.0 334.2 Tm
 0.0000 Tw
 (    SALES_CODE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 334.2 Tm
+1 0 0 1 76.0 325.8 Tm
 0.0000 Tw
 (    SALES_PRICE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 325.8 Tm
+1 0 0 1 76.0 317.4 Tm
 0.0000 Tw
 (    SALES_QTY ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 317.4 Tm
+1 0 0 1 76.0 309.0 Tm
 0.0000 Tw
 (    SALES_DATE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 309.0 Tm
+1 0 0 1 76.0 300.6 Tm
 0.0000 Tw
 (    LOCATION ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 300.6 Tm
+1 0 0 1 76.0 292.2 Tm
 0.0000 Tw
 (    LDESCRIPT => %LOC_DESCRIPT\(LOCATION\) ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 283.8 Tm
+1 0 0 1 76.0 275.4 Tm
 0.0000 Tw
 (    ZIPCODE => %LOC_DESCRIPTION\(LOCATION\)->2 ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 267.0 Tm
+1 0 0 1 76.0 258.6 Tm
 0.0000 Tw
 (    SALES_TOTAL => SALES_PRICE * SALES_QTY ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 250.2 Tm
+1 0 0 1 76.0 241.8 Tm
 0.0000 Tw
 (    SALES_Q1 => \(&date\(SALES_DATE,YYMMMDD\) >= 20020101 && &date\(SALES_DATE\) <= 20020331\)  ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 241.8 Tm
+1 0 0 1 76.0 233.4 Tm
 0.0000 Tw
 (        ?  SALES_TOTAL  ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 233.4 Tm
+1 0 0 1 76.0 225.0 Tm
 0.0000 Tw
 (        :  0.0 ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 216.6 Tm
-0.0000 Tw
-(    SALES_Q2 => \(&date\(SALES_DATE\) >= 20020401 && &date\(SALES_DATE\) <= 30030631\)  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 208.2 Tm
 0.0000 Tw
-(        ?  SALES_TOTAL  ) Tj
+(    SALES_Q2 => \(&date\(SALES_DATE\) >= 20020401 && &date\(SALES_DATE\) <= 30030631\)  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 199.8 Tm
 0.0000 Tw
-(        :  0.0 ) Tj
+(        ?  SALES_TOTAL  ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 183.0 Tm
+1 0 0 1 76.0 191.4 Tm
 0.0000 Tw
-(    SALES_Q3 => \(&date\(SALES_DATE\) >= 20020701 && &date\(SALES_DATE\) <= 20020931\)  ) Tj
+(        :  0.0 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 174.6 Tm
 0.0000 Tw
-(        ?  SALES_TOTAL  ) Tj
+(    SALES_Q3 => \(&date\(SALES_DATE\) >= 20020701 && &date\(SALES_DATE\) <= 20020931\)  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 166.2 Tm
 0.0000 Tw
-(        :  0.0 ) Tj
+(        ?  SALES_TOTAL  ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 149.4 Tm
+1 0 0 1 76.0 157.8 Tm
 0.0000 Tw
-(    SALES_Q4 => \(&date\(SALES_DATE\) >= 20021001 && &date\(SALES_DATE\) <= 20021231\)  ) Tj
+(        :  0.0 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 141.0 Tm
 0.0000 Tw
-(        ?  SALES_TOTAL  ) Tj
+(    SALES_Q4 => \(&date\(SALES_DATE\) >= 20021001 && &date\(SALES_DATE\) <= 20021231\)  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 132.6 Tm
+0.0000 Tw
+(        ?  SALES_TOTAL  ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 124.2 Tm
 0.0000 Tw
 (        :  0.0 ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (6) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:46) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:22) Tj
 ET
 52 50 m
 543 50 l
@@ -1458,7 +1476,7 @@ S
 endstream
 endobj
 39 0 obj
-4967
+5064
 endobj
 40 0 obj
 <<
@@ -1493,7 +1511,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(transfer_option.pql) Tj
+(examples/transfer_option.pql) Tj
 1 0 0 1 392.96 797 Tm
 (Transfer Option Example Script) Tj
 /F21 12 Tf
@@ -1503,7 +1521,7 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 731.4 Tm
 0.0000 Tw
-( # vim: syntax=perl ts=4 sw=4 ) Tj
+( #!/usr/bin/perl ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 723.0 Tm
 0.0000 Tw
@@ -1511,319 +1529,319 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 714.6 Tm
 0.0000 Tw
-( #Generated By: pequel Version 2.2-9, Build: Tuesday September 13 08:43:08 BST 2005 ) Tj
+( # vim: syntax=perl ts=4 sw=4 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 706.2 Tm
 0.0000 Tw
-( #            : https://sourceforge.net/projects/pequel/ ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 697.8 Tm
 0.0000 Tw
-( #Script Name : transfer_option.pql ) Tj
+( #Generated By: pequel Version 2.4-5, Build: Wednesday November 16 21:56:42 GMT 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 689.4 Tm
 0.0000 Tw
-( #Created On  : Tue Sep 13 10:46:13 2005 ) Tj
+( #            : http://sourceforge.net/projects/pequel/ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 681.0 Tm
 0.0000 Tw
-( #For         :  ) Tj
+( #Script Name : transfer_option.pql ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 672.6 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #Created On  : Wed Nov 16 14:22:15 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 664.2 Tm
 0.0000 Tw
-( #Options: ) Tj
+( #Perl Version: /usr/bin/perl 5.6.1 on solaris ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 655.8 Tm
 0.0000 Tw
-( #pequeldoc\(pdf\) generate pod / pdf pequel script Reference Guide. ) Tj
+( #For         :  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 647.4 Tm
 0.0000 Tw
-( #detail\(1\) Include Pequel Generated Program chapter in Pequeldoc ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 639.0 Tm
 0.0000 Tw
-( #script_name\(transfer_option.pql\) script filename ) Tj
+( #Options: ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 630.6 Tm
 0.0000 Tw
-( #header\(1\) write header record to output. ) Tj
+( #prefix\(examples\) directory pathname prefix. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 622.2 Tm
 0.0000 Tw
-( #optimize\(1\) optimize generated code. ) Tj
+( #pequeldoc\(pdf\) generate pod / pdf pequel script Reference Guide. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 613.8 Tm
 0.0000 Tw
-( #transfer\(1\) Copy input \(including calculated fields\) to output. ) Tj
+( #detail\(1\) Include Pequel Generated Program chapter in Pequeldoc ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 605.4 Tm
 0.0000 Tw
-( #discard_header\(1\) Input file has header record - must be discarded. ) Tj
+( #script_name\(examples/transfer_option.pql\) script filename ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 597.0 Tm
 0.0000 Tw
-( #default_datetype\(DD/MM/YYYY\) default date format ) Tj
+( #header\(1\) write header record to output. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 588.6 Tm
 0.0000 Tw
-( #doc_title\(Transfer Option Example Script\) document title. ) Tj
+( #optimize\(1\) optimize generated code. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 580.2 Tm
 0.0000 Tw
-( #doc_email\(sample@youraddress.com\) document email entry. ) Tj
+( #transfer\(1\) Copy input \(including calculated fields\) to output. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 571.8 Tm
 0.0000 Tw
-( #doc_version\(2.2\) document version for pequel script. ) Tj
+( #discard_header\(1\) Input file has header record - must be discarded. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 563.4 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #default_datetype\(DD/MM/YYYY\) default date format ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 555.0 Tm
 0.0000 Tw
-( use strict; ) Tj
+( #doc_title\(Transfer Option Example Script\) document title. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 546.6 Tm
 0.0000 Tw
-( local $\\="\\n"; local $,="|"; ) Tj
+( #doc_email\(sample@youraddress.com\) document email entry. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 538.2 Tm
 0.0000 Tw
-( print STDERR '[transfer_option.pql ' . localtime\(\) . "] Init"; ) Tj
+( #doc_version\(2.2\) document version for pequel script. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 529.8 Tm
 0.0000 Tw
-( use constant VERBOSE => int 10000; ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 521.4 Tm
 0.0000 Tw
-( use constant LAST_ICELL => int 14; ) Tj
+( use strict; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 513.0 Tm
 0.0000 Tw
-( my @I_VAL; ) Tj
+( use constant _I_PRODUCT_CODE    => int    0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 504.6 Tm
 0.0000 Tw
-( my @O_VAL; ) Tj
+( use constant _I_COST_PRICE      => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 496.2 Tm
 0.0000 Tw
-( my %MONTH_NUM =  ) Tj
+( use constant _I_DESCRIPTION     => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 487.8 Tm
 0.0000 Tw
-( \( ) Tj
+( use constant _I_SALES_CODE      => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 479.4 Tm
 0.0000 Tw
-(     JAN => '01', ) Tj
+( use constant _I_SALES_PRICE     => int    4; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 471.0 Tm
 0.0000 Tw
-(     FEB => '02', ) Tj
+( use constant _I_SALES_QTY       => int    5; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 462.6 Tm
 0.0000 Tw
-(     MAR => '03', ) Tj
+( use constant _I_SALES_DATE      => int    6; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 454.2 Tm
 0.0000 Tw
-(     APR => '04', ) Tj
+( use constant _I_LOCATION        => int    7; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 445.8 Tm
 0.0000 Tw
-(     MAY => '05', ) Tj
+( use constant _I_LDESCRIPT       => int    8; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 437.4 Tm
 0.0000 Tw
-(     JUN => '06', ) Tj
+( use constant _I_ZIPCODE         => int    9; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 429.0 Tm
 0.0000 Tw
-(     JUL => '07', ) Tj
+( use constant _I_SALES_TOTAL     => int   10; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 420.6 Tm
 0.0000 Tw
-(     AUG => '08', ) Tj
+( use constant _I_SALES_Q1        => int   11; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 412.2 Tm
 0.0000 Tw
-(     SEP => '09', ) Tj
+( use constant _I_SALES_Q2        => int   12; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 403.8 Tm
 0.0000 Tw
-(     OCT => '10', ) Tj
+( use constant _I_SALES_Q3        => int   13; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 395.4 Tm
 0.0000 Tw
-(     NOV => '11', ) Tj
+( use constant _I_SALES_Q4        => int   14; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 387.0 Tm
 0.0000 Tw
-(     DEC => '12' ) Tj
+( use constant _T_LOC_DESCRIPT_FLD_1      => int    0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 378.6 Tm
 0.0000 Tw
-( \); ) Tj
+( use constant _T_LOC_DESCRIPTION_FLD_1   => int    0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 370.2 Tm
 0.0000 Tw
-( my %MONTH_NAME;  foreach my $m \(keys %MONTH_NUM\) \{ $MONTH_NAME\{$MONTH_NUM\{$m\}\} = $m; \} ) Tj
+( use constant _T_LOC_DESCRIPTION_FLD_2   => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 361.8 Tm
 0.0000 Tw
-( my $_TABLE_LOC_DESCRIPT = &InitLookupLOC_DESCRIPT; # ref to %$LOC_DESCRIPT hash ) Tj
+( use constant _I_LOC_DESCRIPT_LOCATION_FLD_KEY   => int   15; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 353.4 Tm
 0.0000 Tw
-( my $_TABLE_LOC_DESCRIPTION = &InitLookupLOC_DESCRIPTION; # ref to %$LOC_DESCRIPTION hash ) Tj
+( use constant _I_LOC_DESCRIPT_LOCATION_FLD_1     => int   16; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 345.0 Tm
 0.0000 Tw
-( use constant _I_PRODUCT_CODE    => int    0; ) Tj
+( use constant _I_LOC_DESCRIPTION_LOCATION_FLD_KEY => int   17; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 336.6 Tm
 0.0000 Tw
-( use constant _I_COST_PRICE      => int    1; ) Tj
+( use constant _I_LOC_DESCRIPTION_LOCATION_FLD_1  => int   18; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 328.2 Tm
 0.0000 Tw
-( use constant _I_DESCRIPTION     => int    2; ) Tj
+( use constant _I_LOC_DESCRIPTION_LOCATION_FLD_2  => int   19; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 319.8 Tm
 0.0000 Tw
-( use constant _I_SALES_CODE      => int    3; ) Tj
+( local $\\="\\n"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 311.4 Tm
 0.0000 Tw
-( use constant _I_SALES_PRICE     => int    4; ) Tj
+( local $,="|"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 303.0 Tm
 0.0000 Tw
-( use constant _I_SALES_QTY       => int    5; ) Tj
+( print STDERR '[examples/transfer_option.pql ' . localtime\(\) . "] Init"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 294.6 Tm
 0.0000 Tw
-( use constant _I_SALES_DATE      => int    6; ) Tj
+( use constant VERBOSE => int 10000; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 286.2 Tm
 0.0000 Tw
-( use constant _I_LOCATION        => int    7; ) Tj
+( use constant LAST_ICELL => int 14; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 277.8 Tm
 0.0000 Tw
-( use constant _I_LDESCRIPT       => int    8; ) Tj
+( my @I_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 269.4 Tm
 0.0000 Tw
-( use constant _I_ZIPCODE         => int    9; ) Tj
+( my @O_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 261.0 Tm
 0.0000 Tw
-( use constant _I_SALES_TOTAL     => int   10; ) Tj
+( my $_inprecs=0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 252.6 Tm
 0.0000 Tw
-( use constant _I_SALES_Q1        => int   11; ) Tj
+( my %MONTH_NUM =  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 244.2 Tm
 0.0000 Tw
-( use constant _I_SALES_Q2        => int   12; ) Tj
+( \( ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 235.8 Tm
 0.0000 Tw
-( use constant _I_SALES_Q3        => int   13; ) Tj
+(     JAN => '01', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 227.4 Tm
 0.0000 Tw
-( use constant _I_SALES_Q4        => int   14; ) Tj
+(     FEB => '02', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 219.0 Tm
 0.0000 Tw
-( use constant _T_LOC_DESCRIPT_FLD_1      => int    0; ) Tj
+(     MAR => '03', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 210.6 Tm
 0.0000 Tw
-( use constant _T_LOC_DESCRIPTION_FLD_1   => int    0; ) Tj
+(     APR => '04', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 202.2 Tm
 0.0000 Tw
-( use constant _T_LOC_DESCRIPTION_FLD_2   => int    1; ) Tj
+(     MAY => '05', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 193.8 Tm
 0.0000 Tw
-( use constant _I_LOC_DESCRIPT_LOCATION_FLD_KEY   => int   15; ) Tj
+(     JUN => '06', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 185.4 Tm
 0.0000 Tw
-( use constant _I_LOC_DESCRIPT_LOCATION_FLD_1     => int   16; ) Tj
+(     JUL => '07', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 177.0 Tm
 0.0000 Tw
-( use constant _I_LOC_DESCRIPTION_LOCATION_FLD_KEY => int   17; ) Tj
+(     AUG => '08', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 168.6 Tm
 0.0000 Tw
-( use constant _I_LOC_DESCRIPTION_LOCATION_FLD_1  => int   18; ) Tj
+(     SEP => '09', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 160.2 Tm
 0.0000 Tw
-( use constant _I_LOC_DESCRIPTION_LOCATION_FLD_2  => int   19; ) Tj
+(     OCT => '10', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 151.8 Tm
 0.0000 Tw
-( &PrintHeader\(\); ) Tj
+(     NOV => '11', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 143.4 Tm
 0.0000 Tw
-( my $discard_header = <STDIN>; ) Tj
+(     DEC => '12' ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 135.0 Tm
 0.0000 Tw
-( print STDERR '[transfer_option.pql ' . localtime\(\) . "] Start"; ) Tj
+( \); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 126.6 Tm
 0.0000 Tw
-( use Benchmark; ) Tj
+( my %MONTH_NAME;  foreach my $m \(keys %MONTH_NUM\) \{ $MONTH_NAME\{$MONTH_NUM\{$m\}\} = $m; \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 118.2 Tm
 0.0000 Tw
-( my $benchmark_start = new Benchmark; ) Tj
+( my $_TABLE_LOC_DESCRIPT = &InitLookupLOC_DESCRIPT; # ref to %$LOC_DESCRIPT hash ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 109.8 Tm
 0.0000 Tw
-( while \(<STDIN>\) ) Tj
+( my $_TABLE_LOC_DESCRIPTION = &InitLookupLOC_DESCRIPTION; # ref to %$LOC_DESCRIPTION hash ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 101.4 Tm
 0.0000 Tw
-( \{ ) Tj
+( &PrintHeader\(\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 93.0 Tm
 0.0000 Tw
-(     print STDERR '[transfer_option.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE == 0\); ) Tj
+( print STDERR '[examples/transfer_option.pql ' . localtime\(\) . "] Start"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 84.6 Tm
 0.0000 Tw
-(     chomp; ) Tj
+( use Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 76.2 Tm
 0.0000 Tw
-(     @I_VAL = split\("[|]", $_\); ) Tj
+( my $benchmark_start = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 67.8 Tm
 0.0000 Tw
-(     $I_VAL[_I_LDESCRIPT] = $$_TABLE_LOC_DESCRIPT\{qq\{$I_VAL[_I_LOCATION]\}\}; ) Tj
+( my $discard_header = <STDIN>; ) Tj
 /F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:46) Tj
+(16 November 2005 14:22) Tj
 1 0 0 1 537.44 37 Tm
 (7) Tj
 ET
@@ -1833,7 +1851,7 @@ S
 endstream
 endobj
 43 0 obj
-7735
+7752
 endobj
 44 0 obj
 <<
@@ -1868,76 +1886,76 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Transfer Option Example Script) Tj
-1 0 0 1 451.88 797 Tm
-(transfer_option.pql) Tj
+1 0 0 1 403.52 797 Tm
+(examples/transfer_option.pql) Tj
 /F10 7 Tf
 1 0 0 1 76.0 771.6 Tm
 0.0000 Tw
-(     $I_VAL[_I_ZIPCODE] = $\{$$_TABLE_LOC_DESCRIPTION\{qq\{$I_VAL[_I_LOCATION]\}\}\}[_T_LOC_DESCRIPTION_FLD_2]; ) Tj
+( while \(<STDIN>\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 763.2 Tm
 0.0000 Tw
-(     $I_VAL[_I_SALES_TOTAL] = $I_VAL[_I_SALES_PRICE] * $I_VAL[_I_SALES_QTY]; ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 754.8 Tm
 0.0000 Tw
-(     $I_VAL[_I_SALES_Q1] = \(scalar\(\(int\(substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 0, 2\)\) < 20 ? '20' : '19'\) . substr\(q ) Tj
+(     ++$_inprecs; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 746.4 Tm
 0.0000 Tw
-( q\{$I_VAL[_I_SALES_DATE]\}, 0, 2\). $MONTH_NUM\{substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 2, 3\)\}. substr\(qq\{$I_VAL[_I_SALE ) Tj
+(     print STDERR '[examples/transfer_option.pql ' . localtime\(\) . "] $_inprecs records." if \($_inprecs % VERBO ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 738.0 Tm
 0.0000 Tw
-( S_DATE]\}, 5, 2\)\) >= 20020101 && scalar\(substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 6, 4\). substr\(qq\{$I_VAL[_I_SALES_DATE ) Tj
+( SE == 0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 729.6 Tm
 0.0000 Tw
-( ]\}, 3, 2\). substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 0, 2\)\) <= 20020331\) ? $I_VAL[_I_SALES_TOTAL] : 0.0; ) Tj
+(     chomp; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 721.2 Tm
 0.0000 Tw
-(     $I_VAL[_I_SALES_Q2] = \(scalar\(substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 6, 4\). substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 3 ) Tj
+(     @I_VAL = split\("[|]", $_\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 712.8 Tm
 0.0000 Tw
-( , 2\). substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 0, 2\)\) >= 20020401 && scalar\(substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 6, 4\).  ) Tj
+(     $I_VAL[_I_LDESCRIPT] = $$_TABLE_LOC_DESCRIPT\{qq\{$I_VAL[_I_LOCATION]\}\}; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 704.4 Tm
 0.0000 Tw
-( substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 3, 2\). substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 0, 2\)\) <= 30030631\) ? $I_VAL[_I_SAL ) Tj
+(     $I_VAL[_I_ZIPCODE] = $\{$$_TABLE_LOC_DESCRIPTION\{qq\{$I_VAL[_I_LOCATION]\}\}\}[_T_LOC_DESCRIPTION_FLD_2]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 696.0 Tm
 0.0000 Tw
-( ES_TOTAL] : 0.0; ) Tj
+(     $I_VAL[_I_SALES_TOTAL] = $I_VAL[_I_SALES_PRICE] * $I_VAL[_I_SALES_QTY]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 687.6 Tm
 0.0000 Tw
-(     $I_VAL[_I_SALES_Q3] = \(scalar\(substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 6, 4\). substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 3 ) Tj
+(     $I_VAL[_I_SALES_Q1] = \(scalar\(\(int\(substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 0, 2\)\) < 20 ? '20' : '19'\) . substr\(q ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 679.2 Tm
 0.0000 Tw
-( , 2\). substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 0, 2\)\) >= 20020701 && scalar\(substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 6, 4\).  ) Tj
+( q\{$I_VAL[_I_SALES_DATE]\}, 0, 2\). $MONTH_NUM\{substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 2, 3\)\}. substr\(qq\{$I_VAL[_I_SALE ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 670.8 Tm
 0.0000 Tw
-( substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 3, 2\). substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 0, 2\)\) <= 20020931\) ? $I_VAL[_I_SAL ) Tj
+( S_DATE]\}, 5, 2\)\) >= 20020101 && scalar\(substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 6, 4\). substr\(qq\{$I_VAL[_I_SALES_DATE ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 662.4 Tm
 0.0000 Tw
-( ES_TOTAL] : 0.0; ) Tj
+( ]\}, 3, 2\). substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 0, 2\)\) <= 20020331\) ? $I_VAL[_I_SALES_TOTAL] : 0.0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 654.0 Tm
 0.0000 Tw
-(     $I_VAL[_I_SALES_Q4] = \(scalar\(substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 6, 4\). substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 3 ) Tj
+(     $I_VAL[_I_SALES_Q2] = \(scalar\(substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 6, 4\). substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 3 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 645.6 Tm
 0.0000 Tw
-( , 2\). substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 0, 2\)\) >= 20021001 && scalar\(substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 6, 4\).  ) Tj
+( , 2\). substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 0, 2\)\) >= 20020401 && scalar\(substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 6, 4\).  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 637.2 Tm
 0.0000 Tw
-( substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 3, 2\). substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 0, 2\)\) <= 20021231\) ? $I_VAL[_I_SAL ) Tj
+( substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 3, 2\). substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 0, 2\)\) <= 30030631\) ? $I_VAL[_I_SAL ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 628.8 Tm
 0.0000 Tw
@@ -1945,260 +1963,265 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 620.4 Tm
 0.0000 Tw
-(     print  ) Tj
+(     $I_VAL[_I_SALES_Q3] = \(scalar\(substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 6, 4\). substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 3 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 612.0 Tm
 0.0000 Tw
-(         @I_VAL[0..LAST_ICELL] ) Tj
+( , 2\). substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 0, 2\)\) >= 20020701 && scalar\(substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 6, 4\).  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 603.6 Tm
 0.0000 Tw
-(     ; ) Tj
+( substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 3, 2\). substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 0, 2\)\) <= 20020931\) ? $I_VAL[_I_SAL ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 595.2 Tm
 0.0000 Tw
-( \} ) Tj
+( ES_TOTAL] : 0.0; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 586.8 Tm
+0.0000 Tw
+(     $I_VAL[_I_SALES_Q4] = \(scalar\(substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 6, 4\). substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 3 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 578.4 Tm
 0.0000 Tw
-( print STDERR '[transfer_option.pql ' . localtime\(\) . "] $. records."; ) Tj
+( , 2\). substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 0, 2\)\) >= 20021001 && scalar\(substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 6, 4\).  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 570.0 Tm
 0.0000 Tw
-( my $benchmark_end = new Benchmark; ) Tj
+( substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 3, 2\). substr\(qq\{$I_VAL[_I_SALES_DATE]\}, 0, 2\)\) <= 20021231\) ? $I_VAL[_I_SAL ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 561.6 Tm
 0.0000 Tw
-( my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+( ES_TOTAL] : 0.0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 553.2 Tm
 0.0000 Tw
-( print STDERR '[transfer_option.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark_timediff\)]\}"; ) Tj
+(     print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 544.8 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+(         @I_VAL[0..LAST_ICELL] ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 536.4 Tm
 0.0000 Tw
-( #++++++ Table LOC_DESCRIPT --> Type :Pequel::Type::Table::Local ++++++ ) Tj
+(     ; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 528.0 Tm
 0.0000 Tw
-( sub InitLookupLOC_DESCRIPT ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 519.6 Tm
-0.0000 Tw
-( \{ ) Tj
+( \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 511.2 Tm
 0.0000 Tw
-(     my %_TABLE_LOC_DESCRIPT; ) Tj
+( close\(STDIN\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 502.8 Tm
 0.0000 Tw
-(     %_TABLE_LOC_DESCRIPT = ) Tj
+( print STDERR '[examples/transfer_option.pql ' . localtime\(\) . "] $_inprecs records."; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 494.4 Tm
 0.0000 Tw
-(     \( ) Tj
+( my $benchmark_end = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 486.0 Tm
 0.0000 Tw
-(         'ALIC' => 'Alice Springs', ) Tj
+( my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 477.6 Tm
 0.0000 Tw
-(         'MEL' => 'Melbourne', ) Tj
+( print STDERR '[examples/transfer_option.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark_timedi ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 469.2 Tm
 0.0000 Tw
-(         'NSW' => 'New South Wales', ) Tj
+( ff\)]\}"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 460.8 Tm
 0.0000 Tw
-(         'NT' => 'Northern Territory', ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 452.4 Tm
 0.0000 Tw
-(         'PER' => 'Perth', ) Tj
+( #++++++ Table LOC_DESCRIPT --> Type :ETL::Pequel::Type::Table::Local ++++++ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 444.0 Tm
 0.0000 Tw
-(         'QLD' => 'Queensland', ) Tj
+( sub InitLookupLOC_DESCRIPT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 435.6 Tm
 0.0000 Tw
-(         'SA' => 'South Australia', ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 427.2 Tm
 0.0000 Tw
-(         'SYD' => 'Sydney', ) Tj
+(     my %_TABLE_LOC_DESCRIPT; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 418.8 Tm
 0.0000 Tw
-(         'VIC' => 'Victoria', ) Tj
+(     %_TABLE_LOC_DESCRIPT = ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 410.4 Tm
 0.0000 Tw
-(         'WA' => 'Western Australia' ) Tj
+(     \( ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 402.0 Tm
 0.0000 Tw
-(     \); ) Tj
+(         'ALIC' => 'Alice Springs', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 393.6 Tm
 0.0000 Tw
-(     return \\%_TABLE_LOC_DESCRIPT; ) Tj
+(         'MEL' => 'Melbourne', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 385.2 Tm
 0.0000 Tw
-( \} ) Tj
+(         'NSW' => 'New South Wales', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 376.8 Tm
+0.0000 Tw
+(         'NT' => 'Northern Territory', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 368.4 Tm
 0.0000 Tw
-( #++++++ Table LOC_DESCRIPTION --> Type :Pequel::Type::Table::Local ++++++ ) Tj
+(         'PER' => 'Perth', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 360.0 Tm
 0.0000 Tw
-( sub InitLookupLOC_DESCRIPTION ) Tj
+(         'QLD' => 'Queensland', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 351.6 Tm
 0.0000 Tw
-( \{ ) Tj
+(         'SA' => 'South Australia', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 343.2 Tm
 0.0000 Tw
-(     my %_TABLE_LOC_DESCRIPTION; ) Tj
+(         'SYD' => 'Sydney', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 334.8 Tm
 0.0000 Tw
-(     %_TABLE_LOC_DESCRIPTION = ) Tj
+(         'VIC' => 'Victoria', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 326.4 Tm
 0.0000 Tw
-(     \( ) Tj
+(         'WA' => 'Western Australia' ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 318.0 Tm
 0.0000 Tw
-(         'NSW' => ['New South Wales', '2061'], ) Tj
+(     \); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 309.6 Tm
 0.0000 Tw
-(         'QLD' => ['Queensland', '6099'], ) Tj
+(     return \\%_TABLE_LOC_DESCRIPT; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 301.2 Tm
 0.0000 Tw
-(         'SA' => ['South Australia', '3023'], ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 292.8 Tm
-0.0000 Tw
-(         'WA' => ['Western Australia', '4001'] ) Tj
+( \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 284.4 Tm
 0.0000 Tw
-(     \); ) Tj
+( #++++++ Table LOC_DESCRIPTION --> Type :ETL::Pequel::Type::Table::Local ++++++ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 276.0 Tm
 0.0000 Tw
-(     return \\%_TABLE_LOC_DESCRIPTION; ) Tj
+( sub InitLookupLOC_DESCRIPTION ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 267.6 Tm
 0.0000 Tw
-( \} ) Tj
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 259.2 Tm
+0.0000 Tw
+(     my %_TABLE_LOC_DESCRIPTION; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 250.8 Tm
 0.0000 Tw
-( sub PrintHeader ) Tj
+(     %_TABLE_LOC_DESCRIPTION = ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 242.4 Tm
 0.0000 Tw
-( \{ ) Tj
+(     \( ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 234.0 Tm
 0.0000 Tw
-(     local $\\="\\n"; ) Tj
+(         'NSW' => ['New South Wales', '2061'], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 225.6 Tm
 0.0000 Tw
-(     local $,="|"; ) Tj
+(         'QLD' => ['Queensland', '6099'], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 217.2 Tm
 0.0000 Tw
-(     print  ) Tj
+(         'SA' => ['South Australia', '3023'], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 208.8 Tm
 0.0000 Tw
-(         'PRODUCT_CODE', ) Tj
+(         'WA' => ['Western Australia', '4001'] ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 200.4 Tm
 0.0000 Tw
-(         'COST_PRICE', ) Tj
+(     \); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 192.0 Tm
 0.0000 Tw
-(         'DESCRIPTION', ) Tj
+(     return \\%_TABLE_LOC_DESCRIPTION; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 183.6 Tm
 0.0000 Tw
-(         'SALES_CODE', ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 175.2 Tm
-0.0000 Tw
-(         'SALES_PRICE', ) Tj
+( \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 166.8 Tm
 0.0000 Tw
-(         'SALES_QTY', ) Tj
+( sub PrintHeader ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 158.4 Tm
 0.0000 Tw
-(         'SALES_DATE', ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 150.0 Tm
 0.0000 Tw
-(         'LOCATION', ) Tj
+(     local $\\="\\n"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 141.6 Tm
 0.0000 Tw
-(         'LDESCRIPT', ) Tj
+(     local $,="|"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 133.2 Tm
 0.0000 Tw
-(         'ZIPCODE', ) Tj
+(     print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 124.8 Tm
 0.0000 Tw
-(         'SALES_TOTAL', ) Tj
+(         'PRODUCT_CODE', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 116.4 Tm
 0.0000 Tw
-(         'SALES_Q1', ) Tj
+(         'COST_PRICE', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 108.0 Tm
 0.0000 Tw
-(         'SALES_Q2', ) Tj
+(         'DESCRIPTION', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 99.6 Tm
 0.0000 Tw
-(         'SALES_Q3', ) Tj
+(         'SALES_CODE', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 91.2 Tm
 0.0000 Tw
-(         'SALES_Q4' ) Tj
+(         'SALES_PRICE', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 82.8 Tm
 0.0000 Tw
-(         ; ) Tj
+(         'SALES_QTY', ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 74.4 Tm
 0.0000 Tw
-( \} ) Tj
+(         'SALES_DATE', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 66.0 Tm
+0.0000 Tw
+(         'LOCATION', ) Tj
+/F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (8) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:46) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:22) Tj
 ET
 52 50 m
 543 50 l
@@ -2206,7 +2229,7 @@ S
 endstream
 endobj
 47 0 obj
-7820
+8081
 endobj
 48 0 obj
 <<
@@ -2240,9 +2263,94 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(transfer_option.pql) Tj
+(examples/transfer_option.pql) Tj
 1 0 0 1 392.96 797 Tm
 (Transfer Option Example Script) Tj
+/F10 7 Tf
+1 0 0 1 76.0 771.6 Tm
+0.0000 Tw
+(         'LDESCRIPT', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 763.2 Tm
+0.0000 Tw
+(         'ZIPCODE', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 754.8 Tm
+0.0000 Tw
+(         'SALES_TOTAL', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 746.4 Tm
+0.0000 Tw
+(         'SALES_Q1', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 738.0 Tm
+0.0000 Tw
+(         'SALES_Q2', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 729.6 Tm
+0.0000 Tw
+(         'SALES_Q3', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 721.2 Tm
+0.0000 Tw
+(         'SALES_Q4' ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 712.8 Tm
+0.0000 Tw
+(         ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 704.4 Tm
+0.0000 Tw
+( \} ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(16 November 2005 14:22) Tj
+1 0 0 1 537.44 37 Tm
+(9) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+51 0 obj
+880
+endobj
+52 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F10 10 0 R
+/F21 15 0 R
+>>
+>>
+endobj
+53 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 52 0 R
+/Contents 50 0 R
+>>
+endobj
+54 0 obj
+<<
+/Length 55 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Transfer Option Example Script) Tj
+1 0 0 1 403.52 797 Tm
+(examples/transfer_option.pql) Tj
 /F21 12 Tf
 1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
@@ -2312,19 +2420,19 @@ BT
 (the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:46) Tj
-1 0 0 1 537.44 37 Tm
-(9) Tj
+(10) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:22) Tj
 ET
 52 50 m
 543 50 l
 S
 endstream
 endobj
-51 0 obj
-2228
+55 0 obj
+2237
 endobj
-52 0 obj
+56 0 obj
 <<
 /ProcSet [/PDF /Text]
 /ColorSpace <</DefaultRGB 1 0 R>>
@@ -2333,54 +2441,6 @@ endobj
 /F20 14 0 R
 /F21 15 0 R
 /F23 17 0 R
->>
->>
-endobj
-53 0 obj
-<<
-/Type /Page
-/Parent 4 0 R
-/Resources 52 0 R
-/Contents 50 0 R
->>
-endobj
-54 0 obj
-<<
-/Length 55 0 R
->>
-stream
-52 792 m
-543 792 l
-S
-BT
-0 G
-1 i 0 J 0 j 0.1 w 10 M []0 d
-/F21 10 Tf
-1 0 0 1 52 797 Tm
-(Transfer Option Example Script) Tj
-1 0 0 1 451.88 797 Tm
-(transfer_option.pql) Tj
-/F21 10 Tf
-1 0 0 1 52 37 Tm
-(10) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:46) Tj
-ET
-52 50 m
-543 50 l
-S
-endstream
-endobj
-55 0 obj
-277
-endobj
-56 0 obj
-<<
-/ProcSet [/PDF /Text]
-/ColorSpace <</DefaultRGB 1 0 R>>
-/Font
-<<
-/F21 15 0 R
 >>
 >>
 endobj
@@ -2395,6 +2455,102 @@ endobj
 58 0 obj
 <<
 /Length 59 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(examples/transfer_option.pql) Tj
+1 0 0 1 392.96 797 Tm
+(Transfer Option Example Script) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(16 November 2005 14:22) Tj
+1 0 0 1 531.88 37 Tm
+(11) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+59 0 obj
+285
+endobj
+60 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F21 15 0 R
+>>
+>>
+endobj
+61 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 60 0 R
+/Contents 58 0 R
+>>
+endobj
+62 0 obj
+<<
+/Length 63 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Transfer Option Example Script) Tj
+1 0 0 1 403.52 797 Tm
+(examples/transfer_option.pql) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(12) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:22) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+63 0 obj
+285
+endobj
+64 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F21 15 0 R
+>>
+>>
+endobj
+65 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 64 0 R
+/Contents 62 0 R
+>>
+endobj
+66 0 obj
+<<
+/Length 67 0 R
 >>
 stream
 S
@@ -2702,7 +2858,7 @@ f
 Q
 BT
 1 0 0 1 100 386 Tm
-(2.1 pequeldoc) Tj
+(2.1 prefix) Tj
 1 0 0 1 513.44 386 Tm
 (3) Tj
 ET
@@ -2713,7 +2869,7 @@ f
 Q
 BT
 1 0 0 1 100 374 Tm
-(2.2 detail) Tj
+(2.2 pequeldoc) Tj
 1 0 0 1 513.44 374 Tm
 (3) Tj
 ET
@@ -2724,7 +2880,7 @@ f
 Q
 BT
 1 0 0 1 100 362 Tm
-(2.3 script_name) Tj
+(2.3 detail) Tj
 1 0 0 1 513.44 362 Tm
 (3) Tj
 ET
@@ -2735,7 +2891,7 @@ f
 Q
 BT
 1 0 0 1 100 350 Tm
-(2.4 header) Tj
+(2.4 script_name) Tj
 1 0 0 1 513.44 350 Tm
 (3) Tj
 ET
@@ -2746,7 +2902,7 @@ f
 Q
 BT
 1 0 0 1 100 338 Tm
-(2.5 optimize) Tj
+(2.5 header) Tj
 1 0 0 1 513.44 338 Tm
 (3) Tj
 ET
@@ -2757,7 +2913,7 @@ f
 Q
 BT
 1 0 0 1 100 326 Tm
-(2.6 transfer) Tj
+(2.6 optimize) Tj
 1 0 0 1 513.44 326 Tm
 (3) Tj
 ET
@@ -2768,7 +2924,7 @@ f
 Q
 BT
 1 0 0 1 100 314 Tm
-(2.7 discard_header) Tj
+(2.7 transfer) Tj
 1 0 0 1 513.44 314 Tm
 (3) Tj
 ET
@@ -2779,7 +2935,7 @@ f
 Q
 BT
 1 0 0 1 100 302 Tm
-(2.8 default_datetype) Tj
+(2.8 discard_header) Tj
 1 0 0 1 513.44 302 Tm
 (3) Tj
 ET
@@ -2790,7 +2946,7 @@ f
 Q
 BT
 1 0 0 1 100 290 Tm
-(2.9 doc_title) Tj
+(2.9 default_datetype) Tj
 1 0 0 1 513.44 290 Tm
 (3) Tj
 ET
@@ -2801,7 +2957,7 @@ f
 Q
 BT
 1 0 0 1 100 278 Tm
-(2.10 doc_email) Tj
+(2.10 doc_title) Tj
 1 0 0 1 513.44 278 Tm
 (3) Tj
 ET
@@ -2812,7 +2968,7 @@ f
 Q
 BT
 1 0 0 1 100 266 Tm
-(2.11 doc_version) Tj
+(2.11 doc_email) Tj
 1 0 0 1 513.44 266 Tm
 (3) Tj
 ET
@@ -2822,10 +2978,10 @@ q
 f
 Q
 BT
-1 0 0 1 76 254 Tm
-(3. TABLES) Tj
+1 0 0 1 100 254 Tm
+(2.12 doc_version) Tj
 1 0 0 1 513.44 254 Tm
-(4) Tj
+(3) Tj
 ET
 q
 0.95 g
@@ -2833,8 +2989,8 @@ q
 f
 Q
 BT
-1 0 0 1 100 242 Tm
-(3.1 LOC_DESCRIPT) Tj
+1 0 0 1 76 242 Tm
+(3. TABLES) Tj
 1 0 0 1 513.44 242 Tm
 (4) Tj
 ET
@@ -2844,8 +3000,8 @@ q
 f
 Q
 BT
-1 0 0 1 124 230 Tm
-(Data) Tj
+1 0 0 1 100 230 Tm
+(3.1 LOC_DESCRIPT) Tj
 1 0 0 1 513.44 230 Tm
 (4) Tj
 ET
@@ -2855,8 +3011,8 @@ q
 f
 Q
 BT
-1 0 0 1 100 218 Tm
-(3.2 LOC_DESCRIPTION) Tj
+1 0 0 1 124 218 Tm
+(Data) Tj
 1 0 0 1 513.44 218 Tm
 (4) Tj
 ET
@@ -2866,8 +3022,8 @@ q
 f
 Q
 BT
-1 0 0 1 124 206 Tm
-(Data) Tj
+1 0 0 1 100 206 Tm
+(3.2 LOC_DESCRIPTION) Tj
 1 0 0 1 513.44 206 Tm
 (4) Tj
 ET
@@ -2877,10 +3033,10 @@ q
 f
 Q
 BT
-1 0 0 1 76 194 Tm
-(4. TABLE INFORMATION SUMMARY) Tj
+1 0 0 1 124 194 Tm
+(Data) Tj
 1 0 0 1 513.44 194 Tm
-(5) Tj
+(4) Tj
 ET
 q
 1 g
@@ -2888,8 +3044,8 @@ q
 f
 Q
 BT
-1 0 0 1 100 182 Tm
-(4.1 Table List Sorted By Table Name) Tj
+1 0 0 1 76 182 Tm
+(4. TABLE INFORMATION SUMMARY) Tj
 1 0 0 1 513.44 182 Tm
 (5) Tj
 ET
@@ -2899,10 +3055,10 @@ q
 f
 Q
 BT
-1 0 0 1 76 170 Tm
-(5. TRANSFER_OPTION.PQL) Tj
+1 0 0 1 100 170 Tm
+(4.1 Table List Sorted By Table Name) Tj
 1 0 0 1 513.44 170 Tm
-(6) Tj
+(5) Tj
 ET
 q
 1 g
@@ -2910,8 +3066,8 @@ q
 f
 Q
 BT
-1 0 0 1 100 158 Tm
-(options) Tj
+1 0 0 1 76 158 Tm
+(5. EXAMPLES/TRANSFER_OPTION.PQL) Tj
 1 0 0 1 513.44 158 Tm
 (6) Tj
 ET
@@ -2922,7 +3078,7 @@ f
 Q
 BT
 1 0 0 1 100 146 Tm
-(description) Tj
+(options) Tj
 1 0 0 1 513.44 146 Tm
 (6) Tj
 ET
@@ -2933,7 +3089,7 @@ f
 Q
 BT
 1 0 0 1 100 134 Tm
-(init table) Tj
+(description) Tj
 1 0 0 1 513.44 134 Tm
 (6) Tj
 ET
@@ -2944,7 +3100,7 @@ f
 Q
 BT
 1 0 0 1 100 122 Tm
-(input section) Tj
+(init table) Tj
 1 0 0 1 513.44 122 Tm
 (6) Tj
 ET
@@ -2954,10 +3110,10 @@ q
 f
 Q
 BT
-1 0 0 1 76 110 Tm
-(6. PEQUEL GENERATED PROGRAM) Tj
+1 0 0 1 100 110 Tm
+(input section) Tj
 1 0 0 1 513.44 110 Tm
-(7) Tj
+(6) Tj
 ET
 q
 0.95 g
@@ -2966,9 +3122,9 @@ f
 Q
 BT
 1 0 0 1 76 98 Tm
-(7. ABOUT PEQUEL) Tj
+(6. PEQUEL GENERATED PROGRAM) Tj
 1 0 0 1 513.44 98 Tm
-(9) Tj
+(7) Tj
 ET
 q
 1 g
@@ -2976,13 +3132,24 @@ q
 f
 Q
 BT
-1 0 0 1 100 86 Tm
+1 0 0 1 76 86 Tm
+(7. ABOUT PEQUEL) Tj
+1 0 0 1 507.88 86 Tm
+(10) Tj
+ET
+q
+0.95 g
+52 71 491 12 re
+f
+Q
+BT
+1 0 0 1 100 74 Tm
 (COPYRIGHT) Tj
-1 0 0 1 513.44 86 Tm
-(9) Tj
+1 0 0 1 507.88 74 Tm
+(10) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:46) Tj
+(16 November 2005 14:22) Tj
 1 0 0 1 540.22 37 Tm
 (i) Tj
 ET
@@ -2991,10 +3158,10 @@ ET
 S
 endstream
 endobj
-59 0 obj
-5689
+67 0 obj
+5797
 endobj
-60 0 obj
+68 0 obj
 <<
 /ProcSet [/PDF /Text]
 /ColorSpace <</DefaultRGB 1 0 R>>
@@ -3005,17 +3172,17 @@ endobj
 >>
 >>
 endobj
-61 0 obj
+69 0 obj
 <<
 /Type /Page
 /Parent 4 0 R
-/Resources 60 0 R
-/Contents 58 0 R
+/Resources 68 0 R
+/Contents 66 0 R
 >>
 endobj
-62 0 obj
+70 0 obj
 <<
-/Length 63 0 R
+/Length 71 0 R
 >>
 stream
 52 792 m
@@ -3032,114 +3199,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (ii) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:46) Tj
-ET
-52 50 m
-543 50 l
-S
-endstream
-endobj
-63 0 obj
-275
-endobj
-64 0 obj
-<<
-/ProcSet [/PDF /Text]
-/ColorSpace <</DefaultRGB 1 0 R>>
-/Font
-<<
-/F21 15 0 R
->>
->>
-endobj
-65 0 obj
-<<
-/Type /Page
-/Parent 4 0 R
-/Resources 64 0 R
-/Contents 62 0 R
->>
-endobj
-66 0 obj
-<<
-/Type /Page
-/Parent 4 0 R
-/Resources 69 0 R
-/Contents 67 0 R
->>
-endobj
-67 0 obj
-<<
-/Length 68 0 R
->>
-stream
-q
-1 0 0 rg
-180 626 8 130 re
-F
-Q
-0 G
-1 i 0 J 0 j 0.1 w 10 M []0 d
-210 626 m
-543 626 l
-s
-BT
-/F21 24 Tf
-1 0 0 1 210 706 Tm
-0 -30 TD
-(transfer_option.pql) Tj
-T* (by ) Tj
-0 0 0.8 rg
-/F22 12 Tf
-(Pequel) Tj
-/F21 9 Tf
-T* (sample@youraddress.com) Tj
-/F20 20 Tf
-0 g
-1 0 0 1 158.01 371 Tm
-(Transfer Option Example Script) Tj
-/F21 9 Tf
-T* (2.2) Tj
-ET
-endstream
-endobj
-68 0 obj
-339
-endobj
-69 0 obj
-<<
-/ProcSet [/PDF /Text]
-/ColorSpace <</DefaultRGB 1 0 R>>
-/Font
-<<
-/F20 14 0 R
-/F21 15 0 R
-/F22 16 0 R
->>
->>
-endobj
-70 0 obj
-<<
-/Length 71 0 R
->>
-stream
-52 792 m
-543 792 l
-S
-BT
-0 G
-1 i 0 J 0 j 0.1 w 10 M []0 d
-/F21 10 Tf
-1 0 0 1 52 797 Tm
-(transfer_option.pql) Tj
-1 0 0 1 392.96 797 Tm
-(Transfer Option Example Script) Tj
-/F21 10 Tf
-1 0 0 1 52 37 Tm
-(13 September 2005 10:46) Tj
-1 0 0 1 543 37 Tm
-() Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:22) Tj
 ET
 52 50 m
 543 50 l
@@ -3147,7 +3208,7 @@ S
 endstream
 endobj
 71 0 obj
-272
+274
 endobj
 72 0 obj
 <<
@@ -3167,503 +3228,618 @@ endobj
 /Contents 70 0 R
 >>
 endobj
-75 0 obj
+74 0 obj
 <<
-/Parent 74 0 R
-/Dest [61 0 R /Fit]
-/First 76 0 R
-/Last 126 0 R
-/Count 52 
-/Title (Table of Contents)
+/Type /Page
+/Parent 4 0 R
+/Resources 77 0 R
+/Contents 75 0 R
 >>
 endobj
-76 0 obj
+75 0 obj
 <<
-/Parent 75 0 R
-/Dest [21 0 R /FitH 764.4]
-/Next 77 0 R
-/Title (SCRIPT NAME)
+/Length 76 0 R
 >>
+stream
+q
+1 0 0 rg
+180 626 8 130 re
+F
+Q
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+210 626 m
+543 626 l
+s
+BT
+/F21 24 Tf
+1 0 0 1 210 706 Tm
+0 -30 TD
+(examples/transfer_option.pql) Tj
+T* (by ) Tj
+0 0 0.8 rg
+/F22 12 Tf
+(Pequel) Tj
+/F21 9 Tf
+T* (sample@youraddress.com) Tj
+/F20 20 Tf
+0 g
+1 0 0 1 158.01 371 Tm
+(Transfer Option Example Script) Tj
+/F21 9 Tf
+T* (2.2) Tj
+ET
+endstream
+endobj
+76 0 obj
+348
 endobj
 77 0 obj
 <<
-/Parent 75 0 R
-/Dest [21 0 R /FitH 720]
-/Previous 76 0 R
-/Next 78 0 R
-/Title (DESCRIPTION)
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F20 14 0 R
+/F21 15 0 R
+/F22 16 0 R
+>>
 >>
 endobj
 78 0 obj
 <<
-/Parent 75 0 R
-/Dest [21 0 R /FitH 663.6]
-/Previous 77 0 R
-/Next 101 0 R
-/First 79 0 R
-/Last 99 0 R
-/Count 22 
-/Title (1. PROCESS DETAILS)
+/Length 79 0 R
 >>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(examples/transfer_option.pql) Tj
+1 0 0 1 392.96 797 Tm
+(Transfer Option Example Script) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(16 November 2005 14:22) Tj
+1 0 0 1 543 37 Tm
+() Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
 endobj
 79 0 obj
-<<
-/Parent 78 0 R
-/Dest [21 0 R /FitH 556.8]
-/Next 80 0 R
-/Title (1.1 PRODUCT_CODE)
->>
+280
 endobj
 80 0 obj
 <<
-/Parent 78 0 R
-/Dest [21 0 R /FitH 514.8]
-/Previous 79 0 R
-/Next 81 0 R
-/Title (1.2 COST_PRICE)
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F21 15 0 R
+>>
 >>
 endobj
 81 0 obj
 <<
-/Parent 78 0 R
-/Dest [21 0 R /FitH 472.8]
-/Previous 80 0 R
-/Next 82 0 R
-/Title (1.3 DESCRIPTION)
->>
-endobj
-82 0 obj
-<<
-/Parent 78 0 R
-/Dest [21 0 R /FitH 430.8]
-/Previous 81 0 R
-/Next 83 0 R
-/Title (1.4 SALES_CODE)
+/Type /Page
+/Parent 4 0 R
+/Resources 80 0 R
+/Contents 78 0 R
 >>
 endobj
 83 0 obj
 <<
-/Parent 78 0 R
-/Dest [21 0 R /FitH 388.8]
-/Previous 82 0 R
-/Next 84 0 R
-/Title (1.5 SALES_PRICE)
+/Parent 82 0 R
+/Dest [69 0 R /Fit]
+/First 84 0 R
+/Last 135 0 R
+/Count 53 
+/Title (Table of Contents)
 >>
 endobj
 84 0 obj
 <<
-/Parent 78 0 R
-/Dest [21 0 R /FitH 346.8]
-/Previous 83 0 R
+/Parent 83 0 R
+/Dest [21 0 R /FitH 764.4]
 /Next 85 0 R
-/Title (1.6 SALES_QTY)
+/Title (SCRIPT NAME)
 >>
 endobj
 85 0 obj
 <<
-/Parent 78 0 R
-/Dest [21 0 R /FitH 304.8]
+/Parent 83 0 R
+/Dest [21 0 R /FitH 720]
 /Previous 84 0 R
 /Next 86 0 R
-/Title (1.7 SALES_DATE)
+/Title (DESCRIPTION)
 >>
 endobj
 86 0 obj
 <<
-/Parent 78 0 R
-/Dest [21 0 R /FitH 262.8]
+/Parent 83 0 R
+/Dest [21 0 R /FitH 663.6]
 /Previous 85 0 R
-/Next 87 0 R
-/Title (1.8 LOCATION)
+/Next 109 0 R
+/First 87 0 R
+/Last 107 0 R
+/Count 22 
+/Title (1. PROCESS DETAILS)
 >>
 endobj
 87 0 obj
 <<
-/Parent 78 0 R
-/Dest [21 0 R /FitH 220.8]
-/Previous 86 0 R
-/Next 89 0 R
-/First 88 0 R
-/Last 88 0 R
-/Count 1 
-/Title (1.9 LDESCRIPT)
+/Parent 86 0 R
+/Dest [21 0 R /FitH 556.8]
+/Next 88 0 R
+/Title (1.1 PRODUCT_CODE)
 >>
 endobj
 88 0 obj
 <<
-/Parent 87 0 R
-/Dest [21 0 R /FitH 194.4]
-/Title (Derived Field Evaluation)
+/Parent 86 0 R
+/Dest [21 0 R /FitH 514.8]
+/Previous 87 0 R
+/Next 89 0 R
+/Title (1.2 COST_PRICE)
 >>
 endobj
 89 0 obj
 <<
-/Parent 78 0 R
-/Dest [21 0 R /FitH 157.2]
-/Previous 87 0 R
-/Next 91 0 R
-/First 90 0 R
-/Last 90 0 R
-/Count 1 
-/Title (1.10 ZIPCODE)
+/Parent 86 0 R
+/Dest [21 0 R /FitH 472.8]
+/Previous 88 0 R
+/Next 90 0 R
+/Title (1.3 DESCRIPTION)
 >>
 endobj
 90 0 obj
 <<
-/Parent 89 0 R
-/Dest [21 0 R /FitH 130.8]
-/Title (Derived Field Evaluation)
+/Parent 86 0 R
+/Dest [21 0 R /FitH 430.8]
+/Previous 89 0 R
+/Next 91 0 R
+/Title (1.4 SALES_CODE)
 >>
 endobj
 91 0 obj
 <<
-/Parent 78 0 R
-/Dest [25 0 R /FitH 792]
-/Previous 89 0 R
-/Next 93 0 R
-/First 92 0 R
-/Last 92 0 R
-/Count 1 
-/Title (1.11 SALES_TOTAL)
+/Parent 86 0 R
+/Dest [21 0 R /FitH 388.8]
+/Previous 90 0 R
+/Next 92 0 R
+/Title (1.5 SALES_PRICE)
 >>
 endobj
 92 0 obj
 <<
-/Parent 91 0 R
-/Dest [25 0 R /FitH 765.6]
-/Title (Derived Field Evaluation)
+/Parent 86 0 R
+/Dest [21 0 R /FitH 346.8]
+/Previous 91 0 R
+/Next 93 0 R
+/Title (1.6 SALES_QTY)
 >>
 endobj
 93 0 obj
 <<
-/Parent 78 0 R
-/Dest [25 0 R /FitH 728.4]
-/Previous 91 0 R
-/Next 95 0 R
-/First 94 0 R
-/Last 94 0 R
-/Count 1 
-/Title (1.12 SALES_Q1)
+/Parent 86 0 R
+/Dest [21 0 R /FitH 304.8]
+/Previous 92 0 R
+/Next 94 0 R
+/Title (1.7 SALES_DATE)
 >>
 endobj
 94 0 obj
 <<
-/Parent 93 0 R
-/Dest [25 0 R /FitH 702]
-/Title (Derived Field Evaluation)
+/Parent 86 0 R
+/Dest [21 0 R /FitH 262.8]
+/Previous 93 0 R
+/Next 95 0 R
+/Title (1.8 LOCATION)
 >>
 endobj
 95 0 obj
 <<
-/Parent 78 0 R
-/Dest [25 0 R /FitH 648]
-/Previous 93 0 R
+/Parent 86 0 R
+/Dest [21 0 R /FitH 220.8]
+/Previous 94 0 R
 /Next 97 0 R
 /First 96 0 R
 /Last 96 0 R
 /Count 1 
-/Title (1.13 SALES_Q2)
+/Title (1.9 LDESCRIPT)
 >>
 endobj
 96 0 obj
 <<
 /Parent 95 0 R
-/Dest [25 0 R /FitH 621.6]
+/Dest [21 0 R /FitH 194.4]
 /Title (Derived Field Evaluation)
 >>
 endobj
 97 0 obj
 <<
-/Parent 78 0 R
-/Dest [25 0 R /FitH 567.6]
+/Parent 86 0 R
+/Dest [21 0 R /FitH 157.2]
 /Previous 95 0 R
 /Next 99 0 R
 /First 98 0 R
 /Last 98 0 R
 /Count 1 
-/Title (1.14 SALES_Q3)
+/Title (1.10 ZIPCODE)
 >>
 endobj
 98 0 obj
 <<
 /Parent 97 0 R
-/Dest [25 0 R /FitH 541.2]
+/Dest [21 0 R /FitH 130.8]
 /Title (Derived Field Evaluation)
 >>
 endobj
 99 0 obj
 <<
-/Parent 78 0 R
-/Dest [25 0 R /FitH 487.2]
+/Parent 86 0 R
+/Dest [25 0 R /FitH 792]
 /Previous 97 0 R
+/Next 101 0 R
 /First 100 0 R
 /Last 100 0 R
 /Count 1 
-/Title (1.15 SALES_Q4)
+/Title (1.11 SALES_TOTAL)
 >>
 endobj
 100 0 obj
 <<
 /Parent 99 0 R
-/Dest [25 0 R /FitH 460.8]
+/Dest [25 0 R /FitH 765.6]
 /Title (Derived Field Evaluation)
 >>
 endobj
 101 0 obj
 <<
-/Parent 75 0 R
-/Dest [29 0 R /FitH 764.4]
-/Previous 78 0 R
-/Next 113 0 R
+/Parent 86 0 R
+/Dest [25 0 R /FitH 728.4]
+/Previous 99 0 R
+/Next 103 0 R
 /First 102 0 R
-/Last 112 0 R
-/Count 11 
-/Title (2. CONFIGURATION SETTINGS)
+/Last 102 0 R
+/Count 1 
+/Title (1.12 SALES_Q1)
 >>
 endobj
 102 0 obj
 <<
 /Parent 101 0 R
-/Dest [29 0 R /FitH 726]
-/Next 103 0 R
-/Title (2.1 pequeldoc)
+/Dest [25 0 R /FitH 702]
+/Title (Derived Field Evaluation)
 >>
 endobj
 103 0 obj
 <<
-/Parent 101 0 R
-/Dest [29 0 R /FitH 684]
-/Previous 102 0 R
-/Next 104 0 R
-/Title (2.2 detail)
+/Parent 86 0 R
+/Dest [25 0 R /FitH 648]
+/Previous 101 0 R
+/Next 105 0 R
+/First 104 0 R
+/Last 104 0 R
+/Count 1 
+/Title (1.13 SALES_Q2)
 >>
 endobj
 104 0 obj
 <<
-/Parent 101 0 R
-/Dest [29 0 R /FitH 642]
-/Previous 103 0 R
-/Next 105 0 R
-/Title (2.3 script_name)
+/Parent 103 0 R
+/Dest [25 0 R /FitH 621.6]
+/Title (Derived Field Evaluation)
 >>
 endobj
 105 0 obj
 <<
-/Parent 101 0 R
-/Dest [29 0 R /FitH 600]
-/Previous 104 0 R
-/Next 106 0 R
-/Title (2.4 header)
+/Parent 86 0 R
+/Dest [25 0 R /FitH 567.6]
+/Previous 103 0 R
+/Next 107 0 R
+/First 106 0 R
+/Last 106 0 R
+/Count 1 
+/Title (1.14 SALES_Q3)
 >>
 endobj
 106 0 obj
 <<
-/Parent 101 0 R
-/Dest [29 0 R /FitH 558]
-/Previous 105 0 R
-/Next 107 0 R
-/Title (2.5 optimize)
+/Parent 105 0 R
+/Dest [25 0 R /FitH 541.2]
+/Title (Derived Field Evaluation)
 >>
 endobj
 107 0 obj
 <<
-/Parent 101 0 R
-/Dest [29 0 R /FitH 516]
-/Previous 106 0 R
-/Next 108 0 R
-/Title (2.6 transfer)
+/Parent 86 0 R
+/Dest [25 0 R /FitH 487.2]
+/Previous 105 0 R
+/First 108 0 R
+/Last 108 0 R
+/Count 1 
+/Title (1.15 SALES_Q4)
 >>
 endobj
 108 0 obj
 <<
-/Parent 101 0 R
-/Dest [29 0 R /FitH 474]
-/Previous 107 0 R
-/Next 109 0 R
-/Title (2.7 discard_header)
+/Parent 107 0 R
+/Dest [25 0 R /FitH 460.8]
+/Title (Derived Field Evaluation)
 >>
 endobj
 109 0 obj
 <<
-/Parent 101 0 R
-/Dest [29 0 R /FitH 432]
-/Previous 108 0 R
-/Next 110 0 R
-/Title (2.8 default_datetype)
+/Parent 83 0 R
+/Dest [29 0 R /FitH 764.4]
+/Previous 86 0 R
+/Next 122 0 R
+/First 110 0 R
+/Last 121 0 R
+/Count 12 
+/Title (2. CONFIGURATION SETTINGS)
 >>
 endobj
 110 0 obj
 <<
-/Parent 101 0 R
-/Dest [29 0 R /FitH 390]
-/Previous 109 0 R
+/Parent 109 0 R
+/Dest [29 0 R /FitH 726]
 /Next 111 0 R
-/Title (2.9 doc_title)
+/Title (2.1 prefix)
 >>
 endobj
 111 0 obj
 <<
-/Parent 101 0 R
-/Dest [29 0 R /FitH 348]
+/Parent 109 0 R
+/Dest [29 0 R /FitH 684]
 /Previous 110 0 R
 /Next 112 0 R
-/Title (2.10 doc_email)
+/Title (2.2 pequeldoc)
 >>
 endobj
 112 0 obj
 <<
-/Parent 101 0 R
-/Dest [29 0 R /FitH 306]
+/Parent 109 0 R
+/Dest [29 0 R /FitH 642]
 /Previous 111 0 R
-/Title (2.11 doc_version)
+/Next 113 0 R
+/Title (2.3 detail)
 >>
 endobj
 113 0 obj
 <<
-/Parent 75 0 R
-/Dest [33 0 R /FitH 764.4]
-/Previous 101 0 R
-/Next 118 0 R
-/First 114 0 R
-/Last 116 0 R
-/Count 4 
-/Title (3. TABLES)
+/Parent 109 0 R
+/Dest [29 0 R /FitH 600]
+/Previous 112 0 R
+/Next 114 0 R
+/Title (2.4 script_name)
 >>
 endobj
 114 0 obj
 <<
-/Parent 113 0 R
-/Dest [33 0 R /FitH 726]
-/Next 116 0 R
-/First 115 0 R
-/Last 115 0 R
-/Count 1 
-/Title (3.1 LOC_DESCRIPT)
+/Parent 109 0 R
+/Dest [29 0 R /FitH 558]
+/Previous 113 0 R
+/Next 115 0 R
+/Title (2.5 header)
 >>
 endobj
 115 0 obj
 <<
-/Parent 114 0 R
-/Dest [33 0 R /FitH 699.6]
-/Title (Data)
+/Parent 109 0 R
+/Dest [29 0 R /FitH 516]
+/Previous 114 0 R
+/Next 116 0 R
+/Title (2.6 optimize)
 >>
 endobj
 116 0 obj
 <<
-/Parent 113 0 R
-/Dest [33 0 R /FitH 537.6]
-/Previous 114 0 R
-/First 117 0 R
-/Last 117 0 R
-/Count 1 
-/Title (3.2 LOC_DESCRIPTION)
+/Parent 109 0 R
+/Dest [29 0 R /FitH 474]
+/Previous 115 0 R
+/Next 117 0 R
+/Title (2.7 transfer)
 >>
 endobj
 117 0 obj
 <<
-/Parent 116 0 R
-/Dest [33 0 R /FitH 511.2]
-/Title (Data)
+/Parent 109 0 R
+/Dest [29 0 R /FitH 432]
+/Previous 116 0 R
+/Next 118 0 R
+/Title (2.8 discard_header)
 >>
 endobj
 118 0 obj
 <<
-/Parent 75 0 R
-/Dest [37 0 R /FitH 764.4]
-/Previous 113 0 R
-/Next 120 0 R
-/First 119 0 R
-/Last 119 0 R
-/Count 1 
-/Title (4. TABLE INFORMATION SUMMARY)
+/Parent 109 0 R
+/Dest [29 0 R /FitH 390]
+/Previous 117 0 R
+/Next 119 0 R
+/Title (2.9 default_datetype)
 >>
 endobj
 119 0 obj
 <<
-/Parent 118 0 R
-/Dest [37 0 R /FitH 726]
-/Title (4.1 Table List Sorted By Table Name)
+/Parent 109 0 R
+/Dest [29 0 R /FitH 348]
+/Previous 118 0 R
+/Next 120 0 R
+/Title (2.10 doc_title)
 >>
 endobj
 120 0 obj
 <<
-/Parent 75 0 R
-/Dest [41 0 R /FitH 764.4]
-/Previous 118 0 R
-/Next 125 0 R
-/First 121 0 R
-/Last 124 0 R
-/Count 4 
-/Title (5. TRANSFER_OPTION.PQL)
+/Parent 109 0 R
+/Dest [29 0 R /FitH 306]
+/Previous 119 0 R
+/Next 121 0 R
+/Title (2.11 doc_email)
 >>
 endobj
 121 0 obj
 <<
-/Parent 120 0 R
-/Dest [41 0 R /FitH 726]
-/Next 122 0 R
-/Title (options)
+/Parent 109 0 R
+/Dest [29 0 R /FitH 264]
+/Previous 120 0 R
+/Title (2.12 doc_version)
 >>
 endobj
 122 0 obj
 <<
-/Parent 120 0 R
-/Dest [41 0 R /FitH 604.8]
-/Previous 121 0 R
-/Next 123 0 R
-/Title (description)
+/Parent 83 0 R
+/Dest [33 0 R /FitH 764.4]
+/Previous 109 0 R
+/Next 127 0 R
+/First 123 0 R
+/Last 125 0 R
+/Count 4 
+/Title (3. TABLES)
 >>
 endobj
 123 0 obj
 <<
-/Parent 120 0 R
-/Dest [41 0 R /FitH 550.8]
-/Previous 122 0 R
-/Next 124 0 R
-/Title (init table)
+/Parent 122 0 R
+/Dest [33 0 R /FitH 726]
+/Next 125 0 R
+/First 124 0 R
+/Last 124 0 R
+/Count 1 
+/Title (3.1 LOC_DESCRIPT)
 >>
 endobj
 124 0 obj
 <<
-/Parent 120 0 R
-/Dest [41 0 R /FitH 396.000000000001]
-/Previous 123 0 R
-/Title (input section)
+/Parent 123 0 R
+/Dest [33 0 R /FitH 699.6]
+/Title (Data)
 >>
 endobj
 125 0 obj
 <<
-/Parent 75 0 R
-/Dest [45 0 R /FitH 764.4]
-/Previous 120 0 R
-/Next 126 0 R
-/Title (6. PEQUEL GENERATED PROGRAM)
+/Parent 122 0 R
+/Dest [33 0 R /FitH 537.6]
+/Previous 123 0 R
+/First 126 0 R
+/Last 126 0 R
+/Count 1 
+/Title (3.2 LOC_DESCRIPTION)
 >>
 endobj
 126 0 obj
 <<
-/Parent 75 0 R
-/Dest [53 0 R /FitH 764.4]
-/Previous 125 0 R
-/First 127 0 R
-/Last 127 0 R
-/Count 1 
-/Title (7. ABOUT PEQUEL)
+/Parent 125 0 R
+/Dest [33 0 R /FitH 511.2]
+/Title (Data)
 >>
 endobj
 127 0 obj
 <<
-/Parent 126 0 R
-/Dest [53 0 R /FitH 681.6]
+/Parent 83 0 R
+/Dest [37 0 R /FitH 764.4]
+/Previous 122 0 R
+/Next 129 0 R
+/First 128 0 R
+/Last 128 0 R
+/Count 1 
+/Title (4. TABLE INFORMATION SUMMARY)
+>>
+endobj
+128 0 obj
+<<
+/Parent 127 0 R
+/Dest [37 0 R /FitH 726]
+/Title (4.1 Table List Sorted By Table Name)
+>>
+endobj
+129 0 obj
+<<
+/Parent 83 0 R
+/Dest [41 0 R /FitH 764.4]
+/Previous 127 0 R
+/Next 134 0 R
+/First 130 0 R
+/Last 133 0 R
+/Count 4 
+/Title (5. EXAMPLES/TRANSFER_OPTION.PQL)
+>>
+endobj
+130 0 obj
+<<
+/Parent 129 0 R
+/Dest [41 0 R /FitH 726]
+/Next 131 0 R
+/Title (options)
+>>
+endobj
+131 0 obj
+<<
+/Parent 129 0 R
+/Dest [41 0 R /FitH 596.4]
+/Previous 130 0 R
+/Next 132 0 R
+/Title (description)
+>>
+endobj
+132 0 obj
+<<
+/Parent 129 0 R
+/Dest [41 0 R /FitH 542.4]
+/Previous 131 0 R
+/Next 133 0 R
+/Title (init table)
+>>
+endobj
+133 0 obj
+<<
+/Parent 129 0 R
+/Dest [41 0 R /FitH 387.600000000001]
+/Previous 132 0 R
+/Title (input section)
+>>
+endobj
+134 0 obj
+<<
+/Parent 83 0 R
+/Dest [45 0 R /FitH 764.4]
+/Previous 129 0 R
+/Next 135 0 R
+/Title (6. PEQUEL GENERATED PROGRAM)
+>>
+endobj
+135 0 obj
+<<
+/Parent 83 0 R
+/Dest [57 0 R /FitH 764.4]
+/Previous 134 0 R
+/First 136 0 R
+/Last 136 0 R
+/Count 1 
+/Title (7. ABOUT PEQUEL)
+>>
+endobj
+136 0 obj
+<<
+/Parent 135 0 R
+/Dest [57 0 R /FitH 681.6]
 /Title (COPYRIGHT)
 >>
 endobj
-74 0 obj
+82 0 obj
 <<
 /Type /Outlines
-/Count 53
-/First 75 0 R
-/Last 127 0 R
+/Count 54
+/First 83 0 R
+/Last 136 0 R
 >>
 endobj
 3 0 obj
@@ -3671,24 +3847,24 @@ endobj
 /Type /Catalog
 /Pages 4 0 R
 /PageMode /UseOutlines
-/Outlines 74 0 R
+/Outlines 82 0 R
 >>
 endobj
 4 0 obj
 <<
 /Type /Pages
-/Kids [ 66 0 R 73 0 R 61 0 R 65 0 R 21 0 R 25 0 R 29 0 R 33 0 R 37 0 R 41 0 R 45 0 R 49 0 R 53 0 R 57 0 R ]
-/Count 14
+/Kids [ 74 0 R 81 0 R 69 0 R 73 0 R 21 0 R 25 0 R 29 0 R 33 0 R 37 0 R 41 0 R 45 0 R 49 0 R 53 0 R 57 0 R 61 0 R 65 0 R ]
+/Count 16
 /MediaBox [0 0 595 842]
 >>
 endobj
 xref
-0 128
+0 137
 0000000000 65535 f 
 0000000015 00000 n 
 0000000171 00000 n 
-0000056230 00000 n 
-0000056319 00000 n 
+0000058854 00000 n 
+0000058943 00000 n 
 0000000289 00000 n 
 0000002389 00000 n 
 0000002488 00000 n 
@@ -3703,121 +3879,130 @@ xref
 0000003400 00000 n 
 0000003506 00000 n 
 0000003620 00000 n 
-0000007295 00000 n 
-0000007316 00000 n 
-0000007454 00000 n 
-0000007537 00000 n 
-0000010575 00000 n 
-0000010596 00000 n 
-0000010734 00000 n 
-0000010817 00000 n 
-0000013546 00000 n 
-0000013567 00000 n 
-0000013693 00000 n 
-0000013776 00000 n 
-0000016259 00000 n 
-0000016280 00000 n 
-0000016406 00000 n 
-0000016489 00000 n 
-0000017359 00000 n 
-0000017379 00000 n 
-0000017517 00000 n 
-0000017600 00000 n 
-0000022621 00000 n 
-0000022642 00000 n 
-0000022768 00000 n 
-0000022851 00000 n 
-0000030640 00000 n 
-0000030661 00000 n 
-0000030775 00000 n 
-0000030858 00000 n 
-0000038732 00000 n 
-0000038753 00000 n 
-0000038867 00000 n 
-0000038950 00000 n 
-0000041232 00000 n 
-0000041253 00000 n 
-0000041379 00000 n 
-0000041462 00000 n 
-0000041793 00000 n 
-0000041813 00000 n 
-0000041915 00000 n 
-0000041998 00000 n 
-0000047741 00000 n 
-0000047762 00000 n 
-0000047876 00000 n 
-0000047959 00000 n 
-0000048288 00000 n 
-0000048308 00000 n 
-0000048410 00000 n 
-0000048493 00000 n 
-0000048576 00000 n 
-0000048969 00000 n 
-0000048989 00000 n 
-0000049115 00000 n 
-0000049441 00000 n 
-0000049461 00000 n 
-0000049563 00000 n 
-0000056154 00000 n 
-0000049646 00000 n 
-0000049769 00000 n 
-0000049867 00000 n 
-0000049980 00000 n 
-0000050141 00000 n 
-0000050244 00000 n 
-0000050362 00000 n 
-0000050481 00000 n 
-0000050599 00000 n 
-0000050718 00000 n 
-0000050835 00000 n 
-0000050953 00000 n 
-0000051069 00000 n 
-0000051223 00000 n 
-0000051321 00000 n 
-0000051474 00000 n 
-0000051572 00000 n 
-0000051727 00000 n 
-0000051825 00000 n 
-0000051979 00000 n 
-0000052075 00000 n 
-0000052227 00000 n 
-0000052325 00000 n 
-0000052479 00000 n 
-0000052577 00000 n 
-0000052720 00000 n 
-0000052819 00000 n 
-0000052990 00000 n 
-0000053091 00000 n 
-0000053207 00000 n 
-0000053328 00000 n 
-0000053444 00000 n 
-0000053562 00000 n 
-0000053680 00000 n 
-0000053804 00000 n 
-0000053930 00000 n 
-0000054049 00000 n 
-0000054169 00000 n 
-0000054277 00000 n 
-0000054432 00000 n 
-0000054575 00000 n 
-0000054655 00000 n 
-0000054807 00000 n 
-0000054887 00000 n 
-0000055061 00000 n 
-0000055170 00000 n 
-0000055338 00000 n 
-0000055433 00000 n 
-0000055552 00000 n 
-0000055670 00000 n 
-0000055788 00000 n 
-0000055922 00000 n 
-0000056069 00000 n 
+0000007312 00000 n 
+0000007333 00000 n 
+0000007471 00000 n 
+0000007554 00000 n 
+0000010600 00000 n 
+0000010621 00000 n 
+0000010759 00000 n 
+0000010842 00000 n 
+0000013789 00000 n 
+0000013810 00000 n 
+0000013936 00000 n 
+0000014019 00000 n 
+0000016510 00000 n 
+0000016531 00000 n 
+0000016657 00000 n 
+0000016740 00000 n 
+0000017618 00000 n 
+0000017638 00000 n 
+0000017776 00000 n 
+0000017859 00000 n 
+0000022977 00000 n 
+0000022998 00000 n 
+0000023124 00000 n 
+0000023207 00000 n 
+0000031013 00000 n 
+0000031034 00000 n 
+0000031148 00000 n 
+0000031231 00000 n 
+0000039366 00000 n 
+0000039387 00000 n 
+0000039501 00000 n 
+0000039584 00000 n 
+0000040518 00000 n 
+0000040538 00000 n 
+0000040652 00000 n 
+0000040735 00000 n 
+0000043026 00000 n 
+0000043047 00000 n 
+0000043173 00000 n 
+0000043256 00000 n 
+0000043595 00000 n 
+0000043615 00000 n 
+0000043717 00000 n 
+0000043800 00000 n 
+0000044139 00000 n 
+0000044159 00000 n 
+0000044261 00000 n 
+0000044344 00000 n 
+0000050195 00000 n 
+0000050216 00000 n 
+0000050330 00000 n 
+0000050413 00000 n 
+0000050741 00000 n 
+0000050761 00000 n 
+0000050863 00000 n 
+0000050946 00000 n 
+0000051029 00000 n 
+0000051431 00000 n 
+0000051451 00000 n 
+0000051577 00000 n 
+0000051911 00000 n 
+0000051931 00000 n 
+0000052033 00000 n 
+0000058778 00000 n 
+0000052116 00000 n 
+0000052239 00000 n 
+0000052337 00000 n 
+0000052450 00000 n 
+0000052612 00000 n 
+0000052715 00000 n 
+0000052833 00000 n 
+0000052952 00000 n 
+0000053070 00000 n 
+0000053189 00000 n 
+0000053306 00000 n 
+0000053424 00000 n 
+0000053540 00000 n 
+0000053694 00000 n 
+0000053792 00000 n 
+0000053945 00000 n 
+0000054043 00000 n 
+0000054201 00000 n 
+0000054300 00000 n 
+0000054458 00000 n 
+0000054556 00000 n 
+0000054713 00000 n 
+0000054813 00000 n 
+0000054972 00000 n 
+0000055072 00000 n 
+0000055217 00000 n 
+0000055317 00000 n 
+0000055488 00000 n 
+0000055586 00000 n 
+0000055705 00000 n 
+0000055821 00000 n 
+0000055942 00000 n 
+0000056058 00000 n 
+0000056176 00000 n 
+0000056294 00000 n 
+0000056418 00000 n 
+0000056544 00000 n 
+0000056664 00000 n 
+0000056784 00000 n 
+0000056892 00000 n 
+0000057047 00000 n 
+0000057190 00000 n 
+0000057270 00000 n 
+0000057422 00000 n 
+0000057502 00000 n 
+0000057676 00000 n 
+0000057785 00000 n 
+0000057962 00000 n 
+0000058057 00000 n 
+0000058176 00000 n 
+0000058294 00000 n 
+0000058412 00000 n 
+0000058546 00000 n 
+0000058693 00000 n 
 trailer
 <<
-/Size 128
+/Size 137
 /Root 3 0 R
 /Info 2 0 R
 >>
 startxref
-56495
+59133
 %%EOF

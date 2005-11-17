@@ -11,7 +11,7 @@
 endobj
 2 0 obj
 <<
-/CreationDate (D:20051004103509+0100)
+/CreationDate (D:20051116135538+0000)
 /Producer (Pequel)
 /Title (Pequel Chaining Part-2 Example Script)
 >>
@@ -201,23 +201,32 @@ BT
 0.0500 Tw
 (This example demonstrates Pequel script `chaining'. By specifying a pequel script name for the `input_file') Tj
 1 0 0 1 76.0 679.2 Tm
-2.3980 Tw
-(option the input data stream will result by executing the specified script. Both scripts are executed) Tj
+1.6247 Tw
+(option the input data stream will result by piping the output from executing the script specified in the) Tj
 1 0 0 1 76.0 667.2 Tm
-0.9729 Tw
-(simultaneously \217 with the input_file script as the child and this script as the parent. Beware of circular) Tj
+0.8420 Tw
+(`input_file' option. Both scripts are executed simultaneously \217 with the input_file script as the child and) Tj
 1 0 0 1 76.0 655.2 Tm
-0.4414 Tw
-(chaining! It is up to the user to ensure that this does not occur. Currently `sort by' is not supported in the) Tj
+1.4640 Tw
+(this script as the parent. Beware of circular chaining! It is up to the user to ensure that this does not) Tj
 1 0 0 1 76.0 643.2 Tm
+0.9600 Tw
+(occur. The input-section should match the output field format of the input_file script. Additional derived) Tj
+1 0 0 1 76.0 631.2 Tm
+0.8229 Tw
+(input fields may be appended. The field names specified in the sort-by section must exist in the output) Tj
+1 0 0 1 76.0 619.2 Tm
+0.1865 Tw
+(for the input_file script. The sort-by section in the main script overrides the sort-output section in the sub) Tj
+1 0 0 1 76.0 607.2 Tm
 0.0000 Tw
-(parent script. ) Tj
+(script. Any `output_file' option specification in the sub script is not allowed. ) Tj
 /F21 12 Tf
-1 0 0 1 52.0 613.2 Tm
+1 0 0 1 52.0 577.2 Tm
 0.0000 Tw
 (1. PROCESS DETAILS ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 598.8 Tm
+1 0 0 1 76.0 562.8 Tm
 0.1871 Tw
 (Input records are read from chain_pequel_pt1.pql. The input record contains ) Tj
 /F23 10 Tf
@@ -226,7 +235,7 @@ BT
 /F20 10 Tf
 0.1871 Tw
 ( fields. Fields are delimited) Tj
-1 0 0 1 76.0 586.8 Tm
+1 0 0 1 76.0 550.8 Tm
 0.0000 Tw
 (by the `) Tj
 /F10 10 Tf
@@ -236,7 +245,7 @@ BT
 0.0000 Tw
 (' character. ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 562.8 Tm
+1 0 0 1 76.0 526.8 Tm
 0.1981 Tw
 (Output records are written to standard output. The output record contains ) Tj
 /F23 10 Tf
@@ -245,7 +254,7 @@ BT
 /F20 10 Tf
 0.1981 Tw
 ( fields. Fields are delimited by) Tj
-1 0 0 1 76.0 550.8 Tm
+1 0 0 1 76.0 514.8 Tm
 0.0000 Tw
 (the `) Tj
 /F10 10 Tf
@@ -255,29 +264,7 @@ BT
 0.0000 Tw
 (' character. ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 526.8 Tm
-0.0000 Tw
-(Input stream is ) Tj
-/F21 10 Tf
-0.0000 Tw
-(sorted) Tj
-/F20 10 Tf
-0.0000 Tw
-( by the input field ) Tj
-/F23 10 Tf
-0.0000 Tw
-(LOCATION) Tj
-/F20 10 Tf
-0.0000 Tw
-( \() Tj
-/F22 10 Tf
-0.0000 Tw
-(string) Tj
-/F20 10 Tf
-0.0000 Tw
-(\). ) Tj
-/F20 10 Tf
-1 0 0 1 76.0 502.8 Tm
+1 0 0 1 76.0 490.8 Tm
 0.0000 Tw
 (Input records are ) Tj
 /F21 10 Tf
@@ -299,7 +286,7 @@ BT
 0.0000 Tw
 (\). ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 460.8 Tm
+1 0 0 1 52.0 448.8 Tm
 0.0000 Tw
 (1.1 ) Tj
 /F23 10 Tf
@@ -309,11 +296,11 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 448.8 Tm
+1 0 0 1 76.0 436.8 Tm
 0.0000 Tw
 (Output Field ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 422.4 Tm
+1 0 0 1 76.0 410.4 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -323,7 +310,7 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 410.4 Tm
+1 0 0 1 76.0 398.4 Tm
 0.0000 Tw
 (Set to input field ) Tj
 /F23 10 Tf
@@ -333,7 +320,7 @@ BT
 0.0000 Tw
 ( ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 380.4 Tm
+1 0 0 1 52.0 368.4 Tm
 0.0000 Tw
 (1.2 ) Tj
 /F23 10 Tf
@@ -343,11 +330,11 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 368.4 Tm
+1 0 0 1 76.0 356.4 Tm
 0.0000 Tw
 (Output Field ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 342.0 Tm
+1 0 0 1 76.0 330.0 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -357,7 +344,7 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 330.0 Tm
+1 0 0 1 76.0 318.0 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -373,7 +360,7 @@ BT
 0.0000 Tw
 (. ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 300.0 Tm
+1 0 0 1 52.0 288.0 Tm
 0.0000 Tw
 (1.3 ) Tj
 /F23 10 Tf
@@ -383,11 +370,11 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 288.0 Tm
+1 0 0 1 76.0 276.0 Tm
 0.0000 Tw
 (Output Field ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 261.6 Tm
+1 0 0 1 76.0 249.6 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -397,7 +384,7 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 249.6 Tm
+1 0 0 1 76.0 237.6 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -414,7 +401,7 @@ BT
 (. ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(04 October 2005 10:35) Tj
+(16 November 2005 13:55) Tj
 1 0 0 1 537.44 37 Tm
 (1) Tj
 ET
@@ -424,7 +411,7 @@ S
 endstream
 endobj
 19 0 obj
-3829
+4054
 endobj
 20 0 obj
 <<
@@ -474,18 +461,32 @@ BT
 (2.1 ) Tj
 /F23 10 Tf
 0.0000 Tw
-(pequeldoc) Tj
+(prefix) Tj
 /F21 10 Tf
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 702.0 Tm
 0.0000 Tw
-(generate pod / pdf pequel script Reference Guide.: pdf ) Tj
+(directory pathname prefix.: examples ) Tj
 /F21 10 Tf
 1 0 0 1 52.0 672.0 Tm
 0.0000 Tw
 (2.2 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(pequeldoc) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 660.0 Tm
+0.0000 Tw
+(generate pod / pdf pequel script Reference Guide.: pdf ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 630.0 Tm
+0.0000 Tw
+(2.3 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (detail) Tj
@@ -493,23 +494,9 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 660.0 Tm
-0.0000 Tw
-(Include Pequel Generated Program chapter in Pequeldoc: 1 ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 630.0 Tm
-0.0000 Tw
-(2.3 ) Tj
-/F23 10 Tf
-0.0000 Tw
-(prefix) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
-/F20 10 Tf
 1 0 0 1 76.0 618.0 Tm
 0.0000 Tw
-(directory pathname prefix.: examples ) Tj
+(Include Pequel Generated Program chapter in Pequeldoc: 1 ) Tj
 /F21 10 Tf
 1 0 0 1 52.0 588.0 Tm
 0.0000 Tw
@@ -551,7 +538,7 @@ BT
 /F20 10 Tf
 1 0 0 1 76.0 492.0 Tm
 0.0000 Tw
-(write header record to output.: 1 ) Tj
+(write header record to output.: 0 ) Tj
 /F21 10 Tf
 1 0 0 1 52.0 462.0 Tm
 0.0000 Tw
@@ -611,8 +598,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (2) Tj
-1 0 0 1 437.39 37 Tm
-(04 October 2005 10:35) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 13:55) Tj
 ET
 52 50 m
 543 50 l
@@ -620,7 +607,7 @@ S
 endstream
 endobj
 23 0 obj
-2464
+2465
 endobj
 24 0 obj
 <<
@@ -664,7 +651,7 @@ BT
 (3. TABLES ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(04 October 2005 10:35) Tj
+(16 November 2005 13:55) Tj
 1 0 0 1 537.44 37 Tm
 (3) Tj
 ET
@@ -674,7 +661,7 @@ S
 endstream
 endobj
 27 0 obj
-350
+351
 endobj
 28 0 obj
 <<
@@ -721,8 +708,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (4) Tj
-1 0 0 1 437.39 37 Tm
-(04 October 2005 10:35) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 13:55) Tj
 ET
 52 50 m
 543 50 l
@@ -730,7 +717,7 @@ S
 endstream
 endobj
 31 0 obj
-454
+455
 endobj
 32 0 obj
 <<
@@ -783,15 +770,15 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 697.8 Tm
 0.0000 Tw
-(    pequeldoc\(pdf\) ) Tj
+(    prefix\(examples\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 689.4 Tm
 0.0000 Tw
-(    detail\(1\) ) Tj
+(    pequeldoc\(pdf\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 681.0 Tm
 0.0000 Tw
-(    prefix\(examples\) ) Tj
+(    detail\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 672.6 Tm
 0.0000 Tw
@@ -803,7 +790,7 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 655.8 Tm
 0.0000 Tw
-(    header\(1\) ) Tj
+(    header\(0\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 647.4 Tm
 0.0000 Tw
@@ -841,57 +828,49 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 568.2 Tm
 0.0000 Tw
-(    the input data stream will result by executing the specified script. ) Tj
+(    the input data stream will result by piping the output from executing ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 559.8 Tm
 0.0000 Tw
-(    Both scripts are executed simultaneously -- with the input_file script as the child and this ) Tj
+(    the script specified in the 'input_file' option. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 551.4 Tm
 0.0000 Tw
-(    script as the parent. Beware of circular chaining! It is up to the user to ensure that this ) Tj
+(    Both scripts are executed simultaneously -- with the input_file script as the child and this ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 543.0 Tm
 0.0000 Tw
-(    does not occur. ) Tj
+(    script as the parent. Beware of circular chaining! It is up to the user to ensure that this ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 534.6 Tm
 0.0000 Tw
-(    Currently ) Tj
+(    does not occur. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 526.2 Tm
 0.0000 Tw
-(    'sort by' is not supported in the parent script. ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 505.2 Tm
-0.0000 Tw
-() Tj
-/F23 10 Tf
-0.0000 Tw
-(sort by) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
+(    The input-section should match the output field format of the input_file script. Additional ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 489.0 Tm
+1 0 0 1 76.0 517.8 Tm
 0.0000 Tw
-(    LOCATION string  ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 468.0 Tm
-0.0000 Tw
-() Tj
-/F23 10 Tf
-0.0000 Tw
-(group by) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
+(    derived input fields may be appended. ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 451.8 Tm
+1 0 0 1 76.0 509.4 Tm
 0.0000 Tw
-(    LOCATION string ) Tj
+(    The field names specified in the sort-by section must exist in the output for the input_file ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 501.0 Tm
+0.0000 Tw
+(    script. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 492.6 Tm
+0.0000 Tw
+(    The sort-by section in the main script overrides the sort-output section in the sub script. ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 484.2 Tm
+0.0000 Tw
+(    Any 'output_file' option specification in the sub script is not allowed. ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 430.8 Tm
+1 0 0 1 52.0 463.2 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -901,19 +880,33 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 414.6 Tm
+1 0 0 1 76.0 447.0 Tm
 0.0000 Tw
 (    LOCATION ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 406.2 Tm
+1 0 0 1 76.0 438.6 Tm
 0.0000 Tw
 (    PRODUCT_CODE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 397.8 Tm
+1 0 0 1 76.0 430.2 Tm
 0.0000 Tw
 (    SALES_TOTAL ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 376.8 Tm
+1 0 0 1 52.0 409.2 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(group by) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 393.0 Tm
+0.0000 Tw
+(    LOCATION string ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 372.0 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -923,20 +916,34 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 360.6 Tm
+1 0 0 1 76.0 355.8 Tm
 0.0000 Tw
 (    string    LOCATION           LOCATION ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 352.2 Tm
+1 0 0 1 76.0 347.4 Tm
 0.0000 Tw
 (    numeric   COUNT_PRODUCT_CODE distinct PRODUCT_CODE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 343.8 Tm
+1 0 0 1 76.0 339.0 Tm
 0.0000 Tw
 (    decimal   SALES_TOTAL        sum SALES_TOTAL ) Tj
 /F21 10 Tf
+1 0 0 1 52.0 318.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(sort output) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 301.8 Tm
+0.0000 Tw
+(    SALES_TOTAL numeric des ) Tj
+/F21 10 Tf
 1 0 0 1 52 37 Tm
-(04 October 2005 10:35) Tj
+(16 November 2005 13:55) Tj
 1 0 0 1 537.44 37 Tm
 (5) Tj
 ET
@@ -946,7 +953,7 @@ S
 endstream
 endobj
 35 0 obj
-3314
+3973
 endobj
 36 0 obj
 <<
@@ -991,7 +998,7 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 731.4 Tm
 0.0000 Tw
-( # vim: syntax=perl ts=4 sw=4 ) Tj
+( #!/usr/bin/perl ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 723.0 Tm
 0.0000 Tw
@@ -999,305 +1006,309 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 714.6 Tm
 0.0000 Tw
-( #Generated By: pequel Version 2.3-3, Build: Monday October  3 23:16:49 BST 2005 ) Tj
+( # vim: syntax=perl ts=4 sw=4 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 706.2 Tm
 0.0000 Tw
-( #            : https://sourceforge.net/projects/pequel/ ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 697.8 Tm
 0.0000 Tw
-( #Script Name : examples/chain_pequel_pt2.pql ) Tj
+( #Generated By: pequel Version 2.4-5, Build: Wednesday November 16 21:56:42 GMT 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 689.4 Tm
 0.0000 Tw
-( #Created On  : Tue Oct  4 10:35:09 2005 ) Tj
+( #            : http://sourceforge.net/projects/pequel/ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 681.0 Tm
 0.0000 Tw
-( #For         :  ) Tj
+( #Script Name : chain_pequel_pt2.pql ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 672.6 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #Created On  : Wed Nov 16 13:55:37 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 664.2 Tm
 0.0000 Tw
-( #Options: ) Tj
+( #Perl Version: /usr/bin/perl 5.6.1 on solaris ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 655.8 Tm
 0.0000 Tw
-( #pequeldoc\(pdf\) generate pod / pdf pequel script Reference Guide. ) Tj
+( #For         :  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 647.4 Tm
 0.0000 Tw
-( #detail\(1\) Include Pequel Generated Program chapter in Pequeldoc ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 639.0 Tm
 0.0000 Tw
-( #prefix\(examples\) directory pathname prefix. ) Tj
+( #Options: ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 630.6 Tm
 0.0000 Tw
-( #script_name\(examples/chain_pequel_pt2.pql\) script filename ) Tj
+( #prefix\(examples\) directory pathname prefix. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 622.2 Tm
 0.0000 Tw
-( #input_file\(chain_pequel_pt1.pql\) input data filename ) Tj
+( #pequeldoc\(pdf\) generate pod / pdf pequel script Reference Guide. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 613.8 Tm
 0.0000 Tw
-( #header\(1\) write header record to output. ) Tj
+( #detail\(1\) Include Pequel Generated Program chapter in Pequeldoc ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 605.4 Tm
 0.0000 Tw
-( #optimize\(1\) optimize generated code. ) Tj
+( #script_name\(examples/chain_pequel_pt2.pql\) script filename ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 597.0 Tm
 0.0000 Tw
-( #doc_title\(Pequel Chaining Part-2 Example Script\) document title. ) Tj
+( #input_file\(chain_pequel_pt1.pql\) input data filename ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 588.6 Tm
 0.0000 Tw
-( #doc_email\(sample@youraddress.com\) document email entry. ) Tj
+( #header\(0\) write header record to output. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 580.2 Tm
 0.0000 Tw
-( #doc_version\(2.3\) document version for pequel script. ) Tj
+( #optimize\(1\) optimize generated code. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 571.8 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #doc_title\(Pequel Chaining Part-2 Example Script\) document title. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 563.4 Tm
 0.0000 Tw
-( use strict; ) Tj
+( #doc_email\(sample@youraddress.com\) document email entry. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 555.0 Tm
 0.0000 Tw
-( local $\\="\\n"; local $,="|"; ) Tj
+( #doc_version\(2.3\) document version for pequel script. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 546.6 Tm
 0.0000 Tw
-( print STDERR '[examples/chain_pequel_pt2.pql ' . localtime\(\) . "] Init"; ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 538.2 Tm
 0.0000 Tw
-( use constant VERBOSE => int 10000; ) Tj
+( use strict; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 529.8 Tm
 0.0000 Tw
-( use constant LAST_ICELL => int 2; ) Tj
+( use constant _I_LOCATION              => int    0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 521.4 Tm
 0.0000 Tw
-( my @I_VAL; ) Tj
+( use constant _I_PRODUCT_CODE          => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 513.0 Tm
 0.0000 Tw
-( my @O_VAL; ) Tj
+( use constant _I_SALES_TOTAL           => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 504.6 Tm
 0.0000 Tw
-( my %DISTINCT; ) Tj
+( use constant _O_LOCATION              => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 496.2 Tm
 0.0000 Tw
-( my $key__I_LOCATION; ) Tj
+( use constant _O_COUNT_PRODUCT_CODE    => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 487.8 Tm
 0.0000 Tw
-( my $previous_key__I_LOCATION = undef; ) Tj
+( use constant _O_SALES_TOTAL           => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 479.4 Tm
 0.0000 Tw
-( foreach my $f \(1..3\) \{ $O_VAL[$f] = undef; \} ) Tj
+( local $\\="\\n"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 471.0 Tm
 0.0000 Tw
-( use constant _I_LOCATION              => int    0; ) Tj
+( local $,="|"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 462.6 Tm
 0.0000 Tw
-( use constant _I_PRODUCT_CODE          => int    1; ) Tj
+( print STDERR '[examples/chain_pequel_pt2.pql ' . localtime\(\) . "] Init"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 454.2 Tm
 0.0000 Tw
-( use constant _I_SALES_TOTAL           => int    2; ) Tj
+( use constant VERBOSE => int 10000; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 445.8 Tm
 0.0000 Tw
-( use constant _O_LOCATION              => int    1; ) Tj
+( use constant LAST_ICELL => int 2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 437.4 Tm
 0.0000 Tw
-( use constant _O_COUNT_PRODUCT_CODE    => int    2; ) Tj
+( my @I_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 429.0 Tm
 0.0000 Tw
-( use constant _O_SALES_TOTAL           => int    3; ) Tj
+( my @O_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 420.6 Tm
 0.0000 Tw
-( my $pid = open\(CHAIN_PEQUEL_PT1, '-|'\); # Fork ) Tj
+( my $_inprecs=0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 412.2 Tm
 0.0000 Tw
-( my $count=0; ) Tj
+( my %DISTINCT; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 403.8 Tm
 0.0000 Tw
-( if \(!$pid\) # Child ) Tj
+( my $key__I_LOCATION; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 395.4 Tm
 0.0000 Tw
-( \{ ) Tj
+( my $previous_key__I_LOCATION = undef; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 387.0 Tm
 0.0000 Tw
-(     &p_execPequelCHAIN_PEQUEL_PT1::execPequelCHAIN_PEQUEL_PT1; ) Tj
+( foreach my $f \(1..3\) \{ $O_VAL[$f] = undef; \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 378.6 Tm
 0.0000 Tw
-(     exit\(0\); ) Tj
+( if \(open\(READ_CHAIN_PEQUEL_PT1, '-|'\) == 0\) # Fork -- read from child ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 370.2 Tm
 0.0000 Tw
-( \} ) Tj
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 361.8 Tm
+0.0000 Tw
+(     &p_read_chain_pequel_pt1::read_chain_pequel_pt1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 353.4 Tm
 0.0000 Tw
-( open\(STDOUT, '|-', q\{sort -t'|' -y -k 3n,3n |\}\); ) Tj
+(     exit\(0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 345.0 Tm
 0.0000 Tw
-( &PrintHeader\(\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 336.6 Tm
-0.0000 Tw
-( print STDERR '[examples/chain_pequel_pt2.pql ' . localtime\(\) . "] Start"; ) Tj
+( \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 328.2 Tm
 0.0000 Tw
-( use Benchmark; ) Tj
+( open\(STDOUT, '|-', q\{sort  -t'|' -y -k 3nr,3nr 2>/dev/null\}\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 319.8 Tm
 0.0000 Tw
-( my $benchmark_start = new Benchmark; ) Tj
+( print STDERR '[examples/chain_pequel_pt2.pql ' . localtime\(\) . "] Start"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 311.4 Tm
 0.0000 Tw
-( while \(<CHAIN_PEQUEL_PT1>\) ) Tj
+( use Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 303.0 Tm
 0.0000 Tw
-( \{ ) Tj
+( my $benchmark_start = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 294.6 Tm
 0.0000 Tw
-(     print STDERR '[examples/chain_pequel_pt2.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE == 0\); ) Tj
+( while \(<READ_CHAIN_PEQUEL_PT1>\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 286.2 Tm
 0.0000 Tw
-(     chomp; ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 277.8 Tm
 0.0000 Tw
-(     @I_VAL = split\("[|]", $_\); ) Tj
+(     ++$_inprecs; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 269.4 Tm
 0.0000 Tw
-(     $key__I_LOCATION = $I_VAL[_I_LOCATION]; ) Tj
+(     print STDERR '[examples/chain_pequel_pt2.pql ' . localtime\(\) . "] $_inprecs records." if \($_inprecs % VERB ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 261.0 Tm
 0.0000 Tw
-(     if \(!defined\($previous_key__I_LOCATION\)\) ) Tj
+( OSE == 0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 252.6 Tm
 0.0000 Tw
-(     \{ ) Tj
+(     chomp; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 244.2 Tm
 0.0000 Tw
-(         $previous_key__I_LOCATION = $key__I_LOCATION; ) Tj
+(     @I_VAL = split\("[|]", $_\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 235.8 Tm
 0.0000 Tw
-(     \} ) Tj
+(     $key__I_LOCATION = $I_VAL[_I_LOCATION]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 227.4 Tm
+0.0000 Tw
+(     if \(!defined\($previous_key__I_LOCATION\)\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 219.0 Tm
 0.0000 Tw
-(     elsif \($previous_key__I_LOCATION ne $key__I_LOCATION\) ) Tj
+(     \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 210.6 Tm
 0.0000 Tw
-(     \{ ) Tj
+(         $previous_key__I_LOCATION = $key__I_LOCATION; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 202.2 Tm
 0.0000 Tw
-(         print  ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 193.8 Tm
-0.0000 Tw
-(             $O_VAL[_O_LOCATION], ) Tj
+(     \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 185.4 Tm
 0.0000 Tw
-(             $O_VAL[_O_COUNT_PRODUCT_CODE], ) Tj
+(     elsif \($previous_key__I_LOCATION ne $key__I_LOCATION\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 177.0 Tm
 0.0000 Tw
-(             $O_VAL[_O_SALES_TOTAL] ) Tj
+(     \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 168.6 Tm
 0.0000 Tw
-(         ; ) Tj
+(         print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 160.2 Tm
 0.0000 Tw
-(         $previous_key__I_LOCATION = $key__I_LOCATION; ) Tj
+(             $O_VAL[_O_LOCATION], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 151.8 Tm
 0.0000 Tw
-(         @O_VAL = undef; ) Tj
+(             $O_VAL[_O_COUNT_PRODUCT_CODE], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 143.4 Tm
 0.0000 Tw
-(         %DISTINCT = undef; ) Tj
+(             $O_VAL[_O_SALES_TOTAL] ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 135.0 Tm
 0.0000 Tw
-(     \} ) Tj
+(         ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 126.6 Tm
+0.0000 Tw
+(         $previous_key__I_LOCATION = $key__I_LOCATION; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 118.2 Tm
 0.0000 Tw
-(     $O_VAL[_O_LOCATION] = $I_VAL[_I_LOCATION]; ) Tj
+(         @O_VAL = undef; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 109.8 Tm
 0.0000 Tw
-(     $O_VAL[_O_COUNT_PRODUCT_CODE]++ if \(defined\($I_VAL[_I_PRODUCT_CODE]\) && ++$DISTINCT\{_O_COUNT_PRODUCT_CODE\} ) Tj
+(         %DISTINCT = undef; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 101.4 Tm
 0.0000 Tw
-( \{qq\{$I_VAL[_I_PRODUCT_CODE]\}\} == 1\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 93.0 Tm
-0.0000 Tw
-(     $O_VAL[_O_SALES_TOTAL] += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
+(     \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 84.6 Tm
 0.0000 Tw
-( \} ) Tj
+(     $O_VAL[_O_LOCATION] = $I_VAL[_I_LOCATION]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 76.2 Tm
+0.0000 Tw
+(     $O_VAL[_O_COUNT_PRODUCT_CODE]++  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 67.8 Tm
 0.0000 Tw
-( print  ) Tj
+(         if \(defined\($I_VAL[_I_PRODUCT_CODE]\) && ++$DISTINCT\{_O_COUNT_PRODUCT_CODE\}\{qq\{$I_VAL[_I_PRODUCT_CODE]\} ) Tj
 /F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (6) Tj
-1 0 0 1 437.39 37 Tm
-(04 October 2005 10:35) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 13:55) Tj
 ET
 52 50 m
 543 50 l
@@ -1305,7 +1316,7 @@ S
 endstream
 endobj
 39 0 obj
-7223
+7360
 endobj
 40 0 obj
 <<
@@ -1345,339 +1356,343 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 771.6 Tm
 0.0000 Tw
-(     $O_VAL[_O_LOCATION], ) Tj
+( \} == 1\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 763.2 Tm
 0.0000 Tw
-(     $O_VAL[_O_COUNT_PRODUCT_CODE], ) Tj
+(     $O_VAL[_O_SALES_TOTAL] += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 754.8 Tm
 0.0000 Tw
-(     $O_VAL[_O_SALES_TOTAL] ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 746.4 Tm
-0.0000 Tw
-( ; ) Tj
+( \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 738.0 Tm
 0.0000 Tw
-( close\(STDOUT\); ) Tj
+( print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 729.6 Tm
 0.0000 Tw
-( print STDERR '[examples/chain_pequel_pt2.pql ' . localtime\(\) . "] $. records."; ) Tj
+(     $O_VAL[_O_LOCATION], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 721.2 Tm
 0.0000 Tw
-( my $benchmark_end = new Benchmark; ) Tj
+(     $O_VAL[_O_COUNT_PRODUCT_CODE], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 712.8 Tm
 0.0000 Tw
-( my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+(     $O_VAL[_O_SALES_TOTAL] ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 704.4 Tm
 0.0000 Tw
-( print STDERR '[examples/chain_pequel_pt2.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark_timed ) Tj
+( ; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 696.0 Tm
 0.0000 Tw
-( iff\)]\}"; ) Tj
+( close\(STDOUT\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 687.6 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( close\(READ_CHAIN_PEQUEL_PT1\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 679.2 Tm
 0.0000 Tw
-( sub PrintHeader ) Tj
+( print STDERR '[examples/chain_pequel_pt2.pql ' . localtime\(\) . "] $_inprecs records."; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 670.8 Tm
 0.0000 Tw
-( \{ ) Tj
+( my $benchmark_end = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 662.4 Tm
 0.0000 Tw
-(     local $\\="\\n"; ) Tj
+( my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 654.0 Tm
 0.0000 Tw
-(     local $,="|"; ) Tj
+( print STDERR '[examples/chain_pequel_pt2.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark_timed ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 645.6 Tm
 0.0000 Tw
-(     print  ) Tj
+( iff\)]\}"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 637.2 Tm
 0.0000 Tw
-(         'LOCATION', ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 628.8 Tm
 0.0000 Tw
-(         'COUNT_PRODUCT_CODE', ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 620.4 Tm
 0.0000 Tw
-(         'SALES_TOTAL' ) Tj
+(     package p_read_chain_pequel_pt1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 612.0 Tm
 0.0000 Tw
-(         ; ) Tj
+(     sub read_chain_pequel_pt1 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 603.6 Tm
 0.0000 Tw
-( \} ) Tj
+(     \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 595.2 Tm
+0.0000 Tw
+( #    !/usr/bin/perl ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 586.8 Tm
 0.0000 Tw
-( \{ ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 578.4 Tm
 0.0000 Tw
-(     package p_execPequelCHAIN_PEQUEL_PT1; ) Tj
+( #     vim: syntax=perl ts=4 sw=4 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 570.0 Tm
 0.0000 Tw
-(     sub execPequelCHAIN_PEQUEL_PT1 ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 561.6 Tm
 0.0000 Tw
-(     \{ ) Tj
+( #    Generated By: pequel Version 2.4-5, Build: Wednesday November 16 21:56:42 GMT 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 553.2 Tm
 0.0000 Tw
-( #     vim: syntax=perl ts=4 sw=4 ) Tj
+( #                : http://sourceforge.net/projects/pequel/ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 544.8 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #    Script Name : chain_pequel_pt1.pql ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 536.4 Tm
 0.0000 Tw
-( #    Generated By: pequel Version 2.3-3, Build: Monday October  3 23:16:49 BST 2005 ) Tj
+( #    Created On  : Wed Nov 16 13:55:37 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 528.0 Tm
 0.0000 Tw
-( #                : https://sourceforge.net/projects/pequel/ ) Tj
+( #    Perl Version: /usr/bin/perl 5.6.1 on solaris ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 519.6 Tm
 0.0000 Tw
-( #    Script Name : examples/chain_pequel_pt1.pql ) Tj
+( #    For         :  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 511.2 Tm
 0.0000 Tw
-( #    Created On  : Tue Oct  4 10:35:08 2005 ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 502.8 Tm
 0.0000 Tw
-( #    For         :  ) Tj
+( #    Options: ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 494.4 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #        input_file\(sample.data\) input data filename ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 486.0 Tm
 0.0000 Tw
-( #    Options: ) Tj
+( #        optimize\(1\) optimize generated code. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 477.6 Tm
 0.0000 Tw
-( #        input_file\(sample.data\) input data filename ) Tj
+( #        doc_title\(Pequel Chaining Part-1 Example Script\) document title. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 469.2 Tm
 0.0000 Tw
-( #        optimize\(1\) optimize generated code. ) Tj
+( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 460.8 Tm
 0.0000 Tw
-( #        hash\(1\) Generate in memory. Input data can be unsorted. ) Tj
+( #        doc_version\(2.3\) document version for pequel script. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 452.4 Tm
 0.0000 Tw
-( #        doc_title\(Pequel Chaining Part-1 Example Script\) document title. ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 444.0 Tm
 0.0000 Tw
-( #        doc_email\(sample@youraddress.com\) document email entry. ) Tj
+(         use strict; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 435.6 Tm
 0.0000 Tw
-( #        doc_version\(2.3\) document version for pequel script. ) Tj
+(         use constant _I_PRODUCT_CODE    => int    0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 427.2 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+(         use constant _I_COST_PRICE      => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 418.8 Tm
 0.0000 Tw
-(         use strict; ) Tj
+(         use constant _I_DESCRIPTION     => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 410.4 Tm
 0.0000 Tw
-(         local $\\="\\n"; local $,="|"; ) Tj
+(         use constant _I_SALES_CODE      => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 402.0 Tm
 0.0000 Tw
-(         print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] Init"; ) Tj
+(         use constant _I_SALES_PRICE     => int    4; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 393.6 Tm
 0.0000 Tw
-(         use constant VERBOSE => int 10000; ) Tj
+(         use constant _I_SALES_QTY       => int    5; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 385.2 Tm
 0.0000 Tw
-(         use constant LAST_ICELL => int 8; ) Tj
+(         use constant _I_SALES_DATE      => int    6; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 376.8 Tm
 0.0000 Tw
-(         my @I_VAL; ) Tj
+(         use constant _I_LOCATION        => int    7; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 368.4 Tm
 0.0000 Tw
-(         my %O_VAL; ) Tj
+(         use constant _I_SALES_TOTAL     => int    8; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 360.0 Tm
 0.0000 Tw
-(         my $key; ) Tj
+(         use constant _O_LOCATION        => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 351.6 Tm
 0.0000 Tw
-(         use constant _I_PRODUCT_CODE    => int    0; ) Tj
+(         use constant _O_PRODUCT_CODE    => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 343.2 Tm
 0.0000 Tw
-(         use constant _I_COST_PRICE      => int    1; ) Tj
+(         use constant _O_SALES_TOTAL     => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 334.8 Tm
 0.0000 Tw
-(         use constant _I_DESCRIPTION     => int    2; ) Tj
+(         local $\\="\\n"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 326.4 Tm
 0.0000 Tw
-(         use constant _I_SALES_CODE      => int    3; ) Tj
+(         local $,="|"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 318.0 Tm
 0.0000 Tw
-(         use constant _I_SALES_PRICE     => int    4; ) Tj
+(         print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] Init"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 309.6 Tm
 0.0000 Tw
-(         use constant _I_SALES_QTY       => int    5; ) Tj
+(         use constant VERBOSE => int 10000; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 301.2 Tm
 0.0000 Tw
-(         use constant _I_SALES_DATE      => int    6; ) Tj
+(         use constant LAST_ICELL => int 8; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 292.8 Tm
 0.0000 Tw
-(         use constant _I_LOCATION        => int    7; ) Tj
+(         my @I_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 284.4 Tm
 0.0000 Tw
-(         use constant _I_SALES_TOTAL     => int    8; ) Tj
+(         my @O_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 276.0 Tm
 0.0000 Tw
-(         use constant _O_LOCATION        => int    1; ) Tj
+(         my $_inprecs=0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 267.6 Tm
 0.0000 Tw
-(         use constant _O_PRODUCT_CODE    => int    2; ) Tj
+(         my $key__I_LOCATION; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 259.2 Tm
 0.0000 Tw
-(         use constant _O_SALES_TOTAL     => int    3; ) Tj
+(         my $previous_key__I_LOCATION = undef; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 250.8 Tm
 0.0000 Tw
-(         open\(DATA, q\{examples/sample.data\}\)|| die "Cannot open examples/sample.data: $!"; ) Tj
+(         my $key__I_PRODUCT_CODE; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 242.4 Tm
 0.0000 Tw
-(         open\(STDOUT, '|-', q\{sort -t'|' -y -k 1,1 |\}\); ) Tj
+(         my $previous_key__I_PRODUCT_CODE = undef; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 234.0 Tm
 0.0000 Tw
-(         print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] Start"; ) Tj
+(         foreach my $f \(1..3\) \{ $O_VAL[$f] = undef; \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 225.6 Tm
 0.0000 Tw
-(         use Benchmark; ) Tj
+( #     Sort:LOCATION\(asc:string\) PRODUCT_CODE\(asc:string\)  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 217.2 Tm
 0.0000 Tw
-(         my $benchmark_start = new Benchmark; ) Tj
+(         open\(DATA, q\{sort  -t'|' -y -k 8,8 -k 1,1 examples/sample.data 2>/dev/null |\}\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 208.8 Tm
 0.0000 Tw
-(         while \(<DATA>\) ) Tj
+(         open\(STDOUT, '|-', q\{sort  -t'|' -y -k 1,1 2>/dev/null\}\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 200.4 Tm
 0.0000 Tw
-(         \{ ) Tj
+(         print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] Start"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 192.0 Tm
 0.0000 Tw
-(             print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE == ) Tj
+(         use Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 183.6 Tm
 0.0000 Tw
-(  0\); ) Tj
+(         my $benchmark_start = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 175.2 Tm
 0.0000 Tw
-(             chomp; ) Tj
+(         while \(<DATA>\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 166.8 Tm
 0.0000 Tw
-(             @I_VAL = split\("[|]", $_\); ) Tj
+(         \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 158.4 Tm
 0.0000 Tw
-(             $key = \( $I_VAL[_I_LOCATION] \) . '|' . \( $I_VAL[_I_PRODUCT_CODE] \); ) Tj
+(             ++$_inprecs; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 150.0 Tm
 0.0000 Tw
-(             $O_VAL\{$key\}\{_O_LOCATION\} = $I_VAL[_I_LOCATION]; ) Tj
+(             print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] $_inprecs records." if \($_inprec ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 141.6 Tm
 0.0000 Tw
-(             $O_VAL\{$key\}\{_O_PRODUCT_CODE\} = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+( s % VERBOSE == 0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 133.2 Tm
 0.0000 Tw
-(             $I_VAL[_I_SALES_TOTAL] = $I_VAL[_I_SALES_QTY] * $I_VAL[_I_SALES_PRICE]; ) Tj
+(             chomp; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 124.8 Tm
 0.0000 Tw
-(             $O_VAL\{$key\}\{_O_SALES_TOTAL\} += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
+(             @I_VAL = split\("[|]", $_\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 116.4 Tm
 0.0000 Tw
-(         \} ) Tj
+(             $key__I_LOCATION = $I_VAL[_I_LOCATION]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 108.0 Tm
+0.0000 Tw
+(             $key__I_PRODUCT_CODE = $I_VAL[_I_PRODUCT_CODE]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 99.6 Tm
 0.0000 Tw
-(         foreach $key \(sort  keys %O_VAL\) ) Tj
+(             if \(!defined\($previous_key__I_LOCATION\) || !defined\($previous_key__I_PRODUCT_CODE\)\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 91.2 Tm
 0.0000 Tw
-(         \{ ) Tj
+(             \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 82.8 Tm
 0.0000 Tw
-(             print  ) Tj
+(                 $previous_key__I_LOCATION = $key__I_LOCATION; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 74.4 Tm
 0.0000 Tw
-(                 $O_VAL\{$key\}\{_O_LOCATION\}, ) Tj
+(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 66.0 Tm
 0.0000 Tw
-(                 $O_VAL\{$key\}\{_O_PRODUCT_CODE\}, ) Tj
+(             \} ) Tj
 /F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(04 October 2005 10:35) Tj
+(16 November 2005 13:55) Tj
 1 0 0 1 537.44 37 Tm
 (7) Tj
 ET
@@ -1687,7 +1702,7 @@ S
 endstream
 endobj
 43 0 obj
-8152
+8413
 endobj
 44 0 obj
 <<
@@ -1727,56 +1742,136 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 771.6 Tm
 0.0000 Tw
-(                 $O_VAL\{$key\}\{_O_SALES_TOTAL\} ) Tj
+(             elsif \($previous_key__I_LOCATION ne $key__I_LOCATION || $previous_key__I_PRODUCT_CODE ne $key__I_P ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 763.2 Tm
 0.0000 Tw
-(             ; ) Tj
+( RODUCT_CODE\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 754.8 Tm
 0.0000 Tw
-(         \} ) Tj
+(             \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 746.4 Tm
+0.0000 Tw
+(                 print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 738.0 Tm
 0.0000 Tw
-(         close\(STDOUT\); ) Tj
+(                     $O_VAL[_O_LOCATION], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 729.6 Tm
 0.0000 Tw
-(         print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] $. records."; ) Tj
+(                     $O_VAL[_O_PRODUCT_CODE], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 721.2 Tm
 0.0000 Tw
-(         my $benchmark_end = new Benchmark; ) Tj
+(                     $O_VAL[_O_SALES_TOTAL] ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 712.8 Tm
 0.0000 Tw
-(         my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+(                 ; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 704.4 Tm
 0.0000 Tw
-(         print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchma ) Tj
+(                 $previous_key__I_LOCATION = $key__I_LOCATION; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 696.0 Tm
 0.0000 Tw
-( rk_timediff\)]\}"; ) Tj
+(                 $previous_key__I_PRODUCT_CODE = $key__I_PRODUCT_CODE; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 687.6 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+(                 @O_VAL = undef; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 679.2 Tm
 0.0000 Tw
-(     \} ) Tj
+(             \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 662.4 Tm
+0.0000 Tw
+(             $O_VAL[_O_LOCATION] = $I_VAL[_I_LOCATION]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 654.0 Tm
+0.0000 Tw
+(             $O_VAL[_O_PRODUCT_CODE] = $I_VAL[_I_PRODUCT_CODE]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 645.6 Tm
+0.0000 Tw
+(             $I_VAL[_I_SALES_TOTAL] = $I_VAL[_I_SALES_QTY] * $I_VAL[_I_SALES_PRICE]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 637.2 Tm
+0.0000 Tw
+(             $O_VAL[_O_SALES_TOTAL] += $I_VAL[_I_SALES_TOTAL] unless \($I_VAL[_I_SALES_TOTAL] eq ''\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 628.8 Tm
+0.0000 Tw
+(         \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 612.0 Tm
+0.0000 Tw
+(         print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 603.6 Tm
+0.0000 Tw
+(             $O_VAL[_O_LOCATION], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 595.2 Tm
+0.0000 Tw
+(             $O_VAL[_O_PRODUCT_CODE], ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 586.8 Tm
+0.0000 Tw
+(             $O_VAL[_O_SALES_TOTAL] ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 578.4 Tm
+0.0000 Tw
+(         ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 570.0 Tm
+0.0000 Tw
+(         close\(STDOUT\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 561.6 Tm
+0.0000 Tw
+(         close\(DATA\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 553.2 Tm
+0.0000 Tw
+(         print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] $_inprecs records."; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 544.8 Tm
+0.0000 Tw
+(         my $benchmark_end = new Benchmark; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 536.4 Tm
+0.0000 Tw
+(         my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 528.0 Tm
+0.0000 Tw
+(         print STDERR '[examples/chain_pequel_pt1.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchma ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 519.6 Tm
+0.0000 Tw
+( rk_timediff\)]\}"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 511.2 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 502.8 Tm
+0.0000 Tw
+(     \} ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 486.0 Tm
 0.0000 Tw
 ( \} ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (8) Tj
-1 0 0 1 437.39 37 Tm
-(04 October 2005 10:35) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 13:55) Tj
 ET
 52 50 m
 543 50 l
@@ -1784,7 +1879,7 @@ S
 endstream
 endobj
 47 0 obj
-1436
+3320
 endobj
 48 0 obj
 <<
@@ -1890,7 +1985,7 @@ BT
 (the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(04 October 2005 10:35) Tj
+(16 November 2005 13:55) Tj
 1 0 0 1 537.44 37 Tm
 (9) Tj
 ET
@@ -1900,7 +1995,7 @@ S
 endstream
 endobj
 51 0 obj
-2243
+2244
 endobj
 52 0 obj
 <<
@@ -1941,8 +2036,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (10) Tj
-1 0 0 1 437.39 37 Tm
-(04 October 2005 10:35) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 13:55) Tj
 ET
 52 50 m
 543 50 l
@@ -1950,7 +2045,7 @@ S
 endstream
 endobj
 55 0 obj
-292
+293
 endobj
 56 0 obj
 <<
@@ -2104,7 +2199,7 @@ f
 Q
 BT
 1 0 0 1 100 578 Tm
-(2.1 pequeldoc) Tj
+(2.1 prefix) Tj
 1 0 0 1 513.44 578 Tm
 (2) Tj
 ET
@@ -2115,7 +2210,7 @@ f
 Q
 BT
 1 0 0 1 100 566 Tm
-(2.2 detail) Tj
+(2.2 pequeldoc) Tj
 1 0 0 1 513.44 566 Tm
 (2) Tj
 ET
@@ -2126,7 +2221,7 @@ f
 Q
 BT
 1 0 0 1 100 554 Tm
-(2.3 prefix) Tj
+(2.3 detail) Tj
 1 0 0 1 513.44 554 Tm
 (2) Tj
 ET
@@ -2280,7 +2375,7 @@ f
 Q
 BT
 1 0 0 1 100 386 Tm
-(sort by) Tj
+(input section) Tj
 1 0 0 1 513.44 386 Tm
 (5) Tj
 ET
@@ -2302,7 +2397,7 @@ f
 Q
 BT
 1 0 0 1 100 362 Tm
-(input section) Tj
+(output section) Tj
 1 0 0 1 513.44 362 Tm
 (5) Tj
 ET
@@ -2313,7 +2408,7 @@ f
 Q
 BT
 1 0 0 1 100 350 Tm
-(output section) Tj
+(sort output) Tj
 1 0 0 1 513.44 350 Tm
 (5) Tj
 ET
@@ -2351,7 +2446,7 @@ BT
 (9) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(04 October 2005 10:35) Tj
+(16 November 2005 13:55) Tj
 1 0 0 1 540.22 37 Tm
 (i) Tj
 ET
@@ -2361,7 +2456,7 @@ S
 endstream
 endobj
 59 0 obj
-3687
+3692
 endobj
 60 0 obj
 <<
@@ -2401,8 +2496,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (ii) Tj
-1 0 0 1 437.39 37 Tm
-(04 October 2005 10:35) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 13:55) Tj
 ET
 52 50 m
 543 50 l
@@ -2410,7 +2505,7 @@ S
 endstream
 endobj
 63 0 obj
-280
+281
 endobj
 64 0 obj
 <<
@@ -2506,7 +2601,7 @@ BT
 (Pequel Chaining Part-2 Example Script) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(04 October 2005 10:35) Tj
+(16 November 2005 13:55) Tj
 1 0 0 1 543 37 Tm
 () Tj
 ET
@@ -2516,7 +2611,7 @@ S
 endstream
 endobj
 71 0 obj
-287
+288
 endobj
 72 0 obj
 <<
@@ -2566,7 +2661,7 @@ endobj
 78 0 obj
 <<
 /Parent 75 0 R
-/Dest [21 0 R /FitH 627.6]
+/Dest [21 0 R /FitH 591.6]
 /Previous 77 0 R
 /Next 85 0 R
 /First 79 0 R
@@ -2578,7 +2673,7 @@ endobj
 79 0 obj
 <<
 /Parent 78 0 R
-/Dest [21 0 R /FitH 472.8]
+/Dest [21 0 R /FitH 460.8]
 /Next 81 0 R
 /First 80 0 R
 /Last 80 0 R
@@ -2589,14 +2684,14 @@ endobj
 80 0 obj
 <<
 /Parent 79 0 R
-/Dest [21 0 R /FitH 434.4]
+/Dest [21 0 R /FitH 422.4]
 /Title (Description)
 >>
 endobj
 81 0 obj
 <<
 /Parent 78 0 R
-/Dest [21 0 R /FitH 392.4]
+/Dest [21 0 R /FitH 380.4]
 /Previous 79 0 R
 /Next 83 0 R
 /First 82 0 R
@@ -2608,14 +2703,14 @@ endobj
 82 0 obj
 <<
 /Parent 81 0 R
-/Dest [21 0 R /FitH 354]
+/Dest [21 0 R /FitH 342]
 /Title (Description)
 >>
 endobj
 83 0 obj
 <<
 /Parent 78 0 R
-/Dest [21 0 R /FitH 312]
+/Dest [21 0 R /FitH 300]
 /Previous 81 0 R
 /First 84 0 R
 /Last 84 0 R
@@ -2626,7 +2721,7 @@ endobj
 84 0 obj
 <<
 /Parent 83 0 R
-/Dest [21 0 R /FitH 273.6]
+/Dest [21 0 R /FitH 261.6]
 /Title (Description)
 >>
 endobj
@@ -2647,7 +2742,7 @@ endobj
 /Parent 85 0 R
 /Dest [25 0 R /FitH 726]
 /Next 87 0 R
-/Title (2.1 pequeldoc)
+/Title (2.1 prefix)
 >>
 endobj
 87 0 obj
@@ -2656,7 +2751,7 @@ endobj
 /Dest [25 0 R /FitH 684]
 /Previous 86 0 R
 /Next 88 0 R
-/Title (2.2 detail)
+/Title (2.2 pequeldoc)
 >>
 endobj
 88 0 obj
@@ -2665,7 +2760,7 @@ endobj
 /Dest [25 0 R /FitH 642]
 /Previous 87 0 R
 /Next 89 0 R
-/Title (2.3 prefix)
+/Title (2.3 detail)
 >>
 endobj
 89 0 obj
@@ -2790,16 +2885,16 @@ endobj
 102 0 obj
 <<
 /Parent 99 0 R
-/Dest [37 0 R /FitH 517.2]
+/Dest [37 0 R /FitH 475.2]
 /Previous 101 0 R
 /Next 103 0 R
-/Title (sort by)
+/Title (input section)
 >>
 endobj
 103 0 obj
 <<
 /Parent 99 0 R
-/Dest [37 0 R /FitH 480]
+/Dest [37 0 R /FitH 421.200000000001]
 /Previous 102 0 R
 /Next 104 0 R
 /Title (group by)
@@ -2808,18 +2903,18 @@ endobj
 104 0 obj
 <<
 /Parent 99 0 R
-/Dest [37 0 R /FitH 442.8]
+/Dest [37 0 R /FitH 384.000000000001]
 /Previous 103 0 R
 /Next 105 0 R
-/Title (input section)
+/Title (output section)
 >>
 endobj
 105 0 obj
 <<
 /Parent 99 0 R
-/Dest [37 0 R /FitH 388.800000000001]
+/Dest [37 0 R /FitH 330.000000000001]
 /Previous 104 0 R
-/Title (output section)
+/Title (sort output)
 >>
 endobj
 106 0 obj
@@ -2878,8 +2973,8 @@ xref
 0000000000 65535 f 
 0000000015 00000 n 
 0000000171 00000 n 
-0000045972 00000 n 
-0000046061 00000 n 
+0000049178 00000 n 
+0000049267 00000 n 
 0000000296 00000 n 
 0000002396 00000 n 
 0000002495 00000 n 
@@ -2894,96 +2989,96 @@ xref
 0000003407 00000 n 
 0000003513 00000 n 
 0000003627 00000 n 
-0000007510 00000 n 
-0000007531 00000 n 
-0000007681 00000 n 
-0000007764 00000 n 
-0000010282 00000 n 
-0000010303 00000 n 
-0000010429 00000 n 
-0000010512 00000 n 
-0000010916 00000 n 
-0000010936 00000 n 
-0000011038 00000 n 
-0000011121 00000 n 
-0000011629 00000 n 
-0000011649 00000 n 
-0000011751 00000 n 
-0000011834 00000 n 
-0000015202 00000 n 
-0000015223 00000 n 
-0000015349 00000 n 
-0000015432 00000 n 
-0000022709 00000 n 
-0000022730 00000 n 
-0000022844 00000 n 
-0000022927 00000 n 
-0000031133 00000 n 
-0000031154 00000 n 
-0000031268 00000 n 
-0000031351 00000 n 
-0000032841 00000 n 
-0000032862 00000 n 
-0000032976 00000 n 
-0000033059 00000 n 
-0000035356 00000 n 
-0000035377 00000 n 
-0000035503 00000 n 
-0000035586 00000 n 
-0000035932 00000 n 
-0000035952 00000 n 
-0000036054 00000 n 
-0000036137 00000 n 
-0000039878 00000 n 
-0000039899 00000 n 
-0000040013 00000 n 
-0000040096 00000 n 
-0000040430 00000 n 
-0000040450 00000 n 
-0000040552 00000 n 
-0000040635 00000 n 
-0000040718 00000 n 
-0000041128 00000 n 
-0000041148 00000 n 
-0000041274 00000 n 
-0000041615 00000 n 
-0000041635 00000 n 
-0000041737 00000 n 
-0000045896 00000 n 
-0000041820 00000 n 
-0000041943 00000 n 
-0000042041 00000 n 
-0000042154 00000 n 
-0000042313 00000 n 
-0000042449 00000 n 
-0000042534 00000 n 
-0000042697 00000 n 
-0000042780 00000 n 
-0000042921 00000 n 
-0000043006 00000 n 
-0000043173 00000 n 
-0000043271 00000 n 
-0000043383 00000 n 
-0000043495 00000 n 
-0000043612 00000 n 
-0000043728 00000 n 
-0000043840 00000 n 
-0000043954 00000 n 
-0000044069 00000 n 
-0000044184 00000 n 
-0000044289 00000 n 
-0000044402 00000 n 
-0000044571 00000 n 
-0000044678 00000 n 
-0000044854 00000 n 
-0000044948 00000 n 
-0000045066 00000 n 
-0000045180 00000 n 
-0000045293 00000 n 
-0000045413 00000 n 
-0000045531 00000 n 
-0000045664 00000 n 
-0000045811 00000 n 
+0000007735 00000 n 
+0000007756 00000 n 
+0000007906 00000 n 
+0000007989 00000 n 
+0000010508 00000 n 
+0000010529 00000 n 
+0000010655 00000 n 
+0000010738 00000 n 
+0000011143 00000 n 
+0000011163 00000 n 
+0000011265 00000 n 
+0000011348 00000 n 
+0000011857 00000 n 
+0000011877 00000 n 
+0000011979 00000 n 
+0000012062 00000 n 
+0000016089 00000 n 
+0000016110 00000 n 
+0000016236 00000 n 
+0000016319 00000 n 
+0000023733 00000 n 
+0000023754 00000 n 
+0000023868 00000 n 
+0000023951 00000 n 
+0000032418 00000 n 
+0000032439 00000 n 
+0000032553 00000 n 
+0000032636 00000 n 
+0000036010 00000 n 
+0000036031 00000 n 
+0000036145 00000 n 
+0000036228 00000 n 
+0000038526 00000 n 
+0000038547 00000 n 
+0000038673 00000 n 
+0000038756 00000 n 
+0000039103 00000 n 
+0000039123 00000 n 
+0000039225 00000 n 
+0000039308 00000 n 
+0000043054 00000 n 
+0000043075 00000 n 
+0000043189 00000 n 
+0000043272 00000 n 
+0000043607 00000 n 
+0000043627 00000 n 
+0000043729 00000 n 
+0000043812 00000 n 
+0000043895 00000 n 
+0000044305 00000 n 
+0000044325 00000 n 
+0000044451 00000 n 
+0000044793 00000 n 
+0000044813 00000 n 
+0000044915 00000 n 
+0000049102 00000 n 
+0000044998 00000 n 
+0000045121 00000 n 
+0000045219 00000 n 
+0000045332 00000 n 
+0000045491 00000 n 
+0000045627 00000 n 
+0000045712 00000 n 
+0000045875 00000 n 
+0000045958 00000 n 
+0000046099 00000 n 
+0000046184 00000 n 
+0000046351 00000 n 
+0000046446 00000 n 
+0000046561 00000 n 
+0000046673 00000 n 
+0000046790 00000 n 
+0000046906 00000 n 
+0000047018 00000 n 
+0000047132 00000 n 
+0000047247 00000 n 
+0000047362 00000 n 
+0000047467 00000 n 
+0000047580 00000 n 
+0000047749 00000 n 
+0000047856 00000 n 
+0000048032 00000 n 
+0000048126 00000 n 
+0000048244 00000 n 
+0000048364 00000 n 
+0000048490 00000 n 
+0000048622 00000 n 
+0000048737 00000 n 
+0000048870 00000 n 
+0000049017 00000 n 
 trailer
 <<
 /Size 109
@@ -2991,5 +3086,5 @@ trailer
 /Info 2 0 R
 >>
 startxref
-46237
+49443
 %%EOF

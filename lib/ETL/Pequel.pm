@@ -31,7 +31,7 @@ use strict;
 use attributes qw(get reftype);
 use warnings;
 use vars qw($VERSION $BUILD);
-$VERSION = "2.4-4";
+$VERSION = "2.4-5";
 $BUILD = 'Thursday November  3 23:56:42 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {

@@ -6,7 +6,7 @@
 options
 	input_file(sample.data)	// Need to specify this script is used as a pequel-table loader.
     optimize                // (default) optimize generated code.
-	hash
+	//hash
     doc_title("Pequel Chaining Part-1 Example Script")
     doc_email("sample@youraddress.com")
     doc_version(2.3)
@@ -26,9 +26,9 @@ input section
     LOCATION,
     SALES_TOTAL => SALES_QTY * SALES_PRICE
 
-//sort by	// don't need when using 'hash'
-    //LOCATION
-	//PRODUCT_CODE
+sort by	// don't need when using 'hash'
+    LOCATION
+	PRODUCT_CODE
 
 group by
     LOCATION

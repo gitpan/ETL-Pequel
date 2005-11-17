@@ -11,7 +11,7 @@
 endobj
 2 0 obj
 <<
-/CreationDate (D:20050927144543+0100)
+/CreationDate (D:20051116142143+0000)
 /Producer (Pequel)
 /Title (Pequel Table Example Script)
 >>
@@ -181,7 +181,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(top_prod_by_loc.pql) Tj
+(examples/top_prod_by_loc.pql) Tj
 1 0 0 1 406.28 797 Tm
 (Pequel Table Example Script) Tj
 /F21 12 Tf
@@ -191,7 +191,7 @@ BT
 /F20 10 Tf
 1 0 0 1 76.0 735.6 Tm
 0.0000 Tw
-(top_prod_by_loc.pql ) Tj
+(examples/top_prod_by_loc.pql ) Tj
 /F21 12 Tf
 1 0 0 1 52.0 705.6 Tm
 0.0000 Tw
@@ -360,7 +360,7 @@ BT
 (sprintf\("%.2f",SALES_TOTAL\) eq sprintf\("%.2f",_MAXSALES\); ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(27 September 2005 14:45) Tj
+(16 November 2005 14:21) Tj
 1 0 0 1 537.44 37 Tm
 (1) Tj
 ET
@@ -370,7 +370,7 @@ S
 endstream
 endobj
 19 0 obj
-2954
+2971
 endobj
 20 0 obj
 <<
@@ -408,8 +408,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Pequel Table Example Script) Tj
-1 0 0 1 444.65 797 Tm
-(top_prod_by_loc.pql) Tj
+1 0 0 1 396.29 797 Tm
+(examples/top_prod_by_loc.pql) Tj
 /F21 12 Tf
 1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
@@ -420,18 +420,32 @@ BT
 (2.1 ) Tj
 /F23 10 Tf
 0.0000 Tw
-(pequeldoc) Tj
+(prefix) Tj
 /F21 10 Tf
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 702.0 Tm
 0.0000 Tw
-(generate pod / pdf pequel script Reference Guide.: pdf ) Tj
+(directory pathname prefix.: examples ) Tj
 /F21 10 Tf
 1 0 0 1 52.0 672.0 Tm
 0.0000 Tw
 (2.2 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(pequeldoc) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 660.0 Tm
+0.0000 Tw
+(generate pod / pdf pequel script Reference Guide.: pdf ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 630.0 Tm
+0.0000 Tw
+(2.3 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (detail) Tj
@@ -439,13 +453,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 660.0 Tm
+1 0 0 1 76.0 618.0 Tm
 0.0000 Tw
 (Include Pequel Generated Program chapter in Pequeldoc: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 630.0 Tm
+1 0 0 1 52.0 588.0 Tm
 0.0000 Tw
-(2.3 ) Tj
+(2.4 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (script_name) Tj
@@ -453,13 +467,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 618.0 Tm
+1 0 0 1 76.0 576.0 Tm
 0.0000 Tw
-(script filename: top_prod_by_loc.pql ) Tj
+(script filename: examples/top_prod_by_loc.pql ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 588.0 Tm
+1 0 0 1 52.0 546.0 Tm
 0.0000 Tw
-(2.4 ) Tj
+(2.5 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (input_file) Tj
@@ -467,13 +481,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 576.0 Tm
+1 0 0 1 76.0 534.0 Tm
 0.0000 Tw
 (input data filename: sample.data ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 546.0 Tm
+1 0 0 1 52.0 504.0 Tm
 0.0000 Tw
-(2.5 ) Tj
+(2.6 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (header) Tj
@@ -481,13 +495,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 534.0 Tm
+1 0 0 1 76.0 492.0 Tm
 0.0000 Tw
 (write header record to output.: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 504.0 Tm
+1 0 0 1 52.0 462.0 Tm
 0.0000 Tw
-(2.6 ) Tj
+(2.7 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (optimize) Tj
@@ -495,13 +509,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 492.0 Tm
+1 0 0 1 76.0 450.0 Tm
 0.0000 Tw
 (optimize generated code.: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 462.0 Tm
+1 0 0 1 52.0 420.0 Tm
 0.0000 Tw
-(2.7 ) Tj
+(2.8 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (hash) Tj
@@ -509,13 +523,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 450.0 Tm
+1 0 0 1 76.0 408.0 Tm
 0.0000 Tw
 (Generate in memory. Input data can be unsorted.: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 420.0 Tm
+1 0 0 1 52.0 378.0 Tm
 0.0000 Tw
-(2.8 ) Tj
+(2.9 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_title) Tj
@@ -523,13 +537,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 408.0 Tm
+1 0 0 1 76.0 366.0 Tm
 0.0000 Tw
 (document title.: Pequel Table Example Script ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 378.0 Tm
+1 0 0 1 52.0 336.0 Tm
 0.0000 Tw
-(2.9 ) Tj
+(2.10 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_email) Tj
@@ -537,13 +551,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 366.0 Tm
+1 0 0 1 76.0 324.0 Tm
 0.0000 Tw
 (document email entry.: sample@youraddress.com ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 336.0 Tm
+1 0 0 1 52.0 294.0 Tm
 0.0000 Tw
-(2.10 ) Tj
+(2.11 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_version) Tj
@@ -551,14 +565,14 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 324.0 Tm
+1 0 0 1 76.0 282.0 Tm
 0.0000 Tw
 (document version for pequel script.: 2.3 ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (2) Tj
-1 0 0 1 424.05 37 Tm
-(27 September 2005 14:45) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:21) Tj
 ET
 52 50 m
 543 50 l
@@ -566,7 +580,7 @@ S
 endstream
 endobj
 23 0 obj
-2429
+2647
 endobj
 24 0 obj
 <<
@@ -601,7 +615,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(top_prod_by_loc.pql) Tj
+(examples/top_prod_by_loc.pql) Tj
 1 0 0 1 406.28 797 Tm
 (Pequel Table Example Script) Tj
 /F21 12 Tf
@@ -610,7 +624,7 @@ BT
 (3. TABLES ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(27 September 2005 14:45) Tj
+(16 November 2005 14:21) Tj
 1 0 0 1 537.44 37 Tm
 (3) Tj
 ET
@@ -620,7 +634,7 @@ S
 endstream
 endobj
 27 0 obj
-332
+340
 endobj
 28 0 obj
 <<
@@ -654,8 +668,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Pequel Table Example Script) Tj
-1 0 0 1 444.65 797 Tm
-(top_prod_by_loc.pql) Tj
+1 0 0 1 396.29 797 Tm
+(examples/top_prod_by_loc.pql) Tj
 /F21 12 Tf
 1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
@@ -667,8 +681,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (4) Tj
-1 0 0 1 424.05 37 Tm
-(27 September 2005 14:45) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:21) Tj
 ET
 52 50 m
 543 50 l
@@ -676,7 +690,7 @@ S
 endstream
 endobj
 31 0 obj
-436
+444
 endobj
 32 0 obj
 <<
@@ -709,13 +723,13 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(top_prod_by_loc.pql) Tj
+(examples/top_prod_by_loc.pql) Tj
 1 0 0 1 406.28 797 Tm
 (Pequel Table Example Script) Tj
 /F21 12 Tf
 1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
-(5. TOP_PROD_BY_LOC.PQL ) Tj
+(5. EXAMPLES/TOP_PROD_BY_LOC.PQL ) Tj
 /F21 10 Tf
 1 0 0 1 52.0 714.0 Tm
 0.0000 Tw
@@ -729,45 +743,49 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 697.8 Tm
 0.0000 Tw
-(    pequeldoc\(pdf\) ) Tj
+(    prefix\(examples\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 689.4 Tm
 0.0000 Tw
-(    detail\(1\) ) Tj
+(    pequeldoc\(pdf\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 681.0 Tm
 0.0000 Tw
-(    script_name\(top_prod_by_loc.pql\) ) Tj
+(    detail\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 672.6 Tm
 0.0000 Tw
-(    input_file\(sample.data\) ) Tj
+(    script_name\(examples/top_prod_by_loc.pql\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 664.2 Tm
 0.0000 Tw
-(    header\(1\) ) Tj
+(    input_file\(sample.data\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 655.8 Tm
 0.0000 Tw
-(    optimize\(1\) ) Tj
+(    header\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 647.4 Tm
 0.0000 Tw
-(    hash\(1\) ) Tj
+(    optimize\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 639.0 Tm
 0.0000 Tw
-(    doc_title\(Pequel Table Example Script\) ) Tj
+(    hash\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 630.6 Tm
 0.0000 Tw
-(    doc_email\(sample@youraddress.com\) ) Tj
+(    doc_title\(Pequel Table Example Script\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 622.2 Tm
 0.0000 Tw
+(    doc_email\(sample@youraddress.com\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 613.8 Tm
+0.0000 Tw
 (    doc_version\(2.3\) ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 601.2 Tm
+1 0 0 1 52.0 592.8 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -777,37 +795,23 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 585.0 Tm
+1 0 0 1 76.0 576.6 Tm
 0.0000 Tw
 (    This script demonstrates the use of pequel tables. This scipt will be ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 576.6 Tm
+1 0 0 1 76.0 568.2 Tm
 0.0000 Tw
 (    called by another Pequel script to load the table data ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 568.2 Tm
+1 0 0 1 76.0 559.8 Tm
 0.0000 Tw
 (    via the 'load pequel table' ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 559.8 Tm
+1 0 0 1 76.0 551.4 Tm
 0.0000 Tw
 (    section. The important thing here is to specify the 'input_file' option. ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 538.8 Tm
-0.0000 Tw
-() Tj
-/F23 10 Tf
-0.0000 Tw
-(group by) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 522.6 Tm
-0.0000 Tw
-(    LOCATION string ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 501.6 Tm
+1 0 0 1 52.0 530.4 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -817,43 +821,57 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 485.4 Tm
+1 0 0 1 76.0 514.2 Tm
 0.0000 Tw
 (    PRODUCT_CODE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 477.0 Tm
+1 0 0 1 76.0 505.8 Tm
 0.0000 Tw
 (    COST_PRICE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 468.6 Tm
+1 0 0 1 76.0 497.4 Tm
 0.0000 Tw
 (    DESCRIPTION ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 460.2 Tm
+1 0 0 1 76.0 489.0 Tm
 0.0000 Tw
 (    SALES_CODE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 451.8 Tm
+1 0 0 1 76.0 480.6 Tm
 0.0000 Tw
 (    SALES_PRICE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 443.4 Tm
+1 0 0 1 76.0 472.2 Tm
 0.0000 Tw
 (    SALES_QTY ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 435.0 Tm
+1 0 0 1 76.0 463.8 Tm
 0.0000 Tw
 (    SALES_DATE ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 426.6 Tm
+1 0 0 1 76.0 455.4 Tm
 0.0000 Tw
 (    LOCATION ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 418.2 Tm
+1 0 0 1 76.0 447.0 Tm
 0.0000 Tw
 (    SALES_TOTAL => SALES_QTY * SALES_PRICE ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 397.2 Tm
+1 0 0 1 52.0 426.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(group by) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 409.8 Tm
+0.0000 Tw
+(    LOCATION string ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 388.8 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -863,20 +881,20 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 381.0 Tm
+1 0 0 1 76.0 372.6 Tm
 0.0000 Tw
 (    string    LOCATION     LOCATION ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 372.6 Tm
+1 0 0 1 76.0 364.2 Tm
 0.0000 Tw
 (    decimal   _MAXSALES    max SALES_TOTAL ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 364.2 Tm
+1 0 0 1 76.0 355.8 Tm
 0.0000 Tw
 (    string    PRODUCT_CODE first PRODUCT_CODE where sprintf\("%.2f",SALES_TOTAL\) eq sprintf\("%.2f",_MAXSALES\) ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(27 September 2005 14:45) Tj
+(16 November 2005 14:21) Tj
 1 0 0 1 537.44 37 Tm
 (5) Tj
 ET
@@ -886,7 +904,7 @@ S
 endstream
 endobj
 35 0 obj
-3094
+3191
 endobj
 36 0 obj
 <<
@@ -922,8 +940,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Pequel Table Example Script) Tj
-1 0 0 1 444.65 797 Tm
-(top_prod_by_loc.pql) Tj
+1 0 0 1 396.29 797 Tm
+(examples/top_prod_by_loc.pql) Tj
 /F21 12 Tf
 1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
@@ -931,7 +949,7 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 731.4 Tm
 0.0000 Tw
-( # vim: syntax=perl ts=4 sw=4 ) Tj
+( #!/usr/bin/perl ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 723.0 Tm
 0.0000 Tw
@@ -939,255 +957,259 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 714.6 Tm
 0.0000 Tw
-( #Generated By: pequel Version 2.3-2, Build: Thursday September 22 19:56:03 BST 2005 ) Tj
+( # vim: syntax=perl ts=4 sw=4 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 706.2 Tm
 0.0000 Tw
-( #            : https://sourceforge.net/projects/pequel/ ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 697.8 Tm
 0.0000 Tw
-( #Script Name : top_prod_by_loc.pql ) Tj
+( #Generated By: pequel Version 2.4-5, Build: Wednesday November 16 21:56:42 GMT 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 689.4 Tm
 0.0000 Tw
-( #Created On  : Tue Sep 27 14:45:43 2005 ) Tj
+( #            : http://sourceforge.net/projects/pequel/ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 681.0 Tm
 0.0000 Tw
-( #For         :  ) Tj
+( #Script Name : top_prod_by_loc.pql ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 672.6 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #Created On  : Wed Nov 16 14:21:42 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 664.2 Tm
 0.0000 Tw
-( #Options: ) Tj
+( #Perl Version: /usr/bin/perl 5.6.1 on solaris ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 655.8 Tm
 0.0000 Tw
-( #pequeldoc\(pdf\) generate pod / pdf pequel script Reference Guide. ) Tj
+( #For         :  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 647.4 Tm
 0.0000 Tw
-( #detail\(1\) Include Pequel Generated Program chapter in Pequeldoc ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 639.0 Tm
 0.0000 Tw
-( #script_name\(top_prod_by_loc.pql\) script filename ) Tj
+( #Options: ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 630.6 Tm
 0.0000 Tw
-( #input_file\(sample.data\) input data filename ) Tj
+( #prefix\(examples\) directory pathname prefix. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 622.2 Tm
 0.0000 Tw
-( #header\(1\) write header record to output. ) Tj
+( #pequeldoc\(pdf\) generate pod / pdf pequel script Reference Guide. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 613.8 Tm
 0.0000 Tw
-( #optimize\(1\) optimize generated code. ) Tj
+( #detail\(1\) Include Pequel Generated Program chapter in Pequeldoc ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 605.4 Tm
 0.0000 Tw
-( #hash\(1\) Generate in memory. Input data can be unsorted. ) Tj
+( #script_name\(examples/top_prod_by_loc.pql\) script filename ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 597.0 Tm
 0.0000 Tw
-( #doc_title\(Pequel Table Example Script\) document title. ) Tj
+( #input_file\(sample.data\) input data filename ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 588.6 Tm
 0.0000 Tw
-( #doc_email\(sample@youraddress.com\) document email entry. ) Tj
+( #header\(1\) write header record to output. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 580.2 Tm
 0.0000 Tw
-( #doc_version\(2.3\) document version for pequel script. ) Tj
+( #optimize\(1\) optimize generated code. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 571.8 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #hash\(1\) Generate in memory. Input data can be unsorted. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 563.4 Tm
 0.0000 Tw
-( use strict; ) Tj
+( #doc_title\(Pequel Table Example Script\) document title. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 555.0 Tm
 0.0000 Tw
-( local $\\="\\n"; local $,="|"; ) Tj
+( #doc_email\(sample@youraddress.com\) document email entry. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 546.6 Tm
 0.0000 Tw
-( print STDERR '[top_prod_by_loc.pql ' . localtime\(\) . "] Init"; ) Tj
+( #doc_version\(2.3\) document version for pequel script. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 538.2 Tm
 0.0000 Tw
-( use constant VERBOSE => int 10000; ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 529.8 Tm
 0.0000 Tw
-( use constant LAST_ICELL => int 8; ) Tj
+( use strict; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 521.4 Tm
 0.0000 Tw
-( my @I_VAL; ) Tj
+( use constant _I_PRODUCT_CODE    => int    0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 513.0 Tm
 0.0000 Tw
-( my %O_VAL; ) Tj
+( use constant _I_COST_PRICE      => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 504.6 Tm
 0.0000 Tw
-( my $key; ) Tj
+( use constant _I_DESCRIPTION     => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 496.2 Tm
 0.0000 Tw
-( use constant _I_PRODUCT_CODE    => int    0; ) Tj
+( use constant _I_SALES_CODE      => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 487.8 Tm
 0.0000 Tw
-( use constant _I_COST_PRICE      => int    1; ) Tj
+( use constant _I_SALES_PRICE     => int    4; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 479.4 Tm
 0.0000 Tw
-( use constant _I_DESCRIPTION     => int    2; ) Tj
+( use constant _I_SALES_QTY       => int    5; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 471.0 Tm
 0.0000 Tw
-( use constant _I_SALES_CODE      => int    3; ) Tj
+( use constant _I_SALES_DATE      => int    6; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 462.6 Tm
 0.0000 Tw
-( use constant _I_SALES_PRICE     => int    4; ) Tj
+( use constant _I_LOCATION        => int    7; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 454.2 Tm
 0.0000 Tw
-( use constant _I_SALES_QTY       => int    5; ) Tj
+( use constant _I_SALES_TOTAL     => int    8; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 445.8 Tm
 0.0000 Tw
-( use constant _I_SALES_DATE      => int    6; ) Tj
+( use constant _O_LOCATION        => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 437.4 Tm
 0.0000 Tw
-( use constant _I_LOCATION        => int    7; ) Tj
+( use constant _O__MAXSALES       => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 429.0 Tm
 0.0000 Tw
-( use constant _I_SALES_TOTAL     => int    8; ) Tj
+( use constant _O_PRODUCT_CODE    => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 420.6 Tm
 0.0000 Tw
-( use constant _O_LOCATION        => int    1; ) Tj
+( local $\\="\\n"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 412.2 Tm
 0.0000 Tw
-( use constant _O__MAXSALES       => int    2; ) Tj
+( local $,="|"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 403.8 Tm
 0.0000 Tw
-( use constant _O_PRODUCT_CODE    => int    3; ) Tj
+( print STDERR '[examples/top_prod_by_loc.pql ' . localtime\(\) . "] Init"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 395.4 Tm
 0.0000 Tw
-( open\(DATA, q\{sample.data\}\)|| die "Cannot open sample.data: $!"; ) Tj
+( use constant VERBOSE => int 10000; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 387.0 Tm
 0.0000 Tw
-( &PrintHeader\(\); ) Tj
+( use constant LAST_ICELL => int 8; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 378.6 Tm
 0.0000 Tw
-( print STDERR '[top_prod_by_loc.pql ' . localtime\(\) . "] Start"; ) Tj
+( my @I_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 370.2 Tm
 0.0000 Tw
-( use Benchmark; ) Tj
+( my %O_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 361.8 Tm
 0.0000 Tw
-( my $benchmark_start = new Benchmark; ) Tj
+( my $key; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 353.4 Tm
 0.0000 Tw
-( while \(<DATA>\) ) Tj
+( my $_inprecs=0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 345.0 Tm
 0.0000 Tw
-( \{ ) Tj
+( open\(DATA, q\{examples/sample.data\}\)|| die "Cannot open examples/sample.data: $!"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 336.6 Tm
 0.0000 Tw
-(     print STDERR '[top_prod_by_loc.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE == 0\); ) Tj
+( &PrintHeader\(\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 328.2 Tm
 0.0000 Tw
-(     chomp; ) Tj
+( print STDERR '[examples/top_prod_by_loc.pql ' . localtime\(\) . "] Start"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 319.8 Tm
 0.0000 Tw
-(     @I_VAL = split\("[|]", $_\); ) Tj
+( use Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 311.4 Tm
 0.0000 Tw
-(     $key = \( $I_VAL[_I_LOCATION] \); ) Tj
+( my $benchmark_start = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 303.0 Tm
 0.0000 Tw
-(     $O_VAL\{$key\}\{_O_LOCATION\} = $I_VAL[_I_LOCATION]; ) Tj
+( while \(<DATA>\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 294.6 Tm
 0.0000 Tw
-(     $I_VAL[_I_SALES_TOTAL] = $I_VAL[_I_SALES_QTY] * $I_VAL[_I_SALES_PRICE]; ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 286.2 Tm
 0.0000 Tw
-(     $O_VAL\{$key\}\{_O__MAXSALES\} = $I_VAL[_I_SALES_TOTAL] ) Tj
+(     ++$_inprecs; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 277.8 Tm
 0.0000 Tw
-(         if \(!defined\($O_VAL\{$key\}\{_O__MAXSALES\}\) || $I_VAL[_I_SALES_TOTAL] > $O_VAL\{$key\}\{_O__MAXSALES\}\); ) Tj
+(     print STDERR '[examples/top_prod_by_loc.pql ' . localtime\(\) . "] $_inprecs records." if \($_inprecs % VERBO ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 269.4 Tm
+0.0000 Tw
+( SE == 0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 261.0 Tm
 0.0000 Tw
-(     if \(sprintf\("%.2f",$I_VAL[_I_SALES_TOTAL]\) eq sprintf\("%.2f",$O_VAL\{$key\}\{_O__MAXSALES\}\)\) \{ ) Tj
+(     chomp; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 252.6 Tm
 0.0000 Tw
-(         $O_VAL\{$key\}\{_O_PRODUCT_CODE\} = $I_VAL[_I_PRODUCT_CODE] if \(!defined\($O_VAL\{$key\}\{_O_PRODUCT_CODE\}\)\); ) Tj
+(     @I_VAL = split\("[|]", $_\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 244.2 Tm
 0.0000 Tw
-(     \} ) Tj
+(     $key = \( $I_VAL[_I_LOCATION] \); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 235.8 Tm
 0.0000 Tw
-( \} ) Tj
+(     $O_VAL\{$key\}\{_O_LOCATION\} = $I_VAL[_I_LOCATION]; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 227.4 Tm
+0.0000 Tw
+(     $I_VAL[_I_SALES_TOTAL] = $I_VAL[_I_SALES_QTY] * $I_VAL[_I_SALES_PRICE]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 219.0 Tm
 0.0000 Tw
-( foreach $key \(sort  keys %O_VAL\) ) Tj
+(     $O_VAL\{$key\}\{_O__MAXSALES\} = $I_VAL[_I_SALES_TOTAL] ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 210.6 Tm
 0.0000 Tw
-( \{ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 202.2 Tm
-0.0000 Tw
-(     print  ) Tj
+(         if \(!defined\($O_VAL\{$key\}\{_O__MAXSALES\}\) || $I_VAL[_I_SALES_TOTAL] > $O_VAL\{$key\}\{_O__MAXSALES\}\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 193.8 Tm
 0.0000 Tw
-(         $O_VAL\{$key\}\{_O_LOCATION\}, ) Tj
+(     if \(sprintf\("%.2f",$I_VAL[_I_SALES_TOTAL]\) eq sprintf\("%.2f",$O_VAL\{$key\}\{_O__MAXSALES\}\)\) \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 185.4 Tm
 0.0000 Tw
-(         $O_VAL\{$key\}\{_O_PRODUCT_CODE\} ) Tj
+(         $O_VAL\{$key\}\{_O_PRODUCT_CODE\} = $I_VAL[_I_PRODUCT_CODE] if \(!defined\($O_VAL\{$key\}\{_O_PRODUCT_CODE\}\)\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 177.0 Tm
 0.0000 Tw
-(     ; ) Tj
+(     \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 168.6 Tm
 0.0000 Tw
@@ -1195,53 +1217,49 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 151.8 Tm
 0.0000 Tw
-( print STDERR '[top_prod_by_loc.pql ' . localtime\(\) . "] $. records."; ) Tj
+( foreach $key \(sort  keys %O_VAL\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 143.4 Tm
 0.0000 Tw
-( my $benchmark_end = new Benchmark; ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 135.0 Tm
 0.0000 Tw
-( my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+(     print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 126.6 Tm
 0.0000 Tw
-( print STDERR '[top_prod_by_loc.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark_timediff\)]\}"; ) Tj
+(         $O_VAL\{$key\}\{_O_LOCATION\}, ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 118.2 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+(         $O_VAL\{$key\}\{_O_PRODUCT_CODE\} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 109.8 Tm
 0.0000 Tw
-( sub PrintHeader ) Tj
+(     ; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 101.4 Tm
 0.0000 Tw
-( \{ ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 93.0 Tm
-0.0000 Tw
-(     local $\\="\\n"; ) Tj
+( \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 84.6 Tm
 0.0000 Tw
-(     local $,="|"; ) Tj
+( close\(DATA\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 76.2 Tm
 0.0000 Tw
-(     print  ) Tj
+( print STDERR '[examples/top_prod_by_loc.pql ' . localtime\(\) . "] $_inprecs records."; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 67.8 Tm
 0.0000 Tw
-(         'LOCATION', ) Tj
+( my $benchmark_end = new Benchmark; ) Tj
 /F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (6) Tj
-1 0 0 1 424.05 37 Tm
-(27 September 2005 14:45) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:21) Tj
 ET
 52 50 m
 543 50 l
@@ -1249,7 +1267,7 @@ S
 endstream
 endobj
 39 0 obj
-7583
+7564
 endobj
 40 0 obj
 <<
@@ -1283,24 +1301,64 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(top_prod_by_loc.pql) Tj
+(examples/top_prod_by_loc.pql) Tj
 1 0 0 1 406.28 797 Tm
 (Pequel Table Example Script) Tj
 /F10 7 Tf
 1 0 0 1 76.0 771.6 Tm
 0.0000 Tw
-(         'PRODUCT_CODE' ) Tj
+( my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 763.2 Tm
 0.0000 Tw
-(         ; ) Tj
+( print STDERR '[examples/top_prod_by_loc.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark_timedi ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 754.8 Tm
+0.0000 Tw
+( ff\)]\}"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 746.4 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 738.0 Tm
+0.0000 Tw
+( sub PrintHeader ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 729.6 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 721.2 Tm
+0.0000 Tw
+(     local $\\="\\n"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 712.8 Tm
+0.0000 Tw
+(     local $,="|"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 704.4 Tm
+0.0000 Tw
+(     print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 696.0 Tm
+0.0000 Tw
+(         'LOCATION', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 687.6 Tm
+0.0000 Tw
+(         'PRODUCT_CODE' ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 679.2 Tm
+0.0000 Tw
+(         ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 670.8 Tm
 0.0000 Tw
 ( \} ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(27 September 2005 14:45) Tj
+(16 November 2005 14:21) Tj
 1 0 0 1 537.44 37 Tm
 (7) Tj
 ET
@@ -1310,7 +1368,7 @@ S
 endstream
 endobj
 43 0 obj
-456
+1347
 endobj
 44 0 obj
 <<
@@ -1345,8 +1403,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Pequel Table Example Script) Tj
-1 0 0 1 444.65 797 Tm
-(top_prod_by_loc.pql) Tj
+1 0 0 1 396.29 797 Tm
+(examples/top_prod_by_loc.pql) Tj
 /F21 12 Tf
 1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
@@ -1417,8 +1475,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (8) Tj
-1 0 0 1 424.05 37 Tm
-(27 September 2005 14:45) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:21) Tj
 ET
 52 50 m
 543 50 l
@@ -1426,7 +1484,7 @@ S
 endstream
 endobj
 47 0 obj
-2225
+2233
 endobj
 48 0 obj
 <<
@@ -1461,12 +1519,12 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(top_prod_by_loc.pql) Tj
+(examples/top_prod_by_loc.pql) Tj
 1 0 0 1 406.28 797 Tm
 (Pequel Table Example Script) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(27 September 2005 14:45) Tj
+(16 November 2005 14:21) Tj
 1 0 0 1 537.44 37 Tm
 (9) Tj
 ET
@@ -1476,7 +1534,7 @@ S
 endstream
 endobj
 51 0 obj
-273
+281
 endobj
 52 0 obj
 <<
@@ -1510,13 +1568,13 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Pequel Table Example Script) Tj
-1 0 0 1 444.65 797 Tm
-(top_prod_by_loc.pql) Tj
+1 0 0 1 396.29 797 Tm
+(examples/top_prod_by_loc.pql) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (10) Tj
-1 0 0 1 424.05 37 Tm
-(27 September 2005 14:45) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:21) Tj
 ET
 52 50 m
 543 50 l
@@ -1524,7 +1582,7 @@ S
 endstream
 endobj
 55 0 obj
-274
+282
 endobj
 56 0 obj
 <<
@@ -1667,7 +1725,7 @@ f
 Q
 BT
 1 0 0 1 100 590 Tm
-(2.1 pequeldoc) Tj
+(2.1 prefix) Tj
 1 0 0 1 513.44 590 Tm
 (2) Tj
 ET
@@ -1678,7 +1736,7 @@ f
 Q
 BT
 1 0 0 1 100 578 Tm
-(2.2 detail) Tj
+(2.2 pequeldoc) Tj
 1 0 0 1 513.44 578 Tm
 (2) Tj
 ET
@@ -1689,7 +1747,7 @@ f
 Q
 BT
 1 0 0 1 100 566 Tm
-(2.3 script_name) Tj
+(2.3 detail) Tj
 1 0 0 1 513.44 566 Tm
 (2) Tj
 ET
@@ -1700,7 +1758,7 @@ f
 Q
 BT
 1 0 0 1 100 554 Tm
-(2.4 input_file) Tj
+(2.4 script_name) Tj
 1 0 0 1 513.44 554 Tm
 (2) Tj
 ET
@@ -1711,7 +1769,7 @@ f
 Q
 BT
 1 0 0 1 100 542 Tm
-(2.5 header) Tj
+(2.5 input_file) Tj
 1 0 0 1 513.44 542 Tm
 (2) Tj
 ET
@@ -1722,7 +1780,7 @@ f
 Q
 BT
 1 0 0 1 100 530 Tm
-(2.6 optimize) Tj
+(2.6 header) Tj
 1 0 0 1 513.44 530 Tm
 (2) Tj
 ET
@@ -1733,7 +1791,7 @@ f
 Q
 BT
 1 0 0 1 100 518 Tm
-(2.7 hash) Tj
+(2.7 optimize) Tj
 1 0 0 1 513.44 518 Tm
 (2) Tj
 ET
@@ -1744,7 +1802,7 @@ f
 Q
 BT
 1 0 0 1 100 506 Tm
-(2.8 doc_title) Tj
+(2.8 hash) Tj
 1 0 0 1 513.44 506 Tm
 (2) Tj
 ET
@@ -1755,7 +1813,7 @@ f
 Q
 BT
 1 0 0 1 100 494 Tm
-(2.9 doc_email) Tj
+(2.9 doc_title) Tj
 1 0 0 1 513.44 494 Tm
 (2) Tj
 ET
@@ -1766,7 +1824,7 @@ f
 Q
 BT
 1 0 0 1 100 482 Tm
-(2.10 doc_version) Tj
+(2.10 doc_email) Tj
 1 0 0 1 513.44 482 Tm
 (2) Tj
 ET
@@ -1776,10 +1834,10 @@ q
 f
 Q
 BT
-1 0 0 1 76 470 Tm
-(3. TABLES) Tj
+1 0 0 1 100 470 Tm
+(2.11 doc_version) Tj
 1 0 0 1 513.44 470 Tm
-(3) Tj
+(2) Tj
 ET
 q
 0.95 g
@@ -1788,9 +1846,9 @@ f
 Q
 BT
 1 0 0 1 76 458 Tm
-(4. TABLE INFORMATION SUMMARY) Tj
+(3. TABLES) Tj
 1 0 0 1 513.44 458 Tm
-(4) Tj
+(3) Tj
 ET
 q
 1 g
@@ -1798,8 +1856,8 @@ q
 f
 Q
 BT
-1 0 0 1 100 446 Tm
-(4.1 Table List Sorted By Table Name) Tj
+1 0 0 1 76 446 Tm
+(4. TABLE INFORMATION SUMMARY) Tj
 1 0 0 1 513.44 446 Tm
 (4) Tj
 ET
@@ -1809,10 +1867,10 @@ q
 f
 Q
 BT
-1 0 0 1 76 434 Tm
-(5. TOP_PROD_BY_LOC.PQL) Tj
+1 0 0 1 100 434 Tm
+(4.1 Table List Sorted By Table Name) Tj
 1 0 0 1 513.44 434 Tm
-(5) Tj
+(4) Tj
 ET
 q
 1 g
@@ -1820,8 +1878,8 @@ q
 f
 Q
 BT
-1 0 0 1 100 422 Tm
-(options) Tj
+1 0 0 1 76 422 Tm
+(5. EXAMPLES/TOP_PROD_BY_LOC.PQL) Tj
 1 0 0 1 513.44 422 Tm
 (5) Tj
 ET
@@ -1832,7 +1890,7 @@ f
 Q
 BT
 1 0 0 1 100 410 Tm
-(description) Tj
+(options) Tj
 1 0 0 1 513.44 410 Tm
 (5) Tj
 ET
@@ -1843,7 +1901,7 @@ f
 Q
 BT
 1 0 0 1 100 398 Tm
-(group by) Tj
+(description) Tj
 1 0 0 1 513.44 398 Tm
 (5) Tj
 ET
@@ -1865,7 +1923,7 @@ f
 Q
 BT
 1 0 0 1 100 374 Tm
-(output section) Tj
+(group by) Tj
 1 0 0 1 513.44 374 Tm
 (5) Tj
 ET
@@ -1875,10 +1933,10 @@ q
 f
 Q
 BT
-1 0 0 1 76 362 Tm
-(6. PEQUEL GENERATED PROGRAM) Tj
+1 0 0 1 100 362 Tm
+(output section) Tj
 1 0 0 1 513.44 362 Tm
-(6) Tj
+(5) Tj
 ET
 q
 1 g
@@ -1887,9 +1945,9 @@ f
 Q
 BT
 1 0 0 1 76 350 Tm
-(7. ABOUT PEQUEL) Tj
+(6. PEQUEL GENERATED PROGRAM) Tj
 1 0 0 1 513.44 350 Tm
-(8) Tj
+(6) Tj
 ET
 q
 0.95 g
@@ -1897,13 +1955,24 @@ q
 f
 Q
 BT
-1 0 0 1 100 338 Tm
-(COPYRIGHT) Tj
+1 0 0 1 76 338 Tm
+(7. ABOUT PEQUEL) Tj
 1 0 0 1 513.44 338 Tm
+(8) Tj
+ET
+q
+1 g
+52 323 491 12 re
+f
+Q
+BT
+1 0 0 1 100 326 Tm
+(COPYRIGHT) Tj
+1 0 0 1 513.44 326 Tm
 (8) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(27 September 2005 14:45) Tj
+(16 November 2005 14:21) Tj
 1 0 0 1 540.22 37 Tm
 (i) Tj
 ET
@@ -1913,7 +1982,7 @@ S
 endstream
 endobj
 59 0 obj
-3472
+3578
 endobj
 60 0 obj
 <<
@@ -1953,8 +2022,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (ii) Tj
-1 0 0 1 424.05 37 Tm
-(27 September 2005 14:45) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 14:21) Tj
 ET
 52 50 m
 543 50 l
@@ -1962,7 +2031,7 @@ S
 endstream
 endobj
 63 0 obj
-272
+271
 endobj
 64 0 obj
 <<
@@ -2009,7 +2078,7 @@ BT
 /F21 24 Tf
 1 0 0 1 210 706 Tm
 0 -30 TD
-(top_prod_by_loc.pql) Tj
+(examples/top_prod_by_loc.pql) Tj
 T* (by ) Tj
 0 0 0.8 rg
 /F22 12 Tf
@@ -2026,7 +2095,7 @@ ET
 endstream
 endobj
 68 0 obj
-336
+345
 endobj
 69 0 obj
 <<
@@ -2053,12 +2122,12 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(top_prod_by_loc.pql) Tj
+(examples/top_prod_by_loc.pql) Tj
 1 0 0 1 406.28 797 Tm
 (Pequel Table Example Script) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(27 September 2005 14:45) Tj
+(16 November 2005 14:21) Tj
 1 0 0 1 543 37 Tm
 () Tj
 ET
@@ -2068,7 +2137,7 @@ S
 endstream
 endobj
 71 0 obj
-269
+277
 endobj
 72 0 obj
 <<
@@ -2093,8 +2162,8 @@ endobj
 /Parent 74 0 R
 /Dest [61 0 R /Fit]
 /First 76 0 R
-/Last 105 0 R
-/Count 31 
+/Last 106 0 R
+/Count 32 
 /Title (Table of Contents)
 >>
 endobj
@@ -2177,10 +2246,10 @@ endobj
 /Parent 75 0 R
 /Dest [25 0 R /FitH 764.4]
 /Previous 78 0 R
-/Next 95 0 R
+/Next 96 0 R
 /First 85 0 R
-/Last 94 0 R
-/Count 10 
+/Last 95 0 R
+/Count 11 
 /Title (2. CONFIGURATION SETTINGS)
 >>
 endobj
@@ -2189,7 +2258,7 @@ endobj
 /Parent 84 0 R
 /Dest [25 0 R /FitH 726]
 /Next 86 0 R
-/Title (2.1 pequeldoc)
+/Title (2.1 prefix)
 >>
 endobj
 86 0 obj
@@ -2198,7 +2267,7 @@ endobj
 /Dest [25 0 R /FitH 684]
 /Previous 85 0 R
 /Next 87 0 R
-/Title (2.2 detail)
+/Title (2.2 pequeldoc)
 >>
 endobj
 87 0 obj
@@ -2207,7 +2276,7 @@ endobj
 /Dest [25 0 R /FitH 642]
 /Previous 86 0 R
 /Next 88 0 R
-/Title (2.3 script_name)
+/Title (2.3 detail)
 >>
 endobj
 88 0 obj
@@ -2216,7 +2285,7 @@ endobj
 /Dest [25 0 R /FitH 600]
 /Previous 87 0 R
 /Next 89 0 R
-/Title (2.4 input_file)
+/Title (2.4 script_name)
 >>
 endobj
 89 0 obj
@@ -2225,7 +2294,7 @@ endobj
 /Dest [25 0 R /FitH 558]
 /Previous 88 0 R
 /Next 90 0 R
-/Title (2.5 header)
+/Title (2.5 input_file)
 >>
 endobj
 90 0 obj
@@ -2234,7 +2303,7 @@ endobj
 /Dest [25 0 R /FitH 516]
 /Previous 89 0 R
 /Next 91 0 R
-/Title (2.6 optimize)
+/Title (2.6 header)
 >>
 endobj
 91 0 obj
@@ -2243,7 +2312,7 @@ endobj
 /Dest [25 0 R /FitH 474]
 /Previous 90 0 R
 /Next 92 0 R
-/Title (2.7 hash)
+/Title (2.7 optimize)
 >>
 endobj
 92 0 obj
@@ -2252,7 +2321,7 @@ endobj
 /Dest [25 0 R /FitH 432]
 /Previous 91 0 R
 /Next 93 0 R
-/Title (2.8 doc_title)
+/Title (2.8 hash)
 >>
 endobj
 93 0 obj
@@ -2261,7 +2330,7 @@ endobj
 /Dest [25 0 R /FitH 390]
 /Previous 92 0 R
 /Next 94 0 R
-/Title (2.9 doc_email)
+/Title (2.9 doc_title)
 >>
 endobj
 94 0 obj
@@ -2269,79 +2338,79 @@ endobj
 /Parent 84 0 R
 /Dest [25 0 R /FitH 348]
 /Previous 93 0 R
-/Title (2.10 doc_version)
+/Next 95 0 R
+/Title (2.10 doc_email)
 >>
 endobj
 95 0 obj
 <<
-/Parent 75 0 R
-/Dest [29 0 R /FitH 764.4]
-/Previous 84 0 R
-/Next 96 0 R
-/Title (3. TABLES)
+/Parent 84 0 R
+/Dest [25 0 R /FitH 306]
+/Previous 94 0 R
+/Title (2.11 doc_version)
 >>
 endobj
 96 0 obj
 <<
 /Parent 75 0 R
-/Dest [33 0 R /FitH 764.4]
-/Previous 95 0 R
-/Next 98 0 R
-/First 97 0 R
-/Last 97 0 R
-/Count 1 
-/Title (4. TABLE INFORMATION SUMMARY)
+/Dest [29 0 R /FitH 764.4]
+/Previous 84 0 R
+/Next 97 0 R
+/Title (3. TABLES)
 >>
 endobj
 97 0 obj
 <<
-/Parent 96 0 R
-/Dest [33 0 R /FitH 726]
-/Title (4.1 Table List Sorted By Table Name)
+/Parent 75 0 R
+/Dest [33 0 R /FitH 764.4]
+/Previous 96 0 R
+/Next 99 0 R
+/First 98 0 R
+/Last 98 0 R
+/Count 1 
+/Title (4. TABLE INFORMATION SUMMARY)
 >>
 endobj
 98 0 obj
 <<
-/Parent 75 0 R
-/Dest [37 0 R /FitH 764.4]
-/Previous 96 0 R
-/Next 104 0 R
-/First 99 0 R
-/Last 103 0 R
-/Count 5 
-/Title (5. TOP_PROD_BY_LOC.PQL)
+/Parent 97 0 R
+/Dest [33 0 R /FitH 726]
+/Title (4.1 Table List Sorted By Table Name)
 >>
 endobj
 99 0 obj
 <<
-/Parent 98 0 R
-/Dest [37 0 R /FitH 726]
-/Next 100 0 R
-/Title (options)
+/Parent 75 0 R
+/Dest [37 0 R /FitH 764.4]
+/Previous 97 0 R
+/Next 105 0 R
+/First 100 0 R
+/Last 104 0 R
+/Count 5 
+/Title (5. EXAMPLES/TOP_PROD_BY_LOC.PQL)
 >>
 endobj
 100 0 obj
 <<
-/Parent 98 0 R
-/Dest [37 0 R /FitH 613.2]
-/Previous 99 0 R
+/Parent 99 0 R
+/Dest [37 0 R /FitH 726]
 /Next 101 0 R
-/Title (description)
+/Title (options)
 >>
 endobj
 101 0 obj
 <<
-/Parent 98 0 R
-/Dest [37 0 R /FitH 550.8]
+/Parent 99 0 R
+/Dest [37 0 R /FitH 604.8]
 /Previous 100 0 R
 /Next 102 0 R
-/Title (group by)
+/Title (description)
 >>
 endobj
 102 0 obj
 <<
-/Parent 98 0 R
-/Dest [37 0 R /FitH 513.6]
+/Parent 99 0 R
+/Dest [37 0 R /FitH 542.4]
 /Previous 101 0 R
 /Next 103 0 R
 /Title (input section)
@@ -2349,35 +2418,44 @@ endobj
 endobj
 103 0 obj
 <<
-/Parent 98 0 R
-/Dest [37 0 R /FitH 409.2]
+/Parent 99 0 R
+/Dest [37 0 R /FitH 438]
 /Previous 102 0 R
-/Title (output section)
+/Next 104 0 R
+/Title (group by)
 >>
 endobj
 104 0 obj
 <<
-/Parent 75 0 R
-/Dest [41 0 R /FitH 764.4]
-/Previous 98 0 R
-/Next 105 0 R
-/Title (6. PEQUEL GENERATED PROGRAM)
+/Parent 99 0 R
+/Dest [37 0 R /FitH 400.8]
+/Previous 103 0 R
+/Title (output section)
 >>
 endobj
 105 0 obj
 <<
 /Parent 75 0 R
-/Dest [49 0 R /FitH 764.4]
-/Previous 104 0 R
-/First 106 0 R
-/Last 106 0 R
-/Count 1 
-/Title (7. ABOUT PEQUEL)
+/Dest [41 0 R /FitH 764.4]
+/Previous 99 0 R
+/Next 106 0 R
+/Title (6. PEQUEL GENERATED PROGRAM)
 >>
 endobj
 106 0 obj
 <<
-/Parent 105 0 R
+/Parent 75 0 R
+/Dest [49 0 R /FitH 764.4]
+/Previous 105 0 R
+/First 107 0 R
+/Last 107 0 R
+/Count 1 
+/Title (7. ABOUT PEQUEL)
+>>
+endobj
+107 0 obj
+<<
+/Parent 106 0 R
 /Dest [49 0 R /FitH 681.6]
 /Title (COPYRIGHT)
 >>
@@ -2385,9 +2463,9 @@ endobj
 74 0 obj
 <<
 /Type /Outlines
-/Count 32
+/Count 33
 /First 75 0 R
-/Last 106 0 R
+/Last 107 0 R
 >>
 endobj
 3 0 obj
@@ -2407,12 +2485,12 @@ endobj
 >>
 endobj
 xref
-0 107
+0 108
 0000000000 65535 f 
 0000000015 00000 n 
 0000000171 00000 n 
-0000035728 00000 n 
-0000035817 00000 n 
+0000037218 00000 n 
+0000037307 00000 n 
 0000000286 00000 n 
 0000002386 00000 n 
 0000002485 00000 n 
@@ -2427,100 +2505,101 @@ xref
 0000003397 00000 n 
 0000003503 00000 n 
 0000003617 00000 n 
-0000006625 00000 n 
-0000006646 00000 n 
-0000006796 00000 n 
-0000006879 00000 n 
-0000009362 00000 n 
-0000009383 00000 n 
-0000009509 00000 n 
-0000009592 00000 n 
-0000009978 00000 n 
-0000009998 00000 n 
-0000010100 00000 n 
-0000010183 00000 n 
-0000010673 00000 n 
-0000010693 00000 n 
-0000010795 00000 n 
-0000010878 00000 n 
-0000014026 00000 n 
-0000014047 00000 n 
-0000014173 00000 n 
-0000014256 00000 n 
-0000021893 00000 n 
-0000021914 00000 n 
-0000022028 00000 n 
-0000022111 00000 n 
-0000022621 00000 n 
-0000022641 00000 n 
-0000022755 00000 n 
-0000022838 00000 n 
-0000025117 00000 n 
-0000025138 00000 n 
-0000025264 00000 n 
-0000025347 00000 n 
-0000025674 00000 n 
-0000025694 00000 n 
-0000025796 00000 n 
-0000025879 00000 n 
-0000026207 00000 n 
-0000026227 00000 n 
-0000026329 00000 n 
-0000026412 00000 n 
-0000029938 00000 n 
-0000029959 00000 n 
-0000030073 00000 n 
-0000030156 00000 n 
-0000030482 00000 n 
-0000030502 00000 n 
-0000030604 00000 n 
-0000030687 00000 n 
-0000030770 00000 n 
-0000031160 00000 n 
-0000031180 00000 n 
-0000031306 00000 n 
-0000031629 00000 n 
-0000031649 00000 n 
-0000031751 00000 n 
-0000035652 00000 n 
-0000031834 00000 n 
-0000031957 00000 n 
-0000032055 00000 n 
-0000032168 00000 n 
-0000032327 00000 n 
-0000032463 00000 n 
-0000032548 00000 n 
-0000032692 00000 n 
-0000032788 00000 n 
-0000032900 00000 n 
-0000033067 00000 n 
-0000033165 00000 n 
-0000033277 00000 n 
-0000033394 00000 n 
-0000033510 00000 n 
-0000033622 00000 n 
-0000033736 00000 n 
-0000033846 00000 n 
-0000033961 00000 n 
-0000034076 00000 n 
-0000034181 00000 n 
-0000034294 00000 n 
-0000034463 00000 n 
-0000034570 00000 n 
-0000034735 00000 n 
-0000034828 00000 n 
-0000034945 00000 n 
-0000035060 00000 n 
-0000035180 00000 n 
-0000035287 00000 n 
-0000035420 00000 n 
-0000035567 00000 n 
+0000006642 00000 n 
+0000006663 00000 n 
+0000006813 00000 n 
+0000006896 00000 n 
+0000009597 00000 n 
+0000009618 00000 n 
+0000009744 00000 n 
+0000009827 00000 n 
+0000010221 00000 n 
+0000010241 00000 n 
+0000010343 00000 n 
+0000010426 00000 n 
+0000010924 00000 n 
+0000010944 00000 n 
+0000011046 00000 n 
+0000011129 00000 n 
+0000014374 00000 n 
+0000014395 00000 n 
+0000014521 00000 n 
+0000014604 00000 n 
+0000022222 00000 n 
+0000022243 00000 n 
+0000022357 00000 n 
+0000022440 00000 n 
+0000023841 00000 n 
+0000023862 00000 n 
+0000023976 00000 n 
+0000024059 00000 n 
+0000026346 00000 n 
+0000026367 00000 n 
+0000026493 00000 n 
+0000026576 00000 n 
+0000026911 00000 n 
+0000026931 00000 n 
+0000027033 00000 n 
+0000027116 00000 n 
+0000027452 00000 n 
+0000027472 00000 n 
+0000027574 00000 n 
+0000027657 00000 n 
+0000031289 00000 n 
+0000031310 00000 n 
+0000031424 00000 n 
+0000031507 00000 n 
+0000031832 00000 n 
+0000031852 00000 n 
+0000031954 00000 n 
+0000032037 00000 n 
+0000032120 00000 n 
+0000032519 00000 n 
+0000032539 00000 n 
+0000032665 00000 n 
+0000032996 00000 n 
+0000033016 00000 n 
+0000033118 00000 n 
+0000037142 00000 n 
+0000033201 00000 n 
+0000033324 00000 n 
+0000033422 00000 n 
+0000033535 00000 n 
+0000033694 00000 n 
+0000033830 00000 n 
+0000033915 00000 n 
+0000034059 00000 n 
+0000034155 00000 n 
+0000034267 00000 n 
+0000034434 00000 n 
+0000034529 00000 n 
+0000034644 00000 n 
+0000034756 00000 n 
+0000034873 00000 n 
+0000034989 00000 n 
+0000035101 00000 n 
+0000035215 00000 n 
+0000035325 00000 n 
+0000035440 00000 n 
+0000035556 00000 n 
+0000035661 00000 n 
+0000035774 00000 n 
+0000035943 00000 n 
+0000036050 00000 n 
+0000036225 00000 n 
+0000036319 00000 n 
+0000036437 00000 n 
+0000036557 00000 n 
+0000036670 00000 n 
+0000036777 00000 n 
+0000036910 00000 n 
+0000037057 00000 n 
 trailer
 <<
-/Size 107
+/Size 108
 /Root 3 0 R
 /Info 2 0 R
 >>
 startxref
-35993
+37483
 %%EOF

@@ -62,5 +62,5 @@ output section
     decimal SALES_TOTAL	 	sum SALES_TOTAL
 	
 sort output
-	LOCATION
-	SALES_TOTAL numeric desc
+    LOCATION
+    SALES_TOTAL numeric desc

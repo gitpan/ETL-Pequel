@@ -8,7 +8,7 @@ options
     doc_title("Diverted Record Example Script")
     doc_email("sample@youraddress.com")
     doc_version(2.3)
-	hash
+	//hash
 
 description section
 
@@ -17,6 +17,10 @@ input section
 	PRODUCT_CODE
     SALES_TOTAL
 	CATEGORY => 'MEDIUM'
+
+sort by
+    LOCATION
+	PRODUCT_CODE
 
 group by
     LOCATION

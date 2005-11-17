@@ -24,6 +24,8 @@
 # ----------------------------------------------------------------------------------------------------
 # Modification History
 # When          Version     Who     What
+# 15/11/2005	2.4-5		gaffie	Bug fix in sort-output section codeOpen() extra pipe.
+# 04/11/2005	2.4-5		gaffie	Bug fix numeric/decimal type comparison in dedup-on.
 # 03/11/2005	2.4-4		gaffie	Bug fix field-process sections.
 # 03/11/2005	2.4-4		gaffie	Bug fix in reject-section.
 # 26/10/2005	2.3-6		gaffie	display message section types.
@@ -46,8 +48,8 @@ use attributes qw(get reftype);
 use warnings;
 use lib './lib';
 use vars qw($VERSION $BUILD);
-$VERSION = "2.4-4";
-$BUILD = 'Thursday November  3 14:56:42 GMT 2005';
+$VERSION = "2.4-5";
+$BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Type::Section;
@@ -417,7 +419,7 @@ $BUILD = 'Thursday November  3 14:56:42 GMT 2005';
 
 		$self->PARAM->error->fatalError
 		("[10106] In section '@{[ $self->name() ]}': Input field '@{[ $self->items->last->name ]}' is not defined.")
-			if (!$self->PARAM->sections->exists('input section')->items->exists($self->items->last->name));
+			if (!$self->PARAM->sections->exists('input section')->items->exists($name));
 	}
 }
 # ----------------------------------------------------------------------------------------------------
@@ -482,7 +484,7 @@ $BUILD = 'Thursday November  3 14:56:42 GMT 2005';
 
 		$self->PARAM->error->fatalError
 		("[10107] In section '@{[ $self->name() ]}': Output field '@{[ $self->items->last->name ]}' is not defined.")
-			if (!$self->PARAM->sections->exists('output section')->items->exists($self->items->last->name));
+			if (!$self->PARAM->sections->exists('output section')->items->exists($name));
 	}
 }
 # ----------------------------------------------------------------------------------------------------
@@ -712,8 +714,9 @@ $BUILD = 'Thursday November  3 14:56:42 GMT 2005';
 		);
 		$sub_pql->generate();
 
-		$self->PARAM->error->fatalError("[10114] The Pequel script '$filename' failed syntax check.")
-			unless ($sub_pql->check =~ /Syntax\s+OK/i);
+		my $check = $sub_pql->check();
+		$self->PARAM->error->fatalError("[10114] The Pequel script '$filename' failed syntax check -- $check.")
+			unless ($check =~ /Syntax\s+OK/i);
 
 		# ... or an arg for input_section
 		$self->PARAM->error->fatalError("[10115] The Pequel script '$filename' must have an 'input_file' option specified when used as a input_file.")
@@ -732,7 +735,7 @@ $BUILD = 'Thursday November  3 14:56:42 GMT 2005';
 		return;
 	}
 	
-	sub get_fd_name
+	sub get_fd_name # --> get_input_fdname()
 	{
 		my $self = shift; 
 		if ($self->PARAM->properties('input_file') || $self->PARAM->sections->find('sort by')->items->size())
@@ -741,7 +744,7 @@ $BUILD = 'Thursday November  3 14:56:42 GMT 2005';
 			my $fdname = $self->PARAM->properties('input_file');
 			$fdname =~ s/^.*://;
 			$fdname =~ s/\..*$//;
-			$fdname = "INPUT_$fdname";
+			$fdname = "READ_$fdname";
 			return uc($fdname);
 		}
 		else
@@ -791,11 +794,34 @@ $BUILD = 'Thursday November  3 14:56:42 GMT 2005';
 		my $fdname = $self->get_fd_name();
 		if ($self->PARAM->properties('input_file') =~ /([\w|_|\d]+\.pql)/)
 		{
-			$c->add("if (open(@{[ $fdname ]}, '-|') == 0) # Fork -- read from child");
-			$c->openBlock("{");
-			$c->add("&p_@{[ lc($fdname) ]}::@{[ lc($fdname) ]};");
-			$c->add("exit(0);");
-			$c->closeBlock;
+			# Need to fix STDOUT before we can use this !!
+#>			if ($self->PARAM->properties('use_piped_chain'))
+#>			{
+#>				my $writefd = $fdname; $writefd =~ s/^READ_/WRITE_/;
+#>				$c->add("use IO::Handle;");
+#>				$c->add("pipe(@{[ $fdname ]}, @{[ $writefd ]});");
+#>				$c->add("@{[ $writefd ]}->autoflush(1);");
+#>				$c->add("my \$child;");
+#>				$c->add("if (\$child = fork()) # We're in the PARENT reader...");
+#>				$c->openBlock("{");
+#>					$c->add("close(@{[ $writefd ]});");
+#>				$c->closeBlock;
+#>				$c->add("else # We're in the CHILD writer...");
+#>				$c->openBlock("{");
+#>					$c->add("close(@{[ $fdname ]});");
+#>					$c->add("&p_@{[ lc($fdname) ]}::@{[ lc($fdname) ]}(*@{[ $writefd ]});");
+#>					$c->add("close(@{[ $writefd ]});");
+#>					$c->add("exit(0);");
+#>				$c->closeBlock;
+#>			}
+#>			else
+#>			{
+				$c->add("if (open(@{[ $fdname ]}, '-|') == 0) # Fork -- read from child");
+				$c->openBlock("{");
+				$c->add("&p_@{[ lc($fdname) ]}::@{[ lc($fdname) ]};");
+				$c->add("exit(0);");
+				$c->closeBlock;
+#>			}	
 		}
 		elsif ($self->PARAM->properties('input_file'))
 		{
@@ -837,6 +863,17 @@ $BUILD = 'Thursday November  3 14:56:42 GMT 2005';
 				if ($self->PARAM->sections->exists('sort by')->items->size()
 					|| $self->PARAM->properties('input_file') ne '');
 		}
+		return $c;
+	}
+
+    sub codeClose : method 
+	{ 
+		my $self = shift; 
+		my $c = $self->SUPER::codeClose;
+		$c->add("close(@{[ $self->get_fd_name() ]});");
+#>		$c->add("waitpid(\$child, 0);") # WNOHANG
+#>			if ($self->PARAM->properties('input_file') =~ /([\w|_|\d]+\.pql)/ 
+#>				&& $self->PARAM->properties('use_piped_chain'));
 		return $c;
 	}
 }
@@ -960,7 +997,7 @@ $BUILD = 'Thursday November  3 14:56:42 GMT 2005';
 				(
 					"defined(\$previous_dedup_@{[ $_->inputField->id ]})"
 					. " && \$previous_dedup_@{[ $_->inputField->id ]}"
-					. "@{[ $_->type =~ /numeric|decimal/ ? ' == ' : ' eq ' ]}"
+					. "@{[ $_->type->name() =~ /numeric|decimal/ ? ' == ' : ' eq ' ]}"
 					. "@{[ $_->inputField->codeVar ]}", 
 					$self->items->toArray
 				)
@@ -977,7 +1014,7 @@ $BUILD = 'Thursday November  3 14:56:42 GMT 2005';
 
 	sub parse : method
 	{
-		# format-1: fld [ numeric | string ] [ asc | ascending | desc | descending ]
+		# format-1: fld [ numeric | string ] 
 		# format-2: fld (type => numeric | string, sort => asc | desc)
 		my $self = shift;
 		my $code_line = shift || $self->lines->last->value;
@@ -993,7 +1030,6 @@ $BUILD = 'Thursday November  3 14:56:42 GMT 2005';
 		my %params = @_;
 		my $fld = $params{'fld'} || $self->add_error(ref($self), 'fld');
 		my $type = $params{'type'};
-
 		$self->PARAM->error->fatalError("[10119] Field '@{[ $fld ]}' is not defined in the input section.")
 			unless ($self->PARAM->sections->exists('input section')->items->exists($fld));
 
@@ -1116,7 +1152,7 @@ $BUILD = 'Thursday November  3 14:56:42 GMT 2005';
 }
 # ----------------------------------------------------------------------------------------------------
 {
-	package ETL::Pequel::Type::Section::ReplicateRecord;
+	package ETL::Pequel::Type::Section::Distributor; # -->Distributor
 	use base qw(ETL::Pequel::Type::Section);
 
 	sub new : method
@@ -1270,7 +1306,7 @@ $BUILD = 'Thursday November  3 14:56:42 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Type::Section::DivertRecord;
-	use base qw(ETL::Pequel::Type::Section::ReplicateRecord);
+	use base qw(ETL::Pequel::Type::Section::Distributor);
 
 	sub new : method
 	{
@@ -1290,7 +1326,7 @@ $BUILD = 'Thursday November  3 14:56:42 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Type::Section::DivertInputRecord;
-	use base qw(ETL::Pequel::Type::Section::ReplicateRecord);
+	use base qw(ETL::Pequel::Type::Section::Distributor);
 
 	sub new : method
 	{
@@ -1310,7 +1346,7 @@ $BUILD = 'Thursday November  3 14:56:42 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Type::Section::CopyRecord;
-	use base qw(ETL::Pequel::Type::Section::ReplicateRecord);
+	use base qw(ETL::Pequel::Type::Section::Distributor);
 
 	sub new : method
 	{
@@ -1330,7 +1366,7 @@ $BUILD = 'Thursday November  3 14:56:42 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Type::Section::CopyInputRecord;
-	use base qw(ETL::Pequel::Type::Section::ReplicateRecord);
+	use base qw(ETL::Pequel::Type::Section::Distributor);
 
 	sub new : method
 	{
@@ -1350,7 +1386,7 @@ $BUILD = 'Thursday November  3 14:56:42 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Type::Section::DivertOutputRecord;
-	use base qw(ETL::Pequel::Type::Section::ReplicateRecord);
+	use base qw(ETL::Pequel::Type::Section::Distributor);
 
 	sub new : method
 	{
@@ -1389,7 +1425,7 @@ $BUILD = 'Thursday November  3 14:56:42 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Type::Section::CopyOutputRecord;
-	use base qw(ETL::Pequel::Type::Section::ReplicateRecord);
+	use base qw(ETL::Pequel::Type::Section::Distributor);
 
 	sub new : method
 	{
@@ -1581,7 +1617,8 @@ $BUILD = 'Thursday November  3 14:56:42 GMT 2005';
 		}
 		else
 		{
-			$c->add("q{$sortstr |});");
+			$c->add("q{$sortstr});");
+#<BUG!		$c->add("q{$sortstr |});");
 		}
 		return $c;
 	}

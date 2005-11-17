@@ -1,5 +1,15 @@
 Revision history
 
+* Version 2.4-5 -- 16 November 2005
+
+- Fixed test failures (on some platforms) -- caused by extra pipe ('|') in open() in code generated for
+	sort-output section.
+- New option 'show_synonyms' -- replace field synonym by field-number in generated code.
+	-- set to zero for additional processing performance.
+- Bug fix numeric/decimal type checking for nulls/nonulls options.
+- Bug fix numeric/decimal type comparison in dedup-on.
+- Bug fix -- input record line counter.
+
 * Version 2.4-4 -- 3 November 2005
 
 - Updated User Guide to include perl module ETL::Pequel.pm interface reference.

@@ -11,6 +11,7 @@ options
     doc_title("Aggregates Example Script")
     doc_email("sample@youraddress.com")
     doc_version(2.2)
+	show_synonyms(0)		// supress constant field synonyms for additional process performance.
 
 description section
 	Demonstrates aggregation and use of various aggregate function.
@@ -27,12 +28,12 @@ input section
 	SALES_TOTAL => SALES_QTY * SALES_PRICE
 
 sort by
-	PRODUCT_CODE
 	LOCATION
+	PRODUCT_CODE
 
 group by
-	PRODUCT_CODE
 	LOCATION
+	PRODUCT_CODE
 
 output section
 	string LOCATION				LOCATION

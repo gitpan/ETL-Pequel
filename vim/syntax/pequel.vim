@@ -86,10 +86,12 @@ syn keyword pequelOption	debug_parser diagnostics tinfo minfo pequelsrclist
 syn keyword pequelOption	pequelprogref version usage viewcode
 syn keyword pequelOption	syntax_check list pequeldoc detail
 syn keyword pequelOption	pack_output output_pack_fmt
-syn keyword pequelOption	pack_input input_pack_fmt
+syn keyword pequelOption	unpack_input input_pack_fmt
 syn keyword pequelOption	input_record_limit rmctrlm
 syn keyword pequelOption	gzcat_cmd gzcat_args cat_cmd cat_args
 syn keyword pequelOption	sort_cmd sort_args cpp_cmd cpp_args
+syn keyword pequelOption	use_piped_chain
+syn keyword pequelOption	show_synonyms
 
 syn match pequelParamList "(.*)"hs=s+1,he=e-1 containedin=pequelOptions contains=ALL
 syn cluster pequelOptions contains=pequelOption,pequelParamList 

@@ -9,13 +9,13 @@ PEQUEL - Pequel User Guide
 =head1 OVERVIEW -- WHAT IS PEQUEL?
 
 
-F<Pequel> is a comprehensive system for data file processing and transformation. It features a simple, user-friendly event driven scripting interface that transparently generates, builds and executes highly efficient data-processing programs. By using the F<Pequel> scripting language, the user can create and maintain complex data transformation processes quickly, easily, and accurately. Incidentally, the name I<pequel> is derived from I<perl'ish sequel>. 
+F<Pequel> is a comprehensive system for high performance data file processing and transformation. It features a simple, user-friendly event driven scripting interface that transparently generates, builds and executes highly efficient data-processing programs. By using the F<Pequel> scripting language, the user can create and maintain complex data transformation processes quickly, easily, and accurately. Incidentally, the name I<pequel> is derived from I<perl'ish sequel>. 
 
 
 The F<Pequel> system can be used by both technical (programmers) and non-technical end users. For non-technicasl users the F<Pequel> scripting language is simple to learn and F<Pequel> will transperantly generate, build and execute the transformation process. For developers the generated transformation program can be examined and extended, though this is rarely necessary as the scripting language contains constructs that are powerfull enough to handle even the most complex tranformation process. A Perl module F<Pequel.pm> is provided for developers which will allow the creation of F<Pequel> processes within Perl programs.
 
 
-The F<Pequel> scripting language is both simple and powerfull. It is event driven with each event defining a specific stage in the overall transformation process. Each event section is filled in systematically by a list of I<items>. These items can be I<condition statements>, I<field names>, I<property settings>, I<aggregation statements>, I<calculation statements>, and so on. A full and comprehensive array of I<aggregates> and I<macros> are available, as well as full Perl regular expressions within statements.
+The F<Pequel> scripting language is both simple and powerfull. It is event driven with each event defining a specific stage in the overall transformation process. Each event section is filled in systematically by a list of I<items>. These items can be I<condition statements>, I<field names>, I<property settings>, I<aggregation statements>, I<calculation statements>, and so on. A full and comprehensive array of I<aggregates> and I<macros> are available. Perl statements and regular expressions can be embedded within F<Pequel> statements.
 
 
 F<Pequel> generates highly efficient Perl and C code. The generated code is as efficient as hand-written code. The emphasis in the generated code is performance -- to process maximum records in minimum time. The generated code can be dumped into a program file and executed independently of F<Pequel>. 
@@ -841,6 +841,16 @@ A powerfull feature of Pequel is its built-in tables feature. Tables, consisting
 Pequel also handles a number of date field formats. The F<&date()> macro provides access to date fields. 
 
 
+=head2 Field Names
+
+Field names are case-sensitive and must begin with an alphabetical or F<'_'> character, and can contain a mix of alphabetical, numerical and F<'_'>'s characters. Field names are declared in the I<input section> and the I<output section>. The same field name can only be declared once within each section type. Field names in the I<output section> can have the same name as an I<input section> field name. Field names within the I<output section> that begin with a F<'_'> character are I<intermediate> fields -- these fields can be referenced in calculation expressions but will not appear in the output stream. 
+
+
+=head2 Statements
+
+A F<Pequel> statement can contain a mix of Perl code, including regular expressions, field names, Pequel-Macro calls, and Pequel-Table calls. The F<Pequel> compiler will first parse the statement for F<Pequel> field names, macros and table names, and translate these into Perl code.
+
+
 =head2 Comments
 
 Any text following and including the C<#> symbol or C<//> is considered as comment text. If the I<cpp> preprocessor is available then comments are limited to C style comments with (C<//> and C</* ... */>) -- the C<#> becomes a macro directive.
@@ -857,6 +867,8 @@ If your system provides the F<cpp> preprocessor, your Pequel script may include 
 
 
 =head2 Section Types
+
+The following table describes the different I<section types>.
 
 
 =item F<options>
@@ -886,10 +898,12 @@ Specify any input field pre-processing which will occur before the field is refe
 
 =item F<filter>
 
-The I<filter> section specifies one or more condition item statements which will be used to match incoming data records and filter out any records that do not match all the condition item statements.
+The I<filter> section specifies one or more condition item statements which will be used to match incoming data records and filter out any records that do not match B<all> the condition item statements.
 
 
 =item F<reject>
+
+The I<reject> section specifies one or more condition item statements which will be used to match incoming data records and filter out any records that do not match B<any> of the condition item statements.
 
 
 =item F<divert input record>
@@ -923,6 +937,8 @@ The I<group by> section contains a list of input field items with optional type 
 
 
 =item F<dedup on>
+
+The I<dedup on> section contains a list of input field items with optional type specification. Consecutive incoming records that contain the same values within these fields will be de-duped, i.e. only one record for each duplicate set will be processed.
 
 
 =item F<output section>
@@ -4352,12 +4368,12 @@ The 'load table oracle' section will load the ASCII data contained in the file s
  load table oracle
  // Declare SAMPLE1 table -- all parameters must appear on one line or use line continuation char '\'
  // TableName   SourceData  ConnectString              KeyLoc KeyType      Columns
-    SAMPLE1     sample.data 'user/passwd@OSCADEV2'     1      STRING(12)   DESCRIPTION=3 \
+    SAMPLE1     sample.data 'user/passwd@DB1'          1      STRING(12)   DESCRIPTION=3 \
                                                                            LOCATION=8
 
  load table oracle merge
  // TableName   SourceData  ConnectString               KeyLoc  KeyType     Columns
-    SAMPLE2     sample.data 'gprsdev/gprsdev@OSCADEV2'  1       STRING(12)  DESCRIPTION=3 LOCATION=8
+    SAMPLE2     sample.data 'user/passwd@DB1'           1       STRING(12)  DESCRIPTION=3 LOCATION=8
 
  input section
     PRODUCT_CODE,

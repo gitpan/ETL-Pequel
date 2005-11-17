@@ -24,6 +24,11 @@
 # ----------------------------------------------------------------------------------------------------
 # Modification History
 # When          Version     Who     What
+# 16/11/2005	2.4-5		gaffie	Bug fix -- input record line counter.
+# 15/11/2005	2.4-5		gaffie	Bug fix in sort-output section codeOpen() extra pipe.
+# 11/11/2005	2.4-5		gaffie	new option show_synonyms -- 
+# 04/11/2005	2.4-5		gaffie	Bug fix numeric/decimal type checking for nulls/nonulls options.
+# 04/11/2005	2.4-5		gaffie	Bug fix numeric/decimal type comparison in dedup-on.
 # 03/11/2005	2.4-4		gaffie	Bug fix field-process sections.
 # 03/11/2005	2.4-4		gaffie	Bug fix in reject-section.
 # 01/11/2005	2.4-2		gaffie	Fixed test failures -- caused by CPP parsing '#' comment.
@@ -82,7 +87,18 @@
 # 25/08/2005	2.2-7		gaffie	Script/Script.pm:Bugfix with 'no cpp' misspelling.
 # 25/08/2005	2.2-7		gaffie	Code/Code.pm:supress addCommentBegin()/End() unless --debug option specified.
 # ----------------------------------------------------------------------------------------------------
-# TO DO:
+# TODO:
+# use pipe with syswrite to ensure that buffering does not deadlock the processes waiting for each other's message,
+# use do-block instead of anonymous sub for macros that eval to anon-sub call.
+# Replace 'use constant' in generated code with real-constants because use-constant replaces value with subroutine call() which degrades performance!
+# apache: prefix for input/output_file spec.
+# Socket pipe-fitting -- input_file(socket:...); output_file(socket:...); same with divert/copy section types.
+# Use pack/unpack instead of substr in date manip code.
+# input-section(file:, pequel:, oracle:, ...) for enabling multiple (successive) input stream
+#	-- use input-merge-section(data-source, key-field) for multi simultaneous merge.
+# dedup-input, dedup-output to replace dedup-on
+# If packed input && sort-by then generate temp pequel srcipt and fit as input-file. The tmp script will do
+# unpack-unput and sort-output.
 # Combine Script.pm, Section->parse() functions, Parser.pm because they all relate to pequel-language parsing 
 #	-- Parser/Pequel.pm; then future: Parser/XML.pm, etc
 # Bug: when using brackets inside message text.
@@ -142,8 +158,8 @@ use strict;
 use attributes qw(get reftype);
 use warnings;
 use vars qw($VERSION $BUILD);
-$VERSION = "2.4-4";
-$BUILD = 'Thursday November  3 23:56:42 GMT 2005';
+$VERSION = "2.4-5";
+$BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Main;
@@ -327,6 +343,16 @@ $BUILD = 'Thursday November  3 23:56:42 GMT 2005';
 		{
 			$self->PARAM->error->msgStderr("reading ~/.pequelrc...") if ($self->PARAM->properties('debug'));
 			open(PequelRC, "$ENV{HOME}/.pequelrc");
+# put <> into slurp mode
+#undef $/;
+## read configuration file supplied on command line into string
+#my $configuration = <>;
+#my %config;
+## read all configuration options from config string
+#while ($configuration =~ /^\s*(\w+)\s* = \s*(.+?)\s*$/mg) {
+#  $config{$1} = $2;
+#}
+#print "Got: $_ => '$config{$_}'\n" foreach (sort keys %config);
 			while (<PequelRC>)
 			{
 				chomp;

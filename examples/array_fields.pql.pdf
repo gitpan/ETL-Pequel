@@ -11,7 +11,7 @@
 endobj
 2 0 obj
 <<
-/CreationDate (D:20050913101756+0100)
+/CreationDate (D:20051116135311+0000)
 /Producer (Pequel)
 /Title (Array Fields Example Script)
 >>
@@ -181,7 +181,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(array_fields.pql) Tj
+(examples/array_fields.pql) Tj
 1 0 0 1 410.17 797 Tm
 (Array Fields Example Script) Tj
 /F21 12 Tf
@@ -191,7 +191,7 @@ BT
 /F20 10 Tf
 1 0 0 1 76.0 735.6 Tm
 0.0000 Tw
-(array_fields.pql ) Tj
+(examples/array_fields.pql ) Tj
 /F21 12 Tf
 1 0 0 1 52.0 705.6 Tm
 0.0000 Tw
@@ -470,7 +470,7 @@ BT
 /F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:17) Tj
+(16 November 2005 13:53) Tj
 1 0 0 1 537.44 37 Tm
 (1) Tj
 ET
@@ -480,7 +480,7 @@ S
 endstream
 endobj
 19 0 obj
-4481
+4498
 endobj
 20 0 obj
 <<
@@ -518,8 +518,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Array Fields Example Script) Tj
-1 0 0 1 469.08 797 Tm
-(array_fields.pql) Tj
+1 0 0 1 420.72 797 Tm
+(examples/array_fields.pql) Tj
 /F10 7 Tf
 1 0 0 1 76.0 780.0 Tm
 0.0000 Tw
@@ -719,8 +719,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (2) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:17) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 13:53) Tj
 ET
 52 50 m
 543 50 l
@@ -728,7 +728,7 @@ S
 endstream
 endobj
 23 0 obj
-2990
+2998
 endobj
 24 0 obj
 <<
@@ -764,7 +764,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(array_fields.pql) Tj
+(examples/array_fields.pql) Tj
 1 0 0 1 410.17 797 Tm
 (Array Fields Example Script) Tj
 /F21 12 Tf
@@ -777,18 +777,32 @@ BT
 (2.1 ) Tj
 /F23 10 Tf
 0.0000 Tw
-(pequeldoc) Tj
+(prefix) Tj
 /F21 10 Tf
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
 1 0 0 1 76.0 702.0 Tm
 0.0000 Tw
-(generate pod / pdf pequel script Reference Guide.: pdf ) Tj
+(directory pathname prefix.: examples ) Tj
 /F21 10 Tf
 1 0 0 1 52.0 672.0 Tm
 0.0000 Tw
 (2.2 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(pequeldoc) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 660.0 Tm
+0.0000 Tw
+(generate pod / pdf pequel script Reference Guide.: pdf ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 630.0 Tm
+0.0000 Tw
+(2.3 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (detail) Tj
@@ -796,13 +810,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 660.0 Tm
+1 0 0 1 76.0 618.0 Tm
 0.0000 Tw
 (Include Pequel Generated Program chapter in Pequeldoc: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 630.0 Tm
+1 0 0 1 52.0 588.0 Tm
 0.0000 Tw
-(2.3 ) Tj
+(2.4 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (script_name) Tj
@@ -810,13 +824,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 618.0 Tm
+1 0 0 1 76.0 576.0 Tm
 0.0000 Tw
-(script filename: array_fields.pql ) Tj
+(script filename: examples/array_fields.pql ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 588.0 Tm
+1 0 0 1 52.0 546.0 Tm
 0.0000 Tw
-(2.4 ) Tj
+(2.5 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (header) Tj
@@ -824,13 +838,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 576.0 Tm
+1 0 0 1 76.0 534.0 Tm
 0.0000 Tw
 (write header record to output.: 1 ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 546.0 Tm
+1 0 0 1 52.0 504.0 Tm
 0.0000 Tw
-(2.5 ) Tj
+(2.6 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (optimize) Tj
@@ -838,27 +852,27 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 534.0 Tm
-0.0000 Tw
-(optimize generated code.: 1 ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 504.0 Tm
-0.0000 Tw
-(2.6 ) Tj
-/F23 10 Tf
-0.0000 Tw
-(nulls) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
-/F20 10 Tf
 1 0 0 1 76.0 492.0 Tm
 0.0000 Tw
-(print zero for null numeric/decimal.: 1 ) Tj
+(optimize generated code.: 1 ) Tj
 /F21 10 Tf
 1 0 0 1 52.0 462.0 Tm
 0.0000 Tw
 (2.7 ) Tj
+/F23 10 Tf
+0.0000 Tw
+(nonulls) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 450.0 Tm
+0.0000 Tw
+(do not print zero for null numeric/decimal.: 1 ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 420.0 Tm
+0.0000 Tw
+(2.8 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_title) Tj
@@ -866,13 +880,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 450.0 Tm
+1 0 0 1 76.0 408.0 Tm
 0.0000 Tw
 (document title.: Array Fields Example Script ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 420.0 Tm
+1 0 0 1 52.0 378.0 Tm
 0.0000 Tw
-(2.8 ) Tj
+(2.9 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_email) Tj
@@ -880,13 +894,13 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 408.0 Tm
+1 0 0 1 76.0 366.0 Tm
 0.0000 Tw
 (document email entry.: sample@youraddress.com ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 378.0 Tm
+1 0 0 1 52.0 336.0 Tm
 0.0000 Tw
-(2.9 ) Tj
+(2.10 ) Tj
 /F23 10 Tf
 0.0000 Tw
 (doc_version) Tj
@@ -894,12 +908,12 @@ BT
 0.0000 Tw
 ( ) Tj
 /F20 10 Tf
-1 0 0 1 76.0 366.0 Tm
+1 0 0 1 76.0 324.0 Tm
 0.0000 Tw
 (document version for pequel script.: 2.2 ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:17) Tj
+(16 November 2005 13:53) Tj
 1 0 0 1 537.44 37 Tm
 (3) Tj
 ET
@@ -909,7 +923,7 @@ S
 endstream
 endobj
 27 0 obj
-2212
+2439
 endobj
 28 0 obj
 <<
@@ -945,8 +959,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Array Fields Example Script) Tj
-1 0 0 1 469.08 797 Tm
-(array_fields.pql) Tj
+1 0 0 1 420.72 797 Tm
+(examples/array_fields.pql) Tj
 /F21 12 Tf
 1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
@@ -954,8 +968,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (4) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:17) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 13:53) Tj
 ET
 52 50 m
 543 50 l
@@ -963,7 +977,7 @@ S
 endstream
 endobj
 31 0 obj
-329
+337
 endobj
 32 0 obj
 <<
@@ -996,7 +1010,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(array_fields.pql) Tj
+(examples/array_fields.pql) Tj
 1 0 0 1 410.17 797 Tm
 (Array Fields Example Script) Tj
 /F21 12 Tf
@@ -1009,7 +1023,7 @@ BT
 (4.1 Table List Sorted By Table Name ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:17) Tj
+(16 November 2005 13:53) Tj
 1 0 0 1 537.44 37 Tm
 (5) Tj
 ET
@@ -1019,7 +1033,7 @@ S
 endstream
 endobj
 35 0 obj
-433
+441
 endobj
 36 0 obj
 <<
@@ -1053,12 +1067,12 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Array Fields Example Script) Tj
-1 0 0 1 469.08 797 Tm
-(array_fields.pql) Tj
+1 0 0 1 420.72 797 Tm
+(examples/array_fields.pql) Tj
 /F21 12 Tf
 1 0 0 1 52.0 750.0 Tm
 0.0000 Tw
-(5. ARRAY_FIELDS.PQL ) Tj
+(5. EXAMPLES/ARRAY_FIELDS.PQL ) Tj
 /F21 10 Tf
 1 0 0 1 52.0 714.0 Tm
 0.0000 Tw
@@ -1072,41 +1086,45 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 697.8 Tm
 0.0000 Tw
-(    pequeldoc\(pdf\) ) Tj
+(    prefix\(examples\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 689.4 Tm
 0.0000 Tw
-(    detail\(1\) ) Tj
+(    pequeldoc\(pdf\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 681.0 Tm
 0.0000 Tw
-(    script_name\(array_fields.pql\) ) Tj
+(    detail\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 672.6 Tm
 0.0000 Tw
-(    header\(1\) ) Tj
+(    script_name\(examples/array_fields.pql\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 664.2 Tm
 0.0000 Tw
-(    optimize\(1\) ) Tj
+(    header\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 655.8 Tm
 0.0000 Tw
-(    nulls\(1\) ) Tj
+(    optimize\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 647.4 Tm
 0.0000 Tw
-(    doc_title\(Array Fields Example Script\) ) Tj
+(    nonulls\(1\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 639.0 Tm
 0.0000 Tw
-(    doc_email\(sample@youraddress.com\) ) Tj
+(    doc_title\(Array Fields Example Script\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 630.6 Tm
 0.0000 Tw
+(    doc_email\(sample@youraddress.com\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 622.2 Tm
+0.0000 Tw
 (    doc_version\(2.2\) ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 609.6 Tm
+1 0 0 1 52.0 601.2 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -1116,41 +1134,27 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 593.4 Tm
+1 0 0 1 76.0 585.0 Tm
 0.0000 Tw
 (    Demonstrates the use of array-fields. An array-field is denoted by the preceding ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 585.0 Tm
+1 0 0 1 76.0 576.6 Tm
 0.0000 Tw
 (    '@' character.  The 'salesman_list' field in this example is an 'array field' ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 576.6 Tm
+1 0 0 1 76.0 568.2 Tm
 0.0000 Tw
 (    delimited by the default array field delimiter ','. Array type macros \(&arr_...\) ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 568.2 Tm
+1 0 0 1 76.0 559.8 Tm
 0.0000 Tw
 (    will expect all arguments to be array-fields.  Array macros can also be called as ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 559.8 Tm
+1 0 0 1 76.0 551.4 Tm
 0.0000 Tw
 (    a method following the array-field. ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 538.8 Tm
-0.0000 Tw
-() Tj
-/F23 10 Tf
-0.0000 Tw
-(sort by) Tj
-/F21 10 Tf
-0.0000 Tw
-( ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 522.6 Tm
-0.0000 Tw
-(    product_code string  ) Tj
-/F21 10 Tf
-1 0 0 1 52.0 501.6 Tm
+1 0 0 1 52.0 530.4 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -1160,67 +1164,81 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 485.4 Tm
+1 0 0 1 76.0 514.2 Tm
 0.0000 Tw
 (    product_code ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 477.0 Tm
+1 0 0 1 76.0 505.8 Tm
 0.0000 Tw
 (    cost_price ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 468.6 Tm
+1 0 0 1 76.0 497.4 Tm
 0.0000 Tw
 (    description ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 460.2 Tm
+1 0 0 1 76.0 489.0 Tm
 0.0000 Tw
 (    sales_code ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 451.8 Tm
+1 0 0 1 76.0 480.6 Tm
 0.0000 Tw
 (    sales_price ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 443.4 Tm
+1 0 0 1 76.0 472.2 Tm
 0.0000 Tw
 (    sales_qty ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 435.0 Tm
+1 0 0 1 76.0 463.8 Tm
 0.0000 Tw
 (    sales_date ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 426.6 Tm
+1 0 0 1 76.0 455.4 Tm
 0.0000 Tw
 (    location ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 418.2 Tm
+1 0 0 1 76.0 447.0 Tm
 0.0000 Tw
 (    salesman_list ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 409.8 Tm
+1 0 0 1 76.0 438.6 Tm
 0.0000 Tw
 (    num_salesmen => &arr_size\(@salesman_list\) ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 393.0 Tm
+1 0 0 1 76.0 421.8 Tm
 0.0000 Tw
 (    salesmen_sorted => &arr_sort\(salesman_list\) ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 376.2 Tm
+1 0 0 1 76.0 405.0 Tm
 0.0000 Tw
 (    salesmen_sorted_2 => @salesman_list->sort ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 359.4 Tm
+1 0 0 1 76.0 388.2 Tm
 0.0000 Tw
 (    salesmen_uniq => &arr_values_uniq\(@salesman_list\) ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 342.6 Tm
+1 0 0 1 76.0 371.4 Tm
 0.0000 Tw
 (    salesmen_uniq_2 => @salesman_list->values_uniq ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 325.8 Tm
+1 0 0 1 76.0 354.6 Tm
 0.0000 Tw
 (    salesmen_reverse => &arr_reverse\(&arr_sort\(@salesman_list\)\) ) Tj
 /F21 10 Tf
-1 0 0 1 52.0 304.8 Tm
+1 0 0 1 52.0 333.6 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(sort by) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 317.4 Tm
+0.0000 Tw
+(    product_code string  ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 296.4 Tm
 0.0000 Tw
 () Tj
 /F23 10 Tf
@@ -1230,46 +1248,46 @@ BT
 0.0000 Tw
 ( ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 288.6 Tm
+1 0 0 1 76.0 280.2 Tm
 0.0000 Tw
 (    string    location          location ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 280.2 Tm
+1 0 0 1 76.0 271.8 Tm
 0.0000 Tw
 (    string    product_code      product_code ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 271.8 Tm
+1 0 0 1 76.0 263.4 Tm
 0.0000 Tw
 (    string    salesman_list     salesman_list ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 263.4 Tm
+1 0 0 1 76.0 255.0 Tm
 0.0000 Tw
 (    numeric   num_salesmen      num_salesmen ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 255.0 Tm
+1 0 0 1 76.0 246.6 Tm
 0.0000 Tw
 (    string    salesmen_sorted   salesmen_sorted ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 246.6 Tm
+1 0 0 1 76.0 238.2 Tm
 0.0000 Tw
 (    string    salesmen_sorted_2 salesmen_sorted_2 ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 238.2 Tm
+1 0 0 1 76.0 229.8 Tm
 0.0000 Tw
 (    string    salesmen_uniq     salesmen_uniq ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 229.8 Tm
+1 0 0 1 76.0 221.4 Tm
 0.0000 Tw
 (    string    salesmen_uniq_2   salesmen_uniq_2 ) Tj
 /F10 7 Tf
-1 0 0 1 76.0 221.4 Tm
+1 0 0 1 76.0 213.0 Tm
 0.0000 Tw
 (    string    salesmen_reverse  salesmen_reverse ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (6) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:17) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 13:53) Tj
 ET
 52 50 m
 543 50 l
@@ -1277,7 +1295,7 @@ S
 endstream
 endobj
 39 0 obj
-4294
+4393
 endobj
 40 0 obj
 <<
@@ -1312,7 +1330,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(array_fields.pql) Tj
+(examples/array_fields.pql) Tj
 1 0 0 1 410.17 797 Tm
 (Array Fields Example Script) Tj
 /F21 12 Tf
@@ -1322,7 +1340,7 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 731.4 Tm
 0.0000 Tw
-( # vim: syntax=perl ts=4 sw=4 ) Tj
+( #!/usr/bin/perl ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 723.0 Tm
 0.0000 Tw
@@ -1330,319 +1348,319 @@ BT
 /F10 7 Tf
 1 0 0 1 76.0 714.6 Tm
 0.0000 Tw
-( #Generated By: pequel Version 2.2-9, Build: Tuesday September 13 08:43:08 BST 2005 ) Tj
+( # vim: syntax=perl ts=4 sw=4 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 706.2 Tm
 0.0000 Tw
-( #            : https://sourceforge.net/projects/pequel/ ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 697.8 Tm
 0.0000 Tw
-( #Script Name : array_fields.pql ) Tj
+( #Generated By: pequel Version 2.4-5, Build: Wednesday November 16 21:56:42 GMT 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 689.4 Tm
 0.0000 Tw
-( #Created On  : Tue Sep 13 10:17:55 2005 ) Tj
+( #            : http://sourceforge.net/projects/pequel/ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 681.0 Tm
 0.0000 Tw
-( #For         :  ) Tj
+( #Script Name : array_fields.pql ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 672.6 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #Created On  : Wed Nov 16 13:53:10 2005 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 664.2 Tm
 0.0000 Tw
-( #Options: ) Tj
+( #Perl Version: /usr/bin/perl 5.6.1 on solaris ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 655.8 Tm
 0.0000 Tw
-( #pequeldoc\(pdf\) generate pod / pdf pequel script Reference Guide. ) Tj
+( #For         :  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 647.4 Tm
 0.0000 Tw
-( #detail\(1\) Include Pequel Generated Program chapter in Pequeldoc ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 639.0 Tm
 0.0000 Tw
-( #script_name\(array_fields.pql\) script filename ) Tj
+( #Options: ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 630.6 Tm
 0.0000 Tw
-( #header\(1\) write header record to output. ) Tj
+( #prefix\(examples\) directory pathname prefix. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 622.2 Tm
 0.0000 Tw
-( #optimize\(1\) optimize generated code. ) Tj
+( #pequeldoc\(pdf\) generate pod / pdf pequel script Reference Guide. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 613.8 Tm
 0.0000 Tw
-( #nulls\(1\) print zero for null numeric/decimal. ) Tj
+( #detail\(1\) Include Pequel Generated Program chapter in Pequeldoc ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 605.4 Tm
 0.0000 Tw
-( #doc_title\(Array Fields Example Script\) document title. ) Tj
+( #script_name\(examples/array_fields.pql\) script filename ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 597.0 Tm
 0.0000 Tw
-( #doc_email\(sample@youraddress.com\) document email entry. ) Tj
+( #header\(1\) write header record to output. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 588.6 Tm
 0.0000 Tw
-( #doc_version\(2.2\) document version for pequel script. ) Tj
+( #optimize\(1\) optimize generated code. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 580.2 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+( #nonulls\(1\) do not print zero for null numeric/decimal. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 571.8 Tm
 0.0000 Tw
-( use strict; ) Tj
+( #doc_title\(Array Fields Example Script\) document title. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 563.4 Tm
 0.0000 Tw
-( local $\\="\\n"; local $,="|"; ) Tj
+( #doc_email\(sample@youraddress.com\) document email entry. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 555.0 Tm
 0.0000 Tw
-( print STDERR '[array_fields.pql ' . localtime\(\) . "] Init"; ) Tj
+( #doc_version\(2.2\) document version for pequel script. ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 546.6 Tm
 0.0000 Tw
-( use constant VERBOSE => int 10000; ) Tj
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 538.2 Tm
 0.0000 Tw
-( use constant LAST_ICELL => int 14; ) Tj
+( use strict; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 529.8 Tm
 0.0000 Tw
-( my @I_VAL; ) Tj
+( use constant _I_product_code         => int    0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 521.4 Tm
 0.0000 Tw
-( my @O_VAL; ) Tj
+( use constant _I_cost_price           => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 513.0 Tm
 0.0000 Tw
-( foreach my $f \(1..9\) \{ $O_VAL[$f] = undef; \} ) Tj
+( use constant _I_description          => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 504.6 Tm
 0.0000 Tw
-( use constant _I_product_code         => int    0; ) Tj
+( use constant _I_sales_code           => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 496.2 Tm
 0.0000 Tw
-( use constant _I_cost_price           => int    1; ) Tj
+( use constant _I_sales_price          => int    4; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 487.8 Tm
 0.0000 Tw
-( use constant _I_description          => int    2; ) Tj
+( use constant _I_sales_qty            => int    5; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 479.4 Tm
 0.0000 Tw
-( use constant _I_sales_code           => int    3; ) Tj
+( use constant _I_sales_date           => int    6; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 471.0 Tm
 0.0000 Tw
-( use constant _I_sales_price          => int    4; ) Tj
+( use constant _I_location             => int    7; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 462.6 Tm
 0.0000 Tw
-( use constant _I_sales_qty            => int    5; ) Tj
+( use constant _I_salesman_list        => int    8; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 454.2 Tm
 0.0000 Tw
-( use constant _I_sales_date           => int    6; ) Tj
+( use constant _I_num_salesmen         => int    9; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 445.8 Tm
 0.0000 Tw
-( use constant _I_location             => int    7; ) Tj
+( use constant _I_salesmen_sorted      => int   10; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 437.4 Tm
 0.0000 Tw
-( use constant _I_salesman_list        => int    8; ) Tj
+( use constant _I_salesmen_sorted_2    => int   11; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 429.0 Tm
 0.0000 Tw
-( use constant _I_num_salesmen         => int    9; ) Tj
+( use constant _I_salesmen_uniq        => int   12; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 420.6 Tm
 0.0000 Tw
-( use constant _I_salesmen_sorted      => int   10; ) Tj
+( use constant _I_salesmen_uniq_2      => int   13; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 412.2 Tm
 0.0000 Tw
-( use constant _I_salesmen_sorted_2    => int   11; ) Tj
+( use constant _I_salesmen_reverse     => int   14; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 403.8 Tm
 0.0000 Tw
-( use constant _I_salesmen_uniq        => int   12; ) Tj
+( use constant _O_location             => int    1; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 395.4 Tm
 0.0000 Tw
-( use constant _I_salesmen_uniq_2      => int   13; ) Tj
+( use constant _O_product_code         => int    2; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 387.0 Tm
 0.0000 Tw
-( use constant _I_salesmen_reverse     => int   14; ) Tj
+( use constant _O_salesman_list        => int    3; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 378.6 Tm
 0.0000 Tw
-( use constant _O_location             => int    1; ) Tj
+( use constant _O_num_salesmen         => int    4; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 370.2 Tm
 0.0000 Tw
-( use constant _O_product_code         => int    2; ) Tj
+( use constant _O_salesmen_sorted      => int    5; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 361.8 Tm
 0.0000 Tw
-( use constant _O_salesman_list        => int    3; ) Tj
+( use constant _O_salesmen_sorted_2    => int    6; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 353.4 Tm
 0.0000 Tw
-( use constant _O_num_salesmen         => int    4; ) Tj
+( use constant _O_salesmen_uniq        => int    7; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 345.0 Tm
 0.0000 Tw
-( use constant _O_salesmen_sorted      => int    5; ) Tj
+( use constant _O_salesmen_uniq_2      => int    8; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 336.6 Tm
 0.0000 Tw
-( use constant _O_salesmen_sorted_2    => int    6; ) Tj
+( use constant _O_salesmen_reverse     => int    9; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 328.2 Tm
 0.0000 Tw
-( use constant _O_salesmen_uniq        => int    7; ) Tj
+( local $\\="\\n"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 319.8 Tm
 0.0000 Tw
-( use constant _O_salesmen_uniq_2      => int    8; ) Tj
+( local $,="|"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 311.4 Tm
 0.0000 Tw
-( use constant _O_salesmen_reverse     => int    9; ) Tj
+( print STDERR '[examples/array_fields.pql ' . localtime\(\) . "] Init"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 303.0 Tm
 0.0000 Tw
-( open\(DATA, q\{cat - | sort -t'|' -y -k 1,1 |\}\) || die "Cannot open input: $!"; ) Tj
+( use constant VERBOSE => int 10000; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 294.6 Tm
 0.0000 Tw
-( &PrintHeader\(\); ) Tj
+( use constant LAST_ICELL => int 14; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 286.2 Tm
 0.0000 Tw
-( print STDERR '[array_fields.pql ' . localtime\(\) . "] Start"; ) Tj
+( my @I_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 277.8 Tm
 0.0000 Tw
-( use Benchmark; ) Tj
+( my @O_VAL; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 269.4 Tm
 0.0000 Tw
-( my $benchmark_start = new Benchmark; ) Tj
+( my $_inprecs=0; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 261.0 Tm
 0.0000 Tw
-( while \(<DATA>\) ) Tj
+( foreach my $f \(1..9\) \{ $O_VAL[$f] = undef; \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 252.6 Tm
 0.0000 Tw
-( \{ ) Tj
+( my @numeric_fields = \(4\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 244.2 Tm
 0.0000 Tw
-(     print STDERR '[array_fields.pql ' . localtime\(\) . "] $. records." if \($. % VERBOSE == 0\); ) Tj
+( # Sort:product_code\(asc:string\)  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 235.8 Tm
 0.0000 Tw
-(     chomp; ) Tj
+( open\(DATA, q\{cat  - | sort  -t'|' -y -k 1,1 2>/dev/null |\}\) || die "Cannot open input: $!"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 227.4 Tm
 0.0000 Tw
-(     @I_VAL = split\("[|]", $_\); ) Tj
+( &PrintHeader\(\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 219.0 Tm
 0.0000 Tw
-(     $O_VAL[_O_location] = $I_VAL[_I_location]; ) Tj
+( print STDERR '[examples/array_fields.pql ' . localtime\(\) . "] Start"; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 210.6 Tm
 0.0000 Tw
-(     $O_VAL[_O_product_code] = $I_VAL[_I_product_code]; ) Tj
+( use Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 202.2 Tm
 0.0000 Tw
-(     $O_VAL[_O_salesman_list] = $I_VAL[_I_salesman_list]; ) Tj
+( my $benchmark_start = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 193.8 Tm
 0.0000 Tw
-(     $I_VAL[_I_num_salesmen] = int\(split\(/\\s*,\\s*/,$I_VAL[_I_salesman_list],-1\)\); ) Tj
+( while \(<DATA>\) ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 185.4 Tm
 0.0000 Tw
-(     $O_VAL[_O_num_salesmen] = $I_VAL[_I_num_salesmen]; ) Tj
+( \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 177.0 Tm
 0.0000 Tw
-(     $I_VAL[_I_salesmen_sorted] = join\(',', sort\(split\(/\\s*,\\s*/,$I_VAL[_I_salesman_list],-1\)\)\); ) Tj
+(     ++$_inprecs; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 168.6 Tm
 0.0000 Tw
-(     $O_VAL[_O_salesmen_sorted] = $I_VAL[_I_salesmen_sorted]; ) Tj
+(     print STDERR '[examples/array_fields.pql ' . localtime\(\) . "] $_inprecs records." if \($_inprecs % VERBOSE  ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 160.2 Tm
 0.0000 Tw
-(     $I_VAL[_I_salesmen_sorted_2] = join\(',', sort\(split\(/\\s*,\\s*/,$I_VAL[_I_salesman_list],-1\)\)\); ) Tj
+( == 0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 151.8 Tm
 0.0000 Tw
-(     $O_VAL[_O_salesmen_sorted_2] = $I_VAL[_I_salesmen_sorted_2]; ) Tj
+(     chomp; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 143.4 Tm
 0.0000 Tw
-(     $I_VAL[_I_salesmen_uniq] = &\{sub \{ my %uniq; foreach \(split\(/\\s*,\\s*/,$I_VAL[_I_salesman_list],-1\)\) \{ $uni ) Tj
+(     @I_VAL = split\("[|]", $_\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 135.0 Tm
 0.0000 Tw
-( q\{$_\}++; \} return join\(',', keys %uniq\); \}\}; ) Tj
+(     $O_VAL[_O_location] = $I_VAL[_I_location]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 126.6 Tm
 0.0000 Tw
-(     $O_VAL[_O_salesmen_uniq] = $I_VAL[_I_salesmen_uniq]; ) Tj
+(     $O_VAL[_O_product_code] = $I_VAL[_I_product_code]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 118.2 Tm
 0.0000 Tw
-(     $I_VAL[_I_salesmen_uniq_2] = &\{sub \{ my %uniq; foreach \(split\(/\\s*,\\s*/,$I_VAL[_I_salesman_list],-1\)\) \{ $u ) Tj
+(     $O_VAL[_O_salesman_list] = $I_VAL[_I_salesman_list]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 109.8 Tm
 0.0000 Tw
-( niq\{$_\}++; \} return join\(',', keys %uniq\); \}\}; ) Tj
+(     $I_VAL[_I_num_salesmen] = int\(split\(/\\s*,\\s*/,$I_VAL[_I_salesman_list],-1\)\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 101.4 Tm
 0.0000 Tw
-(     $O_VAL[_O_salesmen_uniq_2] = $I_VAL[_I_salesmen_uniq_2]; ) Tj
+(     $O_VAL[_O_num_salesmen] = $I_VAL[_I_num_salesmen]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 93.0 Tm
 0.0000 Tw
-(     $I_VAL[_I_salesmen_reverse] = join\(',', reverse\(split\(/\\s*,\\s*/,join\(',', sort\(split\(/\\s*,\\s*/,$I_VAL[_I_s ) Tj
+(     $I_VAL[_I_salesmen_sorted] = join\(',', sort\(split\(/\\s*,\\s*/,$I_VAL[_I_salesman_list],-1\)\)\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 84.6 Tm
 0.0000 Tw
-( alesman_list],-1\)\)\),-1\)\)\); ) Tj
+(     $O_VAL[_O_salesmen_sorted] = $I_VAL[_I_salesmen_sorted]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 76.2 Tm
 0.0000 Tw
-(     $O_VAL[_O_salesmen_reverse] = $I_VAL[_I_salesmen_reverse]; ) Tj
+(     $I_VAL[_I_salesmen_sorted_2] = join\(',', sort\(split\(/\\s*,\\s*/,$I_VAL[_I_salesman_list],-1\)\)\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 67.8 Tm
 0.0000 Tw
-(     print  ) Tj
+(     $O_VAL[_O_salesmen_sorted_2] = $I_VAL[_I_salesmen_sorted_2]; ) Tj
 /F10 7 Tf
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:17) Tj
+(16 November 2005 13:53) Tj
 1 0 0 1 537.44 37 Tm
 (7) Tj
 ET
@@ -1652,7 +1670,7 @@ S
 endstream
 endobj
 43 0 obj
-8487
+8184
 endobj
 44 0 obj
 <<
@@ -1687,141 +1705,213 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Array Fields Example Script) Tj
-1 0 0 1 469.08 797 Tm
-(array_fields.pql) Tj
+1 0 0 1 420.72 797 Tm
+(examples/array_fields.pql) Tj
 /F10 7 Tf
 1 0 0 1 76.0 771.6 Tm
 0.0000 Tw
-(         $O_VAL[_O_location], ) Tj
+(     $I_VAL[_I_salesmen_uniq] = &\{sub \{ my %uniq; foreach \(split\(/\\s*,\\s*/,$I_VAL[_I_salesman_list],-1\)\) \{ $uni ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 763.2 Tm
 0.0000 Tw
-(         $O_VAL[_O_product_code], ) Tj
+( q\{$_\}++; \} return join\(',', keys %uniq\); \}\}; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 754.8 Tm
 0.0000 Tw
-(         $O_VAL[_O_salesman_list], ) Tj
+(     $O_VAL[_O_salesmen_uniq] = $I_VAL[_I_salesmen_uniq]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 746.4 Tm
 0.0000 Tw
-(         $O_VAL[_O_num_salesmen], ) Tj
+(     $I_VAL[_I_salesmen_uniq_2] = &\{sub \{ my %uniq; foreach \(split\(/\\s*,\\s*/,$I_VAL[_I_salesman_list],-1\)\) \{ $u ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 738.0 Tm
 0.0000 Tw
-(         $O_VAL[_O_salesmen_sorted], ) Tj
+( niq\{$_\}++; \} return join\(',', keys %uniq\); \}\}; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 729.6 Tm
 0.0000 Tw
-(         $O_VAL[_O_salesmen_sorted_2], ) Tj
+(     $O_VAL[_O_salesmen_uniq_2] = $I_VAL[_I_salesmen_uniq_2]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 721.2 Tm
 0.0000 Tw
-(         $O_VAL[_O_salesmen_uniq], ) Tj
+(     $I_VAL[_I_salesmen_reverse] = join\(',', reverse\(split\(/\\s*,\\s*/,join\(',', sort\(split\(/\\s*,\\s*/,$I_VAL[_I_s ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 712.8 Tm
 0.0000 Tw
-(         $O_VAL[_O_salesmen_uniq_2], ) Tj
+( alesman_list],-1\)\)\),-1\)\)\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 704.4 Tm
 0.0000 Tw
-(         $O_VAL[_O_salesmen_reverse] ) Tj
+(     $O_VAL[_O_salesmen_reverse] = $I_VAL[_I_salesmen_reverse]; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 696.0 Tm
 0.0000 Tw
-(     ; ) Tj
+(     $I_VAL[_I_num_salesmen] = 0 if \($I_VAL[_I_num_salesmen] == 0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 687.6 Tm
 0.0000 Tw
-( \} ) Tj
+(     foreach my $f \(@numeric_fields\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 679.2 Tm
+0.0000 Tw
+(     \{ ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 670.8 Tm
 0.0000 Tw
-( print STDERR '[array_fields.pql ' . localtime\(\) . "] $. records."; ) Tj
+(         $O_VAL[$f] = 0 ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 662.4 Tm
 0.0000 Tw
-( my $benchmark_end = new Benchmark; ) Tj
+(             if \($O_VAL[$f] == 0\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 654.0 Tm
 0.0000 Tw
-( my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 645.6 Tm
-0.0000 Tw
-( print STDERR '[array_fields.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark_timediff\)]\}"; ) Tj
+(     \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 637.2 Tm
 0.0000 Tw
-( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+(     print STDOUT ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 628.8 Tm
 0.0000 Tw
-( sub PrintHeader ) Tj
+(         $O_VAL[_O_location], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 620.4 Tm
 0.0000 Tw
-( \{ ) Tj
+(         $O_VAL[_O_product_code], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 612.0 Tm
 0.0000 Tw
-(     local $\\="\\n"; ) Tj
+(         $O_VAL[_O_salesman_list], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 603.6 Tm
 0.0000 Tw
-(     local $,="|"; ) Tj
+(         $O_VAL[_O_num_salesmen], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 595.2 Tm
 0.0000 Tw
-(     print  ) Tj
+(         $O_VAL[_O_salesmen_sorted], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 586.8 Tm
 0.0000 Tw
-(         'location', ) Tj
+(         $O_VAL[_O_salesmen_sorted_2], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 578.4 Tm
 0.0000 Tw
-(         'product_code', ) Tj
+(         $O_VAL[_O_salesmen_uniq], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 570.0 Tm
 0.0000 Tw
-(         'salesman_list', ) Tj
+(         $O_VAL[_O_salesmen_uniq_2], ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 561.6 Tm
 0.0000 Tw
-(         'num_salesmen', ) Tj
+(         $O_VAL[_O_salesmen_reverse] ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 553.2 Tm
 0.0000 Tw
-(         'salesmen_sorted', ) Tj
+(     ; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 544.8 Tm
 0.0000 Tw
-(         'salesmen_sorted_2', ) Tj
-/F10 7 Tf
-1 0 0 1 76.0 536.4 Tm
-0.0000 Tw
-(         'salesmen_uniq', ) Tj
+( \} ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 528.0 Tm
 0.0000 Tw
-(         'salesmen_uniq_2', ) Tj
+( close\(DATA\); ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 519.6 Tm
 0.0000 Tw
-(         'salesmen_reverse' ) Tj
+( print STDERR '[examples/array_fields.pql ' . localtime\(\) . "] $_inprecs records."; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 511.2 Tm
 0.0000 Tw
-(         ; ) Tj
+( my $benchmark_end = new Benchmark; ) Tj
 /F10 7 Tf
 1 0 0 1 76.0 502.8 Tm
+0.0000 Tw
+( my $benchmark_timediff = timediff\($benchmark_start, $benchmark_end\); ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 494.4 Tm
+0.0000 Tw
+( print STDERR '[examples/array_fields.pql ' . localtime\(\) . "] Code statistics: @\{[timestr\($benchmark_timediff\) ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 486.0 Tm
+0.0000 Tw
+( ]\}"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 477.6 Tm
+0.0000 Tw
+( #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 469.2 Tm
+0.0000 Tw
+( sub PrintHeader ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 460.8 Tm
+0.0000 Tw
+( \{ ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 452.4 Tm
+0.0000 Tw
+(     local $\\="\\n"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 444.0 Tm
+0.0000 Tw
+(     local $,="|"; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 435.6 Tm
+0.0000 Tw
+(     print STDOUT ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 427.2 Tm
+0.0000 Tw
+(         'location', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 418.8 Tm
+0.0000 Tw
+(         'product_code', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 410.4 Tm
+0.0000 Tw
+(         'salesman_list', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 402.0 Tm
+0.0000 Tw
+(         'num_salesmen', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 393.6 Tm
+0.0000 Tw
+(         'salesmen_sorted', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 385.2 Tm
+0.0000 Tw
+(         'salesmen_sorted_2', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 376.8 Tm
+0.0000 Tw
+(         'salesmen_uniq', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 368.4 Tm
+0.0000 Tw
+(         'salesmen_uniq_2', ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 360.0 Tm
+0.0000 Tw
+(         'salesmen_reverse' ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 351.6 Tm
+0.0000 Tw
+(         ; ) Tj
+/F10 7 Tf
+1 0 0 1 76.0 343.2 Tm
 0.0000 Tw
 ( \} ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (8) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:17) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 13:53) Tj
 ET
 52 50 m
 543 50 l
@@ -1829,7 +1919,7 @@ S
 endstream
 endobj
 47 0 obj
-2855
+4670
 endobj
 48 0 obj
 <<
@@ -1863,7 +1953,7 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(array_fields.pql) Tj
+(examples/array_fields.pql) Tj
 1 0 0 1 410.17 797 Tm
 (Array Fields Example Script) Tj
 /F21 12 Tf
@@ -1935,7 +2025,7 @@ BT
 (the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA ) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:17) Tj
+(16 November 2005 13:53) Tj
 1 0 0 1 537.44 37 Tm
 (9) Tj
 ET
@@ -1945,7 +2035,7 @@ S
 endstream
 endobj
 51 0 obj
-2222
+2230
 endobj
 52 0 obj
 <<
@@ -1981,13 +2071,13 @@ BT
 /F21 10 Tf
 1 0 0 1 52 797 Tm
 (Array Fields Example Script) Tj
-1 0 0 1 469.08 797 Tm
-(array_fields.pql) Tj
+1 0 0 1 420.72 797 Tm
+(examples/array_fields.pql) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (10) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:17) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 13:53) Tj
 ET
 52 50 m
 543 50 l
@@ -1995,7 +2085,7 @@ S
 endstream
 endobj
 55 0 obj
-271
+279
 endobj
 56 0 obj
 <<
@@ -2347,7 +2437,7 @@ f
 Q
 BT
 1 0 0 1 100 362 Tm
-(2.1 pequeldoc) Tj
+(2.1 prefix) Tj
 1 0 0 1 513.44 362 Tm
 (3) Tj
 ET
@@ -2358,7 +2448,7 @@ f
 Q
 BT
 1 0 0 1 100 350 Tm
-(2.2 detail) Tj
+(2.2 pequeldoc) Tj
 1 0 0 1 513.44 350 Tm
 (3) Tj
 ET
@@ -2369,7 +2459,7 @@ f
 Q
 BT
 1 0 0 1 100 338 Tm
-(2.3 script_name) Tj
+(2.3 detail) Tj
 1 0 0 1 513.44 338 Tm
 (3) Tj
 ET
@@ -2380,7 +2470,7 @@ f
 Q
 BT
 1 0 0 1 100 326 Tm
-(2.4 header) Tj
+(2.4 script_name) Tj
 1 0 0 1 513.44 326 Tm
 (3) Tj
 ET
@@ -2391,7 +2481,7 @@ f
 Q
 BT
 1 0 0 1 100 314 Tm
-(2.5 optimize) Tj
+(2.5 header) Tj
 1 0 0 1 513.44 314 Tm
 (3) Tj
 ET
@@ -2402,7 +2492,7 @@ f
 Q
 BT
 1 0 0 1 100 302 Tm
-(2.6 nulls) Tj
+(2.6 optimize) Tj
 1 0 0 1 513.44 302 Tm
 (3) Tj
 ET
@@ -2413,7 +2503,7 @@ f
 Q
 BT
 1 0 0 1 100 290 Tm
-(2.7 doc_title) Tj
+(2.7 nonulls) Tj
 1 0 0 1 513.44 290 Tm
 (3) Tj
 ET
@@ -2424,7 +2514,7 @@ f
 Q
 BT
 1 0 0 1 100 278 Tm
-(2.8 doc_email) Tj
+(2.8 doc_title) Tj
 1 0 0 1 513.44 278 Tm
 (3) Tj
 ET
@@ -2435,7 +2525,7 @@ f
 Q
 BT
 1 0 0 1 100 266 Tm
-(2.9 doc_version) Tj
+(2.9 doc_email) Tj
 1 0 0 1 513.44 266 Tm
 (3) Tj
 ET
@@ -2445,10 +2535,10 @@ q
 f
 Q
 BT
-1 0 0 1 76 254 Tm
-(3. TABLES) Tj
+1 0 0 1 100 254 Tm
+(2.10 doc_version) Tj
 1 0 0 1 513.44 254 Tm
-(4) Tj
+(3) Tj
 ET
 q
 0.95 g
@@ -2457,9 +2547,9 @@ f
 Q
 BT
 1 0 0 1 76 242 Tm
-(4. TABLE INFORMATION SUMMARY) Tj
+(3. TABLES) Tj
 1 0 0 1 513.44 242 Tm
-(5) Tj
+(4) Tj
 ET
 q
 1 g
@@ -2467,8 +2557,8 @@ q
 f
 Q
 BT
-1 0 0 1 100 230 Tm
-(4.1 Table List Sorted By Table Name) Tj
+1 0 0 1 76 230 Tm
+(4. TABLE INFORMATION SUMMARY) Tj
 1 0 0 1 513.44 230 Tm
 (5) Tj
 ET
@@ -2478,10 +2568,10 @@ q
 f
 Q
 BT
-1 0 0 1 76 218 Tm
-(5. ARRAY_FIELDS.PQL) Tj
+1 0 0 1 100 218 Tm
+(4.1 Table List Sorted By Table Name) Tj
 1 0 0 1 513.44 218 Tm
-(6) Tj
+(5) Tj
 ET
 q
 1 g
@@ -2489,8 +2579,8 @@ q
 f
 Q
 BT
-1 0 0 1 100 206 Tm
-(options) Tj
+1 0 0 1 76 206 Tm
+(5. EXAMPLES/ARRAY_FIELDS.PQL) Tj
 1 0 0 1 513.44 206 Tm
 (6) Tj
 ET
@@ -2501,7 +2591,7 @@ f
 Q
 BT
 1 0 0 1 100 194 Tm
-(description) Tj
+(options) Tj
 1 0 0 1 513.44 194 Tm
 (6) Tj
 ET
@@ -2512,7 +2602,7 @@ f
 Q
 BT
 1 0 0 1 100 182 Tm
-(sort by) Tj
+(description) Tj
 1 0 0 1 513.44 182 Tm
 (6) Tj
 ET
@@ -2534,7 +2624,7 @@ f
 Q
 BT
 1 0 0 1 100 158 Tm
-(output section) Tj
+(sort by) Tj
 1 0 0 1 513.44 158 Tm
 (6) Tj
 ET
@@ -2544,10 +2634,10 @@ q
 f
 Q
 BT
-1 0 0 1 76 146 Tm
-(6. PEQUEL GENERATED PROGRAM) Tj
+1 0 0 1 100 146 Tm
+(output section) Tj
 1 0 0 1 513.44 146 Tm
-(7) Tj
+(6) Tj
 ET
 q
 1 g
@@ -2556,9 +2646,9 @@ f
 Q
 BT
 1 0 0 1 76 134 Tm
-(7. ABOUT PEQUEL) Tj
+(6. PEQUEL GENERATED PROGRAM) Tj
 1 0 0 1 513.44 134 Tm
-(9) Tj
+(7) Tj
 ET
 q
 0.95 g
@@ -2566,13 +2656,24 @@ q
 f
 Q
 BT
-1 0 0 1 100 122 Tm
-(COPYRIGHT) Tj
+1 0 0 1 76 122 Tm
+(7. ABOUT PEQUEL) Tj
 1 0 0 1 513.44 122 Tm
+(9) Tj
+ET
+q
+1 g
+52 107 491 12 re
+f
+Q
+BT
+1 0 0 1 100 110 Tm
+(COPYRIGHT) Tj
+1 0 0 1 513.44 110 Tm
 (9) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:17) Tj
+(16 November 2005 13:53) Tj
 1 0 0 1 540.22 37 Tm
 (i) Tj
 ET
@@ -2582,7 +2683,7 @@ S
 endstream
 endobj
 59 0 obj
-5412
+5520
 endobj
 60 0 obj
 <<
@@ -2622,8 +2723,8 @@ BT
 /F21 10 Tf
 1 0 0 1 52 37 Tm
 (ii) Tj
-1 0 0 1 424.05 37 Tm
-(13 September 2005 10:17) Tj
+1 0 0 1 426.83 37 Tm
+(16 November 2005 13:53) Tj
 ET
 52 50 m
 543 50 l
@@ -2631,7 +2732,7 @@ S
 endstream
 endobj
 63 0 obj
-272
+271
 endobj
 64 0 obj
 <<
@@ -2678,7 +2779,7 @@ BT
 /F21 24 Tf
 1 0 0 1 210 706 Tm
 0 -30 TD
-(array_fields.pql) Tj
+(examples/array_fields.pql) Tj
 T* (by ) Tj
 0 0 0.8 rg
 /F22 12 Tf
@@ -2695,7 +2796,7 @@ ET
 endstream
 endobj
 68 0 obj
-333
+342
 endobj
 69 0 obj
 <<
@@ -2722,12 +2823,12 @@ BT
 1 i 0 J 0 j 0.1 w 10 M []0 d
 /F21 10 Tf
 1 0 0 1 52 797 Tm
-(array_fields.pql) Tj
+(examples/array_fields.pql) Tj
 1 0 0 1 410.17 797 Tm
 (Array Fields Example Script) Tj
 /F21 10 Tf
 1 0 0 1 52 37 Tm
-(13 September 2005 10:17) Tj
+(16 November 2005 13:53) Tj
 1 0 0 1 543 37 Tm
 () Tj
 ET
@@ -2737,7 +2838,7 @@ S
 endstream
 endobj
 71 0 obj
-266
+274
 endobj
 72 0 obj
 <<
@@ -2762,8 +2863,8 @@ endobj
 /Parent 74 0 R
 /Dest [61 0 R /Fit]
 /First 76 0 R
-/Last 123 0 R
-/Count 49 
+/Last 124 0 R
+/Count 50 
 /Title (Table of Contents)
 >>
 endobj
@@ -3024,10 +3125,10 @@ endobj
 /Parent 75 0 R
 /Dest [29 0 R /FitH 764.4]
 /Previous 78 0 R
-/Next 113 0 R
+/Next 114 0 R
 /First 104 0 R
-/Last 112 0 R
-/Count 9 
+/Last 113 0 R
+/Count 10 
 /Title (2. CONFIGURATION SETTINGS)
 >>
 endobj
@@ -3036,7 +3137,7 @@ endobj
 /Parent 103 0 R
 /Dest [29 0 R /FitH 726]
 /Next 105 0 R
-/Title (2.1 pequeldoc)
+/Title (2.1 prefix)
 >>
 endobj
 105 0 obj
@@ -3045,7 +3146,7 @@ endobj
 /Dest [29 0 R /FitH 684]
 /Previous 104 0 R
 /Next 106 0 R
-/Title (2.2 detail)
+/Title (2.2 pequeldoc)
 >>
 endobj
 106 0 obj
@@ -3054,7 +3155,7 @@ endobj
 /Dest [29 0 R /FitH 642]
 /Previous 105 0 R
 /Next 107 0 R
-/Title (2.3 script_name)
+/Title (2.3 detail)
 >>
 endobj
 107 0 obj
@@ -3063,7 +3164,7 @@ endobj
 /Dest [29 0 R /FitH 600]
 /Previous 106 0 R
 /Next 108 0 R
-/Title (2.4 header)
+/Title (2.4 script_name)
 >>
 endobj
 108 0 obj
@@ -3072,7 +3173,7 @@ endobj
 /Dest [29 0 R /FitH 558]
 /Previous 107 0 R
 /Next 109 0 R
-/Title (2.5 optimize)
+/Title (2.5 header)
 >>
 endobj
 109 0 obj
@@ -3081,7 +3182,7 @@ endobj
 /Dest [29 0 R /FitH 516]
 /Previous 108 0 R
 /Next 110 0 R
-/Title (2.6 nulls)
+/Title (2.6 optimize)
 >>
 endobj
 110 0 obj
@@ -3090,7 +3191,7 @@ endobj
 /Dest [29 0 R /FitH 474]
 /Previous 109 0 R
 /Next 111 0 R
-/Title (2.7 doc_title)
+/Title (2.7 nonulls)
 >>
 endobj
 111 0 obj
@@ -3099,7 +3200,7 @@ endobj
 /Dest [29 0 R /FitH 432]
 /Previous 110 0 R
 /Next 112 0 R
-/Title (2.8 doc_email)
+/Title (2.8 doc_title)
 >>
 endobj
 112 0 obj
@@ -3107,79 +3208,79 @@ endobj
 /Parent 103 0 R
 /Dest [29 0 R /FitH 390]
 /Previous 111 0 R
-/Title (2.9 doc_version)
+/Next 113 0 R
+/Title (2.9 doc_email)
 >>
 endobj
 113 0 obj
 <<
-/Parent 75 0 R
-/Dest [33 0 R /FitH 764.4]
-/Previous 103 0 R
-/Next 114 0 R
-/Title (3. TABLES)
+/Parent 103 0 R
+/Dest [29 0 R /FitH 348]
+/Previous 112 0 R
+/Title (2.10 doc_version)
 >>
 endobj
 114 0 obj
 <<
 /Parent 75 0 R
-/Dest [37 0 R /FitH 764.4]
-/Previous 113 0 R
-/Next 116 0 R
-/First 115 0 R
-/Last 115 0 R
-/Count 1 
-/Title (4. TABLE INFORMATION SUMMARY)
+/Dest [33 0 R /FitH 764.4]
+/Previous 103 0 R
+/Next 115 0 R
+/Title (3. TABLES)
 >>
 endobj
 115 0 obj
 <<
-/Parent 114 0 R
-/Dest [37 0 R /FitH 726]
-/Title (4.1 Table List Sorted By Table Name)
+/Parent 75 0 R
+/Dest [37 0 R /FitH 764.4]
+/Previous 114 0 R
+/Next 117 0 R
+/First 116 0 R
+/Last 116 0 R
+/Count 1 
+/Title (4. TABLE INFORMATION SUMMARY)
 >>
 endobj
 116 0 obj
 <<
-/Parent 75 0 R
-/Dest [41 0 R /FitH 764.4]
-/Previous 114 0 R
-/Next 122 0 R
-/First 117 0 R
-/Last 121 0 R
-/Count 5 
-/Title (5. ARRAY_FIELDS.PQL)
+/Parent 115 0 R
+/Dest [37 0 R /FitH 726]
+/Title (4.1 Table List Sorted By Table Name)
 >>
 endobj
 117 0 obj
 <<
-/Parent 116 0 R
-/Dest [41 0 R /FitH 726]
-/Next 118 0 R
-/Title (options)
+/Parent 75 0 R
+/Dest [41 0 R /FitH 764.4]
+/Previous 115 0 R
+/Next 123 0 R
+/First 118 0 R
+/Last 122 0 R
+/Count 5 
+/Title (5. EXAMPLES/ARRAY_FIELDS.PQL)
 >>
 endobj
 118 0 obj
 <<
-/Parent 116 0 R
-/Dest [41 0 R /FitH 621.6]
-/Previous 117 0 R
+/Parent 117 0 R
+/Dest [41 0 R /FitH 726]
 /Next 119 0 R
-/Title (description)
+/Title (options)
 >>
 endobj
 119 0 obj
 <<
-/Parent 116 0 R
-/Dest [41 0 R /FitH 550.8]
+/Parent 117 0 R
+/Dest [41 0 R /FitH 613.2]
 /Previous 118 0 R
 /Next 120 0 R
-/Title (sort by)
+/Title (description)
 >>
 endobj
 120 0 obj
 <<
-/Parent 116 0 R
-/Dest [41 0 R /FitH 513.6]
+/Parent 117 0 R
+/Dest [41 0 R /FitH 542.4]
 /Previous 119 0 R
 /Next 121 0 R
 /Title (input section)
@@ -3187,35 +3288,44 @@ endobj
 endobj
 121 0 obj
 <<
-/Parent 116 0 R
-/Dest [41 0 R /FitH 316.800000000001]
+/Parent 117 0 R
+/Dest [41 0 R /FitH 345.600000000001]
 /Previous 120 0 R
-/Title (output section)
+/Next 122 0 R
+/Title (sort by)
 >>
 endobj
 122 0 obj
 <<
-/Parent 75 0 R
-/Dest [45 0 R /FitH 764.4]
-/Previous 116 0 R
-/Next 123 0 R
-/Title (6. PEQUEL GENERATED PROGRAM)
+/Parent 117 0 R
+/Dest [41 0 R /FitH 308.400000000001]
+/Previous 121 0 R
+/Title (output section)
 >>
 endobj
 123 0 obj
 <<
 /Parent 75 0 R
-/Dest [53 0 R /FitH 764.4]
-/Previous 122 0 R
-/First 124 0 R
-/Last 124 0 R
-/Count 1 
-/Title (7. ABOUT PEQUEL)
+/Dest [45 0 R /FitH 764.4]
+/Previous 117 0 R
+/Next 124 0 R
+/Title (6. PEQUEL GENERATED PROGRAM)
 >>
 endobj
 124 0 obj
 <<
-/Parent 123 0 R
+/Parent 75 0 R
+/Dest [53 0 R /FitH 764.4]
+/Previous 123 0 R
+/First 125 0 R
+/Last 125 0 R
+/Count 1 
+/Title (7. ABOUT PEQUEL)
+>>
+endobj
+125 0 obj
+<<
+/Parent 124 0 R
 /Dest [53 0 R /FitH 681.6]
 /Title (COPYRIGHT)
 >>
@@ -3223,9 +3333,9 @@ endobj
 74 0 obj
 <<
 /Type /Outlines
-/Count 50
+/Count 51
 /First 75 0 R
-/Last 124 0 R
+/Last 125 0 R
 >>
 endobj
 3 0 obj
@@ -3245,12 +3355,12 @@ endobj
 >>
 endobj
 xref
-0 125
+0 126
 0000000000 65535 f 
 0000000015 00000 n 
 0000000171 00000 n 
-0000048571 00000 n 
-0000048660 00000 n 
+0000050730 00000 n 
+0000050819 00000 n 
 0000000286 00000 n 
 0000002386 00000 n 
 0000002485 00000 n 
@@ -3265,118 +3375,119 @@ xref
 0000003397 00000 n 
 0000003503 00000 n 
 0000003617 00000 n 
-0000008152 00000 n 
-0000008173 00000 n 
-0000008323 00000 n 
-0000008406 00000 n 
-0000011450 00000 n 
-0000011471 00000 n 
-0000011609 00000 n 
-0000011692 00000 n 
-0000013958 00000 n 
-0000013979 00000 n 
-0000014105 00000 n 
-0000014188 00000 n 
-0000014571 00000 n 
-0000014591 00000 n 
-0000014693 00000 n 
-0000014776 00000 n 
-0000015263 00000 n 
-0000015283 00000 n 
-0000015385 00000 n 
-0000015468 00000 n 
-0000019816 00000 n 
-0000019837 00000 n 
-0000019963 00000 n 
-0000020046 00000 n 
-0000028587 00000 n 
-0000028608 00000 n 
-0000028722 00000 n 
-0000028805 00000 n 
-0000031714 00000 n 
-0000031735 00000 n 
-0000031849 00000 n 
-0000031932 00000 n 
-0000034208 00000 n 
-0000034229 00000 n 
-0000034355 00000 n 
-0000034438 00000 n 
-0000034763 00000 n 
-0000034783 00000 n 
-0000034885 00000 n 
-0000034968 00000 n 
-0000040434 00000 n 
-0000040455 00000 n 
-0000040569 00000 n 
-0000040652 00000 n 
-0000040978 00000 n 
-0000040998 00000 n 
-0000041100 00000 n 
-0000041183 00000 n 
-0000041266 00000 n 
-0000041653 00000 n 
-0000041673 00000 n 
-0000041799 00000 n 
-0000042119 00000 n 
-0000042139 00000 n 
-0000042241 00000 n 
-0000048495 00000 n 
-0000042324 00000 n 
-0000042447 00000 n 
-0000042545 00000 n 
-0000042658 00000 n 
-0000042820 00000 n 
-0000042956 00000 n 
-0000043041 00000 n 
-0000043198 00000 n 
-0000043281 00000 n 
-0000043437 00000 n 
-0000043522 00000 n 
-0000043679 00000 n 
-0000043777 00000 n 
-0000043898 00000 n 
-0000044058 00000 n 
-0000044156 00000 n 
-0000044288 00000 n 
-0000044448 00000 n 
-0000044546 00000 n 
-0000044667 00000 n 
-0000044823 00000 n 
-0000044921 00000 n 
-0000045042 00000 n 
-0000045201 00000 n 
-0000045299 00000 n 
-0000045420 00000 n 
-0000045569 00000 n 
-0000045670 00000 n 
-0000045794 00000 n 
-0000045964 00000 n 
-0000046065 00000 n 
-0000046181 00000 n 
-0000046302 00000 n 
-0000046418 00000 n 
-0000046536 00000 n 
-0000046651 00000 n 
-0000046770 00000 n 
-0000046889 00000 n 
-0000046996 00000 n 
-0000047112 00000 n 
-0000047286 00000 n 
-0000047395 00000 n 
-0000047560 00000 n 
-0000047655 00000 n 
-0000047774 00000 n 
-0000047889 00000 n 
-0000048010 00000 n 
-0000048129 00000 n 
-0000048263 00000 n 
-0000048410 00000 n 
+0000008169 00000 n 
+0000008190 00000 n 
+0000008340 00000 n 
+0000008423 00000 n 
+0000011475 00000 n 
+0000011496 00000 n 
+0000011634 00000 n 
+0000011717 00000 n 
+0000014210 00000 n 
+0000014231 00000 n 
+0000014357 00000 n 
+0000014440 00000 n 
+0000014831 00000 n 
+0000014851 00000 n 
+0000014953 00000 n 
+0000015036 00000 n 
+0000015531 00000 n 
+0000015551 00000 n 
+0000015653 00000 n 
+0000015736 00000 n 
+0000020183 00000 n 
+0000020204 00000 n 
+0000020330 00000 n 
+0000020413 00000 n 
+0000028651 00000 n 
+0000028672 00000 n 
+0000028786 00000 n 
+0000028869 00000 n 
+0000033593 00000 n 
+0000033614 00000 n 
+0000033728 00000 n 
+0000033811 00000 n 
+0000036095 00000 n 
+0000036116 00000 n 
+0000036242 00000 n 
+0000036325 00000 n 
+0000036658 00000 n 
+0000036678 00000 n 
+0000036780 00000 n 
+0000036863 00000 n 
+0000042437 00000 n 
+0000042458 00000 n 
+0000042572 00000 n 
+0000042655 00000 n 
+0000042980 00000 n 
+0000043000 00000 n 
+0000043102 00000 n 
+0000043185 00000 n 
+0000043268 00000 n 
+0000043664 00000 n 
+0000043684 00000 n 
+0000043810 00000 n 
+0000044138 00000 n 
+0000044158 00000 n 
+0000044260 00000 n 
+0000050654 00000 n 
+0000044343 00000 n 
+0000044466 00000 n 
+0000044564 00000 n 
+0000044677 00000 n 
+0000044839 00000 n 
+0000044975 00000 n 
+0000045060 00000 n 
+0000045217 00000 n 
+0000045300 00000 n 
+0000045456 00000 n 
+0000045541 00000 n 
+0000045698 00000 n 
+0000045796 00000 n 
+0000045917 00000 n 
+0000046077 00000 n 
+0000046175 00000 n 
+0000046307 00000 n 
+0000046467 00000 n 
+0000046565 00000 n 
+0000046686 00000 n 
+0000046842 00000 n 
+0000046940 00000 n 
+0000047061 00000 n 
+0000047220 00000 n 
+0000047318 00000 n 
+0000047439 00000 n 
+0000047588 00000 n 
+0000047689 00000 n 
+0000047813 00000 n 
+0000047984 00000 n 
+0000048082 00000 n 
+0000048201 00000 n 
+0000048317 00000 n 
+0000048438 00000 n 
+0000048554 00000 n 
+0000048672 00000 n 
+0000048789 00000 n 
+0000048908 00000 n 
+0000049027 00000 n 
+0000049135 00000 n 
+0000049251 00000 n 
+0000049425 00000 n 
+0000049534 00000 n 
+0000049708 00000 n 
+0000049803 00000 n 
+0000049922 00000 n 
+0000050043 00000 n 
+0000050169 00000 n 
+0000050288 00000 n 
+0000050422 00000 n 
+0000050569 00000 n 
 trailer
 <<
-/Size 125
+/Size 126
 /Root 3 0 R
 /Info 2 0 R
 >>
 startxref
-48836
+50995
 %%EOF

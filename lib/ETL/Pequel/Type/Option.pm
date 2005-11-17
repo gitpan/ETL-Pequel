@@ -24,6 +24,8 @@
 # ----------------------------------------------------------------------------------------------------
 # Modification History
 # When          Version     Who     What
+# 11/11/2005	2.4-5		gaffie	new option show_synonyms -- 
+# 09/11/2005	2.4-5		gaffie	new option use_piped_chain -- use pipe() to connect input from pequel script.
 # 20/09/2005	2.3-6		gaffie	unpack_input/pack_output implementation.
 # 19/10/2005	2.3-5		gaffie	Added gzcat_cmd, gzcat_args, cat_cmd, cat_args options.
 # 19/10/2005	2.3-5		gaffie	Added sort_cmd, sort_args, cpp_cmd, cpp_args options.
@@ -53,6 +55,10 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 	package ETL::Pequel::Type::Option::Element;
 	use ETL::Pequel::Type;	#+++++
 	use base qw(ETL::Pequel::Type::Element);
+
+	use constant CMDTYPE_SCRIPT_ONLY => int 0;
+	use constant CMDTYPE_CMDLINE_ONLY => int 2;
+	use constant CMDTYPE_ANY => 1;
 
 	our $this = __PACKAGE__;
 
@@ -1705,6 +1711,25 @@ $self->PARAM->error->msgStderr("This option is not currently available.");
 				description => 'Remove extra ctrl-m from end-of-record on input stream',
 				PARAM => $param,
 			),
+			ETL::Pequel::Type::Option::Element->new
+			(
+				name => 'show_synonyms',		
+				value => 1,
+				cmd_format => '!',
+				cmd_type => 1,
+				inherit => 1,
+				description => 'Show field names in generated code.',
+				PARAM => $param,
+			),
+#>			ETL::Pequel::Type::Option::Element->new
+#>			(
+#>				name => 'use_piped_chain',		
+#>				cmd_format => '!',
+#>				cmd_type => 0,
+#>				inherit => 1,
+#>				description => 'Use pipe to connect input stream to external pequel script output',
+#>				PARAM => $param,
+#>			),
 		);
 		return $self;
 	}

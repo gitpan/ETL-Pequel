@@ -4,7 +4,7 @@
 #  Created	: 29 January 2005
 #  Author	: Mario Gaffiero (gaffie)
 #
-# Copyright 1999-2005 Mario Gaffiero.
+# Copyright 1999-2006 Mario Gaffiero.
 # 
 # This file is part of Pequel(TM).
 # 
@@ -24,6 +24,8 @@
 # ----------------------------------------------------------------------------------------------------
 # Modification History
 # When          Version     Who     What
+# 30/11/2005	2.4-6		gaffie	exec_min_lines -- use exec() if code > lines.
+# 23/11/2005	2.4-6		gaffie	codeOpen() and codeClose() functions.
 # 16/11/2005	2.4-5		gaffie	Bug fix -- input record line counter.
 # 04/11/2005	2.4-5		gaffie	Bug fix numeric/decimal type checking for nulls/nonulls options.
 # 03/11/2005	2.4-4		gaffie	Fixed PrintHeader().
@@ -45,8 +47,8 @@ use strict;
 use attributes qw(get reftype);
 #use warnings; --- NOT HERE because the eval in execute will complain!
 use vars qw($VERSION $BUILD);
-$VERSION = "2.4-5";
-$BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
+$VERSION = "2.4-6";
+$BUILD = 'Wednesday November 23 21:56:42 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Engine;
@@ -90,8 +92,16 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 	sub execute : method
 	{
 		my $self = shift;
-		eval ($self->text);
-		$self->PARAM->error->msgStderr("$@");
+		if ($self->PARAM->properties('exec_min_lines') && $self->lines() > $self->PARAM->properties('exec_min_lines'))
+		{
+			$self->printToFile("@{[ $self->PARAM->properties('script_name') ]}.EXEC");
+			exec("perl @{[ $self->PARAM->properties('script_name') ]}.EXEC");
+		}
+		else
+		{
+			eval ($self->text());
+			$self->PARAM->error->msgStderr("$@");
+		}
 	}
 
 	sub generate : method
@@ -114,8 +124,8 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 		}
 		return unless ($self->PARAM->sections->exists('input section')->items->size);
 	
-#>		$self->codeOpen();
-		map($self->addAll($_->codeOpen()), grep($_->items->size, $self->PARAM->sections->toArray));
+		$self->codeOpen();
+#<		map($self->addAll($_->codeOpen()), grep($_->items->size, $self->PARAM->sections->toArray));
 
 		$self->add("\&PrintHeader();") 
 			if 
@@ -141,8 +151,8 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 
 #>		$self->codeSummarySection;
 		# Important -- first close last opened to prevent deadlock:
-#>		$self->codeClose();
-		map($self->addAll($_->codeClose), grep($_->items->size, reverse($self->PARAM->sections->toArray)));
+		$self->codeClose();
+#<		map($self->addAll($_->codeClose), grep($_->items->size, reverse($self->PARAM->sections->toArray)));
 
 		$self->addAll($self->PARAM->dbtypes->codeDisconnect)
 			if ($self->PARAM->properties('use_inline')); # wrong -- relevant to oracle/sqlite tables
@@ -165,16 +175,23 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 		}
 	}
 
-#>	sub codeOpen : method
-#>	{
-#>		my $self = shift;
-#>		foreach ($self->PARAM->distributor->toArrayUniq())
+	sub codeOpen : method
+	{
+		my $self = shift;
+#>		# !! wrong -- need to preserve order according to sub-scripth depth level -- open deepest 1st, close last
+#>		# order should be:
+#>		#	- open main::STDOUT
+#>		#	- open combiner
+#>		#	- open distributors
+#>		#	- open input-file
+#>		foreach my $item (reverse sort { $a->value() <=> $b->value() } $self->PARAM->output_files->toArray())
 #>		{
-#>			my $fdname = $_;
+#>			my $fdname = $item->name();
 #>			$fdname =~ s/^.*://;
 #>			$fdname =~ s/^.*\///;
 #>			$fdname =~ s/\..*$//;
-#>			if ($_ =~ /^pequel:|\.pql$/i)
+#>			$fdname = uc($fdname);
+#>			if ($item->name() =~ /^pequel:|\.pql$/i)
 #>			{
 #>				$self->add("if (open(::$fdname, '|-') == 0) # Fork -- write to child");# child reads STDIN
 #>				$self->openBlock("{");
@@ -185,27 +202,28 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 #>			}
 #>			else # Its a file...
 #>			{
-#>				my $ofile = $_;
+#>				my $ofile = $self->PARAM->getfilepath($item->name());
 #>				$ofile =~ s/^.*://;
 #>				$self->add("open(::$fdname, '>@{[ $ofile ]}');"); # || die...
 #>			}
 #>		}
-#>		map($self->addAll($_->codeOpen()), grep($_->items->size, $self->PARAM->sections->toArray));
-#>	}
-#>	
-#>	sub codeClose : method
-#>	{
-#>		my $self = shift;
-#>		map($self->addAll($_->codeClose), grep($_->items->size, reverse($self->PARAM->sections->toArray)));
-#>		foreach (reverse $self->PARAM->distributor->toArrayUniq())
+		map($self->addAll($_->codeOpen()), grep($_->items->size, $self->PARAM->sections->toArray));
+	}
+	
+	sub codeClose : method
+	{
+		my $self = shift;
+		map($self->addAll($_->codeClose), grep($_->items->size, reverse($self->PARAM->sections->toArray)));
+#>		foreach my $item (sort { $a->value() <=> $b->value() } $self->PARAM->output_files->toArray())
 #>		{
-#>			my $fdname = $_;
+#>			my $fdname = $item->name();
 #>			$fdname =~ s/^.*://;
 #>			$fdname =~ s/^.*\///;
 #>			$fdname =~ s/\..*$//;
-#>			$self->add("close(::@{[ uc($fdname) ]});");
+#>			$fdname = uc($fdname);
+#>			$self->add("close(::@{[ $fdname ]});");
 #>		}
-#>	}
+	}
 
 	sub codePackages : method
 	{
@@ -561,6 +579,7 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 	{
 		my $self = shift;
 		my $ofl = shift || 'STDOUT';	# --> ::STDOUT
+#>		$ofl = '::' . $ofl unless ($ofl eq 'STDOUT');
 
 		$self->addCommentBegin("codePrint");
 		$self->add("flock($ofl, LOCK_EX);") if ($self->PARAM->properties('lock_output'));
@@ -894,6 +913,7 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 	{
 		my $self = shift;
 		my $ofl = shift || 'STDOUT';
+#>		$ofl = '::' . $ofl unless ($ofl eq 'STDOUT');
 		return unless ($self->PARAM->properties('header')); #< || $self->PARAM->properties('print_header'));
 
 		$self->add('sub PrintHeader');

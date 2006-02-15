@@ -4,7 +4,7 @@
 #  Created	: 27 October 2005
 #  Author	: Mario Gaffiero (gaffie)
 #
-# Copyright 1999-2005 Mario Gaffiero.
+# Copyright 1999-2006 Mario Gaffiero.
 # 
 # This file is part of Pequel(TM).
 # 
@@ -31,8 +31,8 @@ use strict;
 use attributes qw(get reftype);
 use warnings;
 use vars qw($VERSION $BUILD);
-$VERSION = "2.4-5";
-$BUILD = 'Thursday November  3 23:56:42 GMT 2005';
+$VERSION = "2.4-6";
+$BUILD = 'Wednesday November 23 10:17:15 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel;

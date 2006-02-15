@@ -1,0 +1,8085 @@
+%PDF-1.2
+%‚„œ”
+1 0 obj
+[/CalRGB
+<<
+/WhitePoint [0.9505 1 1.089]
+/Gamma [1.8 1.8 1.8]
+/Matrix [0.4497 0.2446 0.02518 0.3613 0.672 0.1412 0.1845 0.08334 0.9227]
+>>
+]
+endobj
+2 0 obj
+<<
+/CreationDate (D:20060215141602+0000)
+/Producer (Pequel)
+/Title (Pequel ETL)
+>>
+endobj
+5 0 obj
+<<
+/Type /Encoding
+/Differences [ 0 /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam
+/quotedbl /numbersign /dollar /percent /ampersand
+/quoteright /parenleft /parenright /asterisk /plus /comma
+/hyphen /period /slash /zero /one /two /three /four /five
+/six /seven /eight /nine /colon /semicolon /less /equal
+/greater /question /at /A /B /C /D /E /F /G /H /I /J /K /L
+/M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft
+/backslash /bracketright /asciicircum /underscore
+/quoteleft /a /b /c /d /e /f /g /h /i /j /k /l /m /n /o /p
+/q /r /s /t /u /v /w /x /y /z /braceleft /bar /braceright
+/asciitilde /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /emdash
+/dotlessi /grave /acute /circumflex /tilde /macron /breve
+/dotaccent /dieresis /.notdef /ring /cedilla /.notdef
+/hungarumlaut /ogonek /caron /space /exclamdown /cent
+/sterling /currency /yen /brokenbar /section /dieresis
+/copyright /ordfeminine /guillemotleft /logicalnot /hyphen
+/registered /macron /degree /plusminus /twosuperior
+/threesuperior /acute /mu /paragraph /periodcentered
+/cedilla /onesuperior /ordmasculine /guillemotright
+/onequarter /onehalf /threequarters /questiondown /Agrave
+/Aacute /Acircumflex /Atilde /Adieresis /Aring /AE
+/Ccedilla /Egrave /Eacute /Ecircumflex /Edieresis /Igrave
+/Iacute /Icircumflex /Idieresis /Eth /Ntilde /Ograve
+/Oacute /Ocircumflex /Otilde /Odieresis /multiply /Oslash
+/Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn
+/germandbls /agrave /aacute /acircumflex /atilde /adieresis
+/aring /ae /ccedilla /egrave /eacute /ecircumflex
+/edieresis /igrave /iacute /icircumflex /idieresis /eth
+/ntilde /ograve /oacute /ocircumflex /otilde /odieresis
+/divide /oslash /ugrave /uacute /ucircumflex /udieresis
+/yacute /thorn /ydieresis ]
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F00
+/Encoding 5 0 R
+/BaseFont /Times-Roman
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F01
+/Encoding 5 0 R
+/BaseFont /Times-Bold
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F02
+/Encoding 5 0 R
+/BaseFont /Times-Italic
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F03
+/Encoding 5 0 R
+/BaseFont /Times-BoldItalic
+>>
+endobj
+10 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F10
+/Encoding 5 0 R
+/BaseFont /Courier
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F11
+/Encoding 5 0 R
+/BaseFont /Courier-Bold
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F12
+/Encoding 5 0 R
+/BaseFont /Courier-Oblique
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F13
+/Encoding 5 0 R
+/BaseFont /Courier-BoldOblique
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F20
+/Encoding 5 0 R
+/BaseFont /Helvetica
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F21
+/Encoding 5 0 R
+/BaseFont /Helvetica-Bold
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F22
+/Encoding 5 0 R
+/BaseFont /Helvetica-Oblique
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F23
+/Encoding 5 0 R
+/BaseFont /Helvetica-BoldOblique
+>>
+endobj
+0 g
+18 0 obj
+<<
+/Length 19 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Quick Reference) Tj
+1 0 0 1 488.54 797 Tm
+(Pequel ETL) Tj
+/F21 12 Tf
+1 0 0 1 52.0 750.0 Tm
+0.0000 Tw
+(Section Types ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 732.7 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(Expressions) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 720.7 Tm
+3.0031 Tw
+(A ) Tj
+/F23 10 Tf
+3.0031 Tw
+(Pequel) Tj
+/F20 10 Tf
+3.0031 Tw
+( expression can contain a mix of Perl code, including regular expressions, ) Tj
+/F22 10 Tf
+3.0031 Tw
+(field-name) Tj
+/F20 10 Tf
+3.0031 Tw
+(s,) Tj
+1 0 0 1 76.0 708.7 Tm
+0.0000 Tw
+(Pequel-macros, and Pequel-table lookups. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 682.3 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(Comments) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 670.3 Tm
+3.3129 Tw
+(Any text following and including the ) Tj
+/F10 10 Tf
+3.3129 Tw
+(#) Tj
+/F20 10 Tf
+3.3129 Tw
+( symbol or ) Tj
+/F10 10 Tf
+3.3129 Tw
+(//) Tj
+/F20 10 Tf
+3.3129 Tw
+( is considered as comment text. If the ) Tj
+/F22 10 Tf
+3.3129 Tw
+(cpp) Tj
+/F20 10 Tf
+1 0 0 1 76.0 658.3 Tm
+1.0053 Tw
+(pre-processor is available then comments are limited to C/C++ style comments with \() Tj
+/F10 10 Tf
+1.0053 Tw
+(//) Tj
+/F20 10 Tf
+1.0053 Tw
+( and ) Tj
+/F10 10 Tf
+1.0053 Tw
+(/* ...) Tj
+1 0 0 1 76.0 646.3 Tm
+0.0000 Tw
+(*/) Tj
+/F20 10 Tf
+0.0000 Tw
+(\) \217 the ) Tj
+/F10 10 Tf
+0.0000 Tw
+(#) Tj
+/F20 10 Tf
+0.0000 Tw
+( will be interpreted as a macro directive. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 619.9 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(Item Line Continuation) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 607.9 Tm
+0.0335 Tw
+(Each ) Tj
+/F23 10 Tf
+0.0335 Tw
+(item) Tj
+/F20 10 Tf
+0.0335 Tw
+( within a section must appear on a single line. In order to break up an item statement \(for better) Tj
+1 0 0 1 76.0 595.9 Tm
+0.0000 Tw
+(readability\) us the line continuation character ) Tj
+/F22 10 Tf
+0.0000 Tw
+(\\) Tj
+/F20 10 Tf
+0.0000 Tw
+(. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 569.5 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(Pre-Processor) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 557.5 Tm
+0.0000 Tw
+(If your system provides the ) Tj
+/F23 10 Tf
+0.0000 Tw
+(cpp) Tj
+/F20 10 Tf
+0.0000 Tw
+( pre-processor, your Pequel script may include any C/C++ style macros. ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 515.5 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(options) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 503.5 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(option-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\() Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(arg> ) Tj
+/F20 10 Tf
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ] ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 461.5 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(description section) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 449.5 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(free format text> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 407.5 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(input section) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 395.5 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(input-field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(=) Tj
+/F20 10 Tf
+0.0000 Tw
+(> < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(calc-expression> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ] ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 369.1 Tm
+0.0000 Tw
+(calc-expression ) Tj
+/F20 10 Tf
+1 0 0 1 100.0 357.1 Tm
+2.2745 Tw
+(A valid ) Tj
+/F22 10 Tf
+2.2745 Tw
+(Perl) Tj
+/F20 10 Tf
+2.2745 Tw
+( statement which may contain ) Tj
+/F22 10 Tf
+2.2745 Tw
+(input-field-name) Tj
+/F20 10 Tf
+2.2745 Tw
+(, Pequel macros, and Pequel-table) Tj
+1 0 0 1 100.0 345.1 Tm
+0.0000 Tw
+(lookup expressions. ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 303.1 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(field preprocess) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 291.1 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(input-field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(=) Tj
+/F20 10 Tf
+0.0000 Tw
+(> | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(=~) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(calc-expression> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ] ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 249.1 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(filter) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 237.1 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(condition-expression> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 195.1 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(reject) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 183.1 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(condition-expression> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 141.1 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(divert input record) Tj
+/F21 10 Tf
+0.0000 Tw
+( \(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(filename | pequel-script name | db-connect-str\(**\) | socket\(**\) ) Tj
+/F21 10 Tf
+0.0000 Tw
+( >\) ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 129.1 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(condition-expression> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 87.1 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(copy input record) Tj
+/F21 10 Tf
+0.0000 Tw
+( \(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(filename | pequel-script name | db-connect-str\(**\) | socket\(**\) ) Tj
+/F21 10 Tf
+0.0000 Tw
+( >\) ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 75.1 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(condition-expression> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(15 February 2006 14:16) Tj
+1 0 0 1 537.44 37 Tm
+(1) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+19 0 obj
+5461
+endobj
+20 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F10 10 0 R
+/F20 14 0 R
+/F21 15 0 R
+/F22 16 0 R
+/F23 17 0 R
+>>
+>>
+endobj
+21 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 20 0 R
+/Contents 18 0 R
+>>
+endobj
+22 0 obj
+<<
+/Length 23 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Pequel ETL) Tj
+1 0 0 1 464.08 797 Tm
+(Quick Reference) Tj
+/F21 10 Tf
+1 0 0 1 52.0 780.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(display message on input) Tj
+/F21 10 Tf
+0.0000 Tw
+(\(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(message-expression> ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\) ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 768.0 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(condition-expression> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 726.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(display message on input abort) Tj
+/F21 10 Tf
+0.0000 Tw
+(\(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(message-expression> ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\) ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 714.0 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(condition-expression> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 672.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(sort by) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 660.0 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(input-field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(numeric) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(string) Tj
+/F20 10 Tf
+0.0000 Tw
+( ] [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(asc) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(des) Tj
+/F20 10 Tf
+0.0000 Tw
+( ] ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 618.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(group by) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 606.0 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(input-field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(numeric) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(decimal) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(string) Tj
+/F20 10 Tf
+0.0000 Tw
+( ] ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 564.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(dedup on) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 552.0 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(input-field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(numeric) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(decimal) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(string) Tj
+/F20 10 Tf
+0.0000 Tw
+( ] ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 510.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(output section) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 498.0 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(pequel-type> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(output-field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(input-field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 486.0 Tm
+0.0000 Tw
+(| < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(pequel-type> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(output-field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(aggregation-expression> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(   ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 474.0 Tm
+0.0000 Tw
+(| < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(pequel-type> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(output-field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(=) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(calc-expression> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 447.6 Tm
+0.0000 Tw
+(pequel-type ) Tj
+/F20 10 Tf
+1 0 0 1 100.0 435.6 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(numeric) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(decimal) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(string) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(date) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\() Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(date-type> ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F22 10 Tf
+0.0000 Tw
+( ]  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 409.2 Tm
+0.0000 Tw
+(date-type ) Tj
+/F20 10 Tf
+1 0 0 1 100.0 397.2 Tm
+1.3715 Tw
+() Tj
+/F21 10 Tf
+1.3715 Tw
+(YYYYMMDD) Tj
+/F20 10 Tf
+1.3715 Tw
+( | ) Tj
+/F21 10 Tf
+1.3715 Tw
+(YYMMDD) Tj
+/F20 10 Tf
+1.3715 Tw
+( | ) Tj
+/F21 10 Tf
+1.3715 Tw
+(DDMMYY) Tj
+/F20 10 Tf
+1.3715 Tw
+( | ) Tj
+/F21 10 Tf
+1.3715 Tw
+(DDMMMYY) Tj
+/F20 10 Tf
+1.3715 Tw
+( | ) Tj
+/F21 10 Tf
+1.3715 Tw
+(DDMMYYYY) Tj
+/F20 10 Tf
+1.3715 Tw
+( | ) Tj
+/F21 10 Tf
+1.3715 Tw
+(DD/MM/YY) Tj
+/F20 10 Tf
+1.3715 Tw
+( | ) Tj
+/F21 10 Tf
+1.3715 Tw
+(DD/MM/YYYY) Tj
+/F20 10 Tf
+1.3715 Tw
+( |) Tj
+1 0 0 1 100.0 385.2 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(MMDDYY) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(MMDDYYYY) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(MM/DD/YY) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(MM/DD/YYYY) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 358.8 Tm
+0.0000 Tw
+(aggregation-expression ) Tj
+/F20 10 Tf
+1 0 0 1 100.0 346.8 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(aggregate-type> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(input-field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(where) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(condition-expression> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ]  ) Tj
+/F20 10 Tf
+1 0 0 1 100.0 334.8 Tm
+0.0000 Tw
+(| ) Tj
+/F21 10 Tf
+0.0000 Tw
+(serial) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(start-num> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(where) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(condition-expression> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ]  ) Tj
+/F20 10 Tf
+1 0 0 1 100.0 322.8 Tm
+0.0000 Tw
+(| ) Tj
+/F21 10 Tf
+0.0000 Tw
+(count *) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(where) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(condition-expression> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ]  ) Tj
+/F20 10 Tf
+1 0 0 1 100.0 310.8 Tm
+0.0000 Tw
+(| ) Tj
+/F21 10 Tf
+0.0000 Tw
+(flag *) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(where) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(condition-expression> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ]  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 284.4 Tm
+0.0000 Tw
+(aggregate-type ) Tj
+/F20 10 Tf
+1 0 0 1 100.0 272.4 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(sum) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(maximum) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(max) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(minimum) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(min) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(avg) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(mean) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(first) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(last) Tj
+/F20 10 Tf
+0.0000 Tw
+(  ) Tj
+/F20 10 Tf
+1 0 0 1 100.0 260.4 Tm
+0.0000 Tw
+(| ) Tj
+/F21 10 Tf
+0.0000 Tw
+(distinct) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(sum_distinct) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(avg_distinct) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(count_distinct) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 100.0 248.4 Tm
+0.0000 Tw
+(| ) Tj
+/F21 10 Tf
+0.0000 Tw
+(median) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(variance) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(stddev) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(range) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(mode) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 100.0 236.4 Tm
+0.0000 Tw
+(| ) Tj
+/F21 10 Tf
+0.0000 Tw
+(values_all) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\() Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(delim> ) Tj
+/F20 10 Tf
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ] | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(values_uniq) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\() Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(delim> ) Tj
+/F20 10 Tf
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ]  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 210.0 Tm
+0.0000 Tw
+(condition-expression ) Tj
+/F20 10 Tf
+1 0 0 1 100.0 198.0 Tm
+0.0000 Tw
+() Tj
+/F22 10 Tf
+0.0000 Tw
+(An expression that evaluates to true or false \(non-zero, zero respectively\). ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 171.6 Tm
+0.0000 Tw
+(input-field-name ) Tj
+/F20 10 Tf
+1 0 0 1 100.0 159.6 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 133.2 Tm
+0.0000 Tw
+(output-field-name ) Tj
+/F20 10 Tf
+1 0 0 1 100.0 121.2 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( | < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(transparent-field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 100.0 94.8 Tm
+0.0000 Tw
+(transparent-field-name ) Tj
+/F20 10 Tf
+1 0 0 1 124.0 82.8 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(_) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(2) Tj
+1 0 0 1 432.94 37 Tm
+(15 February 2006 14:16) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+23 0 obj
+8760
+endobj
+24 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F20 14 0 R
+/F21 15 0 R
+/F22 16 0 R
+/F23 17 0 R
+>>
+>>
+endobj
+25 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 24 0 R
+/Contents 22 0 R
+>>
+endobj
+26 0 obj
+<<
+/Length 27 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Quick Reference) Tj
+1 0 0 1 488.54 797 Tm
+(Pequel ETL) Tj
+/F20 10 Tf
+1 0 0 1 100.0 780.0 Tm
+0.0000 Tw
+(field-name ) Tj
+/F20 10 Tf
+1 0 0 1 124.0 768.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+([_A-Za-z]+[0-9_A-Za-z]* ) Tj
+/F20 10 Tf
+1 0 0 1 124.0 756.0 Tm
+0.1800 Tw
+(Case-sensitive and must begin with an alpha or ) Tj
+/F23 10 Tf
+0.1800 Tw
+(`_') Tj
+/F20 10 Tf
+0.1800 Tw
+( character, followed by zero or more alpha,) Tj
+1 0 0 1 124.0 744.0 Tm
+0.0000 Tw
+(numeric and ) Tj
+/F23 10 Tf
+0.0000 Tw
+(`_') Tj
+/F20 10 Tf
+0.0000 Tw
+(`s characters. ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 702.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(sort output) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 690.0 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(output-field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(numeric) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(string) Tj
+/F20 10 Tf
+0.0000 Tw
+( ] [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(asc) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(des) Tj
+/F20 10 Tf
+0.0000 Tw
+( ] ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 648.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(field postprocess) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 636.0 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(output-field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(=) Tj
+/F20 10 Tf
+0.0000 Tw
+(> | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(=~) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(calc-expression> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ] ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 594.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(having) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 582.0 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(condition-expression> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 540.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(divert output record) Tj
+/F21 10 Tf
+0.0000 Tw
+( \(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(filename | pequel-script-name | db-connect-str\(**\) | socket\(**\) ) Tj
+/F21 10 Tf
+0.0000 Tw
+( >\) ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 528.0 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(condition-expression> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 486.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(copy output record) Tj
+/F21 10 Tf
+0.0000 Tw
+( \(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(filename | pequel-script-name | db-connect-str\(**\) | socket\(**\) ) Tj
+/F21 10 Tf
+0.0000 Tw
+( >\) ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 474.0 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(condition-expression> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 432.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(display message on output) Tj
+/F21 10 Tf
+0.0000 Tw
+(\(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(message-expression> ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\) ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 420.0 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(condition-expression> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 378.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(display message on output abort) Tj
+/F21 10 Tf
+0.0000 Tw
+(\(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(message-expression> ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\) ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 366.0 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(condition-expression> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 324.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(use package) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 312.0 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(Perl package name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 270.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(init table) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 258.0 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(table-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(key> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(value> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [, < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(value> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ... ] ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 216.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(load table) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 204.0 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(table-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(filename> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(key-col> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(val-col> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ] ] ] [, ...] ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 162.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(load table pequel) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 150.0 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(table-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(pequel-script-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(keyfield-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(keyfield-type> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ] ] ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 123.6 Tm
+0.0000 Tw
+(keyfield-name ) Tj
+/F20 10 Tf
+1 0 0 1 100.0 111.6 Tm
+0.0000 Tw
+() Tj
+/F22 10 Tf
+0.0000 Tw
+(pequel-script-name.output-field-name) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 85.2 Tm
+0.0000 Tw
+(keyfield-type ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(15 February 2006 14:16) Tj
+1 0 0 1 537.44 37 Tm
+(3) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+27 0 obj
+5230
+endobj
+28 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F20 14 0 R
+/F21 15 0 R
+/F22 16 0 R
+/F23 17 0 R
+>>
+>>
+endobj
+29 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 28 0 R
+/Contents 26 0 R
+>>
+endobj
+30 0 obj
+<<
+/Length 31 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Pequel ETL) Tj
+1 0 0 1 464.08 797 Tm
+(Quick Reference) Tj
+/F20 10 Tf
+1 0 0 1 100.0 780.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(STRING) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(NUMERIC) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 738.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(load table sqlite) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 726.0 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(table-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(filename> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(key-col> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(keyfield-type> [ < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(table-field-name> ) Tj
+/F22 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(=) Tj
+/F22 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-col> ) Tj
+/F22 10 Tf
+0.0000 Tw
+( [...] ] ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 699.6 Tm
+0.0000 Tw
+(keyfield-type ) Tj
+/F20 10 Tf
+1 0 0 1 100.0 687.6 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(INTEGER) Tj
+/F20 10 Tf
+0.0000 Tw
+( | ) Tj
+/F21 10 Tf
+0.0000 Tw
+(VARCHAR) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 645.6 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(load table sqlite merge) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 633.6 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(table-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(filename> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(key-col> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(keyfield-type> [ < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(table-field-name> ) Tj
+/F22 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(=) Tj
+/F22 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-col> ) Tj
+/F22 10 Tf
+0.0000 Tw
+( [...] ] ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 591.6 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(load table oracle) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 579.6 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(table-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(filename> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(connect-str> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(key-col> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(key-type> \\ ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 567.6 Tm
+0.0000 Tw
+([ < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(=) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-col> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [...] ] ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 541.2 Tm
+0.0000 Tw
+(key-type ) Tj
+/F20 10 Tf
+1 0 0 1 100.0 529.2 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(Oracle Data Type) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 514.8 Tm
+0.0000 Tw
+(connect-str ) Tj
+/F20 10 Tf
+1 0 0 1 100.0 502.8 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(user> ) Tj
+/F20 10 Tf
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(/) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(password> ) Tj
+/F20 10 Tf
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(@) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(db-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 460.8 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(load table oracle merge) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 448.8 Tm
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(table-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(filename> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(connect-str> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(key-col> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(key-type> \\ ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 436.8 Tm
+0.0000 Tw
+([ < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(=) Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-col> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [...] ] ) Tj
+/F21 12 Tf
+1 0 0 1 52.0 394.8 Tm
+0.0000 Tw
+(Aggregate Types ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 377.5 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(count) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 365.5 Tm
+0.0000 Tw
+(Output the count of records in the group.  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 339.1 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(count_distinct) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 327.1 Tm
+0.0000 Tw
+(Output the count of unique values for ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name) Tj
+/F20 10 Tf
+0.0000 Tw
+( in the group.  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 300.7 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(distinct) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 288.7 Tm
+0.0000 Tw
+(Output the count of unique values for ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name) Tj
+/F20 10 Tf
+0.0000 Tw
+( in the group. Same as ) Tj
+/F23 10 Tf
+0.0000 Tw
+(count_distinct) Tj
+/F20 10 Tf
+0.0000 Tw
+(. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 262.3 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(sum) Tj
+/F20 10 Tf
+0.0000 Tw
+(  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 250.3 Tm
+0.0000 Tw
+(Accumulate the total for all values in the group. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 223.9 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(sum_distinct) Tj
+/F20 10 Tf
+0.0000 Tw
+(  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 211.9 Tm
+0.0000 Tw
+(Accumulate the total for unique values for ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name) Tj
+/F20 10 Tf
+0.0000 Tw
+( in the group. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 185.5 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(maximum) Tj
+/F20 10 Tf
+0.0000 Tw
+(  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 173.5 Tm
+0.0000 Tw
+(Output the maximum value in the group.  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 147.1 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(max) Tj
+/F20 10 Tf
+0.0000 Tw
+(  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 135.1 Tm
+0.0000 Tw
+(Output the maximum value in the group. Same as ) Tj
+/F23 10 Tf
+0.0000 Tw
+(maximum) Tj
+/F20 10 Tf
+0.0000 Tw
+(. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 108.7 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(minimum) Tj
+/F20 10 Tf
+0.0000 Tw
+(  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 96.7 Tm
+0.0000 Tw
+(Output the minimum value in the group.  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 70.3 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(min) Tj
+/F20 10 Tf
+0.0000 Tw
+(  ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(4) Tj
+1 0 0 1 432.94 37 Tm
+(15 February 2006 14:16) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+31 0 obj
+6205
+endobj
+32 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F20 14 0 R
+/F21 15 0 R
+/F22 16 0 R
+/F23 17 0 R
+>>
+>>
+endobj
+33 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 32 0 R
+/Contents 30 0 R
+>>
+endobj
+34 0 obj
+<<
+/Length 35 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Quick Reference) Tj
+1 0 0 1 488.54 797 Tm
+(Pequel ETL) Tj
+/F20 10 Tf
+1 0 0 1 76.0 780.0 Tm
+0.0000 Tw
+(Output the minimum value in the group. Same as ) Tj
+/F23 10 Tf
+0.0000 Tw
+(minimum) Tj
+/F20 10 Tf
+0.0000 Tw
+(. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 753.6 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(avg) Tj
+/F20 10 Tf
+0.0000 Tw
+(  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 741.6 Tm
+0.0000 Tw
+(Output the average value in the group.  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 715.2 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(avg_distinct) Tj
+/F20 10 Tf
+0.0000 Tw
+(  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 703.2 Tm
+0.0000 Tw
+(Output the average value for unique values for ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name) Tj
+/F20 10 Tf
+0.0000 Tw
+( in the group.  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 676.8 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(mean) Tj
+/F20 10 Tf
+0.0000 Tw
+(  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 664.8 Tm
+0.0000 Tw
+(Output the average value in the group. Same as ) Tj
+/F23 10 Tf
+0.0000 Tw
+(avg) Tj
+/F20 10 Tf
+0.0000 Tw
+(. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 638.4 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(first) Tj
+/F20 10 Tf
+0.0000 Tw
+(  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 626.4 Tm
+0.0000 Tw
+(Output the first value in the group. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 600.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(last) Tj
+/F20 10 Tf
+0.0000 Tw
+(  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 588.0 Tm
+0.0000 Tw
+(Output the last value in the group. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 561.6 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(median) Tj
+/F20 10 Tf
+0.0000 Tw
+(  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 549.6 Tm
+0.3867 Tw
+(Output the middle vale in the group, or, in the case of an even number of values, output the mean of the) Tj
+1 0 0 1 76.0 537.6 Tm
+0.0000 Tw
+(two middle values in the group. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 511.2 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(variance) Tj
+/F20 10 Tf
+0.0000 Tw
+(  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 499.2 Tm
+0.4510 Tw
+(Output \( ) Tj
+/F22 10 Tf
+0.4510 Tw
+(sum squares) Tj
+/F20 10 Tf
+0.4510 Tw
+( / ) Tj
+/F22 10 Tf
+0.4510 Tw
+(count) Tj
+/F20 10 Tf
+0.4510 Tw
+( \) - \( ) Tj
+/F22 10 Tf
+0.4510 Tw
+(mean) Tj
+/F20 10 Tf
+0.4510 Tw
+( ** 2\); ) Tj
+/F22 10 Tf
+0.4510 Tw
+(sum_squares) Tj
+/F20 10 Tf
+0.4510 Tw
+( is each value in the distribution squared \(**) Tj
+1 0 0 1 76.0 487.2 Tm
+0.0000 Tw
+(2\); ) Tj
+/F22 10 Tf
+0.0000 Tw
+(count) Tj
+/F20 10 Tf
+0.0000 Tw
+( is the number of values in the distribution; ) Tj
+/F22 10 Tf
+0.0000 Tw
+(mean) Tj
+/F20 10 Tf
+0.0000 Tw
+( is discussed above.  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 460.8 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(stddev) Tj
+/F20 10 Tf
+0.0000 Tw
+(  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 448.8 Tm
+0.0000 Tw
+(Output the square-root of ) Tj
+/F22 10 Tf
+0.0000 Tw
+(variance) Tj
+/F20 10 Tf
+0.0000 Tw
+(.  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 422.4 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(range) Tj
+/F20 10 Tf
+0.0000 Tw
+(  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 410.4 Tm
+0.0000 Tw
+(Output the maximum value minus the minimum value in a distribution.  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 384.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(mode) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 372.0 Tm
+0.0000 Tw
+(Output the most frequently occuring score or scores \(space delimited\) in a distribution. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 345.6 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(values_all) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\() Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(delim> ) Tj
+/F20 10 Tf
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ]  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 333.6 Tm
+0.0000 Tw
+(Output the list of all values in the group.  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 307.2 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(values_uniq) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\() Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(delim> ) Tj
+/F20 10 Tf
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ]  ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 295.2 Tm
+0.0000 Tw
+(Output the list of unique values in the group.  ) Tj
+/F21 12 Tf
+1 0 0 1 52.0 253.2 Tm
+0.0000 Tw
+(Macros ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 217.2 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(String Macros) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 205.2 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&length \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 193.2 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&substr \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(offset> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(len> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 181.2 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&index \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(substr> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(offset> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 169.2 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&rindex \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(substr> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(offset> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 157.2 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&lc \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 145.2 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&uc \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 133.2 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&lc_first \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 121.2 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&uc_first \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 109.2 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&commify \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 97.2 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&trim \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(character-list> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 85.2 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&spaceout \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(15 February 2006 14:16) Tj
+1 0 0 1 537.44 37 Tm
+(5) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+35 0 obj
+7482
+endobj
+36 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F20 14 0 R
+/F21 15 0 R
+/F22 16 0 R
+/F23 17 0 R
+>>
+>>
+endobj
+37 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 36 0 R
+/Contents 34 0 R
+>>
+endobj
+38 0 obj
+<<
+/Length 39 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Pequel ETL) Tj
+1 0 0 1 464.08 797 Tm
+(Quick Reference) Tj
+/F20 10 Tf
+1 0 0 1 76.0 780.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&trim_trailing \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(character-list> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ]  ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 768.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&trim_leading \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(character-list> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 756.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&clip_str \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 744.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&left_clip_str \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 732.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&right_clip_str \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 720.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&left_pad_str \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, <pad-char>, <len> ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 708.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&right_pad_str \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, <pad-char>, <len> ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 696.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&remove_spaces \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 684.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&to_number \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 672.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&extract_numeric \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 660.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&remove_non_numeric \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 648.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&remove_numeric \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 636.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&remove_special \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 624.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&translate \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, <from-list>, <to-list> [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(<modifier> ] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 612.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&initcap \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 600.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&extract_init \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 558.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(Arithmentic Macros) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 546.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&ord \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 534.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&sqrt \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 522.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&rand \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 510.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&sin \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 498.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&exp \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 486.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&cos \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 474.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&log \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 462.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&chr \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 450.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&abs \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 438.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&int \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 426.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&atan2 \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 414.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&sign \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 402.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&trunc \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(dec> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 390.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&lshift \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name>, ) Tj
+/F22 10 Tf
+0.0000 Tw
+(bits) Tj
+/F22 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( \(**\) ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 378.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&rshift \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name>, ) Tj
+/F22 10 Tf
+0.0000 Tw
+(bits) Tj
+/F22 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( \(**\) ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 336.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(Date Macros) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 324.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&date \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(date-type> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 312.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&months_since \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(date-type> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 300.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&months_between \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(<n> ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 288.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&date_last_day \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 276.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&last_day \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 264.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&date_next_day \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 252.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&day_number \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 240.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&y \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(date-type> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 228.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&d \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(date-type> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 216.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&m \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ ) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(date-type> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 204.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&today \() Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 162.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(Array Macros) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 150.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&to_array \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 138.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_size \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 126.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_sort \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 114.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_reverse \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 102.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_values_uniq \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 90.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_sum \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 78.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_sum_distinct \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( \(**\) ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(6) Tj
+1 0 0 1 432.94 37 Tm
+(15 February 2006 14:16) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+39 0 obj
+14297
+endobj
+40 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F20 14 0 R
+/F21 15 0 R
+/F22 16 0 R
+/F23 17 0 R
+>>
+>>
+endobj
+41 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 40 0 R
+/Contents 38 0 R
+>>
+endobj
+42 0 obj
+<<
+/Length 43 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Quick Reference) Tj
+1 0 0 1 488.54 797 Tm
+(Pequel ETL) Tj
+/F20 10 Tf
+1 0 0 1 76.0 780.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_avg \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 768.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_avg_distinct \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( \(**\) ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 756.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_mean \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 744.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_first \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 732.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_last \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 720.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_min \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 708.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_max \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 696.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_median \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( \(**\) ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 684.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_variance \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( \(**\) ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 672.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_stddev \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( \(**\) ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 660.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_range \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( \(**\) ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 648.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_max \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( \(**\) ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 636.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_lookup \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(value> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 624.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_pack \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(pack-format> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( \(**\) ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 612.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_unpack \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(pack-format> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [) Tj
+/F21 10 Tf
+0.0000 Tw
+(, ) Tj
+/F20 10 Tf
+0.0000 Tw
+(< ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( \(**\) ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 600.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_set_and \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name>, ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name) Tj
+/F22 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( \(**\) ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 588.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_set_or \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name>, ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name) Tj
+/F22 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( \(**\) ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 576.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&arr_set_xor \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name>, ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name) Tj
+/F22 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( \(**\) ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 534.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(Miscellaneous Macros) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 522.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&banding \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, <band-divisor> ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 510.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&env \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(env-var-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 498.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&option \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(pequel-option-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 486.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&select \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(value> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [ [, < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(value> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ] [ ,...] ], < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(default-value> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 474.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&match_any \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, <match list> ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 462.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&match \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, <match list> ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 450.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&map \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(table-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [, ...]  ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 438.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&input_record_count\(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 426.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&soundex \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 414.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&pack \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(pack-format> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+([, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 402.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&unpack \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(pack-format> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+([, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 390.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(&sprintf \() Tj
+/F20 10 Tf
+0.0000 Tw
+( < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(print-format> ) Tj
+/F20 10 Tf
+0.0000 Tw
+(, < ) Tj
+/F22 10 Tf
+0.0000 Tw
+(field-name> ) Tj
+/F20 10 Tf
+0.0000 Tw
+( [, ...] ) Tj
+/F21 10 Tf
+0.0000 Tw
+(\)) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 366.0 Tm
+0.0000 Tw
+(\(**\) Forthcoming. ) Tj
+/F21 12 Tf
+1 0 0 1 52.0 324.0 Tm
+0.0000 Tw
+(Pequel Data Types ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 306.7 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(string) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 292.3 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(numeric) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 277.9 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(decimal) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 263.5 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(date) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 249.1 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(array) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 12 Tf
+1 0 0 1 52.0 219.1 Tm
+0.0000 Tw
+(Option Types ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 183.1 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(Basic Options) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 171.1 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(verbose) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 159.1 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(noverbose) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 147.1 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(input_delimiter_extra) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 135.1 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(input_delimiter) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 123.1 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(output_delimiter) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 111.1 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(input_file) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 99.1 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(output_file) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 87.1 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(script_name) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 75.1 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(discard_header) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(15 February 2006 14:16) Tj
+1 0 0 1 537.44 37 Tm
+(7) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+43 0 obj
+12601
+endobj
+44 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F20 14 0 R
+/F21 15 0 R
+/F22 16 0 R
+/F23 17 0 R
+>>
+>>
+endobj
+45 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 44 0 R
+/Contents 42 0 R
+>>
+endobj
+46 0 obj
+<<
+/Length 47 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Pequel ETL) Tj
+1 0 0 1 464.08 797 Tm
+(Quick Reference) Tj
+/F20 10 Tf
+1 0 0 1 76.0 780.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(header) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 768.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(noheader) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 756.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(addpipe) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 744.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(noaddpipe) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 732.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(optimize) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 720.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(nooptimize) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 708.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(nulls) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 696.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(nonulls) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 684.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(reject_file) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 672.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(default_datetype) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 660.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(default_list_delimiter) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 648.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(hash) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 636.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(transfer) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 624.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(suppress_output) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 612.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(num_threads) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 600.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(sort_tmp_dir) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 588.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(logfilename) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 576.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(logging) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 564.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(prefix) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 552.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(lock_output) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 540.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(output_file_append) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 528.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(sort_cmd) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 516.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(sort_args) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 504.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(cpp_cmd) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 492.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(cpp_args) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 480.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(gzcat_cmd) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 468.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(gzcat_args) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 456.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(cat_cmd) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 444.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(cat_args) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 432.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(pack_output) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 420.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(output_pack_fmt) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 408.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(unpack_input) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 396.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(input_pack_fmt) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 384.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(input_record_limit) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 372.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(rmctrlm) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 360.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(show_synonyms) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 348.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(exec_min_lines) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 306.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(General Table Options) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 294.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(display_table_stats) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 282.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(reload_tables) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 270.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(load_tables_only) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 258.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(table_drop_unused_fields) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 246.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(table_dir) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 204.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(Oracle Table Options) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 192.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(oracle_prefetch_count) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 180.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(oracle_home) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 168.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(oracle_sqlldr_rows) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 156.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(oracle_use_merge_fetch_macro) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 114.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(Sqlite Table Options) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 102.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(sqlite_dir) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 90.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(sqlite_merge_optimize) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 78.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(sqlite_merge_optimize_count) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(8) Tj
+1 0 0 1 432.94 37 Tm
+(15 February 2006 14:16) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+47 0 obj
+6369
+endobj
+48 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F20 14 0 R
+/F21 15 0 R
+/F23 17 0 R
+>>
+>>
+endobj
+49 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 48 0 R
+/Contents 46 0 R
+>>
+endobj
+50 0 obj
+<<
+/Length 51 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Quick Reference) Tj
+1 0 0 1 488.54 797 Tm
+(Pequel ETL) Tj
+/F21 10 Tf
+1 0 0 1 52.0 780.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(Inline Options) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 768.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(use_inline) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 756.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(inline_cc) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 744.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(inline_libs) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 732.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(inline_inc) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 720.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(inline_ccflags) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 708.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(inline_optimize) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 696.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(inline_lddlflags) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 684.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(inline_make) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 672.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(inline_clean_after_build) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 660.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(inline_clean_build_area) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 648.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(inline_build_noisy) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 636.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(inline_build_timers) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 624.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(inline_force_build) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 612.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(inline_print_info) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 600.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(inline_directory) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 588.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(inline_cache_recs) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 576.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(use_av_store_macro) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 564.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(inline_merge_optimize) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 552.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(inline_merge_optimize_count) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 510.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(Document Generation Options) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 498.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(doc_title) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 486.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(doc_version) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 474.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(doc_email) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 432.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(Developer Options) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 420.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(dumpcode) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 408.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(debug_show_caller) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 396.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(debug) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 384.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(debug_generate) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 372.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(debug_parser) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 360.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(diagnostics) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 348.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(tinfo) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 336.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(minfo) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 324.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(pequelsrclist) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 312.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(pequelprogref) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52.0 270.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(Command Line Options) Tj
+/F21 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 258.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(version) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 246.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(usage) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 234.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(viewcode) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 222.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(viewraw) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 210.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(syntax_check) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 198.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(list) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 186.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(option) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 174.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(pequeldoc) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 162.0 Tm
+0.0000 Tw
+() Tj
+/F21 10 Tf
+0.0000 Tw
+(detail) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 12 Tf
+1 0 0 1 52.0 120.0 Tm
+0.0000 Tw
+(Command Line Usage ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 102.7 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(pequel scriptfile.pql  <  ) Tj
+/F22 10 Tf
+0.0000 Tw
+(file_in) Tj
+/F23 10 Tf
+0.0000 Tw
+(  >  ) Tj
+/F22 10 Tf
+0.0000 Tw
+(file_out) Tj
+/F23 10 Tf
+0.0000 Tw
+() Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 90.7 Tm
+0.0000 Tw
+(Execute ) Tj
+/F23 10 Tf
+0.0000 Tw
+(pequel) Tj
+/F20 10 Tf
+0.0000 Tw
+( with ) Tj
+/F22 10 Tf
+0.0000 Tw
+(scriptfile.pql) Tj
+/F20 10 Tf
+0.0000 Tw
+( script to process ) Tj
+/F22 10 Tf
+0.0000 Tw
+(file_in) Tj
+/F20 10 Tf
+0.0000 Tw
+( data file, resulting in ) Tj
+/F22 10 Tf
+0.0000 Tw
+(file_out) Tj
+/F20 10 Tf
+0.0000 Tw
+(. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 64.3 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(pequel -c scriptfile.pql) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(15 February 2006 14:16) Tj
+1 0 0 1 537.44 37 Tm
+(9) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+51 0 obj
+6380
+endobj
+52 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F20 14 0 R
+/F21 15 0 R
+/F22 16 0 R
+/F23 17 0 R
+>>
+>>
+endobj
+53 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 52 0 R
+/Contents 50 0 R
+>>
+endobj
+54 0 obj
+<<
+/Length 55 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Pequel ETL) Tj
+1 0 0 1 464.08 797 Tm
+(Quick Reference) Tj
+/F20 10 Tf
+1 0 0 1 76.0 780.0 Tm
+0.0000 Tw
+(Check the syntax of the pequel script ) Tj
+/F22 10 Tf
+0.0000 Tw
+(scriptfile.pql) Tj
+/F20 10 Tf
+0.0000 Tw
+(. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 753.6 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(pequel -viewcode scriptfile.pql) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 741.6 Tm
+0.0000 Tw
+(Generate and display the code for the pequel script ) Tj
+/F22 10 Tf
+0.0000 Tw
+(scriptfile.pql) Tj
+/F20 10 Tf
+0.0000 Tw
+(. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 715.2 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(pequel -dumpcode scriptfile.pql) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 703.2 Tm
+0 Tw
+(Generate the pequel code for the script ) Tj
+/F22 10 Tf
+0 Tw
+(scriptfile.pql) Tj
+/F20 10 Tf
+0 Tw
+( and save generated code in the file) Tj
+1 0 0 1 76.0 691.2 Tm
+0.0000 Tw
+() Tj
+/F22 10 Tf
+0.0000 Tw
+(scriptname.pql.2.code) Tj
+/F20 10 Tf
+0.0000 Tw
+(. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 664.8 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(pequel -v) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 652.8 Tm
+0.0000 Tw
+(Display version informatio for ) Tj
+/F23 10 Tf
+0.0000 Tw
+(Pequel) Tj
+/F20 10 Tf
+0.0000 Tw
+(. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 626.4 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(pequel -usage) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 614.4 Tm
+0.0000 Tw
+(Display Pequel usage command summary. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 588.0 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(pequel -pequeldoc pdf -detail scriptfile.pql) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 576.0 Tm
+0.6636 Tw
+(Generate the Script Reference document in pdf format for the Pequel script ) Tj
+/F22 10 Tf
+0.6636 Tw
+(scriptfile.pql) Tj
+/F20 10 Tf
+0.6636 Tw
+(. The document) Tj
+1 0 0 1 76.0 564.0 Tm
+0.0000 Tw
+(will include a section showing the generated code \() Tj
+/F23 10 Tf
+0.0000 Tw
+(-detail) Tj
+/F20 10 Tf
+0.0000 Tw
+(\). ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 537.6 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(\217prefix, \217prefix_path) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 525.6 Tm
+0.0000 Tw
+(Prefix for filenames directory path. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 499.2 Tm
+0.0000 Tw
+() Tj
+/F23 10 Tf
+0.0000 Tw
+(\217noverbose, \217silent) Tj
+/F20 10 Tf
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 487.2 Tm
+0.0000 Tw
+(Do not display progress counter and messages. ) Tj
+/F21 12 Tf
+1 0 0 1 52.0 445.2 Tm
+0.0000 Tw
+(COPYRIGHT ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 427.9 Tm
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 415.9 Tm
+0.0000 Tw
+(Copyright \2511999-2006, Mario Gaffiero. All Rights Reserved. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 401.5 Tm
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 389.5 Tm
+0.0000 Tw
+("Pequel" and "Pequel ETL" TM Copyright \2511999-2006, Mario Gaffiero. All Rights Reserved. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 375.1 Tm
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 363.1 Tm
+2.3993 Tw
+(This program and all its component contents is copyrighted free software by Mario Gaffiero and is) Tj
+1 0 0 1 76.0 351.1 Tm
+1.5600 Tw
+(released under the GNU General Public License \(GPL\), Version 2, a copy of which may be found at) Tj
+1 0 0 1 76.0 339.1 Tm
+0.0000 Tw
+(http://www.opensource.org/licenses/gpl-license.html ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 324.7 Tm
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 312.7 Tm
+0.0000 Tw
+(This file is part of Pequel \(TM\). ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 298.3 Tm
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 286.3 Tm
+1.7241 Tw
+(Pequel is free software; you can redistribute it and/or modify it under the terms of the GNU General) Tj
+1 0 0 1 76.0 274.3 Tm
+0.2841 Tw
+(Public License as published by the Free Software Foundation; either version 2 of the License, or \(at your) Tj
+1 0 0 1 76.0 262.3 Tm
+0.0000 Tw
+(option\) any later version. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 247.9 Tm
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 235.9 Tm
+0.3847 Tw
+(Pequel is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the) Tj
+1 0 0 1 76.0 223.9 Tm
+0.8077 Tw
+(implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU) Tj
+1 0 0 1 76.0 211.9 Tm
+0.0000 Tw
+(General Public License for more details. ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 197.5 Tm
+0.0000 Tw
+( ) Tj
+/F20 10 Tf
+1 0 0 1 76.0 185.5 Tm
+0.7933 Tw
+(You should have received a copy of the GNU General Public License along with Pequel; if not, write to) Tj
+1 0 0 1 76.0 173.5 Tm
+0.0000 Tw
+(the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA ) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(10) Tj
+1 0 0 1 432.94 37 Tm
+(15 February 2006 14:16) Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+55 0 obj
+4682
+endobj
+56 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F20 14 0 R
+/F21 15 0 R
+/F22 16 0 R
+/F23 17 0 R
+>>
+>>
+endobj
+57 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 56 0 R
+/Contents 54 0 R
+>>
+endobj
+58 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 61 0 R
+/Contents 59 0 R
+>>
+endobj
+59 0 obj
+<<
+/Length 60 0 R
+>>
+stream
+q
+1 0 0 rg
+180 626 8 130 re
+F
+Q
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+210 626 m
+543 626 l
+s
+BT
+/F21 24 Tf
+1 0 0 1 210 706 Tm
+0 -30 TD
+(Quick Reference) Tj
+T* (by ) Tj
+0 0 0.8 rg
+/F22 12 Tf
+(M Gaffiero) Tj
+/F21 9 Tf
+T* (gaffie@users.sourceforge.net) Tj
+/F20 20 Tf
+0 g
+1 0 0 1 245.25 371 Tm
+(Pequel ETL) Tj
+/F21 9 Tf
+T* (2.4) Tj
+ET
+endstream
+endobj
+60 0 obj
+325
+endobj
+61 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F20 14 0 R
+/F21 15 0 R
+/F22 16 0 R
+>>
+>>
+endobj
+62 0 obj
+<<
+/Length 63 0 R
+>>
+stream
+52 792 m
+543 792 l
+S
+BT
+0 G
+1 i 0 J 0 j 0.1 w 10 M []0 d
+/F21 10 Tf
+1 0 0 1 52 797 Tm
+(Quick Reference) Tj
+1 0 0 1 488.54 797 Tm
+(Pequel ETL) Tj
+/F21 10 Tf
+1 0 0 1 52 37 Tm
+(15 February 2006 14:16) Tj
+1 0 0 1 543 37 Tm
+() Tj
+ET
+52 50 m
+543 50 l
+S
+endstream
+endobj
+63 0 obj
+247
+endobj
+64 0 obj
+<<
+/ProcSet [/PDF /Text]
+/ColorSpace <</DefaultRGB 1 0 R>>
+/Font
+<<
+/F21 15 0 R
+>>
+>>
+endobj
+65 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources 64 0 R
+/Contents 62 0 R
+>>
+endobj
+68 0 obj
+<<
+/Parent 67 0 R
+/Dest [21 0 R /FitH 764.4]
+/Next 117 0 R
+/First 69 0 R
+/Last 116 0 R
+/Count 48 
+/Title (Section Types)
+>>
+endobj
+69 0 obj
+<<
+/Parent 68 0 R
+/Dest [21 0 R /FitH 744.72]
+/Next 70 0 R
+/Title (Expressions)
+>>
+endobj
+70 0 obj
+<<
+/Parent 68 0 R
+/Dest [21 0 R /FitH 694.32]
+/Previous 69 0 R
+/Next 71 0 R
+/Title (Comments)
+>>
+endobj
+71 0 obj
+<<
+/Parent 68 0 R
+/Dest [21 0 R /FitH 631.92]
+/Previous 70 0 R
+/Next 72 0 R
+/Title (Item Line Continuation)
+>>
+endobj
+72 0 obj
+<<
+/Parent 68 0 R
+/Dest [21 0 R /FitH 581.52]
+/Previous 71 0 R
+/Next 73 0 R
+/Title (Pre-Processor)
+>>
+endobj
+73 0 obj
+<<
+/Parent 68 0 R
+/Dest [21 0 R /FitH 527.52]
+/Previous 72 0 R
+/Next 74 0 R
+/Title (options)
+>>
+endobj
+74 0 obj
+<<
+/Parent 68 0 R
+/Dest [21 0 R /FitH 473.52]
+/Previous 73 0 R
+/Next 75 0 R
+/Title (description section)
+>>
+endobj
+75 0 obj
+<<
+/Parent 68 0 R
+/Dest [21 0 R /FitH 419.52]
+/Previous 74 0 R
+/Next 77 0 R
+/First 76 0 R
+/Last 76 0 R
+/Count 1 
+/Title (input section)
+>>
+endobj
+76 0 obj
+<<
+/Parent 75 0 R
+/Dest [21 0 R /FitH 381.12]
+/Title (calc-expression)
+>>
+endobj
+77 0 obj
+<<
+/Parent 68 0 R
+/Dest [21 0 R /FitH 315.12]
+/Previous 75 0 R
+/Next 78 0 R
+/Title (field preprocess)
+>>
+endobj
+78 0 obj
+<<
+/Parent 68 0 R
+/Dest [21 0 R /FitH 261.12]
+/Previous 77 0 R
+/Next 79 0 R
+/Title (filter)
+>>
+endobj
+79 0 obj
+<<
+/Parent 68 0 R
+/Dest [21 0 R /FitH 207.12]
+/Previous 78 0 R
+/Next 80 0 R
+/Title (reject)
+>>
+endobj
+80 0 obj
+<<
+/Parent 68 0 R
+/Dest [21 0 R /FitH 153.12]
+/Previous 79 0 R
+/Next 81 0 R
+/Title (divert input record \(< filename | pequel-script name | db-connect-str\(**\) | socket\(**\)  >\))
+>>
+endobj
+81 0 obj
+<<
+/Parent 68 0 R
+/Dest [21 0 R /FitH 99.1200000000001]
+/Previous 80 0 R
+/Next 82 0 R
+/Title (copy input record \(< filename | pequel-script name | db-connect-str\(**\) | socket\(**\)  >\))
+>>
+endobj
+82 0 obj
+<<
+/Parent 68 0 R
+/Dest [25 0 R /FitH 792]
+/Previous 81 0 R
+/Next 83 0 R
+/Title (display message on input\(< message-expression> \))
+>>
+endobj
+83 0 obj
+<<
+/Parent 68 0 R
+/Dest [25 0 R /FitH 738]
+/Previous 82 0 R
+/Next 84 0 R
+/Title (display message on input abort\(< message-expression> \))
+>>
+endobj
+84 0 obj
+<<
+/Parent 68 0 R
+/Dest [25 0 R /FitH 684]
+/Previous 83 0 R
+/Next 85 0 R
+/Title (sort by)
+>>
+endobj
+85 0 obj
+<<
+/Parent 68 0 R
+/Dest [25 0 R /FitH 630]
+/Previous 84 0 R
+/Next 86 0 R
+/Title (group by)
+>>
+endobj
+86 0 obj
+<<
+/Parent 68 0 R
+/Dest [25 0 R /FitH 576]
+/Previous 85 0 R
+/Next 87 0 R
+/Title (dedup on)
+>>
+endobj
+87 0 obj
+<<
+/Parent 68 0 R
+/Dest [25 0 R /FitH 522]
+/Previous 86 0 R
+/Next 97 0 R
+/First 88 0 R
+/Last 96 0 R
+/Count 9 
+/Title (output section)
+>>
+endobj
+88 0 obj
+<<
+/Parent 87 0 R
+/Dest [25 0 R /FitH 459.6]
+/Next 89 0 R
+/Title (pequel-type)
+>>
+endobj
+89 0 obj
+<<
+/Parent 87 0 R
+/Dest [25 0 R /FitH 421.2]
+/Previous 88 0 R
+/Next 90 0 R
+/Title (date-type)
+>>
+endobj
+90 0 obj
+<<
+/Parent 87 0 R
+/Dest [25 0 R /FitH 370.8]
+/Previous 89 0 R
+/Next 91 0 R
+/Title (aggregation-expression)
+>>
+endobj
+91 0 obj
+<<
+/Parent 87 0 R
+/Dest [25 0 R /FitH 296.4]
+/Previous 90 0 R
+/Next 92 0 R
+/Title (aggregate-type)
+>>
+endobj
+92 0 obj
+<<
+/Parent 87 0 R
+/Dest [25 0 R /FitH 222]
+/Previous 91 0 R
+/Next 93 0 R
+/Title (condition-expression)
+>>
+endobj
+93 0 obj
+<<
+/Parent 87 0 R
+/Dest [25 0 R /FitH 183.6]
+/Previous 92 0 R
+/Next 94 0 R
+/Title (input-field-name)
+>>
+endobj
+94 0 obj
+<<
+/Parent 87 0 R
+/Dest [25 0 R /FitH 145.2]
+/Previous 93 0 R
+/Next 95 0 R
+/Title (output-field-name)
+>>
+endobj
+95 0 obj
+<<
+/Parent 87 0 R
+/Dest [25 0 R /FitH 106.8]
+/Previous 94 0 R
+/Next 96 0 R
+/Title (transparent-field-name)
+>>
+endobj
+96 0 obj
+<<
+/Parent 87 0 R
+/Dest [29 0 R /FitH 792]
+/Previous 95 0 R
+/Title (field-name)
+>>
+endobj
+97 0 obj
+<<
+/Parent 68 0 R
+/Dest [29 0 R /FitH 714]
+/Previous 87 0 R
+/Next 98 0 R
+/Title (sort output)
+>>
+endobj
+98 0 obj
+<<
+/Parent 68 0 R
+/Dest [29 0 R /FitH 660]
+/Previous 97 0 R
+/Next 99 0 R
+/Title (field postprocess)
+>>
+endobj
+99 0 obj
+<<
+/Parent 68 0 R
+/Dest [29 0 R /FitH 606]
+/Previous 98 0 R
+/Next 100 0 R
+/Title (having)
+>>
+endobj
+100 0 obj
+<<
+/Parent 68 0 R
+/Dest [29 0 R /FitH 552]
+/Previous 99 0 R
+/Next 101 0 R
+/Title (divert output record \(< filename | pequel-script-name | db-connect-str\(**\) | socket\(**\)  >\))
+>>
+endobj
+101 0 obj
+<<
+/Parent 68 0 R
+/Dest [29 0 R /FitH 498]
+/Previous 100 0 R
+/Next 102 0 R
+/Title (copy output record \(< filename | pequel-script-name | db-connect-str\(**\) | socket\(**\)  >\))
+>>
+endobj
+102 0 obj
+<<
+/Parent 68 0 R
+/Dest [29 0 R /FitH 444]
+/Previous 101 0 R
+/Next 103 0 R
+/Title (display message on output\(< message-expression> \))
+>>
+endobj
+103 0 obj
+<<
+/Parent 68 0 R
+/Dest [29 0 R /FitH 390]
+/Previous 102 0 R
+/Next 104 0 R
+/Title (display message on output abort\(< message-expression> \))
+>>
+endobj
+104 0 obj
+<<
+/Parent 68 0 R
+/Dest [29 0 R /FitH 336]
+/Previous 103 0 R
+/Next 105 0 R
+/Title (use package)
+>>
+endobj
+105 0 obj
+<<
+/Parent 68 0 R
+/Dest [29 0 R /FitH 282]
+/Previous 104 0 R
+/Next 106 0 R
+/Title (init table)
+>>
+endobj
+106 0 obj
+<<
+/Parent 68 0 R
+/Dest [29 0 R /FitH 228]
+/Previous 105 0 R
+/Next 107 0 R
+/Title (load table)
+>>
+endobj
+107 0 obj
+<<
+/Parent 68 0 R
+/Dest [29 0 R /FitH 174]
+/Previous 106 0 R
+/Next 110 0 R
+/First 108 0 R
+/Last 109 0 R
+/Count 2 
+/Title (load table pequel)
+>>
+endobj
+108 0 obj
+<<
+/Parent 107 0 R
+/Dest [29 0 R /FitH 135.6]
+/Next 109 0 R
+/Title (keyfield-name)
+>>
+endobj
+109 0 obj
+<<
+/Parent 107 0 R
+/Dest [29 0 R /FitH 97.2]
+/Previous 108 0 R
+/Title (keyfield-type)
+>>
+endobj
+110 0 obj
+<<
+/Parent 68 0 R
+/Dest [33 0 R /FitH 750]
+/Previous 107 0 R
+/Next 112 0 R
+/First 111 0 R
+/Last 111 0 R
+/Count 1 
+/Title (load table sqlite)
+>>
+endobj
+111 0 obj
+<<
+/Parent 110 0 R
+/Dest [33 0 R /FitH 711.6]
+/Title (keyfield-type)
+>>
+endobj
+112 0 obj
+<<
+/Parent 68 0 R
+/Dest [33 0 R /FitH 657.6]
+/Previous 110 0 R
+/Next 113 0 R
+/Title (load table sqlite merge)
+>>
+endobj
+113 0 obj
+<<
+/Parent 68 0 R
+/Dest [33 0 R /FitH 603.6]
+/Previous 112 0 R
+/Next 116 0 R
+/First 114 0 R
+/Last 115 0 R
+/Count 2 
+/Title (load table oracle)
+>>
+endobj
+114 0 obj
+<<
+/Parent 113 0 R
+/Dest [33 0 R /FitH 553.2]
+/Next 115 0 R
+/Title (key-type)
+>>
+endobj
+115 0 obj
+<<
+/Parent 113 0 R
+/Dest [33 0 R /FitH 526.8]
+/Previous 114 0 R
+/Title (connect-str)
+>>
+endobj
+116 0 obj
+<<
+/Parent 68 0 R
+/Dest [33 0 R /FitH 472.8]
+/Previous 113 0 R
+/Title (load table oracle merge)
+>>
+endobj
+117 0 obj
+<<
+/Parent 67 0 R
+/Dest [33 0 R /FitH 409.2]
+/Previous 68 0 R
+/Next 139 0 R
+/First 118 0 R
+/Last 138 0 R
+/Count 21 
+/Title (Aggregate Types)
+>>
+endobj
+118 0 obj
+<<
+/Parent 117 0 R
+/Dest [33 0 R /FitH 389.52]
+/Next 119 0 R
+/Title (count)
+>>
+endobj
+119 0 obj
+<<
+/Parent 117 0 R
+/Dest [33 0 R /FitH 351.12]
+/Previous 118 0 R
+/Next 120 0 R
+/Title (count_distinct)
+>>
+endobj
+120 0 obj
+<<
+/Parent 117 0 R
+/Dest [33 0 R /FitH 312.72]
+/Previous 119 0 R
+/Next 121 0 R
+/Title (distinct)
+>>
+endobj
+121 0 obj
+<<
+/Parent 117 0 R
+/Dest [33 0 R /FitH 274.32]
+/Previous 120 0 R
+/Next 122 0 R
+/Title (sum )
+>>
+endobj
+122 0 obj
+<<
+/Parent 117 0 R
+/Dest [33 0 R /FitH 235.92]
+/Previous 121 0 R
+/Next 123 0 R
+/Title (sum_distinct )
+>>
+endobj
+123 0 obj
+<<
+/Parent 117 0 R
+/Dest [33 0 R /FitH 197.52]
+/Previous 122 0 R
+/Next 124 0 R
+/Title (maximum )
+>>
+endobj
+124 0 obj
+<<
+/Parent 117 0 R
+/Dest [33 0 R /FitH 159.12]
+/Previous 123 0 R
+/Next 125 0 R
+/Title (max )
+>>
+endobj
+125 0 obj
+<<
+/Parent 117 0 R
+/Dest [33 0 R /FitH 120.72]
+/Previous 124 0 R
+/Next 126 0 R
+/Title (minimum )
+>>
+endobj
+126 0 obj
+<<
+/Parent 117 0 R
+/Dest [33 0 R /FitH 82.3200000000001]
+/Previous 125 0 R
+/Next 127 0 R
+/Title (min )
+>>
+endobj
+127 0 obj
+<<
+/Parent 117 0 R
+/Dest [37 0 R /FitH 765.6]
+/Previous 126 0 R
+/Next 128 0 R
+/Title (avg )
+>>
+endobj
+128 0 obj
+<<
+/Parent 117 0 R
+/Dest [37 0 R /FitH 727.2]
+/Previous 127 0 R
+/Next 129 0 R
+/Title (avg_distinct )
+>>
+endobj
+129 0 obj
+<<
+/Parent 117 0 R
+/Dest [37 0 R /FitH 688.8]
+/Previous 128 0 R
+/Next 130 0 R
+/Title (mean )
+>>
+endobj
+130 0 obj
+<<
+/Parent 117 0 R
+/Dest [37 0 R /FitH 650.4]
+/Previous 129 0 R
+/Next 131 0 R
+/Title (first )
+>>
+endobj
+131 0 obj
+<<
+/Parent 117 0 R
+/Dest [37 0 R /FitH 612]
+/Previous 130 0 R
+/Next 132 0 R
+/Title (last )
+>>
+endobj
+132 0 obj
+<<
+/Parent 117 0 R
+/Dest [37 0 R /FitH 573.6]
+/Previous 131 0 R
+/Next 133 0 R
+/Title (median )
+>>
+endobj
+133 0 obj
+<<
+/Parent 117 0 R
+/Dest [37 0 R /FitH 523.2]
+/Previous 132 0 R
+/Next 134 0 R
+/Title (variance )
+>>
+endobj
+134 0 obj
+<<
+/Parent 117 0 R
+/Dest [37 0 R /FitH 472.8]
+/Previous 133 0 R
+/Next 135 0 R
+/Title (stddev )
+>>
+endobj
+135 0 obj
+<<
+/Parent 117 0 R
+/Dest [37 0 R /FitH 434.4]
+/Previous 134 0 R
+/Next 136 0 R
+/Title (range )
+>>
+endobj
+136 0 obj
+<<
+/Parent 117 0 R
+/Dest [37 0 R /FitH 396]
+/Previous 135 0 R
+/Next 137 0 R
+/Title (mode)
+>>
+endobj
+137 0 obj
+<<
+/Parent 117 0 R
+/Dest [37 0 R /FitH 357.6]
+/Previous 136 0 R
+/Next 138 0 R
+/Title (values_all [ \(< delim> \) ] )
+>>
+endobj
+138 0 obj
+<<
+/Parent 117 0 R
+/Dest [37 0 R /FitH 319.2]
+/Previous 137 0 R
+/Title (values_uniq [ \(< delim> \) ] )
+>>
+endobj
+139 0 obj
+<<
+/Parent 67 0 R
+/Dest [37 0 R /FitH 267.6]
+/Previous 117 0 R
+/Next 145 0 R
+/First 140 0 R
+/Last 144 0 R
+/Count 5 
+/Title (Macros)
+>>
+endobj
+140 0 obj
+<<
+/Parent 139 0 R
+/Dest [37 0 R /FitH 229.2]
+/Next 141 0 R
+/Title (String Macros)
+>>
+endobj
+141 0 obj
+<<
+/Parent 139 0 R
+/Dest [41 0 R /FitH 570]
+/Previous 140 0 R
+/Next 142 0 R
+/Title (Arithmentic Macros)
+>>
+endobj
+142 0 obj
+<<
+/Parent 139 0 R
+/Dest [41 0 R /FitH 348]
+/Previous 141 0 R
+/Next 143 0 R
+/Title (Date Macros)
+>>
+endobj
+143 0 obj
+<<
+/Parent 139 0 R
+/Dest [41 0 R /FitH 174]
+/Previous 142 0 R
+/Next 144 0 R
+/Title (Array Macros)
+>>
+endobj
+144 0 obj
+<<
+/Parent 139 0 R
+/Dest [45 0 R /FitH 546]
+/Previous 143 0 R
+/Title (Miscellaneous Macros)
+>>
+endobj
+145 0 obj
+<<
+/Parent 67 0 R
+/Dest [45 0 R /FitH 338.4]
+/Previous 139 0 R
+/Next 151 0 R
+/First 146 0 R
+/Last 150 0 R
+/Count 5 
+/Title (Pequel Data Types)
+>>
+endobj
+146 0 obj
+<<
+/Parent 145 0 R
+/Dest [45 0 R /FitH 318.72]
+/Next 147 0 R
+/Title (string)
+>>
+endobj
+147 0 obj
+<<
+/Parent 145 0 R
+/Dest [45 0 R /FitH 304.32]
+/Previous 146 0 R
+/Next 148 0 R
+/Title (numeric)
+>>
+endobj
+148 0 obj
+<<
+/Parent 145 0 R
+/Dest [45 0 R /FitH 289.92]
+/Previous 147 0 R
+/Next 149 0 R
+/Title (decimal)
+>>
+endobj
+149 0 obj
+<<
+/Parent 145 0 R
+/Dest [45 0 R /FitH 275.52]
+/Previous 148 0 R
+/Next 150 0 R
+/Title (date)
+>>
+endobj
+150 0 obj
+<<
+/Parent 145 0 R
+/Dest [45 0 R /FitH 261.12]
+/Previous 149 0 R
+/Title (array)
+>>
+endobj
+151 0 obj
+<<
+/Parent 67 0 R
+/Dest [45 0 R /FitH 233.52]
+/Previous 145 0 R
+/Next 160 0 R
+/First 152 0 R
+/Last 159 0 R
+/Count 8 
+/Title (Option Types)
+>>
+endobj
+152 0 obj
+<<
+/Parent 151 0 R
+/Dest [45 0 R /FitH 195.12]
+/Next 153 0 R
+/Title (Basic Options)
+>>
+endobj
+153 0 obj
+<<
+/Parent 151 0 R
+/Dest [49 0 R /FitH 318]
+/Previous 152 0 R
+/Next 154 0 R
+/Title (General Table Options)
+>>
+endobj
+154 0 obj
+<<
+/Parent 151 0 R
+/Dest [49 0 R /FitH 216]
+/Previous 153 0 R
+/Next 155 0 R
+/Title (Oracle Table Options)
+>>
+endobj
+155 0 obj
+<<
+/Parent 151 0 R
+/Dest [49 0 R /FitH 126]
+/Previous 154 0 R
+/Next 156 0 R
+/Title (Sqlite Table Options)
+>>
+endobj
+156 0 obj
+<<
+/Parent 151 0 R
+/Dest [53 0 R /FitH 792]
+/Previous 155 0 R
+/Next 157 0 R
+/Title (Inline Options)
+>>
+endobj
+157 0 obj
+<<
+/Parent 151 0 R
+/Dest [53 0 R /FitH 522]
+/Previous 156 0 R
+/Next 158 0 R
+/Title (Document Generation Options)
+>>
+endobj
+158 0 obj
+<<
+/Parent 151 0 R
+/Dest [53 0 R /FitH 444]
+/Previous 157 0 R
+/Next 159 0 R
+/Title (Developer Options)
+>>
+endobj
+159 0 obj
+<<
+/Parent 151 0 R
+/Dest [53 0 R /FitH 282]
+/Previous 158 0 R
+/Title (Command Line Options)
+>>
+endobj
+160 0 obj
+<<
+/Parent 67 0 R
+/Dest [53 0 R /FitH 134.4]
+/Previous 151 0 R
+/Next 170 0 R
+/First 161 0 R
+/Last 169 0 R
+/Count 9 
+/Title (Command Line Usage)
+>>
+endobj
+161 0 obj
+<<
+/Parent 160 0 R
+/Dest [53 0 R /FitH 114.72]
+/Next 162 0 R
+/Title (pequel scriptfile.pql  <  file_in  >  file_out)
+>>
+endobj
+162 0 obj
+<<
+/Parent 160 0 R
+/Dest [53 0 R /FitH 76.32]
+/Previous 161 0 R
+/Next 163 0 R
+/Title (pequel -c scriptfile.pql)
+>>
+endobj
+163 0 obj
+<<
+/Parent 160 0 R
+/Dest [57 0 R /FitH 765.6]
+/Previous 162 0 R
+/Next 164 0 R
+/Title (pequel -viewcode scriptfile.pql)
+>>
+endobj
+164 0 obj
+<<
+/Parent 160 0 R
+/Dest [57 0 R /FitH 727.2]
+/Previous 163 0 R
+/Next 165 0 R
+/Title (pequel -dumpcode scriptfile.pql)
+>>
+endobj
+165 0 obj
+<<
+/Parent 160 0 R
+/Dest [57 0 R /FitH 676.8]
+/Previous 164 0 R
+/Next 166 0 R
+/Title (pequel -v)
+>>
+endobj
+166 0 obj
+<<
+/Parent 160 0 R
+/Dest [57 0 R /FitH 638.4]
+/Previous 165 0 R
+/Next 167 0 R
+/Title (pequel -usage)
+>>
+endobj
+167 0 obj
+<<
+/Parent 160 0 R
+/Dest [57 0 R /FitH 600]
+/Previous 166 0 R
+/Next 168 0 R
+/Title (pequel -pequeldoc pdf -detail scriptfile.pql)
+>>
+endobj
+168 0 obj
+<<
+/Parent 160 0 R
+/Dest [57 0 R /FitH 549.6]
+/Previous 167 0 R
+/Next 169 0 R
+/Title (\217prefix, \217prefix_path)
+>>
+endobj
+169 0 obj
+<<
+/Parent 160 0 R
+/Dest [57 0 R /FitH 511.2]
+/Previous 168 0 R
+/Title (\217noverbose, \217silent)
+>>
+endobj
+170 0 obj
+<<
+/Parent 67 0 R
+/Dest [57 0 R /FitH 459.6]
+/Previous 160 0 R
+/Title (COPYRIGHT)
+>>
+endobj
+66 0 obj
+<<
+/Type /Outlines
+/Count 103
+/First 67 0 R
+/Last 169 0 R
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 4 0 R
+/PageMode /UseOutlines
+/Outlines 66 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Pages
+/Kids [ 58 0 R 65 0 R  21 0 R 25 0 R 29 0 R 33 0 R 37 0 R 41 0 R 45 0 R 49 0 R 53 0 R 57 0 R ]
+/Count 12
+/MediaBox [0 0 595 842]
+>>
+endobj
+xref
+0 171
+0000000000 65535 f 
+0000000015 00000 n 
+0000000171 00000 n 
+0000098145 00000 n 
+0000098234 00000 n 
+0000000269 00000 n 
+0000002369 00000 n 
+0000002468 00000 n 
+0000002566 00000 n 
+0000002666 00000 n 
+0000002770 00000 n 
+0000002866 00000 n 
+0000002967 00000 n 
+0000003071 00000 n 
+0000003179 00000 n 
+0000003277 00000 n 
+0000003380 00000 n 
+0000003486 00000 n 
+0000003600 00000 n 
+0000009115 00000 n 
+0000009136 00000 n 
+0000009286 00000 n 
+0000009369 00000 n 
+0000018183 00000 n 
+0000018204 00000 n 
+0000018342 00000 n 
+0000018425 00000 n 
+0000023709 00000 n 
+0000023730 00000 n 
+0000023868 00000 n 
+0000023951 00000 n 
+0000030210 00000 n 
+0000030231 00000 n 
+0000030369 00000 n 
+0000030452 00000 n 
+0000037988 00000 n 
+0000038009 00000 n 
+0000038147 00000 n 
+0000038230 00000 n 
+0000052581 00000 n 
+0000052603 00000 n 
+0000052741 00000 n 
+0000052824 00000 n 
+0000065479 00000 n 
+0000065501 00000 n 
+0000065639 00000 n 
+0000065722 00000 n 
+0000072145 00000 n 
+0000072166 00000 n 
+0000072292 00000 n 
+0000072375 00000 n 
+0000078809 00000 n 
+0000078830 00000 n 
+0000078968 00000 n 
+0000079051 00000 n 
+0000083787 00000 n 
+0000083808 00000 n 
+0000083946 00000 n 
+0000084029 00000 n 
+0000084112 00000 n 
+0000084491 00000 n 
+0000084511 00000 n 
+0000084637 00000 n 
+0000084938 00000 n 
+0000084958 00000 n 
+0000085060 00000 n 
+0000098068 00000 n 
+0000000000 00000 n 
+0000085143 00000 n 
+0000085283 00000 n 
+0000085382 00000 n 
+0000085495 00000 n 
+0000085622 00000 n 
+0000085740 00000 n 
+0000085852 00000 n 
+0000085976 00000 n 
+0000086131 00000 n 
+0000086221 00000 n 
+0000086342 00000 n 
+0000086453 00000 n 
+0000086564 00000 n 
+0000086765 00000 n 
+0000086974 00000 n 
+0000087126 00000 n 
+0000087284 00000 n 
+0000087393 00000 n 
+0000087503 00000 n 
+0000087613 00000 n 
+0000087766 00000 n 
+0000087864 00000 n 
+0000087977 00000 n 
+0000088103 00000 n 
+0000088221 00000 n 
+0000088343 00000 n 
+0000088463 00000 n 
+0000088584 00000 n 
+0000088710 00000 n 
+0000088809 00000 n 
+0000088922 00000 n 
+0000089041 00000 n 
+0000089150 00000 n 
+0000089351 00000 n 
+0000089551 00000 n 
+0000089707 00000 n 
+0000089869 00000 n 
+0000089985 00000 n 
+0000090100 00000 n 
+0000090215 00000 n 
+0000090376 00000 n 
+0000090479 00000 n 
+0000090585 00000 n 
+0000090746 00000 n 
+0000090835 00000 n 
+0000090965 00000 n 
+0000091128 00000 n 
+0000091226 00000 n 
+0000091331 00000 n 
+0000091447 00000 n 
+0000091608 00000 n 
+0000091704 00000 n 
+0000091827 00000 n 
+0000091944 00000 n 
+0000092057 00000 n 
+0000092179 00000 n 
+0000092296 00000 n 
+0000092409 00000 n 
+0000092526 00000 n 
+0000092649 00000 n 
+0000092761 00000 n 
+0000092882 00000 n 
+0000092995 00000 n 
+0000093109 00000 n 
+0000093220 00000 n 
+0000093335 00000 n 
+0000093452 00000 n 
+0000093567 00000 n 
+0000093681 00000 n 
+0000093791 00000 n 
+0000093928 00000 n 
+0000094052 00000 n 
+0000094204 00000 n 
+0000094307 00000 n 
+0000094431 00000 n 
+0000094548 00000 n 
+0000094666 00000 n 
+0000094778 00000 n 
+0000094941 00000 n 
+0000095038 00000 n 
+0000095154 00000 n 
+0000095270 00000 n 
+0000095383 00000 n 
+0000095483 00000 n 
+0000095642 00000 n 
+0000095746 00000 n 
+0000095873 00000 n 
+0000095999 00000 n 
+0000096125 00000 n 
+0000096245 00000 n 
+0000096378 00000 n 
+0000096501 00000 n 
+0000096613 00000 n 
+0000096777 00000 n 
+0000096914 00000 n 
+0000097046 00000 n 
+0000097185 00000 n 
+0000097324 00000 n 
+0000097441 00000 n 
+0000097562 00000 n 
+0000097712 00000 n 
+0000097847 00000 n 
+0000097966 00000 n 
+trailer
+<<
+/Size 171
+/Root 3 0 R
+/Info 2 0 R
+>>
+startxref
+98397
+%%EOF

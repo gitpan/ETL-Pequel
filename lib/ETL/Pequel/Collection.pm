@@ -4,7 +4,7 @@
 #  Created	: 14 January 2005
 #  Author	: Mario Gaffiero (gaffie)
 #
-# Copyright 1999-2005 Mario Gaffiero.
+# Copyright 1999-2006 Mario Gaffiero.
 # 
 # This file is part of Pequel(TM).
 # 
@@ -356,6 +356,7 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 	{
 		my $self = shift;
 		my $class = ref($self) || $self;
+#print STDERR "\nundefined:", caller(), "\n";
 		$self = $class->SUPER::new(grep(!$_->isa("ETL::Pequel::Collection::Element"), @_));
 		bless($self, $class);
 

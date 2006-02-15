@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 
-use Pequel::Pod2Pdf
-Pequel::Pod2Pdf::pod2pdf(@ARGV);
+use ETL::Pequel::Pod2Pdf
+ETL::Pequel::Pod2Pdf::pod2pdf(@ARGV);
 exit 0;
 
 __END__

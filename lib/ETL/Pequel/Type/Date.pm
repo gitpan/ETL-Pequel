@@ -4,7 +4,7 @@
 #  Created	: 5 February 2005
 #  Author	: Mario Gaffiero (gaffie)
 #
-# Copyright 1999-2005 Mario Gaffiero.
+# Copyright 1999-2006 Mario Gaffiero.
 # 
 # This file is part of Pequel(TM).
 # 
@@ -24,6 +24,7 @@
 # ----------------------------------------------------------------------------------------------------
 # Modification History
 # When          Version     Who     What
+# 01/12/2005	2.4-6		gaffie	fixed addUserType -- required PARAM.
 # ----------------------------------------------------------------------------------------------------
 # TO DO:
 # ----------------------------------------------------------------------------------------------------
@@ -32,8 +33,8 @@ use strict;
 use attributes qw(get reftype);
 use warnings;
 use vars qw($VERSION $BUILD);
-$VERSION = "2.4-3";
-$BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
+$VERSION = "2.4-6";
+$BUILD = 'Thursday December  1 22:33:01 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Type::Date::Part;
@@ -128,21 +129,24 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		(
 			name => 'day', 
 			pos => index($self->fmt, 'D'), 
-			len => rindex($self->fmt, 'D') - index($self->fmt, 'D') + 1
+			len => rindex($self->fmt, 'D') - index($self->fmt, 'D') + 1,
+			PARAM => $self->PARAM
 		));
 
 		$self->m(ETL::Pequel::Type::Date::Part->new
 		(
 			name => 'month', 
 			pos => index($self->fmt, 'M'), 
-			len => rindex($self->fmt, 'M') - index($self->fmt, 'M') + 1
+			len => rindex($self->fmt, 'M') - index($self->fmt, 'M') + 1,
+			PARAM => $self->PARAM
 		));
 
 		$self->y(ETL::Pequel::Type::Date::Part->new
 		(
 			name => 'year', 
 			pos => index($self->fmt, 'Y'), 
-			len => rindex($self->fmt, 'Y') - index($self->fmt, 'Y') + 1
+			len => rindex($self->fmt, 'Y') - index($self->fmt, 'Y') + 1,
+			PARAM => $self->PARAM
 		));
 
 		$self->delimiter((grep(!/[DMY]/i, split(//, $self->name)))[0]);
@@ -155,7 +159,7 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		my $self = shift; 
 		my $d1 = shift;
 		my $d2 = shift;
-		my $c = ETL::Pequel::Code->new;
+		my $c = ETL::Pequel::Code->new(PARAM => $self->PARAM);
 
 		if ($self->fmt eq 'YYYYMMDD')
 		{
@@ -212,7 +216,7 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 	{
 		my $self = shift;
 		my $dt = shift;
-		my $c = ETL::Pequel::Code->new;
+		my $c = ETL::Pequel::Code->new(PARAM => $self->PARAM);
 
 		$c->addNonl("scalar(");
 		if ($self->fmt eq 'YYYYMMDD')
@@ -241,7 +245,7 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		my $d = shift;
 		my $m = shift;
 		my $y = shift;
-		my $c = ETL::Pequel::Code->new;
+		my $c = ETL::Pequel::Code->new(PARAM => $self->PARAM);
 
 		foreach my $i (0..2)
 		{
@@ -295,42 +299,66 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 	use ETL::Pequel::Collection;	#+++++
 	use base qw(ETL::Pequel::Collection::Vector);
 
+	our $this = __PACKAGE__;
+
+	sub BEGIN
+	{
+		our @attr =
+		qw(
+			PARAM
+		);
+		eval ("sub attr { my \$self = shift; return (\$self->SUPER::attr, qw(@{[ join(' ', @attr) ]})); } ");
+		foreach (@attr)
+		{
+			eval
+			("
+				sub $_ : method
+				{
+					my \$self = shift;
+					\$self->{\$this}->{@{[ uc($_) ]}} = shift if (\@_);
+					return \$self->{\$this}->{@{[ uc($_) ]}};
+				}
+			");
+		}
+	}
+
 	sub new : method
 	{
 		my $self = shift;
+		my $param = shift;
 		my $class = ref($self) || $self;
 		$self = $class->SUPER::new(@_);
 		bless($self, $class);
+		$self->PARAM($param);
 
 		$self->addAll
 		(
-			ETL::Pequel::Type::Date::Element->new(name => 'DD/MM/YYYY', 
+			ETL::Pequel::Type::Date::Element->new(name => 'DD/MM/YYYY', PARAM => $param,
 					regex => '\d{2}\/\d{2}\/\d{4}'),
-				ETL::Pequel::Type::Date::Element->new(name => 'DD/MM/YY',  	
-					regex => '\d{2}\/\d{2}\/\d{2}'),
-				ETL::Pequel::Type::Date::Element->new(name => 'DDMMYY',		
-					regex => '\d{2}\d{2}\d{2}'),
-				ETL::Pequel::Type::Date::Element->new(name => 'DDMMYYYY',	
-					regex => '\d{2}\d{2}\d{4}'),
-				ETL::Pequel::Type::Date::Element->new(name => 'DDMMMYY',	
-					regex => '\d{2}\w{3}\d{2}'),
-				ETL::Pequel::Type::Date::Element->new(name => 'YYYYMMDD',	
-					regex => '\d{4}\d{2}\d{2}'),
-				ETL::Pequel::Type::Date::Element->new(name => 'YYMMDD',		
-					regex => '\d{2}\d{2}\d{2}'),
-				ETL::Pequel::Type::Date::Element->new(name => 'MM/DD/YYYY',	
-					regex => '\d{2}\/\d{2}\/\d{2}'),
-				ETL::Pequel::Type::Date::Element->new(name => 'MM/DD/YY',  	
-					regex => '\d{2}\/\d{2}\/\d{2}'),
-				ETL::Pequel::Type::Date::Element->new(name => 'MMDDYY',		
-					regex => '\d{2}\d{2}\d{2}'),
-				ETL::Pequel::Type::Date::Element->new(name => 'MMDDYYYY',	
-					regex => '\d{2}\d{2}\d{4}'),
-				ETL::Pequel::Type::Date::Element->new(name => 'YYYY-MM-DD',	
-					regex => '\d{4}\-\d{2}\-\d{2}'),
-				ETL::Pequel::Type::Date::Element->new(name => 'YY-MM-DD',	
-					regex => '\d{2}\-\d{2}\-\d{2}'),
-
+			ETL::Pequel::Type::Date::Element->new(name => 'DD/MM/YY',  	PARAM => $param,
+				regex => '\d{2}\/\d{2}\/\d{2}'),
+			ETL::Pequel::Type::Date::Element->new(name => 'DDMMYY',		PARAM => $param,
+				regex => '\d{2}\d{2}\d{2}'),
+			ETL::Pequel::Type::Date::Element->new(name => 'DDMMYYYY',	PARAM => $param,
+				regex => '\d{2}\d{2}\d{4}'),
+			ETL::Pequel::Type::Date::Element->new(name => 'DDMMMYY',	PARAM => $param,
+				regex => '\d{2}\w{3}\d{2}'),
+			ETL::Pequel::Type::Date::Element->new(name => 'YYYYMMDD',	PARAM => $param,
+				regex => '\d{4}\d{2}\d{2}'),
+			ETL::Pequel::Type::Date::Element->new(name => 'YYMMDD',		PARAM => $param,
+				regex => '\d{2}\d{2}\d{2}'),
+			ETL::Pequel::Type::Date::Element->new(name => 'MM/DD/YYYY',	PARAM => $param,
+				regex => '\d{2}\/\d{2}\/\d{2}'),
+			ETL::Pequel::Type::Date::Element->new(name => 'MM/DD/YY',  	PARAM => $param,
+				regex => '\d{2}\/\d{2}\/\d{2}'),
+			ETL::Pequel::Type::Date::Element->new(name => 'MMDDYY',		PARAM => $param,
+				regex => '\d{2}\d{2}\d{2}'),
+			ETL::Pequel::Type::Date::Element->new(name => 'MMDDYYYY',	PARAM => $param,
+				regex => '\d{2}\d{2}\d{4}'),
+			ETL::Pequel::Type::Date::Element->new(name => 'YYYY-MM-DD',	PARAM => $param,
+				regex => '\d{4}\-\d{2}\-\d{2}'),
+			ETL::Pequel::Type::Date::Element->new(name => 'YY-MM-DD',	PARAM => $param,
+				regex => '\d{2}\-\d{2}\-\d{2}'),
 		);
 		return $self;
 	}
@@ -353,7 +381,12 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 			$regex =~ s/MMM/\\w{3}/;
 			$regex =~ s/MM/\\d{2}/;
 			$regex =~ s/(Y+)/\\d{@{[ length($1) ]}}/;
-			$self->add(ETL::Pequel::Type::Date::Element->new(name => $user_type, regex => $regex));
+			$self->add(ETL::Pequel::Type::Date::Element->new
+			(
+				name => $user_type, 
+				regex => $regex, 
+				PARAM => $self->PARAM
+			));
 			return $self->last;
 		}
 		return 0;
@@ -368,6 +401,7 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 	sub new : method
 	{
 		my $self = shift;
+		my $param = shift;
 		my $class = ref($self) || $self;
 		$self = $class->SUPER::new(@_);
 		bless($self, $class);
@@ -375,18 +409,18 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		# Set all default values:
 		$self->addAll
 		(
-			ETL::Pequel::Type::Element->new(name => 'JAN',	number => 1,	value => '01'),
-			ETL::Pequel::Type::Element->new(name => 'FEB',	number => 2,	value => '02'),
-			ETL::Pequel::Type::Element->new(name => 'MAR',	number => 3,	value => '03'),
-			ETL::Pequel::Type::Element->new(name => 'APR',	number => 4,	value => '04'),
-			ETL::Pequel::Type::Element->new(name => 'MAY',	number => 5,	value => '05'),
-			ETL::Pequel::Type::Element->new(name => 'JUN',	number => 6,	value => '06'),
-			ETL::Pequel::Type::Element->new(name => 'JUL',	number => 7,	value => '07'),
-			ETL::Pequel::Type::Element->new(name => 'AUG',	number => 8,	value => '08'),
-			ETL::Pequel::Type::Element->new(name => 'SEP',	number => 9,	value => '09'),
-			ETL::Pequel::Type::Element->new(name => 'OCT',	number => 10,	value => '10'),
-			ETL::Pequel::Type::Element->new(name => 'NOV',	number => 11,	value => '11'),
-			ETL::Pequel::Type::Element->new(name => 'DEC',	number => 12,	value => '12'),
+			ETL::Pequel::Type::Element->new(name => 'JAN',	number => 1,	value => '01', PARAM => $param),
+			ETL::Pequel::Type::Element->new(name => 'FEB',	number => 2,	value => '02', PARAM => $param),
+			ETL::Pequel::Type::Element->new(name => 'MAR',	number => 3,	value => '03', PARAM => $param),
+			ETL::Pequel::Type::Element->new(name => 'APR',	number => 4,	value => '04', PARAM => $param),
+			ETL::Pequel::Type::Element->new(name => 'MAY',	number => 5,	value => '05', PARAM => $param),
+			ETL::Pequel::Type::Element->new(name => 'JUN',	number => 6,	value => '06', PARAM => $param),
+			ETL::Pequel::Type::Element->new(name => 'JUL',	number => 7,	value => '07', PARAM => $param),
+			ETL::Pequel::Type::Element->new(name => 'AUG',	number => 8,	value => '08', PARAM => $param),
+			ETL::Pequel::Type::Element->new(name => 'SEP',	number => 9,	value => '09', PARAM => $param),
+			ETL::Pequel::Type::Element->new(name => 'OCT',	number => 10,	value => '10', PARAM => $param),
+			ETL::Pequel::Type::Element->new(name => 'NOV',	number => 11,	value => '11', PARAM => $param),
+			ETL::Pequel::Type::Element->new(name => 'DEC',	number => 12,	value => '12', PARAM => $param),
 		);
 		return $self;
 	}

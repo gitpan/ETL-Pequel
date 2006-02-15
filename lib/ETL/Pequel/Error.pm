@@ -4,7 +4,7 @@
 #  Created	: 21 April 2005
 #  Author	: Mario Gaffiero (gaffie)
 #
-# Copyright 1999-2005 Mario Gaffiero.
+# Copyright 1999-2006 Mario Gaffiero.
 # 
 # This file is part of Pequel(TM).
 # 

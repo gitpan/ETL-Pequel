@@ -4,7 +4,7 @@
 #  Created	: 23 September 2005
 #  Author	: Mario Gaffiero (gaffie)
 #
-# Copyright 1999-2005 Mario Gaffiero.
+# Copyright 1999-2006 Mario Gaffiero.
 # 
 # This file is part of Pequel(TM).
 # 
@@ -25,6 +25,7 @@
 # ----------------------------------------------------------------------------------------------------
 # Modification History
 # When          Version     Who     What
+# 17/11/2005	2.4-6		gaffie	Added output_files -- stack all output files/scripts from sub scripts.
 # 29/09/2005	2.3-2		gaffie	New -- replaces Pequel::Base module and 'root'.
 # ----------------------------------------------------------------------------------------------------
 # TO DO:
@@ -35,8 +36,8 @@ use attributes qw(get reftype);
 use warnings;
 use constant DEBUG => 0;
 use vars qw($VERSION $BUILD);
-$VERSION = "2.4-3";
-$BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
+$VERSION = "2.4-6";
+$BUILD = 'Wednesday November 23 21:11:48 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Param;
@@ -70,6 +71,8 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 			LOCAL
 			root
 			packages
+			output_files
+			depth
 		);
 		eval ("sub attr { my \$self = shift; return (qw(@{[ join(' ', @attr) ]})); } ");
 		foreach (@attr)
@@ -112,8 +115,8 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		$self->pequel_script_disallow(ETL::Pequel::Collection::Vector->new());
 		$self->ifields(ETL::Pequel::Collection::Vector->new());
 		$self->packages(ETL::Pequel::Collection::Vector->new());
-#>		$self->output_file(ETL::Pequel::Collection::Vector->new());
-#>?		$self->input_file(ETL::Pequel::Collection::Vector->new());
+		$self->output_files(ETL::Pequel::Collection::Vector->new());
+		$self->depth(0); # Sub-script depth.
 
 		use ETL::Pequel::Table;
 		$self->tables(ETL::Pequel::Table->new);
@@ -122,8 +125,8 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		$self->datatypes(ETL::Pequel::Type::Data->new($self));
 
 		use ETL::Pequel::Type::Date;
-		$self->datetypes(ETL::Pequel::Type::Date->new);
-		$self->monthtypes(ETL::Pequel::Type::Month->new);
+		$self->datetypes(ETL::Pequel::Type::Date->new($self));
+		$self->monthtypes(ETL::Pequel::Type::Month->new($self));
 
 		use ETL::Pequel::Type::Option;
 		$self->options(ETL::Pequel::Type::Option->new($self));

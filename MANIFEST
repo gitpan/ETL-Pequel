@@ -35,6 +35,8 @@ docs/pequeluserguide.pdf
 docs/pequeluserguide.pod
 docs/pequelprogref.pdf
 docs/pequelprogref.pod
+docs/pequelquickref.pdf
+docs/pequelquickref.pod
 vim/syntax/pequel.vim
 t/01_aggregates_1.t
 t/02_array_fields.t
@@ -190,3 +192,4 @@ examples/messages.pql
 examples/messages.pql.2.code
 examples/messages.pql.pdf
 examples/README
+META.yml                                 Module meta-data (added by MakeMaker)

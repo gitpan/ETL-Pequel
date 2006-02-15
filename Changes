@@ -1,5 +1,15 @@
 Revision history
 
+* Version 2.4-6 -- 14 February 2006
+
+- New Pequel Quick Reference Guide (docs/pequelquickref.pdf).
+- Fixed module name in ETL::Pequel::Pod2Pdf, scripts/pequelpod2pdf.
+- Option: exec_min_lines -- use this to specify max program code size that will execute with eval() 
+	otherwise execute with exec() on external tmp EXEC program file. Defaults to 200 lines. The exec() 
+	execution will substantially improve the performance when copy/divert sections are in use.
+- Fixed user defined date type parse problem.
+- Some vim-syntax updates.
+
 * Version 2.4-5 -- 16 November 2005
 
 - Fixed test failures (on some platforms) -- caused by extra pipe ('|') in open() in code generated for

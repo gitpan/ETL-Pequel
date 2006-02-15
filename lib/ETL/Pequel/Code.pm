@@ -4,7 +4,7 @@
 #  Created	: 14 January 2005
 #  Author	: Mario Gaffiero (gaffie)
 #
-# Copyright 1999-2005 Mario Gaffiero.
+# Copyright 1999-2006 Mario Gaffiero.
 # 
 # This file is part of Pequel(TM).
 # 
@@ -24,6 +24,8 @@
 # ----------------------------------------------------------------------------------------------------
 # Modification History
 # When          Version     Who     What
+# 30/11/2005	2.4-6		gaffie	lines().
+# 23/11/2005	2.4-6		gaffie	fixed debug_generate option.
 # 25/8/2005		1.1-2		gaffie	supress addCommentBegin()/End() unless --debug option specified.
 # 25/8/2005		1.1-2		gaffie	updated sprintRaw so as to wrap code line > 110 chars.
 # ----------------------------------------------------------------------------------------------------
@@ -34,7 +36,7 @@ use strict;
 use attributes qw(get reftype);
 use warnings;
 use vars qw($VERSION $BUILD);
-$VERSION = "2.4-3";
+$VERSION = "2.4-6";
 $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
@@ -74,13 +76,17 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		bless($self, $class);
 
 		$self->noNewline($params{'no_newline'});
-#?		if ($self->root->o_debug_generate)
-#?		{
-#?			print STDERR "CODE(@{[ $self->name ]}:", 
-#?			(defined($self->value) ? $self->value : ''), 
-#?				"-->Nonl=", $self->noNewline, "\n";
-#?		}
-
+		if ($self->PARAM->properties('debug_generate'))
+		{
+			print STDERR 
+				"["
+				. sprintf("%-12s", $self->name) 
+				. "/"
+				. (defined($self->noNewline) ?  'nonl' : 'nl  ')
+				. "]"
+				. (defined($self->value) ? $self->value : '')
+				. "\n";
+		}
 		return $self;
 	}
 }
@@ -144,18 +150,6 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		return $self;
 	}
 
-#<	sub add : method
-#<	{
-#<		my $self = shift;
-#<	
-#<		return $self->SUPER::add(Pequel::Code::Line::Element->new
-#<		(
-#<			name => 'code', 
-#<			value => shift || "", 
-#<			no_newline => shift || 0
-#<		));
-#<	}
-
 	sub add : method
 	{
 		my $self = shift;
@@ -169,7 +163,14 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 					name => 'code', 
 					value => $o,
 					no_newline => $newline,
+					PARAM => $self->PARAM,
 				));
+	}
+
+	sub lines : method
+	{
+		my $self = shift;
+		return int(grep(defined($_->noNewline()) && $_->noNewline() == 0, $self->toArray()));
 	}
 
 	sub _add : method
@@ -211,7 +212,8 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		$self->SUPER::add(ETL::Pequel::Code::Line::Element->new
 		(
 			name => 'indent', 
-			value => $self->tabSize
+			value => $self->tabSize,
+			PARAM => $self->PARAM,
 		));
 		$self->tabs($self->tabs+1);
 	}
@@ -219,7 +221,7 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 	sub back : method
 	{
 		my $self = shift;
-		$self->SUPER::add(ETL::Pequel::Code::Line::Element->new(name => 'back'));
+		$self->SUPER::add(ETL::Pequel::Code::Line::Element->new(name => 'back', PARAM => $self->PARAM));
 		$self->tabs($self->tabs-1);
 	}
 	
@@ -438,7 +440,8 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		$self->unshift(ETL::Pequel::Code::Line::Element->new
 		(
 			name => 'indent', 
-			value => $self->tabSize
+			value => $self->tabSize,
+			PARAM => $self->PARAM,
 		));
 		$self->back;
 	}
@@ -518,6 +521,7 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		(
 			name => 'comment', 
 			value => ">>>>> BEGIN @{[ join('::', caller()) ]}:$msg >>>>>",
+			PARAM => $self->PARAM,
 		));
 	}
 
@@ -532,6 +536,7 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		(
 			name => 'comment', 
 			value => "<<<<< END @{[ join('::', caller()) ]}:$msg <<<<<",
+			PARAM => $self->PARAM,
 		));
 	}
 
@@ -542,7 +547,8 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		(
 			name => 'comment', 
 			value => shift, 
-			no_newline => shift || 0
+			no_newline => shift || 0,
+			PARAM => $self->PARAM,
 		));
 	}
 
@@ -556,37 +562,12 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 			$self->SUPER::add(ETL::Pequel::Code::Line::Element->new
 			(
 				name => 'bar', 
-#<<				value => ('#' . ('-+' x 50)), 
-				no_newline => shift || 0
+				no_newline => shift || 0,
+				PARAM => $self->PARAM,
 			));
 		}
 	}
 		
-#?	# reset the indentation to 0:
-#?	sub reset : method
-#?	{
-#?		my $self = shift;
-#?	}
-#?	
-#?	# use for column tabulation (specify/return number of columns)
-#?	sub columns : method
-#?	{
-#?	}
-#?	
-#?	# add an item to the list (for tabulation)
-#?	sub addList : method
-#?	{
-#?	}
-#?	
-#?	sub pipeTo
-#?	{
-#?		my $self = shift;
-#?		my $pipe = shift;
-#?		open(PIPE, "| $pipe") || $self->root->fatalError("[3003] Cannot open pipe $pipe");
-#?		print PIPE $self->text;
-#?		close(PIPE);
-#?	}
-
 	sub addFmt : method
 	{
 		my $self = shift;
@@ -634,6 +615,7 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		(
 			name => 'ccomment', 
 			value => ">>>>> BEGIN @{[ join('::', caller()) ]}:$msg >>>>>",
+			PARAM => $self->PARAM,
 		);
 	}
 
@@ -646,6 +628,7 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		(
 			name => 'ccomment', 
 			value => "<<<<< END @{[ join('::', caller()) ]}:$msg <<<<<",
+			PARAM => $self->PARAM,
 		);
 	}
 
@@ -656,7 +639,8 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		(
 			name => 'ccomment', 
 			value => shift, 
-			no_newline => shift || 0
+			no_newline => shift || 0,
+			PARAM => $self->PARAM,
 		);
 	}
 
@@ -670,8 +654,8 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 			$self->_add
 			(
 				name => 'ccbar', 
-#<<				value => ('#' . ('-+' x 50)), 
-				no_newline => shift || 0
+				no_newline => shift || 0,
+				PARAM => $self->PARAM,
 			);
 		}
 	}
@@ -700,6 +684,7 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		(
 			name => 'comment', 
 			value => ">>>>> BEGIN @{[ join('::', caller()) ]}:$msg >>>>>",
+			PARAM => $self->PARAM,
 		);
 	}
 
@@ -712,6 +697,7 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		(
 			name => 'comment', 
 			value => "<<<<< END @{[ join('::', caller()) ]}:$msg <<<<<",
+			PARAM => $self->PARAM,
 		);
 	}
 
@@ -722,7 +708,8 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		(
 			name => 'comment', 
 			value => shift, 
-			no_newline => shift || 0
+			no_newline => shift || 0,
+			PARAM => $self->PARAM,
 		);
 	}
 
@@ -736,8 +723,8 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 			$self->_add
 			(
 				name => 'bar', 
-#<<				value => ('#' . ('-+' x 50)), 
-				no_newline => shift || 0
+				no_newline => shift || 0,
+				PARAM => $self->PARAM,
 			);
 		}
 	}

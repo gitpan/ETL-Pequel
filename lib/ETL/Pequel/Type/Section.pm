@@ -4,7 +4,7 @@
 #  Created	: 10 February 2005
 #  Author	: Mario Gaffiero (gaffie)
 #
-# Copyright 1999-2005 Mario Gaffiero.
+# Copyright 1999-2006 Mario Gaffiero.
 # 
 # This file is part of Pequel(TM).
 # 
@@ -24,6 +24,8 @@
 # ----------------------------------------------------------------------------------------------------
 # Modification History
 # When          Version     Who     What
+# 17/11/2005	2.4-6		gaffie	Removed 'divert record' and 'copy record' section types.
+# 17/11/2005	2.4-6		gaffie	Distributor: fix sub_pql.input-delimiter.
 # 15/11/2005	2.4-5		gaffie	Bug fix in sort-output section codeOpen() extra pipe.
 # 04/11/2005	2.4-5		gaffie	Bug fix numeric/decimal type comparison in dedup-on.
 # 03/11/2005	2.4-4		gaffie	Bug fix field-process sections.
@@ -48,8 +50,8 @@ use attributes qw(get reftype);
 use warnings;
 use lib './lib';
 use vars qw($VERSION $BUILD);
-$VERSION = "2.4-5";
-$BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
+$VERSION = "2.4-6";
+$BUILD = 'Wednesday November 23 21:56:42 GMT 2005';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Type::Section;
@@ -95,7 +97,6 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 
 		$self->lines(ETL::Pequel::Collection::Vector->new);	#collection of ETL::Pequel::Script::Line::Element
 		$self->items(ETL::Pequel::Collection::Vector->new);	#collection of ETL::Pequel::Field::Element
-#>		$self->code(ETL::Pequel::Type::Code::Section->new);
 
 		return $self;
 	}
@@ -1152,7 +1153,7 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 }
 # ----------------------------------------------------------------------------------------------------
 {
-	package ETL::Pequel::Type::Section::Distributor; # -->Distributor
+	package ETL::Pequel::Type::Section::Distributor;
 	use base qw(ETL::Pequel::Type::Section);
 
 	sub new : method
@@ -1163,7 +1164,7 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 		$self = $class->SUPER::new
 		(
 			@_, 
-			name => $params{'name'} || 'divert record', 
+			name => $params{'name'} || 'distributor', 
 		);
 		bless($self, $class);
 
@@ -1176,6 +1177,16 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 		$self->PARAM->properties('lock_output', 1);
 #?		$self->SUPER::compile();
 		map($_->compile, $self->items->toArray); # ??
+#>		if (!$self->PARAM->root->PARAM->output_files->find($self->args()))
+#>		{
+#>			$self->PARAM->root->PARAM->output_files->add(
+#>				ETL::Pequel::Collection::Element->new
+#>				(
+#>					name => $self->args(),
+#>					value => $self->PARAM->depth() +1,
+#>				)
+#>			);
+#>		}
 		return unless ($self->args() =~ /^pequel:|\.pql$/i);
 		my $scriptname = $self->PARAM->getscriptname($self->args());
 	
@@ -1197,7 +1208,12 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 	
 		my $sub_pql = $self->PARAM->root->PARAM->pequel_script->find($scriptname)->value;
 		$sub_pql->PARAM->properties('input_file', '');
-		$sub_pql->PARAM->properties('input_delimiter', $self->PARAM->properties('output_delimiter'));
+
+		$sub_pql->PARAM->properties('input_delimiter', 
+			($self->name =~ /input/i)
+				? $self->PARAM->properties('input_delimiter')
+				: $self->PARAM->properties('output_delimiter'));
+
 		$sub_pql->PARAM->properties('lock_output', 1);
 		if ($sub_pql->PARAM->properties('output_file') eq ''
 			|| $sub_pql->PARAM->properties('output_file') eq $self->PARAM->properties('output_file'))
@@ -1208,12 +1224,12 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 			$sub_pql->PARAM->properties('output_pack_fmt', $self->PARAM->properties('output_pack_fmt'));
 		}
 		# What about sub_pql->use_inline??
-		if ($self->PARAM->properties('pack_output') && $self->name =~ /^copy output|^divert output/)
+		if ($self->PARAM->properties('pack_output') && $self->name =~ /output/)
 		{
 			$sub_pql->PARAM->properties('unpack_input', '1');
 			$sub_pql->PARAM->properties('input_pack_fmt', $self->PARAM->properties('output_pack_fmt'));
 		}
-		elsif ($self->PARAM->properties('unpack_input') && $self->name =~ /^copy input|^divert input/)
+		elsif ($self->PARAM->properties('unpack_input') && $self->name =~ /input/)
 		{
 			$sub_pql->PARAM->properties('unpack_input', '1');
 			$sub_pql->PARAM->properties('input_pack_fmt', $self->PARAM->properties('input_pack_fmt'));
@@ -1243,6 +1259,7 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 		return;
 	}
 
+#>	All opens to be done by Engine->codeOpen()
     sub codeOpen : method 
 	{ 
 		my $self = shift; 
@@ -1275,6 +1292,7 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 		$engine->addNonl(join(") || (", map($self->PARAM->parser->compile($_->value), $self->items->toArray)));
 		$engine->add    ("))");
 		$engine->openBlock("{");
+#>			$engine->addNonl("print ::@{[ $self->get_fd_name() ]} ");
 			$engine->addNonl("print @{[ $self->get_fd_name() ]} ");
 #			Packing not allowed when use_inline used:
 			($self->PARAM->properties('use_inline'))
@@ -1285,6 +1303,7 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 		$engine->closeBlock;
 	}
 
+#>	All close(s) to be done by Engine->codeClose()
     sub codeClose : method 
 	{ 
 		my $self = shift; 
@@ -1293,36 +1312,37 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 		return $c;
 	}
 
-	sub get_fd_name
+	sub get_fd_name	# --> ETL::Pequel::Util->make_fd_name($self->args());
 	{
 		my $self = shift; 
 		my $fdname = $self->args();
 		$fdname =~ s/^.*://;
+		$fdname =~ s/^.*\///;
 		$fdname =~ s/\..*$//;
-		$fdname = "@{[ uc((split(/\s+/, $self->name))[0]) ]}_@{[ uc((split(/\s+/, $self->name))[1]) ]}_@{[ uc($fdname) ]}"; 
-		return $fdname;
+#<		$fdname = "@{[ uc((split(/\s+/, $self->name))[0]) ]}_@{[ uc((split(/\s+/, $self->name))[1]) ]}_@{[ uc($fdname) ]}"; 
+		return uc($fdname);
 	}
 }
 # ----------------------------------------------------------------------------------------------------
-{
-	package ETL::Pequel::Type::Section::DivertRecord;
-	use base qw(ETL::Pequel::Type::Section::Distributor);
-
-	sub new : method
-	{
-		my $self = shift;
-		my $class = ref($self) || $self;
-		my %params = @_;
-		$self = $class->SUPER::new
-		(
-			@_, 
-			name => $params{'name'} || 'divert record', 
-		);
-		bless($self, $class);
-
-		return $self;
-	}
-}
+#<	
+#<	   package ETL::Pequel::Type::Section::DivertRecord;
+#<	   use base qw(ETL::Pequel::Type::Section::Distributor);
+#<	
+#<	   sub new : method
+#<	   {
+#<	   	my $self = shift;
+#<	   	my $class = ref($self) || $self;
+#<	   	my %params = @_;
+#<	   	$self = $class->SUPER::new
+#<	   	(
+#<	   		@_, 
+#<	   		name => $params{'name'} || 'divert record', 
+#<	   	);
+#<	   	bless($self, $class);
+#<	
+#<	   	return $self;
+#<	   }
+#<	
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Type::Section::DivertInputRecord;
@@ -1344,25 +1364,25 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 	}
 }
 # ----------------------------------------------------------------------------------------------------
-{
-	package ETL::Pequel::Type::Section::CopyRecord;
-	use base qw(ETL::Pequel::Type::Section::Distributor);
-
-	sub new : method
-	{
-		my $self = shift;
-		my $class = ref($self) || $self;
-		my %params = @_;
-		$self = $class->SUPER::new
-		(
-			@_, 
-			name => $params{'name'} || 'copy record', 
-		);
-		bless($self, $class);
-
-		return $self;
-	}
-}
+#<	
+#<	   package ETL::Pequel::Type::Section::CopyRecord;
+#<	   use base qw(ETL::Pequel::Type::Section::Distributor);
+#<	
+#<	   sub new : method
+#<	   {
+#<	   	my $self = shift;
+#<	   	my $class = ref($self) || $self;
+#<	   	my %params = @_;
+#<	   	$self = $class->SUPER::new
+#<	   	(
+#<	   		@_, 
+#<	   		name => $params{'name'} || 'copy record', 
+#<	   	);
+#<	   	bless($self, $class);
+#<	
+#<	   	return $self;
+#<	   }
+#<	
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Type::Section::CopyInputRecord;
@@ -1474,7 +1494,6 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 		(
 			@_, 
 			name => $params{'name'} || 'output section',
-#>			syntax => 'type(&type) name([_|\w|\d]+) [&inputField | aggregate(&aggregate) [serial_start(\d+)|*|&inputField] [<where> condition(.*)] | aggregate(=) calc(.*)]
 		);
 		bless($self, $class);
 
@@ -1515,7 +1534,6 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 	sub parse : method
 	{
 		# format-1:   < numeric | decimal | string | date | time> <output field name> <aggregate expression> [, ...]
-		# format-2: fld(type => < numeric | decimal | string | date | time >, aggregate = < sum | min | max | ... | = | <input-field> >, exp = ...
 		my $self = shift;
 		my $code_line = shift || $self->lines->last->value;
 
@@ -2687,8 +2705,8 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 			ETL::Pequel::Type::Section::GroupBy->new(PARAM => $param),
 			ETL::Pequel::Type::Section::DedupOn->new(PARAM => $param),
 			ETL::Pequel::Type::Section::Filter->new(PARAM => $param),
-			ETL::Pequel::Type::Section::DivertRecord->new(PARAM => $param),
-			ETL::Pequel::Type::Section::CopyRecord->new(PARAM => $param),
+#<			ETL::Pequel::Type::Section::DivertRecord->new(PARAM => $param),
+#<			ETL::Pequel::Type::Section::CopyRecord->new(PARAM => $param),
 			ETL::Pequel::Type::Section::DivertInputRecord->new(PARAM => $param),
 			ETL::Pequel::Type::Section::CopyInputRecord->new(PARAM => $param),
 			ETL::Pequel::Type::Section::Output->new(PARAM => $param),

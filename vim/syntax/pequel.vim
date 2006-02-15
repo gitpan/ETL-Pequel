@@ -36,8 +36,6 @@ syn match pequelSection		"^init\s*table"
 syn match pequelSection		"^laod\s*table"
 syn match pequelSection		"^load\s*table\s*pequel"
 syn match pequelSection		"^having"
-"syn match pequelSection		"^description\s*section"
-syn match pequelSection		"^description\s*section" nextgroup=pequelSection 
 syn match pequelSection		"^use\s*package"
 syn match pequelSection		"^init\s*table"
 syn match pequelSection		"^load\s*table\s*sqlite\s*merge"
@@ -52,6 +50,11 @@ syn match pequelSection		"^display\s*message\s*on\s*input"
 syn match pequelSection		"^display\s*message\s*on\s*input\s*abort"
 syn match pequelSection		"^display\s*message\s*on\s*output"
 syn match pequelSection		"^display\s*message\s*on\s*output\s*abort"
+
+"syn match pequelSection		"^description\s*section"
+"syn match pequelSection		"^description\s*section" nextgroup=pequelSection 
+syn match pequelDescSection	"^description\s*section" nextgroup=pequelCmdText
+syn match pequelCmdText	".*$" contained 
 
 syn match pequelType		"^\s*string"
 syn match pequelType		"^\s*numeric"
@@ -92,6 +95,7 @@ syn keyword pequelOption	gzcat_cmd gzcat_args cat_cmd cat_args
 syn keyword pequelOption	sort_cmd sort_args cpp_cmd cpp_args
 syn keyword pequelOption	use_piped_chain
 syn keyword pequelOption	show_synonyms
+syn keyword pequelOption	exec_min_lines
 
 syn match pequelParamList "(.*)"hs=s+1,he=e-1 containedin=pequelOptions contains=ALL
 syn cluster pequelOptions contains=pequelOption,pequelParamList 
@@ -127,7 +131,7 @@ syn match pequelDerivedFieldOperator 	"=>"
 
 " Strings and characters:
 syn region pequelString		start=+"+  skip=+\\\\\|\\"+  end=+"+ oneline
-syn region pequelString		start=+'+  skip=+\\\\\|\\'+  end=+'+ oneline
+syn region pequelString		start=+'+  skip=+\\\\\|\\'+  end=+'+ oneline contains=ALLBUT,pequelDescSection
 
 syn keyword pequelTodo contained TODO XXX FIXME
 
@@ -150,6 +154,7 @@ if version >= 508 || !exists("did_pequel_syn_inits")
 
   " The default highlighting.
   HiLink pequelSection				Special
+  HiLink pequelDescSection			Special
   HiLink pequelStatement			Special
   HiLink pequelMacro				Function
   HiLink pequelPerlMacro			Function

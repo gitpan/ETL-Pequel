@@ -1,0 +1,939 @@
+=pod
+
+=head1 Section Types
+
+
+=item B<Expressions>
+
+A F<Pequel> expression can contain a mix of Perl code, including regular expressions, I<field-name>s, Pequel-macros, and Pequel-table lookups.
+
+
+=item B<Comments>
+
+Any text following and including the C<#> symbol or C<//> is considered as comment text. If the I<cpp> pre-processor is available then comments are limited to C/C++ style comments with (C<//> and C</* ... */>) -- the C<#> will be interpreted as a macro directive.
+
+
+=item B<Item Line Continuation>
+
+Each F<item> within a section must appear on a single line. In order to break up an item statement (for better readability) us the line continuation character I<\>.
+
+
+=item B<Pre-Processor>
+
+If your system provides the F<cpp> pre-processor, your Pequel script may include any C/C++ style macros.
+
+
+=head2 F<options>
+
+< I<option-name> > [ B<(>< I<arg> >B<)> ]
+
+
+=head2 F<description section>
+
+< I<free format text> >
+
+
+=head2 F<input section>
+
+< I<input-field-name> > [ B<=>E<gt> < I<calc-expression> > ]
+
+=over
+
+=item calc-expression
+
+A valid I<Perl> statement which may contain I<input-field-name>, Pequel macros, and Pequel-table lookup expressions.
+
+=back
+
+
+=head2 F<field preprocess>
+
+< I<input-field-name> > [ B<=>E<gt> | B<=~> < I<calc-expression> > ]
+
+
+=head2 F<filter>
+
+< I<condition-expression> >
+
+
+=head2 F<reject>
+
+< I<condition-expression> >
+
+
+=head2 F<divert input record> (E<lt> I<filename | pequel-script name | db-connect-str(**) | socket(**) > E<gt>)
+
+< I<condition-expression> >
+
+
+=head2 F<copy input record> (E<lt> I<filename | pequel-script name | db-connect-str(**) | socket(**) > E<gt>)
+
+< I<condition-expression> >
+
+
+=head2 F<display message on input>(< I<message-expression> >)
+
+< I<condition-expression> >
+
+
+=head2 F<display message on input abort>(< I<message-expression> >)
+
+< I<condition-expression> >
+
+
+=head2 F<sort by>
+
+< I<input-field-name> > [ B<numeric> | B<string> ] [ B<asc> | B<des> ]
+
+
+=head2 F<group by>
+
+< I<input-field-name> > [ B<numeric> | B<decimal> | B<string> ]
+
+
+=head2 F<dedup on>
+
+< I<input-field-name> > [ B<numeric> | B<decimal> | B<string> ]
+
+
+=head2 F<output section>
+
+< I<pequel-type> > < I<output-field-name> > < I<input-field-name> > 
+
+| < I<pequel-type> > < I<output-field-name> > < I<aggregation-expression> >  
+
+| < I<pequel-type> > < I<output-field-name> > B<=> < I<calc-expression> >
+
+
+=over
+
+=item pequel-type
+
+B<numeric> | B<decimal> | B<string> | B<date> [ B<(>< I<date-type> B<)> ] 
+
+
+=item date-type
+
+B<YYYYMMDD> | B<YYMMDD> | B<DDMMYY> | B<DDMMMYY> | B<DDMMYYYY> | B<DD/MM/YY> | B<DD/MM/YYYY> | B<MMDDYY> | B<MMDDYYYY> | B<MM/DD/YY> | B<MM/DD/YYYY>
+
+
+=item aggregation-expression
+
+< I<aggregate-type> > < I<input-field-name> > [ B<where> < I<condition-expression> > ] 
+
+| B<serial> < I<start-num> > [ B<where> < I<condition-expression> > ] 
+
+| B<count *> [ B<where> < I<condition-expression> > ] 
+
+| B<flag *> [ B<where> < I<condition-expression> > ] 
+
+
+=item aggregate-type
+
+B<sum> | B<maximum> | B<max> | B<minimum> | B<min> | B<avg> | B<mean> | B<first> | B<last> 
+
+| B<distinct> | B<sum_distinct> | B<avg_distinct> | B<count_distinct>
+
+| B<median> | B<variance> | B<stddev> | B<range> | B<mode>
+
+| B<values_all> [ B<(>< I<delim> >B<)> ] | B<values_uniq> [ B<(>< I<delim> >B<)> ] 
+
+
+=item condition-expression
+
+I<An expression that evaluates to true or false (non-zero, zero respectively).
+
+
+
+=item input-field-name
+
+< I<field-name> > 
+
+
+=item output-field-name
+
+< I<field-name> > | < I<transparent-field-name> >
+
+=over
+
+=item transparent-field-name
+
+B<_>< I<field-name> >
+
+=back
+
+=over
+
+=item field-name
+
+B<[_A-Za-z]+[0-9_A-Za-z]*
+
+Case-sensitive and must begin with an alpha or F<'_'> character, followed by zero or more alpha, numeric and F<'_'>'s characters.
+
+
+=back
+
+
+=back
+
+
+=head2 F<sort output>
+
+< I<output-field-name> > [ B<numeric> | B<string> ] [ B<asc> | B<des> ]
+
+
+=head2 F<field postprocess>
+
+< I<output-field-name> > [ B<=>E<gt> | B<=~> < I<calc-expression> > ]
+
+
+=head2 F<having>
+
+< I<condition-expression> >
+
+
+=head2 F<divert output record> (E<lt> I<filename | pequel-script-name | db-connect-str(**) | socket(**) > E<gt>)
+
+< I<condition-expression> >
+
+
+=head2 F<copy output record> (E<lt> I<filename | pequel-script-name | db-connect-str(**) | socket(**) > E<gt>)
+
+< I<condition-expression> >
+
+
+=head2 F<display message on output>(< I<message-expression> >)
+
+< I<condition-expression> >
+
+
+=head2 F<display message on output abort>(< I<message-expression> >)
+
+< I<condition-expression> >
+
+
+=head2 F<use package>
+
+< I<Perl package name> >
+
+
+=head2 F<init table>
+
+< I<table-name> > < I<key> > < I<value> > [, < I<value> > ... ]
+
+
+=head2 F<load table>
+
+< I<table-name> > [ < I<filename> > [ < I<key-col> > [ < I<val-col> > ] ] ] [, ...]
+
+
+=head2 F<load table pequel>
+
+< I<table-name> > < I<pequel-script-name> > [ < I<keyfield-name> > [ < I<keyfield-type> > ] ]
+
+=over
+
+=item keyfield-name
+
+I<pequel-script-name.output-field-name>
+
+
+=item keyfield-type
+
+B<STRING> | B<NUMERIC>
+
+=back
+
+
+=head2 F<load table sqlite>
+
+< I<table-name> > < I<filename> > < I<key-col> > < I<keyfield-type> [ < I<table-field-name> > B<=> < I<field-col> > [...] ]
+
+
+=over 
+
+=item keyfield-type
+
+B<INTEGER> | B<VARCHAR>
+
+=back
+
+
+=head2 F<load table sqlite merge>
+
+< I<table-name> > < I<filename> > < I<key-col> > < I<keyfield-type> [ < I<table-field-name> > B<=> < I<field-col> > [...] ]
+
+
+=head2 F<load table oracle>
+
+< I<table-name> > < I<filename> > < I<connect-str> > < I<key-col> > < I<key-type> \
+
+[ < I<field-name> > B<=> < I<field-col> > [...] ]
+
+=over
+
+=item key-type
+
+F<Oracle Data Type>
+
+=item connect-str
+
+< I<user> >B</>< I<password> >B<@>< I<db-name> >
+
+=back
+
+
+=head2 F<load table oracle merge>
+
+< I<table-name> > < I<filename> > < I<connect-str> > < I<key-col> > < I<key-type> \
+
+[ < I<field-name> > B<=> < I<field-col> > [...] ]
+
+
+=cut --------------------------------------------------------------------------
+
+=head1 Aggregate Types
+
+
+=item F<count>
+
+Output the count of records in the group. 
+
+
+=item F<count_distinct>
+
+Output the count of unique values for I<field-name> in the group. 
+
+
+=item F<distinct>
+
+Output the count of unique values for I<field-name> in the group. Same as F<count_distinct>.
+
+
+=item F<sum> 
+
+Accumulate the total for all values in the group.
+
+
+=item F<sum_distinct> 
+
+Accumulate the total for unique values for I<field-name> in the group.
+
+
+=item F<maximum> 
+
+Output the maximum value in the group. 
+
+
+=item F<max> 
+
+Output the maximum value in the group. Same as F<maximum>.
+
+
+=item F<minimum> 
+
+Output the minimum value in the group. 
+
+
+=item F<min> 
+
+Output the minimum value in the group. Same as F<minimum>.
+
+
+=item F<avg> 
+
+Output the average value in the group. 
+
+
+=item F<avg_distinct> 
+
+Output the average value for unique values for I<field-name> in the group. 
+
+
+=item F<mean> 
+
+Output the average value in the group. Same as F<avg>.
+
+
+=item F<first> 
+
+Output the first value in the group.
+
+
+=item F<last> 
+
+Output the last value in the group.
+
+
+=item F<median> 
+
+Output the middle vale in the group, or, in the case of an even number of values, output the mean of the two middle values in the group.
+
+
+=item F<variance> 
+
+Output ( I<sum squares> / I<count> ) - ( I<mean> ** 2); I<sum_squares> is each value in the distribution squared (** 2); I<count> is the number of values in the distribution; I<mean> is discussed above. 
+
+
+=item F<stddev> 
+
+Output the square-root of I<variance>. 
+
+
+=item F<range> 
+
+Output the maximum value minus the minimum value in a distribution. 
+
+
+=item F<mode>
+
+Output the most frequently occuring score or scores (space delimited) in a distribution.
+
+
+=item F<values_all> [ B<(>< I<delim> >B<)> ] 
+
+Output the list of all values in the group. 
+
+
+=item F<values_uniq> [ B<(>< I<delim> >B<)> ] 
+
+Output the list of unique values in the group. 
+
+
+=cut --------------------------------------------------------------------------
+
+=head1 Macros
+
+
+=head2 F<String Macros>
+
+B<&length (> < I<field-name> > B<)>
+
+B<&substr (> < I<field-name> >, < I<offset> >, < I<len> > B<)>
+
+B<&index (> < I<field-name> >, < I<substr> >, < I<offset> > B<)>
+
+B<&rindex (> < I<field-name> >, < I<substr> >, < I<offset> > B<)>
+
+B<&lc (> < I<field-name> > B<)>
+
+B<&uc (> < I<field-name> > B<)>
+
+B<&lc_first (> < I<field-name> > B<)>
+
+B<&uc_first (> < I<field-name> > B<)>
+
+B<&commify (> < I<field-name> > B<)>
+
+B<&trim (> < I<field-name> > [B<, >< I<character-list> > ] B<)>
+
+B<&spaceout (> < I<field-name> > B<)>
+
+B<&trim_trailing (> < I<field-name> > [B<, >< I<character-list> > ]  B<)>
+
+B<&trim_leading (> < I<field-name> > [B<, >< I<character-list> > ] B<)>
+
+B<&clip_str (> < I<field-name> > B<)>
+
+B<&left_clip_str (> < I<field-name> > B<)>
+
+B<&right_clip_str (> < I<field-name> > B<)>
+
+B<&left_pad_str (> < I<field-name> >, <pad-char>, <len> B<)>
+
+B<&right_pad_str (> < I<field-name> >, <pad-char>, <len> B<)>
+
+B<&remove_spaces (> < I<field-name> > B<)>
+
+B<&to_number (> < I<field-name> > B<)>
+
+B<&extract_numeric (> < I<field-name> > B<)>
+
+B<&remove_non_numeric (> < I<field-name> > B<)>
+
+B<&remove_numeric (> < I<field-name> > B<)>
+
+B<&remove_special (> < I<field-name> > B<)>
+
+B<&translate (> < I<field-name> >, <from-list>, <to-list> [B<, ><modifier> ] B<)>
+
+B<&initcap (> < I<field-name> > B<)>
+
+B<&extract_init (> < I<field-name> > B<)>
+
+
+=head2 F<Arithmentic Macros>
+
+B<&ord (> < I<field-name> > B<)>
+
+B<&sqrt (> < I<field-name> > B<)>
+
+B<&rand (> < I<field-name> > B<)>
+
+B<&sin (> < I<field-name> > B<)>
+
+B<&exp (> < I<field-name> > B<)>
+
+B<&cos (> < I<field-name> > B<)>
+
+B<&log (> < I<field-name> > B<)>
+
+B<&chr (> < I<field-name> > B<)>
+
+B<&abs (> < I<field-name> > B<)>
+
+B<&int (> < I<field-name> > B<)>
+
+B<&atan2 (> < I<field-name> > B<)>
+
+B<&sign (> < I<field-name> > B<)>
+
+B<&trunc (> < I<field-name> >, < I<dec> > B<)>
+
+B<&lshift (> < I<field-name>, I<bits> > B<)> (**)
+
+B<&rshift (> < I<field-name>, I<bits> > B<)> (**)
+
+
+=head2 F<Date Macros>
+
+B<&date (> < I<field-name> > [B<, >< I<date-type> >] B<)>
+
+B<&months_since (> < I<field-name> > [B<, >< I<date-type> >] B<)>
+
+B<&months_between (> < I<field-name> >, < I<field-name> ><n> B<)>
+
+B<&date_last_day (> < I<field-name> > B<)>
+
+B<&last_day (> < I<field-name> > B<)>
+
+B<&date_next_day (> < I<field-name> > B<)>
+
+B<&day_number (> < I<field-name> > B<)>
+
+B<&y (> < I<field-name> > [ B<, >< I<date-type> > ] B<)>
+
+B<&d (> < I<field-name> > [ B<, >< I<date-type> > ] B<)>
+
+B<&m (> < I<field-name> > [ B<, >< I<date-type> >] B<)>
+
+B<&today (> B<)>
+
+
+=head2 F<Array Macros>
+
+B<&to_array (> < I<field-name> > B<)>
+
+B<&arr_size (> < I<field-name> > [B<, >< I<field-name> >, ...] B<)>
+
+B<&arr_sort (> < I<field-name> > B<)>
+
+B<&arr_reverse (> < I<field-name> > B<)>
+
+B<&arr_values_uniq (> < I<field-name> > [B<, >< I<field-name> >, ...] B<)>
+
+B<&arr_sum (> < I<field-name> > [B<, >< I<field-name> >, ...] B<)>
+
+B<&arr_sum_distinct (> < I<field-name> > [B<, >< I<field-name> >, ...] B<)> (**)
+
+B<&arr_avg (> < I<field-name> > [B<, >< I<field-name> >, ...] B<)>
+
+B<&arr_avg_distinct (> < I<field-name> > [B<, >< I<field-name> >, ...] B<)> (**)
+
+B<&arr_mean (> < I<field-name> > [B<, >< I<field-name> >, ...] B<)>
+
+B<&arr_first (> < I<field-name> > [B<, >< I<field-name> >, ...] B<)>
+
+B<&arr_last (> < I<field-name> > [B<, >< I<field-name> >, ...] B<)>
+
+B<&arr_min (> < I<field-name> > [B<, >< I<field-name> >, ...] B<)>
+
+B<&arr_max (> < I<field-name> > [B<, >< I<field-name> >, ...] B<)>
+
+B<&arr_median (> < I<field-name> > [B<, >< I<field-name> >, ...] B<)> (**)
+
+B<&arr_variance (> < I<field-name> > [B<, >< I<field-name> >, ...] B<)> (**)
+
+B<&arr_stddev (> < I<field-name> > [B<, >< I<field-name> >, ...] B<)> (**)
+
+B<&arr_range (> < I<field-name> > [B<, >< I<field-name> >, ...] B<)> (**)
+
+B<&arr_max (> < I<field-name> > [B<, >< I<field-name> >, ...] B<)> (**)
+
+B<&arr_lookup (> < I<value> >, < I<field-name> > [B<, >< I<field-name> >, ...] B<)>
+
+B<&arr_pack (> < I<pack-format> >, < I<field-name> > [B<, >< I<field-name> >, ...] B<)> (**)
+
+B<&arr_unpack (> < I<pack-format> >, < I<field-name> > [B<, >< I<field-name> >, ...] B<)> (**)
+
+B<&arr_set_and (> < I<field-name>, I<field-name> > B<)> (**)
+
+B<&arr_set_or (> < I<field-name>, I<field-name> > B<)> (**)
+
+B<&arr_set_xor (> < I<field-name>, I<field-name> > B<)> (**)
+
+
+=head2 F<Miscellaneous Macros>
+
+B<&banding (> < I<field-name> >, <band-divisor> B<)>
+
+B<&env (> < I<env-var-name> > B<)>
+
+B<&option (> < I<pequel-option-name> > B<)>
+
+B<&select (> < I<field-name> >, < I<value> > [ [, < I<field-name> >, < I<value> > ] [ ,...] ], < I<default-value> > B<)>
+
+B<&match_any (> < I<field-name> >, <match list> B<)>
+
+B<&match (> < I<field-name> >, <match list> B<)>
+
+B<&map (> < I<table-name> >, < I<field-name> > [, ...]  B<)>
+
+B<&input_record_count()>
+
+B<&soundex (> < I<field-name> > B<)>
+
+B<&pack (> < I<pack-format> >, < I<field-name> >[, ...] B<)>
+
+B<&unpack (> < I<pack-format> >, < I<field-name> >[, ...] B<)>
+
+B<&sprintf (> < I<print-format> >, < I<field-name> > [, ...] B<)>
+
+
+(**) Forthcoming.
+
+
+=cut --------------------------------------------------------------------------
+
+=head1 Pequel Data Types
+
+
+=item F<string>
+
+
+=item F<numeric>
+
+
+=item F<decimal>
+
+
+=item F<date>
+
+
+=item F<array>
+
+
+=cut --------------------------------------------------------------------------
+
+=head1 Option Types
+
+
+=head2 F<Basic Options>
+
+B<verbose>
+
+B<noverbose>
+
+B<input_delimiter_extra>
+
+B<input_delimiter>
+
+B<output_delimiter>
+
+B<input_file>
+
+B<output_file>
+
+B<script_name>
+
+B<discard_header>
+
+B<header>
+
+B<noheader>
+
+B<addpipe>
+
+B<noaddpipe>
+
+B<optimize>
+
+B<nooptimize>
+
+B<nulls>
+
+B<nonulls>
+
+B<reject_file>
+
+B<default_datetype>
+
+B<default_list_delimiter>
+
+B<hash>
+
+B<transfer>
+
+B<suppress_output>
+
+B<num_threads>
+
+B<sort_tmp_dir>
+
+B<logfilename>
+
+B<logging>
+
+B<prefix>
+
+B<lock_output>
+
+B<output_file_append>
+
+B<sort_cmd>
+
+B<sort_args>
+
+B<cpp_cmd>
+
+B<cpp_args>
+
+B<gzcat_cmd>
+
+B<gzcat_args>
+
+B<cat_cmd>
+
+B<cat_args>
+
+B<pack_output>
+
+B<output_pack_fmt>
+
+B<unpack_input>
+
+B<input_pack_fmt>
+
+B<input_record_limit>
+
+B<rmctrlm>
+
+B<show_synonyms>
+
+B<exec_min_lines>
+
+
+=head2 F<General Table Options>
+
+B<display_table_stats>
+
+B<reload_tables>
+
+B<load_tables_only>
+
+B<table_drop_unused_fields>
+
+B<table_dir>
+
+
+
+=head2 F<Oracle Table Options>
+
+B<oracle_prefetch_count>
+
+B<oracle_home>
+
+B<oracle_sqlldr_rows>
+
+B<oracle_use_merge_fetch_macro>
+
+
+
+=head2 F<Sqlite Table Options>
+
+B<sqlite_dir>
+
+B<sqlite_merge_optimize>
+
+B<sqlite_merge_optimize_count>
+
+
+
+=head2 F<Inline Options>
+
+B<use_inline>
+
+B<inline_cc>
+
+B<inline_libs>
+
+B<inline_inc>
+
+B<inline_ccflags>
+
+B<inline_optimize>
+
+B<inline_lddlflags>
+
+B<inline_make>
+
+B<inline_clean_after_build>
+
+B<inline_clean_build_area>
+
+B<inline_build_noisy>
+
+B<inline_build_timers>
+
+B<inline_force_build>
+
+B<inline_print_info>
+
+B<inline_directory>
+
+B<inline_cache_recs>
+
+B<use_av_store_macro>
+
+B<inline_merge_optimize>
+
+B<inline_merge_optimize_count>
+
+
+
+=head2 F<Document Generation Options>
+
+B<doc_title>
+
+B<doc_version>
+
+B<doc_email>
+
+
+=head2 F<Developer Options>
+
+B<dumpcode>
+
+B<debug_show_caller>
+
+B<debug>
+
+B<debug_generate>
+
+B<debug_parser>
+
+B<diagnostics>
+
+B<tinfo>
+
+B<minfo>
+
+B<pequelsrclist>
+
+B<pequelprogref>
+
+
+=head2 F<Command Line Options>
+
+B<version>
+
+B<usage>
+
+B<viewcode>
+
+B<viewraw>
+
+B<syntax_check>
+
+B<list>
+
+B<option>
+
+B<pequeldoc>
+
+B<detail>
+
+
+=cut --------------------------------------------------------------------------
+
+=head1 Command Line Usage
+
+
+=item F<pequel scriptfile.pql  E<lt>  I<file_in>  E<gt>  I<file_out>>
+
+Execute F<pequel> with I<scriptfile.pql> script to process I<file_in> data file, resulting in I<file_out>.
+
+
+=item F<pequel -c scriptfile.pql>
+
+Check the syntax of the pequel script I<scriptfile.pql>.
+
+
+=item F<pequel -viewcode scriptfile.pql>
+
+Generate and display the code for the pequel script I<scriptfile.pql>.
+
+
+=item F<pequel -dumpcode scriptfile.pql>
+
+Generate the pequel code for the script I<scriptfile.pql> and save generated code in the file I<scriptname.pql.2.code>.
+
+
+=item F<pequel -v>
+
+Display version informatio for F<Pequel>.
+
+
+=item F<pequel -usage>
+
+Display Pequel usage command summary.
+
+
+=item F<pequel -pequeldoc pdf -detail scriptfile.pql>
+
+Generate the Script Reference document in pdf format for the Pequel script I<scriptfile.pql>. The document will include a section showing the generated code (F<-detail>).
+
+
+=item F<--prefix, --prefix_path>
+
+Prefix for filenames directory path.
+
+
+=item F<--noverbose, --silent>
+
+Do not display progress counter and messages.
+
+
+=cut --------------------------------------------------------------------------
+
+=head1 COPYRIGHT
+
+=item
+
+Copyright E<copy>1999-2006, Mario Gaffiero. All Rights Reserved.
+
+=item
+
+"Pequel" and "Pequel ETL" TM Copyright E<copy>1999-2006, Mario Gaffiero. All Rights Reserved.
+
+=item
+
+This program and all its component contents is copyrighted free software by Mario Gaffiero and is released under the GNU General Public License (GPL), Version 2, a copy of which may be found at http://www.opensource.org/licenses/gpl-license.html
+
+=item
+
+This file is part of Pequel (TM).
+
+=item
+
+Pequel is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+=item
+
+Pequel is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+=item
+
+You should have received a copy of the GNU General Public License along with Pequel; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+=cut

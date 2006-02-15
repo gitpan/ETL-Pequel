@@ -9,6 +9,7 @@ options
     doc_title("Output Combiner Example Script")
     doc_email("sample@youraddress.com")
     doc_version(2.3)
+	show_synonyms(0)
 
 description section
 

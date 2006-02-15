@@ -1,9 +1,5 @@
 =pod
 
-=head1 NAME
-
-PEQUEL - Pequel User Guide
-
 =cut --------------------------------------------------------------------------
 
 =head1 OVERVIEW -- WHAT IS PEQUEL?
@@ -750,7 +746,7 @@ Display progress counter
 
 =item F<--noverbose, --silent, --quite>
 
-Do not progress counter
+Do not display progress counter
 
 
 =item F<--input_file, --is, --if, --i>
@@ -2086,7 +2082,7 @@ I<New in v2.5>. The F<months_between> macro returns the absolute number of month
 
 =item I<Format>
 
-B<&months_between(><field-1>, <field-2><n>B<)>
+B<&months_between(><field-1>, <field-2>B<)>
 
 
 =item I<Examples>
@@ -2840,7 +2836,7 @@ B<&remove_spaces(><field>B<)>
 
 =cut --------------------------------------------------------------------------
 
-=head2 F<&match>, F<&match_all>
+=head2 F<&match>, F<&match_any>
 
 
 These macros are identical and will return true (1) if the I<field> content matches any of the I<match list> items, else returns false (0).
@@ -4854,17 +4850,31 @@ Mario Gaffiero <gaffie@users.sourceforge.net>
 
 =head1 COPYRIGHT
 
-Copyright E<copy>1999-2005, Mario Gaffiero. All Rights Reserved.
+=item
 
-"Pequel" TM Copyright E<copy>1999-2005, Mario Gaffiero. All Rights Reserved.
+Copyright E<copy>1999-2006, Mario Gaffiero. All Rights Reserved.
+
+=item
+
+"Pequel" and "Pequel ETL" TM Copyright E<copy>1999-2006, Mario Gaffiero. All Rights Reserved.
+
+=item
 
 This program and all its component contents is copyrighted free software by Mario Gaffiero and is released under the GNU General Public License (GPL), Version 2, a copy of which may be found at http://www.opensource.org/licenses/gpl-license.html
 
+=item
+
 This file is part of Pequel (TM).
+
+=item
 
 Pequel is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
+=item
+
 Pequel is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+=item
 
 You should have received a copy of the GNU General Public License along with Pequel; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 

@@ -1,0 +1,10 @@
+# http://module-build.sourceforge.net/META-spec.html
+#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
+name:         ETL-Pequel
+version:      2.4-6
+version_from: lib/ETL/Pequel/Main.pm
+installdirs:  site
+requires:
+
+distribution_type: module
+generated_by: ExtUtils::MakeMaker version 6.17

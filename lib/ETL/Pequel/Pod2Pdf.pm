@@ -1,4 +1,4 @@
-package Pequel::Pod2Pdf;
+package ETL::Pequel::Pod2Pdf;
 #package Pod::Pdf2;
 
 # version 1.2 26 May 2000
@@ -144,6 +144,8 @@ my $Title;
 my $ManualVersion = '';
 my $Producer = 'Pequel';
 
+my $noTOC=0;
+
 sub pod2pdf {
 	local @ARGV = @_;
 	unless ( @ARGV && $ARGV[0] ) { die "no input, no output!\n" }
@@ -195,7 +197,7 @@ sub pod2pdf {
 	}
 
 	$section = 'toc';
-	buildTOC();
+	buildTOC() unless ($noTOC == 1);
 
 	$section = 'cov';
 	coverPage();
@@ -214,7 +216,7 @@ sub parse_command_line {
 	my( $opt_paper, $opt_help, $result);
 	my $usage = qq{
 	$0 
-	[ --help --verbose <1|2> --paper <usletter> --podfile <file> --title --type --version --email --author <name> ] <file>
+	[ --help --verbose <1|2> --paper <usletter> --podfile <file> --title --type --version --email --author <name> --notoc ] <file>
 	
 	--help
 	    displays this explanation of correct usage
@@ -242,6 +244,9 @@ sub parse_command_line {
 	--author <name>
 		Author name.
 
+	--notoc
+		Suppress table of contents.
+
 	    
 	Further information can be found in the POD section of Pod.pm. Enter:
 	    perl -e "use Pod::Pdf2; pod2pdf('<your_library_path>/Pod/Pdf.pm')"
@@ -258,6 +263,7 @@ sub parse_command_line {
 		'version=s'	=> \$ManualVersion,
 		'email=s'	=> \$AuthorEmail,
 		'author=s'	=> \$Author,
+		'notoc'		=> \$noTOC,
 		'help'      => sub { print STDERR $usage; exit(0) }
 		);
 
@@ -914,7 +920,7 @@ sub pageFooter {
 
     if    ($section eq 'doc') { $p_num = $page }
     elsif ($section eq 'toc') { $p_num = $Roman[$page - $lp]; }
-#    elsif ($section eq 'cov') { $p_num = 'Copyright 0 2001-2005 Mario Gaffiero' }
+#    elsif ($section eq 'cov') { $p_num = 'Copyright 0 1999-2006 Mario Gaffiero' }
     setFont('footer');
 
     if($page % 2) {
@@ -1299,6 +1305,7 @@ my $size = $obj+1;
     prt("0000000000 65535 f \n");
     my $i;
     for ($i = 1; $i <= $obj; $i++) {
+	if (!defined($o_loc[$i])) { $o_loc[$i]=0; }
         $buf = sprintf "%.10d 00000 n \n", $o_loc[$i];
         prt($buf)
     }
@@ -1424,6 +1431,7 @@ sub outlineTree {
     $o_rec{outlines} = ++$obj;
     $ol[0]{level} = -1;
     for (1..$no) {
+	next unless defined($ol[$_]{page});
         my @kids; undef @kids;
         my @gkids; undef @gkids;
         my $first = undef;

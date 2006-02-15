@@ -4,7 +4,7 @@
 #  Created	: 25 February 2005
 #  Author	: Mario Gaffiero (gaffie)
 #
-# Copyright 1999-2005 Mario Gaffiero.
+# Copyright 1999-2006 Mario Gaffiero.
 # 
 # This file is part of Pequel(TM).
 # 
@@ -24,6 +24,7 @@
 # ----------------------------------------------------------------------------------------------------
 # Modification History
 # When          Version     Who     What
+# 30/11/2005	2.4-6		gaffie	exec_min_lines.
 # 11/11/2005	2.4-5		gaffie	new option show_synonyms -- 
 # 09/11/2005	2.4-5		gaffie	new option use_piped_chain -- use pipe() to connect input from pequel script.
 # 20/09/2005	2.3-6		gaffie	unpack_input/pack_output implementation.
@@ -1302,7 +1303,7 @@ $self->PARAM->error->msgStderr("This option is not currently available.");
 				cmd_format => '!',
 				cmd_type => 1,
 				inherit => 1,
-				description => 'do not progress counter',
+				description => 'do not display progress counter',
 				cmd_alias => ETL::Pequel::Collection::Vector->new
 				(
 					ETL::Pequel::Type::Element->new(name => 'silent'),
@@ -1316,7 +1317,7 @@ $self->PARAM->error->msgStderr("This option is not currently available.");
 				value => '', 	
 				format => '\"|\[|\{|\(', 
 				cmd_format => ':s',
-				description => 'Extra input field delimiter(s)',
+				description => 'extra input field delimiter(s)',
 				PARAM => $param,
 			),
 			ETL::Pequel::Type::Option::Element->new
@@ -1396,7 +1397,7 @@ $self->PARAM->error->msgStderr("This option is not currently available.");
 			(
 				name => 'discard_header',	
 				value => '', 	
-				description => 'Input file has header record - must be discarded.',
+				description => 'input file has header record - must be discarded.',
 				PARAM => $param,
 			),
 			ETL::Pequel::Type::Option::Element->new
@@ -1719,6 +1720,16 @@ $self->PARAM->error->msgStderr("This option is not currently available.");
 				cmd_type => 1,
 				inherit => 1,
 				description => 'Show field names in generated code.',
+				PARAM => $param,
+			),
+			ETL::Pequel::Type::Option::Element->new
+			(
+				name => 'exec_min_lines',		
+				value => "200",
+				cmd_format => ':s',
+				cmd_type => 1,
+				inherit => 1,
+				description => 'Run via exec() if generated script exceeds specified lines.',
 				PARAM => $param,
 			),
 #>			ETL::Pequel::Type::Option::Element->new

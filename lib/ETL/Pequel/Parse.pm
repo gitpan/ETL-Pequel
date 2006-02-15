@@ -4,7 +4,7 @@
 #  Created	: 30 January 2005
 #  Author	: Mario Gaffiero (gaffie)
 #
-# Copyright 1999-2005 Mario Gaffiero.
+# Copyright 1999-2006 Mario Gaffiero.
 # 
 # This file is part of Pequel(TM).
 # 
@@ -81,7 +81,6 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		my $section_name = shift || undef;
 		my $field_name = shift || undef;
 
-#> $clause should be an Pequel::Code object...so as to preserve formatting...
 		return $clause if (!defined($clause));
 
 		$clause = $self->compileArray($clause);
@@ -104,14 +103,13 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 		$clause = $self->saveQuotes($clause);
 		foreach ($self->PARAM->sections->exists('input section')->items->toArray)
 		{
-#?			$clause =~ s/\b@{[ $_->name ]}\b/@{[ $_->calc ? $self->compile($_->calc) : $_->codeVar ]}/g;
-#			$clause =~ s/\b@{[ $_->name ]}\b/@{[ $_->calc ? $_->calc : $_->codeVar ]}/g;
 			if ($clause =~ s/\b@{[ $_->name ]}\b/@{[ $_->codeVar ]}/g)
 			{
 				$_->useList->add(ETL::Pequel::Type::Element->new
 				(
 					sourceSectionName => $section_name,
 					sourceFieldName => $field_name,
+					PARAM => $self->PARAM,
 				));
 			}
 		}
@@ -167,12 +165,14 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 			(
 				sourceSectionName => $section_name,
 				sourceFieldName => $field_name,
-				value => join(',', @args)
+				value => join(',', @args),
+				PARAM => $self->PARAM,
 			));
 			last if (++$i>$MAXDEPTH);
 		}
 		return $clause;
 	}
+
 	sub extractMacro : method
 	{
 		my $self = shift;
@@ -339,7 +339,8 @@ $BUILD = 'Tuesday November  1 08:45:13 GMT 2005';
 			(
 				sourceSectionName => $section_name,
 				sourceFieldName => $field_name,
-				value => $column ? "$key,$column" : $key
+				value => $column ? "$key,$column" : $key,
+				PARAM => $self->PARAM,
 			));
 			last if (++$i>$MAXDEPTH);
 		}

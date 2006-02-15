@@ -4,7 +4,7 @@
 #  Created	: 14 January 2005
 #  Author	: Mario Gaffiero (gaffie)
 #
-# Copyright 1999-2005 Mario Gaffiero.
+# Copyright 1999-2006 Mario Gaffiero.
 # 
 # This file is part of Pequel(TM).
 # 
@@ -24,6 +24,10 @@
 # ----------------------------------------------------------------------------------------------------
 # Modification History
 # When          Version     Who     What
+# 15/02/2006	2.4-6		gaffie	Fixed module name in ETL::Pequel::Pod2Pdf, scripts/pequelpod2pdf.
+# 26/01/2006	2.4-6		gaffie	vim-syntax: fix description section.
+# 01/12/2005	2.4-6		gaffie	fixed date.addUserType -- required PARAM.
+# 30/11/2005	2.4-6		gaffie	exec_min_lines -- use exec() if code > lines.
 # 16/11/2005	2.4-5		gaffie	Bug fix -- input record line counter.
 # 15/11/2005	2.4-5		gaffie	Bug fix in sort-output section codeOpen() extra pipe.
 # 11/11/2005	2.4-5		gaffie	new option show_synonyms -- 
@@ -88,6 +92,26 @@
 # 25/08/2005	2.2-7		gaffie	Code/Code.pm:supress addCommentBegin()/End() unless --debug option specified.
 # ----------------------------------------------------------------------------------------------------
 # TODO:
+# Qt GUI IDE for Pequel development/execution.
+# PDF: pequel quick reference.
+# PequelDTP: Web Data Transformation Portal.
+# Combine common table loads across scripts.
+# XML layer/interface: pequel-language -> XML -> pequel-engine.
+# output_file(pequel:...) -- use this for output combiner, inherit attr so all divert/copy scripts will use.
+# ETL::Pequel::Lang; ETL::Pequel::Lang::InputSection, ...; to contain parse(), anything pequel-language related.
+# Sys::Syslog;
+#
+# DS1  DS2	 -- multi-datasources
+# |    |
+# PQL1 PQL2
+#  \  /
+#   \/
+#  PQL3		-- combiner
+#
+# Need to use read/sysread for fixed length input when no eol character exists.
+# Buffered output -- push output record to stack and output as batch -- enhance shared (locked) output.
+# 	-- test output fd for lock; if locked continue processing next record.
+# Option: input_record_length for use when input file is fixed length -- set $\ = record length;
 # use pipe with syswrite to ensure that buffering does not deadlock the processes waiting for each other's message,
 # use do-block instead of anonymous sub for macros that eval to anon-sub call.
 # Replace 'use constant' in generated code with real-constants because use-constant replaces value with subroutine call() which degrades performance!
@@ -98,16 +122,10 @@
 #	-- use input-merge-section(data-source, key-field) for multi simultaneous merge.
 # dedup-input, dedup-output to replace dedup-on
 # If packed input && sort-by then generate temp pequel srcipt and fit as input-file. The tmp script will do
-# unpack-unput and sort-output.
 # Combine Script.pm, Section->parse() functions, Parser.pm because they all relate to pequel-language parsing 
 #	-- Parser/Pequel.pm; then future: Parser/XML.pm, etc
-# Bug: when using brackets inside message text.
 # Macro: &output_record_count()
 # Macros: &input_fields_count(), &record_number(), 
-# display message, display message warn, display message abort sections
-# info-on-data('...msg...') section -- display the msg if any condition matched.
-# warn-on-data('warning message...') section -- if record matches any condition print the msg with rec#, etc
-# abort-on-data('warning message...') section -- if record matches any condition print the msg with rec#, and abort
 # Pequel tables pack/unpack pipe interface.
 # frequency analysis aggregate: &freq() -- ouput result in array field.
 # Lazy pipe open; use fifo list for close() ordering -- only open copy/divert pipe if data matches condition.
@@ -142,10 +160,6 @@
 # &num_fields() -- return number of fields in input record;
 # input_format option: input_format(pequel:script.pql); input_format(delim:file.txt); 
 #	apachelog:, excell:, cvs:, fixed:, ...
-# 'copy record(file:outfile.dat)' section. Copy input record if matches condition.
-# 'copy record(pequel:outfile.pql)' 
-# 'divert record(file:outfile.dat)' section. Divert input record if matches condition.
-# 'divert record(pequel:outfile.pql)' 
 # 'reject record(file:outfile.dat)' section. Divert input record if matches condition.
 # 'reject record(pequel:outfile.pql)' -- reject and divert are identical.
 # Chain Pequel scripts -- 
@@ -158,8 +172,8 @@ use strict;
 use attributes qw(get reftype);
 use warnings;
 use vars qw($VERSION $BUILD);
-$VERSION = "2.4-5";
-$BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
+$VERSION = "2.4-6";
+$BUILD = 'Wednesday February 15 11:41:45 GMT 2006';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Main;
@@ -209,6 +223,7 @@ $BUILD = 'Wednesday November 16 21:56:42 GMT 2005';
 				{
 					$self->PARAM->properties($o->name(), $parent_PARAM->properties($o->name()));
 				}
+				$self->PARAM->depth($parent_PARAM->depth() +1);
 			}
 			$self->prepare();
 		}

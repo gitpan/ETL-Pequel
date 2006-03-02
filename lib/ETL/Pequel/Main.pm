@@ -24,6 +24,7 @@
 # ----------------------------------------------------------------------------------------------------
 # Modification History
 # When          Version     Who     What
+# 02/03/2006	2.4-6b		gaffie	Fixed tests.
 # 15/02/2006	2.4-6		gaffie	Fixed module name in ETL::Pequel::Pod2Pdf, scripts/pequelpod2pdf.
 # 26/01/2006	2.4-6		gaffie	vim-syntax: fix description section.
 # 01/12/2005	2.4-6		gaffie	fixed date.addUserType -- required PARAM.
@@ -172,8 +173,8 @@ use strict;
 use attributes qw(get reftype);
 use warnings;
 use vars qw($VERSION $BUILD);
-$VERSION = "2.4-6";
-$BUILD = 'Wednesday February 15 11:41:45 GMT 2006';
+$VERSION = "2.4-6b";
+$BUILD = 'Thursday March 2 21:41:45 GMT 2006';
 # ----------------------------------------------------------------------------------------------------
 {
 	package ETL::Pequel::Main;

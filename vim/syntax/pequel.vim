@@ -50,6 +50,7 @@ syn match pequelSection		"^display\s*message\s*on\s*input"
 syn match pequelSection		"^display\s*message\s*on\s*input\s*abort"
 syn match pequelSection		"^display\s*message\s*on\s*output"
 syn match pequelSection		"^display\s*message\s*on\s*output\s*abort"
+syn match pequelSection		"^table[ ]\s*\w*\s*[(]"me=e-1 contains=,pequelParamList
 
 "syn match pequelSection		"^description\s*section"
 "syn match pequelSection		"^description\s*section" nextgroup=pequelSection 
